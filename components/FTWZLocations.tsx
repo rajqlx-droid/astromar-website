@@ -1,0 +1,129 @@
+"use client"
+import { useState, useMemo } from "react";
+import Link from "next/link";
+import { MapPin, Phone, Warehouse, Search, Navigation } from "lucide-react";
+import { Input } from "./ui/input";
+import ScrollReveal from "./ScrollReveal";
+import FTWZMap from "./FTWZMap";
+
+const locations = [
+  { slug: "kochi", city: "Kochi", state: "Kerala", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 9.9312, lng: 76.2673, address: "SEZ ICTT, Vallarpadam, Kochi, Ernakulam, Kerala 682504" },
+  { slug: "vizag", city: "Vizag", state: "Andhra Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 17.6868, lng: 83.2185, address: "VSEZ, Duvvada, Visakhapatnam, Andhra Pradesh 530049" },
+  { slug: "mumbai-panvel", city: "Mumbai (Panvel)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9894, lng: 73.1175, address: "Village Sai, Taluka Panvel, District - Raigad, Mumbai, Maharashtra, 410206, India" },
+  { slug: "mumbai-jnpa", city: "Mumbai (JNPA)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9543, lng: 72.9479, address: "JNPA SEZ, Village-Sawarkhar, Uran, Raigad, Maharashtra, 400707" },
+  { slug: "mundra", city: "Mundra", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 22.8394, lng: 69.7214, address: "APSEZ, Village Dhrub, District: Kutch, Gujarat, Mundra 370421, India" },
+  { slug: "chennai", city: "Chennai", state: "Tamil Nadu", type: "Hub & HQ", phone: "+91 99402 11014", lat: 13.0827, lng: 80.2707, address: "Mannur & Valarpuram Village, Sriperumbudur Taluk, Kancheepuram District, 602105 & Vallur & Edayanchavadi Village, Ponneri Taluk, Tiruvallur District, 600120, Tamil Nadu, India" },
+  { slug: "delhi-khurja", city: "Delhi (Khurja)", state: "Uttar Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 28.2476, lng: 77.8538, address: "Junction Road, Khurja Industrial Area, Village Maujpur, Khurja, District - Bulandshahr, UP - 203131, India" },
+  { slug: "bengaluru", city: "Bengaluru", state: "Karnataka", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2486, lng: 77.7066, address: "Innomech Aerospace Tooling Pvt Ltd, Aerospace SEZ Sector, Devanahalli, Bengaluru, Karnataka, 562165" },
+];
+
+const FTWZLocations = () => {
+  const [activeCity, setActiveCity] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredLocations = useMemo(() => {
+    if (!searchQuery.trim()) return locations;
+    const q = searchQuery.toLowerCase();
+    return locations.filter(
+      (loc) =>
+        loc.city.toLowerCase().includes(q) ||
+        loc.state.toLowerCase().includes(q) ||
+        loc.address.toLowerCase().includes(q)
+    );
+  }, [searchQuery]);
+
+  return (
+    <section className="py-20 bg-background">
+      <div className="container max-w-6xl px-4">
+        <ScrollReveal>
+          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">
+            OUR FTWZ NETWORK
+          </p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-4">
+            Strategically Located Across India
+          </h2>
+          <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-6">
+            With FTWZ facilities in 8 key locations, we offer duty-free warehousing and seamless logistics connectivity across the nation.
+          </p>
+          <div className="relative max-w-md mx-auto mb-12">
+            <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+            <Input
+              placeholder="Search by city, state, or address..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-10"
+            />
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.1}>
+          <div className="mb-10 rounded-xl overflow-hidden border border-border shadow-md">
+            <FTWZMap locations={filteredLocations} activeCity={activeCity} onMarkerClick={setActiveCity} />
+          </div>
+        </ScrollReveal>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {filteredLocations.length === 0 && (
+            <p className="col-span-full text-center text-muted-foreground py-8">No locations found matching "{searchQuery}"</p>
+          )}
+          {filteredLocations.map((loc, i) => (
+            <ScrollReveal key={loc.city} delay={i * 0.06}>
+              <div
+                onClick={() => setActiveCity(loc.city)}
+                className={`group relative rounded-xl border bg-card p-5 cursor-pointer transition-all duration-300 ${
+                  activeCity === loc.city
+                    ? "border-primary shadow-lg shadow-primary/10 ring-1 ring-primary/20"
+                    : "border-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+                }`}
+              >
+                <div className="flex items-start gap-3 mb-3">
+                  <div className={`flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${
+                    activeCity === loc.city ? "bg-primary/20" : "bg-primary/10 group-hover:bg-primary/20"
+                  }`}>
+                    <MapPin size={20} className="text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground text-lg leading-tight">{loc.city}</h3>
+                    <p className="text-sm text-muted-foreground">{loc.state}</p>
+                  </div>
+                </div>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Warehouse size={14} className="text-accent flex-shrink-0" />
+                    <span>{loc.type}</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{loc.address}</p>
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Phone size={14} className="text-accent flex-shrink-0" />
+                    <a href={`tel:${loc.phone.replace(/\s/g, "")}`} className="hover:text-primary transition-colors" onClick={(e) => e.stopPropagation()}>
+                      {loc.phone}
+                    </a>
+                  </div>
+                  <a
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(loc.address)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1.5 mt-2 text-xs font-semibold text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <Navigation size={13} />
+                    Get Directions
+                  </a>
+                  <Link
+                    href={`/locations/${loc.slug}`}
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1.5 mt-2 ml-4 text-xs font-semibold text-primary hover:text-primary/80 transition-colors"
+                  >
+                    View Port Details →
+                  </Link>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FTWZLocations;

@@ -1,0 +1,1 @@
+﻿Set-Content "C:\Users\LENOVO\Documents\my-website\components\SEOHead.tsx" ('"use client"') -Encoding UTF8

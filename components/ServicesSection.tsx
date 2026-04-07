@@ -1,0 +1,176 @@
+﻿"use client"
+import {
+  FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box, Combine,
+  CheckCircle2, Warehouse, Globe, FileCheck, Thermometer, BarChart3, ArrowRight,
+} from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
+
+import { Button } from "@/components/ui/button";
+
+const services = [
+  { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/services/ftwz" },
+  { icon: Ship, title: "Coastal Shipping", desc: "Domestic coastal cargo movement along India's extensive coastline, offering cost-effective and eco-friendly transport alternatives.", href: "/services/coastal-shipping" },
+  { icon: Ship, title: "Ocean Freight", desc: "Full container load (FCL) and less than container load (LCL) ocean freight services across major global trade routes.", href: "/services/ocean-freight" },
+  { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/services/air-freight" },
+  { icon: GitBranch, title: "Supply Chain", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/services/supply-chain" },
+  { icon: ClipboardCheck, title: "Custom Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/services/custom-clearance" },
+  { icon: Snowflake, title: "Warehousing", desc: "Secure, scalable warehousing solutions with real-time inventory management and value-added services.", href: "/services/warehousing" },
+  { icon: Box, title: "Projects", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/services/projects" },
+];
+
+const benefits = [
+  { title: "100% Duty & GST Deferment", desc: "Store imported goods indefinitely without paying customs duty or GST, improving working capital and cash flow." },
+  { title: "Re-export Without Duty", desc: "Re-export goods globally without duty or GST, maximizing margin on export-oriented businesses." },
+  { title: "Flexible Domestic Clearance", desc: "Clear goods domestically at any time â€” pay duty only when needed, deferring compliance costs." },
+  { title: "Value-Added Services", desc: "Repacking, labeling, kitting, quality inspection, and consolidation under one roof." },
+  { title: "Cold Storage Integration", desc: "Dedicated cold storage zones for pharma, food, and perishables with full temperature control." },
+  { title: "Real-Time Inventory Tracking", desc: "AI-powered inventory management with live tracking, automated reporting, and compliance documentation." },
+];
+
+const solutions = [
+  { icon: Warehouse, title: "General FTWZ Storage", desc: "High-security bonded warehousing for electronics, textiles, machinery, and general cargo with flexible tenure." },
+  { icon: Snowflake, title: "Cold Chain Storage", desc: "2â€“8Â°C, -20Â°C, and ambient zones for pharma, biologics, food, and perishables with GDP certification." },
+  { icon: Globe, title: "Re-export Hub", desc: "Consolidate and re-export globally with zero duty, leveraging India's FTWZ cost advantage." },
+  { icon: FileCheck, title: "Partial Clearance", desc: "Clear portions of inventory domestically while keeping the rest duty-free, optimizing timing and cash flow." },
+  { icon: Thermometer, title: "Pharma Logistics", desc: "GDP-compliant storage and distribution for pharmaceutical products with full cold chain integrity." },
+  { icon: BarChart3, title: "Trade Compliance", desc: "Automated customs documentation, HS code classification, and regulatory compliance management." },
+];
+
+const ServicesSection = () => {
+  return (
+    <>
+      {/* Services Grid */}
+      <section id="services" className="py-20 bg-brand-light">
+        <div className="container px-4">
+          <ScrollReveal>
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">
+              WHAT WE OFFER
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-4">
+              Comprehensive Logistics Services
+            </h2>
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm md:text-base">
+              From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end
+              logistics solutions across India.
+            </p>
+          </ScrollReveal>
+
+          <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
+            {services.map((s, i) => (
+              <ScrollReveal key={s.title} delay={i * 0.06}>
+                <a href={s.href} className="block h-full">
+                  <div
+                    className={`relative rounded-xl border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full ${
+                      s.featured ? "border-primary" : "border-border"
+                    }`}
+                  >
+                    {s.featured && (
+                      <span className="absolute top-4 right-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
+                        Featured
+                      </span>
+                    )}
+                    <s.icon className="w-7 h-7 md:w-8 md:h-8 text-primary mb-4" strokeWidth={1.5} />
+                    <h3 className="text-base md:text-lg font-bold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">{s.desc}</p>
+                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">
+                      Learn more <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </div>
+                </a>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FTWZ Overview */}
+      <section id="ftwz" className="py-16 sm:py-20 bg-background">
+        <div className="container px-4">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">
+              FTWZ WAREHOUSING
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 max-w-4xl leading-tight">
+              FTWZ Warehousing Services in India | Duty-Free Storage Solutions
+            </h2>
+            <p className="text-muted-foreground max-w-4xl leading-relaxed text-base sm:text-lg mb-8">
+              FTWZ Warehousing is India's most flexible duty-free warehousing solution, enabling importers and
+              exporters to store goods without paying customs duty or GST â€” until final disposition. Whether
+              you're re-exporting, consolidating shipments, or deferring domestic clearance, AstroMar's pan-India
+              FTWZ network provides compliant, secure storage with value-added services like repacking,
+              labeling, and kitting.
+            </p>
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <a href="#contact">
+                Get More Information <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
+            </Button>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Warehouse Banner */}
+      <section className="relative">
+        <div className="h-[300px] sm:h-[400px] md:h-[500px] bg-brand-navy flex items-center justify-center">
+          <p className="text-primary-foreground/40 text-lg font-semibold">FTWZ Warehouse Facility</p>
+        </div>
+      </section>
+
+      {/* Key Benefits */}
+      <section className="py-16 sm:py-20 bg-muted/30">
+        <div className="container px-4">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">
+              KEY BENEFITS
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+              Why Choose Our FTWZ Warehousing?
+            </h2>
+          </ScrollReveal>
+
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+            {benefits.map((b, i) => (
+              <ScrollReveal key={b.title} delay={i * 0.07}>
+                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                  <CheckCircle2 className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comprehensive Solutions */}
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container px-4">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">
+              OUR SOLUTIONS
+            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+              Comprehensive FTWZ Warehousing Solutions
+            </h2>
+          </ScrollReveal>
+
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+            {solutions.map((s, i) => (
+              <ScrollReveal key={s.title} delay={i * 0.07}>
+                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                  <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ServicesSection;
+
+

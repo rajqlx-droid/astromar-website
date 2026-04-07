@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(node -e \"const pkgs=[''cmdk'',''embla-carousel-react'',''input-otp'',''next-themes'',''react-resizable-panels'',''recharts'',''sonner'',''vaul'']; pkgs.forEach\\(p => { try { require.resolve\\(p\\); console.log\\(''OK:'', p\\); } catch\\(e\\) { console.log\\(''MISSING:'', p\\); } }\\)\")",
+      "Bash(node -e \"const r = require\\(''react-resizable-panels''\\); console.log\\(Object.keys\\(r\\)\\)\")",
+      "Bash(node -e \"console.log\\(require\\(''react-resizable-panels/package.json''\\).version\\)\")",
+      "Bash(python3 -:*)",
+      "Bash(python -:*)",
+      "Bash(node -e \"console.log\\(''node ok''\\)\")",
+      "Bash(node -e \":*)",
+      "Bash(['\\\\u00e2\\\\u20ac\\\\u2122', '\\\\u2019'], // â€™ → right single quote / apostrophe)",
+      "Bash(['\\\\u00e2\\\\u20ac\\\\u02dc', '\\\\u2018'], // â€˜ → left single quote)",
+      "Bash(['\\\\u00e2\\\\u20ac\\\\u009c', '\\\\u201c'], // â€œ → left double quote)",
+      "Bash(['\\\\u00e2\\\\u20ac\\\\u009d', '\\\\u201d'], // â€x9d → right double quote)",
+      "Bash(node \"C:/Users/LENOVO/Documents/my-website/_fix_encoding.js\")",
+      "Bash(node \"C:/Users/LENOVO/Documents/my-website/_fix_encoding.cjs\")"
+    ]
+  }
+}
