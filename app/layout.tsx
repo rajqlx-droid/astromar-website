@@ -2,8 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://astromarlogistics.com'),
   title: "Astromar Logistics – FTWZ India",
   description: "India's leading Free Trade Warehousing Zone provider offering duty-free storage, customs clearance, and integrated logistics solutions.",
+  keywords: 'FTWZ India, Free Trade Warehousing Zone, duty free warehouse, customs clearance, logistics India',
+  openGraph: {
+    title: "Astromar Logistics – FTWZ India",
+    description: "India's leading Free Trade Warehousing Zone provider offering duty-free storage, customs clearance, and integrated logistics solutions.",
+    url: 'https://astromarlogistics.com',
+    siteName: 'Astromar Logistics',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Astromar Logistics – FTWZ India",
+    description: "India's leading Free Trade Warehousing Zone provider offering duty-free storage, customs clearance, and integrated logistics solutions.",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
