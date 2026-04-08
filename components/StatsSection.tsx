@@ -3,7 +3,7 @@ import { MapPin, Box, Snowflake, Layers, Users, Clock } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const stats = [
-  { icon: MapPin, value: "9+", label: "Locations Across India" },
+  { icon: MapPin, value: "8+", label: "Locations Across India" },
   { icon: Box, value: "5 Lakh+", label: "Sq. Ft. Warehouse Space" },
   { icon: Snowflake, value: "50K+", label: "Sq. Ft. Cold Storage" },
   { icon: Layers, value: "25K+", label: "Pallet Positions" },

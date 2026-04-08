@@ -11,10 +11,12 @@ const locations = [
   { slug: "vizag", city: "Vizag", state: "Andhra Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 17.6868, lng: 83.2185, address: "VSEZ, Duvvada, Visakhapatnam, Andhra Pradesh 530049" },
   { slug: "mumbai-panvel", city: "Mumbai (Panvel)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9894, lng: 73.1175, address: "Village Sai, Taluka Panvel, District - Raigad, Mumbai, Maharashtra, 410206, India" },
   { slug: "mumbai-jnpa", city: "Mumbai (JNPA)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9543, lng: 72.9479, address: "JNPA SEZ, Village-Sawarkhar, Uran, Raigad, Maharashtra, 400707" },
-  { slug: "mundra", city: "Mundra", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 22.8394, lng: 69.7214, address: "APSEZ, Village Dhrub, District: Kutch, Gujarat, Mundra 370421, India" },
-  { slug: "chennai", city: "Chennai", state: "Tamil Nadu", type: "Hub & HQ", phone: "+91 99402 11014", lat: 13.0827, lng: 80.2707, address: "Mannur & Valarpuram Village, Sriperumbudur Taluk, Kancheepuram District, 602105 & Vallur & Edayanchavadi Village, Ponneri Taluk, Tiruvallur District, 600120, Tamil Nadu, India" },
+  { slug: "chennai-sriperumbudur", city: "Chennai (Sriperumbudur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 12.9716, lng: 79.9473, address: "Mannur & Valarpuram Village, Sriperumbudur Taluk, Kancheepuram District, 602105, Tamil Nadu, India" },
+  { slug: "chennai-vallur", city: "Chennai (Vallur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2090, lng: 80.2843, address: "Vallur & Edayanchavadi Village, Ponneri Taluk, Tiruvallur District, 600120, Tamil Nadu, India" },
   { slug: "delhi-khurja", city: "Delhi (Khurja)", state: "Uttar Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 28.2476, lng: 77.8538, address: "Junction Road, Khurja Industrial Area, Village Maujpur, Khurja, District - Bulandshahr, UP - 203131, India" },
   { slug: "bengaluru", city: "Bengaluru", state: "Karnataka", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2486, lng: 77.7066, address: "Innomech Aerospace Tooling Pvt Ltd, Aerospace SEZ Sector, Devanahalli, Bengaluru, Karnataka, 562165" },
+  { slug: "dahej", city: "Dahej", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 21.7051, lng: 72.5793, address: "Z-85/2A, Dahej SEZ - 1, Dahej, Gujarat, India" },
+  { slug: "chennai-hq", city: "Chennai HQ", state: "Tamil Nadu", type: "Registered Office", phone: "+91 99402 11014", lat: 13.0850, lng: 80.2101, address: "No. 922, 1st Floor, H-Block, 17th Main Road, Anna Nagar, Chennai - 600 040, Tamil Nadu, India" },
 ];
 
 const FTWZLocations = () => {
@@ -43,7 +45,7 @@ const FTWZLocations = () => {
             Strategically Located Across India
           </h2>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-6">
-            With FTWZ facilities in 8 key locations, we offer duty-free warehousing and seamless logistics connectivity across the nation.
+            With FTWZ facilities in 10 key locations, we offer duty-free warehousing and seamless logistics connectivity across the nation.
           </p>
           <div className="relative max-w-md mx-auto mb-12">
             <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />

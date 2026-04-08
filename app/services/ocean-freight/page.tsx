@@ -139,6 +139,69 @@ const OceanFreight = () => {
         </div>
       </section>
 
+      {/* Pan-India Port Coverage */}
+      <section className="py-16 sm:py-20 bg-muted/30">
+        <div className="container px-4">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">PORT NETWORK</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
+              Pan-India Port Coverage
+            </h2>
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
+              We operate across India's major seaports on both coasts, giving you direct access to every key gateway.
+            </p>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+            <ScrollReveal delay={0.05}>
+              <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
+                <h3 className="text-base font-bold text-foreground mb-4">West Coast</h3>
+                <ul className="space-y-2">
+                  {["Mundra", "Kandla", "Mumbai (JNPA)", "Goa (Mormugao)", "Mangalore (NMPT)", "Cochin (ICTT / JNCT)"].map((port) => (
+                    <li key={port} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                      {port}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
+                <h3 className="text-base font-bold text-foreground mb-4">East &amp; South Coast</h3>
+                <ul className="space-y-2">
+                  {["Tuticorin (V.O. Chidambaranar)", "Chennai", "Vizag (Visakhapatnam)", "Kamarajar (Ennore)", "Haldia / Kolkata", "Paradip"].map((port) => (
+                    <li key={port} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                      {port}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
+          </div>
+          <ScrollReveal delay={0.15}>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-4">SHIPMENT CAPABILITIES</p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  "Full Container Load (FCL) – 20ft, 40ft, 40HC",
+                  "Less than Container Load (LCL) consolidation",
+                  "Project & over-dimensional cargo",
+                  "Specialized cargo (reefer, open-top, flat-rack)",
+                  "EXW, DAP, and DDP shipment execution",
+                  "Multimodal – sea + inland road/rail delivery",
+                ].map((cap) => (
+                  <div key={cap} className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">{cap}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 sm:py-20 bg-brand-light">
         <div className="container px-4 text-center">

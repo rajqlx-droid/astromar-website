@@ -12,7 +12,7 @@ import {
 
 const solutions = [
   { icon: Warehouse, title: "General Warehousing", desc: "High-bay racking, bulk storage, and floor stacking in secure, fire-protected facilities across major Indian cities." },
-  { icon: Thermometer, title: "Cold Storage", desc: "Temperature-controlled zones from -25Â°C to +25Â°C for pharmaceuticals, perishables, and chemicals with GDP compliance." },
+  { icon: Thermometer, title: "Cold Storage", desc: "Temperature-controlled zones from -25°C to +25°C for pharmaceuticals, perishables, and chemicals with GDP compliance." },
   { icon: Package, title: "Fulfillment Center", desc: "Pick-pack-ship operations for e-commerce and retail with same-day dispatch, returns processing, and multi-channel integration." },
   { icon: Shield, title: "Bonded Warehousing", desc: "Licensed customs-bonded facilities for duty deferment on imported goods with full regulatory compliance." },
   { icon: Layers, title: "Cross-Docking", desc: "Rapid transshipment services to minimize storage time and accelerate distribution to final destinations." },
@@ -139,6 +139,36 @@ const Warehousing = () => {
                 </ScrollReveal>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FTWZ Services */}
+      <section className="py-16 sm:py-20 bg-muted/30">
+        <div className="container px-4">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">FTWZ WAREHOUSING</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
+              Free Trade Warehousing Zone Services
+            </h2>
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
+              In addition to standard warehousing, we offer FTWZ-specific storage solutions with significant duty and tax advantages.
+            </p>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+            {[
+              { title: "Cargo Consolidation (FTWZ)", desc: "Defer customs duty and GST until goods enter the domestic tariff area — ideal for import-heavy businesses." },
+              { title: "Cargo Consolidation", desc: "Consolidate multiple overseas shipments within the FTWZ before DTA entry to optimize duty payments." },
+              { title: "Inventory Management", desc: "Real-time WMS-based tracking of FTWZ inventory with automated duty reconciliation and MIS reporting." },
+              { title: "FTWZ Duty-Free Storage", desc: "Zero duty, zero GST storage within the FTWZ for goods intended for re-export or value-added processing." },
+            ].map((item, i) => (
+              <ScrollReveal key={item.title} delay={i * 0.08}>
+                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
+                  <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>

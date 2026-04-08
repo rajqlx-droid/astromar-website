@@ -105,6 +105,36 @@ const SupplyChain = () => {
         </div>
       </section>
 
+      {/* Domestic Distribution */}
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container px-4">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">DOMESTIC LOGISTICS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
+              Pan-India Distribution Network
+            </h2>
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
+              Our domestic transport and distribution capabilities connect your supply chain from port to end customer across India.
+            </p>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            {[
+              { icon: Truck, title: "Domestic Transportation", desc: "Full truckload (FTL) and part truckload (PTL) services across India with GPS-tracked fleet and real-time delivery updates." },
+              { icon: Package, title: "Last-Mile Delivery", desc: "Hyper-local delivery networks in metro and Tier-2 cities with same-day and next-day options for B2B and B2C shipments." },
+              { icon: Globe, title: "Pan-India Distribution", desc: "Multi-modal distribution network covering 500+ cities. From major ports and FTWZs to factory gates and retail outlets nationwide." },
+            ].map((item, i) => (
+              <ScrollReveal key={item.title} delay={i * 0.08}>
+                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                  <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 sm:py-20 bg-brand-light">
         <div className="container px-4 text-center">

@@ -25,7 +25,7 @@ const resourceLinks = [
   { label: "Tools", href: "/freight-intelligence" },
   { label: "FTWZ Guide", href: "/ftwz-services" },
   { label: "Duty Calculator", href: "/freight-intelligence" },
-  { label: "FAQs", href: "#" },
+  { label: "FAQs", href: "/ftwz-services#faq" },
 ];
 
 const Footer = () => {

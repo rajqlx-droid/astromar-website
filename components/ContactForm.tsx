@@ -83,20 +83,33 @@ const ContactForm = () => {
             <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
               <div>
                 <label className="block text-sm font-semibold text-foreground mb-2">Service Required</label>
-                <input type="text" placeholder="e.g. FTWZ Warehousing, Sea Freight" value={form.service} onChange={(e) => update("service", e.target.value)} maxLength={200} className={inputClass} />
+                <select value={form.service} onChange={(e) => update("service", e.target.value)} className={inputClass}>
+                  <option value="">Select a service</option>
+                  <option value="FTWZ Warehousing">FTWZ Warehousing</option>
+                  <option value="Ocean Freight (FCL)">Ocean Freight (FCL)</option>
+                  <option value="Ocean Freight (LCL)">Ocean Freight (LCL)</option>
+                  <option value="Air Freight">Air Freight</option>
+                  <option value="Coastal Shipping">Coastal Shipping</option>
+                  <option value="Custom Clearance">Custom Clearance</option>
+                  <option value="Supply Chain & Distribution">Supply Chain &amp; Distribution</option>
+                  <option value="Project & Specialized Cargo">Project &amp; Specialized Cargo</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
               <div>
                 <label className="block text-sm font-semibold text-foreground mb-2">FTWZ Location</label>
                 <select value={form.location} onChange={(e) => update("location", e.target.value)} className={inputClass}>
                   <option value="">Select a location</option>
-                  <option value="Chennai">Chennai</option>
-                  <option value="Delhi">Delhi</option>
-                  <option value="Mumbai">Mumbai</option>
-                  <option value="Mundra">Mundra</option>
+                  <option value="Chennai (Anna Nagar HQ)">Chennai (Anna Nagar HQ)</option>
+                  <option value="Chennai (Sriperumbudur)">Chennai (Sriperumbudur)</option>
+                  <option value="Chennai (Vallur)">Chennai (Vallur)</option>
                   <option value="Kochi">Kochi</option>
-                  <option value="Bangalore">Bangalore</option>
                   <option value="Vizag">Vizag</option>
-                  <option value="Kolkata">Kolkata</option>
+                  <option value="Mumbai (Panvel)">Mumbai (Panvel)</option>
+                  <option value="Mumbai (JNPA)">Mumbai (JNPA)</option>
+                  <option value="Delhi (Khurja)">Delhi (Khurja)</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Dahej">Dahej</option>
                 </select>
               </div>
             </div>

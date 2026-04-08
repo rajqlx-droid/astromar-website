@@ -18,11 +18,11 @@ const services = [
 ];
 
 const sectors = [
-  { title: "Oil & Gas", desc: "Offshore platform components, pipeline materials, refinery equipment, and LNG plant modules with specialized rigging and transport." },
+  { title: "Automotive & Manufacturing", desc: "Press lines, CNC machinery, robotic assembly systems, stamping equipment, and production line components for automotive OEMs and tier-1 suppliers." },
   { title: "Power & Energy", desc: "Turbines, boilers, transformers, solar panels, and wind energy components including nacelles, towers, and blades." },
   { title: "Infrastructure", desc: "Pre-cast concrete segments, steel structures, bridge girders, and metro rail components for national infrastructure projects." },
   { title: "Mining & Metals", desc: "Excavators, crushers, conveyor systems, and process plant equipment for mining and metal processing facilities." },
-  { title: "Petrochemicals", desc: "Reactors, distillation columns, heat exchangers, and pressure vessels for refinery and petrochemical complexes." },
+  { title: "Pharmaceuticals & Healthcare", desc: "GDP-compliant transport of manufacturing equipment, cold chain infrastructure, bioreactors, and cleanroom installations for pharma and medical device facilities." },
   { title: "Defence & Aerospace", desc: "Classified cargo handling with security escorts, restricted area delivery, and compliance with defence procurement protocols." },
 ];
 

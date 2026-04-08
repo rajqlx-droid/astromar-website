@@ -23,8 +23,8 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Headquarters",
-    value: "Chennai, Tamil Nadu, India",
-    href: "https://maps.google.com/?q=Chennai,Tamil+Nadu,India",
+    value: "No. 922, 1st Floor, H-Block, 17th Main Road, Anna Nagar, Chennai – 600 040, Tamil Nadu, India",
+    href: "https://maps.google.com/?q=No.+922,+H-Block,+17th+Main+Road,+Anna+Nagar,+Chennai+600040",
   },
   {
     icon: Clock,

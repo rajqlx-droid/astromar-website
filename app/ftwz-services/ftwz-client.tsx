@@ -1,5 +1,5 @@
 "use client"
-import { CheckCircle2, ArrowRight, Warehouse, Snowflake, Globe, FileCheck, Thermometer, BarChart3 } from "lucide-react";
+import { CheckCircle2, ArrowRight, Warehouse, Snowflake, Globe, FileCheck, Thermometer, BarChart3, Package } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -25,7 +25,7 @@ const solutions = [
   { icon: Globe, title: "Re-export Hub", desc: "Consolidate and re-export globally with zero duty, leveraging India's FTWZ cost advantage." },
   { icon: FileCheck, title: "Partial Clearance", desc: "Clear portions of inventory domestically while keeping the rest duty-free, optimizing timing and cash flow." },
   { icon: Thermometer, title: "Pharma Logistics", desc: "GDP-compliant storage and distribution for pharmaceutical products with full cold chain integrity." },
-  { icon: BarChart3, title: "Trade Compliance", desc: "Automated customs documentation, HS code classification, and regulatory compliance management." },
+  { icon: Package, title: "Project & Specialized Cargo", desc: "End-to-end handling of ODC, heavy lift, and break-bulk cargo with route surveys, permits, and specialized equipment." },
 ];
 
 const FTWZServices = () => {

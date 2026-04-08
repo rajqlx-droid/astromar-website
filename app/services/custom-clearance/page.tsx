@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import {
   ClipboardCheck, FileCheck, Shield, Clock, Globe, ArrowRight,
-  CheckCircle2, AlertTriangle, BarChart3, Scale,
+  CheckCircle2, AlertTriangle, BarChart3, Scale, Plane,
 } from "lucide-react";
 
 const services = [
@@ -130,6 +130,34 @@ const CustomClearance = () => {
                   <span className="text-3xl font-extrabold text-primary/20 mb-2 block">{p.step}</span>
                   <h3 className="text-base font-bold text-foreground mb-2">{p.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Coverage */}
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container px-4">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">CLEARANCE COVERAGE</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+              Where We Clear Your Cargo
+            </h2>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+            {[
+              { icon: Plane, title: "Air Customs Clearance", desc: "Full import and export customs clearance at all major Indian international airports including Chennai, Mumbai, Delhi, Bengaluru, and Hyderabad." },
+              { icon: Globe, title: "Sea Customs Clearance", desc: "Customs brokerage at all major Indian seaports — Chennai, JNPA, Mundra, Vizag, Cochin, Tuticorin, Haldia, and more." },
+              { icon: Shield, title: "Land Border Clearance", desc: "Cross-border customs clearance at land ICDs and integrated check posts for trade with Nepal, Bangladesh, and Bhutan." },
+              { icon: ClipboardCheck, title: "Trade Compliance Management", desc: "End-to-end compliance across import/export regulations, licensing, EXIM policy advisory, and duty optimization." },
+            ].map((item, i) => (
+              <ScrollReveal key={item.title} delay={i * 0.08}>
+                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
+                  <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
               </ScrollReveal>
             ))}

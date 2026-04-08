@@ -7,14 +7,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import {
   Ship, Anchor, MapPin, Clock, Shield, Leaf, BarChart3, ArrowRight,
-  CheckCircle2, Globe, Truck, Package,
+  CheckCircle2, Globe, Truck, Package, IndianRupee,
 } from "lucide-react";
 
 const highlights = [
-  { icon: Leaf, title: "Eco-Friendly Transport", desc: "Up to 60% lower carbon emissions compared to road freight, supporting your sustainability goals and ESG compliance." },
-  { icon: BarChart3, title: "Cost-Effective", desc: "Save 30–40% on transportation costs compared to road haulage for bulk and heavy cargo movements." },
-  { icon: Shield, title: "Safe & Secure", desc: "GPS-tracked vessels with real-time monitoring, insurance coverage, and dedicated cargo handling at every port." },
-  { icon: Clock, title: "Reliable Schedules", desc: "Fixed sailing schedules across major Indian ports with predictable transit times and ETAs." },
+  { icon: Clock, title: "Increased Reliability", desc: "Coastal shipping operates 24/7/365 and is less affected by traffic congestion, fuel price fluctuations, and weather disruptions — making it a more reliable means of transporting goods compared to road transport." },
+  { icon: IndianRupee, title: "Cost Effective", desc: "One vessel can transport the equivalent of 700 truckloads. Optimised vessel utilisation enables large-scale operations, significantly reducing transportation costs while providing flexible door-to-door solutions." },
+  { icon: Leaf, title: "Sustainable Alternative", desc: "Coastal transportation results in almost 47% lower CO2 emissions compared to road transport, making a greener choice for bulk cargo movement across India's coastline." },
+  { icon: Shield, title: "Safer Mode of Transport", desc: "Expenses associated with accidents and cargo damage are significantly lower on sea routes compared to road transportation, ensuring better safety and reduced risk for your shipments." },
 ];
 
 const routes = [

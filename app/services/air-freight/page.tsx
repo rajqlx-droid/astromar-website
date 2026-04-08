@@ -26,6 +26,9 @@ const capabilities = [
   "Consolidation and deconsolidation",
   "Bonded warehouse storage at origin/destination",
   "Specialized packaging and crating",
+  "EXW, DAP, and DDP shipment execution",
+  "Specialized & project cargo handling",
+  "International freight forwarding (air & sea)",
 ];
 
 const destinations = [

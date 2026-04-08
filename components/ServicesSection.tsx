@@ -1,14 +1,14 @@
 ﻿"use client"
 import {
   FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box, Combine,
-  CheckCircle2, Warehouse, Globe, FileCheck, Thermometer, BarChart3, ArrowRight,
+  CheckCircle2, Warehouse, Globe, FileCheck, Thermometer, BarChart3, ArrowRight, Package,
 } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 import { Button } from "@/components/ui/button";
 
 const services = [
-  { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/services/ftwz" },
+  { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/ftwz-services" },
   { icon: Ship, title: "Coastal Shipping", desc: "Domestic coastal cargo movement along India's extensive coastline, offering cost-effective and eco-friendly transport alternatives.", href: "/services/coastal-shipping" },
   { icon: Ship, title: "Ocean Freight", desc: "Full container load (FCL) and less than container load (LCL) ocean freight services across major global trade routes.", href: "/services/ocean-freight" },
   { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/services/air-freight" },
@@ -21,7 +21,7 @@ const services = [
 const benefits = [
   { title: "100% Duty & GST Deferment", desc: "Store imported goods indefinitely without paying customs duty or GST, improving working capital and cash flow." },
   { title: "Re-export Without Duty", desc: "Re-export goods globally without duty or GST, maximizing margin on export-oriented businesses." },
-  { title: "Flexible Domestic Clearance", desc: "Clear goods domestically at any time â€” pay duty only when needed, deferring compliance costs." },
+  { title: "Flexible Domestic Clearance", desc: "Clear goods domestically at any time - pay duty only when needed, deferring compliance costs." },
   { title: "Value-Added Services", desc: "Repacking, labeling, kitting, quality inspection, and consolidation under one roof." },
   { title: "Cold Storage Integration", desc: "Dedicated cold storage zones for pharma, food, and perishables with full temperature control." },
   { title: "Real-Time Inventory Tracking", desc: "AI-powered inventory management with live tracking, automated reporting, and compliance documentation." },
@@ -29,11 +29,11 @@ const benefits = [
 
 const solutions = [
   { icon: Warehouse, title: "General FTWZ Storage", desc: "High-security bonded warehousing for electronics, textiles, machinery, and general cargo with flexible tenure." },
-  { icon: Snowflake, title: "Cold Chain Storage", desc: "2â€“8Â°C, -20Â°C, and ambient zones for pharma, biologics, food, and perishables with GDP certification." },
+  { icon: Snowflake, title: "Cold Chain Storage", desc: "2-8 degrees C, -20 degrees C, and ambient zones for pharma, biologics, food, and perishables with GDP certification." },
   { icon: Globe, title: "Re-export Hub", desc: "Consolidate and re-export globally with zero duty, leveraging India's FTWZ cost advantage." },
   { icon: FileCheck, title: "Partial Clearance", desc: "Clear portions of inventory domestically while keeping the rest duty-free, optimizing timing and cash flow." },
   { icon: Thermometer, title: "Pharma Logistics", desc: "GDP-compliant storage and distribution for pharmaceutical products with full cold chain integrity." },
-  { icon: BarChart3, title: "Trade Compliance", desc: "Automated customs documentation, HS code classification, and regulatory compliance management." },
+  { icon: Package, title: "Project & Specialized Cargo", desc: "End-to-end handling of ODC, heavy lift, and break-bulk cargo with route surveys, permits, and specialized equipment." },
 ];
 
 const ServicesSection = () => {
@@ -95,7 +95,7 @@ const ServicesSection = () => {
             </h2>
             <p className="text-muted-foreground max-w-4xl leading-relaxed text-base sm:text-lg mb-8">
               FTWZ Warehousing is India's most flexible duty-free warehousing solution, enabling importers and
-              exporters to store goods without paying customs duty or GST â€” until final disposition. Whether
+              exporters to store goods without paying customs duty or GST – until final disposition. Whether
               you're re-exporting, consolidating shipments, or deferring domestic clearance, AstroMar's pan-India
               FTWZ network provides compliant, secure storage with value-added services like repacking,
               labeling, and kitting.
@@ -172,5 +172,8 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
+
+
+
 
 

@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 
 const stats = [
   { value: "7+", label: "Years of Excellence" },
-  { value: "9+", label: "FTWZ Locations" },
+  { value: "8+", label: "FTWZ Locations" },
   { value: "500+", label: "Clients Served" },
   { value: "₹2000Cr+", label: "Cargo Handled" },
 ];
@@ -28,21 +28,20 @@ const coreValues = [
 const milestones = [
   { year: "2017", title: "Founded", desc: "Astromar established in Chennai with a vision to transform India's FTWZ landscape." },
   { year: "2018", title: "First FTWZ Facility", desc: "Launched our first Free Trade Warehousing Zone facility near Chennai port." },
-  { year: "2019", title: "Pan-India Expansion", desc: "Expanded operations to Mumbai (JNPT), Mundra, and Cochin." },
-  { year: "2020", title: "Cold Chain Launch", desc: "Introduced GDP-compliant cold storage for pharma & perishable logistics." },
-  { year: "2021", title: "Technology Platform", desc: "Deployed real-time inventory management and customs automation systems." },
-  { year: "2022", title: "9 Locations", desc: "Achieved pan-India coverage with 9 strategic FTWZ locations." },
-  { year: "2023", title: "Industry Recognition", desc: "Recognized among India's top FTWZ operators by trade industry bodies." },
-  { year: "2024", title: "Digital Transformation", desc: "Launched AI-powered logistics optimization and customer self-service portal." },
+  { year: "2019", title: "Pan-India Expansion", desc: "Expanded operations to Mumbai (JNPA) and Cochin." },
+  { year: "2021", title: "Technology Platform", desc: "Deployed real-time inventory management systems." },
+  { year: "2022", title: "7 Locations", desc: "Achieved pan-India coverage with 7 operational FTWZ warehouse locations across key port cities." },
+  { year: "2023", title: "Industry Recognition", desc: "Recognized among India's leading FTWZ operators for service excellence and compliance standards." },
+  { year: "2024", title: "Cold Chain Launch", desc: "Introduced GDP-compliant cold storage facilities at Chennai and Mumbai locations." },
+  { year: "2026", title: "Bengaluru Expansion", desc: "Launched new FTWZ warehouse at Devanahalli Aerospace SEZ, Bengaluru, strengthening South India logistics network." },
 ];
 
 const certifications = [
-  "AEO (Authorized Economic Operator)",
-  "ISO 9001:2015 Quality Management",
-  "GDP Compliant Cold Storage",
-  "FSSAI Licensed Facilities",
-  "Customs Bonded Warehouse License",
-  "SEZ/FTWZ Approved Developer",
+  { title: "FTWZ Licence", desc: "Free Trade Warehousing Zone operational licence" },
+  { title: "MSME Licence", desc: "Registered Micro, Small & Medium Enterprise" },
+  { title: "MTO Licence", desc: "Multimodal Transport Operator licence" },
+  { title: "RCMC Membership", desc: "Registration Cum Membership Certificate for SEZ & FTWZ" },
+  { title: "JC Trans Membership", desc: "Industry association membership for logistics & freight" },
 ];
 
 const About = () => {
@@ -195,10 +194,13 @@ const About = () => {
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {certifications.map((cert, i) => (
-              <ScrollReveal key={cert} delay={i * 0.06}>
-                <div className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 sm:p-5 shadow-sm">
-                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0" />
-                  <span className="text-foreground font-medium text-sm sm:text-base">{cert}</span>
+              <ScrollReveal key={cert.title} delay={i * 0.06}>
+                <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-4 sm:p-5 shadow-sm">
+                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-foreground font-semibold text-sm sm:text-base">{cert.title}</p>
+                    <p className="text-muted-foreground text-xs sm:text-sm mt-0.5">{cert.desc}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}
