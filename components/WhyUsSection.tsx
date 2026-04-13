@@ -30,7 +30,7 @@ const WhyUsSection = () => {
     <section className="py-20 bg-background">
       <div className="container px-4">
         <ScrollReveal>
-          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">
+          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
             OUR COMMITMENT
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-12">

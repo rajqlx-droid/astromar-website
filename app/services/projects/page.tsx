@@ -61,9 +61,9 @@ const Projects = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="container px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">PROJECT CARGO</p>
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">PROJECT CARGO</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
               Project Cargo & Heavy-Lift Logistics
             </h1>
@@ -83,9 +83,9 @@ const Projects = () => {
 
       {/* Services */}
       <section className="py-16 sm:py-20 bg-background">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">OUR SERVICES</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">OUR SERVICES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               Project Logistics Solutions
             </h2>
@@ -106,9 +106,9 @@ const Projects = () => {
 
       {/* Sectors */}
       <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">SECTORS</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">SECTORS</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               Industry Sectors We Serve
             </h2>
@@ -128,9 +128,9 @@ const Projects = () => {
 
       {/* Capabilities */}
       <section className="py-16 sm:py-20 bg-background">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">CAPABILITIES</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">CAPABILITIES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               End-to-End Project Capabilities
             </h2>
@@ -150,7 +150,7 @@ const Projects = () => {
 
       {/* CTA */}
       <section className="py-16 sm:py-20 bg-brand-light">
-        <div className="container px-4 text-center">
+        <div className="max-w-2xl mx-auto text-center px-6 py-16">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Have a Complex Cargo Challenge?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">

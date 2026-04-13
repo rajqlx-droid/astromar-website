@@ -41,7 +41,7 @@ const ContactPage = () => {
 
       {/* Hero */}
       <section className="bg-brand-navy py-16 sm:py-24">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <span className="block text-sm font-bold tracking-[0.2em] text-accent uppercase mb-4">
             GET IN TOUCH
           </span>
@@ -57,7 +57,7 @@ const ContactPage = () => {
 
       {/* Contact detail cards */}
       <section className="py-16 sm:py-20 bg-background">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">
               REACH US DIRECTLY
@@ -103,7 +103,7 @@ const ContactPage = () => {
 
       {/* CTA strip */}
       <section className="py-14 bg-brand-navy">
-        <div className="container px-4 text-center">
+        <div className="max-w-2xl mx-auto text-center px-6 py-16">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-primary-foreground mb-3">
               Prefer to Explore First?

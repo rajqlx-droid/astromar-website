@@ -55,9 +55,9 @@ const CoastalShipping = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="container px-4 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
               COASTAL SHIPPING
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
@@ -79,9 +79,9 @@ const CoastalShipping = () => {
 
       {/* Why Coastal Shipping */}
       <section className="py-16 sm:py-20 bg-background">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">WHY COASTAL SHIPPING</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">WHY COASTAL SHIPPING</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               The Smarter Way to Move Cargo Domestically
             </h2>
@@ -102,9 +102,9 @@ const CoastalShipping = () => {
 
       {/* Route Network */}
       <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">ROUTE NETWORK</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">ROUTE NETWORK</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               Key Coastal Shipping Routes
             </h2>
@@ -131,9 +131,9 @@ const CoastalShipping = () => {
 
       {/* Cargo Types */}
       <section className="py-16 sm:py-20 bg-background">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">CARGO TYPES</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">CARGO TYPES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               What We Ship Coastally
             </h2>
@@ -154,7 +154,7 @@ const CoastalShipping = () => {
 
       {/* CTA */}
       <section className="py-16 sm:py-20 bg-brand-light">
-        <div className="container px-4 text-center">
+        <div className="max-w-2xl mx-auto text-center px-6 py-16">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Ready to Ship Coastally?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">

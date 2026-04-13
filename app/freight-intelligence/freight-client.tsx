@@ -941,7 +941,7 @@ const FreightIntelligence = () => {
 
       {/* Hero */}
       <section className="bg-brand-navy py-10 sm:py-16 text-center">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -973,7 +973,7 @@ const FreightIntelligence = () => {
 
       {/* Tabs */}
       <div className="sticky top-0 z-20 bg-background border-b border-border shadow-sm">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <div className="flex overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
             {tabs.map((tab) => (
               <button
@@ -1051,7 +1051,7 @@ const FreightIntelligence = () => {
 
       {/* FAQ */}
       <section className="py-12 sm:py-16 bg-muted/30">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground text-center mb-10">
               Frequently Asked Questions
@@ -1078,7 +1078,7 @@ const FreightIntelligence = () => {
 
       {/* SEO Content */}
       <section className="py-12 sm:py-16 bg-background">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <div className="max-w-4xl mx-auto space-y-10">
             <ScrollReveal>
               <div>

@@ -42,7 +42,7 @@ const ContactForm = () => {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container max-w-3xl px-4">
         <ScrollReveal>
-          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">
+          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
             GET IN TOUCH
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-12">

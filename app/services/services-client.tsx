@@ -32,9 +32,9 @@ const Services = () => {
 
       {/* Hero */}
       <section className="py-20 bg-brand-light">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
               WHAT WE OFFER
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4">

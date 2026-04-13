@@ -1,9 +1,9 @@
-const ftwzImg = "/blog/ftwz-guide.jpg";
-const cbmImg = "/blog/cbm-calculation.jpg";
-const dutyImg = "/blog/customs-duty.jpg";
-const coldImg = "/blog/cold-chain.jpg";
-const airSeaImg = "/blog/air-vs-sea.jpg";
-const landedImg = "/blog/landed-cost.jpg";
+const ftwzImg = "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800";
+const cbmImg = "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800";
+const dutyImg = "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800";
+const coldImg = "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=800";
+const airSeaImg = "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800";
+const landedImg = "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800";
 
 export interface BlogFAQ {
   question: string;

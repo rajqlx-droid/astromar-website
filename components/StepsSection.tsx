@@ -23,7 +23,7 @@ const steps = [
 const StepsSection = () => {
   return (
     <section className="py-20 bg-background">
-      <div className="container px-4">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
         <ScrollReveal>
           <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
             HOW IT WORKS

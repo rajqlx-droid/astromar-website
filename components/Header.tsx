@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border">
-      <div className="container flex h-20 items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex h-20 items-center justify-between w-full">
         <Link href="/" className="flex items-center">
           <Image
             src="https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hMDU2NTM0My1hNjA2LTRkNTItOTRjNC00OTZiMmQ3YTNmZDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCUkFORCBBU1NFVFMvMDAxLnBuZyIsImlhdCI6MTc3NTU0OTQwNCwiZXhwIjoxODM4NjIxNDA0fQ.jgeDhDostzqz1pdHBSMMSoRBb_eG-G2MLkJY6MVCR_w"
@@ -56,7 +56,7 @@ const Header = () => {
           )}
           <ThemeToggle />
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
           >
             Get a Quote
@@ -102,7 +102,7 @@ const Header = () => {
               )
             )}
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
               onClick={() => setOpen(false)}
             >

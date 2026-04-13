@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
     <section className="py-20 bg-muted/50">
       <div className="container px-4">
         <ScrollReveal>
-          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3 text-center">
+          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
             TRUSTED BY INDUSTRY LEADERS
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4 text-center">

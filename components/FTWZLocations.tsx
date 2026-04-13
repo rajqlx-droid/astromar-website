@@ -36,9 +36,9 @@ const FTWZLocations = () => {
 
   return (
     <section className="py-20 bg-background">
-      <div className="container max-w-6xl px-4">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12">
         <ScrollReveal>
-          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">
+          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
             OUR FTWZ NETWORK
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-4">
@@ -59,7 +59,7 @@ const FTWZLocations = () => {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <div className="mb-10 rounded-xl overflow-hidden border border-border shadow-md">
+          <div className="mb-10 w-full rounded-xl overflow-hidden border border-border shadow-md" style={{height:'500px'}}>
             <FTWZMap locations={filteredLocations} activeCity={activeCity} onMarkerClick={setActiveCity} />
           </div>
         </ScrollReveal>

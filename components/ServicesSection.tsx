@@ -41,9 +41,9 @@ const ServicesSection = () => {
     <>
       {/* Services Grid */}
       <section id="services" className="py-20 bg-brand-light">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
               WHAT WE OFFER
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-4">
@@ -83,17 +83,23 @@ const ServicesSection = () => {
         </div>
       </section>
 
-      {/* FTWZ Overview */}
-      <section id="ftwz" className="py-16 sm:py-20 bg-background">
-        <div className="container px-4">
+      {/* FTWZ Overview — image with overlay and text */}
+      <section id="ftwz" className="relative overflow-hidden min-h-[500px] flex items-center">
+        <img
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
+          alt="FTWZ bonded warehouse facility India – Astromar Logistics"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-white/70 uppercase mb-3">
               FTWZ WAREHOUSING
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-6 max-w-4xl leading-tight">
               FTWZ Warehousing Services in India | Duty-Free Storage Solutions
             </h2>
-            <p className="text-muted-foreground max-w-4xl leading-relaxed text-base sm:text-lg mb-8">
+            <p className="text-white/80 max-w-4xl leading-relaxed text-base sm:text-lg mb-8">
               FTWZ Warehousing is India's most flexible duty-free warehousing solution, enabling importers and
               exporters to store goods without paying customs duty or GST – until final disposition. Whether
               you're re-exporting, consolidating shipments, or deferring domestic clearance, AstroMar's pan-India
@@ -109,18 +115,11 @@ const ServicesSection = () => {
         </div>
       </section>
 
-      {/* Warehouse Banner */}
-      <section className="relative">
-        <div className="h-[300px] sm:h-[400px] md:h-[500px] bg-brand-navy flex items-center justify-center">
-          <p className="text-primary-foreground/40 text-lg font-semibold">FTWZ Warehouse Facility</p>
-        </div>
-      </section>
-
       {/* Key Benefits */}
       <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">
               KEY BENEFITS
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
@@ -144,9 +143,9 @@ const ServicesSection = () => {
 
       {/* Comprehensive Solutions */}
       <section className="py-16 sm:py-20 bg-background">
-        <div className="container px-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">
               OUR SOLUTIONS
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
