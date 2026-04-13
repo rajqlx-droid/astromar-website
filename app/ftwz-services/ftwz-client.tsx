@@ -1,5 +1,6 @@
 "use client"
 import { CheckCircle2, ArrowRight, Warehouse, Snowflake, Globe, FileCheck, Thermometer, BarChart3, Package } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -35,8 +36,17 @@ const FTWZServices = () => {
       <Header />
 
       {/* Hero */}
-      <section className="bg-brand-navy py-16 sm:py-24 md:py-32">
-        <div className="container px-4">
+      <section className="relative bg-brand-navy py-16 sm:py-24 md:py-32 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600"
+          alt="Warehouse facility"
+          fill
+          className="absolute inset-0 object-cover"
+          unoptimized
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container px-4 relative z-10">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

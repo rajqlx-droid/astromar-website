@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Mail, Phone, MapPin } from "lucide-react";
 
@@ -39,9 +40,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <p className="text-xl font-extrabold text-primary-foreground mb-4">
-              {isFTWZ ? "AstroMar Free Zone" : "AstroMar Logistics"}
-            </p>
+            <Image
+              src="https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hMDU2NTM0My1hNjA2LTRkNTItOTRjNC00OTZiMmQ3YTNmZDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCUkFORCBBU1NFVFMvMDAxLnBuZyIsImlhdCI6MTc3NTU0OTQwNCwiZXhwIjoxODM4NjIxNDA0fQ.jgeDhDostzqz1pdHBSMMSoRBb_eG-G2MLkJY6MVCR_w"
+              alt="Astromar Logistics"
+              width={160}
+              height={48}
+              className="h-10 w-auto object-contain mb-4"
+              unoptimized
+            />
             <p className="text-sm leading-relaxed mb-6">
               ASTROMAR LOGISTICS PVT LTD – India's leading FTWZ provider offering duty-free warehousing, customs clearance, and integrated logistics solutions.
             </p>

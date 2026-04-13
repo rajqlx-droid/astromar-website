@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   Plane, Clock, Shield, Zap, Globe, Package, Thermometer, FileCheck,
   ArrowRight, CheckCircle2, BarChart3,
@@ -50,8 +51,17 @@ const AirFreight = () => {
       <Header />
 
       {/* Hero */}
-      <section className="py-20 bg-brand-light">
-        <div className="container px-4">
+      <section className="relative py-20 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600"
+          alt="Cargo aircraft"
+          fill
+          className="absolute inset-0 object-cover"
+          unoptimized
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container px-4 relative z-10">
           <ScrollReveal>
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">AIR FREIGHT</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">

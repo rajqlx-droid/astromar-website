@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   Box, Truck, Shield, Clock, Globe, ArrowRight, CheckCircle2,
   Anchor, Settings, FileCheck, Ruler, Construction,
@@ -50,8 +51,17 @@ const Projects = () => {
       <Header />
 
       {/* Hero */}
-      <section className="py-20 bg-brand-light">
-        <div className="container px-4">
+      <section className="relative py-20 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600"
+          alt="Heavy lift crane and industrial cargo"
+          fill
+          className="absolute inset-0 object-cover"
+          unoptimized
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container px-4 relative z-10">
           <ScrollReveal>
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">PROJECT CARGO</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">

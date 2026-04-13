@@ -1,15 +1,22 @@
 "use client"
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center">
-      <div className="absolute inset-0 bg-brand-navy">
-        <div className="absolute inset-0 bg-brand-navy/80" />
-      </div>
+    <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+      <Image
+        src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
+        alt="Container port aerial view"
+        fill
+        className="absolute inset-0 z-0 object-cover w-full h-full"
+        unoptimized
+        priority
+      />
+      <div className="absolute inset-0 bg-black/60 z-10" />
 
-      <div className="container relative z-10 py-20 px-4">
+      <div className="container relative z-20 py-20 px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

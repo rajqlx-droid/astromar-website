@@ -1,5 +1,6 @@
 "use client"
 import { Eye, Target, Shield, Globe, UserCheck, TrendingUp, Medal, Clock, CheckCircle2, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -51,8 +52,17 @@ const About = () => {
       <Header />
 
       {/* Hero */}
-      <section className="bg-brand-navy py-16 sm:py-24">
-        <div className="container px-4">
+      <section className="relative bg-brand-navy py-16 sm:py-24 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600"
+          alt="Business and logistics team"
+          fill
+          className="absolute inset-0 object-cover"
+          unoptimized
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container px-4 relative z-10">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

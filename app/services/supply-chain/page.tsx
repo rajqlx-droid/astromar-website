@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   GitBranch, BarChart3, Package, Truck, Globe, Shield, Clock, ArrowRight,
   CheckCircle2, Settings, Layers, Warehouse,
@@ -39,8 +40,17 @@ const SupplyChain = () => {
       <Header />
 
       {/* Hero */}
-      <section className="py-20 bg-brand-light">
-        <div className="container px-4">
+      <section className="relative py-20 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1600"
+          alt="Supply chain and logistics"
+          fill
+          className="absolute inset-0 object-cover"
+          unoptimized
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container px-4 relative z-10">
           <ScrollReveal>
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary text-center mb-3">SUPPLY CHAIN</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
