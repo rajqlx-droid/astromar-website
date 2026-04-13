@@ -16,7 +16,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-black/60 z-10" />
 
-      <div className="container relative z-20 py-20 px-4">
+      <div className="container relative z-20 py-20 px-6 sm:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
