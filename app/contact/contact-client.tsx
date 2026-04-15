@@ -98,8 +98,8 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Contact Form — reuses the existing ContactForm component */}
-      <ContactForm />
+      {/* Contact Form — info strip hidden here since contact cards above already cover it */}
+      <ContactForm showInfoStrip={false} />
 
       {/* CTA strip */}
       <section className="py-14 bg-brand-navy">
