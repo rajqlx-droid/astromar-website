@@ -35,13 +35,13 @@ const FTWZLocations = () => {
   }, [searchQuery]);
 
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12">
+    <section className="py-14 bg-background">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <ScrollReveal>
-          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
+          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-2">
             OUR FTWZ NETWORK
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-6">
             Strategically Located Across India
           </h2>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-6">

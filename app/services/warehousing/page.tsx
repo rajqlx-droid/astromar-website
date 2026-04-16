@@ -81,11 +81,11 @@ const Warehousing = () => {
       </section>
 
       {/* Solutions */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">SOLUTIONS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">SOLUTIONS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Warehousing Solutions
             </h2>
           </ScrollReveal>
@@ -104,11 +104,11 @@ const Warehousing = () => {
       </section>
 
       {/* Features */}
-      <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16 py-12">
+      <section className="py-14 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">FACILITY FEATURES</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">FACILITY FEATURES</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               World-Class Warehouse Infrastructure
             </h2>
           </ScrollReveal>
@@ -126,11 +126,11 @@ const Warehousing = () => {
       </section>
 
       {/* Locations */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">LOCATIONS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">LOCATIONS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Our Warehouse Network
             </h2>
           </ScrollReveal>
@@ -154,14 +154,14 @@ const Warehousing = () => {
       </section>
 
       {/* FTWZ Services */}
-      <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">FTWZ WAREHOUSING</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">FTWZ WAREHOUSING</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Free Trade Warehousing Zone Services
             </h2>
-            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-6 text-sm leading-relaxed">
               In addition to standard warehousing, we offer FTWZ-specific storage solutions with significant duty and tax advantages.
             </p>
           </ScrollReveal>
@@ -184,8 +184,8 @@ const Warehousing = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-brand-light">
-        <div className="max-w-2xl mx-auto text-center px-6 py-16">
+      <section className="py-14 bg-brand-light">
+        <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Find Your Ideal Warehouse</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">

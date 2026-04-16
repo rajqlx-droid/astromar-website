@@ -40,13 +40,13 @@ const ServicesSection = () => {
   return (
     <>
       {/* Services Grid */}
-      <section id="services" className="py-20 bg-brand-light">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section id="services" className="py-14 bg-brand-light">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-2">
               WHAT WE OFFER
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-6">
               Comprehensive Logistics Services
             </h2>
             <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm md:text-base">
@@ -93,7 +93,7 @@ const ServicesSection = () => {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-white/70 uppercase mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-white/70 uppercase mb-2">
               FTWZ WAREHOUSING
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-6 max-w-4xl leading-tight">
@@ -116,13 +116,13 @@ const ServicesSection = () => {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
               KEY BENEFITS
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Why Choose Our FTWZ Warehousing?
             </h2>
           </ScrollReveal>
@@ -142,13 +142,13 @@ const ServicesSection = () => {
       </section>
 
       {/* Comprehensive Solutions */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
               OUR SOLUTIONS
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Comprehensive FTWZ Warehousing Solutions
             </h2>
           </ScrollReveal>

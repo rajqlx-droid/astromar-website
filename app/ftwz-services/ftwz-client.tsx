@@ -46,7 +46,7 @@ const FTWZServices = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20 relative z-10">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -75,8 +75,8 @@ const FTWZServices = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
               Overview
@@ -98,13 +98,13 @@ const FTWZServices = () => {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
               KEY BENEFITS
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Why Choose Our FTWZ Warehousing?
             </h2>
           </ScrollReveal>
@@ -124,13 +124,13 @@ const FTWZServices = () => {
       </section>
 
       {/* Comprehensive Solutions */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
               OUR SOLUTIONS
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Comprehensive FTWZ Warehousing Solutions
             </h2>
           </ScrollReveal>
@@ -150,8 +150,8 @@ const FTWZServices = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-brand-navy">
-        <div className="max-w-2xl mx-auto text-center px-6 py-16">
+      <section className="py-14 bg-brand-navy">
+        <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
               Ready to Leverage FTWZ for Your Business?

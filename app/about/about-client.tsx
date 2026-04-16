@@ -62,7 +62,7 @@ const About = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20 relative z-10">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -93,8 +93,8 @@ const About = () => {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <ScrollReveal direction="left">
               <div className="rounded-xl bg-gradient-to-br from-primary to-brand-navy p-8 sm:p-10 h-full text-primary-foreground">
@@ -126,8 +126,8 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {coreValues.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.08}>
@@ -143,11 +143,11 @@ const About = () => {
       </section>
 
       {/* Milestones Timeline */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">OUR JOURNEY</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR JOURNEY</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Milestones &amp; Growth
             </h2>
           </ScrollReveal>
@@ -194,11 +194,11 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">TRUST &amp; COMPLIANCE</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">TRUST &amp; COMPLIANCE</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Certifications &amp; Accreditations
             </h2>
           </ScrollReveal>
@@ -219,8 +219,8 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-brand-navy">
-        <div className="max-w-2xl mx-auto text-center px-6 py-16">
+      <section className="py-14 bg-brand-navy">
+        <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
               Ready to Optimize Your Trade Operations?
@@ -242,8 +242,8 @@ const About = () => {
       </section>
 
       {/* Stats */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {stats.map((stat, i) => (
               <motion.div

@@ -58,7 +58,7 @@ const Blog = () => {
 
       {/* Category Filter Tabs */}
       <section className="bg-background border-b border-border sticky top-0 z-30">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="flex items-center gap-2 overflow-x-auto py-4 scrollbar-hide -mx-1 px-1">
             {categories.map((cat) => (
               <button
@@ -79,8 +79,8 @@ const Blog = () => {
 
       {/* Featured Hero Post + Side Cards */}
       {hasFeatured && (
-        <section className="py-16 sm:py-20">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+        <section className="py-14">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <div className="grid lg:grid-cols-5 gap-6">
               {/* Large hero card with thumbnail */}
               <ScrollReveal className="lg:col-span-3">
@@ -169,8 +169,8 @@ const Blog = () => {
 
       {/* All / Filtered Posts Grid */}
       {rest.length > 0 && (
-        <section className={hasFeatured ? "pb-20" : "py-16 sm:py-20"}>
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+        <section className={hasFeatured ? "pb-14" : "py-14"}>
+          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <ScrollReveal>
               <div className="flex items-center gap-4 mb-10">
                 <h2 className="text-xl font-bold text-foreground">
@@ -222,8 +222,8 @@ const Blog = () => {
       )}
 
       {!hasFeatured && rest.length === 0 && (
-        <section className="py-20">
-          <div className="max-w-2xl mx-auto text-center px-6 py-16">
+        <section className="py-14">
+          <div className="max-w-2xl mx-auto text-center px-6">
             <p className="text-muted-foreground text-lg">No articles found in this category.</p>
           </div>
         </section>

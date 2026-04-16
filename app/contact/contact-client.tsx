@@ -40,8 +40,8 @@ const ContactPage = () => {
       <Header />
 
       {/* Hero */}
-      <section className="bg-brand-navy py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="bg-brand-navy py-20">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20">
           <span className="block text-sm font-bold tracking-[0.2em] text-accent uppercase mb-4">
             GET IN TOUCH
           </span>
@@ -56,13 +56,13 @@ const ContactPage = () => {
       </section>
 
       {/* Contact detail cards */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-3">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase text-center mb-2">
               REACH US DIRECTLY
             </p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground text-center mb-6">
               Astromar Logistics Pvt Ltd
             </h2>
           </ScrollReveal>
@@ -103,7 +103,7 @@ const ContactPage = () => {
 
       {/* CTA strip */}
       <section className="py-14 bg-brand-navy">
-        <div className="max-w-2xl mx-auto text-center px-6 py-16">
+        <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-primary-foreground mb-3">
               Prefer to Explore First?

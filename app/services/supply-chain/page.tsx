@@ -71,11 +71,11 @@ const SupplyChain = () => {
       </section>
 
       {/* Solutions */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">OUR SOLUTIONS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SOLUTIONS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Supply Chain Capabilities
             </h2>
           </ScrollReveal>
@@ -94,11 +94,11 @@ const SupplyChain = () => {
       </section>
 
       {/* Industries */}
-      <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">INDUSTRIES</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">INDUSTRIES</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Industry-Specific Supply Chain Expertise
             </h2>
           </ScrollReveal>
@@ -116,14 +116,14 @@ const SupplyChain = () => {
       </section>
 
       {/* Domestic Distribution */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">DOMESTIC LOGISTICS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">DOMESTIC LOGISTICS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Pan-India Distribution Network
             </h2>
-            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-6 text-sm leading-relaxed">
               Our domestic transport and distribution capabilities connect your supply chain from port to end customer across India.
             </p>
           </ScrollReveal>
@@ -146,8 +146,8 @@ const SupplyChain = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-brand-light">
-        <div className="max-w-2xl mx-auto text-center px-6 py-16">
+      <section className="py-14 bg-brand-light">
+        <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Transform Your Supply Chain</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">

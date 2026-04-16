@@ -80,11 +80,11 @@ const CustomClearance = () => {
       </section>
 
       {/* Services */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">OUR SERVICES</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Customs Brokerage Solutions
             </h2>
           </ScrollReveal>
@@ -103,11 +103,11 @@ const CustomClearance = () => {
       </section>
 
       {/* Capabilities */}
-      <section className="py-16 sm:py-20 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16 py-12">
+      <section className="py-14 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">EXPERTISE</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">EXPERTISE</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Our Customs Expertise
             </h2>
           </ScrollReveal>
@@ -125,11 +125,11 @@ const CustomClearance = () => {
       </section>
 
       {/* Process */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">CLEARANCE PROCESS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CLEARANCE PROCESS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               How We Clear Your Cargo
             </h2>
           </ScrollReveal>
@@ -148,11 +148,11 @@ const CustomClearance = () => {
       </section>
 
       {/* Coverage */}
-      <section className="py-16 sm:py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="py-14 bg-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">CLEARANCE COVERAGE</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CLEARANCE COVERAGE</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Where We Clear Your Cargo
             </h2>
           </ScrollReveal>
@@ -176,8 +176,8 @@ const CustomClearance = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 sm:py-20 bg-brand-light">
-        <div className="max-w-2xl mx-auto text-center px-6 py-16">
+      <section className="py-14 bg-brand-light">
+        <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Clear Customs Without the Hassle</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">

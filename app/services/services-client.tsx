@@ -32,12 +32,12 @@ const Services = () => {
 
       {/* Hero */}
       <section className="py-20 bg-brand-light">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-2">
               WHAT WE OFFER
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-6">
               Comprehensive Logistics Services
             </h1>
             <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm md:text-base">
