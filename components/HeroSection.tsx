@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-center overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
         alt="Container port aerial view"
@@ -19,10 +19,10 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-black/60 z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen relative z-20 w-full">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-center w-full min-h-[90vh] relative z-20 py-20">
 
         {/* LEFT COLUMN — hero text */}
-        <div className="max-w-xl text-left">
+        <div className="flex flex-col justify-center max-w-xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-sm font-semibold tracking-[0.2em] uppercase text-primary-foreground/60 mb-4 text-left"
+            className="text-sm font-semibold tracking-[0.2em] uppercase text-primary-foreground/60 mb-4"
           >
             ASTROMAR LOGISTICS PVT LTD
           </motion.p>
@@ -47,7 +47,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-left"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6"
           >
             <span className="text-primary-foreground">Global Logistics Solutions with </span>
             <span className="text-brand-orange">Seamless Innovation</span>
@@ -57,7 +57,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="text-base sm:text-lg md:text-xl text-primary-foreground/70 mb-10 leading-relaxed text-left"
+            className="text-base sm:text-lg md:text-xl text-primary-foreground/70 mb-10 leading-relaxed"
           >
             Delivering dependable freight and supply chain solutions across air, sea, and multimodal
             networks. Save customs duty &amp; GST with India's premier FTWZ network.
@@ -67,7 +67,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col sm:flex-row justify-start gap-4 mb-10"
+            className="flex flex-col sm:flex-row justify-start gap-4"
           >
             <a
               href="#contact"
@@ -83,25 +83,6 @@ const HeroSection = () => {
               Explore Tools
             </a>
           </motion.div>
-
-          {/* Stats row */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-3 gap-6 border-t border-white/20 pt-8"
-          >
-            {[
-              { value: "8+", label: "Locations" },
-              { value: "200+", label: "Clients Served" },
-              { value: "7+", label: "Years Experience" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-left">
-                <div className="text-2xl font-extrabold text-white">{stat.value}</div>
-                <div className="text-xs text-white/60 mt-0.5">{stat.label}</div>
-              </div>
-            ))}
-          </motion.div>
         </div>
 
         {/* RIGHT COLUMN — compact contact form */}
@@ -109,9 +90,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="w-full"
+          className="flex flex-col justify-center max-w-sm mx-auto w-full lg:max-w-none"
         >
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 shadow-2xl w-full">
             {submitted ? (
               <div className="text-center py-8">
                 <div className="text-4xl mb-3">✓</div>
@@ -120,12 +101,12 @@ const HeroSection = () => {
               </div>
             ) : (
               <>
-                <h3 className="text-white font-bold text-lg mb-1">Request a Consultation</h3>
-                <p className="text-white/60 text-xs mb-5">Get a response within 24 hours</p>
+                <h3 className="text-base font-bold text-white mb-1">Request a Consultation</h3>
+                <p className="text-xs text-white/60 mb-4">Get a response within 24 hours</p>
 
                 <div className="space-y-3">
                   {/* Row 1: Name + Company */}
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-2 gap-2">
                     <div>
                       <label className="text-white/70 text-xs mb-1 block">Full Name *</label>
                       <input
@@ -145,7 +126,7 @@ const HeroSection = () => {
                   </div>
 
                   {/* Row 2: Email + Phone */}
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-2 gap-2">
                     <div>
                       <label className="text-white/70 text-xs mb-1 block">Email *</label>
                       <input
@@ -185,7 +166,7 @@ const HeroSection = () => {
                     <label className="text-white/70 text-xs mb-1 block">Message</label>
                     <textarea
                       placeholder="Tell us about your requirements..."
-                      rows={3}
+                      rows={2}
                       className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/50 resize-none"
                     />
                   </div>
@@ -194,7 +175,7 @@ const HeroSection = () => {
                   <button
                     type="button"
                     onClick={() => setSubmitted(true)}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-xl text-sm transition-colors"
+                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors"
                   >
                     Submit Enquiry →
                   </button>
