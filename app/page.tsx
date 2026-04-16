@@ -5,7 +5,7 @@ import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import FTWZLocations from "@/components/FTWZLocations";
-import ContactForm from "@/components/ContactForm";
+import ContactInfoStrip from "@/components/ContactInfoStrip";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -18,7 +18,7 @@ export default function Home() {
       <ServicesSection />
       <WhyUsSection />
       <FTWZLocations />
-      <ContactForm />
+      <ContactInfoStrip />
       <Footer />
       <WhatsAppButton />
     </div>
