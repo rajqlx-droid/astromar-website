@@ -75,7 +75,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-14 bg-background">
+      <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
@@ -98,7 +98,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
@@ -109,13 +109,13 @@ const FTWZServices = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
             {benefits.map((b, i) => (
-              <ScrollReveal key={b.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+              <ScrollReveal key={b.title} delay={i * 0.07} className="h-full">
+                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{b.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -124,7 +124,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Comprehensive Solutions */}
-      <section className="py-14 bg-background">
+      <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
@@ -135,13 +135,13 @@ const FTWZServices = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
             {solutions.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+              <ScrollReveal key={s.title} delay={i * 0.07} className="h-full">
+                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -150,7 +150,7 @@ const FTWZServices = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-14 bg-brand-navy">
+      <section className="py-20 bg-brand-navy">
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">

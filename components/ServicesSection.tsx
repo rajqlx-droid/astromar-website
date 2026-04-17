@@ -40,10 +40,10 @@ const ServicesSection = () => {
   return (
     <>
       {/* Services Grid */}
-      <section id="services" className="py-14 bg-brand-light">
+      <section id="services" className="py-20 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-2">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-5">
               WHAT WE OFFER
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-6">
@@ -55,12 +55,12 @@ const ServicesSection = () => {
             </p>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
+          <div className="grid sm:grid-cols-2 gap-4 md:gap-6 items-stretch">
             {services.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 0.06}>
+              <ScrollReveal key={s.title} delay={i * 0.06} className="h-full">
                 <a href={s.href} className="block h-full">
                   <div
-                    className={`relative rounded-xl border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full ${
+                    className={`relative rounded-xl border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
                       s.featured ? "border-primary" : "border-border"
                     }`}
                   >
@@ -71,7 +71,7 @@ const ServicesSection = () => {
                     )}
                     <s.icon className="w-7 h-7 md:w-8 md:h-8 text-primary mb-4" strokeWidth={1.5} />
                     <h3 className="text-base md:text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm">{s.desc}</p>
+                    <p className="text-muted-foreground leading-relaxed text-sm flex-1">{s.desc}</p>
                     <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">
                       Learn more <ArrowRight className="w-4 h-4" />
                     </span>
@@ -127,13 +127,13 @@ const ServicesSection = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
             {benefits.map((b, i) => (
-              <ScrollReveal key={b.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+              <ScrollReveal key={b.title} delay={i * 0.07} className="h-full">
+                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{b.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -153,13 +153,13 @@ const ServicesSection = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
             {solutions.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+              <ScrollReveal key={s.title} delay={i * 0.07} className="h-full">
+                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}

@@ -19,7 +19,7 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-black/60 z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-center w-full min-h-[90vh] relative z-20 py-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-start w-full min-h-[90vh] relative z-20 pt-24">
 
         {/* LEFT COLUMN — hero text */}
         <div className="flex flex-col justify-center max-w-xl">
@@ -47,7 +47,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold leading-tight mb-6"
           >
             <span className="text-primary-foreground">Global Logistics Solutions with </span>
             <span className="text-brand-orange">Seamless Innovation</span>
@@ -57,7 +57,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="text-base sm:text-lg md:text-xl text-primary-foreground/70 mb-10 leading-relaxed"
+            className="text-sm sm:text-base md:text-lg text-primary-foreground/70 mb-10 leading-relaxed"
           >
             Delivering dependable freight and supply chain solutions across air, sea, and multimodal
             networks. Save customs duty &amp; GST with India's premier FTWZ network.

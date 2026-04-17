@@ -28,7 +28,7 @@ const features = [
 const WhyUsSection = () => {
   return (
     <section className="py-20 bg-background">
-      <div className="container px-4">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <ScrollReveal>
           <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
             OUR COMMITMENT
@@ -38,13 +38,13 @@ const WhyUsSection = () => {
           </h2>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid sm:grid-cols-2 gap-4 md:gap-6 items-stretch">
           {features.map((f, i) => (
-            <ScrollReveal key={f.title} delay={i * 0.1}>
-              <div className="rounded-xl border border-border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full">
+            <ScrollReveal key={f.title} delay={i * 0.1} className="h-full">
+              <div className="rounded-xl border border-border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
                 <f.icon className="w-7 h-7 md:w-8 md:h-8 text-primary mb-4" strokeWidth={1.5} />
                 <h3 className="text-base md:text-lg font-bold text-foreground mb-2">{f.title}</h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">{f.desc}</p>
+                <p className="text-muted-foreground leading-relaxed text-sm flex-1">{f.desc}</p>
               </div>
             </ScrollReveal>
           ))}
