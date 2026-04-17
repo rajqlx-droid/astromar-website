@@ -62,33 +62,35 @@ const About = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20 relative z-10">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="block text-sm font-bold tracking-[0.2em] text-accent uppercase mb-4"
-          >
-            ABOUT ASTROMAR LOGISTICS
-          </motion.span>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6 max-w-3xl"
-          >
-            India's Trusted FTWZ &amp; Logistics Partner
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-primary-foreground/70 max-w-3xl leading-relaxed text-base sm:text-lg"
-          >
-            Since 2017, Astromar Logistics has been transforming how businesses leverage Free Trade
-            Warehousing Zones to optimize customs duty, defer GST, and streamline global trade — all
-            from strategically located facilities across India.
-          </motion.p>
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 w-full py-24 relative z-10">
+          <div className="max-w-2xl">
+            <motion.span
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="block text-sm font-bold tracking-[0.2em] text-accent uppercase mb-4"
+            >
+              ABOUT ASTROMAR LOGISTICS
+            </motion.span>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6"
+            >
+              India's Trusted FTWZ &amp; Logistics Partner
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-primary-foreground/70 leading-relaxed text-base sm:text-lg"
+            >
+              Since 2017, Astromar Logistics has been transforming how businesses leverage Free Trade
+              Warehousing Zones to optimize customs duty, defer GST, and streamline global trade — all
+              from strategically located facilities across India.
+            </motion.p>
+          </div>
         </div>
       </section>
 

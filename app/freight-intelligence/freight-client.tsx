@@ -941,7 +941,7 @@ const FreightIntelligence = () => {
 
       {/* Hero */}
       <section className="bg-brand-navy py-10 sm:py-16 text-center">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 w-full py-24">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

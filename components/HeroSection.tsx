@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-start pb-20 overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
         alt="Container port aerial view"
@@ -92,7 +92,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col justify-center max-w-sm mx-auto w-full lg:max-w-none"
         >
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 shadow-2xl w-full">
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-2xl w-full">
             {submitted ? (
               <div className="text-center py-8">
                 <div className="text-4xl mb-3">✓</div>
@@ -102,9 +102,9 @@ const HeroSection = () => {
             ) : (
               <>
                 <h3 className="text-base font-bold text-white mb-1">Request a Consultation</h3>
-                <p className="text-xs text-white/60 mb-4">Get a response within 24 hours</p>
+                <p className="text-xs text-white/60 mb-3">Get a response within 24 hours</p>
 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   {/* Row 1: Name + Company */}
                   <div className="grid grid-cols-2 gap-2">
                     <div>
@@ -166,7 +166,7 @@ const HeroSection = () => {
                     <label className="text-white/70 text-xs mb-1 block">Message</label>
                     <textarea
                       placeholder="Tell us about your requirements..."
-                      rows={2}
+                      rows={1}
                       className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/50 resize-none"
                     />
                   </div>

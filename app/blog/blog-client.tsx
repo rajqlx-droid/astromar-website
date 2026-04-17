@@ -41,7 +41,7 @@ const Blog = () => {
 
       {/* Hero */}
       <section className="bg-background border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 w-full py-24">
           <ScrollReveal>
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-4 block">
               Resources & Insights

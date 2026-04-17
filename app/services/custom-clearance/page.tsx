@@ -59,7 +59,7 @@ const CustomClearance = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 w-full py-24 relative z-10">
           <ScrollReveal>
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">CUSTOM CLEARANCE</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
