@@ -19,10 +19,10 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 bg-black/60 z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-start w-full min-h-[90vh] relative z-20 pt-24">
+      <div className="w-full px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-start min-h-[90vh] relative z-20 pt-24">
 
         {/* LEFT COLUMN — hero text */}
-        <div className="flex flex-col justify-center max-w-xl">
+        <div className="flex flex-col justify-center max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

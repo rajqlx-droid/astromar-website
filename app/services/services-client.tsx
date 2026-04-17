@@ -32,7 +32,7 @@ const Services = () => {
 
       {/* Hero */}
       <section className="py-20 bg-brand-light">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20">
+        <div className="w-full px-6 md:px-12 lg:px-16 py-24">
           <ScrollReveal>
             <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-2">
               WHAT WE OFFER
