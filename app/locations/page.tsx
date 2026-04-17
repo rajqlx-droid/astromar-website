@@ -14,9 +14,9 @@ export default function LocationsPage() {
       <Header />
       <main className="container max-w-6xl px-4 pt-28 pb-16">
         <h1 className="text-3xl font-bold mb-8">Our FTWZ Locations</h1>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {ftwzLocationDetails.map((loc) => (
-            <Link key={loc.slug} href={`/locations/${loc.slug}`} className="rounded-xl border border-border bg-card p-6 hover:shadow-md transition-shadow">
+            <Link key={loc.slug} href={`/locations/${loc.slug}`} className="flex flex-col h-full rounded-xl border border-border bg-card p-6 hover:shadow-md transition-shadow">
               <h2 className="font-bold text-lg">{loc.city}</h2>
               <p className="text-sm text-muted-foreground">{loc.state}</p>
               <p className="text-xs text-primary mt-1">{loc.type}</p>

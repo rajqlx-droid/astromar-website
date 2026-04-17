@@ -91,8 +91,9 @@ const ServicesSection = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
           <ScrollReveal>
+            <div className="max-w-2xl">
             <p className="text-sm font-bold tracking-[0.2em] text-white/70 uppercase mb-2">
               FTWZ WAREHOUSING
             </p>
@@ -111,6 +112,7 @@ const ServicesSection = () => {
                 Get More Information <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </Button>
+            </div>
           </ScrollReveal>
         </div>
       </section>
