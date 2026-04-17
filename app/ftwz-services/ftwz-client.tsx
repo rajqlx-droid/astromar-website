@@ -173,8 +173,6 @@ const FTWZServices = () => {
         </div>
       </section>
 
-      <FTWZLocations />
-
       <Footer />
       <WhatsAppButton />
     </div>

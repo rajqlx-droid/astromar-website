@@ -64,15 +64,15 @@ const FTWZLocations = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {filteredLocations.length === 0 && (
             <p className="col-span-full text-center text-muted-foreground py-8">No locations found matching "{searchQuery}"</p>
           )}
           {filteredLocations.map((loc, i) => (
-            <ScrollReveal key={loc.city} delay={i * 0.06}>
+            <ScrollReveal key={loc.city} delay={i * 0.06} className="flex flex-col h-full">
               <div
                 onClick={() => setActiveCity(loc.city)}
-                className={`group relative rounded-xl border bg-card p-5 cursor-pointer transition-all duration-300 ${
+                className={`flex flex-col h-full group relative rounded-xl border bg-card p-5 cursor-pointer transition-all duration-300 ${
                   activeCity === loc.city
                     ? "border-primary shadow-lg shadow-primary/10 ring-1 ring-primary/20"
                     : "border-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"

@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
+import FTWZLocations from "@/components/FTWZLocations";
 
 const contactDetails = [
   {
@@ -130,6 +131,7 @@ const ContactPage = () => {
         </div>
       </section>
 
+      <FTWZLocations />
       <Footer />
       <WhatsAppButton />
     </div>
