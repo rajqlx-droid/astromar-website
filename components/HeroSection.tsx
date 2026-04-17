@@ -27,7 +27,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-block rounded-full bg-primary/20 border border-primary/30 px-4 py-1.5 mb-6"
+            className="inline-flex items-center w-fit rounded-full bg-primary/20 border border-primary/30 px-4 py-1.5 mb-6"
           >
             <span className="text-sm font-semibold text-primary-foreground/90 tracking-wide">
               India's Leading FTWZ Provider
