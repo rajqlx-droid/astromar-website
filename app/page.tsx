@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyUsSection from "@/components/WhyUsSection";
-import ContactInfoStrip from "@/components/ContactInfoStrip";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -16,7 +15,6 @@ export default function Home() {
       <StatsSection />
       <ServicesSection />
       <WhyUsSection />
-      <ContactInfoStrip />
       <Footer />
       <WhatsAppButton />
     </div>

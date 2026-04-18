@@ -19,7 +19,8 @@
       "Bash(node -e \"const fs = require\\('fs'\\); const content = fs.readFileSync\\('C:/Users/LENOVO/Documents/my-website/components/ServicesSection.tsx', 'utf8'\\); const lines = content.split\\('\\\\n'\\); lines.forEach\\(\\(l, i\\) => { if \\(l.includes\\('ODC'\\) || l.includes\\('Specialized Cargo'\\) || l.includes\\('Package'\\)\\) console.log\\(i+1, JSON.stringify\\(l\\)\\); }\\);\")",
       "Bash(node -e \"const fs = require\\('fs'\\); const c = fs.readFileSync\\('C:/Users/LENOVO/Documents/my-website/components/ServicesSection.tsx', 'utf8'\\); const curly = \\(c.match\\(/[\\\\u201c\\\\u201d\\\\u2018\\\\u2019]/g\\) || []\\); console.log\\('Curly quotes remaining:', curly.length\\);\")",
       "mcp__Claude_Preview__preview_start",
-      "mcp__Claude_in_Chrome__tabs_context_mcp"
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(curl -s http://localhost:3000)"
     ]
   }
 }

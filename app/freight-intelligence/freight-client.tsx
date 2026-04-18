@@ -1,6 +1,5 @@
 "use client"
 import { useState } from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Globe, Plane, DollarSign, TrendingUp, BarChart2, AlertTriangle, Plus, Trash2, Download, Ship, Package } from "lucide-react";
 import Header from "@/components/Header";
@@ -940,50 +939,9 @@ const FreightIntelligence = () => {
       <SEOHead />
       <Header />
 
-      {/* Hero */}
-      <section className="relative bg-brand-navy py-10 sm:py-16 text-center overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200"
-          alt="Analytics and freight intelligence"
-          fill
-          className="absolute inset-0 object-cover"
-          unoptimized
-          priority
-        />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-block rounded-full bg-primary/20 border border-primary/30 px-4 py-1.5 mb-4"
-          >
-            <span className="text-sm font-semibold text-primary-foreground/90 tracking-wide">
-              FREIGHT INTELLIGENCE TOOLS
-            </span>
-          </motion.span>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-primary-foreground mb-4"
-          >
-            Smart Freight Calculators for Global Trade
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-primary-foreground/70 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base"
-          >
-            CBM calculator, air volumetric weight, landed cost, export price calculator, freight comparison and demurrage — all in one platform.
-          </motion.p>
-        </div>
-      </section>
-
       {/* Tabs */}
       <div className="sticky top-0 z-20 bg-background border-b border-border shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-2">
           <div className="flex overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0">
             {tabs.map((tab) => (
               <button

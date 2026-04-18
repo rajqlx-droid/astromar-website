@@ -38,7 +38,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: "" }));
   };
 
-  const glassInput = "w-full rounded-lg bg-white/10 border border-white/20 px-4 py-3 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition-colors text-sm";
+  const glassInput = "w-full rounded-lg bg-white/10 border border-white/20 px-3 py-1.5 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition-colors text-sm";
 
   return (
     <section className="relative w-full min-h-[600px] flex items-center">
@@ -53,7 +53,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-start">
 
-            {/* Left column — text */}
+            {/* LEFT COLUMN - TEXT CONTENT WITH CONTACT INFO */}
             <div>
               <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
                 GET IN TOUCH
@@ -61,46 +61,59 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Contact Us
               </h1>
-              <p className="text-lg text-white/80">
+              <p className="text-lg text-white/80 mb-8">
                 Have a logistics challenge or want to learn more about our FTWZ services? Our team at Astromar Logistics Pvt Ltd is ready to help you find the right solution.
               </p>
+
+              {/* Contact Information */}
+              <div className="border-t border-white/20 pt-6">
+                <p className="text-sm text-white/70 mb-3">
+                  <span className="font-semibold">Email:</span> sales@astromarfreezone.com
+                </p>
+                <p className="text-sm text-white/70 mb-3">
+                  <span className="font-semibold">Address:</span> No. 922, 1st Floor, H-Block, 17th Main Road, Anna Nagar, Chennai - 600 040
+                </p>
+                <p className="text-sm text-white/70">
+                  <span className="font-semibold">Hours:</span> Mon-Fri, 10:00 AM - 6:00 PM
+                </p>
+              </div>
             </div>
 
             {/* Right column — glass form card */}
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8">
-              <form onSubmit={handleSubmit} className="space-y-5">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3 md:p-5">
+              <form onSubmit={handleSubmit} className="space-y-3">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-sm font-semibold text-white mb-2">
+                    <label className="block text-sm font-semibold text-white mb-1.5">
                       Full Name <span className="text-orange-500">*</span>
                     </label>
                     <input type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={glassInput} />
                     {errors.fullName && <p className="text-orange-400 text-xs mt-1">{errors.fullName}</p>}
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-white mb-2">Company</label>
+                    <label className="block text-sm font-semibold text-white mb-1.5">Company</label>
                     <input type="text" placeholder="Company name" value={form.company} onChange={(e) => update("company", e.target.value)} maxLength={100} className={glassInput} />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-sm font-semibold text-white mb-2">
+                    <label className="block text-sm font-semibold text-white mb-1.5">
                       Email <span className="text-orange-500">*</span>
                     </label>
                     <input type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={glassInput} />
                     {errors.email && <p className="text-orange-400 text-xs mt-1">{errors.email}</p>}
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-white mb-2">Phone</label>
+                    <label className="block text-sm font-semibold text-white mb-1.5">Phone</label>
                     <input type="tel" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={20} className={glassInput} />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-sm font-semibold text-white mb-2">Service Required</label>
+                    <label className="block text-sm font-semibold text-white mb-1.5">Service Required</label>
                     <select value={form.service} onChange={(e) => update("service", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
                       <option value="" className="bg-gray-900 text-white">Select a service</option>
                       <option value="FTWZ Warehousing" className="bg-gray-900 text-white">FTWZ Warehousing</option>
@@ -115,7 +128,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-white mb-2">FTWZ Location</label>
+                    <label className="block text-sm font-semibold text-white mb-1.5">FTWZ Location</label>
                     <select value={form.location} onChange={(e) => update("location", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
                       <option value="" className="bg-gray-900 text-white">Select a location</option>
                       <option value="Chennai (Anna Nagar HQ)" className="bg-gray-900 text-white">Chennai (Anna Nagar HQ)</option>
@@ -133,13 +146,13 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-white mb-2">Message</label>
+                  <label className="block text-sm font-semibold text-white mb-1.5">Message</label>
                   <textarea
                     placeholder="Tell us about your requirements..."
                     value={form.message}
                     onChange={(e) => update("message", e.target.value)}
                     maxLength={1000}
-                    rows={5}
+                    rows={4}
                     className={`${glassInput} resize-none`}
                   />
                   {errors.message && <p className="text-orange-400 text-xs mt-1">{errors.message}</p>}

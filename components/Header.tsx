@@ -7,7 +7,6 @@ import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Tools", href: "/freight-intelligence" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "FTWZ", href: "/ftwz-services" },
@@ -55,12 +54,12 @@ const Header = () => {
             )
           )}
           <ThemeToggle />
-          <a
-            href="/contact"
+          <Link
+            href="/freight-intelligence"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
           >
-            Get a Quote
-          </a>
+            Tools
+          </Link>
         </nav>
 
         {/* Mobile toggle */}
@@ -101,13 +100,13 @@ const Header = () => {
                 </Link>
               )
             )}
-            <a
-              href="/contact"
+            <Link
+              href="/freight-intelligence"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
               onClick={() => setOpen(false)}
             >
-              Get a Quote
-            </a>
+              Tools
+            </Link>
           </nav>
         </div>
       )}

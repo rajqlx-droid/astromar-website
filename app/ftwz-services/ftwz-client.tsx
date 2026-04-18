@@ -126,7 +126,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Comprehensive Solutions */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-[#fff7ed]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
