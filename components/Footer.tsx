@@ -34,8 +34,8 @@ const Footer = () => {
   const isFTWZ = pathname === "/ftwz-services";
 
   return (
-    <footer className="bg-brand-navy text-primary-foreground/80 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12">
+    <footer className="bg-brand-navy text-primary-foreground/80 py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         {/* Top row */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}

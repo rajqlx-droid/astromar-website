@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Globe, Plane, DollarSign, TrendingUp, BarChart2, AlertTriangle, Plus, Trash2, Download, Ship, Package } from "lucide-react";
 import Header from "@/components/Header";
@@ -940,8 +941,17 @@ const FreightIntelligence = () => {
       <Header />
 
       {/* Hero */}
-      <section className="bg-brand-navy py-10 sm:py-16 text-center">
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24">
+      <section className="relative bg-brand-navy py-10 sm:py-16 text-center overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200"
+          alt="Analytics and freight intelligence"
+          fill
+          className="absolute inset-0 object-cover"
+          unoptimized
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

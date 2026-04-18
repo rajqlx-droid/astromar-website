@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -31,21 +32,32 @@ const Services = () => {
       <Header />
 
       {/* Hero */}
-      <section className="py-20 bg-brand-light">
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24">
-          <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-2">
-              WHAT WE OFFER
-            </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-6">
-              Comprehensive Logistics Services
-            </h1>
-            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm md:text-base">
-              From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end
-              logistics solutions across India.
-            </p>
-          </ScrollReveal>
+      <section className="relative bg-brand-navy py-16 sm:py-24 md:py-32 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
+          alt="Logistics warehouse"
+          fill
+          className="absolute inset-0 object-cover"
+          unoptimized
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+          <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
+            OUR SERVICES
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Comprehensive Logistics Services
+          </h1>
+          <p className="text-lg text-white/80 max-w-2xl">
+            From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end logistics solutions across India.
+          </p>
+        </div>
+      </section>
 
+      {/* Services Grid */}
+      <section className="py-20 bg-background">
+        <div className="w-full px-6 md:px-12 lg:px-16">
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.06}>
@@ -71,7 +83,6 @@ const Services = () => {
               </ScrollReveal>
             ))}
           </div>
-
         </div>
       </section>
 

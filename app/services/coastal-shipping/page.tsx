@@ -47,7 +47,7 @@ const CoastalShipping = () => {
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1520116468816-95b69f847357?w=1600"
+          src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200"
           alt="Coastal vessel"
           fill
           className="absolute inset-0 object-cover"

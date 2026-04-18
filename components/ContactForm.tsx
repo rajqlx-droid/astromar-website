@@ -1,29 +1,6 @@
 "use client"
 import { useState } from "react";
-import { Send, Phone, Mail, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import ScrollReveal from "./ScrollReveal";
-
-const contactStrip = [
-  {
-    icon: Phone,
-    primary: "+91 99402 11014",
-    secondary: "Call us anytime",
-    href: "tel:+919940211014",
-  },
-  {
-    icon: Mail,
-    primary: "sales@astromarfreezone.com",
-    secondary: "Email us",
-    href: "mailto:sales@astromarfreezone.com",
-  },
-  {
-    icon: MapPin,
-    primary: "Anna Nagar, Chennai",
-    secondary: "Head Office",
-    href: "https://maps.google.com/?q=No.+922,+H-Block,+17th+Main+Road,+Anna+Nagar,+Chennai+600040",
-  },
-];
 
 interface ContactFormProps {
   showInfoStrip?: boolean;
@@ -61,136 +38,125 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: "" }));
   };
 
-  const inputClass = "w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 transition-colors text-sm";
+  const glassInput = "w-full rounded-lg bg-white/10 border border-white/20 px-4 py-3 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition-colors text-sm";
 
   return (
-    <section id="contact" className="bg-white py-20">
-      <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
-        <ScrollReveal>
-          <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-2 text-center">
-            GET IN TOUCH
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Request a Consultation
-          </h2>
-          <p className="text-center text-gray-500 mb-10 max-w-xl mx-auto text-sm sm:text-base">
-            Fill in the form below and our team will get back to you within 24 hours.
-          </p>
-        </ScrollReveal>
+    <section className="relative w-full min-h-[600px] flex items-center">
+      <img
+        src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200"
+        alt="Logistics and cargo handling"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-black/60" />
 
-        {/* Contact info strip */}
-        {showInfoStrip && (
-          <ScrollReveal delay={0.1}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              {contactStrip.map((item) => (
-                <a
-                  key={item.primary}
-                  href={item.href}
-                  target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="flex items-start gap-3 p-5 rounded-xl bg-blue-50 border border-blue-100 hover:bg-blue-100 transition-colors"
-                >
-                  <div className="flex-shrink-0 w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center">
-                    <item.icon className="w-4 h-4 text-white" strokeWidth={2} />
+      <div className="relative z-10 w-full px-6 md:px-12 lg:px-16 py-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-start">
+
+            {/* Left column — text */}
+            <div>
+              <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
+                GET IN TOUCH
+              </p>
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Contact Us
+              </h1>
+              <p className="text-lg text-white/80">
+                Have a logistics challenge or want to learn more about our FTWZ services? Our team at Astromar Logistics Pvt Ltd is ready to help you find the right solution.
+              </p>
+            </div>
+
+            {/* Right column — glass form card */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8">
+              <form onSubmit={handleSubmit} className="space-y-5">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label className="block text-sm font-semibold text-white mb-2">
+                      Full Name <span className="text-orange-500">*</span>
+                    </label>
+                    <input type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={glassInput} />
+                    {errors.fullName && <p className="text-orange-400 text-xs mt-1">{errors.fullName}</p>}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-gray-900 leading-snug">{item.primary}</p>
-                    <p className="text-xs text-gray-500 mt-0.5">{item.secondary}</p>
+                    <label className="block text-sm font-semibold text-white mb-2">Company</label>
+                    <input type="text" placeholder="Company name" value={form.company} onChange={(e) => update("company", e.target.value)} maxLength={100} className={glassInput} />
                   </div>
-                </a>
-              ))}
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label className="block text-sm font-semibold text-white mb-2">
+                      Email <span className="text-orange-500">*</span>
+                    </label>
+                    <input type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={glassInput} />
+                    {errors.email && <p className="text-orange-400 text-xs mt-1">{errors.email}</p>}
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-white mb-2">Phone</label>
+                    <input type="tel" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={20} className={glassInput} />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label className="block text-sm font-semibold text-white mb-2">Service Required</label>
+                    <select value={form.service} onChange={(e) => update("service", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
+                      <option value="" className="bg-gray-900 text-white">Select a service</option>
+                      <option value="FTWZ Warehousing" className="bg-gray-900 text-white">FTWZ Warehousing</option>
+                      <option value="Ocean Freight (FCL)" className="bg-gray-900 text-white">Ocean Freight (FCL)</option>
+                      <option value="Ocean Freight (LCL)" className="bg-gray-900 text-white">Ocean Freight (LCL)</option>
+                      <option value="Air Freight" className="bg-gray-900 text-white">Air Freight</option>
+                      <option value="Coastal Shipping" className="bg-gray-900 text-white">Coastal Shipping</option>
+                      <option value="Custom Clearance" className="bg-gray-900 text-white">Custom Clearance</option>
+                      <option value="Supply Chain and Distribution" className="bg-gray-900 text-white">Supply Chain &amp; Distribution</option>
+                      <option value="Project and Specialized Cargo" className="bg-gray-900 text-white">Project &amp; Specialized Cargo</option>
+                      <option value="Other" className="bg-gray-900 text-white">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-white mb-2">FTWZ Location</label>
+                    <select value={form.location} onChange={(e) => update("location", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
+                      <option value="" className="bg-gray-900 text-white">Select a location</option>
+                      <option value="Chennai (Anna Nagar HQ)" className="bg-gray-900 text-white">Chennai (Anna Nagar HQ)</option>
+                      <option value="Chennai (Sriperumbudur)" className="bg-gray-900 text-white">Chennai (Sriperumbudur)</option>
+                      <option value="Chennai (Vallur)" className="bg-gray-900 text-white">Chennai (Vallur)</option>
+                      <option value="Kochi" className="bg-gray-900 text-white">Kochi</option>
+                      <option value="Vizag" className="bg-gray-900 text-white">Vizag</option>
+                      <option value="Mumbai (Panvel)" className="bg-gray-900 text-white">Mumbai (Panvel)</option>
+                      <option value="Mumbai (JNPA)" className="bg-gray-900 text-white">Mumbai (JNPA)</option>
+                      <option value="Delhi (Khurja)" className="bg-gray-900 text-white">Delhi (Khurja)</option>
+                      <option value="Bengaluru" className="bg-gray-900 text-white">Bengaluru</option>
+                      <option value="Dahej" className="bg-gray-900 text-white">Dahej</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-white mb-2">Message</label>
+                  <textarea
+                    placeholder="Tell us about your requirements..."
+                    value={form.message}
+                    onChange={(e) => update("message", e.target.value)}
+                    maxLength={1000}
+                    rows={5}
+                    className={`${glassInput} resize-none`}
+                  />
+                  {errors.message && <p className="text-orange-400 text-xs mt-1">{errors.message}</p>}
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors text-base"
+                >
+                  Submit Enquiry
+                </button>
+
+              </form>
             </div>
-          </ScrollReveal>
-        )}
 
-        {/* Form card */}
-        <ScrollReveal delay={0.15}>
-          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8 md:p-12">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={inputClass} />
-                  {errors.fullName && <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>}
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Company</label>
-                  <input type="text" placeholder="Company name" value={form.company} onChange={(e) => update("company", e.target.value)} maxLength={100} className={inputClass} />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email <span className="text-red-500">*</span>
-                  </label>
-                  <input type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={inputClass} />
-                  {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
-                  <input type="tel" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={20} className={inputClass} />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Service Required</label>
-                  <select value={form.service} onChange={(e) => update("service", e.target.value)} className={inputClass}>
-                    <option value="">Select a service</option>
-                    <option value="FTWZ Warehousing">FTWZ Warehousing</option>
-                    <option value="Ocean Freight (FCL)">Ocean Freight (FCL)</option>
-                    <option value="Ocean Freight (LCL)">Ocean Freight (LCL)</option>
-                    <option value="Air Freight">Air Freight</option>
-                    <option value="Coastal Shipping">Coastal Shipping</option>
-                    <option value="Custom Clearance">Custom Clearance</option>
-                    <option value="Supply Chain & Distribution">Supply Chain &amp; Distribution</option>
-                    <option value="Project & Specialized Cargo">Project &amp; Specialized Cargo</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">FTWZ Location</label>
-                  <select value={form.location} onChange={(e) => update("location", e.target.value)} className={inputClass}>
-                    <option value="">Select a location</option>
-                    <option value="Chennai (Anna Nagar HQ)">Chennai (Anna Nagar HQ)</option>
-                    <option value="Chennai (Sriperumbudur)">Chennai (Sriperumbudur)</option>
-                    <option value="Chennai (Vallur)">Chennai (Vallur)</option>
-                    <option value="Kochi">Kochi</option>
-                    <option value="Vizag">Vizag</option>
-                    <option value="Mumbai (Panvel)">Mumbai (Panvel)</option>
-                    <option value="Mumbai (JNPA)">Mumbai (JNPA)</option>
-                    <option value="Delhi (Khurja)">Delhi (Khurja)</option>
-                    <option value="Bengaluru">Bengaluru</option>
-                    <option value="Dahej">Dahej</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-                <textarea
-                  placeholder="Tell us about your requirements..."
-                  value={form.message}
-                  onChange={(e) => update("message", e.target.value)}
-                  maxLength={1000}
-                  className={`${inputClass} resize-y`}
-                  style={{ minHeight: "140px" }}
-                />
-                {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
-              </div>
-
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-xl text-base transition-colors"
-              >
-                <Send size={18} /> Submit Enquiry
-              </button>
-            </form>
           </div>
-        </ScrollReveal>
+        </div>
       </div>
     </section>
   );

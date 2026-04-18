@@ -42,7 +42,7 @@ const SupplyChain = () => {
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1600"
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200"
           alt="Supply chain and logistics"
           fill
           className="absolute inset-0 object-cover"

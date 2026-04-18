@@ -1,5 +1,6 @@
 "use client"
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
 import Header from "@/components/Header";
@@ -40,16 +41,25 @@ const Blog = () => {
       <Header />
 
       {/* Hero */}
-      <section className="bg-background border-b border-border">
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24">
+      <section className="relative bg-brand-navy py-16 sm:py-24 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200"
+          alt="Logistics blog and insights"
+          fill
+          className="absolute inset-0 object-cover"
+          unoptimized
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
           <ScrollReveal>
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-4 block">
+            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4 block">
               Resources & Insights
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-foreground leading-tight max-w-xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight max-w-xl">
               Logistics Blog
             </h1>
-            <p className="text-muted-foreground max-w-lg mt-4 text-base sm:text-lg">
+            <p className="text-white/80 max-w-lg mt-4 text-base sm:text-lg">
               Expert guides and practical tools for importers, exporters, and logistics professionals.
             </p>
           </ScrollReveal>

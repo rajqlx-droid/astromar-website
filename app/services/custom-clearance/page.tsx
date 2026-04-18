@@ -51,7 +51,7 @@ const CustomClearance = () => {
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1600"
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
           alt="Customs and cargo documentation"
           fill
           className="absolute inset-0 object-cover"

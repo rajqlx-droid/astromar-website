@@ -54,7 +54,7 @@ const About = () => {
       {/* Hero */}
       <section className="relative bg-brand-navy py-16 sm:py-24 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600"
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
           alt="Business and logistics team"
           fill
           className="absolute inset-0 object-cover"

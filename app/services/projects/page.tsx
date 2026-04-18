@@ -53,7 +53,7 @@ const Projects = () => {
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600"
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200"
           alt="Heavy lift crane and industrial cargo"
           fill
           className="absolute inset-0 object-cover"
