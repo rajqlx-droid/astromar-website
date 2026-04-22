@@ -32,7 +32,7 @@ const Services = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-brand-navy py-16 sm:py-24 md:py-32 overflow-hidden">
+      <section className="relative bg-brand-navy overflow-hidden" style={{ height: "400px" }}>
         <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
           alt="Logistics warehouse"
@@ -41,17 +41,26 @@ const Services = () => {
           unoptimized
           priority
         />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
-          <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
-            OUR SERVICES
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Comprehensive Logistics Services
-          </h1>
-          <p className="text-lg text-white/80 max-w-2xl">
-            From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end logistics solutions across India.
-          </p>
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="w-full h-full px-6 md:px-12 lg:px-16 relative z-10 flex flex-col justify-center">
+          <div style={{ maxWidth: "600px" }}>
+            <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
+              OUR SERVICES
+            </p>
+            <h1 className="font-bold text-white mb-6" style={{ fontSize: "56px" }}>
+              Comprehensive Logistics Services
+            </h1>
+            <p className="text-white/80 mb-8" style={{ fontSize: "18px" }}>
+              From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end logistics solutions across India.
+            </p>
+            <a
+              href="#services"
+              className="inline-block font-semibold text-white rounded-lg px-6 py-3 transition-opacity hover:opacity-90"
+              style={{ backgroundColor: "#F97316" }}
+            >
+              Explore Services
+            </a>
+          </div>
         </div>
       </section>
 

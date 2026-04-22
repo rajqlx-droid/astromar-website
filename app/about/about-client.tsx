@@ -52,7 +52,7 @@ const About = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-brand-navy py-16 sm:py-24 overflow-hidden">
+      <section className="relative bg-brand-navy py- overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
           alt="Business and logistics team"
@@ -62,7 +62,7 @@ const About = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="w-full px-6 md:px-12 lg:px-16 py-22 relative z-10">
           <div className="max-w-2xl">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ const About = () => {
               transition={{ duration: 0.5 }}
               className="block text-sm font-bold tracking-[0.2em] text-accent uppercase mb-4"
             >
-              ABOUT ASTROMAR LOGISTICS
+              ABOUT ASTROMAR
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
