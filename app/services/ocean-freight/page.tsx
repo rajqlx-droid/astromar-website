@@ -46,7 +46,7 @@ const OceanFreight = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pb-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200"
           alt="Container ship at sea"
@@ -56,13 +56,13 @@ const OceanFreight = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">OCEAN FREIGHT</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3">OCEAN FREIGHT</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
               Global Ocean Freight Services from India
             </h1>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+            <p className="text-center text-white max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
               Whether you're shipping a single pallet or full containers, AstroMar Logistics offers reliable ocean freight
               solutions across 150+ global ports. FCL, LCL, breakbulk, and reefer — we handle it all with competitive rates
               and end-to-end visibility.
@@ -77,7 +77,7 @@ const OceanFreight = () => {
       </section>
 
       {/* Services */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
@@ -100,7 +100,7 @@ const OceanFreight = () => {
       </section>
 
       {/* Trade Lanes */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">GLOBAL REACH</p>
@@ -127,7 +127,7 @@ const OceanFreight = () => {
       </section>
 
       {/* Process */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR PROCESS</p>
@@ -150,7 +150,7 @@ const OceanFreight = () => {
       </section>
 
       {/* Pan-India Port Coverage */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">PORT NETWORK</p>

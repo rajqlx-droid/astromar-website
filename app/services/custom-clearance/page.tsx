@@ -49,7 +49,7 @@ const CustomClearance = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pb-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
           alt="Customs and cargo documentation"
@@ -59,13 +59,13 @@ const CustomClearance = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">CUSTOM CLEARANCE</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3">CUSTOM CLEARANCE</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
               Customs Clearance Services in India
             </h1>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+            <p className="text-center text-white max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
               Navigate India's complex customs landscape with confidence. AstroMar's licensed customs brokers
               handle all import and export clearances across every Indian port and airport — ensuring compliance,
               minimizing duty, and eliminating delays.
@@ -80,7 +80,7 @@ const CustomClearance = () => {
       </section>
 
       {/* Services */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
@@ -103,7 +103,7 @@ const CustomClearance = () => {
       </section>
 
       {/* Capabilities */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">EXPERTISE</p>
@@ -125,7 +125,7 @@ const CustomClearance = () => {
       </section>
 
       {/* Process */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CLEARANCE PROCESS</p>
@@ -148,7 +148,7 @@ const CustomClearance = () => {
       </section>
 
       {/* Coverage */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CLEARANCE COVERAGE</p>

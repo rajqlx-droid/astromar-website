@@ -64,16 +64,19 @@ function FlyToActive({ locations, activeCity }: { locations: Location[]; activeC
 
 const FTWZMapInner = ({ locations, activeCity, onMarkerClick }: FTWZMapProps) => {
   return (
+    <div className="w-full">
     <MapContainer
-      center={[20.5937, 78.9629]}
+      center={[22.5, 82.0]}
       zoom={5}
       scrollWheelZoom={false}
       style={{ height: "420px", width: "100%" }}
       className="z-0"
+      maxBounds={[[6.0, 68.0], [37.5, 97.5]]}
+      maxBoundsViscosity={1.0}
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
       />
       <FlyToActive locations={locations} activeCity={activeCity} />
       {locations.map((loc) => (
@@ -109,6 +112,10 @@ const FTWZMapInner = ({ locations, activeCity, onMarkerClick }: FTWZMapProps) =>
         </Marker>
       ))}
     </MapContainer>
+    <p className="text-xs text-muted-foreground mt-2 text-center px-4">
+      * Map is for representational purposes only. India&apos;s external boundaries are as per the Government of India. Jammu &amp; Kashmir and Ladakh are integral parts of India.
+    </p>
+    </div>
   );
 };
 

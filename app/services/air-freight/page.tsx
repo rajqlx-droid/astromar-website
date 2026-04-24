@@ -51,7 +51,7 @@ const AirFreight = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pb-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600"
           alt="Cargo aircraft"
@@ -61,13 +61,13 @@ const AirFreight = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">AIR FREIGHT</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3">AIR FREIGHT</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
               Air Freight Services from India to the World
             </h1>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+            <p className="text-center text-white max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
               When speed matters, trust AstroMar's air freight solutions. From express next-day delivery to charter services
               for oversized cargo, we connect India to 200+ destinations worldwide with reliable, trackable air cargo services.
             </p>
@@ -81,7 +81,7 @@ const AirFreight = () => {
       </section>
 
       {/* Services */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">SOLUTIONS</p>
@@ -104,7 +104,7 @@ const AirFreight = () => {
       </section>
 
       {/* Capabilities */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CAPABILITIES</p>
@@ -126,7 +126,7 @@ const AirFreight = () => {
       </section>
 
       {/* Destinations */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">GLOBAL NETWORK</p>

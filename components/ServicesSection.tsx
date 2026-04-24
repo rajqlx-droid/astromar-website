@@ -3,6 +3,7 @@ import {
   FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box, Combine,
   CheckCircle2, Warehouse, Globe, FileCheck, Thermometer, BarChart3, ArrowRight, Package,
 } from "lucide-react";
+import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
 
 import { Button } from "@/components/ui/button";
@@ -56,7 +57,7 @@ const ServicesSection = () => {
           </ScrollReveal>
 
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6 items-stretch">
-            {services.map((s, i) => (
+            {services.slice(0, 3).map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.06} className="h-full">
                 <a href={s.href} className="block h-full">
                   <div
@@ -79,6 +80,15 @@ const ServicesSection = () => {
                 </a>
               </ScrollReveal>
             ))}
+          </div>
+
+          <div className="flex justify-center mt-10">
+            <Link
+              href="/services"
+              className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition"
+            >
+              View All Services →
+            </Link>
           </div>
         </div>
       </section>
@@ -118,7 +128,7 @@ const ServicesSection = () => {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
@@ -144,7 +154,7 @@ const ServicesSection = () => {
       </section>
 
       {/* Comprehensive Solutions */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">

@@ -50,7 +50,7 @@ const Warehousing = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pb-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600"
           alt="Modern warehouse interior"
@@ -60,13 +60,13 @@ const Warehousing = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">WAREHOUSING</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3">WAREHOUSING</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
               Warehousing & Storage Solutions Across India
             </h1>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+            <p className="text-center text-white max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
               From a single pallet to 200,000+ sq ft of dedicated space, AstroMar provides flexible warehousing
               solutions with real-time inventory management, value-added services, and multi-temperature capabilities
               across India's key logistics hubs.
@@ -81,7 +81,7 @@ const Warehousing = () => {
       </section>
 
       {/* Solutions */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">SOLUTIONS</p>
@@ -104,7 +104,7 @@ const Warehousing = () => {
       </section>
 
       {/* Features */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">FACILITY FEATURES</p>
@@ -126,7 +126,7 @@ const Warehousing = () => {
       </section>
 
       {/* Locations */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">LOCATIONS</p>
@@ -154,7 +154,7 @@ const Warehousing = () => {
       </section>
 
       {/* FTWZ Services */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">FTWZ WAREHOUSING</p>

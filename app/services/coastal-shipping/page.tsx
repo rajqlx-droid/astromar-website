@@ -45,7 +45,7 @@ const CoastalShipping = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pb-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200"
           alt="Coastal vessel"
@@ -55,15 +55,15 @@ const CoastalShipping = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3">
               COASTAL SHIPPING
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-foreground mb-4 max-w-4xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
               Domestic Coastal Shipping Services Across India
             </h1>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+            <p className="text-center text-white max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
               Move cargo efficiently along India's 7,500+ km coastline. Our coastal shipping services connect
               all major and minor Indian ports, offering a greener, more cost-effective alternative to road and
               rail freight for bulk, containerized, and project cargo.
@@ -78,7 +78,7 @@ const CoastalShipping = () => {
       </section>
 
       {/* Why Coastal Shipping */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">WHY COASTAL SHIPPING</p>
@@ -101,7 +101,7 @@ const CoastalShipping = () => {
       </section>
 
       {/* Route Network */}
-      <section className="py-14 bg-muted/30">
+      <section className="py-14 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">ROUTE NETWORK</p>
@@ -130,7 +130,7 @@ const CoastalShipping = () => {
       </section>
 
       {/* Cargo Types */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CARGO TYPES</p>

@@ -5,10 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Button } from "@/components/ui/button";
-import {
-  FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box, Combine, ArrowRight, Globe,
-} from "lucide-react";
+import { ArrowRight, FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box } from "lucide-react";
 
 const services = [
   { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/ftwz-services" },
@@ -32,7 +29,7 @@ const Services = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-brand-navy overflow-hidden" style={{ height: "400px" }}>
+      <section className="relative bg-brand-navy py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
           alt="Logistics warehouse"
@@ -42,7 +39,7 @@ const Services = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/55" />
-        <div className="w-full h-full px-6 md:px-12 lg:px-16 relative z-10 flex flex-col justify-center">
+        <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex flex-col justify-center">
           <div style={{ maxWidth: "600px" }}>
             <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
               OUR SERVICES
@@ -65,14 +62,14 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-background">
+      <section id="services" className="py-20 bg-white">
         <div className="w-full px-6 md:px-12 lg:px-16">
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.06}>
                 <a href={s.href} className="block h-full">
                   <div
-                    className={`relative rounded-xl border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full ${
+                    className={`relative rounded-xl border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
                       s.featured ? "border-primary" : "border-border"
                     }`}
                   >
@@ -83,7 +80,7 @@ const Services = () => {
                     )}
                     <s.icon className="w-7 h-7 md:w-8 md:h-8 text-primary mb-4" strokeWidth={1.5} />
                     <h3 className="text-base md:text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm">{s.desc}</p>
+                    <p className="text-muted-foreground leading-relaxed text-sm flex-1">{s.desc}</p>
                     <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">
                       Learn more <ArrowRight className="w-4 h-4" />
                     </span>
