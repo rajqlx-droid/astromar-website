@@ -59,8 +59,8 @@ const FTWZLocations = () => {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <div className="mb-10 w-full rounded-xl overflow-hidden border border-border shadow-md" style={{height:'500px'}}>
-            <FTWZMap locations={filteredLocations} activeCity={activeCity} onMarkerClick={setActiveCity} />
+          <div className="mb-10">
+            <FTWZMap />
           </div>
         </ScrollReveal>
 

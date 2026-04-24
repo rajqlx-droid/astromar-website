@@ -161,9 +161,9 @@ const About = () => {
                 const isLeft = i % 2 === 0;
                 return (
                   <ScrollReveal key={m.year} delay={i * 0.06}>
-                    <div className="relative md:flex md:items-start md:mb-8">
-                      <div className="hidden md:block absolute left-1/2 top-6 w-3 h-3 rounded-full bg-primary -translate-x-1/2 z-10" />
-                      <div className={`md:w-1/2 ${isLeft ? 'md:pr-10' : 'md:pr-10 md:order-1 md:invisible'}`}>
+                    <div className="relative md:flex md:items-start md:mb-12 md:gap-0">
+                      <div className="hidden md:block absolute left-1/2 top-8 w-4 h-4 rounded-full bg-primary border-4 border-background -translate-x-1/2 z-10" />
+                      <div className={`md:w-1/2 md:pr-10 ${!isLeft ? 'md:invisible' : ''}`}>
                         {isLeft && (
                           <div className="rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm text-right">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
@@ -172,7 +172,7 @@ const About = () => {
                           </div>
                         )}
                       </div>
-                      <div className={`md:w-1/2 ${!isLeft ? 'md:pl-10' : 'md:pl-10 md:order-2 md:invisible'}`}>
+                      <div className={`md:w-1/2 md:pl-10 ${isLeft ? 'md:invisible' : ''}`}>
                         {!isLeft && (
                           <div className="rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
