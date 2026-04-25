@@ -99,12 +99,12 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <ScrollReveal direction="left">
-              <div className="rounded-xl bg-gradient-to-br from-primary to-brand-navy p-8 sm:p-10 h-full text-primary-foreground">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-800 border border-blue-500/30 rounded-xl p-6 shadow-lg h-full">
                 <div className="flex items-center gap-3 mb-5">
-                  <Eye className="w-7 h-7" />
-                  <h3 className="text-xl font-bold tracking-wide uppercase">Our Vision</h3>
+                  <Eye className="w-7 h-7 text-white" />
+                  <h3 className="text-xl font-bold tracking-wide uppercase text-white">Our Vision</h3>
                 </div>
-                <p className="leading-relaxed opacity-90 text-base sm:text-lg">
+                <p className="leading-relaxed text-white text-base sm:text-lg">
                   To be a trusted global logistics partner delivering seamless connectivity across
                   international trade networks.
                 </p>
@@ -112,7 +112,7 @@ const About = () => {
             </ScrollReveal>
 
             <ScrollReveal direction="right">
-              <div className="rounded-xl border border-border bg-card p-8 sm:p-10 h-full">
+              <div className="bg-brand-light border border-border rounded-xl p-6 h-full">
                 <div className="flex items-center gap-3 mb-5">
                   <Target className="w-7 h-7 text-primary" />
                   <h3 className="text-xl font-bold text-foreground tracking-wide uppercase">Our Mission</h3>

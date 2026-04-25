@@ -306,7 +306,7 @@ export default function AnimatedBanner() {
         </span>
 
         <p className="text-white text-sm font-medium drop-shadow whitespace-nowrap">
-          Introducing Smart Freight Calculator – Calculate CBM, Cost &amp; Freight in 2D &amp; 3D Instantly.
+          Introducing Smart Freight Calculator — Get your container optimization plan. Recommend the best container, render a 3D loading plan.
         </p>
 
         <button

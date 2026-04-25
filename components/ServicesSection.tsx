@@ -1,7 +1,7 @@
 ﻿"use client"
 import {
   FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box, Combine,
-  CheckCircle2, Warehouse, Globe, FileCheck, Thermometer, BarChart3, ArrowRight, Package,
+  Warehouse, Globe, FileCheck, Thermometer, BarChart3, ArrowRight, Package,
 } from "lucide-react";
 import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
@@ -139,16 +139,43 @@ const ServicesSection = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
-            {benefits.map((b, i) => (
-              <ScrollReveal key={b.title} delay={i * 0.07} className="h-full">
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
-                  <CheckCircle2 className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
-                  <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{b.desc}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div className="flex flex-col divide-y divide-border">
+              <div className="flex items-center gap-6 py-6 first:pt-0">
+                <span className="text-5xl font-extrabold text-accent min-w-[100px]">₹0</span>
+                <div>
+                  <strong className="block text-foreground font-bold">Customs Duty</strong>
+                  <span className="text-muted-foreground text-sm">Store without paying duty until goods are cleared</span>
                 </div>
-              </ScrollReveal>
-            ))}
+              </div>
+              <div className="flex items-center gap-6 py-6">
+                <span className="text-5xl font-extrabold text-accent min-w-[100px]">100%</span>
+                <div>
+                  <strong className="block text-foreground font-bold">GST Deferral</strong>
+                  <span className="text-muted-foreground text-sm">Defer indefinitely until goods enter domestic market</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-6 py-6">
+                <span className="text-5xl font-extrabold text-accent min-w-[100px]">24/7</span>
+                <div>
+                  <strong className="block text-foreground font-bold">Operations</strong>
+                  <span className="text-muted-foreground text-sm">Round-the-clock facility management and support</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-6 py-6 last:pb-0">
+                <span className="text-5xl font-extrabold text-accent min-w-[100px]">8+</span>
+                <div>
+                  <strong className="block text-foreground font-bold">Pan-India Locations</strong>
+                  <span className="text-muted-foreground text-sm">Strategically located FTWZ facilities across major ports</span>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-4 text-muted-foreground">
+              <h3 className="text-2xl font-bold text-foreground">Save More. Move Faster. Grow Bigger.</h3>
+              <p className="leading-relaxed">Astromar's Free Trade Warehousing Zone facilities are strategically positioned to give your business the maximum advantage in international trade.</p>
+              <p className="leading-relaxed">Whether you are importing raw materials, storing finished goods, or managing re-exports our FTWZ gives you complete control over duty and tax liability.</p>
+              <a href="/ftwz-services" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">Learn More About FTWZ →</a>
+            </div>
           </div>
         </div>
       </section>
@@ -165,13 +192,20 @@ const ServicesSection = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
+          <div className="max-w-5xl mx-auto">
             {solutions.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 0.07} className="h-full">
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
-                  <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
-                  <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{s.desc}</p>
+              <ScrollReveal key={s.title} delay={i * 0.06}>
+                <div className="flex items-start gap-8 py-8 border-b border-border last:border-0">
+                  <span className="text-7xl font-extrabold text-primary/10 leading-none flex-shrink-0 w-24 text-right select-none">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="flex-1 pt-2">
+                    <div className="flex items-center gap-3 mb-2">
+                      <s.icon className="w-5 h-5 text-accent flex-shrink-0" strokeWidth={1.5} />
+                      <h3 className="text-lg font-bold text-foreground">{s.title}</h3>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}

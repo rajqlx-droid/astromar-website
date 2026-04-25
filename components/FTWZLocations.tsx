@@ -1,22 +1,21 @@
 "use client"
 import { useState, useMemo } from "react";
-import Link from "next/link";
 import { MapPin, Phone, Warehouse, Search, Navigation } from "lucide-react";
 import { Input } from "./ui/input";
 import ScrollReveal from "./ScrollReveal";
 import FTWZMap from "./FTWZMap";
 
 const locations = [
-  { slug: "kochi", city: "Kochi", state: "Kerala", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 9.9312, lng: 76.2673, address: "SEZ ICTT, Vallarpadam, Kochi, Ernakulam, Kerala 682504" },
-  { slug: "vizag", city: "Vizag", state: "Andhra Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 17.6868, lng: 83.2185, address: "VSEZ, Duvvada, Visakhapatnam, Andhra Pradesh 530049" },
-  { slug: "mumbai-panvel", city: "Mumbai (Panvel)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9894, lng: 73.1175, address: "Village Sai, Taluka Panvel, District - Raigad, Mumbai, Maharashtra, 410206, India" },
-  { slug: "mumbai-jnpa", city: "Mumbai (JNPA)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9543, lng: 72.9479, address: "JNPA SEZ, Village-Sawarkhar, Uran, Raigad, Maharashtra, 400707" },
-  { slug: "chennai-sriperumbudur", city: "Chennai (Sriperumbudur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 12.9716, lng: 79.9473, address: "Mannur & Valarpuram Village, Sriperumbudur Taluk, Kancheepuram District, 602105, Tamil Nadu, India" },
-  { slug: "chennai-vallur", city: "Chennai (Vallur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2090, lng: 80.2843, address: "Vallur & Edayanchavadi Village, Ponneri Taluk, Tiruvallur District, 600120, Tamil Nadu, India" },
-  { slug: "delhi-khurja", city: "Delhi (Khurja)", state: "Uttar Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 28.2476, lng: 77.8538, address: "Junction Road, Khurja Industrial Area, Village Maujpur, Khurja, District - Bulandshahr, UP - 203131, India" },
-  { slug: "bengaluru", city: "Bengaluru", state: "Karnataka", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2486, lng: 77.7066, address: "Innomech Aerospace Tooling Pvt Ltd, Aerospace SEZ Sector, Devanahalli, Bengaluru, Karnataka, 562165" },
-  { slug: "dahej", city: "Dahej", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 21.7051, lng: 72.5793, address: "Z-85/2A, Dahej SEZ - 1, Dahej, Gujarat, India" },
-  { slug: "chennai-hq", city: "Chennai HQ", state: "Tamil Nadu", type: "Registered Office", phone: "+91 99402 11014", lat: 13.0850, lng: 80.2101, address: "No. 922, 1st Floor, H-Block, 17th Main Road, Anna Nagar, Chennai - 600 040, Tamil Nadu, India" },
+  { slug: "kochi", city: "Kochi", state: "Kerala", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 9.9312, lng: 76.2673, address: "SEZ ICTT, Vallarpadam, Kochi, Kerala 682504" },
+  { slug: "vizag", city: "Vizag", state: "Andhra Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 17.6868, lng: 83.2185, address: "VSEZ, Duvvada, Visakhapatnam, AP 530049" },
+  { slug: "mumbai-panvel", city: "Mumbai (Panvel)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9894, lng: 73.1175, address: "Village Sai, Taluka Panvel, Raigad, Maharashtra 410206" },
+  { slug: "mumbai-jnpa", city: "Mumbai (JNPA)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9543, lng: 72.9479, address: "JNPA SEZ, Uran, Raigad, Maharashtra 400707" },
+  { slug: "chennai-sriperumbudur", city: "Chennai (Sriperumbudur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 12.9716, lng: 79.9473, address: "Mannur Village, Sriperumbudur, Kancheepuram, TN 602105" },
+  { slug: "chennai-vallur", city: "Chennai (Vallur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2090, lng: 80.2843, address: "Vallur Village, Ponneri, Tiruvallur, TN 600120" },
+  { slug: "delhi-khurja", city: "Delhi (Khurja)", state: "Uttar Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 28.2476, lng: 77.8538, address: "Khurja Industrial Area, Bulandshahr, UP 203131" },
+  { slug: "bengaluru", city: "Bengaluru", state: "Karnataka", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2486, lng: 77.7066, address: "Aerospace SEZ, Devanahalli, Bengaluru, Karnataka 562165" },
+  { slug: "dahej", city: "Dahej", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 21.7051, lng: 72.5793, address: "Z-85/2A, Dahej SEZ-1, Dahej, Gujarat" },
+  { slug: "mundra", city: "Mundra", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 22.8386, lng: 69.7295, address: "APSEZ, Survey No. 169/36, Mundra, Kutch, Gujarat 370421" },
 ];
 
 const FTWZLocations = () => {
@@ -78,46 +77,48 @@ const FTWZLocations = () => {
                     : "border-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
                 }`}
               >
-                <div className="flex items-start gap-3 mb-3">
+                <div className="flex items-start gap-3 mb-3 min-w-0">
                   <div className={`flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${
                     activeCity === loc.city ? "bg-primary/20" : "bg-primary/10 group-hover:bg-primary/20"
                   }`}>
                     <MapPin size={20} className="text-primary" />
                   </div>
-                  <div>
-                    <h3 className="font-bold text-foreground text-lg leading-tight">{loc.city}</h3>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="font-bold text-foreground text-base leading-tight break-words">{loc.city}</h3>
                     <p className="text-sm text-muted-foreground">{loc.state}</p>
                   </div>
                 </div>
-                <div className="space-y-2 text-sm">
+                <div className="flex flex-col gap-2 text-sm flex-1">
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Warehouse size={14} className="text-accent flex-shrink-0" />
                     <span>{loc.type}</span>
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed">{loc.address}</p>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <Phone size={14} className="text-accent flex-shrink-0" />
-                    <a href={`tel:${loc.phone.replace(/\s/g, "")}`} className="hover:text-primary transition-colors" onClick={(e) => e.stopPropagation()}>
-                      {loc.phone}
+                  <div className="mt-auto pt-3 flex flex-col gap-2">
+                    <div className="flex items-center gap-2 text-muted-foreground">
+                      <Phone size={14} className="text-accent flex-shrink-0" />
+                      <a href={`tel:${loc.phone.replace(/\s/g, "")}`} className="hover:text-primary transition-colors" onClick={(e) => e.stopPropagation()}>
+                        {loc.phone}
+                      </a>
+                    </div>
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(loc.address)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary/80 transition-colors"
+                    >
+                      <Navigation size={13} />
+                      Get Directions
+                    </a>
+                    <a
+                      href={`/locations/${loc.slug}`}
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-xs font-semibold hover:bg-primary/90 transition-colors w-full"
+                    >
+                      View Port Details →
                     </a>
                   </div>
-                  <a
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(loc.address)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center gap-1.5 mt-2 text-xs font-semibold text-primary hover:text-primary/80 transition-colors"
-                  >
-                    <Navigation size={13} />
-                    Get Directions
-                  </a>
-                  <Link
-                    href={`/locations/${loc.slug}`}
-                    onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center gap-1.5 mt-2 ml-4 text-xs font-semibold text-primary hover:text-primary/80 transition-colors"
-                  >
-                    View Port Details →
-                  </Link>
                 </div>
               </div>
             </ScrollReveal>

@@ -38,20 +38,22 @@ const WhyUsSection = () => {
           </h2>
         </ScrollReveal>
 
-        <div className="px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {features.map((f, i) => (
-            <ScrollReveal key={f.title} delay={i * 0.1} className="h-full">
-              <div className="bg-white border border-gray-200 border-l-[6px] border-l-[#1B3A6B] rounded-lg p-6 h-full flex flex-col relative">
-                <div className="absolute top-0 right-0 w-1 h-10 bg-[#F97316] rounded-tr-lg" />
-                <div className="w-11 h-11 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-[#1B3A6B]">
-                  <f.icon className="w-5 h-5 text-[#1B3A6B]" strokeWidth={1.5} />
+          <div className="flex flex-col divide-y divide-border max-w-4xl mx-auto">
+            {features.map((item, i) => (
+              <ScrollReveal key={item.title} delay={i * 0.06}>
+                <div className="flex items-start gap-6 py-8 first:pt-0 last:pb-0">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent to-orange-400 flex items-center justify-center flex-shrink-0 shadow-md">
+                    <item.icon className="w-7 h-7 text-white" strokeWidth={1.5} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item.description || item.desc}</p>
+                    <span className="inline-block mt-3 bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full">Astromar Promise</span>
+                  </div>
                 </div>
-                <h4 className="text-base font-semibold text-[#1B3A6B] mb-3">{f.title}</h4>
-                <p className="text-sm text-gray-600 flex-1">{f.desc}</p>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
+              </ScrollReveal>
+            ))}
+          </div>
       </div>
     </section>
   );
