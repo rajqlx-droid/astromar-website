@@ -117,7 +117,7 @@ const About = () => {
                   <Target className="w-7 h-7 text-primary" />
                   <h3 className="text-xl font-bold text-foreground tracking-wide uppercase">Our Mission</h3>
                 </div>
-                <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                <p className="text-foreground/80 leading-relaxed text-base sm:text-lg">
                   To provide reliable, efficient, and transparent logistics solutions that simplify
                   global trade and strengthen client partnerships.
                 </p>
@@ -136,7 +136,7 @@ const About = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -168,7 +168,7 @@ const About = () => {
                           <div className="rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm text-right">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
                             <p className="font-bold text-foreground mt-1">{m.title}</p>
-                            <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{m.desc}</p>
+                            <p className="text-sm text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
                           </div>
                         )}
                       </div>
@@ -177,14 +177,14 @@ const About = () => {
                           <div className="rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
                             <p className="font-bold text-foreground mt-1">{m.title}</p>
-                            <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{m.desc}</p>
+                            <p className="text-sm text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
                           </div>
                         )}
                       </div>
                       <div className="md:hidden rounded-xl border border-border bg-card p-5 shadow-sm">
                         <p className="text-xl font-extrabold text-primary">{m.year}</p>
                         <p className="font-bold text-foreground mt-1">{m.title}</p>
-                        <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{m.desc}</p>
+                        <p className="text-sm text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -211,7 +211,7 @@ const About = () => {
                   <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
                   <div>
                     <p className="text-foreground font-semibold text-sm sm:text-base">{cert.title}</p>
-                    <p className="text-muted-foreground text-xs sm:text-sm mt-0.5">{cert.desc}</p>
+                    <p className="text-foreground/80 text-xs sm:text-sm mt-0.5">{cert.desc}</p>
                   </div>
                 </div>
               </ScrollReveal>

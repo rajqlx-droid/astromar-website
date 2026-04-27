@@ -85,7 +85,7 @@ const SupplyChain = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -107,7 +107,7 @@ const SupplyChain = () => {
               <ScrollReveal key={ind.title} delay={i * 0.07}>
                 <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h3 className="text-lg font-bold text-foreground mb-2">{ind.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{ind.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{ind.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -123,7 +123,7 @@ const SupplyChain = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Pan-India Distribution Network
             </h2>
-            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-6 text-sm leading-relaxed">
+            <p className="text-center text-foreground/80 max-w-2xl mx-auto mb-6 text-sm leading-relaxed">
               Our domestic transport and distribution capabilities connect your supply chain from port to end customer across India.
             </p>
           </ScrollReveal>
@@ -137,7 +137,7 @@ const SupplyChain = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -150,7 +150,7 @@ const SupplyChain = () => {
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Transform Your Supply Chain</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
               Let our supply chain experts design a solution tailored to your industry, scale, and growth ambitions.
             </p>
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>

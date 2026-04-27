@@ -1,4 +1,5 @@
 ﻿"use client"
+import { useState } from "react";
 import {
   FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box, Combine,
   Warehouse, Globe, FileCheck, Thermometer, BarChart3, ArrowRight, Package,
@@ -38,6 +39,7 @@ const solutions = [
 ];
 
 const ServicesSection = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
   return (
     <>
       {/* Services Grid */}
@@ -57,7 +59,7 @@ const ServicesSection = () => {
           </ScrollReveal>
 
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6 items-stretch">
-            {services.slice(0, 3).map((s, i) => (
+            {services.slice(0, 4).map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.06} className="h-full">
                 <a href={s.href} className="block h-full">
                   <div
@@ -128,87 +130,132 @@ const ServicesSection = () => {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-14 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
               KEY BENEFITS
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-16">
               Why Choose Our FTWZ Warehousing?
             </h2>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-            <div className="flex flex-col divide-y divide-border">
-              <div className="flex items-center gap-6 py-6 first:pt-0">
-                <span className="text-5xl font-extrabold text-accent min-w-[100px]">₹0</span>
-                <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch max-w-5xl mx-auto">
+            <div className="flex flex-col divide-y divide-border h-full justify-between">
+              <div className="flex items-center gap-6 py-8 first:pt-0">
+                <span className="text-4xl font-extrabold text-accent min-w-[80px]">₹0</span>
+                <div className="min-w-0 flex-1">
                   <strong className="block text-foreground font-bold">Customs Duty</strong>
                   <span className="text-muted-foreground text-sm">Store without paying duty until goods are cleared</span>
                 </div>
               </div>
-              <div className="flex items-center gap-6 py-6">
-                <span className="text-5xl font-extrabold text-accent min-w-[100px]">100%</span>
-                <div>
+              <div className="flex items-center gap-6 py-8">
+                <span className="text-4xl font-extrabold text-accent min-w-[80px]">100%</span>
+                <div className="min-w-0 flex-1">
                   <strong className="block text-foreground font-bold">GST Deferral</strong>
                   <span className="text-muted-foreground text-sm">Defer indefinitely until goods enter domestic market</span>
                 </div>
               </div>
-              <div className="flex items-center gap-6 py-6">
-                <span className="text-5xl font-extrabold text-accent min-w-[100px]">24/7</span>
-                <div>
+              <div className="flex items-center gap-6 py-8">
+                <span className="text-4xl font-extrabold text-accent min-w-[80px]">24/7</span>
+                <div className="min-w-0 flex-1">
                   <strong className="block text-foreground font-bold">Operations</strong>
                   <span className="text-muted-foreground text-sm">Round-the-clock facility management and support</span>
                 </div>
               </div>
-              <div className="flex items-center gap-6 py-6 last:pb-0">
-                <span className="text-5xl font-extrabold text-accent min-w-[100px]">8+</span>
-                <div>
+              <div className="flex items-center gap-6 py-8 last:pb-0">
+                <span className="text-4xl font-extrabold text-accent min-w-[80px]">8+</span>
+                <div className="min-w-0 flex-1">
                   <strong className="block text-foreground font-bold">Pan-India Locations</strong>
                   <span className="text-muted-foreground text-sm">Strategically located FTWZ facilities across major ports</span>
                 </div>
               </div>
             </div>
-            <div className="space-y-4 text-muted-foreground">
-              <h3 className="text-2xl font-bold text-foreground">Save More. Move Faster. Grow Bigger.</h3>
-              <p className="leading-relaxed">Astromar's Free Trade Warehousing Zone facilities are strategically positioned to give your business the maximum advantage in international trade.</p>
-              <p className="leading-relaxed">Whether you are importing raw materials, storing finished goods, or managing re-exports our FTWZ gives you complete control over duty and tax liability.</p>
-              <a href="/ftwz-services" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">Learn More About FTWZ →</a>
+            <div className="rounded-xl border border-border bg-card p-6 shadow-sm space-y-3 text-muted-foreground h-full flex flex-col justify-center">
+              <h3 className="text-xl font-bold text-foreground">Save More. Move Faster. Grow Bigger.</h3>
+              <p className="leading-relaxed text-sm">Astromar's FTWZ facilities are strategically positioned to give your business the maximum advantage in international trade — defer duty, control costs, and scale faster.</p>
+              <div className="bg-brand-light border-l-4 border-accent rounded-r-lg px-4 py-3 text-sm font-semibold text-foreground">
+                ✓ No customs duty until domestic clearance — maximize working capital
+              </div>
+              <p className="leading-relaxed text-sm">Our pan-India network connects all major ports and airports — built for pharma, electronics, FMCG, and project cargo at any scale.</p>
+              <a href="/ftwz-services" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline text-sm">Learn More About FTWZ →</a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Comprehensive Solutions */}
-      <section className="py-14 bg-brand-light">
+      <section className="py-20 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
               OUR SOLUTIONS
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               Comprehensive FTWZ Warehousing Solutions
             </h2>
           </ScrollReveal>
 
-          <div className="max-w-5xl mx-auto">
-            {solutions.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 0.06}>
-                <div className="flex items-start gap-8 py-8 border-b border-border last:border-0">
-                  <span className="text-7xl font-extrabold text-primary/10 leading-none flex-shrink-0 w-24 text-right select-none">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div className="flex-1 pt-2">
-                    <div className="flex items-center gap-3 mb-2">
-                      <s.icon className="w-5 h-5 text-accent flex-shrink-0" strokeWidth={1.5} />
-                      <h3 className="text-lg font-bold text-foreground">{s.title}</h3>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            {/* LEFT - Accordion */}
+            <div className="rounded-xl border border-border overflow-hidden bg-card h-full flex flex-col">
+              {solutions.map((s, i) => (
+                <div key={s.title} className="border-b border-border last:border-0 hover:bg-muted/10 transition-colors">
+                  <button
+                    onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                    className={`w-full flex items-center justify-between gap-4 px-5 py-5 text-left transition-colors ${
+                      openIndex === i
+                        ? "bg-brand-navy text-white"
+                        : "bg-card hover:bg-muted/30"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <s.icon
+                        className={`w-5 h-5 flex-shrink-0 ${
+                          openIndex === i ? "text-accent" : "text-primary"
+                        }`}
+                        strokeWidth={1.5}
+                      />
+                      <span className={`text-sm font-bold ${
+                        openIndex === i ? "text-white" : "text-foreground"
+                      }`}>
+                        {s.title}
+                      </span>
                     </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
-                  </div>
+                    <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm transition-colors ${
+                      openIndex === i
+                        ? "bg-accent text-white"
+                        : "bg-primary/10 text-primary"
+                    }`}>
+                      {openIndex === i ? "−" : "+"}
+                    </div>
+                  </button>
+                  {openIndex === i && (
+                    <div className="px-5 py-4 bg-brand-light border-t border-border">
+                      <p className="text-gray-800 text-sm leading-relaxed font-medium">{s.desc}</p>
+                    </div>
+                  )}
                 </div>
-              </ScrollReveal>
-            ))}
+              ))}
+            </div>
+
+            {/* RIGHT - Image */}
+            <div className="relative rounded-xl overflow-hidden" style={{ height: '420px' }}>
+              <img
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800"
+                alt="Astromar FTWZ Warehouse Facility"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-brand-navy/50" />
+              <div className="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
+                FTWZ Certified
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 bg-brand-navy/80 rounded-lg p-4">
+                <p className="text-white font-bold text-sm mb-1">Astromar FTWZ Facility</p>
+                <p className="text-white/70 text-xs">Duty-free bonded warehouse • Pan-India network</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

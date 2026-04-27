@@ -94,7 +94,7 @@ const CustomClearance = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -139,7 +139,7 @@ const CustomClearance = () => {
                 <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
                   <span className="text-3xl font-extrabold text-primary/20 mb-2 block">{p.step}</span>
                   <h3 className="text-base font-bold text-foreground mb-2">{p.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{p.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -167,7 +167,7 @@ const CustomClearance = () => {
                 <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -180,7 +180,7 @@ const CustomClearance = () => {
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Clear Customs Without the Hassle</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
               Our licensed customs brokers ensure fast, compliant clearance at every Indian port. Contact us today.
             </p>
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>

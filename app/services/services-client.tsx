@@ -80,7 +80,7 @@ const Services = () => {
                     )}
                     <s.icon className="w-7 h-7 md:w-8 md:h-8 text-primary mb-4" strokeWidth={1.5} />
                     <h3 className="text-base md:text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm flex-1">{s.desc}</p>
+                    <p className="text-foreground/80 leading-relaxed text-sm flex-1">{s.desc}</p>
                     <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">
                       Learn more <ArrowRight className="w-4 h-4" />
                     </span>

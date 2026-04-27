@@ -92,7 +92,7 @@ const CoastalShipping = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{h.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{h.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{h.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -119,8 +119,8 @@ const CoastalShipping = () => {
                   <div className={`grid grid-cols-4 text-sm p-4 ${i % 2 === 0 ? "bg-card" : "bg-muted/30"}`}>
                     <span className="font-medium text-foreground">{r.from}</span>
                     <span className="text-foreground">{r.to}</span>
-                    <span className="text-muted-foreground">{r.transit}</span>
-                    <span className="text-muted-foreground">{r.frequency}</span>
+                    <span className="text-foreground/80">{r.transit}</span>
+                    <span className="text-foreground/80">{r.frequency}</span>
                   </div>
                 </ScrollReveal>
               ))}
@@ -144,7 +144,7 @@ const CoastalShipping = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <c.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{c.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{c.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{c.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -157,7 +157,7 @@ const CoastalShipping = () => {
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Ready to Ship Coastally?</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
               Get competitive coastal shipping rates and let our team plan the most efficient route for your cargo.
             </p>
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>

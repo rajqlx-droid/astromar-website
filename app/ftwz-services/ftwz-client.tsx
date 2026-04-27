@@ -80,7 +80,7 @@ const FTWZServices = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
               Overview
             </h2>
-            <p className="text-muted-foreground max-w-4xl leading-relaxed text-base sm:text-lg mb-8">
+            <p className="text-foreground/80 max-w-4xl leading-relaxed text-base sm:text-lg mb-8">
               FTWZ Warehousing is India's most flexible duty-free warehousing solution, enabling importers and
               exporters to store goods without paying customs duty or GST – until final disposition. Whether
               you're re-exporting, consolidating shipments, or deferring domestic clearance, AstroMar's pan-India
@@ -114,7 +114,7 @@ const FTWZServices = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{b.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed flex-1">{b.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -140,7 +140,7 @@ const FTWZServices = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{s.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed flex-1">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -158,7 +158,7 @@ const FTWZServices = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-3">
               Why FTWZ Outperforms Regular Storage
             </h2>
-            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-10 text-sm sm:text-base leading-relaxed">
+            <p className="text-center text-foreground/80 max-w-2xl mx-auto mb-10 text-sm sm:text-base leading-relaxed">
               See how Astromar's FTWZ gives your business a clear competitive advantage over conventional warehousing.
             </p>
 
@@ -194,7 +194,7 @@ const FTWZServices = () => {
               </table>
             </div>
 
-            <p className="text-xs text-muted-foreground mt-4 text-center">
+            <p className="text-xs text-foreground/80 mt-4 text-center">
               * All FTWZ benefits subject to SEZ Act compliance and Astromar facility terms.
             </p>
           </ScrollReveal>
@@ -208,7 +208,7 @@ const FTWZServices = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
               Ready to Leverage FTWZ for Your Business?
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto mb-8 text-base sm:text-lg">
+            <p className="text-foreground/80 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
               Contact our team to explore how duty-free warehousing can transform your supply chain economics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

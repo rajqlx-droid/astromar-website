@@ -95,7 +95,7 @@ const AirFreight = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -141,7 +141,7 @@ const AirFreight = () => {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div>
                       <h3 className="text-lg font-bold text-foreground mb-1">{d.region}</h3>
-                      <p className="text-sm text-muted-foreground">Hubs: {d.hubs}</p>
+                      <p className="text-sm text-foreground/80">Hubs: {d.hubs}</p>
                     </div>
                     <span className="text-sm font-semibold text-primary whitespace-nowrap">{d.transit}</span>
                   </div>
@@ -157,7 +157,7 @@ const AirFreight = () => {
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Need It There Fast?</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
               Get competitive air freight rates within 2 hours. Express, standard, or charter — we have the right solution.
             </p>
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
