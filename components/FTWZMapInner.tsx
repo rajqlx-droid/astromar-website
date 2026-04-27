@@ -1,7 +1,7 @@
 "use client"
 
 interface FTWZMapInnerProps {
-  locations: Array<{
+  locations?: Array<{
     city: string;
     state: string;
     lat: number;
@@ -11,7 +11,7 @@ interface FTWZMapInnerProps {
     type: string;
     slug: string;
   }>;
-  activeCity: string | null;
+  activeCity?: string | null;
   onMarkerClick?: (city: string) => void;
 }
 
