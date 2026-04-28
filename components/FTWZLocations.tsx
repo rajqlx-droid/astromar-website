@@ -84,7 +84,14 @@ const FTWZLocations = () => {
                     <MapPin size={20} className="text-primary" />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <h3 className="font-bold text-foreground text-base leading-tight break-words">{loc.city}</h3>
+                    <h3 className="font-bold text-foreground text-base leading-tight">
+                      {loc.city.includes("(")
+                        ? loc.city.split("(")[0].trim()
+                        : loc.city}
+                    </h3>
+                    {loc.city.includes("(") && (
+                      <span className="text-xs text-muted-foreground">({loc.city.split("(")[1]}</span>
+                    )}
                     <p className="text-sm text-muted-foreground">{loc.state}</p>
                   </div>
                 </div>
