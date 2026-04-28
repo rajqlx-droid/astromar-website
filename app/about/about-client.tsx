@@ -143,16 +143,27 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-14 bg-brand-light">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="py-14 bg-white">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR VALUES</p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10">What We Stand For</h2>
+          </ScrollReveal>
+          <div>
             {coreValues.map((item, i) => (
-              <ScrollReveal key={item.title} delay={i * 0.08}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
-                  <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
-                  <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
+              <ScrollReveal key={item.title} delay={i * 0.06}>
+                <div className="flex items-start gap-5 py-6">
+                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mt-0.5">
+                    <item.icon className="w-5 h-5 text-primary" strokeWidth={1.75} />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base font-bold text-foreground mb-1">{item.title}</h3>
+                    <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">{item.desc}</p>
+                  </div>
                 </div>
+                {i < coreValues.length - 1 && (
+                  <div className="h-px bg-border" />
+                )}
               </ScrollReveal>
             ))}
           </div>
@@ -255,27 +266,6 @@ const About = () => {
               </Link>
             </div>
           </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-14 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="rounded-xl bg-primary p-5 sm:p-6 text-primary-foreground text-center shadow-lg"
-              >
-                <p className="text-2xl sm:text-3xl font-extrabold">{stat.value}</p>
-                <p className="text-sm sm:text-base opacity-80 mt-1">{stat.label}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
