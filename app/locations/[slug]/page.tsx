@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin, Phone, Navigation, Warehouse, ArrowLeft, Clock, Globe } from "lucide-react";
+import { ftwzLocationDetails } from "@/data/ftwzLocations";
 
 const locations = [
   {
@@ -15,6 +16,7 @@ const locations = [
     port: "Kochi Port (ICTT)",
     nearestAirport: "Cochin International Airport (COK) — 28 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Cold Chain Storage", "Single Window Clearance"],
     about: "Astromar's Kochi FTWZ facility is strategically located at the International Container Transshipment Terminal (ICTT), Vallarpadam — India's first dedicated container transshipment terminal. Offering world-class bonded warehousing with seamless port connectivity.",
   },
@@ -30,6 +32,7 @@ const locations = [
     port: "Visakhapatnam Port",
     nearestAirport: "Visakhapatnam Airport (VTZ) — 15 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Bonded Warehousing", "Single Window Clearance"],
     about: "Located within the Visakhapatnam Special Economic Zone (VSEZ), Astromar's Vizag facility offers strategic access to one of India's busiest eastern ports, supporting imports, exports, and re-export operations across the Bay of Bengal trade corridor.",
   },
@@ -45,6 +48,7 @@ const locations = [
     port: "Nhava Sheva (JNPT)",
     nearestAirport: "Chhatrapati Shivaji Maharaj International Airport (BOM) — 45 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Cold Chain Storage", "Project Cargo"],
     about: "Astromar's Panvel facility is strategically positioned near Nhava Sheva, India's largest container port. This FTWZ warehouse provides unmatched connectivity for importers and exporters operating across Western India and beyond.",
   },
@@ -60,6 +64,7 @@ const locations = [
     port: "Jawaharlal Nehru Port (JNPT)",
     nearestAirport: "Chhatrapati Shivaji Maharaj International Airport (BOM) — 40 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Container Freight", "Bonded Warehousing", "Single Window Clearance"],
     about: "Located at JNPA SEZ, Uran — directly adjacent to India's premier container port — Astromar's JNPA facility offers the fastest turnaround for container-based FTWZ operations, making it the preferred choice for high-volume importers and exporters.",
   },
@@ -75,6 +80,7 @@ const locations = [
     port: "Chennai Port",
     nearestAirport: "Chennai International Airport (MAA) — 42 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Electronics Logistics", "Value-Added Services", "Cold Chain Storage", "Single Window Clearance"],
     about: "Astromar's Sriperumbudur FTWZ is located in the heart of Tamil Nadu's manufacturing corridor — home to global electronics and automotive giants. This facility is purpose-built for electronics, pharma, and high-value cargo operations.",
   },
@@ -90,6 +96,7 @@ const locations = [
     port: "Kamarajar Port (Ennore)",
     nearestAirport: "Chennai International Airport (MAA) — 35 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Bulk Cargo", "Re-export Hub", "Bonded Warehousing", "Single Window Clearance"],
     about: "Strategically located near Kamarajar Port (Ennore), Astromar's Vallur facility serves bulk cargo, coal, and industrial goods importers. Its proximity to North Chennai's industrial belt makes it ideal for manufacturing sector logistics.",
   },
@@ -105,6 +112,7 @@ const locations = [
     port: "ICD Tughlakabad / Dadri",
     nearestAirport: "Indira Gandhi International Airport (DEL) — 75 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "ICD Connectivity", "Value-Added Services", "Bonded Warehousing", "Single Window Clearance"],
     about: "Astromar's Delhi (Khurja) FTWZ serves the National Capital Region and North India's industrial hinterland. With excellent connectivity to ICD Tughlakabad and Dadri, this facility is ideal for importers and exporters in Delhi, UP, Haryana, and Punjab.",
   },
@@ -120,6 +128,7 @@ const locations = [
     port: "ICD Whitefield / Bangalore",
     nearestAirport: "Kempegowda International Airport (BLR) — 8 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1565793979038-b5b6d2bda985?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Aerospace Logistics", "High-Value Cargo", "Cold Chain Storage", "Single Window Clearance"],
     about: "Located within the Aerospace SEZ at Devanahalli — just 8 km from Bengaluru International Airport — Astromar's Bengaluru FTWZ is purpose-built for aerospace, electronics, and high-value cargo. Ideal for India's growing tech and manufacturing sector.",
   },
@@ -135,6 +144,7 @@ const locations = [
     port: "Dahej Port",
     nearestAirport: "Vadodara Airport (BDQ) — 80 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Chemical Logistics", "Bulk Cargo", "Bonded Warehousing", "Single Window Clearance"],
     about: "Astromar's Dahej FTWZ is located within Dahej SEZ-1, one of India's largest chemical and petrochemical industrial estates. This facility is specially equipped for chemical, polymer, and industrial cargo with full compliance and safety standards.",
   },
@@ -150,80 +160,114 @@ const locations = [
     port: "Mundra Port (APSEZ)",
     nearestAirport: "Bhuj Airport (BHJ) — 65 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Container Freight", "Bulk Cargo", "Single Window Clearance"],
     about: "Located at Adani Ports and SEZ (APSEZ), Mundra — India's largest commercial port — Astromar's Mundra FTWZ offers unmatched scale and connectivity for importers, exporters, and re-export operators. Strategically positioned for trade with the Middle East, Africa, and Europe.",
   },
 ];
 
 export async function generateStaticParams() {
-  return locations.map((loc) => ({ slug: loc.slug }));
+  return ftwzLocationDetails.map((loc) => ({ slug: loc.slug }));
 }
 
-export default function LocationPage({ params }: { params: { slug: string } }) {
-  const location = locations.find((l) => l.slug === params.slug);
+export default async function LocationPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const location = locations.find((l) => l.slug === slug);
   if (!location) notFound();
 
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Banner */}
-      <section className="relative bg-brand-navy py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-navy to-[#0d1b35]" />
+      <section
+        className="relative min-h-[50vh] py-24 overflow-hidden flex items-center"
+        style={{
+          backgroundImage: `url(${location.heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Dark overlay */}
+        <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.65)" }} />
+        {/* Gradient tint — navy at bottom for smooth page transition */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/80 via-transparent to-transparent" />
+        {/* Top accent line */}
+        <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-accent to-transparent" />
+
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16">
           <div className="max-w-7xl mx-auto">
-            <Link href="/contact" className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm mb-6 transition-colors">
-              <ArrowLeft className="w-4 h-4" />
+            <Link href="/contact" className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm mb-8 transition-colors group">
+              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
               Back to Locations
             </Link>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              {/* Left — text content */}
               <div>
-                <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">
-                  {location.type}
-                </p>
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
-                  {location.city} FTWZ Facility
-                </h1>
-                <div className="flex items-center gap-2 text-white/80 mb-2">
-                  <MapPin className="w-4 h-4 text-accent flex-shrink-0" />
-                  <span className="text-sm">{location.address}</span>
+                {/* State badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/15 border border-accent/30 mb-5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                  <span className="text-xs font-bold tracking-[0.15em] text-accent uppercase">{location.state} &nbsp;·&nbsp; {location.type}</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/80 mb-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight tracking-tight">
+                  {location.city}
+                  <span className="block text-accent/90">FTWZ Facility</span>
+                </h1>
+                <div className="flex items-start gap-2 text-white/70 mb-3">
+                  <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                  <span className="text-sm leading-relaxed">{location.address}</span>
+                </div>
+                <div className="flex items-center gap-2 text-white/70 mb-8">
                   <Phone className="w-4 h-4 text-accent flex-shrink-0" />
                   <a href={`tel:${location.phone.replace(/\s/g, "")}`} className="text-sm hover:text-white transition-colors">{location.phone}</a>
                 </div>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   <a
                     href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-colors"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-all shadow-lg shadow-accent/20 hover:shadow-accent/40"
                   >
                     <Navigation className="w-4 h-4" />
                     Get Directions
                   </a>
                   <a
                     href="/contact"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-white text-white font-semibold hover:bg-white/10 transition-colors"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/25 text-white font-semibold hover:bg-white/10 hover:border-white/50 transition-all backdrop-blur-sm"
                   >
                     Contact Us
                   </a>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 text-center">
-                  <Warehouse className="w-8 h-8 text-accent mx-auto mb-2" />
-                  <p className="text-white font-semibold text-sm">{location.type}</p>
+
+              {/* Right — info cards */}
+              <div className="grid grid-cols-2 gap-3">
+                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-accent/30 transition-all">
+                  <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center mb-3">
+                    <Warehouse className="w-5 h-5 text-accent" />
+                  </div>
+                  <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Facility</p>
+                  <p className="text-white font-semibold text-sm leading-snug">{location.type}</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 text-center">
-                  <Globe className="w-8 h-8 text-accent mx-auto mb-2" />
-                  <p className="text-white font-semibold text-sm">{location.port}</p>
+                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-accent/30 transition-all">
+                  <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center mb-3">
+                    <Globe className="w-5 h-5 text-accent" />
+                  </div>
+                  <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Nearest Port</p>
+                  <p className="text-white font-semibold text-sm leading-snug">{location.port}</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 text-center">
-                  <MapPin className="w-8 h-8 text-accent mx-auto mb-2" />
-                  <p className="text-white font-semibold text-sm">{location.state}</p>
+                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-accent/30 transition-all">
+                  <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center mb-3">
+                    <MapPin className="w-5 h-5 text-accent" />
+                  </div>
+                  <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">State</p>
+                  <p className="text-white font-semibold text-sm leading-snug">{location.state}</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 text-center">
-                  <Clock className="w-8 h-8 text-accent mx-auto mb-2" />
-                  <p className="text-white font-semibold text-sm">{location.operatingHours}</p>
+                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-accent/30 transition-all">
+                  <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center mb-3">
+                    <Clock className="w-5 h-5 text-accent" />
+                  </div>
+                  <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Hours</p>
+                  <p className="text-white font-semibold text-sm leading-snug">{location.operatingHours}</p>
                 </div>
               </div>
             </div>
