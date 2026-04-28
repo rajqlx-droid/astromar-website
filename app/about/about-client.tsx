@@ -142,8 +142,15 @@ const About = () => {
         </div>
       </section>
 
+      {/* Tagline band */}
+      <section className="bg-[#0a1628] py-12 px-6 text-center">
+        <p className="text-white text-lg font-medium tracking-wide">
+          Built on trust. Driven by excellence. Focused on your growth.
+        </p>
+      </section>
+
       {/* Core Values */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR VALUES</p>
