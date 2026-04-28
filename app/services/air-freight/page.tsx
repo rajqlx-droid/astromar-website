@@ -95,7 +95,7 @@ const AirFreight = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{s.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -141,7 +141,7 @@ const AirFreight = () => {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div>
                       <h3 className="text-lg font-bold text-foreground mb-1">{d.region}</h3>
-                      <p className="text-sm text-foreground/80">Hubs: {d.hubs}</p>
+                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">Hubs: {d.hubs}</p>
                     </div>
                     <span className="text-sm font-semibold text-primary whitespace-nowrap">{d.transit}</span>
                   </div>

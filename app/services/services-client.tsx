@@ -38,25 +38,56 @@ const Services = () => {
           unoptimized
           priority
         />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="w-full px-6 md:px-12 lg:px-16 relative z-10 flex flex-col justify-center">
-          <div style={{ maxWidth: "600px" }}>
-            <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
-              OUR SERVICES
-            </p>
-            <h1 className="font-bold text-white mb-6" style={{ fontSize: "56px" }}>
-              Comprehensive Logistics Services
-            </h1>
-            <p className="text-white/80 mb-8" style={{ fontSize: "18px" }}>
-              From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end logistics solutions across India.
-            </p>
-            <a
-              href="#services"
-              className="inline-block font-semibold text-white rounded-lg px-6 py-3 transition-opacity hover:opacity-90"
-              style={{ backgroundColor: "#F97316" }}
-            >
-              Explore Services
-            </a>
+        <div className="absolute inset-0 bg-black/75" />
+        <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* LEFT - Text */}
+            <div>
+              <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
+                OUR SERVICES
+              </p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight">
+                Comprehensive Logistics Services
+              </h1>
+              <p className="text-sm sm:text-base md:text-lg text-white mb-8 leading-relaxed">
+                From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end logistics solutions across India.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#services"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold text-white transition-opacity hover:opacity-90"
+                  style={{ backgroundColor: "#F97316" }}
+                >
+                  Explore Services
+                </a>
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white text-white font-semibold hover:bg-white/10 transition-colors"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+
+            {/* RIGHT - Stats */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">8+</p>
+                <p className="text-white text-sm font-semibold">Service Types</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">500+</p>
+                <p className="text-white text-sm font-semibold">Clients Served</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">15+</p>
+                <p className="text-white text-sm font-semibold">Countries</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">24/7</p>
+                <p className="text-white text-sm font-semibold">Support</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -80,7 +111,7 @@ const Services = () => {
                     )}
                     <s.icon className="w-7 h-7 md:w-8 md:h-8 text-primary mb-4" strokeWidth={1.5} />
                     <h3 className="text-base md:text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                    <p className="text-foreground/80 leading-relaxed text-sm flex-1">{s.desc}</p>
+                    <p className="text-foreground/80 leading-relaxed text-sm sm:text-base flex-1">{s.desc}</p>
                     <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">
                       Learn more <ArrowRight className="w-4 h-4" />
                     </span>

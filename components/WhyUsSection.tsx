@@ -58,7 +58,7 @@ const WhyUsSection = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
-                    <p className="text-foreground/80 text-sm leading-relaxed">{item.desc}</p>
+                    <p className="text-foreground/80 text-sm sm:text-base leading-relaxed">{item.desc}</p>
                     <span className="inline-block mt-3 mb-2 bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full">{item.tag}</span>
                   </div>
                 </div>

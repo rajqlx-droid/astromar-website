@@ -96,7 +96,7 @@ const Projects = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{s.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -118,7 +118,7 @@ const Projects = () => {
               <ScrollReveal key={s.title} delay={i * 0.07}>
                 <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{s.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}

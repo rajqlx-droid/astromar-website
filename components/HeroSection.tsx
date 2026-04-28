@@ -57,7 +57,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="text-sm sm:text-base md:text-lg text-primary-foreground/70 mb-10 leading-relaxed"
+            className="text-sm sm:text-base md:text-lg text-white/90 mb-10 leading-relaxed"
           >
             Delivering dependable freight and supply chain solutions across air, sea, and multimodal
             networks. Save customs duty &amp; GST with India's premier FTWZ network.

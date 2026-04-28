@@ -43,6 +43,7 @@ const certifications = [
   { title: "MTO Licence", desc: "Multimodal Transport Operator licence" },
   { title: "RCMC Membership", desc: "Registration Cum Membership Certificate for SEZ & FTWZ" },
   { title: "JC Trans Membership", desc: "Industry association membership for logistics & freight" },
+  { title: "IEC Registration", desc: "Import Export Code registered with DGFT, Government of India" },
 ];
 
 const About = () => {
@@ -62,34 +63,48 @@ const About = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-22 relative z-10">
-          <div className="max-w-2xl">
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="block text-sm font-bold tracking-[0.2em] text-accent uppercase mb-4"
-            >
-              ABOUT ASTROMAR
-            </motion.span>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6"
-            >
-              India's Trusted FTWZ &amp; Logistics Partner
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-primary-foreground/70 leading-relaxed text-base sm:text-lg"
-            >
-              Since 2017, Astromar Logistics has been transforming how businesses leverage Free Trade
-              Warehousing Zones to optimize customs duty, defer GST, and streamline global trade — all
-              from strategically located facilities across India.
-            </motion.p>
+        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+            {/* LEFT - Text */}
+            <div>
+              <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">
+                ABOUT ASTROMAR
+              </p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight">
+                India's Trusted FTWZ &amp; Logistics Partner
+              </h1>
+              <p className="text-white/90 leading-relaxed text-base mb-8">
+                Since 2017, Astromar Logistics has been transforming how businesses leverage Free Trade Warehousing Zones to optimize customs duty, defer GST, and streamline global trade across India.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-colors">
+                  Get In Touch →
+                </a>
+                <a href="/services" className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white text-white font-semibold hover:bg-white/10 transition-colors">
+                  Our Services
+                </a>
+              </div>
+            </div>
+
+            {/* RIGHT - Stats */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">7+</p>
+                <p className="text-white/80 text-sm font-semibold">Years of Excellence</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">8+</p>
+                <p className="text-white/80 text-sm font-semibold">FTWZ Locations</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">500+</p>
+                <p className="text-white/80 text-sm font-semibold">Clients Served</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">2017</p>
+                <p className="text-white/80 text-sm font-semibold">Founded</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -136,7 +151,7 @@ const About = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -168,7 +183,7 @@ const About = () => {
                           <div className="rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm text-right">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
                             <p className="font-bold text-foreground mt-1">{m.title}</p>
-                            <p className="text-sm text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
+                            <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
                           </div>
                         )}
                       </div>
@@ -177,14 +192,14 @@ const About = () => {
                           <div className="rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
                             <p className="font-bold text-foreground mt-1">{m.title}</p>
-                            <p className="text-sm text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
+                            <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
                           </div>
                         )}
                       </div>
                       <div className="md:hidden rounded-xl border border-border bg-card p-5 shadow-sm">
                         <p className="text-xl font-extrabold text-primary">{m.year}</p>
                         <p className="font-bold text-foreground mt-1">{m.title}</p>
-                        <p className="text-sm text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
+                        <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
                       </div>
                     </div>
                   </ScrollReveal>

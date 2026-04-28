@@ -47,7 +47,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
         alt="Logistics and cargo handling"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/75" />
 
       <div className="relative z-10 w-full px-6 md:px-12 lg:px-16 py-24">
         <div className="max-w-7xl mx-auto">
@@ -58,22 +58,22 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
               <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
                 GET IN TOUCH
               </p>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6">
                 Contact Us
               </h1>
-              <p className="text-lg text-white/80 mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-white/95 mb-8 leading-relaxed">
                 Have a logistics challenge or want to learn more about our FTWZ services? Our team at Astromar Logistics Pvt Ltd is ready to help you find the right solution.
               </p>
 
               {/* Contact Information */}
               <div className="border-t border-white/20 pt-6">
-                <p className="text-sm text-white/70 mb-3">
+                <p className="text-sm text-white/90 mb-3">
                   <span className="font-semibold">Email:</span> sales@astromarfreezone.com
                 </p>
-                <p className="text-sm text-white/70 mb-3">
+                <p className="text-sm text-white/90 mb-3">
                   <span className="font-semibold">Address:</span> No. 922, 1st Floor, H-Block, 17th Main Road, Anna Nagar, Chennai - 600 040
                 </p>
-                <p className="text-sm text-white/70">
+                <p className="text-sm text-white/90">
                   <span className="font-semibold">Hours:</span> Mon-Fri, 10:00 AM - 6:00 PM
                 </p>
               </div>

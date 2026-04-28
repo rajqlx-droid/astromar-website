@@ -44,31 +44,72 @@ const FTWZServices = () => {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">
-          <div className="max-w-2xl">
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="block text-sm font-bold tracking-[0.2em] text-accent uppercase mb-4"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* LEFT - Text */}
+            <div>
+              <motion.span
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="block text-sm font-bold tracking-[0.2em] text-accent uppercase mb-4"
+              >
+                FTWZ WAREHOUSING
+              </motion.span>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight"
+              >
+                FTWZ Warehousing in India — Duty-Free Storage Solutions
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="text-sm sm:text-base md:text-lg text-white/90 mb-8 leading-relaxed"
+              >
+                Store imported goods without paying customs duty or GST — defer, re-export, or clear domestically on your terms.
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="flex flex-wrap gap-4"
+              >
+                <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-colors">
+                  Get More Information →
+                </a>
+                <a href="#benefits" className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white text-white font-semibold hover:bg-white/10 transition-colors">
+                  View Benefits
+                </a>
+              </motion.div>
+            </div>
+
+            {/* RIGHT - Stats */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="grid grid-cols-2 gap-4"
             >
-              FTWZ WAREHOUSING
-            </motion.span>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6 leading-tight"
-            >
-              FTWZ Warehousing Services in India | Duty-Free Storage Solutions
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-primary-foreground/70 leading-relaxed text-base sm:text-lg"
-            >
-              Store goods duty-free, defer customs duty & GST indefinitely, and re-export or clear domestically without duty penalties.
-            </motion.p>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">₹0</p>
+                <p className="text-white/80 text-sm font-semibold">Customs Duty</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">100%</p>
+                <p className="text-white/80 text-sm font-semibold">GST Deferral</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">24/7</p>
+                <p className="text-white/80 text-sm font-semibold">Operations</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                <p className="text-4xl font-extrabold text-accent mb-2">8+</p>
+                <p className="text-white/80 text-sm font-semibold">FTWZ Locations</p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -114,7 +155,7 @@ const FTWZServices = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed flex-1">{b.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed flex-1">{b.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -140,7 +181,7 @@ const FTWZServices = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed flex-1">{s.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed flex-1">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}

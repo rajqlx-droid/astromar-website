@@ -74,7 +74,7 @@ const ServicesSection = () => {
                     )}
                     <s.icon className="w-7 h-7 md:w-8 md:h-8 text-primary mb-4" strokeWidth={1.5} />
                     <h3 className="text-base md:text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm flex-1">{s.desc}</p>
+                    <p className="text-muted-foreground leading-relaxed text-sm sm:text-base flex-1">{s.desc}</p>
                     <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary mt-4">
                       Learn more <ArrowRight className="w-4 h-4" />
                     </span>
@@ -102,28 +102,55 @@ const ServicesSection = () => {
           alt="FTWZ bonded warehouse facility India – Astromar Logistics"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/75" />
         <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
           <ScrollReveal>
-            <div className="max-w-2xl">
-            <p className="text-sm font-bold tracking-[0.2em] text-white/70 uppercase mb-2">
-              FTWZ WAREHOUSING
-            </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-6 max-w-4xl leading-tight">
-              FTWZ Warehousing Services in India | Duty-Free Storage Solutions
-            </h2>
-            <p className="text-white/80 max-w-4xl leading-relaxed text-base sm:text-lg mb-8">
-              FTWZ Warehousing is India's most flexible duty-free warehousing solution, enabling importers and
-              exporters to store goods without paying customs duty or GST – until final disposition. Whether
-              you're re-exporting, consolidating shipments, or deferring domestic clearance, AstroMar's pan-India
-              FTWZ network provides compliant, secure storage with value-added services like repacking,
-              labeling, and kitting.
-            </p>
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="#contact">
-                Get More Information <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
-            </Button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+              {/* LEFT - Text Content */}
+              <div>
+                <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">
+                  FTWZ WAREHOUSING
+                </p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-5 leading-tight">
+                  India's Most Flexible Duty-Free Storage Solution
+                </h2>
+                <p className="text-white/90 leading-relaxed text-base mb-8">
+                  Store imported goods without paying customs duty or GST until final disposition. Re-export globally, consolidate shipments, or defer domestic clearance — all from Astromar's pan-India FTWZ network.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                    <a href="#contact">
+                      Get More Information <ArrowRight className="w-4 h-4 ml-2" />
+                    </a>
+                  </Button>
+                  <a
+                    href="/ftwz-services"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white text-white font-semibold text-base hover:bg-white/10 transition-colors"
+                  >
+                    View FTWZ Services
+                  </a>
+                </div>
+              </div>
+
+              {/* RIGHT - Stats Grid */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                  <p className="text-4xl font-extrabold text-accent mb-2">₹0</p>
+                  <p className="text-white/80 text-sm font-semibold">Customs Duty</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                  <p className="text-4xl font-extrabold text-accent mb-2">100%</p>
+                  <p className="text-white/80 text-sm font-semibold">GST Deferral</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                  <p className="text-4xl font-extrabold text-accent mb-2">24/7</p>
+                  <p className="text-white/80 text-sm font-semibold">Operations</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+                  <p className="text-4xl font-extrabold text-accent mb-2">8+</p>
+                  <p className="text-white/80 text-sm font-semibold">FTWZ Locations</p>
+                </div>
+              </div>
             </div>
           </ScrollReveal>
         </div>
@@ -178,7 +205,7 @@ const ServicesSection = () => {
               <div className="bg-brand-light border-l-4 border-accent rounded-r-lg px-4 py-3 text-sm font-semibold text-foreground">
                 ✓ No customs duty until domestic clearance — maximize working capital
               </div>
-              <p className="leading-relaxed text-sm">Our pan-India network connects all major ports and airports — built for pharma, electronics, FMCG, and project cargo at any scale.</p>
+              <p className="leading-relaxed text-sm sm:text-base">Our pan-India network connects all major ports and airports — built for pharma, electronics, FMCG, and project cargo at any scale.</p>
               <a href="/ftwz-services" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline text-sm">Learn More About FTWZ →</a>
             </div>
           </div>
@@ -233,7 +260,7 @@ const ServicesSection = () => {
                   </button>
                   {openIndex === i && (
                     <div className="px-5 py-4 bg-brand-light border-t border-border">
-                      <p className="text-gray-800 text-sm leading-relaxed font-medium">{s.desc}</p>
+                      <p className="text-gray-800 text-sm sm:text-base leading-relaxed font-medium">{s.desc}</p>
                     </div>
                   )}
                 </div>

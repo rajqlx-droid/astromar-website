@@ -92,7 +92,7 @@ const CoastalShipping = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{h.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{h.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{h.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -144,7 +144,7 @@ const CoastalShipping = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <c.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{c.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{c.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{c.desc}</p>
                 </div>
               </ScrollReveal>
             ))}

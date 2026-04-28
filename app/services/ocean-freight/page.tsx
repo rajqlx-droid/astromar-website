@@ -91,7 +91,7 @@ const OceanFreight = () => {
                 <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{s.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -115,7 +115,7 @@ const OceanFreight = () => {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div>
                       <h3 className="text-lg font-bold text-foreground mb-1">{t.region}</h3>
-                      <p className="text-sm text-foreground/80">{t.ports}</p>
+                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{t.ports}</p>
                     </div>
                     <span className="text-sm font-semibold text-primary whitespace-nowrap">{t.transit}</span>
                   </div>
@@ -141,7 +141,7 @@ const OceanFreight = () => {
                 <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
                   <span className="text-3xl font-extrabold text-primary/20 mb-2 block">{p.step}</span>
                   <h3 className="text-base font-bold text-foreground mb-2">{p.title}</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">{p.desc}</p>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{p.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -157,7 +157,7 @@ const OceanFreight = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Pan-India Port Coverage
             </h2>
-            <p className="text-center text-foreground/80 max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
+            <p className="text-center text-foreground/80 max-w-2xl mx-auto mb-12 text-sm sm:text-base leading-relaxed">
               We operate across India's major seaports on both coasts, giving you direct access to every key gateway.
             </p>
           </ScrollReveal>
