@@ -272,21 +272,21 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-14 bg-brand-navy">
+      <section className="py-14 bg-white">
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0a1628] mb-4">
               Ready to Optimize Your Trade Operations?
             </h2>
-            <p className="text-primary-foreground/70 max-w-2xl mx-auto mb-3 text-base sm:text-lg">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-3 text-base sm:text-lg">
               Partner with India's leading FTWZ provider and unlock duty-free warehousing, GST deferment, and seamless logistics.
             </p>
-            <p className="text-primary-foreground/50 italic mb-8">Seamless Innovation. Unmatched Reliability.</p>
+            <p className="text-gray-400 italic mb-8">Seamless Innovation. Unmatched Reliability.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700" asChild>
                 <a href="#contact">Schedule Consultation <ArrowRight className="w-4 h-4 ml-1" /></a>
               </Button>
-              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 border border-primary-foreground/30 text-primary-foreground bg-transparent hover:bg-primary-foreground/10 transition-colors">
+              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 border border-gray-800 text-gray-800 bg-transparent hover:bg-gray-100 transition-colors">
                 Explore Tools
               </Link>
             </div>
