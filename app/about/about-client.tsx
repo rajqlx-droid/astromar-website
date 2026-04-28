@@ -247,7 +247,7 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-14 bg-brand-light">
+      <section className="pt-14 pb-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">TRUST &amp; COMPLIANCE</p>
