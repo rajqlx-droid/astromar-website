@@ -256,8 +256,8 @@ const FTWZServices = () => {
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
                 <a href="#contact">Schedule Consultation <ArrowRight className="w-4 h-4 ml-1" /></a>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                <Link href="/freight-intelligence">Try Calculator Tools</Link>
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" asChild>
+                <Link href="/tools">Explore Tools →</Link>
               </Button>
             </div>
           </ScrollReveal>
