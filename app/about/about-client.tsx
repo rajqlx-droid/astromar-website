@@ -18,12 +18,12 @@ const stats = [
 ];
 
 const coreValues = [
-  { icon: Shield, title: "Compliance First", desc: "100% customs compliance with transparent, auditable operations across all FTWZ locations." },
-  { icon: Globe, title: "Global Connectivity", desc: "Seamless integration with global trade lanes through strategic port proximity." },
-  { icon: UserCheck, title: "Client-Centric", desc: "Dedicated account managers and customized logistics solutions for every client." },
-  { icon: TrendingUp, title: "Continuous Improvement", desc: "Structured processes and operational efficiency driving measurable outcomes." },
-  { icon: Medal, title: "Excellence", desc: "Consistently delivering industry-leading service levels and operational efficiency." },
-  { icon: Clock, title: "Reliability", desc: "24/7 operations ensuring uninterrupted supply chain continuity." },
+  { icon: Shield, title: "Compliance First", desc: "100% customs compliance with transparent, auditable operations across all FTWZ locations.", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" },
+  { icon: Globe, title: "Global Connectivity", desc: "Seamless integration with global trade lanes through strategic port proximity.", image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80" },
+  { icon: UserCheck, title: "Client-Centric", desc: "Dedicated account managers and customized logistics solutions for every client.", image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80" },
+  { icon: TrendingUp, title: "Continuous Improvement", desc: "Structured processes and operational efficiency driving measurable outcomes.", image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&q=80" },
+  { icon: Medal, title: "Excellence", desc: "Consistently delivering industry-leading service levels and operational efficiency.", image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" },
+  { icon: Clock, title: "Reliability", desc: "24/7 operations ensuring uninterrupted supply chain continuity.", image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80" },
 ];
 
 const milestones = [
@@ -143,29 +143,47 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-14 bg-white">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR VALUES</p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10">What We Stand For</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-16">What We Stand For</h2>
           </ScrollReveal>
-          <div>
-            {coreValues.map((item, i) => (
-              <ScrollReveal key={item.title} delay={i * 0.06}>
-                <div className="flex items-start gap-5 py-6">
-                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mt-0.5">
-                    <item.icon className="w-5 h-5 text-primary" strokeWidth={1.75} />
+          <div className="space-y-16">
+            {coreValues.map((item, i) => {
+              const isEven = i % 2 === 0;
+              const textBlock = (
+                <div className="flex flex-col justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                    <item.icon className="w-6 h-6 text-primary" strokeWidth={1.75} />
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-base font-bold text-foreground mb-1">{item.title}</h3>
-                    <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">{item.desc}</p>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-foreground mb-3">{item.title}</h3>
+                  <p className="text-base text-foreground/70 leading-relaxed">{item.desc}</p>
                 </div>
-                {i < coreValues.length - 1 && (
-                  <div className="h-px bg-border" />
-                )}
-              </ScrollReveal>
-            ))}
+              );
+              const imageBlock = (
+                <div className="relative h-[300px] w-full rounded-xl overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+              );
+              return (
+                <ScrollReveal key={item.title} delay={0.1}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+                    {isEven ? (
+                      <>{textBlock}{imageBlock}</>
+                    ) : (
+                      <>{imageBlock}{textBlock}</>
+                    )}
+                  </div>
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>
