@@ -272,33 +272,31 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-orange-500 to-orange-600">
+      <section className="py-20 px-6 bg-gradient-to-br from-amber-50 via-orange-50 to-white border-t-4 border-orange-400">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
             {/* Floating stat badges */}
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               {["500+ Clients Served", "8+ FTWZ Locations", "7+ Years of Excellence"].map((badge) => (
-                <span key={badge} className="bg-white/20 border border-white/30 rounded-full px-4 py-1 text-sm font-medium text-white shadow-sm">
+                <span key={badge} className="bg-white border border-orange-200 rounded-full px-4 py-1 text-sm font-medium text-gray-700 shadow-sm">
                   ✓ {badge}
                 </span>
               ))}
             </div>
 
-            {/* Heading */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0a1628] mb-4">
               Ready to Optimize Your Trade Operations?
             </h2>
 
-            <p className="text-orange-100 max-w-2xl mx-auto mb-3 text-base sm:text-lg">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
               Partner with India's leading FTWZ provider and unlock duty-free warehousing, GST deferment, and seamless logistics.
             </p>
-            <p className="text-orange-200 italic mb-8">Seamless Innovation. Unmatched Reliability.</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-orange-600 hover:bg-orange-50" asChild>
-                <a href="#contact">Schedule Consultation <ArrowRight className="w-4 h-4 ml-1" /></a>
+              <Button size="lg" className="bg-orange-500 text-white hover:bg-orange-600" asChild>
+                <a href="/contact">Schedule Consultation <ArrowRight className="w-4 h-4 ml-1" /></a>
               </Button>
-              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors">
+              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 bg-white border-2 border-orange-500 text-orange-500 hover:bg-orange-50 transition-colors">
                 Explore Tools
               </Link>
             </div>
