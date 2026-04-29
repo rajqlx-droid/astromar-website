@@ -108,45 +108,46 @@
 }
 
 /* ─── Dark mode overrides ─── */
+/* HSL triplets required — @theme inline wraps these in hsl() */
 .dark {
-  --background: 215 60% 10%;
-  --foreground: 210 40% 98%;
+  --background: 222 47% 11%;       /* #0f172a */
+  --foreground: 210 40% 96%;       /* #f1f5f9 */
 
-  --card: 215 60% 13%;
-  --card-foreground: 210 40% 98%;
+  --card: 222 46% 18%;             /* #1a2744 */
+  --card-foreground: 210 40% 96%;
 
-  --brand-light: 215 55% 14%;
+  --popover: 222 46% 18%;
+  --popover-foreground: 210 40% 96%;
 
-  --popover: 215 60% 8%;
-  --popover-foreground: 210 40% 98%;
-
-  --primary: 207 90% 50%;
+  --primary: 217 91% 60%;          /* #3b82f6 */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 217 33% 17%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 222 47% 15%;        /* #162038 */
+  --secondary-foreground: 210 40% 96%;
 
-  --muted: 217 33% 17%;
-  --muted-foreground: 215 20% 65%;
+  --muted: 222 47% 15%;
+  --muted-foreground: 215 20% 65%; /* #94a3b8 */
 
-  --accent: 30 95% 55%;
-  --accent-foreground: 0 0% 100%;
+  --accent: 222 46% 21%;           /* #1e2f52 */
+  --accent-foreground: 210 40% 96%;
 
   --destructive: 0 63% 31%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 210 40% 96%;
 
-  --border: 217 33% 17%;
-  --input: 217 33% 17%;
-  --ring: 207 90% 50%;
+  --border: 222 44% 30%;           /* #2d4170 */
+  --input: 222 46% 21%;            /* #1e2f52 */
+  --ring: 217 91% 60%;
 
-  --sidebar-background: 240 5.9% 10%;
-  --sidebar-foreground: 240 4.8% 95.9%;
-  --sidebar-primary: 224.3 76.3% 48%;
+  --brand-light: 222 47% 15%;
+
+  --sidebar-background: 222 47% 11%;
+  --sidebar-foreground: 210 40% 96%;
+  --sidebar-primary: 217 91% 60%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 240 3.7% 15.9%;
-  --sidebar-accent-foreground: 240 4.8% 95.9%;
-  --sidebar-border: 240 3.7% 15.9%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  --sidebar-accent: 222 46% 21%;
+  --sidebar-accent-foreground: 210 40% 96%;
+  --sidebar-border: 222 44% 30%;
+  --sidebar-ring: 217 91% 60%;
 }
 
 /* ─── Marquee animation ─── */
@@ -165,124 +166,45 @@
   animation-play-state: paused;
 }
 
-/* ── DARK MODE OVERRIDES ── */
+/* ── DARK MODE UTILITY OVERRIDES ── */
 .dark body {
   background-color: #0f172a;
-  color: #e2e8f0;
+  color: #f1f5f9;
 }
-
-/* Section backgrounds - alternating levels */
 .dark .bg-white {
-  background-color: #0f172a !important;
+  background-color: #1a2744 !important;
 }
 .dark .bg-gray-50,
 .dark .bg-slate-50,
 .dark .bg-slate-100 {
-  background-color: #1e293b !important;
+  background-color: #162038 !important;
 }
-
-/* Cards - visibly lighter than section backgrounds */
-.dark .rounded-xl,
-.dark .rounded-2xl,
-.dark .rounded-lg {
-  background-color: #1a3060 !important;
-  border: 1px solid #2e4f8a !important;
-}
-
-/* Gradient sections */
-.dark .from-blue-50,
-.dark .from-orange-50,
-.dark .from-amber-50 {
-  --tw-gradient-from: #1e293b !important;
-}
-.dark .via-white {
-  --tw-gradient-via: #162032 !important;
-}
-.dark .to-blue-100,
-.dark .to-orange-100,
-.dark .to-amber-100 {
-  --tw-gradient-to: #0f172a !important;
-}
-
-/* Headings */
-.dark h1, .dark h2, .dark h3,
-.dark h4, .dark h5, .dark h6 {
-  color: #f1f5f9 !important;
-}
-
-/* Body text */
-.dark p {
-  color: #cbd5e1 !important;
-}
-
-/* Text utility classes */
 .dark .text-gray-900,
-.dark .text-gray-800,
-.dark .text-slate-900,
-.dark .text-slate-800 {
+.dark .text-gray-800 {
   color: #f1f5f9 !important;
 }
 .dark .text-gray-700,
-.dark .text-slate-700 {
-  color: #cbd5e1 !important;
-}
-.dark .text-gray-600,
-.dark .text-slate-600 {
+.dark .text-gray-600 {
   color: #94a3b8 !important;
 }
-.dark .text-gray-500,
-.dark .text-slate-500 {
-  color: #64748b !important;
-}
-
-/* Borders and dividers */
 .dark .border-gray-200,
 .dark .border-gray-100,
-.dark .border-slate-200,
-.dark .border-slate-100 {
-  border-color: #334155 !important;
+.dark .border-slate-200 {
+  border-color: #2d4170 !important;
 }
-.dark .divide-gray-100,
-.dark .divide-gray-200,
-.dark .divide-slate-100 {
-  border-color: #334155 !important;
+.dark hr {
+  border-color: #2d4170 !important;
 }
-
-/* Accent colors - keep visible */
-.dark .text-blue-600,
-.dark .text-blue-500 {
-  color: #60a5fa !important;
-}
-.dark .text-orange-500,
-.dark .text-orange-600 {
-  color: #fb923c !important;
-}
-
-/* Header/Navbar */
-.dark header,
-.dark nav {
-  background-color: #0a1628 !important;
-  border-bottom-color: #1e293b !important;
-}
-.dark header a,
-.dark nav a {
-  color: #e2e8f0 !important;
-}
-
-/* Keep dark navy sections UNCHANGED */
-.dark [class*="bg-[#0a1628]"],
-.dark [class*="bg-[#0d1f35]"] {
-  background-color: inherit !important;
-}
-
-/* Marquee/ticker band - unchanged */
-.dark .marquee-section {
-  background-color: #0a1628 !important;
-}
-
-/* Navy text helper class */
-.dark .text-navy {
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #1e2f52 !important;
+  border-color: #2d4170 !important;
   color: #f1f5f9 !important;
+}
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b !important;
 }
 
 /* ─── Base styles ─── */
