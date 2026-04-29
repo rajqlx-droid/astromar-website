@@ -336,17 +336,10 @@ const FTWZServices = () => {
               See how Astromar's FTWZ gives your business a clear competitive advantage over conventional warehousing.
             </p>
 
-            <div className="overflow-x-auto">
+            <div className="rounded-xl border border-gray-200 overflow-hidden">
               <table
-                className="text-sm"
-                style={{
-                  width: "100%",
-                  borderCollapse: "collapse",
-                  border: "0.5px solid #e5e7eb",
-                  borderRadius: "12px",
-                  overflow: "hidden",
-                  tableLayout: "fixed",
-                }}
+                className="text-sm w-full"
+                style={{ borderCollapse: "collapse", tableLayout: "fixed" }}
               >
                 <colgroup>
                   <col style={{ width: "30%" }} />
@@ -357,19 +350,19 @@ const FTWZServices = () => {
                   <tr>
                     <th
                       className="text-left px-4 py-3 text-gray-500 font-medium"
-                      style={{ backgroundColor: "#f9fafb", borderRight: "0.5px solid #e5e7eb", borderBottom: "1px solid #e5e7eb" }}
+                      style={{ backgroundColor: "#f9fafb", borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}
                     >
                       Feature
                     </th>
                     <th
                       className="text-left px-4 py-3 text-gray-500 font-medium"
-                      style={{ backgroundColor: "#f9fafb", borderRight: "0.5px solid #e5e7eb", borderBottom: "1px solid #e5e7eb" }}
+                      style={{ backgroundColor: "#f9fafb", borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}
                     >
                       Regular Warehouse
                     </th>
                     <th
                       className="text-left px-4 py-3 text-white font-medium"
-                      style={{ backgroundColor: "#f97316", borderBottom: "1px solid #e5e7eb" }}
+                      style={{ backgroundColor: "#f97316", borderBottom: "2px solid #e5e7eb" }}
                     >
                       Astromar FTWZ ✦
                     </th>
@@ -385,24 +378,24 @@ const FTWZServices = () => {
                     ["Customs Compliance", "Self-managed burden", "Fully managed by Astromar"],
                   ] as const).map(([feature, regular, ftwz], i, arr) => {
                     const isLast = i === arr.length - 1;
-                    const cellBorder = isLast ? undefined : "0.5px solid #e5e7eb";
+                    const rowBorder = isLast ? undefined : "1px solid #e5e7eb";
                     return (
                       <tr key={feature}>
                         <td
                           className="px-4 py-[14px] font-medium text-gray-900"
-                          style={{ borderRight: "0.5px solid #e5e7eb", borderBottom: cellBorder }}
+                          style={{ borderRight: "1px solid #e5e7eb", borderBottom: rowBorder }}
                         >
                           {feature}
                         </td>
                         <td
                           className="px-4 py-[14px] text-red-500"
-                          style={{ borderRight: "0.5px solid #e5e7eb", borderBottom: cellBorder }}
+                          style={{ borderRight: "1px solid #e5e7eb", borderBottom: rowBorder }}
                         >
                           {regular}
                         </td>
                         <td
                           className="px-4 py-[14px] text-green-600"
-                          style={{ backgroundColor: "#fff7ed", borderBottom: cellBorder }}
+                          style={{ backgroundColor: "#fff7ed", borderBottom: rowBorder }}
                         >
                           {ftwz}
                         </td>
