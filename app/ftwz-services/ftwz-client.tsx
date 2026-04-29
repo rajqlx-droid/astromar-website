@@ -75,7 +75,7 @@ const FTWZServices = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <SEOHead />
       <Header />
 
@@ -162,16 +162,16 @@ const FTWZServices = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               {/* Left — existing overview content */}
               <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
                   Overview
                 </h2>
-                <p className="text-foreground/80 leading-relaxed text-base sm:text-lg mb-8">
+                <p className="text-gray-600 leading-relaxed text-base sm:text-lg mb-8">
                   FTWZ Warehousing is India's most flexible duty-free warehousing solution, enabling importers and
                   exporters to store goods without paying customs duty or GST – until final disposition. Whether
                   you're re-exporting, consolidating shipments, or deferring domestic clearance, AstroMar's pan-India
@@ -188,7 +188,7 @@ const FTWZServices = () => {
               {/* Right — key benefits list */}
               <div>
                 <p className="text-xs font-bold tracking-[0.2em] uppercase text-orange-500 mb-4">Key Benefits</p>
-                <ul className="divide-y divide-gray-100">
+                <ul className="divide-y divide-gray-200">
                   {[
                     "No customs duty until goods are cleared",
                     "GST deferment on stored inventory",
@@ -199,7 +199,7 @@ const FTWZServices = () => {
                   ].map((benefit) => (
                     <li key={benefit} className="flex items-start gap-3 py-3">
                       <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
-                      <span className="text-foreground/80 text-sm sm:text-base leading-relaxed">{benefit}</span>
+                      <span className="text-gray-600 text-sm sm:text-base leading-relaxed">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -210,13 +210,13 @@ const FTWZServices = () => {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-20 bg-brand-light">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
               FTWZ ADVANTAGES
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-6">
               What Makes FTWZ the Smarter Choice?
             </h2>
           </ScrollReveal>
@@ -224,10 +224,10 @@ const FTWZServices = () => {
           <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
             {benefits.map((b, i) => (
               <ScrollReveal key={b.title} delay={i * 0.07} className="h-full">
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
-                  <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
-                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed flex-1">{b.desc}</p>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{b.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed flex-1">{b.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -242,7 +242,7 @@ const FTWZServices = () => {
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">
               FTWZ USE CASES
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-10">
               How Businesses Use Our FTWZ Network
             </h2>
           </ScrollReveal>
@@ -414,13 +414,13 @@ const FTWZServices = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
               Ready to Leverage FTWZ for Your Business?
             </h2>
-            <p className="text-foreground/80 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
               Contact our team to explore how duty-free warehousing can transform your supply chain economics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
