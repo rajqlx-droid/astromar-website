@@ -323,52 +323,97 @@ const FTWZServices = () => {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-20 bg-brand-light">
+      <section className="pt-20 pb-20 bg-white">
         <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
+            <p className="text-xs font-semibold tracking-[0.2em] text-blue-600 uppercase mb-3 text-center">
               FTWZ VS REGULAR WAREHOUSE
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-3">
+            <h2 className="text-[22px] font-medium text-gray-900 text-center mb-3">
               Why FTWZ Outperforms Regular Storage
             </h2>
-            <p className="text-center text-foreground/80 max-w-2xl mx-auto mb-10 text-sm sm:text-base leading-relaxed">
+            <p className="text-center text-gray-500 max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
               See how Astromar's FTWZ gives your business a clear competitive advantage over conventional warehousing.
             </p>
 
             <div className="overflow-x-auto">
-              <table className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 text-sm">
+              <table
+                className="text-sm"
+                style={{
+                  width: "100%",
+                  borderCollapse: "collapse",
+                  border: "0.5px solid #e5e7eb",
+                  borderRadius: "12px",
+                  overflow: "hidden",
+                  tableLayout: "fixed",
+                }}
+              >
+                <colgroup>
+                  <col style={{ width: "30%" }} />
+                  <col style={{ width: "35%" }} />
+                  <col style={{ width: "35%" }} />
+                </colgroup>
                 <thead>
                   <tr>
-                    <th className="bg-brand-navy text-white text-left px-5 py-4 font-semibold w-[30%]">Feature</th>
-                    <th className="text-white text-left px-5 py-4 font-semibold" style={{ backgroundColor: "#374151" }}>Regular Warehouse</th>
-                    <th className="text-white text-left px-5 py-4 font-semibold" style={{ backgroundColor: "#F97316" }}>Astromar FTWZ ✦</th>
+                    <th
+                      className="text-left px-4 py-3 text-gray-500 font-medium"
+                      style={{ backgroundColor: "#f9fafb", borderRight: "0.5px solid #e5e7eb", borderBottom: "1px solid #e5e7eb" }}
+                    >
+                      Feature
+                    </th>
+                    <th
+                      className="text-left px-4 py-3 text-gray-500 font-medium"
+                      style={{ backgroundColor: "#f9fafb", borderRight: "0.5px solid #e5e7eb", borderBottom: "1px solid #e5e7eb" }}
+                    >
+                      Regular Warehouse
+                    </th>
+                    <th
+                      className="text-left px-4 py-3 text-white font-medium"
+                      style={{ backgroundColor: "#f97316", borderBottom: "1px solid #e5e7eb" }}
+                    >
+                      Astromar FTWZ ✦
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
-                  {[
+                  {([
                     ["Customs Duty on Import", "Paid immediately on arrival", "Deferred indefinitely"],
                     ["GST on Storage", "Fully applicable", "100% deferred until DTA entry"],
                     ["Re-export Without Duty", "Not possible", "Fully permitted, zero liability"],
                     ["Value-Added Services", "Severely limited", "Labelling, kitting, assembly allowed"],
                     ["Storage Duration", "Limited, renewal required", "Indefinite storage permitted"],
                     ["Customs Compliance", "Self-managed burden", "Fully managed by Astromar"],
-                  ].map(([feature, regular, ftwz], i) => (
-                    <tr key={feature} className={i % 2 === 0 ? "bg-card" : "bg-brand-light"}>
-                      <td className="px-5 py-4 font-semibold text-foreground border-t border-border">{feature}</td>
-                      <td className="px-5 py-4 text-muted-foreground border-t border-border">
-                        <span className="text-red-500 mr-2 font-bold">✗</span>{regular}
-                      </td>
-                      <td className="px-5 py-4 text-foreground border-t border-border" style={{ backgroundColor: i % 2 === 0 ? "rgba(249,115,22,0.05)" : "rgba(249,115,22,0.08)" }}>
-                        <span className="text-green-600 mr-2 font-bold">✓</span>{ftwz}
-                      </td>
-                    </tr>
-                  ))}
+                  ] as const).map(([feature, regular, ftwz], i, arr) => {
+                    const isLast = i === arr.length - 1;
+                    const cellBorder = isLast ? undefined : "0.5px solid #e5e7eb";
+                    return (
+                      <tr key={feature}>
+                        <td
+                          className="px-4 py-[14px] font-medium text-gray-900"
+                          style={{ borderRight: "0.5px solid #e5e7eb", borderBottom: cellBorder }}
+                        >
+                          {feature}
+                        </td>
+                        <td
+                          className="px-4 py-[14px] text-red-500"
+                          style={{ borderRight: "0.5px solid #e5e7eb", borderBottom: cellBorder }}
+                        >
+                          {regular}
+                        </td>
+                        <td
+                          className="px-4 py-[14px] text-green-600"
+                          style={{ backgroundColor: "#fff7ed", borderBottom: cellBorder }}
+                        >
+                          {ftwz}
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
 
-            <p className="text-xs text-foreground/80 mt-4 text-center">
+            <p className="text-xs text-gray-400 mt-3 text-center">
               * All FTWZ benefits subject to SEZ Act compliance and Astromar facility terms.
             </p>
           </ScrollReveal>
