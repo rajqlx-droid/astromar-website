@@ -38,12 +38,12 @@ const milestones = [
 ];
 
 const certifications = [
-  { title: "FTWZ Licence", desc: "Free Trade Warehousing Zone operational licence" },
-  { title: "MSME Licence", desc: "Registered Micro, Small & Medium Enterprise" },
-  { title: "MTO Licence", desc: "Multimodal Transport Operator licence" },
-  { title: "RCMC Membership", desc: "Registration Cum Membership Certificate for SEZ & FTWZ" },
-  { title: "JC Trans Membership", desc: "Industry association membership for logistics & freight" },
-  { title: "IEC Registration", desc: "Import Export Code registered with DGFT, Government of India" },
+  { title: "FTWZ Licence", desc: "Free Trade Warehousing Zone operational licence issued by the Government of India, authorizing duty-free storage and distribution of foreign goods." },
+  { title: "MSME Licence", desc: "Registered Micro, Small & Medium Enterprise under the Ministry of MSME, Government of India, enabling priority sector benefits and compliance recognition." },
+  { title: "MTO Licence", desc: "Multimodal Transport Operator licence authorizing end-to-end cargo movement across sea, air, rail, and road under a single contract of carriage." },
+  { title: "RCMC Membership", desc: "Registration Cum Membership Certificate for SEZ & FTWZ operations, issued by the relevant Export Promotion Council under DGFT guidelines." },
+  { title: "JC Trans Membership", desc: "Industry association membership for logistics & freight forwarding, affirming our commitment to global trade standards and professional ethics." },
+  { title: "IEC Registration", desc: "Import Export Code registered with DGFT, Government of India — mandatory for all entities engaged in international trade operations." },
 ];
 
 const processSteps = [
@@ -270,22 +270,24 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="pt-14 pb-20 bg-slate-50 border-b border-gray-200">
+      <section className="pt-20 pb-20 bg-slate-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">TRUST &amp; COMPLIANCE</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               Certifications &amp; Accreditations
             </h2>
           </ScrollReveal>
-          <div className="grid sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto items-stretch">
             {certifications.map((cert, i) => (
-              <ScrollReveal key={cert.title} delay={i * 0.06}>
-                <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-4 sm:p-5 shadow-sm">
-                  <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-foreground font-semibold text-sm sm:text-base">{cert.title}</p>
-                    <p className="text-foreground/80 text-xs sm:text-sm mt-0.5">{cert.desc}</p>
+              <ScrollReveal key={cert.title} delay={i * 0.06} className="h-full">
+                <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm h-full flex-col">
+                  <div className="flex items-start gap-3 w-full">
+                    <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-foreground font-semibold text-sm sm:text-base">{cert.title}</p>
+                      <p className="text-foreground/80 text-xs sm:text-sm mt-1 leading-relaxed">{cert.desc}</p>
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>
