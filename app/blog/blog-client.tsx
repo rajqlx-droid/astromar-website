@@ -36,7 +36,7 @@ const Blog = () => {
   const hasFeatured = !!heroPost;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <SEOHead />
       <Header />
 
@@ -74,7 +74,7 @@ const Blog = () => {
       </section>
 
       {/* Category Filter Tabs */}
-      <section className="bg-background border-b border-border sticky top-0 z-30">
+      <section className="bg-white border-b border-gray-200 sticky top-0 z-30">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="flex items-center gap-2 overflow-x-auto py-4 scrollbar-hide -mx-1 px-1">
             {categories.map((cat) => (
@@ -96,13 +96,13 @@ const Blog = () => {
 
       {/* Featured Hero Post + Side Cards */}
       {hasFeatured && (
-        <section className="py-14 bg-white">
+        <section className="py-14 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <div className="grid lg:grid-cols-5 gap-6">
               {/* Large hero card with thumbnail */}
               <ScrollReveal className="lg:col-span-3">
                 <Link href={`/blog/${heroPost.slug}`} className="block group h-full">
-                  <article className="bg-card border border-border rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
+                  <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                     <div className="relative h-48 sm:h-64 overflow-hidden">
                       <img
                         src={heroPost.thumbnail}
@@ -144,7 +144,7 @@ const Blog = () => {
                   {otherFeatured.map((post, i) => (
                     <ScrollReveal key={post.slug} delay={i * 0.1} className="flex-1">
                       <Link href={`/blog/${post.slug}`} className="block group h-full">
-                        <article className="bg-card border border-border rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
+                        <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                           <div className="relative h-32 overflow-hidden">
                             <img
                               src={post.thumbnail}
@@ -186,21 +186,21 @@ const Blog = () => {
 
       {/* All / Filtered Posts Grid */}
       {rest.length > 0 && (
-        <section className={`bg-gray-50 ${hasFeatured ? "pb-14 pt-14" : "py-14"}`}>
+        <section className={`bg-white ${hasFeatured ? "pb-16 pt-16" : "py-16"}`}>
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <ScrollReveal>
               <div className="flex items-center gap-4 mb-10">
-                <h2 className="text-xl font-bold text-foreground">
+                <h2 className="text-xl font-bold text-gray-900">
                   {activeCategory === ALL_CATEGORY ? "All Articles" : activeCategory}
                 </h2>
-                <div className="flex-1 h-px bg-border" />
+                <div className="flex-1 h-px bg-gray-200" />
               </div>
             </ScrollReveal>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {rest.map((post, i) => (
                 <ScrollReveal key={post.slug} delay={i * 0.08}>
                   <Link href={`/blog/${post.slug}`} className="block group h-full">
-                    <article className="bg-card border border-border rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
+                    <article className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                       <div className="relative h-40 overflow-hidden">
                         <img
                           src={post.thumbnail}
@@ -220,7 +220,7 @@ const Blog = () => {
                         <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-4 line-clamp-3">
                           {post.excerpt}
                         </p>
-                        <div className="flex items-center justify-between pt-3 border-t border-border">
+                        <div className="flex items-center justify-between pt-3 border-t border-gray-200">
                           <span className="text-xs text-muted-foreground flex items-center gap-1">
                             <Calendar className="w-3 h-3" /> {formatDate(post.date)}
                           </span>
