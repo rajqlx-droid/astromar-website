@@ -324,7 +324,7 @@ const FTWZServices = () => {
 
       {/* Comparison Table */}
       <section className="pt-20 pb-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-xs font-semibold tracking-[0.2em] text-blue-600 uppercase mb-3 text-center">
               FTWZ VS REGULAR WAREHOUSE
