@@ -115,24 +115,49 @@ const FTWZServices = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-16">
           <ScrollReveal>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
-              Overview
-            </h2>
-            <p className="text-foreground/80 max-w-4xl leading-relaxed text-base sm:text-lg mb-8">
-              FTWZ Warehousing is India's most flexible duty-free warehousing solution, enabling importers and
-              exporters to store goods without paying customs duty or GST – until final disposition. Whether
-              you're re-exporting, consolidating shipments, or deferring domestic clearance, AstroMar's pan-India
-              FTWZ network provides compliant, secure storage with value-added services like repacking,
-              labeling, and kitting.
-            </p>
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="#contact">
-                Get More Information <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
-            </Button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+              {/* Left — existing overview content */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
+                  Overview
+                </h2>
+                <p className="text-foreground/80 leading-relaxed text-base sm:text-lg mb-8">
+                  FTWZ Warehousing is India's most flexible duty-free warehousing solution, enabling importers and
+                  exporters to store goods without paying customs duty or GST – until final disposition. Whether
+                  you're re-exporting, consolidating shipments, or deferring domestic clearance, AstroMar's pan-India
+                  FTWZ network provides compliant, secure storage with value-added services like repacking,
+                  labeling, and kitting.
+                </p>
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                  <a href="#contact">
+                    Get More Information <ArrowRight className="w-4 h-4 ml-2" />
+                  </a>
+                </Button>
+              </div>
+
+              {/* Right — key benefits list */}
+              <div>
+                <p className="text-xs font-bold tracking-[0.2em] uppercase text-orange-500 mb-4">Key Benefits</p>
+                <ul className="divide-y divide-gray-100">
+                  {[
+                    "No customs duty until goods are cleared",
+                    "GST deferment on stored inventory",
+                    "Flexible re-export without duty payment",
+                    "Value-added services: repacking, labeling, kitting",
+                    "Pan-India network across 8+ FTWZ locations",
+                    "24/7 secure warehousing with WMS access",
+                  ].map((benefit) => (
+                    <li key={benefit} className="flex items-start gap-3 py-3">
+                      <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                      <span className="text-foreground/80 text-sm sm:text-base leading-relaxed">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </section>
