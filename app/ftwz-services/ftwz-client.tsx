@@ -115,7 +115,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Overview */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -189,7 +189,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Comprehensive Solutions */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
@@ -246,12 +246,12 @@ const FTWZServices = () => {
                     ["Storage Duration", "Limited, renewal required", "Indefinite storage permitted"],
                     ["Customs Compliance", "Self-managed burden", "Fully managed by Astromar"],
                   ].map(([feature, regular, ftwz], i) => (
-                    <tr key={feature} className={i % 2 === 0 ? "bg-white" : "bg-brand-light"}>
-                      <td className="px-5 py-4 font-semibold text-foreground border-t border-gray-100">{feature}</td>
-                      <td className="px-5 py-4 text-gray-600 border-t border-gray-100">
+                    <tr key={feature} className={i % 2 === 0 ? "bg-card" : "bg-brand-light"}>
+                      <td className="px-5 py-4 font-semibold text-foreground border-t border-border">{feature}</td>
+                      <td className="px-5 py-4 text-muted-foreground border-t border-border">
                         <span className="text-red-500 mr-2 font-bold">✗</span>{regular}
                       </td>
-                      <td className="px-5 py-4 text-gray-800 border-t border-gray-100" style={{ backgroundColor: i % 2 === 0 ? "rgba(249,115,22,0.05)" : "rgba(249,115,22,0.08)" }}>
+                      <td className="px-5 py-4 text-foreground border-t border-border" style={{ backgroundColor: i % 2 === 0 ? "rgba(249,115,22,0.05)" : "rgba(249,115,22,0.08)" }}>
                         <span className="text-green-600 mr-2 font-bold">✓</span>{ftwz}
                       </td>
                     </tr>
@@ -268,7 +268,7 @@ const FTWZServices = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">

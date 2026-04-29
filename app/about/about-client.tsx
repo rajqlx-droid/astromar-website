@@ -133,7 +133,7 @@ const About = () => {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <ScrollReveal direction="left">
@@ -199,7 +199,7 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-muted/50">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <div className="text-center mx-auto mb-12">
@@ -247,7 +247,7 @@ const About = () => {
       </section>
 
       {/* Milestones Timeline */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR JOURNEY</p>
@@ -298,7 +298,7 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="pt-20 pb-20 bg-slate-50 border-b border-gray-200">
+      <section className="pt-20 pb-20 bg-muted/50 border-b border-border">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">TRUST &amp; COMPLIANCE</p>
@@ -325,7 +325,7 @@ const About = () => {
       </section>
 
       {/* How We Work */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-orange-500 uppercase mb-2">OUR PROCESS</p>
@@ -351,7 +351,7 @@ const About = () => {
                   </div>
                   {/* Desktop: centered column */}
                   <div className="hidden md:flex flex-col items-center text-center">
-                    <div className="w-20 h-20 rounded-full border-2 border-orange-400 bg-white flex items-center justify-center mb-5 shadow-sm">
+                    <div className="w-20 h-20 rounded-full border-2 border-orange-400 bg-card flex items-center justify-center mb-5 shadow-sm">
                       <span className="text-2xl font-extrabold text-orange-500">{step.num}</span>
                     </div>
                     <h3 className="text-base font-bold text-foreground mb-2">{step.title}</h3>
@@ -371,17 +371,17 @@ const About = () => {
             {/* Floating stat badges */}
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               {["500+ Clients Served", "8+ FTWZ Locations", "7+ Years of Excellence"].map((badge) => (
-                <span key={badge} className="bg-white border border-blue-200 rounded-full px-4 py-1 text-sm font-medium text-gray-700 shadow-sm">
+                <span key={badge} className="bg-card border border-blue-200 dark:border-blue-900 rounded-full px-4 py-1 text-sm font-medium text-foreground shadow-sm">
                   ✓ {badge}
                 </span>
               ))}
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0a1628] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0a1628] dark:text-white mb-4">
               Ready to Optimize Your Trade Operations?
             </h2>
 
-            <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
+            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
               Partner with India's leading FTWZ provider and unlock duty-free warehousing, GST deferment, and seamless logistics.
             </p>
 
@@ -389,7 +389,7 @@ const About = () => {
               <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700" asChild>
                 <a href="/contact">Schedule Consultation <ArrowRight className="w-4 h-4 ml-1" /></a>
               </Button>
-              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors">
+              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 bg-card border-2 border-blue-600 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-colors">
                 Explore Tools
               </Link>
             </div>

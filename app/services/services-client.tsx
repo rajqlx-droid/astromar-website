@@ -93,7 +93,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-background">
         <div className="w-full px-6 md:px-12 lg:px-16">
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
             {services.map((s, i) => (

@@ -157,7 +157,7 @@ const ServicesSection = () => {
       </section>
 
       {/* Key Benefits */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
@@ -260,7 +260,7 @@ const ServicesSection = () => {
                   </button>
                   {openIndex === i && (
                     <div className="px-5 py-4 bg-brand-light border-t border-border">
-                      <p className="text-gray-800 text-sm sm:text-base leading-relaxed font-medium">{s.desc}</p>
+                      <p className="text-foreground text-sm sm:text-base leading-relaxed font-medium">{s.desc}</p>
                     </div>
                   )}
                 </div>

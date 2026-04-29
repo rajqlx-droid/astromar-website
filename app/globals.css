@@ -109,11 +109,13 @@
 
 /* ─── Dark mode overrides ─── */
 .dark {
-  --background: 215 60% 6%;
+  --background: 215 60% 10%;
   --foreground: 210 40% 98%;
 
-  --card: 215 60% 8%;
+  --card: 215 60% 13%;
   --card-foreground: 210 40% 98%;
+
+  --brand-light: 215 55% 14%;
 
   --popover: 215 60% 8%;
   --popover-foreground: 210 40% 98%;
