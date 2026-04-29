@@ -36,12 +36,12 @@ const Blog = () => {
   const hasFeatured = !!heroPost;
 
   return (
-    <div className="min-h-screen bg-secondary">
+    <div className="min-h-screen bg-background">
       <SEOHead />
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-brand-navy py-16 sm:py-24 overflow-hidden">
+      <section className="relative bg-brand-navy py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200"
           alt="Logistics blog and insights"
@@ -51,17 +51,24 @@ const Blog = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">
           <ScrollReveal>
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4 block">
-              Resources & Insights
+            <span className="text-sm font-bold tracking-[0.2em] uppercase text-orange-500 mb-4 block">
+              RESOURCES & INSIGHTS
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight max-w-xl">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight">
               Logistics Blog
             </h1>
-            <p className="text-white/80 max-w-lg mt-4 text-base sm:text-lg">
+            <p className="text-white/80 max-w-lg mb-8 text-base sm:text-lg">
               Expert guides and practical tools for importers, exporters, and logistics professionals.
             </p>
+            <div className="flex flex-wrap gap-3">
+              {["✦ 50+ Articles", "✦ FTWZ & Trade Topics", "✦ Updated Weekly"].map((pill) => (
+                <span key={pill} className="bg-white/10 border border-white/20 text-white rounded-full px-4 py-1 text-sm">
+                  {pill}
+                </span>
+              ))}
+            </div>
           </ScrollReveal>
         </div>
       </section>
@@ -89,7 +96,7 @@ const Blog = () => {
 
       {/* Featured Hero Post + Side Cards */}
       {hasFeatured && (
-        <section className="py-14">
+        <section className="py-14 bg-background">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <div className="grid lg:grid-cols-5 gap-6">
               {/* Large hero card with thumbnail */}
@@ -179,7 +186,7 @@ const Blog = () => {
 
       {/* All / Filtered Posts Grid */}
       {rest.length > 0 && (
-        <section className={hasFeatured ? "pb-14" : "py-14"}>
+        <section className={`bg-gray-50 ${hasFeatured ? "pb-14 pt-14" : "py-14"}`}>
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <ScrollReveal>
               <div className="flex items-center gap-4 mb-10">
