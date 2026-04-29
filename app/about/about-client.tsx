@@ -267,7 +267,7 @@ const About = () => {
                       <div className="hidden md:block absolute left-1/2 top-8 w-4 h-4 rounded-full bg-primary border-4 border-background -translate-x-1/2 z-10" />
                       <div className={`md:w-1/2 md:pr-10 ${!isLeft ? 'md:invisible' : ''}`}>
                         {isLeft && (
-                          <div className="rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm text-right">
+                          <div className="rounded-xl border border-gray-200 bg-slate-50 p-5 sm:p-6 shadow-sm text-right">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
                             <p className="font-bold text-foreground mt-1">{m.title}</p>
                             <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
@@ -276,14 +276,14 @@ const About = () => {
                       </div>
                       <div className={`md:w-1/2 md:pl-10 ${isLeft ? 'md:invisible' : ''}`}>
                         {!isLeft && (
-                          <div className="rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm">
+                          <div className="rounded-xl border border-gray-200 bg-slate-50 p-5 sm:p-6 shadow-sm">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
                             <p className="font-bold text-foreground mt-1">{m.title}</p>
                             <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
                           </div>
                         )}
                       </div>
-                      <div className="md:hidden rounded-xl border border-border bg-card p-5 shadow-sm">
+                      <div className="md:hidden rounded-xl border border-gray-200 bg-slate-50 p-5 shadow-sm">
                         <p className="text-xl font-extrabold text-primary">{m.year}</p>
                         <p className="font-bold text-foreground mt-1">{m.title}</p>
                         <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
@@ -309,7 +309,7 @@ const About = () => {
           <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto items-stretch">
             {certifications.map((cert, i) => (
               <ScrollReveal key={cert.title} delay={i * 0.06} className="h-full">
-                <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-5 sm:p-6 shadow-sm h-full flex-col">
+                <div className="flex items-start gap-3 rounded-xl border border-gray-200 bg-slate-50 p-5 sm:p-6 shadow-sm h-full flex-col">
                   <div className="flex items-start gap-3 w-full">
                     <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
                     <div>

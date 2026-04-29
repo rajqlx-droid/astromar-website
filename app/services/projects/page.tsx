@@ -93,7 +93,7 @@ const Projects = () => {
           <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
@@ -116,7 +116,7 @@ const Projects = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
             {sectors.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
                 </div>
@@ -138,7 +138,7 @@ const Projects = () => {
           <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {capabilities.map((c, i) => (
               <ScrollReveal key={c} delay={i * 0.04}>
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-white border border-gray-200">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-sm text-foreground">{c}</span>
                 </div>

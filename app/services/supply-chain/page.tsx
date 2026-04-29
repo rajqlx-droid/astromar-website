@@ -82,7 +82,7 @@ const SupplyChain = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
             {solutions.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
@@ -105,7 +105,7 @@ const SupplyChain = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
             {industries.map((ind, i) => (
               <ScrollReveal key={ind.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h3 className="text-lg font-bold text-foreground mb-2">{ind.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{ind.desc}</p>
                 </div>
@@ -134,7 +134,7 @@ const SupplyChain = () => {
               { icon: Globe, title: "Pan-India Distribution", desc: "Multi-modal distribution network covering 500+ cities. From major ports and FTWZs to factory gates and retail outlets nationwide." },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.08}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>

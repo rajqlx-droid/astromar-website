@@ -92,7 +92,7 @@ const Warehousing = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
             {solutions.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
@@ -115,7 +115,7 @@ const Warehousing = () => {
           <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {features.map((f, i) => (
               <ScrollReveal key={f} delay={i * 0.05}>
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-white border border-gray-200">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-sm text-foreground">{f}</span>
                 </div>
@@ -135,7 +135,7 @@ const Warehousing = () => {
             </h2>
           </ScrollReveal>
           <div className="max-w-4xl mx-auto">
-            <div className="rounded-xl border border-border bg-card overflow-hidden shadow-sm w-full border-collapse">
+            <div className="rounded-xl border border-gray-200 bg-slate-50 overflow-hidden shadow-sm w-full border-collapse">
               <div className="grid grid-cols-3 bg-primary text-primary-foreground text-sm font-semibold p-4">
                 <span>City</span><span>Capacity</span><span>Types</span>
               </div>
@@ -173,7 +173,7 @@ const Warehousing = () => {
               { title: "FTWZ Duty-Free Storage", desc: "Zero duty, zero GST storage within the FTWZ for goods intended for re-export or value-added processing." },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.08}>
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
                 </div>

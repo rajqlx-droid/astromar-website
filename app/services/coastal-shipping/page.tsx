@@ -89,7 +89,7 @@ const CoastalShipping = () => {
           <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
             {highlights.map((h, i) => (
               <ScrollReveal key={h.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{h.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{h.desc}</p>
@@ -110,7 +110,7 @@ const CoastalShipping = () => {
             </h2>
           </ScrollReveal>
           <div className="max-w-4xl mx-auto">
-            <div className="rounded-xl border border-border bg-card overflow-hidden shadow-sm">
+            <div className="rounded-xl border border-gray-200 bg-slate-50 overflow-hidden shadow-sm">
               <div className="grid grid-cols-4 bg-primary text-primary-foreground text-sm font-semibold p-4">
                 <span>Origin</span><span>Destination</span><span>Transit Time</span><span>Frequency</span>
               </div>
@@ -141,7 +141,7 @@ const CoastalShipping = () => {
           <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
             {cargoTypes.map((c, i) => (
               <ScrollReveal key={c.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <c.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{c.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{c.desc}</p>

@@ -88,7 +88,7 @@ const OceanFreight = () => {
           <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
@@ -111,7 +111,7 @@ const OceanFreight = () => {
           <div className="max-w-5xl mx-auto space-y-4">
             {tradeLanes.map((t, i) => (
               <ScrollReveal key={t.region} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div>
                       <h3 className="text-lg font-bold text-foreground mb-1">{t.region}</h3>
@@ -138,7 +138,7 @@ const OceanFreight = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
             {process.map((p, i) => (
               <ScrollReveal key={p.step} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full">
                   <span className="text-3xl font-extrabold text-primary/20 mb-2 block">{p.step}</span>
                   <h3 className="text-base font-bold text-foreground mb-2">{p.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{p.desc}</p>
@@ -163,7 +163,7 @@ const OceanFreight = () => {
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
             <ScrollReveal delay={0.05}>
-              <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
+              <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full">
                 <h3 className="text-base font-bold text-foreground mb-4">West Coast</h3>
                 <ul className="space-y-2">
                   {["Mundra", "Kandla", "Mumbai (JNPA)", "Goa (Mormugao)", "Mangalore (NMPT)", "Cochin (ICTT / JNCT)"].map((port) => (
@@ -176,7 +176,7 @@ const OceanFreight = () => {
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
+              <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full">
                 <h3 className="text-base font-bold text-foreground mb-4">East &amp; South Coast</h3>
                 <ul className="space-y-2">
                   {["Tuticorin (V.O. Chidambaranar)", "Chennai", "Vizag (Visakhapatnam)", "Kamarajar (Ennore)", "Haldia / Kolkata", "Paradip"].map((port) => (
@@ -201,7 +201,7 @@ const OceanFreight = () => {
                   "EXW, DAP, and DDP shipment execution",
                   "Multimodal – sea + inland road/rail delivery",
                 ].map((cap) => (
-                  <div key={cap} className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                  <div key={cap} className="flex items-start gap-3 p-4 rounded-lg bg-white border border-gray-200">
                     <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span className="text-sm text-foreground">{cap}</span>
                   </div>

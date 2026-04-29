@@ -63,7 +63,7 @@ const ServicesSection = () => {
               <ScrollReveal key={s.title} delay={i * 0.06} className="h-full">
                 <a href={s.href} className="block h-full">
                   <div
-                    className={`relative rounded-xl border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
+                    className={`relative rounded-xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
                       s.featured ? "border-primary" : "border-border"
                     }`}
                   >
@@ -199,7 +199,7 @@ const ServicesSection = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-xl border border-border bg-card p-6 shadow-sm space-y-3 text-muted-foreground h-full flex flex-col justify-center">
+            <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm space-y-3 text-muted-foreground h-full flex flex-col justify-center">
               <h3 className="text-xl font-bold text-foreground">Save More. Move Faster. Grow Bigger.</h3>
               <p className="leading-relaxed text-sm">Astromar's FTWZ facilities are strategically positioned to give your business the maximum advantage in international trade — defer duty, control costs, and scale faster.</p>
               <div className="bg-brand-light border-l-4 border-accent rounded-r-lg px-4 py-3 text-sm font-semibold text-foreground">
@@ -226,7 +226,7 @@ const ServicesSection = () => {
 
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             {/* LEFT - Accordion */}
-            <div className="rounded-xl border border-border overflow-hidden bg-card h-full flex flex-col">
+            <div className="rounded-xl border border-gray-200 overflow-hidden bg-white h-full flex flex-col">
               {solutions.map((s, i) => (
                 <div key={s.title} className="border-b border-border last:border-0 hover:bg-muted/10 transition-colors">
                   <button

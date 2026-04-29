@@ -91,7 +91,7 @@ const CustomClearance = () => {
           <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
                   <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
@@ -114,7 +114,7 @@ const CustomClearance = () => {
           <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {capabilities.map((c, i) => (
               <ScrollReveal key={c} delay={i * 0.04}>
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-white border border-gray-200">
                   <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-sm text-foreground">{c}</span>
                 </div>
@@ -136,7 +136,7 @@ const CustomClearance = () => {
           <div className="grid sm:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {process.map((p, i) => (
               <ScrollReveal key={p.step} delay={i * 0.07}>
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full">
                   <span className="text-3xl font-extrabold text-primary/20 mb-2 block">{p.step}</span>
                   <h3 className="text-base font-bold text-foreground mb-2">{p.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{p.desc}</p>
@@ -164,7 +164,7 @@ const CustomClearance = () => {
               { icon: ClipboardCheck, title: "Trade Compliance Management", desc: "End-to-end compliance across import/export regulations, licensing, EXIM policy advisory, and duty optimization." },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.08}>
-                <div className="rounded-xl border border-border bg-card p-6 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
