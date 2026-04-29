@@ -181,21 +181,12 @@
   background-color: #1e293b !important;
 }
 
-/* Cards inside white sections */
-.dark .bg-white .rounded-xl,
-.dark .bg-white .rounded-lg,
-.dark .bg-white .rounded-2xl {
-  background-color: #1e293b !important;
-  border-color: #334155 !important;
-}
-
-/* Cards inside gray sections */
-.dark .bg-gray-50 .rounded-xl,
-.dark .bg-gray-50 .rounded-lg,
-.dark .bg-slate-50 .rounded-xl,
-.dark .bg-slate-50 .rounded-lg {
-  background-color: #273549 !important;
-  border-color: #3d5068 !important;
+/* Cards - visibly lighter than section backgrounds */
+.dark .rounded-xl,
+.dark .rounded-2xl,
+.dark .rounded-lg {
+  background-color: #1a3060 !important;
+  border: 1px solid #2e4f8a !important;
 }
 
 /* Gradient sections */
