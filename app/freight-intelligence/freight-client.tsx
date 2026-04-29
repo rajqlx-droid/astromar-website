@@ -967,7 +967,7 @@ const FreightIntelligence = () => {
       </div>
 
       {/* Calculator */}
-      <div className="container px-4 py-8 sm:py-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-8 sm:py-12">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
@@ -982,7 +982,7 @@ const FreightIntelligence = () => {
       </div>
 
       {/* Educational Content */}
-      <div className="container px-4 pb-8 sm:pb-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 pb-8 sm:pb-12">
         <AnimatePresence mode="wait">
           <motion.div
             key={`edu-${activeTab}`}
