@@ -202,8 +202,10 @@ const About = () => {
       <section className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR VALUES</p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-16">What We Stand For</h2>
+            <div className="text-center mx-auto mb-12">
+              <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR VALUES</p>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">What We Stand For</h2>
+            </div>
           </ScrollReveal>
           <div className="space-y-16">
             {coreValues.map((item, i) => {
