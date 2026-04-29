@@ -259,8 +259,16 @@ const ServicesSection = () => {
                     </div>
                   </button>
                   {openIndex === i && (
-                    <div className="px-5 py-4 bg-brand-light border-t border-border">
-                      <p className="text-foreground text-sm sm:text-base leading-relaxed font-medium">{s.desc}</p>
+                    <div
+                      className="p-6"
+                      style={{
+                        backgroundColor: "#ffffff",
+                        borderLeft: "3px solid #f97316",
+                        borderBottom: "1px solid #e5e7eb",
+                        borderRight: "1px solid #e5e7eb",
+                      }}
+                    >
+                      <p className="text-gray-700 text-sm sm:text-base leading-relaxed">{s.desc}</p>
                     </div>
                   )}
                 </div>
