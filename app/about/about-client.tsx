@@ -46,6 +46,29 @@ const certifications = [
   { title: "IEC Registration", desc: "Import Export Code registered with DGFT, Government of India" },
 ];
 
+const processSteps = [
+  {
+    num: "01",
+    title: "Initial Consultation",
+    desc: "We understand your supply chain needs, import/export volumes, and identify the right FTWZ location for your business.",
+  },
+  {
+    num: "02",
+    title: "Documentation & Registration",
+    desc: "Our team handles all FTWZ registration paperwork, SEZ approvals, and customs documentation on your behalf.",
+  },
+  {
+    num: "03",
+    title: "Warehouse Allocation & Setup",
+    desc: "We allocate dedicated warehouse space, configure your WMS access, and set up inbound logistics from your supplier.",
+  },
+  {
+    num: "04",
+    title: "Go Live & Ongoing Support",
+    desc: "Your goods move into the FTWZ. Our operations team provides 24/7 support, stock reports, and release management.",
+  },
+];
+
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -271,32 +294,72 @@ const About = () => {
         </div>
       </section>
 
+      {/* How We Work */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-orange-500 uppercase mb-2">OUR PROCESS</p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-16">How We Work</h2>
+          </ScrollReveal>
+
+          <div className="relative">
+            {/* Dashed connector line — desktop only, sits behind step circles */}
+            <div className="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] border-t-2 border-dashed border-orange-300 z-0" />
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 relative z-10">
+              {processSteps.map((step, i) => (
+                <ScrollReveal key={step.num} delay={i * 0.1}>
+                  {/* Mobile: horizontal row with step number + text */}
+                  <div className="flex flex-row items-start gap-5 md:hidden">
+                    <div className="w-16 h-16 shrink-0 rounded-full border-2 border-orange-400 bg-orange-50 flex items-center justify-center">
+                      <span className="text-xl font-extrabold text-orange-500">{step.num}</span>
+                    </div>
+                    <div className="pt-1">
+                      <h3 className="text-base font-bold text-foreground mb-1">{step.title}</h3>
+                      <p className="text-sm text-foreground/70 leading-relaxed">{step.desc}</p>
+                    </div>
+                  </div>
+                  {/* Desktop: centered column */}
+                  <div className="hidden md:flex flex-col items-center text-center">
+                    <div className="w-20 h-20 rounded-full border-2 border-orange-400 bg-white flex items-center justify-center mb-5 shadow-sm">
+                      <span className="text-2xl font-extrabold text-orange-500">{step.num}</span>
+                    </div>
+                    <h3 className="text-base font-bold text-foreground mb-2">{step.title}</h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed">{step.desc}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="py-20 px-6 bg-gradient-to-r from-orange-500 via-orange-300 to-white">
+      <section className="py-20 px-6 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
             {/* Floating stat badges */}
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               {["500+ Clients Served", "8+ FTWZ Locations", "7+ Years of Excellence"].map((badge) => (
-                <span key={badge} className="bg-white/80 border border-orange-200 rounded-full px-4 py-1 text-sm font-medium text-gray-700 shadow-sm">
+                <span key={badge} className="bg-white border border-blue-200 rounded-full px-4 py-1 text-sm font-medium text-gray-700 shadow-sm">
                   ✓ {badge}
                 </span>
               ))}
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0a1628] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0a1628] mb-4">
               Ready to Optimize Your Trade Operations?
             </h2>
 
-            <p className="text-gray-700 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
               Partner with India's leading FTWZ provider and unlock duty-free warehousing, GST deferment, and seamless logistics.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-orange-500 text-white hover:bg-orange-600" asChild>
+              <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700" asChild>
                 <a href="/contact">Schedule Consultation <ArrowRight className="w-4 h-4 ml-1" /></a>
               </Button>
-              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 bg-white border-2 border-orange-500 text-orange-500 transition-colors">
+              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors">
                 Explore Tools
               </Link>
             </div>
