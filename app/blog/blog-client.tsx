@@ -96,7 +96,7 @@ const Blog = () => {
 
       {/* Featured Hero Post + Side Cards */}
       {hasFeatured && (
-        <section className="py-14 bg-background">
+        <section className="py-14 bg-white">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <div className="grid lg:grid-cols-5 gap-6">
               {/* Large hero card with thumbnail */}
@@ -239,7 +239,7 @@ const Blog = () => {
       )}
 
       {!hasFeatured && rest.length === 0 && (
-        <section className="py-14">
+        <section className="py-14 bg-white">
           <div className="max-w-2xl mx-auto text-center px-6">
             <p className="text-muted-foreground text-lg">No articles found in this category.</p>
           </div>
