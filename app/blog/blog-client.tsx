@@ -52,24 +52,49 @@ const Blog = () => {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">
-          <ScrollReveal>
-            <span className="text-sm font-bold tracking-[0.2em] uppercase text-orange-500 mb-4 block">
-              RESOURCES & INSIGHTS
-            </span>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight">
-              Logistics Blog
-            </h1>
-            <p className="text-white/80 max-w-lg mb-8 text-base sm:text-lg">
-              Expert guides and practical tools for importers, exporters, and logistics professionals.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {["✦ 50+ Articles", "✦ FTWZ & Trade Topics", "✦ Updated Weekly"].map((pill) => (
-                <span key={pill} className="bg-white/10 border border-white/20 text-white rounded-full px-4 py-1 text-sm">
-                  {pill}
-                </span>
-              ))}
-            </div>
-          </ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left — text content */}
+            <ScrollReveal>
+              <span className="text-sm font-bold tracking-[0.2em] uppercase text-orange-500 mb-4 block">
+                RESOURCES & INSIGHTS
+              </span>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight">
+                Logistics Blog
+              </h1>
+              <p className="text-white/80 max-w-lg mb-8 text-base sm:text-lg">
+                Expert guides and practical tools for importers, exporters, and logistics professionals.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {["✦ 50+ Articles", "✦ FTWZ & Trade Topics", "✦ Updated Weekly"].map((pill) => (
+                  <span key={pill} className="bg-white/10 border border-white/20 text-white rounded-full px-4 py-1 text-sm">
+                    {pill}
+                  </span>
+                ))}
+              </div>
+            </ScrollReveal>
+
+            {/* Right — featured post card */}
+            <ScrollReveal delay={0.2}>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
+                <span className="text-orange-400 text-xs font-bold uppercase tracking-wider">Featured Post</span>
+                <h3 className="text-white font-bold text-xl mt-2 mb-3">
+                  How FTWZ Can Help You Defer Customs Duty &amp; GST
+                </h3>
+                <p className="text-gray-300 text-sm mb-4">
+                  A complete guide to understanding Free Trade Warehousing Zones and how importers can save working capital by deferring duty payments.
+                </p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-400 text-xs">📅 Jan 2026</span>
+                    <span className="text-gray-400 text-xs">• 18 min read</span>
+                  </div>
+                  <a href="/blog/ftwz-customs-duty-gst" className="text-orange-400 text-sm font-semibold hover:text-orange-300">
+                    Read More →
+                  </a>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
