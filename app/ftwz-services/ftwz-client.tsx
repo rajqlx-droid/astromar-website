@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { CheckCircle2, ArrowRight, Warehouse, Snowflake, Globe, FileCheck, Thermometer, BarChart3, Package } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -229,7 +229,7 @@ const FTWZServices = () => {
             </p>
 
             <div className="overflow-x-auto">
-              <table className="w-full rounded-xl overflow-hidden border border-gray-200 text-sm">
+              <table className="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 text-sm">
                 <thead>
                   <tr>
                     <th className="bg-brand-navy text-white text-left px-5 py-4 font-semibold w-[30%]">Feature</th>

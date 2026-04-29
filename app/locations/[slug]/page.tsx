@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin, Phone, Navigation, Warehouse, ArrowLeft, Clock, Globe } from "lucide-react";
 import { ftwzLocationDetails } from "@/data/ftwzLocations";
@@ -276,7 +276,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>

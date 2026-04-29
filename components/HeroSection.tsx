@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -149,15 +149,15 @@ const HeroSection = () => {
                   <div>
                     <label className="text-white/70 text-xs mb-1 block">Service Required</label>
                     <select className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm focus:outline-none focus:border-white/50 appearance-none">
-                      <option value="" className="text-gray-900">Select a service</option>
-                      <option value="ftwz" className="text-gray-900">FTWZ Warehousing</option>
-                      <option value="ocean" className="text-gray-900">Ocean Freight (FCL)</option>
-                      <option value="ocean-lcl" className="text-gray-900">Ocean Freight (LCL)</option>
-                      <option value="air" className="text-gray-900">Air Freight</option>
-                      <option value="coastal" className="text-gray-900">Coastal Shipping</option>
-                      <option value="customs" className="text-gray-900">Custom Clearance</option>
-                      <option value="supply" className="text-gray-900">Supply Chain</option>
-                      <option value="projects" className="text-gray-900">Project Cargo</option>
+                      <option value="" className="text-gray-900 dark:text-white">Select a service</option>
+                      <option value="ftwz" className="text-gray-900 dark:text-white">FTWZ Warehousing</option>
+                      <option value="ocean" className="text-gray-900 dark:text-white">Ocean Freight (FCL)</option>
+                      <option value="ocean-lcl" className="text-gray-900 dark:text-white">Ocean Freight (LCL)</option>
+                      <option value="air" className="text-gray-900 dark:text-white">Air Freight</option>
+                      <option value="coastal" className="text-gray-900 dark:text-white">Coastal Shipping</option>
+                      <option value="customs" className="text-gray-900 dark:text-white">Custom Clearance</option>
+                      <option value="supply" className="text-gray-900 dark:text-white">Supply Chain</option>
+                      <option value="projects" className="text-gray-900 dark:text-white">Project Cargo</option>
                     </select>
                   </div>
 

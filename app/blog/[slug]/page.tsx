@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -179,27 +179,27 @@ export default async function BlogArticlePage({ params }: Props) {
       <section className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16 py-16">
 
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-10">
+        <nav className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-10">
           <Link href="/" className="hover:text-blue-600">Home</Link>
           <span>/</span>
           <Link href="/blog" className="hover:text-blue-600">Blog</Link>
           <span>/</span>
-          <span className="text-gray-800">{article.category}</span>
+          <span className="text-gray-800 dark:text-gray-100">{article.category}</span>
         </nav>
 
         {/* Intro */}
-        <p className="text-lg text-gray-700 leading-relaxed mb-12 border-l-4 border-orange-400 pl-5">{article.intro}</p>
+        <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-12 border-l-4 border-orange-400 pl-5">{article.intro}</p>
 
         {/* Sections */}
         {article.sections.map((section, i) => (
           <div key={i} className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">{section.heading}</h2>
-            <div className="text-gray-700 leading-relaxed whitespace-pre-line">{section.content}</div>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{section.heading}</h2>
+            <div className="text-gray-700 dark:text-gray-200 leading-relaxed whitespace-pre-line">{section.content}</div>
           </div>
         ))}
 
         {/* Keywords */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
+        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
           <p className="text-xs text-gray-400 font-medium uppercase tracking-wider mb-3">Related Topics</p>
           <div className="flex flex-wrap gap-2">
             {article.keywords.map((kw, i) => (

@@ -81,7 +81,7 @@ const AirFreight = () => {
       </section>
 
       {/* Services */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">SOLUTIONS</p>
@@ -126,7 +126,7 @@ const AirFreight = () => {
       </section>
 
       {/* Destinations */}
-      <section className="py-14 bg-white">
+      <section className="py-14 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">GLOBAL NETWORK</p>

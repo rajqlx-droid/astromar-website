@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { Phone, Mail, MapPin } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
@@ -25,13 +25,13 @@ const contactItems = [
 
 const ContactInfoStrip = () => {
   return (
-    <section id="contact" className="bg-white py-14">
+    <section id="contact" className="bg-white dark:bg-gray-900 py-14">
       <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
         <ScrollReveal>
           <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-2 text-center">
             GET IN TOUCH
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
             Contact Us
           </h2>
         </ScrollReveal>
@@ -50,8 +50,8 @@ const ContactInfoStrip = () => {
                   <item.icon className="w-4 h-4 text-white" strokeWidth={2} />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900 leading-snug">{item.primary}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{item.secondary}</p>
+                  <p className="text-sm font-semibold text-gray-900 dark:text-white leading-snug">{item.primary}</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{item.secondary}</p>
                 </div>
               </a>
             ))}
