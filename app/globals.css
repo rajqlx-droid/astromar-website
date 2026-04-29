@@ -165,77 +165,133 @@
   animation-play-state: paused;
 }
 
-/* ─── Dark mode global overrides ─── */
-/* These override hardcoded Tailwind color classes that don't use CSS variables */
+/* ── DARK MODE OVERRIDES ── */
 .dark body {
-  background-color: #0d1b2e;
-  color: #f9fafb;
+  background-color: #0f172a;
+  color: #e2e8f0;
 }
 
+/* Section backgrounds - alternating levels */
 .dark .bg-white {
-  background-color: #1e293b !important;
+  background-color: #0f172a !important;
 }
-
 .dark .bg-gray-50,
-.dark .bg-slate-50 {
+.dark .bg-slate-50,
+.dark .bg-slate-100 {
   background-color: #1e293b !important;
 }
 
-.dark .bg-gray-100 {
+/* Cards inside white sections */
+.dark .bg-white .rounded-xl,
+.dark .bg-white .rounded-lg,
+.dark .bg-white .rounded-2xl {
   background-color: #1e293b !important;
+  border-color: #334155 !important;
 }
 
-.dark .rounded-xl,
-.dark .rounded-lg {
-  background-color: #243247 !important;
+/* Cards inside gray sections */
+.dark .bg-gray-50 .rounded-xl,
+.dark .bg-gray-50 .rounded-lg,
+.dark .bg-slate-50 .rounded-xl,
+.dark .bg-slate-50 .rounded-lg {
+  background-color: #273549 !important;
+  border-color: #3d5068 !important;
 }
 
-.dark .text-gray-900 {
-  color: #e2e8f0 !important;
+/* Gradient sections */
+.dark .from-blue-50,
+.dark .from-orange-50,
+.dark .from-amber-50 {
+  --tw-gradient-from: #1e293b !important;
+}
+.dark .via-white {
+  --tw-gradient-via: #162032 !important;
+}
+.dark .to-blue-100,
+.dark .to-orange-100,
+.dark .to-amber-100 {
+  --tw-gradient-to: #0f172a !important;
 }
 
-.dark .text-navy {
-  color: #e2e8f0 !important;
+/* Headings */
+.dark h1, .dark h2, .dark h3,
+.dark h4, .dark h5, .dark h6 {
+  color: #f1f5f9 !important;
 }
 
-.dark .text-gray-800,
-.dark .text-gray-700 {
+/* Body text */
+.dark p {
   color: #cbd5e1 !important;
 }
 
+/* Text utility classes */
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-slate-900,
+.dark .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+.dark .text-gray-700,
+.dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
 .dark .text-gray-600,
-.dark .text-gray-500 {
+.dark .text-slate-600 {
   color: #94a3b8 !important;
 }
-
-/* Gradient section overrides */
-.dark .from-blue-50 {
-  --tw-gradient-from: #1e293b !important;
+.dark .text-gray-500,
+.dark .text-slate-500 {
+  color: #64748b !important;
 }
 
-.dark .via-white {
-  --tw-gradient-via: #1e293b !important;
-}
-
-.dark .to-blue-100 {
-  --tw-gradient-to: #243247 !important;
-}
-
-.dark .from-orange-50 {
-  --tw-gradient-from: #1e293b !important;
-}
-
-.dark .to-orange-100 {
-  --tw-gradient-to: #243247 !important;
-}
-
+/* Borders and dividers */
 .dark .border-gray-200,
-.dark .border-gray-100 {
-  border-color: #374151 !important;
+.dark .border-gray-100,
+.dark .border-slate-200,
+.dark .border-slate-100 {
+  border-color: #334155 !important;
+}
+.dark .divide-gray-100,
+.dark .divide-gray-200,
+.dark .divide-slate-100 {
+  border-color: #334155 !important;
 }
 
-.dark .divide-gray-100 > * + * {
-  border-color: #374151 !important;
+/* Accent colors - keep visible */
+.dark .text-blue-600,
+.dark .text-blue-500 {
+  color: #60a5fa !important;
+}
+.dark .text-orange-500,
+.dark .text-orange-600 {
+  color: #fb923c !important;
+}
+
+/* Header/Navbar */
+.dark header,
+.dark nav {
+  background-color: #0a1628 !important;
+  border-bottom-color: #1e293b !important;
+}
+.dark header a,
+.dark nav a {
+  color: #e2e8f0 !important;
+}
+
+/* Keep dark navy sections UNCHANGED */
+.dark [class*="bg-[#0a1628]"],
+.dark [class*="bg-[#0d1f35]"] {
+  background-color: inherit !important;
+}
+
+/* Marquee/ticker band - unchanged */
+.dark .marquee-section {
+  background-color: #0a1628 !important;
+}
+
+/* Navy text helper class */
+.dark .text-navy {
+  color: #f1f5f9 !important;
 }
 
 /* ─── Base styles ─── */
