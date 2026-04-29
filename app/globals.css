@@ -147,6 +147,22 @@
   --sidebar-ring: 217.2 91.2% 59.8%;
 }
 
+/* ─── Marquee animation ─── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
 /* ─── Base styles ─── */
 @layer base {
   * {

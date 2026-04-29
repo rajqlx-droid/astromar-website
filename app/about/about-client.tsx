@@ -165,11 +165,29 @@ const About = () => {
         </div>
       </section>
 
-      {/* Tagline band */}
-      <section className="bg-[#0a1628] py-12 px-6 text-center">
-        <p className="text-white text-lg font-medium tracking-wide">
-          Built on trust. Driven by excellence. Focused on your growth.
-        </p>
+      {/* Marquee band */}
+      <section className="bg-[#0a1628] py-5 overflow-hidden" style={{ maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)" }}>
+        <div className="animate-marquee">
+          {[...Array(2)].map((_, pass) => (
+            <div key={pass} className="flex items-center gap-0 shrink-0">
+              {[
+                "500+ Clients Served",
+                "8+ FTWZ Locations Across India",
+                "7+ Years of Excellence",
+                "₹2000Cr+ Cargo Handled",
+                "24/7 Operations Support",
+                "SEZ & FTWZ Licensed",
+                "MSME & IEC Registered",
+                "Trusted by Global Freight Agents",
+              ].map((item) => (
+                <span key={item} className="flex items-center whitespace-nowrap">
+                  <span className="text-white font-medium px-6" style={{ fontSize: "15px" }}>{item}</span>
+                  <span className="text-[#f97316] font-bold" style={{ fontSize: "15px" }}>✦</span>
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Core Values */}
