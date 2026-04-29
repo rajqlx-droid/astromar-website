@@ -1,5 +1,6 @@
 ﻿"use client"
-import { CheckCircle2, ArrowRight, Warehouse, Snowflake, Globe, FileCheck, Thermometer, BarChart3, Package } from "lucide-react";
+import { useRef, useState, useCallback } from "react";
+import { CheckCircle2, ArrowRight, Warehouse, Snowflake, Globe, FileCheck, Thermometer, BarChart3, Package, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -19,14 +20,60 @@ const benefits = [
   { title: "Single Window Clearance", desc: "Streamlined customs documentation and single-window clearance managed by our in-house compliance team." },
 ];
 
-const solutions = [
-  { icon: Globe, title: "Import Duty Optimisation", desc: "Receive international shipments directly into the FTWZ and defer or eliminate customs duty based on final disposition — DTA, re-export, or destruction." },
-  { icon: FileCheck, title: "GST-Free B2B Supply", desc: "Supply goods to other FTWZ units or SEZ entities without GST, enabling cost-competitive inter-company and cross-border trade flows." },
-  { icon: Warehouse, title: "Export Consolidation", desc: "Consolidate cargo from multiple suppliers inside the FTWZ, perform value-added processing, and re-export as a unified shipment with zero duty." },
-  { icon: Package, title: "Domestic Tariff Area Supply", desc: "Clear goods into the DTA on demand — pay duty only on what you need, when you need it, keeping the rest in duty-free storage." },
+const useCases = [
+  {
+    emoji: "💻",
+    title: "Electronics & High-Value Goods",
+    desc: "Defer duty on high-value imports until point of sale",
+    benefits: ["Zero customs duty on storage", "Tamper-evident access controls", "Re-export to any destination duty-free"],
+  },
+  {
+    emoji: "💊",
+    title: "Pharma & Cold Chain",
+    desc: "Temperature-controlled duty-free bonded storage",
+    benefits: ["GDP-compliant cold rooms available", "GST deferral on pharma imports", "Seamless DTA clearance on demand"],
+  },
+  {
+    emoji: "🛒",
+    title: "FMCG & Consumer Goods",
+    desc: "Consolidate, kit, and distribute efficiently",
+    benefits: ["Kitting & relabeling permitted in-zone", "Pan-India DTA distribution", "Single-window customs clearance"],
+  },
+  {
+    emoji: "⚙️",
+    title: "Automotive Parts",
+    desc: "Just-in-time supply without upfront duty burden",
+    benefits: ["Defer duty until assembly demand arises", "Quality inspection inside FTWZ", "Multi-origin cargo consolidation"],
+  },
+  {
+    emoji: "👕",
+    title: "Textiles & Apparel",
+    desc: "Re-export surplus stock globally with zero duty",
+    benefits: ["Zero duty re-export flexibility", "Sorting & relabeling allowed", "Supply global buyers directly from FTWZ"],
+  },
+  {
+    emoji: "🏗️",
+    title: "Project & Specialized Cargo",
+    desc: "Stage heavy equipment without upfront duty payment",
+    benefits: ["Indefinite bonded storage permitted", "Oversized cargo handling available", "Phased DTA clearance as needed"],
+  },
 ];
 
 const FTWZServices = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const scroll = useCallback((dir: "left" | "right") => {
+    if (!scrollRef.current) return;
+    scrollRef.current.scrollBy({ left: dir === "right" ? 404 : -404, behavior: "smooth" });
+  }, []);
+
+  const handleScroll = useCallback(() => {
+    if (!scrollRef.current) return;
+    const idx = Math.round(scrollRef.current.scrollLeft / 404);
+    setActiveIndex(Math.min(idx, useCases.length - 1));
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead />
@@ -188,27 +235,88 @@ const FTWZServices = () => {
         </div>
       </section>
 
-      {/* Comprehensive Solutions */}
-      <section className="py-20 bg-background">
+      {/* FTWZ Use Cases Carousel */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">
               FTWZ USE CASES
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
               How Businesses Use Our FTWZ Network
             </h2>
           </ScrollReveal>
 
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
-            {solutions.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 0.07} className="h-full">
-                <div className="rounded-xl border border-border bg-card p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
-                  <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
-                  <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed flex-1">{s.desc}</p>
+          {/* Carousel wrapper */}
+          <div className="relative">
+            {/* Left arrow */}
+            <button
+              onClick={() => scroll("left")}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors hidden md:flex"
+              aria-label="Scroll left"
+            >
+              <ChevronLeft className="w-5 h-5 text-gray-600" />
+            </button>
+
+            {/* Scrollable track */}
+            <div
+              ref={scrollRef}
+              onScroll={handleScroll}
+              className="flex gap-6 overflow-x-auto px-1 pb-4 scrollbar-hide"
+              style={{ scrollSnapType: "x mandatory" }}
+            >
+              {useCases.map((item) => (
+                <div
+                  key={item.title}
+                  className="bg-white border border-gray-200 rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow flex-shrink-0 flex flex-col"
+                  style={{ scrollSnapAlign: "start", minWidth: "min(320px, 80vw)", width: "380px" }}
+                >
+                  {/* Icon */}
+                  <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-2xl mb-5 flex-shrink-0">
+                    {item.emoji}
+                  </div>
+                  {/* Heading + desc */}
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">{item.title}</h3>
+                  <p className="text-sm text-gray-500 mb-4">{item.desc}</p>
+                  {/* Divider */}
+                  <div className="h-px bg-gray-100 mb-4" />
+                  {/* Benefits */}
+                  <ul className="flex flex-col gap-2">
+                    {item.benefits.map((b) => (
+                      <li key={b} className="flex items-start gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" strokeWidth={2} />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              </ScrollReveal>
+              ))}
+            </div>
+
+            {/* Right arrow */}
+            <button
+              onClick={() => scroll("right")}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors hidden md:flex"
+              aria-label="Scroll right"
+            >
+              <ChevronRight className="w-5 h-5 text-gray-600" />
+            </button>
+          </div>
+
+          {/* Scroll indicator dots */}
+          <div className="flex justify-center gap-2 mt-6">
+            {useCases.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  scrollRef.current?.scrollTo({ left: i * 404, behavior: "smooth" });
+                  setActiveIndex(i);
+                }}
+                className={`rounded-full transition-all duration-300 ${
+                  i === activeIndex ? "w-6 h-2.5 bg-orange-500" : "w-2.5 h-2.5 bg-gray-300"
+                }`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
             ))}
           </div>
         </div>
