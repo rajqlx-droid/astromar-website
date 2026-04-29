@@ -166,7 +166,14 @@ const About = () => {
       </section>
 
       {/* Marquee band */}
-      <section className="bg-[#0a1628] py-5 overflow-hidden" style={{ maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)" }}>
+      <section className="bg-[#0a1628] py-5">
+        <div
+          className="overflow-hidden relative"
+          style={{
+            WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+            maskImage: "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+          }}
+        >
         <div className="animate-marquee">
           {[...Array(2)].map((_, pass) => (
             <div key={pass} className="flex items-center gap-0 shrink-0">
@@ -187,6 +194,7 @@ const About = () => {
               ))}
             </div>
           ))}
+        </div>
         </div>
       </section>
 
