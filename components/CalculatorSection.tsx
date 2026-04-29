@@ -34,7 +34,7 @@ const CalculatorSection = () => {
 
   return (
     <section id="calculator" className="py-20 bg-brand-light">
-      <div className="container">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3">
           INTERACTIVE TOOL
         </p>
