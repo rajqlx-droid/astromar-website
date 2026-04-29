@@ -63,7 +63,7 @@ const Projects = () => {
         <div className="absolute inset-0 bg-black/60" />
         <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3">PROJECT CARGO</p>
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3 text-center">PROJECT CARGO</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
               Project Cargo & Heavy-Lift Logistics
             </h1>
@@ -85,7 +85,7 @@ const Projects = () => {
       <section className="py-14 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR SERVICES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Project Logistics Solutions
             </h2>
@@ -108,7 +108,7 @@ const Projects = () => {
       <section className="py-14 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">SECTORS</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">SECTORS</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Industry Sectors We Serve
             </h2>
@@ -130,7 +130,7 @@ const Projects = () => {
       <section className="py-14 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CAPABILITIES</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CAPABILITIES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               End-to-End Project Capabilities
             </h2>

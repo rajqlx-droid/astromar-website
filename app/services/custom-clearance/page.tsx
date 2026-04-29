@@ -61,7 +61,7 @@ const CustomClearance = () => {
         <div className="absolute inset-0 bg-black/60" />
         <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3">CUSTOM CLEARANCE</p>
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3 text-center">CUSTOM CLEARANCE</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
               Customs Clearance Services in India
             </h1>
@@ -83,7 +83,7 @@ const CustomClearance = () => {
       <section className="py-14 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR SERVICES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Customs Brokerage Solutions
             </h2>
@@ -106,7 +106,7 @@ const CustomClearance = () => {
       <section className="py-14 bg-brand-light">
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">EXPERTISE</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">EXPERTISE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Our Customs Expertise
             </h2>
@@ -128,7 +128,7 @@ const CustomClearance = () => {
       <section className="py-14 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CLEARANCE PROCESS</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CLEARANCE PROCESS</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               How We Clear Your Cargo
             </h2>
@@ -151,7 +151,7 @@ const CustomClearance = () => {
       <section className="py-14 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CLEARANCE COVERAGE</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CLEARANCE COVERAGE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Where We Clear Your Cargo
             </h2>

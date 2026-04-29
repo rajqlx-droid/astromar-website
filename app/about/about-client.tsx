@@ -250,7 +250,7 @@ const About = () => {
       <section className="py-14 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR JOURNEY</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR JOURNEY</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Milestones &amp; Growth
             </h2>
@@ -301,7 +301,7 @@ const About = () => {
       <section className="pt-20 pb-20 bg-muted/50 border-b border-border">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">TRUST &amp; COMPLIANCE</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">TRUST &amp; COMPLIANCE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
               Certifications &amp; Accreditations
             </h2>

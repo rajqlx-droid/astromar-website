@@ -46,7 +46,7 @@ const ServicesSection = () => {
       <section id="services" className="py-20 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-5">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-5 text-center">
               WHAT WE OFFER
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-6">
@@ -160,7 +160,7 @@ const ServicesSection = () => {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">
               KEY BENEFITS
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-16">
@@ -216,7 +216,7 @@ const ServicesSection = () => {
       <section className="py-20 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">
               OUR SOLUTIONS
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">

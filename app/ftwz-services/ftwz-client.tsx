@@ -213,7 +213,7 @@ const FTWZServices = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">
               FTWZ ADVANTAGES
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-6">

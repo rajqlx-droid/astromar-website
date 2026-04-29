@@ -57,7 +57,7 @@ const CoastalShipping = () => {
         <div className="absolute inset-0 bg-black/60" />
         <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
           <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3">
+            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3 text-center">
               COASTAL SHIPPING
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
@@ -81,7 +81,7 @@ const CoastalShipping = () => {
       <section className="py-14 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">WHY COASTAL SHIPPING</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">WHY COASTAL SHIPPING</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               The Smarter Way to Move Cargo Domestically
             </h2>
@@ -104,7 +104,7 @@ const CoastalShipping = () => {
       <section className="py-14 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">ROUTE NETWORK</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">ROUTE NETWORK</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               Key Coastal Shipping Routes
             </h2>
@@ -133,7 +133,7 @@ const CoastalShipping = () => {
       <section className="py-14 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CARGO TYPES</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CARGO TYPES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
               What We Ship Coastally
             </h2>
