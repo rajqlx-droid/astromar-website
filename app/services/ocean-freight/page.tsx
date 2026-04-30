@@ -212,6 +212,34 @@ const OceanFreight = () => {
         </div>
       </section>
 
+      {/* Why Choose Astromar */}
+      <section className="py-14 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR ADVANTAGE</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
+              Why Choose Astromar for Ocean Freight?
+            </h2>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+            {[
+              { icon: Anchor, title: "50+ Trade Lanes", desc: "Direct connections to major ports across Asia, Europe, Middle East & Americas" },
+              { icon: Package, title: "FCL & LCL Options", desc: "Flexible container solutions for any cargo size and budget requirement" },
+              { icon: BarChart3, title: "Real-Time Tracking", desc: "Live shipment visibility from origin port to final destination" },
+              { icon: CheckCircle2, title: "End-to-End Documentation", desc: "BL, packing list, certificate of origin and customs handled by our team" },
+            ].map((item, i) => (
+              <ScrollReveal key={item.title} delay={i * 0.07}>
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                  <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-14 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="max-w-2xl mx-auto text-center px-6">

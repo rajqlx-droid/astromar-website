@@ -175,6 +175,34 @@ const CustomClearance = () => {
         </div>
       </section>
 
+      {/* Track Record */}
+      <section className="py-14 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">BY THE NUMBERS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
+              Our Customs Clearance Track Record
+            </h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {[
+              { stat: "10,000+", label: "Shipments Cleared", desc: "Successfully processed across all Indian ports and airports" },
+              { stat: "100%", label: "Compliance Rate", desc: "Zero penalties, zero delays due to documentation errors" },
+              { stat: "24–48 hrs", label: "Average Clearance Time", desc: "Fast-tracked processing for standard import and export cargo" },
+              { stat: "15+", label: "Ports & ICDs Covered", desc: "Nationwide customs brokerage presence across India" },
+            ].map((item, i) => (
+              <ScrollReveal key={item.label} delay={i * 0.07}>
+                <div className="text-center p-6">
+                  <p className="text-3xl sm:text-4xl font-extrabold text-accent mb-2">{item.stat}</p>
+                  <p className="text-base font-bold text-foreground mb-2">{item.label}</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-14 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="max-w-2xl mx-auto text-center px-6">

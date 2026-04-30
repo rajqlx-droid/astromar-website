@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import {
   Warehouse, Package, Shield, Clock, BarChart3, ArrowRight,
-  CheckCircle2, Thermometer, Layers, Settings,
+  CheckCircle2, Thermometer, Layers, Settings, MapPin,
 } from "lucide-react";
 
 const solutions = [
@@ -175,6 +175,34 @@ const Warehousing = () => {
               <ScrollReveal key={item.title} delay={i * 0.08}>
                 <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Infrastructure Highlights */}
+      <section className="py-14 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">INFRASTRUCTURE</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
+              Built for Modern Supply Chains
+            </h2>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+            {[
+              { icon: Warehouse, title: "5 Lakh+ Sq. Ft.", desc: "Total warehouse space across pan-India FTWZ network" },
+              { icon: Thermometer, title: "Cold Chain Ready", desc: "GDP-certified cold storage from 2°C to -20°C for pharma & food" },
+              { icon: MapPin, title: "8+ Locations", desc: "Strategic FTWZ facilities near major ports and airports" },
+              { icon: Shield, title: "24/7 Security", desc: "Round-the-clock CCTV, access control and inventory management" },
+            ].map((item, i) => (
+              <ScrollReveal key={item.title} delay={i * 0.07}>
+                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
+                  <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
+                  <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
                 </div>
               </ScrollReveal>
