@@ -164,7 +164,7 @@ const CustomClearance = () => {
               { icon: ClipboardCheck, title: "Trade Compliance Management", desc: "End-to-end compliance across import/export regulations, licensing, EXIM policy advisory, and duty optimization." },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.08}>
-                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
@@ -176,7 +176,7 @@ const CustomClearance = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-14 bg-brand-light">
+      <section className="py-14 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Clear Customs Without the Hassle</h2>

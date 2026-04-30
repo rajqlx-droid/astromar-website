@@ -111,7 +111,7 @@ const OceanFreight = () => {
           <div className="max-w-5xl mx-auto space-y-4">
             {tradeLanes.map((t, i) => (
               <ScrollReveal key={t.region} delay={i * 0.07}>
-                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div>
                       <h3 className="text-lg font-bold text-foreground mb-1">{t.region}</h3>
@@ -163,7 +163,7 @@ const OceanFreight = () => {
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
             <ScrollReveal delay={0.05}>
-              <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full">
+              <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm h-full">
                 <h3 className="text-base font-bold text-foreground mb-4">West Coast</h3>
                 <ul className="space-y-2">
                   {["Mundra", "Kandla", "Mumbai (JNPA)", "Goa (Mormugao)", "Mangalore (NMPT)", "Cochin (ICTT / JNCT)"].map((port) => (
@@ -176,7 +176,7 @@ const OceanFreight = () => {
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full">
+              <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm h-full">
                 <h3 className="text-base font-bold text-foreground mb-4">East &amp; South Coast</h3>
                 <ul className="space-y-2">
                   {["Tuticorin (V.O. Chidambaranar)", "Chennai", "Vizag (Visakhapatnam)", "Kamarajar (Ennore)", "Haldia / Kolkata", "Paradip"].map((port) => (
@@ -213,7 +213,7 @@ const OceanFreight = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-14 bg-brand-light">
+      <section className="py-14 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Ship Globally with Confidence</h2>

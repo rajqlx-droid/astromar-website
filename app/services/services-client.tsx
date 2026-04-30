@@ -93,15 +93,15 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section id="services" className="py-20 bg-background">
+      <section id="services" className="py-20 bg-white">
         <div className="w-full px-6 md:px-12 lg:px-16">
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.06}>
                 <a href={s.href} className="block h-full">
                   <div
-                    className={`relative rounded-xl border bg-card p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
-                      s.featured ? "border-primary" : "border-border"
+                    className={`relative rounded-xl border bg-slate-50 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
+                      s.featured ? "border-primary" : "border-gray-200"
                     }`}
                   >
                     {s.featured && (
