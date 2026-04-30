@@ -77,7 +77,7 @@ const OceanFreight = () => {
       </section>
 
       {/* Services */}
-      <section className="py-14 bg-white dark:bg-gray-900">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR SERVICES</p>
@@ -100,7 +100,7 @@ const OceanFreight = () => {
       </section>
 
       {/* Trade Lanes */}
-      <section className="py-14 bg-brand-light">
+      <section className="py-14 bg-slate-50">
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">GLOBAL REACH</p>
@@ -127,7 +127,7 @@ const OceanFreight = () => {
       </section>
 
       {/* Process */}
-      <section className="py-14 bg-white dark:bg-gray-900">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR PROCESS</p>
@@ -150,7 +150,7 @@ const OceanFreight = () => {
       </section>
 
       {/* Pan-India Port Coverage */}
-      <section className="py-14 bg-brand-light">
+      <section className="py-14 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">PORT NETWORK</p>
