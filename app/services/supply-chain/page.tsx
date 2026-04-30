@@ -105,7 +105,7 @@ const SupplyChain = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
             {industries.map((ind, i) => (
               <ScrollReveal key={ind.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 shadow-sm h-full hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm h-full hover:shadow-md transition-shadow">
                   <h3 className="text-lg font-bold text-foreground mb-2">{ind.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{ind.desc}</p>
                 </div>
