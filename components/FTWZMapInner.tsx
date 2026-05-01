@@ -19,10 +19,19 @@ export default function FTWZMapInner() {
   const mapInstanceRef = useRef<any>(null)
 
   useEffect(() => {
-    if (!mapRef.current || mapInstanceRef.current) return
+    if (!mapRef.current) return
+
+    if (mapInstanceRef.current) {
+      mapInstanceRef.current.remove()
+      mapInstanceRef.current = null
+    }
+
+    if ((mapRef.current as any)._leaflet_id) return
 
     import('leaflet').then((L) => {
       import('leaflet/dist/leaflet.css')
+
+      if (!mapRef.current || (mapRef.current as any)._leaflet_id) return
 
       const map = L.map(mapRef.current!, {
         zoomControl: true,
