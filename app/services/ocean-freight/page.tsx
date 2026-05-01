@@ -1,6 +1,7 @@
 ﻿"use client"
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -273,20 +274,7 @@ const OceanFreight = () => {
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="py-14 bg-gradient-to-br from-blue-50 via-white to-blue-100">
-        <div className="max-w-2xl mx-auto text-center px-6">
-          <ScrollReveal>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Ship Globally with Confidence</h2>
-            <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
-              Get competitive ocean freight rates and let our experienced team manage your international shipments end-to-end.
-            </p>
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="#contact">Request a Quote <ArrowRight className="w-4 h-4 ml-2" /></a>
-            </Button>
-          </ScrollReveal>
-        </div>
-      </section>
+      <CTASection />
 
       <Footer />
       <WhatsAppButton />

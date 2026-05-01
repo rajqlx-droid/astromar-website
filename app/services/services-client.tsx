@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CTASection from "@/components/CTASection";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import { ArrowRight, FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box } from "lucide-react";
@@ -123,6 +124,7 @@ const Services = () => {
         </div>
       </section>
 
+      <CTASection />
       <Footer />
       <WhatsAppButton />
     </>

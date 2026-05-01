@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 
@@ -413,29 +414,8 @@ const FTWZServices = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100">
-        <div className="max-w-2xl mx-auto text-center px-6">
-          <ScrollReveal>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
-              Ready to Leverage FTWZ for Your Business?
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
-              Contact our team to explore how duty-free warehousing can transform your supply chain economics.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-                <a href="#contact">Schedule Consultation <ArrowRight className="w-4 h-4 ml-1" /></a>
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" asChild>
-                <Link href="/tools">Explore Tools →</Link>
-              </Button>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      <CTASection />
 
-      <div className="w-full h-px bg-orange-500 opacity-50" />
       <Footer />
       <WhatsAppButton />
     </div>

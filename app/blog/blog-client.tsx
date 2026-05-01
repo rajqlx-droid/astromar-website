@@ -9,6 +9,7 @@ import SEOHead from "@/components/SEOHead";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import CTASection from "@/components/CTASection";
 import { blogPosts, categoryColors } from "@/data/blogPosts";
 
 const formatDate = (dateStr: string) => {
@@ -271,7 +272,7 @@ const Blog = () => {
         </section>
       )}
 
-      <NewsletterSignup />
+      <CTASection />
       <Footer />
       <WhatsAppButton />
     </div>

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { MapPin, Phone, Navigation, Warehouse, ArrowLeft, Clock, Globe } from "lucide-react";
 import { ftwzLocationDetails } from "@/data/ftwzLocations";
+import CTASection from "@/components/CTASection";
 
 const locations = [
   {
@@ -341,25 +342,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-brand-light">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-            Interested in Our {location.city} Facility?
-          </h2>
-          <p className="text-sm sm:text-base text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Contact our team to learn more about storing your goods at our {location.city} FTWZ facility and start saving on customs duty and GST today.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a href="/contact" className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-colors">
-              Get in Touch →
-            </a>
-            <Link href="/locations" className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border-2 border-foreground text-foreground font-semibold hover:bg-foreground/5 transition-colors">
-              View All Locations
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection />
     </main>
   );
 }

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -302,25 +303,7 @@ const SupplyChain = () => {
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="py-14 bg-gradient-to-br from-blue-50 via-white to-blue-100">
-        <div className="max-w-2xl mx-auto text-center px-6">
-          <ScrollReveal>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Transform Your Supply Chain</h2>
-            <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
-              Let our supply chain experts design a solution tailored to your industry, scale, and growth ambitions.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a href="#contact" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
-                Get a Quote <ArrowRight className="w-4 h-4" />
-              </a>
-              <a href="/contact" className="inline-flex items-center gap-2 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
-                Contact Us
-              </a>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      <CTASection />
 
       <Footer />
       <WhatsAppButton />

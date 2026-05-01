@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FTWZLocations from "@/components/FTWZLocations";
+import CTASection from "@/components/CTASection";
 
 const ContactPage = () => {
   return (
@@ -11,6 +12,7 @@ const ContactPage = () => {
       <Header />
       <ContactForm />
       <FTWZLocations />
+      <CTASection />
       <Footer />
       <WhatsAppButton />
     </div>

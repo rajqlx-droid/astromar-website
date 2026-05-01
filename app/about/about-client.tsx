@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 
@@ -364,38 +365,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-blue-50 via-white to-blue-100">
-        <div className="max-w-2xl mx-auto text-center">
-          <ScrollReveal>
-            {/* Floating stat badges */}
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {["500+ Clients Served", "8+ FTWZ Locations", "7+ Years of Excellence"].map((badge) => (
-                <span key={badge} className="bg-card border border-blue-200 dark:border-blue-900 rounded-full px-4 py-1 text-sm font-medium text-foreground shadow-sm">
-                  ✓ {badge}
-                </span>
-              ))}
-            </div>
-
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0a1628] dark:text-white mb-4">
-              Ready to Optimize Your Trade Operations?
-            </h2>
-
-            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8 text-base sm:text-lg">
-              Partner with India's leading FTWZ provider and unlock duty-free warehousing, GST deferment, and seamless logistics.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700" asChild>
-                <a href="/contact">Schedule Consultation <ArrowRight className="w-4 h-4 ml-1" /></a>
-              </Button>
-              <Link href="/freight-intelligence" className="inline-flex items-center justify-center rounded-md text-sm font-medium h-11 px-8 bg-card border-2 border-blue-600 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 transition-colors">
-                Explore Tools
-              </Link>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      <CTASection />
 
       <Footer />
       <WhatsAppButton />
