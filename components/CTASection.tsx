@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 export default function CTASection() {
   return (
-    <section className="bg-gradient-to-br from-blue-200 via-blue-50 to-blue-300 py-20">
+    <section className="bg-gradient-to-br from-blue-100 via-blue-50 to-blue-200 py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
 
         <div className="flex flex-wrap gap-3 justify-center mb-8">
           {["✓ 500+ Clients Served", "✓ 8+ FTWZ Locations", "✓ 7+ Years of Excellence"].map((pill) => (
-            <span key={pill} className="bg-white/70 border border-blue-300 text-blue-900 text-xs font-medium px-4 py-1.5 rounded-full">
+            <span key={pill} className="bg-white border border-blue-200 text-gray-700 text-xs font-medium px-4 py-1.5 rounded-full">
               {pill}
             </span>
           ))}
@@ -23,11 +23,11 @@ export default function CTASection() {
 
         <div className="flex flex-wrap gap-4 justify-center">
           <Link href="/contact"
-            className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition">
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">
             Schedule Consultation →
           </Link>
           <Link href="/freight-intelligence"
-            className="bg-white text-blue-700 border-2 border-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+            className="bg-white text-blue-600 border-2 border-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition">
             Explore Tools
           </Link>
         </div>
