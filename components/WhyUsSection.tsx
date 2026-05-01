@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { RefreshCw, Network, MessageSquare, UserCheck } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
@@ -53,7 +53,7 @@ const WhyUsSection = () => {
                     borderBottom: i === features.length - 1 ? 'none' : '1px solid #e2e8f0',
                   }}
                 >
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent to-orange-400 flex items-center justify-center flex-shrink-0 shadow-md">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent to-orange-500 flex items-center justify-center flex-shrink-0 shadow-md">
                     <item.icon className="w-8 h-8 text-white" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1">

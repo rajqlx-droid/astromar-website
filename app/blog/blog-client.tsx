@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -76,7 +76,7 @@ const Blog = () => {
             {/* Right — featured post card */}
             <ScrollReveal delay={0.2}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                <span className="text-orange-400 text-xs font-bold uppercase tracking-wider">Featured Post</span>
+                <span className="text-orange-500 text-xs font-bold uppercase tracking-wider">Featured Post</span>
                 <h3 className="text-white font-bold text-xl mt-2 mb-3">
                   How FTWZ Can Help You Defer Customs Duty &amp; GST
                 </h3>
@@ -88,7 +88,7 @@ const Blog = () => {
                     <span className="text-gray-400 text-xs">📅 Jan 2026</span>
                     <span className="text-gray-400 text-xs">• 18 min read</span>
                   </div>
-                  <a href="/blog/ftwz-customs-duty-gst" className="text-orange-400 text-sm font-semibold hover:text-orange-300">
+                  <a href="/blog/ftwz-customs-duty-gst" className="text-orange-500 text-sm font-semibold hover:text-orange-300">
                     Read More →
                   </a>
                 </div>

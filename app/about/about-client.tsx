@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { Eye, Target, Shield, Globe, UserCheck, TrendingUp, Medal, Clock, CheckCircle2, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -309,7 +309,7 @@ const About = () => {
           <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto items-stretch">
             {certifications.map((cert, i) => (
               <ScrollReveal key={cert.title} delay={i * 0.06} className="h-full">
-                <div className="flex items-start gap-3 rounded-xl border border-gray-200 bg-slate-50 p-5 sm:p-6 shadow-sm h-full flex-col">
+                <div className="flex items-start gap-3 rounded-xl border border-gray-200 bg-white p-5 sm:p-6 shadow-sm h-full flex-col">
                   <div className="flex items-start gap-3 w-full">
                     <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
                     <div>
@@ -341,7 +341,7 @@ const About = () => {
                 <ScrollReveal key={step.num} delay={i * 0.1}>
                   {/* Mobile: horizontal row with step number + text */}
                   <div className="flex flex-row items-start gap-5 md:hidden">
-                    <div className="w-16 h-16 shrink-0 rounded-full border-2 border-orange-400 bg-orange-50 flex items-center justify-center">
+                    <div className="w-16 h-16 shrink-0 rounded-full border-2 border-orange-500 bg-orange-50 flex items-center justify-center">
                       <span className="text-xl font-extrabold text-orange-500">{step.num}</span>
                     </div>
                     <div className="pt-1">
@@ -351,7 +351,7 @@ const About = () => {
                   </div>
                   {/* Desktop: centered column */}
                   <div className="hidden md:flex flex-col items-center text-center">
-                    <div className="w-20 h-20 rounded-full border-2 border-orange-400 bg-card flex items-center justify-center mb-5 shadow-sm">
+                    <div className="w-20 h-20 rounded-full border-2 border-orange-500 bg-card flex items-center justify-center mb-5 shadow-sm">
                       <span className="text-2xl font-extrabold text-orange-500">{step.num}</span>
                     </div>
                     <h3 className="text-base font-bold text-foreground mb-2">{step.title}</h3>

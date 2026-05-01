@@ -34,7 +34,7 @@ const FTWZLocations = () => {
   }, [searchQuery]);
 
   return (
-    <section className="py-14 bg-background">
+    <section className="py-14 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
         <ScrollReveal>
           <p className="text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-2">
@@ -71,10 +71,10 @@ const FTWZLocations = () => {
             <ScrollReveal key={loc.city} delay={i * 0.06} className="flex flex-col h-full">
               <div
                 onClick={() => setActiveCity(loc.city)}
-                className={`flex flex-col h-full group relative rounded-xl border bg-card p-5 cursor-pointer transition-all duration-300 ${
+                className={`flex flex-col h-full group relative rounded-xl border bg-white p-5 cursor-pointer transition-all duration-300 ${
                   activeCity === loc.city
                     ? "border-primary shadow-lg shadow-primary/10 ring-1 ring-primary/20"
-                    : "border-border hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+                    : "border-gray-200 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
                 }`}
               >
                 <div className="flex items-start gap-3 mb-3 min-w-0">

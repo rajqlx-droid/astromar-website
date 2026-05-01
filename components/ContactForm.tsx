@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -89,7 +89,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                       Full Name <span className="text-orange-500">*</span>
                     </label>
                     <input type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={glassInput} />
-                    {errors.fullName && <p className="text-orange-400 text-xs mt-1">{errors.fullName}</p>}
+                    {errors.fullName && <p className="text-orange-500 text-xs mt-1">{errors.fullName}</p>}
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-white mb-1.5">Company</label>
@@ -103,7 +103,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                       Email <span className="text-orange-500">*</span>
                     </label>
                     <input type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={glassInput} />
-                    {errors.email && <p className="text-orange-400 text-xs mt-1">{errors.email}</p>}
+                    {errors.email && <p className="text-orange-500 text-xs mt-1">{errors.email}</p>}
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-white mb-1.5">Phone</label>
@@ -155,12 +155,12 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                     rows={4}
                     className={`${glassInput} resize-none`}
                   />
-                  {errors.message && <p className="text-orange-400 text-xs mt-1">{errors.message}</p>}
+                  {errors.message && <p className="text-orange-500 text-xs mt-1">{errors.message}</p>}
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors text-base"
+                  className="w-full bg-orange-500 hover:bg-orange-500 text-white font-semibold py-3 rounded-lg transition-colors text-base"
                 >
                   Submit Enquiry
                 </button>

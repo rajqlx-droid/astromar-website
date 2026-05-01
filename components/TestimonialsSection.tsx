@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {testimonials.map((t, i) => (
             <ScrollReveal key={t.name} delay={i * 0.12}>
-              <div className="bg-card border border-border rounded-2xl p-6 sm:p-8 h-full flex flex-col relative">
+              <div className="bg-white border border-border rounded-2xl p-6 sm:p-8 h-full flex flex-col relative">
                 <Quote className="absolute top-5 right-5 w-8 h-8 text-primary/10" />
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: t.rating }).map((_, s) => (
@@ -88,7 +88,7 @@ const TestimonialsSection = () => {
               {[...clientLogos, ...clientLogos].map((logo, i) => (
                 <div
                   key={i}
-                  className="shrink-0 px-4 py-2 rounded-lg border border-border bg-card flex items-center justify-center h-16 w-36"
+                  className="shrink-0 px-4 py-2 rounded-lg border border-border bg-white flex items-center justify-center h-16 w-36"
                 >
                   <span className="text-sm font-semibold text-muted-foreground">{logo.name}</span>
                 </div>

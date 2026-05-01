@@ -169,7 +169,7 @@ export default async function BlogArticlePage({ params }: Props) {
         <img src={article.image} alt={article.imageAlt} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20">
-          <p className="text-xs font-semibold tracking-widest uppercase text-orange-400 mb-3">{article.category}</p>
+          <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-3">{article.category}</p>
           <h1 className="text-3xl md:text-4xl font-bold text-white max-w-3xl leading-tight mb-4">{article.title}</h1>
           <p className="text-white/70 text-sm">{article.date} &nbsp;·&nbsp; {article.readTime}</p>
         </div>
@@ -188,7 +188,7 @@ export default async function BlogArticlePage({ params }: Props) {
         </nav>
 
         {/* Intro */}
-        <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-12 border-l-4 border-orange-400 pl-5">{article.intro}</p>
+        <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-12 border-l-4 border-orange-500 pl-5">{article.intro}</p>
 
         {/* Sections */}
         {article.sections.map((section, i) => (
@@ -213,7 +213,7 @@ export default async function BlogArticlePage({ params }: Props) {
           <h3 className="text-2xl font-bold text-white mb-3">Need FTWZ Warehousing or Freight Support?</h3>
           <p className="text-blue-200 mb-6">Talk to our logistics experts — free consultation, no commitment.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-xl transition-colors">Request a Consultation</Link>
+            <Link href="/contact" className="bg-orange-500 hover:bg-orange-500 text-white font-semibold px-8 py-3 rounded-xl transition-colors">Request a Consultation</Link>
             <Link href="/freight-intelligence" className="border border-white/40 hover:bg-white/10 text-white font-semibold px-8 py-3 rounded-xl transition-colors">Try Free Calculators</Link>
           </div>
         </div>

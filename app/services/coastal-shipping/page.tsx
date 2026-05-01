@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -88,7 +88,7 @@ const CoastalShipping = () => {
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors"
+                  className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-500 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors"
                 >
                   Get a Quote <ArrowRight className="w-4 h-4" />
                 </a>
@@ -104,7 +104,7 @@ const CoastalShipping = () => {
             {/* Right — floating stats card */}
             <ScrollReveal delay={0.12}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                <p className="text-xs font-semibold tracking-widest uppercase text-orange-400 mb-4">AT A GLANCE</p>
+                <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-4">AT A GLANCE</p>
                 <div className="grid grid-cols-2 gap-3 mb-5">
                   {[
                     { value: "12+",       label: "Major Ports"   },
@@ -120,7 +120,7 @@ const CoastalShipping = () => {
                 </div>
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors"
+                  className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-500 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors"
                 >
                   Get Instant Quote <ArrowRight className="w-4 h-4" />
                 </a>

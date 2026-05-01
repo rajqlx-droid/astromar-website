@@ -1,45 +1,44 @@
 ﻿"use client"
+import { useState, useRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import {
-  Warehouse, Package, Shield, Clock, BarChart3, ArrowRight,
-  CheckCircle2, Thermometer, Layers, Settings, MapPin,
-} from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 
-const solutions = [
-  { icon: Warehouse, title: "General Warehousing", desc: "High-bay racking, bulk storage, and floor stacking in secure, fire-protected facilities across major Indian cities." },
-  { icon: Thermometer, title: "Cold Storage", desc: "Temperature-controlled zones from -25°C to +25°C for pharmaceuticals, perishables, and chemicals with GDP compliance." },
-  { icon: Package, title: "Fulfillment Center", desc: "Pick-pack-ship operations for e-commerce and retail with same-day dispatch, returns processing, and multi-channel integration." },
-  { icon: Shield, title: "Bonded Warehousing", desc: "Licensed customs-bonded facilities for duty deferment on imported goods with full regulatory compliance." },
-  { icon: Layers, title: "Cross-Docking", desc: "Rapid transshipment services to minimize storage time and accelerate distribution to final destinations." },
-  { icon: Settings, title: "Value-Added Services", desc: "Repacking, labeling, kitting, quality inspection, bar-coding, and shrink-wrapping under one roof." },
+const accordionItems = [
+  { title: "General FTWZ Storage",      body: "Duty-free bonded warehousing for all commodity types with flexible tenure and WMS integration. Real-time inventory visibility, automated alerts, and MIS reporting." },
+  { title: "Cold Chain Storage",         body: "2-8°C and -20°C temperature controlled storage GDP-certified for pharma and perishables. Continuous temperature monitoring with automated alarms and audit trails." },
+  { title: "Pharma Warehousing",         body: "Dedicated pharmaceutical storage with GDP compliance, batch tracking and audit trails. Segregated storage zones with restricted access and full documentation control." },
+  { title: "Value-Added Services",       body: "Repacking, kitting, labelling, assembly and quality inspection within FTWZ premises. Barcode/RFID integration and serial number tracking for high-value goods." },
+  { title: "Project Cargo Storage",      body: "Oversized and heavy cargo storage with specialized handling equipment. Heavy-bay storage, weighbridge access, and crane facilities for project cargo." },
 ];
 
-const features = [
-  "24/7 CCTV surveillance and access control",
-  "Fire detection and suppression systems",
-  "Real-time WMS with barcode/RFID tracking",
-  "Automated inventory reporting and alerts",
-  "Pest control and fumigation services",
-  "Loading dock with hydraulic levelers",
-  "Weighbridge and material handling equipment",
-  "Insurance coverage for stored goods",
+const locationCards = [
+  { city: "Chennai (Sriperumbudur)", type: "FTWZ", sqft: "80,000 sq ft",  tags: ["Electronics", "Auto"]      },
+  { city: "Mumbai (JNPA)",           type: "FTWZ", sqft: "1,20,000 sq ft", tags: ["General", "Pharma"]        },
+  { city: "Mumbai (Panvel)",         type: "FTWZ", sqft: "90,000 sq ft",  tags: ["FMCG", "Consumer"]         },
+  { city: "Kochi",                   type: "FTWZ", sqft: "60,000 sq ft",  tags: ["Spices", "Perishables"]    },
+  { city: "Vizag",                   type: "FTWZ", sqft: "50,000 sq ft",  tags: ["Bulk", "Industrial"]       },
+  { city: "Delhi",                   type: "FTWZ", sqft: "70,000 sq ft",  tags: ["Electronics", "Fashion"]   },
 ];
 
-const locations = [
-  { city: "Chennai", capacity: "200,000 sq ft", type: "General, Cold, Bonded" },
-  { city: "Mumbai", capacity: "150,000 sq ft", type: "General, Fulfillment" },
-  { city: "Delhi NCR", capacity: "180,000 sq ft", type: "General, Cold" },
-  { city: "Bangalore", capacity: "120,000 sq ft", type: "General, Fulfillment" },
-  { city: "Hyderabad", capacity: "100,000 sq ft", type: "General, Bonded" },
+const whyChoose = [
+  { title: "Duty-Free FTWZ Bonded Storage",       desc: "Defer customs duty and GST until goods enter the domestic tariff area — ideal for import-heavy businesses." },
+  { title: "Real-Time WMS Inventory Tracking",    desc: "Live stock dashboards, automated reorder triggers, and full RFID/barcode traceability across all locations." },
+  { title: "Cold Chain & Pharma Certified",       desc: "GDP-compliant cold storage from -20°C to +8°C with continuous monitoring and full audit documentation." },
+  { title: "8+ Strategic Port Locations",         desc: "FTWZ facilities near India's busiest ports and airports for fast inbound and outbound logistics." },
 ];
 
 const Warehousing = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (dir: "left" | "right") =>
+    carouselRef.current?.scrollBy({ left: dir === "left" ? -300 : 300, behavior: "smooth" });
+
   return (
     <>
       <SEOHead
@@ -49,8 +48,8 @@ const Warehousing = () => {
       />
       <Header />
 
-      {/* Hero */}
-      <section className="relative pb-20 overflow-hidden">
+      {/* ── Hero ── */}
+      <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600"
           alt="Modern warehouse interior"
@@ -59,151 +58,77 @@ const Warehousing = () => {
           unoptimized
           priority
         />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 pt-24 relative z-10">
-          <ScrollReveal>
-            <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-3 text-center">WAREHOUSING</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-white mb-4 max-w-4xl mx-auto">
-              Warehousing & Storage Solutions Across India
-            </h1>
-            <p className="text-center text-white max-w-3xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
-              From a single pallet to 200,000+ sq ft of dedicated space, AstroMar provides flexible warehousing
-              solutions with real-time inventory management, value-added services, and multi-temperature capabilities
-              across India's key logistics hubs.
-            </p>
-            <div className="flex justify-center">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-                <a href="#contact">Get Warehousing Rates <ArrowRight className="w-4 h-4 ml-2" /></a>
-              </Button>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+        <div className="absolute inset-0 bg-black/65" />
+        <div className="w-full px-6 md:px-12 lg:px-16 pt-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
 
-      {/* Solutions */}
-      <section className="py-14 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">SOLUTIONS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
-              Warehousing Solutions
-            </h2>
-          </ScrollReveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
-            {solutions.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
-                  <s.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
-                  <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{s.desc}</p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="py-14 bg-brand-light">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
-          <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">FACILITY FEATURES</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
-              World-Class Warehouse Infrastructure
-            </h2>
-          </ScrollReveal>
-          <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {features.map((f, i) => (
-              <ScrollReveal key={f} delay={i * 0.05}>
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-white border border-gray-200">
-                  <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">{f}</span>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Locations */}
-      <section className="py-14 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">LOCATIONS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
-              Our Warehouse Network
-            </h2>
-          </ScrollReveal>
-          <div className="max-w-4xl mx-auto">
-            <div className="rounded-xl border border-gray-200 bg-slate-50 overflow-hidden shadow-sm w-full border-collapse">
-              <div className="grid grid-cols-3 bg-primary text-primary-foreground text-sm font-semibold p-4">
-                <span>City</span><span>Capacity</span><span>Types</span>
+            <ScrollReveal>
+              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">WAREHOUSING</p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+                Warehousing & Storage Solutions Across India
+              </h1>
+              <p className="text-white/85 text-sm md:text-base leading-relaxed mb-8">
+                From a single pallet to 5 lakh+ sq ft of dedicated FTWZ space, AstroMar provides flexible warehousing
+                solutions with real-time inventory management, value-added services, and multi-temperature capabilities
+                across India's key logistics hubs.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href="#contact" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-500 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
+                  Get a Quote <ArrowRight className="w-4 h-4" />
+                </a>
+                <a href="#services" className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
+                  Learn More
+                </a>
               </div>
-              {locations.map((l, i) => (
-                <ScrollReveal key={l.city} delay={i * 0.05}>
-                  <div className={`grid grid-cols-3 text-sm p-4 ${i % 2 === 0 ? "bg-card" : "bg-muted/30"}`}>
-                    <span className="font-medium text-foreground">{l.city}</span>
-                    <span className="text-foreground/80">{l.capacity}</span>
-                    <span className="text-foreground/80">{l.type}</span>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+            </ScrollReveal>
 
-      {/* FTWZ Services */}
-      <section className="py-14 bg-brand-light">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">FTWZ WAREHOUSING</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
-              Free Trade Warehousing Zone Services
-            </h2>
-            <p className="text-center text-foreground/80 max-w-2xl mx-auto mb-6 text-sm sm:text-base leading-relaxed">
-              In addition to standard warehousing, we offer FTWZ-specific storage solutions with significant duty and tax advantages.
-            </p>
-          </ScrollReveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
-            {[
-              { title: "Cargo Consolidation (FTWZ)", desc: "Defer customs duty and GST until goods enter the domestic tariff area — ideal for import-heavy businesses." },
-              { title: "Cargo Consolidation", desc: "Consolidate multiple overseas shipments within the FTWZ before DTA entry to optimize duty payments." },
-              { title: "Inventory Management", desc: "Real-time WMS-based tracking of FTWZ inventory with automated duty reconciliation and MIS reporting." },
-              { title: "FTWZ Duty-Free Storage", desc: "Zero duty, zero GST storage within the FTWZ for goods intended for re-export or value-added processing." },
-            ].map((item, i) => (
-              <ScrollReveal key={item.title} delay={i * 0.08}>
-                <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm h-full hover:shadow-md transition-shadow">
-                  <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
+            <ScrollReveal delay={0.12}>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
+                <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-4">AT A GLANCE</p>
+                <div className="grid grid-cols-2 gap-3 mb-5">
+                  {[
+                    { value: "5L+ sqft", label: "Space"      },
+                    { value: "8+",       label: "Locations"  },
+                    { value: "GDP",      label: "Certified"  },
+                    { value: "24/7",     label: "Security"   },
+                  ].map((s) => (
+                    <div key={s.label} className="bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+                      <p className="text-xl sm:text-2xl font-extrabold text-white leading-tight">{s.value}</p>
+                      <p className="text-gray-300 text-xs mt-1">{s.label}</p>
+                    </div>
+                  ))}
                 </div>
-              </ScrollReveal>
-            ))}
+                <a href="#contact" className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-500 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
+                  Get Warehousing Rates <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </ScrollReveal>
+
           </div>
         </div>
       </section>
 
-      {/* Infrastructure Highlights */}
-      <section className="py-14 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+      {/* ── S2: Stats ── */}
+      <section id="services" className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">INFRASTRUCTURE</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
               Built for Modern Supply Chains
             </h2>
           </ScrollReveal>
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { icon: Warehouse, title: "5 Lakh+ Sq. Ft.", desc: "Total warehouse space across pan-India FTWZ network" },
-              { icon: Thermometer, title: "Cold Chain Ready", desc: "GDP-certified cold storage from 2°C to -20°C for pharma & food" },
-              { icon: MapPin, title: "8+ Locations", desc: "Strategic FTWZ facilities near major ports and airports" },
-              { icon: Shield, title: "24/7 Security", desc: "Round-the-clock CCTV, access control and inventory management" },
-            ].map((item, i) => (
-              <ScrollReveal key={item.title} delay={i * 0.07}>
-                <div className="rounded-xl border border-gray-200 bg-slate-50 p-6 sm:p-8 shadow-sm h-full hover:shadow-md transition-shadow">
-                  <item.icon className="w-8 h-8 text-primary mb-4" strokeWidth={1.5} />
-                  <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.desc}</p>
+              { value: "5L+",  label: "Sq Ft Space",   desc: "Total FTWZ area"           },
+              { value: "8+",   label: "Locations",     desc: "Pan-India network"          },
+              { value: "GDP",  label: "Certified",     desc: "Pharma ready"               },
+              { value: "24/7", label: "Security",      desc: "CCTV & access control"      },
+            ].map((s, i) => (
+              <ScrollReveal key={s.label} delay={i * 0.07}>
+                <div className="bg-slate-50 rounded-xl border border-gray-200 p-6 text-center shadow-sm h-full">
+                  <p className="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">{s.value}</p>
+                  <p className="text-base font-bold text-foreground mb-1">{s.label}</p>
+                  <p className="text-xs text-foreground/60 leading-relaxed">{s.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -211,17 +136,164 @@ const Warehousing = () => {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* ── S3: Image + Text ── */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <ScrollReveal>
+              <div className="relative rounded-xl overflow-hidden h-96 shadow-md w-full">
+                <Image
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                  alt="Warehouse operations"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
+                Warehousing Solutions for Every Need
+              </h2>
+              <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
+                From ambient FTWZ bonded storage to GDP-certified cold chain, our pan-India warehouse network is
+                equipped for every commodity type and compliance requirement.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "General FTWZ bonded storage",
+                  "Cold chain temperature control",
+                  "Pharma GDP-compliant storage",
+                  "Kitting, labelling, repacking",
+                  "Project & oversize cargo storage",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
+                    <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ── S4: Accordion ── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">SERVICE TYPES</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
+              Warehouse Service Types
+            </h2>
+          </ScrollReveal>
+          <div className="space-y-3">
+            {accordionItems.map((item, i) => (
+              <ScrollReveal key={item.title} delay={i * 0.06}>
+                <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                  <button
+                    onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                    className="w-full flex items-center justify-between gap-4 bg-[#0a1628] text-white px-5 py-4 text-left hover:bg-[#0d1f38] transition-colors"
+                  >
+                    <span className="font-semibold text-sm sm:text-base">{item.title}</span>
+                    <ChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`} />
+                  </button>
+                  {openIndex === i && (
+                    <div className="bg-slate-50 border-l-4 border-[#f97316] px-5 py-4">
+                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
+                    </div>
+                  )}
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── S5: Location Carousel ── */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">LOCATIONS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
+              Our Warehouse Network
+            </h2>
+          </ScrollReveal>
+          <div className="relative">
+            <button
+              onClick={() => scroll("left")}
+              className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full shadow-md p-2 hover:bg-slate-50 transition-colors hidden md:flex"
+            >
+              <ChevronLeft className="w-5 h-5 text-foreground" />
+            </button>
+            <div
+              ref={carouselRef}
+              className="flex gap-4 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory"
+            >
+              {locationCards.map((loc) => (
+                <div key={loc.city} className="snap-start min-w-[240px] sm:min-w-[260px] bg-white border border-gray-200 rounded-xl p-5 shrink-0 shadow-sm">
+                  <p className="text-base font-bold text-foreground mb-2">{loc.city}</p>
+                  <span className="inline-block text-xs font-semibold text-orange-500 bg-orange-50 border border-orange-200 rounded-full px-3 py-1 mb-3">
+                    {loc.type}
+                  </span>
+                  <p className="text-sm text-foreground/70 mb-3">{loc.sqft}</p>
+                  <div className="flex flex-wrap gap-1">
+                    {loc.tags.map((tag) => (
+                      <span key={tag} className="text-xs bg-slate-100 text-foreground/70 rounded-full px-2 py-0.5">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <button
+              onClick={() => scroll("right")}
+              className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full shadow-md p-2 hover:bg-slate-50 transition-colors hidden md:flex"
+            >
+              <ChevronRight className="w-5 h-5 text-foreground" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* ── S6: Why Astromar ── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR ADVANTAGE</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
+              Why Choose Astromar for Warehousing?
+            </h2>
+          </ScrollReveal>
+          <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
+            {whyChoose.map((item, i) => (
+              <ScrollReveal key={item.title} delay={i * 0.07}>
+                <div className="border-l-4 border-orange-500 bg-slate-50 rounded-r-xl p-6 h-full">
+                  <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CTA ── */}
       <section className="py-14 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="max-w-2xl mx-auto text-center px-6">
           <ScrollReveal>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Find Your Ideal Warehouse</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Find Your Ideal Warehouse Solution</h2>
             <p className="text-foreground/80 max-w-2xl mx-auto mb-8">
               Flexible storage contracts from 30 days to multi-year. Get a customized warehousing proposal today.
             </p>
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="#contact">Request a Quote <ArrowRight className="w-4 h-4 ml-2" /></a>
-            </Button>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a href="#contact" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
+                Get a Quote <ArrowRight className="w-4 h-4" />
+              </a>
+              <a href="/contact" className="inline-flex items-center gap-2 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
+                Contact Us
+              </a>
+            </div>
           </ScrollReveal>
         </div>
       </section>
@@ -233,4 +305,3 @@ const Warehousing = () => {
 };
 
 export default Warehousing;
-

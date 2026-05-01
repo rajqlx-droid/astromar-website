@@ -83,7 +83,7 @@ const CbmCalculator = () => {
 
   return (
     <div className="space-y-8">
-      <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-2">
             <Globe className="w-5 h-5 text-primary" />
@@ -125,7 +125,7 @@ const CbmCalculator = () => {
         </button>
       </div>
 
-      <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
         <div className="flex items-center justify-between mb-6">
           <h3 className="text-lg font-bold text-foreground">Results</h3>
           <button onClick={exportPDF} className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary bg-primary/10 px-3 py-1.5 rounded-lg hover:text-primary/80 transition-colors">
@@ -146,7 +146,7 @@ const CbmCalculator = () => {
         </div>
       </div>
 
-      <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
         <h3 className="text-lg font-bold text-foreground mb-6">Container Fit — 20ft / 40ft / 40HC</h3>
         <div className="space-y-4">
           {containers.map((c) => {
@@ -242,7 +242,7 @@ const AirVolumeWeight = () => {
 
   return (
     <div className="space-y-8">
-      <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
         <div className="flex items-center justify-between mb-6">
           <h3 className="text-lg font-bold text-foreground flex items-center gap-2">
             <Plane className="w-5 h-5 text-primary" /> Parcel Dimensions
@@ -276,7 +276,7 @@ const AirVolumeWeight = () => {
         </button>
       </div>
 
-      <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+      <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
         <div className="flex items-center justify-between mb-6">
           <h3 className="text-lg font-bold text-foreground">Results</h3>
           <button onClick={exportPDF} className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary bg-primary/10 px-3 py-1.5 rounded-lg hover:text-primary/80 transition-colors">
@@ -388,7 +388,7 @@ const LandedCost = () => {
 
   return (
     <div className="grid lg:grid-cols-2 gap-8">
-      <div className="rounded-xl border border-border bg-card p-6 shadow-sm space-y-5">
+      <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm space-y-5">
         <h3 className="text-lg font-bold text-foreground flex items-center gap-2">
           <DollarSign className="w-5 h-5 text-primary" /> Cost Components
         </h3>
@@ -413,7 +413,7 @@ const LandedCost = () => {
             <Download size={16} /> Download PDF
           </button>
         </div>
-        <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+        <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
           <h4 className="font-bold text-foreground mb-4">Landed Cost Breakdown</h4>
           <div className="space-y-3">
             {[
@@ -437,7 +437,7 @@ const LandedCost = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+        <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
           <h4 className="font-bold text-foreground mb-4">Profit Analysis</h4>
           <div className="space-y-3">
             {[
@@ -506,7 +506,7 @@ const ExportPrice = () => {
 
   return (
     <div className="grid lg:grid-cols-2 gap-8">
-      <div className="rounded-xl border border-border bg-card p-6 shadow-sm space-y-5">
+      <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm space-y-5">
         <h3 className="text-lg font-bold text-foreground flex items-center gap-2">
           <TrendingUp className="w-5 h-5 text-primary" /> Export Cost Components
         </h3>
@@ -530,7 +530,7 @@ const ExportPrice = () => {
             <Download size={16} /> Download PDF
           </button>
         </div>
-        <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+        <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
           <h4 className="font-bold text-foreground mb-4">Cost Breakdown</h4>
           <div className="space-y-3">
             {[
@@ -551,7 +551,7 @@ const ExportPrice = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-xl border border-border bg-card p-6 shadow-sm space-y-4">
+        <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm space-y-4">
           <h4 className="font-bold text-foreground">Pricing Summary</h4>
           <div className="rounded-lg bg-muted/50 p-4 flex justify-between items-center">
             <div>
@@ -628,7 +628,7 @@ const FreightCompare = () => {
   return (
     <div className="space-y-8">
       <div className="grid lg:grid-cols-2 gap-8">
-        <div className="rounded-xl border border-border bg-card p-6 shadow-sm space-y-5">
+        <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm space-y-5">
           <h3 className="text-lg font-bold text-foreground flex items-center gap-2">
             <BarChart2 className="w-5 h-5 text-primary" /> Shipment Parameters
           </h3>
@@ -653,18 +653,18 @@ const FreightCompare = () => {
             </button>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="rounded-xl border border-border bg-card p-6 shadow-sm text-center">
+            <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm text-center">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Sea Freight</p>
               <p className="text-2xl font-extrabold text-foreground">{fmtINR(seaCost)}</p>
               <p className="text-sm text-muted-foreground mt-1">{st} days transit</p>
             </div>
-            <div className="rounded-xl border border-border bg-card p-6 shadow-sm text-center">
+            <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm text-center">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Air Freight</p>
               <p className="text-2xl font-extrabold text-foreground">{fmtINR(airCost)}</p>
               <p className="text-sm text-muted-foreground mt-1">{at} days transit</p>
             </div>
           </div>
-          <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+          <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
             <h4 className="font-bold text-foreground mb-4">Break-even Analysis</h4>
             <div className="space-y-3">
               {[
@@ -744,7 +744,7 @@ const RiskDemurrage = () => {
 
   return (
     <div className="grid lg:grid-cols-2 gap-8">
-      <div className="rounded-xl border border-border bg-card p-6 shadow-sm space-y-5">
+      <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm space-y-5">
         <h3 className="text-lg font-bold text-foreground flex items-center gap-2">
           <AlertTriangle className="w-5 h-5 text-brand-orange" /> Delay Parameters
         </h3>
@@ -769,7 +769,7 @@ const RiskDemurrage = () => {
             <Download size={16} /> Download PDF
           </button>
         </div>
-        <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+        <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
           <h4 className="font-bold text-foreground mb-4">Cost Breakdown</h4>
           <div className="space-y-3">
             {[
@@ -793,7 +793,7 @@ const RiskDemurrage = () => {
           <p className="text-sm text-muted-foreground mt-1">{fmtINR(costPerDay)} per day of delay</p>
         </div>
         {excessDays > 0 && (
-          <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
+          <div className="rounded-xl border border-border bg-slate-50 p-6 shadow-sm">
             <h4 className="font-bold text-foreground mb-3">Impact Timeline</h4>
             <div className="space-y-2">
               {Array.from({ length: Math.min(excessDays, 5) }, (_, i) => {
@@ -1029,7 +1029,7 @@ const FreightIntelligence = () => {
             <Accordion type="single" collapsible className="space-y-3">
               {faqItems.map((item, i) => (
                 <ScrollReveal key={i} delay={i * 0.05}>
-                  <AccordionItem value={`faq-${i}`} className="rounded-xl border border-border bg-card px-5 shadow-sm">
+                  <AccordionItem value={`faq-${i}`} className="rounded-xl border border-border bg-white px-5 shadow-sm">
                     <AccordionTrigger className="text-sm sm:text-base font-semibold text-foreground hover:no-underline py-4">
                       {item.q}
                     </AccordionTrigger>
