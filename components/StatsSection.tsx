@@ -7,7 +7,7 @@ const stats = [
   { icon: Box, value: "5 Lakh+", label: "Sq. Ft. Warehouse Space" },
   { icon: Snowflake, value: "50K+", label: "Sq. Ft. Cold Storage" },
   { icon: Layers, value: "25K+", label: "Pallet Positions" },
-  { icon: Users, value: "200+", label: "Clients Served" },
+  { icon: Users, value: "500+", label: "Clients Served" },
   { icon: Clock, value: "7+", label: "Years of Experience" },
 ];
 

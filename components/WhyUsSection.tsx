@@ -27,11 +27,11 @@ const WhyUsSection = () => {
             </div>
             <h3 className="text-gray-900 font-bold text-lg mb-3">Network Strength</h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-5">
-              9+ strategically located FTWZ facilities near major ports and airports across India,
+              8+ strategically located FTWZ facilities near major ports and airports across India,
               enabling seamless multimodal connectivity for imports, exports, and domestic distribution.
             </p>
             <div className="flex flex-col gap-2">
-              {["9+ locations pan-India", "Port & airport proximity", "Multimodal connectivity"].map((point) => (
+              {["8+ locations pan-India", "Port & airport proximity", "Multimodal connectivity"].map((point) => (
                 <div key={point} className="flex items-center gap-2">
                   <span className="text-orange-500 text-sm">✓</span>
                   <span className="text-gray-700 text-sm">{point}</span>

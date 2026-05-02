@@ -44,7 +44,7 @@ const FTWZLocations = () => {
             Strategically Located Across India
           </h2>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-6">
-            With FTWZ facilities in 10 key locations, we offer duty-free warehousing and seamless logistics connectivity across the nation.
+            With FTWZ facilities in 8+ key locations, we offer duty-free warehousing and seamless logistics connectivity across the nation.
           </p>
           <div className="relative max-w-md mx-auto mb-12">
             <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />

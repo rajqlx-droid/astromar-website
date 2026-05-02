@@ -175,7 +175,7 @@ const HeroSection = () => {
                   <button
                     type="button"
                     onClick={() => setSubmitted(true)}
-                    className="w-full bg-orange-500 hover:bg-orange-500 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors"
+                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors"
                   >
                     Submit Enquiry →
                   </button>

@@ -3,6 +3,8 @@ import Link from "next/link";
 import { MapPin, Phone, Navigation, Warehouse, ArrowLeft, Clock, Globe } from "lucide-react";
 import { ftwzLocationDetails } from "@/data/ftwzLocations";
 import CTASection from "@/components/CTASection";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const locations = [
   {
@@ -177,7 +179,8 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   if (!location) notFound();
 
   return (
-    <main className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
+      <Header />
       {/* Hero Banner */}
       <section
         className="relative min-h-[50vh] py-24 overflow-hidden flex items-center"
@@ -343,6 +346,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       </section>
 
       <CTASection />
-    </main>
+      <Footer />
+    </div>
   );
 }

@@ -156,62 +156,6 @@ const ServicesSection = () => {
         </div>
       </section>
 
-      {/* Key Benefits */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">
-              KEY BENEFITS
-            </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-16">
-              Why Choose Our FTWZ Warehousing?
-            </h2>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch max-w-5xl mx-auto">
-            <div className="flex flex-col divide-y divide-border h-full justify-between">
-              <div className="flex items-center gap-6 py-8 first:pt-0">
-                <span className="text-4xl font-extrabold text-accent min-w-[80px]">₹0</span>
-                <div className="min-w-0 flex-1">
-                  <strong className="block text-foreground font-bold">Customs Duty</strong>
-                  <span className="text-muted-foreground text-sm">Store without paying duty until goods are cleared</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-6 py-8">
-                <span className="text-4xl font-extrabold text-accent min-w-[80px]">100%</span>
-                <div className="min-w-0 flex-1">
-                  <strong className="block text-foreground font-bold">GST Deferral</strong>
-                  <span className="text-muted-foreground text-sm">Defer indefinitely until goods enter domestic market</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-6 py-8">
-                <span className="text-4xl font-extrabold text-accent min-w-[80px]">24/7</span>
-                <div className="min-w-0 flex-1">
-                  <strong className="block text-foreground font-bold">Operations</strong>
-                  <span className="text-muted-foreground text-sm">Round-the-clock facility management and support</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-6 py-8 last:pb-0">
-                <span className="text-4xl font-extrabold text-accent min-w-[80px]">8+</span>
-                <div className="min-w-0 flex-1">
-                  <strong className="block text-foreground font-bold">Pan-India Locations</strong>
-                  <span className="text-muted-foreground text-sm">Strategically located FTWZ facilities across major ports</span>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm space-y-3 text-muted-foreground h-full flex flex-col justify-center">
-              <h3 className="text-xl font-bold text-foreground">Save More. Move Faster. Grow Bigger.</h3>
-              <p className="leading-relaxed text-sm">Astromar's FTWZ facilities are strategically positioned to give your business the maximum advantage in international trade — defer duty, control costs, and scale faster.</p>
-              <div className="bg-brand-light border-l-4 border-accent rounded-r-lg px-4 py-3 text-sm font-semibold text-foreground">
-                ✓ No customs duty until domestic clearance — maximize working capital
-              </div>
-              <p className="leading-relaxed text-sm sm:text-base">Our pan-India network connects all major ports and airports — built for pharma, electronics, FMCG, and project cargo at any scale.</p>
-              <a href="/ftwz-services" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline text-sm">Learn More About FTWZ →</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Comprehensive Solutions */}
       <section className="py-20 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">

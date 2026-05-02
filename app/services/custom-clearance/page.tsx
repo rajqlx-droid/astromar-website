@@ -68,7 +68,7 @@ const CustomClearance = () => {
                 minimizing duty, and eliminating delays.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="#contact" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-500 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
                   Get a Quote <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#services" className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -93,7 +93,7 @@ const CustomClearance = () => {
                     </div>
                   ))}
                 </div>
-                <a href="#contact" className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-500 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
+                <a href="/contact" className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
                   Get Clearance Support <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -135,7 +135,7 @@ const CustomClearance = () => {
       <section className="py-16 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">BY THE NUMBERS</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CLEARANCE TRACK RECORD</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
               Our Customs Clearance Track Record
             </h2>
@@ -238,7 +238,7 @@ const CustomClearance = () => {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR ADVANTAGE</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CLEARANCE ADVANTAGE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
               Why Choose Astromar for Customs Clearance?
             </h2>

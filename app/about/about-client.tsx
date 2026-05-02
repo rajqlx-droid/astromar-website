@@ -77,7 +77,7 @@ const About = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-brand-navy py- overflow-hidden">
+      <section className="relative bg-brand-navy py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
           alt="Business and logistics team"

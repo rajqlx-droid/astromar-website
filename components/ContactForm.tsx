@@ -160,7 +160,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
 
                 <button
                   type="submit"
-                  className="w-full bg-orange-500 hover:bg-orange-500 text-white font-semibold py-3 rounded-lg transition-colors text-base"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors text-base"
                 >
                   Submit Enquiry
                 </button>

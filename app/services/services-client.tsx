@@ -95,7 +95,7 @@ const Services = () => {
 
       {/* Services Grid */}
       <section id="services" className="py-20 bg-white">
-        <div className="w-full px-6 md:px-12 lg:px-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.06}>

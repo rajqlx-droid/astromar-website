@@ -88,8 +88,8 @@ const CoastalShipping = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-500 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors"
+                  href="/contact"
+                  className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors"
                 >
                   Get a Quote <ArrowRight className="w-4 h-4" />
                 </a>
@@ -120,8 +120,8 @@ const CoastalShipping = () => {
                   ))}
                 </div>
                 <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-500 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors"
+                  href="/contact"
+                  className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors"
                 >
                   Get Instant Quote <ArrowRight className="w-4 h-4" />
                 </a>
@@ -178,7 +178,7 @@ const CoastalShipping = () => {
             <ScrollReveal>
               <div className="relative rounded-xl overflow-hidden h-64 shadow-md w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
                   alt="Port operations and cargo"
                   fill
                   className="object-cover"
@@ -253,7 +253,7 @@ const CoastalShipping = () => {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">BY THE NUMBERS</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">COASTAL REACH</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
               Coastal Shipping at a Glance
             </h2>
@@ -317,7 +317,7 @@ const CoastalShipping = () => {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR ADVANTAGE</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">COASTAL EXPERTISE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
               Why Choose Astromar for Coastal Shipping?
             </h2>
