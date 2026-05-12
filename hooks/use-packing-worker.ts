@@ -1,0 +1,256 @@
+"use client";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { AdvancedPackResult } from "@/lib/freight/packing-advanced";
+import type { BestPlan, ScenarioResult, StrategyId } from "@/lib/freight/scenario-runner";
+import type { CbmItem } from "@/lib/freight/calculators";
+import type { ContainerPreset } from "@/lib/freight/packing";
+import type { RecommendResponseResult } from "@/lib/freight/packing-worker";
+
+/**
+ * usePackingWorker — runs the heavy 3D packer off the main thread.
+ *
+ * - Owns one Worker instance per hook invocation (one per consumer component).
+ * - Each request gets a sequence id; responses with stale ids are dropped so
+ *   rapid input changes don't race.
+ * - Returns the latest result + a `pending` flag so callers can show
+ *   "Calculating…" while the worker is busy without flicker.
+ *
+ * The worker is created lazily on first request to avoid spinning one up for
+ * empty calculators.
+ */
+
+interface PendingRequest<T> {
+  id: number;
+  resolve: (value: T) => void;
+  reject: (reason: Error) => void;
+}
+
+type WorkerResponse<R> = { id: number; ok: true; result: R } | { id: number; ok: false; error: string };
+
+// Direct new Worker(new URL(...)) pattern — recognised by Webpack & Turbopack
+// for worker bundling. Wrapping in a class breaks static analysis, causing
+// the bundler to fall back to serving the raw .ts file as a static asset.
+function createWorker(): Worker {
+  return new Worker(
+    new URL("../lib/freight/packing-worker.ts", import.meta.url),
+    { type: "module" },
+  );
+}
+
+interface PackResponse {
+  kind: "pack";
+  result: AdvancedPackResult;
+}
+interface ScenariosResponse {
+  kind: "scenarios";
+  result: ScenarioResult[];
+}
+interface OptimiseResponse {
+  kind: "optimise";
+  result: BestPlan;
+}
+interface RecommendResponse {
+  kind: "recommend";
+  result: RecommendResponseResult;
+}
+type AnyResponse = PackResponse | ScenariosResponse | OptimiseResponse | RecommendResponse;
+
+interface UsePackingWorker {
+  /** Pack a single container. */
+  pack: (items: CbmItem[], container: ContainerPreset) => Promise<AdvancedPackResult>;
+  /** Run scenario comparison. */
+  scenarios: (
+    items: CbmItem[],
+    container: ContainerPreset,
+    strategies: StrategyId[],
+  ) => Promise<ScenarioResult[]>;
+  /**
+   * Internal scenario sweep — tries every strategy at full container
+   * geometry and returns the densest legal plan. Used by the Optimise
+   * loading action.
+   */
+  optimise: (
+    items: CbmItem[],
+    container: ContainerPreset,
+    previousStrategyId?: StrategyId,
+  ) => Promise<BestPlan>;
+  /** Geometry-aware recommendation in one round trip. */
+  recommend: (items: CbmItem[]) => Promise<RecommendResponseResult>;
+  /** True while at least one job is in flight. */
+  pending: boolean;
+  /**
+   * Cancel every in-flight worker job. Bumps the seq id so any later
+   * response is dropped as stale, rejects pending promises with a
+   * sentinel error ("Cancelled: superseded"), and clears the pending state.
+   * Use on container-type change or any other invalidation that makes prior
+   * results meaningless.
+   */
+  cancelAll: () => void;
+}
+
+export function usePackingWorker(): UsePackingWorker {
+  const workerRef = useRef<Worker | null>(null);
+  const seqRef = useRef(0);
+  const pendingRef = useRef<Map<number, PendingRequest<AnyResponse>>>(new Map());
+  const [inflight, setInflight] = useState(0);
+
+  useEffect(() => {
+    // Small delay to survive React StrictMode double-invoke in development
+    const timer = setTimeout(() => {
+      const w = createWorker();
+      workerRef.current = w;
+
+      w.addEventListener("message", (event: MessageEvent<WorkerResponse<AnyResponse>>) => {
+        const data = event.data;
+        const pending = pendingRef.current.get(data.id);
+        if (!pending) return;
+        pendingRef.current.delete(data.id);
+        setInflight((n) => Math.max(0, n - 1));
+        if (data.ok) pending.resolve(data.result);
+        else pending.reject(new Error(data.error ?? "Worker error"));
+      });
+
+      w.addEventListener("error", (event) => {
+        console.error("[PackingWorker] Worker error event:", event);
+        console.error("[PackingWorker] message:", event.message);
+        console.error("[PackingWorker] filename:", event.filename);
+        console.error("[PackingWorker] lineno:", event.lineno);
+        pendingRef.current.forEach((p) => p.reject(new Error(event.message || "Worker error")));
+        pendingRef.current.clear();
+        setInflight(0);
+      });
+    }, 100);
+
+    return () => {
+      clearTimeout(timer);
+      if (workerRef.current) {
+        workerRef.current.terminate();
+        workerRef.current = null;
+      }
+      pendingRef.current.forEach((req) => req.reject(new Error("Worker terminated")));
+      pendingRef.current.clear();
+    };
+  }, []);
+
+  const ensureWorker = useCallback((): Worker => {
+    if (workerRef.current) return workerRef.current;
+    const w = createWorker();
+    w.addEventListener("message", (event: MessageEvent<WorkerResponse<AnyResponse>>) => {
+      const data = event.data;
+      const req = pendingRef.current.get(data.id);
+      if (!req) return; // stale
+      pendingRef.current.delete(data.id);
+      setInflight((n) => Math.max(0, n - 1));
+      if (data.ok) {
+        req.resolve(data.result);
+      } else {
+        req.reject(new Error(data.error));
+      }
+    });
+    w.addEventListener("error", (event) => {
+      console.error("[PackingWorker] Worker error event:", event);
+      console.error("[PackingWorker] message:", event.message);
+      console.error("[PackingWorker] filename:", event.filename);
+      console.error("[PackingWorker] lineno:", event.lineno);
+      // reject all pending
+      pendingRef.current.forEach((p) => p.reject(new Error(event.message || "Worker error")));
+      pendingRef.current.clear();
+      setInflight(0);
+    });
+    workerRef.current = w;
+    return w;
+  }, []);
+
+  const send = useCallback(
+    <R extends AnyResponse>(payload: unknown): Promise<R> => {
+      const w = ensureWorker();
+      const id = ++seqRef.current;
+      setInflight((n) => n + 1);
+      return new Promise<R>((resolve, reject) => {
+        pendingRef.current.set(id, {
+          id,
+          resolve: resolve as (v: AnyResponse) => void,
+          reject,
+        });
+        w.postMessage({ id, payload });
+      });
+    },
+    [ensureWorker],
+  );
+
+  const pack = useCallback<UsePackingWorker["pack"]>(
+    async (items, container) => {
+      const r = await send<PackResponse>({ kind: "pack", items, container });
+      return r.result;
+    },
+    [send],
+  );
+
+  const scenarios = useCallback<UsePackingWorker["scenarios"]>(
+    async (items, container, strategies) => {
+      const r = await send<ScenariosResponse>({
+        kind: "scenarios",
+        items,
+        container,
+        strategies,
+      });
+      return r.result;
+    },
+    [send],
+  );
+
+  const optimise = useCallback<UsePackingWorker["optimise"]>(
+    async (items, container, previousStrategyId) => {
+      const r = await send<OptimiseResponse>({
+        kind: "optimise",
+        items,
+        container,
+        previousStrategyId,
+      });
+      return r.result;
+    },
+    [send],
+  );
+
+  const recommend = useCallback<UsePackingWorker["recommend"]>(
+    async (items) => {
+      const r = await send<RecommendResponse>({ kind: "recommend", items });
+      return r.result;
+    },
+    [send],
+  );
+
+  // Cancel-burst tracking: if cancelAll fires more than 2× in <500 ms
+  // (rapid container switching), terminate the worker so no zombie
+  // computation eats CPU. Next request lazily re-creates the worker.
+  const cancelTimestampsRef = useRef<number[]>([]);
+
+  const cancelAll = useCallback(() => {
+    // Bump seq so any in-flight response gets dropped as stale by id-check.
+    seqRef.current++;
+    // Reject every pending promise with the sentinel error.
+    pendingRef.current.forEach((req) =>
+      req.reject(new Error("Cancelled: superseded")),
+    );
+    pendingRef.current.clear();
+    setInflight(0);
+    // Burst detection — terminate worker if cancellation rate is excessive.
+    const now = Date.now();
+    cancelTimestampsRef.current.push(now);
+    cancelTimestampsRef.current = cancelTimestampsRef.current.filter(
+      (t) => now - t < 500,
+    );
+    if (cancelTimestampsRef.current.length > 2 && workerRef.current) {
+      workerRef.current.terminate();
+      workerRef.current = null;
+      cancelTimestampsRef.current = [];
+    }
+  }, []);
+
+  const pending = inflight > 0;
+
+  return useMemo<UsePackingWorker>(
+    () => ({ pack, scenarios, optimise, recommend, pending, cancelAll }),
+    [pack, scenarios, optimise, recommend, pending, cancelAll],
+  );
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import AnimatedBanner from "@/app/components/AnimatedBanner";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
@@ -33,7 +35,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <AnimatedBanner />
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

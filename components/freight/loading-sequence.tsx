@@ -1,0 +1,105 @@
+"use client";
+/**
+ * Numbered loading sequence storyboard. Reads the per-item stats from
+ * AdvancedPackResult and explains the recommended loading order.
+ */
+import { ChevronDown, ListOrdered } from "lucide-react";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import type { AdvancedPackResult } from "@/lib/freight/packing-advanced";
+import { PackageTypeIcon } from "./package-type-icon";
+
+interface Props {
+  pack: AdvancedPackResult;
+}
+
+export function LoadingSequence({ pack }: Props) {
+  const [open, setOpen] = useState(false);
+
+  // Recommended sequence mirrors packing logic: fill the back wall completely
+  // (full width × full height) before advancing toward the door. Non-stackable
+  // first (need floor), heaviest next, fragile last (top layer).
+  const sequence = [...pack.perItem]
+    .filter((p) => p.planned > 0 && p.placed > 0)
+    .sort((a, b) => {
+      if (a.fragile !== b.fragile) return a.fragile ? 1 : -1;
+      if (a.stackable !== b.stackable) return a.stackable ? 1 : -1;
+      return b.placed - a.placed;
+    });
+
+  if (sequence.length === 0) return null;
+
+  return (
+    <div
+      className="rounded-lg border-2"
+      style={{ borderColor: "color-mix(in oklab, #0f1f3d 18%, transparent)" }}
+    >
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-center gap-2 px-3 py-2 text-left"
+      >
+        <ListOrdered className="size-4 text-brand-navy" />
+        <span className="text-sm font-semibold text-brand-navy">How to load this container</span>
+        <ChevronDown
+          className={cn(
+            "ml-auto size-4 text-muted-foreground transition-transform",
+            open && "rotate-180",
+          )}
+        />
+      </button>
+      {open && (
+        <ol className="space-y-2 border-t px-3 py-3">
+          {sequence.map((p, idx) => {
+            const where = idx === 0 ? "back wall — fill floor side-to-side, then layer up" : p.fragile ? "top layer near door" : "next column toward door";
+            const note = !p.stackable
+              ? "do not stack anything on top"
+              : p.fragile
+                ? "load last, place gently"
+                : "stack tightly";
+            // Count rotated units of this item.
+            const rotated = pack.placed.filter(
+              (b) => b.itemIdx === p.itemIdx && (b.rotated === "sideways" || b.rotated === "axis"),
+            );
+            const tippedCount = rotated.filter((b) => b.rotated === "axis").length;
+            const sidewaysCount = rotated.length - tippedCount;
+            return (
+              <li key={p.itemId} className="flex items-start gap-3">
+                <span
+                  className="flex size-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold text-white shadow"
+                  style={{ background: p.color }}
+                >
+                  {idx + 1}
+                </span>
+                <div className="min-w-0 flex-1 text-xs">
+                  <div className="flex items-center gap-1.5 font-semibold text-brand-navy">
+                    <PackageTypeIcon
+                      type={p.packageType}
+                      size={14}
+                      className="shrink-0 text-brand-navy"
+                    />
+                    <span>Item {p.itemIdx + 1}</span>
+                    <span className="font-normal text-muted-foreground">
+                      ({p.packageType}, {p.placed} units)
+                    </span>
+                  </div>
+                  <div className="text-muted-foreground">
+                    Place at <strong>{where}</strong> — {note}.
+                  </div>
+                  {rotated.length > 0 && (
+                    <div className="mt-0.5 text-[11px] text-yellow-700 dark:text-yellow-300">
+                      ↻ {sidewaysCount > 0 && `${sidewaysCount} unit${sidewaysCount > 1 ? "s" : ""} rotated sideways`}
+                      {sidewaysCount > 0 && tippedCount > 0 && ", "}
+                      {tippedCount > 0 && `${tippedCount} tipped on side`}
+                      {" — orient as shown in 3D view."}
+                    </div>
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      )}
+    </div>
+  );
+}

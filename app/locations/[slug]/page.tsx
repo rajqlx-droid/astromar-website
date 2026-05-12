@@ -3,8 +3,6 @@ import Link from "next/link";
 import { MapPin, Phone, Navigation, Warehouse, ArrowLeft, Clock, Globe } from "lucide-react";
 import { ftwzLocationDetails } from "@/data/ftwzLocations";
 import CTASection from "@/components/CTASection";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const locations = [
   {
@@ -180,10 +178,9 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
       {/* Hero Banner */}
       <section
-        className="relative min-h-[50vh] py-24 overflow-hidden flex items-center"
+        className="relative py-16 overflow-hidden flex items-center"
         style={{
           backgroundImage: `url(${location.heroImage})`,
           backgroundSize: "cover",
@@ -196,82 +193,72 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
         {/* Gradient tint — navy at bottom for smooth page transition */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/80 via-transparent to-transparent" />
         {/* Top accent line */}
-        <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-accent to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#F97316] to-transparent" />
 
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16">
           <div className="max-w-7xl mx-auto">
-            <Link href="/contact" className="inline-flex items-center gap-2 text-white/50 hover:text-white text-sm mb-8 transition-colors group">
+            <Link href="/contact" className="inline-flex items-center gap-2 text-white hover:text-[#F97316] text-sm mb-8 transition-colors group">
               <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
               Back to Locations
             </Link>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               {/* Left — text content */}
-              <div>
+              <div className="flex flex-col h-full">
                 {/* State badge */}
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/15 border border-accent/30 mb-5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                  <span className="text-xs font-bold tracking-[0.15em] text-accent uppercase">{location.state} &nbsp;·&nbsp; {location.type}</span>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5 w-fit" style={{ background: "rgba(249,115,22,0.15)", border: "1px solid rgba(249,115,22,0.30)" }}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#F97316] animate-pulse" />
+                  <span className="text-xs font-bold tracking-[0.15em] text-[#F97316] uppercase">{location.state} &nbsp;·&nbsp; {location.type}</span>
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight tracking-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-3xl font-extrabold text-white mb-3 leading-tight tracking-tight">
                   {location.city}
-                  <span className="block text-accent/90">FTWZ Facility</span>
+                  <span className="block text-[#F97316]">FTWZ Facility</span>
                 </h1>
-                <div className="flex items-start gap-2 text-white/70 mb-3">
-                  <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                <div className="flex items-start gap-2 text-white/90 mb-3">
+                  <MapPin className="w-4 h-4 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <span className="text-sm leading-relaxed">{location.address}</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/70 mb-8">
-                  <Phone className="w-4 h-4 text-accent flex-shrink-0" />
+                <div className="flex items-center gap-2 text-white/90 mb-8">
+                  <Phone className="w-4 h-4 text-[#F97316] flex-shrink-0" />
                   <a href={`tel:${location.phone.replace(/\s/g, "")}`} className="text-sm hover:text-white transition-colors">{location.phone}</a>
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 mt-auto">
                   <a
                     href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-all shadow-lg shadow-accent/20 hover:shadow-accent/40"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-semibold transition-all shadow-lg hover:opacity-90"
+                    style={{ background: "#F97316" }}
                   >
                     <Navigation className="w-4 h-4" />
                     Get Directions
                   </a>
                   <a
                     href="/contact"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/25 text-white font-semibold hover:bg-white/10 hover:border-white/50 transition-all backdrop-blur-sm"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all hover:opacity-90"
+                    style={{ background: "white", color: "#0f1f3d" }}
                   >
                     Contact Us
                   </a>
                 </div>
               </div>
 
-              {/* Right — info cards */}
-              <div className="grid grid-cols-2 gap-3">
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-accent/30 transition-all">
-                  <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center mb-3">
-                    <Warehouse className="w-5 h-5 text-accent" />
-                  </div>
-                  <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Facility</p>
-                  <p className="text-white font-semibold text-sm leading-snug">{location.type}</p>
+              {/* Right — scan-line image + info cards */}
+              <div className="grid grid-cols-2 gap-4 h-full content-center">
+                <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
+                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">₹0</p>
+                  <p className="text-sm text-white/70 font-medium">Customs Duty</p>
                 </div>
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-accent/30 transition-all">
-                  <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center mb-3">
-                    <Globe className="w-5 h-5 text-accent" />
-                  </div>
-                  <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Nearest Port</p>
-                  <p className="text-white font-semibold text-sm leading-snug">{location.port}</p>
+                <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
+                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">100%</p>
+                  <p className="text-sm text-white/70 font-medium">GST Deferral</p>
                 </div>
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-accent/30 transition-all">
-                  <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center mb-3">
-                    <MapPin className="w-5 h-5 text-accent" />
-                  </div>
-                  <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">State</p>
-                  <p className="text-white font-semibold text-sm leading-snug">{location.state}</p>
+                <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
+                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">24/7</p>
+                  <p className="text-sm text-white/70 font-medium">Operations</p>
                 </div>
-                <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-accent/30 transition-all">
-                  <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center mb-3">
-                    <Clock className="w-5 h-5 text-accent" />
-                  </div>
-                  <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Hours</p>
-                  <p className="text-white font-semibold text-sm leading-snug">{location.operatingHours}</p>
+                <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
+                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">8+</p>
+                  <p className="text-sm text-white/70 font-medium">FTWZ Locations</p>
                 </div>
               </div>
             </div>
@@ -280,61 +267,61 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-white dark:bg-gray-900">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
-              <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">ABOUT THIS FACILITY</p>
+              <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">ABOUT THIS FACILITY</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">
                 {location.city} FTWZ — Strategic Location Advantage
               </h2>
               <p className="text-sm sm:text-base text-foreground/80 leading-relaxed mb-6">{location.about}</p>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-sm font-bold text-foreground">Address</strong>
                     <span className="text-sm text-foreground/70">{location.address}</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <Globe className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-sm font-bold text-foreground">Nearest Port</strong>
                     <span className="text-sm text-foreground/70">{location.port}</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Navigation className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <Navigation className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-sm font-bold text-foreground">Nearest Airport</strong>
                     <span className="text-sm text-foreground/70">{location.nearestAirport}</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <Clock className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-sm font-bold text-foreground">Operating Hours</strong>
                     <span className="text-sm text-foreground/70">{location.operatingHours}</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <Phone className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-sm font-bold text-foreground">Phone</strong>
-                    <a href={`tel:${location.phone.replace(/\s/g, "")}`} className="text-sm text-accent hover:underline">{location.phone}</a>
+                    <a href={`tel:${location.phone.replace(/\s/g, "")}`} className="text-sm text-[#F97316] hover:underline">{location.phone}</a>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">SERVICES AVAILABLE</p>
+              <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">SERVICES AVAILABLE</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">What We Offer at {location.city}</h2>
               <div className="grid grid-cols-1 gap-3">
                 {location.services.map((service, i) => (
-                  <div key={i} className="flex items-center gap-3 p-4 rounded-xl border border-border bg-brand-light">
-                    <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Warehouse className="w-4 h-4 text-accent" />
+                  <div key={i} className="flex items-center gap-3 p-4 rounded-xl border border-[#1B3A6B]/20 bg-brand-light">
+                    <div className="w-8 h-8 rounded-lg bg-[rgba(249,115,22,0.10)] flex items-center justify-center flex-shrink-0">
+                      <Warehouse className="w-4 h-4 text-[#F97316]" />
                     </div>
                     <span className="text-sm font-semibold text-foreground">{service}</span>
                   </div>
@@ -346,7 +333,6 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       </section>
 
       <CTASection />
-      <Footer />
     </div>
   );
 }

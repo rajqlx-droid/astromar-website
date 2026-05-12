@@ -1,7 +1,5 @@
 "use client"
 import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CTASection from "@/components/CTASection";
 import SEOHead from "@/components/SEOHead";
@@ -27,7 +25,6 @@ const Services = () => {
         description="Explore AstroMar's comprehensive logistics services — FTWZ warehousing, sea & air freight, customs clearance, cold storage, and supply chain solutions across India."
         ogImage="/og-home.jpg"
       />
-      <Header />
 
       {/* Hero */}
       <section className="relative bg-brand-navy py-20 overflow-hidden">
@@ -47,10 +44,10 @@ const Services = () => {
               <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
                 OUR SERVICES
               </p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Comprehensive Logistics Services
               </h1>
-              <p className="text-sm sm:text-base md:text-lg text-white mb-8 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end logistics solutions across India.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -101,8 +98,8 @@ const Services = () => {
               <ScrollReveal key={s.title} delay={i * 0.06}>
                 <a href={s.href} className="block h-full">
                   <div
-                    className={`relative rounded-xl border bg-slate-50 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
-                      s.featured ? "border-primary" : "border-gray-200"
+                    className={`relative rounded-xl border bg-brand-light p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
+                      s.featured ? "border-primary" : "border-[#1B3A6B]/15"
                     }`}
                   >
                     {s.featured && (
@@ -125,7 +122,6 @@ const Services = () => {
       </section>
 
       <CTASection />
-      <Footer />
       <WhatsAppButton />
     </>
   );

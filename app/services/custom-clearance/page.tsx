@@ -1,7 +1,5 @@
-﻿"use client"
+"use client"
 import { useState } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
@@ -41,7 +39,6 @@ const CustomClearance = () => {
         description="Expert customs clearance for imports and exports at all Indian ports. HS classification, regulatory compliance, FTA advisory, and ICEGATE electronic filing."
         ogImage="/og-home.jpg"
       />
-      <Header />
 
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
@@ -59,10 +56,10 @@ const CustomClearance = () => {
 
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">CUSTOM CLEARANCE</p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Customs Clearance Services in India
               </h1>
-              <p className="text-white/85 text-sm md:text-base leading-relaxed mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 Navigate India's complex customs landscape with confidence. AstroMar's licensed customs brokers
                 handle all import and export clearances across every Indian port and airport — ensuring compliance,
                 minimizing duty, and eliminating delays.
@@ -132,7 +129,7 @@ const CustomClearance = () => {
       </section>
 
       {/* ── S3: Stats ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CLEARANCE TRACK RECORD</p>
@@ -148,7 +145,7 @@ const CustomClearance = () => {
               { value: "15+",   label: "Ports & ICDs",       desc: "Pan-India coverage"        },
             ].map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 0.07}>
-                <div className="bg-white rounded-xl border border-gray-200 p-6 text-center shadow-sm h-full">
+                <div className="bg-white rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">
                   <p className="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">{s.value}</p>
                   <p className="text-base font-bold text-foreground mb-1">{s.label}</p>
                   <p className="text-xs text-foreground/60 leading-relaxed">{s.desc}</p>
@@ -171,7 +168,7 @@ const CustomClearance = () => {
           <div className="space-y-3">
             {accordionItems.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.06}>
-                <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                <div className="rounded-xl overflow-hidden border border-[#1B3A6B]/15 shadow-sm">
                   <button
                     onClick={() => setOpenIndex(openIndex === i ? null : i)}
                     className="w-full flex items-center justify-between gap-4 bg-[#0a1628] text-white px-5 py-4 text-left hover:bg-[#0d1f38] transition-colors"
@@ -180,7 +177,7 @@ const CustomClearance = () => {
                     <ChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`} />
                   </button>
                   {openIndex === i && (
-                    <div className="bg-slate-50 border-l-4 border-[#f97316] px-5 py-4">
+                    <div className="bg-brand-light border-l-4 border-[#f97316] px-5 py-4">
                       <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
                     </div>
                   )}
@@ -192,7 +189,7 @@ const CustomClearance = () => {
       </section>
 
       {/* ── S5: Image + Text ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
@@ -246,7 +243,7 @@ const CustomClearance = () => {
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.07}>
-                <div className="border-l-4 border-orange-500 bg-slate-50 rounded-r-xl p-6 h-full">
+                <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
                 </div>
@@ -258,7 +255,6 @@ const CustomClearance = () => {
 
       <CTASection />
 
-      <Footer />
       <WhatsAppButton />
     </>
   );

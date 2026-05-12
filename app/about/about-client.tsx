@@ -1,10 +1,8 @@
-﻿"use client"
+"use client"
 import { Eye, Target, Shield, Globe, UserCheck, TrendingUp, Medal, Clock, CheckCircle2, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CTASection from "@/components/CTASection";
@@ -74,7 +72,6 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead />
-      <Header />
 
       {/* Hero */}
       <section className="relative bg-brand-navy py-20 overflow-hidden">
@@ -87,17 +84,17 @@ const About = () => {
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="w-full px-6 md:px-12 lg:px-16 py-24 relative z-10">
+        <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
             {/* LEFT - Text */}
             <div>
               <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">
                 ABOUT ASTROMAR
               </p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 India's Trusted FTWZ &amp; Logistics Partner
               </h1>
-              <p className="text-white/90 leading-relaxed text-base mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 Since 2017, Astromar Logistics has been transforming how businesses leverage Free Trade Warehousing Zones to optimize customs duty, defer GST, and streamline global trade across India.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -134,7 +131,7 @@ const About = () => {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <ScrollReveal direction="left">
@@ -151,7 +148,7 @@ const About = () => {
             </ScrollReveal>
 
             <ScrollReveal direction="right">
-              <div className="bg-brand-light border border-border rounded-xl p-6 h-full">
+              <div className="bg-white border border-border rounded-xl p-6 h-full">
                 <div className="flex items-center gap-3 mb-5">
                   <Target className="w-7 h-7 text-primary" />
                   <h3 className="text-xl font-bold text-foreground tracking-wide uppercase">Our Mission</h3>
@@ -200,7 +197,7 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-muted/50">
+      <section className="py-20 bg-brand-light">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <div className="text-center mx-auto mb-12">
@@ -248,7 +245,7 @@ const About = () => {
       </section>
 
       {/* Milestones Timeline */}
-      <section className="py-14 bg-background">
+      <section className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR JOURNEY</p>
@@ -299,7 +296,7 @@ const About = () => {
       </section>
 
       {/* Certifications */}
-      <section className="pt-20 pb-20 bg-muted/50 border-b border-border">
+      <section className="pt-20 pb-20 bg-brand-light border-b border-border">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">TRUST &amp; COMPLIANCE</p>
@@ -326,7 +323,7 @@ const About = () => {
       </section>
 
       {/* How We Work */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-orange-500 uppercase mb-2">OUR PROCESS</p>
@@ -367,7 +364,6 @@ const About = () => {
 
       <CTASection />
 
-      <Footer />
       <WhatsAppButton />
     </div>
   );

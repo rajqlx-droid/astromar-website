@@ -1,0 +1,696 @@
+"use client";
+import { lazy, Suspense, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import { Package, Boxes, ChevronDown, ChevronUp, Loader2 } from "lucide-react";
+import { LoaderHUD } from "./loader-hud";
+import type { BestPlanMeta } from "@/lib/freight/scenario-runner";
+import { buildPalletSequence, type PalletStep } from "@/lib/freight/loading-rows";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+import { cn } from "@/lib/utils";
+import {
+  CONTAINERS,
+  ITEM_COLORS,
+  totalCbm,
+  totalQty,
+  totalWeight,
+  type ContainerPreset,
+} from "@/lib/freight/packing";
+import { type AdvancedPackResult } from "@/lib/freight/packing-advanced";
+import {
+  recommendContainersFast,
+  type ContainerRecommendation,
+} from "@/lib/freight/container-recommender";
+import type { CbmItem } from "@/lib/freight/calculators";
+import { LoadReportPanel } from "./load-report-panel";
+import { LoadingSequence } from "./loading-sequence";
+import { LoadingRowsPanel } from "./loading-rows-panel";
+import { type ContainerId } from "@/lib/freight/container-ids";
+import { usePackingWorker } from "@/hooks/use-packing-worker";
+
+import type { Container3DHandle } from "./container-3d-view";
+import { buildRows } from "@/lib/freight/loading-rows";
+import { readHeavyThreshold } from "./loading-rows-panel";
+import { LimitExplanationPanel } from "./limit-explanation-panel";
+
+// Lazy 3D view — keeps initial bundle light and avoids SSR.
+const Container3DView = lazy(() =>
+  import("./container-3d-view").then((m) => ({ default: m.Container3DView })),
+);
+
+interface Props {
+  items: CbmItem[];
+  /** Smart recommendation from the calculator. Kept for callers but no longer used to drive multi-container tabs. */
+  recommendation?: ContainerRecommendation;
+  /** Manually-applied choice that overrides "auto". */
+  forcedChoice?: ContainerId | null;
+  /** Notify parent when user picks a container pill. */
+  onChoiceChange?: (id: ContainerId | null) => void;
+  /** Expose snapshot capture + active pack so parent (PDF flow) can use them. */
+  onReady?: (handle: {
+    capture: () => Promise<{ iso: string; front: string; side: string } | null>;
+    getActivePack: () => AdvancedPackResult | null;
+  }) => void;
+  /** When set, disables the 3D toggle and Loading Video button (CBM gate). */
+  optimizationDisabledReason?: string | null;
+}
+
+type ContainerChoice = "auto" | ContainerId;
+
+
+/**
+ * Empty placeholder pack — used while the worker is computing the first real
+ * result so downstream UI (3D viewer, panels) can render without crashing.
+ */
+function makeEmptyPack(container: ContainerPreset): AdvancedPackResult {
+  return {
+    container,
+    placed: [],
+    supportRatios: [],
+    totalCartons: 0,
+    placedCartons: 0,
+    truncated: false,
+    cargoCbm: 0,
+    placedCargoCbm: 0,
+    weightKg: 0,
+    placedWeightKg: 0,
+    utilizationPct: 0,
+    weightUtilizationPct: 0,
+    perItem: [],
+    cogOffsetPct: 0,
+    usedCbm: 0,
+    densityPct: 0,
+    cogLateralOffsetPct: 0,
+    nearCeilingPlacedIdxs: [],
+    floorCoveragePct: 0,
+    stackingDiagnostics: {
+      rejectedAttempts: 0,
+      unplacedDueToStacking: 0,
+      reasonCounts: { support: 0, sealed: 0, stackWeight: 0, nonStackable: 0 },
+      dominantReason: null,
+    },
+  };
+}
+
+export function ContainerLoadView({
+  items,
+  recommendation,
+  forcedChoice,
+  onChoiceChange,
+  onReady,
+  optimizationDisabledReason,
+}: Props) {
+  const [internalChoice, setInternalChoice] = useState<ContainerChoice>("auto");
+  const choice: ContainerChoice = forcedChoice ?? internalChoice;
+  const setChoice = (c: ContainerChoice) => {
+    setInternalChoice(c);
+    onChoiceChange?.(c === "auto" ? null : c);
+  };
+
+  const is3D = true;
+  const [mounted, setMounted] = useState(false);
+  const [viewerCollapsed, setViewerCollapsed] = useState(false);
+  const view3DRef = useRef<Container3DHandle | null>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const cargoCbm = useMemo(() => totalCbm(items), [items]);
+  const cargoWeight = useMemo(() => totalWeight(items), [items]);
+  const cargoQty = useMemo(() => totalQty(items), [items]);
+
+  const hasCargo = cargoCbm > 0 && cargoQty > 0;
+
+  // Auto-pick mirrors the recommendation banner so the two never disagree.
+  // The geometry-aware recommendation is computed off-thread by the parent
+  // (worker path) and passed in via the `recommendation` prop. While that
+  // result is pending we fall back to a cheap CBM-only pick so the Auto pill
+  // shows a sensible label immediately instead of defaulting to 40HC and
+  // freezing the main thread with a synchronous packer sweep.
+  const autoContainer = useMemo<ContainerPreset>(() => {
+    const rec = forcedChoice == null ? recommendation : undefined;
+    const fromRec = rec?.units?.[0]?.container;
+    if (fromRec) return fromRec;
+    if (cargoCbm <= 0) return CONTAINERS[0];
+    const fast = recommendContainersFast(cargoCbm, cargoWeight);
+    return fast.units[0]?.container ?? CONTAINERS[0];
+  }, [recommendation, forcedChoice, cargoCbm, cargoWeight]);
+  const activeContainer: ContainerPreset =
+    choice === "auto"
+      ? autoContainer
+      : CONTAINERS.find((c) => c.id === choice) ?? autoContainer;
+
+  // Defer heavy packing inputs so React can interrupt long calculations and
+  // keep the event loop responsive (avoids "Page Unresponsive" dialog).
+  const deferredItems = useDeferredValue(items);
+  const deferredContainer = useDeferredValue(activeContainer);
+
+  // ─── Off-main-thread packing via Web Worker ────────────────────────────
+  // The packer can take 10–30 seconds for large loads with hundreds of cartons.
+  // Running it inline froze the page and produced a 36s INP.
+  // Now everything runs in a Worker; the UI keeps responding while jobs run.
+  const worker = usePackingWorker();
+
+  // Multi-strategy sweep: the worker tries every loader strategy at full
+  // container geometry and returns the densest LEGAL plan (no overlap, no
+  // hanging cargo, door + ceiling reserves honoured). Effective CBM is only
+  // reduced when carton dimensions physically prevent a tighter fit — never
+  // as a default safety margin.
+  const [singlePack, setSinglePack] = useState<AdvancedPackResult>(() =>
+    makeEmptyPack(deferredContainer),
+  );
+  // Optimiser metadata captured from the worker so the HUD shows the same
+  // shut-out / hard-violation reasoning the optimiser used. Recomputing
+  // compliance in the HUD off the pack alone caused drift between the
+  // picker's verdict and the badge.
+  const [planMeta, setPlanMeta] = useState<BestPlanMeta | null>(null);
+  // Sticky strategy hint — the strategy id that won the previous optimise
+  // call for the SAME container. Reset to undefined whenever the container
+  // type changes so stickiness never bleeds across geometries.
+  const stickyStrategyRef = useRef<import("@/lib/freight/scenario-runner").StrategyId | undefined>(undefined);
+  // Track container id so we can detect a switch and hard-restart computing.
+  const lastContainerIdRef = useRef<string>(deferredContainer.id);
+
+  useEffect(() => {
+    // Container-type switch: cancel any in-flight job, clear all derived
+    // state, and reset stickiness so the new container gets a fresh sweep
+    // across all 4 strategies.
+    if (lastContainerIdRef.current !== deferredContainer.id) {
+      worker.cancelAll();
+      stickyStrategyRef.current = undefined;
+      setSinglePack(makeEmptyPack(deferredContainer));
+      setPlanMeta(null);
+      lastContainerIdRef.current = deferredContainer.id;
+    }
+    if (!hasCargo) {
+      setSinglePack(makeEmptyPack(deferredContainer));
+      setPlanMeta(null);
+      return;
+    }
+    let cancelled = false;
+    worker
+      .optimise(deferredItems, deferredContainer, stickyStrategyRef.current)
+      .then((res) => {
+        if (cancelled) return;
+        setSinglePack(res.best.pack);
+        setPlanMeta(res.meta);
+        // Remember the winning strategy for stickiness on the next call
+        // (only valid for THIS container; cleared on container switch above).
+        stickyStrategyRef.current = res.best.strategyId;
+      })
+      .catch((err: unknown) => {
+        // Silent: cancellation sentinel is expected on container switch /
+        // rapid input edits; worker termination races are equally benign.
+        if (err instanceof Error && err.message.startsWith("Cancelled:")) return;
+        /* worker gone */
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [hasCargo, deferredItems, deferredContainer, worker]);
+
+  const activePack: AdvancedPackResult = singlePack;
+
+  // True when the worker hasn't returned a real pack yet for the current input.
+  const isCalculating = worker.pending && activePack.placed.length === 0 && hasCargo;
+
+  // Expose snapshot capability to parent (current visible pack).
+  // CRITICAL: do NOT put `activePack` in deps. The parent's `onReady` calls
+  // `setActivePack()` synchronously, which would re-trigger this effect on
+  // the next render → infinite loop (React error #185 / "Maximum update
+  // depth exceeded"). Instead, mirror the latest pack in a ref so the
+  // exposed `getActivePack` always returns fresh data without re-firing
+  // the effect.
+  const activePackRef = useRef<AdvancedPackResult>(activePack);
+  useEffect(() => {
+    activePackRef.current = activePack;
+  }, [activePack]);
+  useEffect(() => {
+    if (!onReady) return;
+    onReady({
+      capture: async () => {
+        if (!is3D || !view3DRef.current) return null;
+        try {
+          return await view3DRef.current.captureAngles();
+        } catch {
+          return null;
+        }
+      },
+      getActivePack: () => activePackRef.current,
+    });
+  }, [onReady, is3D]);
+
+  return (
+    <Card
+      id="container-load-viewer"
+      tabIndex={-1}
+      className="border-2 p-4 outline-none focus-visible:ring-2 focus-visible:ring-brand-navy sm:p-5"
+      style={{ borderColor: "color-mix(in oklab, #0f1f3d 18%, transparent)" }}
+    >
+      <div className="mb-4 flex items-center gap-2">
+        <Boxes className="size-5 text-brand-navy" />
+        <h3 className="text-base font-semibold text-brand-navy">Container Load Optimizer</h3>
+        {worker.pending && (
+          <span
+            className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800 dark:bg-amber-900/40 dark:text-amber-200"
+            role="status"
+            aria-live="polite"
+          >
+            <Loader2 className="size-3 animate-spin" />
+            Calculating…
+          </span>
+        )}
+        <span className="ml-auto rounded-full bg-muted px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+          Indicative
+        </span>
+      </div>
+
+      {/* Container switcher pills + 2D/3D toggle */}
+      <div className="mb-4 flex flex-wrap items-center gap-1.5">
+        <PillButton active={choice === "auto"} onClick={() => setChoice("auto")}>
+          Auto · {autoContainer.name}
+        </PillButton>
+        {CONTAINERS.map((c) => (
+          <PillButton key={c.id} active={choice === c.id} onClick={() => setChoice(c.id)}>
+            {c.name}
+          </PillButton>
+        ))}
+        <div className="ml-auto flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setViewerCollapsed((v) => !v)}
+            aria-label={viewerCollapsed ? "Expand viewer" : "Collapse viewer"}
+            aria-expanded={!viewerCollapsed}
+            className="flex h-7 items-center gap-1 rounded-full border border-brand-navy/30 px-2.5 text-[11px] font-semibold text-brand-navy hover:bg-brand-navy/10"
+            title={viewerCollapsed ? "Show 3D viewer" : "Hide viewer (focus on row instructions)"}
+          >
+            {viewerCollapsed ? (
+              <>
+                <ChevronDown className="size-3" /> Show viewer
+              </>
+            ) : (
+              <>
+                <ChevronUp className="size-3" /> Hide viewer
+              </>
+            )}
+          </button>
+        </div>
+      </div>
+
+      {!hasCargo ? (
+        <EmptyState />
+      ) : (
+        <SinglePlanBody
+          pack={activePack}
+          weight={cargoWeight}
+          qty={cargoQty}
+          items={items}
+          is3D={is3D}
+          mounted={mounted}
+          view3DRef={view3DRef}
+          isActive
+          viewerCollapsed={viewerCollapsed}
+          planMeta={planMeta}
+          isCalculating={isCalculating}
+        />
+      )}
+    </Card>
+  );
+}
+
+/* ---------------- Single-plan body (shared by single + per-tab) ---------------- */
+
+function SinglePlanBody({
+  pack,
+  weight,
+  qty: _qty,
+  items,
+  is3D,
+  mounted,
+  view3DRef,
+  isActive,
+  viewerCollapsed = false,
+  rollup,
+  planMeta = null,
+  isCalculating = false,
+}: {
+  pack: AdvancedPackResult;
+  weight: number;
+  qty: number;
+  items: CbmItem[];
+  is3D: boolean;
+  mounted: boolean;
+  view3DRef: React.MutableRefObject<Container3DHandle | null>;
+  isActive: boolean;
+  viewerCollapsed?: boolean;
+  rollup?: React.ComponentProps<typeof LoadReportPanel>["rollup"];
+  planMeta?: BestPlanMeta | null;
+  isCalculating?: boolean;
+}) {
+  // Pallet stepper. palletIdx = index into PalletStep[], -1 = empty container.
+  // The stepper drives the text HUD walkthrough only — it never moves, hides,
+  // or animates cargo in the 3D scene. The 3D viewer always renders the
+  // physically-packed cargo at exact coordinates.
+  const [palletIdx, setPalletIdx] = useState(-1);
+  const [speed, setSpeed] = useState<0.5 | 1 | 2>(1);
+
+  // Row groups (back wall → door). Re-derived only when the pack changes.
+  const rows = useMemo(() => buildRows(pack, readHeavyThreshold()), [pack]);
+  // Per-pallet sequence (loader hand-order). Re-derived per pack.
+  const palletSequence = useMemo<PalletStep[]>(
+    () => buildPalletSequence(pack, rows),
+    [pack, rows],
+  );
+  // Clamp palletIdx if sequence shrinks.
+  useEffect(() => {
+    if (palletIdx > palletSequence.length - 1) {
+      setPalletIdx(palletSequence.length - 1);
+    }
+  }, [palletSequence.length, palletIdx]);
+
+  const stepMode = is3D && palletSequence.length > 0;
+
+  // Current step (drives the HUD text only).
+  const currentStep = palletIdx >= 0 ? palletSequence[palletIdx] ?? null : null;
+
+  // Reset stepper when toggling 3D.
+  useEffect(() => {
+    setPalletIdx(-1);
+  }, [is3D]);
+
+  // Active row (right-panel highlight only).
+  const activeRowIdx = currentStep?.rowIdx ?? null;
+
+  // ── Row-by-row reveal ─────────────────────────────────────────────
+  // While the walkthrough is active, only show boxes that have already
+  // been "placed" by the loader (steps 0..palletIdx). The box of the
+  // CURRENT step gets the fly-in animation; earlier ones rest at their
+  // validated coordinates. When palletIdx === -1, we show every box
+  // (the "container is fully loaded" preview).
+  const visiblePlacedIdxs = useMemo<ReadonlySet<number> | null>(() => {
+    if (palletSequence.length === 0) return null;
+    if (palletIdx < 0) return null;
+    const s = new Set<number>();
+    for (let i = 0; i <= palletIdx; i++) {
+      const step = palletSequence[i];
+      if (step) s.add(step.placedIdx);
+    }
+    // Auto-include any geometric supporter of a visible stacked box, even
+    // if the row clustering filed it under a later rank. Without this, a
+    // stacked box whose supporter belongs to a later walkthrough step
+    // would appear to float in mid-air during play.
+    const placed = pack.placed;
+    const SUPPORT_EPS = 2; // mm — top-of-supporter must meet bottom-of-stacker
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const idx of Array.from(s)) {
+        const b = placed[idx];
+        if (!b || b.z < SUPPORT_EPS) continue; // floor box — no supporter needed
+        for (let j = 0; j < placed.length; j++) {
+          if (s.has(j)) continue;
+          const c = placed[j];
+          if (Math.abs(c.z + c.h - b.z) > SUPPORT_EPS) continue;
+          // Footprint overlap in x and y > 0 → c supports b.
+          const xo = Math.min(c.x + c.l, b.x + b.l) - Math.max(c.x, b.x);
+          const yo = Math.min(c.y + c.w, b.y + b.w) - Math.max(c.y, b.y);
+          if (xo > 1 && yo > 1) {
+            s.add(j);
+            changed = true;
+          }
+        }
+      }
+    }
+    return s;
+  }, [palletSequence, palletIdx, pack.placed]);
+  const flyInIdxs = useMemo<ReadonlySet<number> | null>(() => {
+    if (!currentStep) return null;
+    return new Set([currentStep.placedIdx]);
+  }, [currentStep]);
+  // Bumps every step change so CargoBox re-arms its animation start clock.
+  const flyInKey = palletIdx;
+
+  // Auto-play: 1× = 600ms per pallet, 0.5× = 1200ms, 2× = 300ms.
+  const stepDurationMs = Math.round(600 / speed);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const playTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const stopPlay = () => {
+    setIsPlaying(false);
+    if (playTimerRef.current) {
+      clearTimeout(playTimerRef.current);
+      playTimerRef.current = null;
+    }
+  };
+  const togglePlay = () => {
+    if (isPlaying) {
+      stopPlay();
+      return;
+    }
+    if (palletSequence.length === 0) return;
+    if (palletIdx >= palletSequence.length - 1) setPalletIdx(-1);
+    setIsPlaying(true);
+  };
+  useEffect(() => {
+    if (!isPlaying) return;
+    if (palletIdx >= palletSequence.length - 1) {
+      const t = setTimeout(() => setIsPlaying(false), stepDurationMs);
+      return () => clearTimeout(t);
+    }
+    playTimerRef.current = setTimeout(() => {
+      setPalletIdx((i) => Math.min(palletSequence.length - 1, i + 1));
+    }, stepDurationMs);
+    return () => {
+      if (playTimerRef.current) clearTimeout(playTimerRef.current);
+    };
+  }, [isPlaying, palletIdx, palletSequence.length, stepDurationMs]);
+  useEffect(() => {
+    if (!is3D) stopPlay();
+  }, [is3D]);
+
+  const goPrev = () => {
+    stopPlay();
+    setPalletIdx((i) => Math.max(-1, i - 1));
+  };
+  const goNext = () => {
+    stopPlay();
+    setPalletIdx((i) => Math.min(palletSequence.length - 1, i + 1));
+  };
+  const goReset = () => {
+    stopPlay();
+    setPalletIdx(-1);
+  };
+
+  return (
+    <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,300px)]">
+      <div className="space-y-3">
+        <StatsBar pack={pack} />
+        <LimitExplanationPanel pack={pack} />
+        {!viewerCollapsed && (
+          <div className="overflow-hidden rounded-lg border bg-[oklch(0.98_0.005_240)] p-3 dark:bg-[oklch(0.18_0.01_240)]">
+            {isCalculating ? (
+              <div className="flex h-[420px] flex-col items-center justify-center gap-3 text-sm text-muted-foreground">
+                <Loader2 className="size-7 animate-spin text-brand-orange" />
+                <div className="font-semibold text-brand-navy">Computing optimal fit…</div>
+              </div>
+            ) : is3D && mounted ? (
+              <Suspense
+                fallback={
+                  <div className="flex h-[420px] items-center justify-center text-sm text-muted-foreground">
+                    Loading viewer…
+                  </div>
+                }
+              >
+                <div className="relative">
+                  <Container3DView
+                    ref={isActive ? view3DRef : undefined}
+                    pack={pack}
+                    hideDoors={pack.placedCartons === 0}
+                    nearCeilingPlacedIdxs={pack.nearCeilingPlacedIdxs ?? null}
+                    visiblePlacedIdxs={visiblePlacedIdxs}
+                    flyInIdxs={flyInIdxs}
+                    flyInKey={flyInKey}
+                    persistKey={`cargo3d:cam:${pack.container.id}`}
+                    overlay={
+                      stepMode ? (
+                        <LoaderHUD
+                          step={currentStep}
+                          totalSteps={palletSequence.length}
+                          currentIdx={palletIdx}
+                          isPlaying={isPlaying}
+                          speed={speed}
+                          onPlayPause={togglePlay}
+                          onPrev={goPrev}
+                          onNext={goNext}
+                          onReset={goReset}
+                          onSpeedChange={setSpeed}
+                          pack={pack}
+                          rows={rows}
+                          planMeta={planMeta}
+                          visiblePlacedIdxs={visiblePlacedIdxs}
+                          onJumpToRow={(rowIdx1Based) => {
+                            // Jump the stepper to the first pallet of that row.
+                            const target = palletSequence.findIndex(
+                              (p) => p.rowIdx === rowIdx1Based - 1,
+                            );
+                            if (target >= 0) setPalletIdx(target);
+                          }}
+                        />
+                      ) : null
+                    }
+                  />
+                </div>
+              </Suspense>
+            ) : null}
+          </div>
+        )}
+        <Legend items={items} />
+        <LoadingSequence pack={pack} />
+        <LoadingRowsPanel
+          pack={pack}
+          activeRowIdx={activeRowIdx}
+          onRowSelect={(idx) => {
+            // Clicking a row card jumps to the FIRST pallet of that row.
+            if (!is3D) return;
+            stopPlay();
+            const firstStepInRow = palletSequence.findIndex((s) => s.rowIdx === idx);
+            if (firstStepInRow >= 0) setPalletIdx(firstStepInRow);
+          }}
+        />
+      </div>
+      <LoadReportPanel pack={pack} rollup={rollup} />
+    </div>
+  );
+}
+
+/* ---------------- Sub-components ---------------- */
+
+function PillButton({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <Button
+      type="button"
+      size="sm"
+      variant={active ? "default" : "outline"}
+      onClick={onClick}
+      className={cn(
+        "h-7 rounded-full px-3 text-xs",
+        active
+          ? "bg-brand-navy text-white hover:bg-brand-navy/90"
+          : "border-brand-navy/30 text-brand-navy hover:bg-brand-navy/5",
+      )}
+    >
+      {children}
+    </Button>
+  );
+}
+
+
+function StatsBar({ pack }: { pack: AdvancedPackResult }) {
+  const util = Math.min(100, pack.utilizationPct);
+  const utilColor = util < 80 ? "bg-emerald-500" : util < 95 ? "bg-amber-500" : "bg-rose-500";
+
+  const placedCbm = pack.placedCargoCbm;
+  const totalCbm = pack.cargoCbm;
+  const unloadedCbm = Math.max(0, totalCbm - placedCbm);
+  const placedKg = pack.placedWeightKg;
+  const totalKg = pack.weightKg;
+  const partial = pack.placedCartons < pack.totalCartons;
+
+  return (
+    <div className="grid gap-3 sm:grid-cols-4">
+      <div className="sm:col-span-2">
+        <div className="flex items-baseline justify-between text-xs">
+          <span className="font-medium text-muted-foreground">Used volume</span>
+          <span className="font-semibold text-brand-navy">
+            {placedCbm.toFixed(2)} / {pack.container.capCbm} m³ · {util.toFixed(0)}%
+          </span>
+        </div>
+        <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-muted">
+          <div className={cn("h-full transition-all", utilColor)} style={{ width: `${util}%` }} />
+        </div>
+        {partial && (
+          <div className="mt-1 text-[10px] text-amber-700 dark:text-amber-400">
+            of {totalCbm.toFixed(2)} m³ requested · {unloadedCbm.toFixed(2)} m³ unloaded
+          </div>
+        )}
+      </div>
+      <Stat
+        label="Weight"
+        value={`${placedKg.toLocaleString("en-IN", { maximumFractionDigits: 0 })} kg`}
+        hint={
+          partial && totalKg > placedKg
+            ? `of ${totalKg.toLocaleString("en-IN", { maximumFractionDigits: 0 })} kg requested`
+            : undefined
+        }
+      />
+      <Stat label="Packages loaded" value={`${pack.placedCartons} / ${pack.totalCartons}`} />
+    </div>
+  );
+}
+
+function Stat({ label, value, hint }: { label: string; value: string; hint?: string }) {
+  return (
+    <div className="rounded-md bg-muted/40 px-2.5 py-1.5">
+      <div className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+        {label}
+      </div>
+      <div className="text-sm font-semibold text-brand-navy">{value}</div>
+      {hint && (
+        <div className="mt-0.5 text-[10px] text-amber-700 dark:text-amber-400">{hint}</div>
+      )}
+    </div>
+  );
+}
+
+function EmptyState() {
+  return (
+    <div className="flex flex-col items-center justify-center gap-3 rounded-lg border-2 border-dashed border-muted-foreground/20 px-4 py-10 text-center">
+      <Package className="size-8 text-muted-foreground/40" />
+      <div className="text-sm font-medium text-muted-foreground">
+        Add cartons to generate loading plan
+      </div>
+    </div>
+  );
+}
+
+function Legend({ items }: { items: CbmItem[] }) {
+  const visible = items.filter(
+    (it) => it.length > 0 && it.width > 0 && it.height > 0 && it.qty > 0,
+  );
+  if (visible.length === 0) return null;
+  return (
+    <div className="grid gap-1.5 sm:grid-cols-2">
+      {visible.map((it, idx) => {
+        const origIdx = items.indexOf(it);
+        const color = ITEM_COLORS[origIdx % ITEM_COLORS.length];
+        return (
+          <div
+            key={it.id}
+            className="flex items-center gap-2 rounded-md bg-muted/30 px-2 py-1 text-xs"
+          >
+            <span
+              className="size-3 shrink-0 rounded-sm"
+              style={{ background: color }}
+              aria-hidden
+            />
+            <span className="font-medium text-brand-navy">Item {idx + 1}</span>
+            <span className="text-muted-foreground">
+              {it.length}×{it.width}×{it.height} cm × {it.qty} pcs
+              {it.weight > 0 ? ` · ${it.weight} kg` : ""}
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+

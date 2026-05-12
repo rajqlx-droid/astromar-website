@@ -1,6 +1,4 @@
-﻿"use client"
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+"use client"
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
@@ -39,7 +37,6 @@ const OceanFreight = () => {
         description="Global ocean freight services from India — FCL, LCL, breakbulk, and reefer shipments across all major trade lanes. Competitive rates, real-time tracking."
         ogImage="/og-freight.jpg"
       />
-      <Header />
 
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
@@ -58,10 +55,10 @@ const OceanFreight = () => {
             {/* Left — text */}
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">OCEAN FREIGHT</p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Global Ocean Freight Services from India
               </h1>
-              <p className="text-white/85 text-sm md:text-base leading-relaxed mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 Whether you're shipping a single pallet or full containers, AstroMar Logistics offers reliable ocean freight
                 solutions across 150+ global ports. FCL, LCL, breakbulk, and reefer — we handle it all with competitive rates
                 and end-to-end visibility.
@@ -161,7 +158,7 @@ const OceanFreight = () => {
       </section>
 
       {/* ── Section 3: Trade Lanes Table ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">GLOBAL REACH</p>
@@ -170,7 +167,7 @@ const OceanFreight = () => {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.05}>
-            <div className="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+            <div className="border border-[#1B3A6B]/15 rounded-xl overflow-hidden shadow-sm">
               {/* Header */}
               <div className="grid grid-cols-4 bg-[#0a1628] text-white text-sm font-semibold">
                 <div className="p-4 border-r border-white/10">Route</div>
@@ -184,9 +181,9 @@ const OceanFreight = () => {
                   key={lane.route}
                   className={`grid grid-cols-4 text-sm ${i % 2 === 0 ? "bg-white" : "bg-[#eef2f7]"}`}
                 >
-                  <div className="p-4 border-r border-gray-200 font-semibold text-foreground">{lane.route}</div>
-                  <div className="p-4 border-r border-gray-200 text-foreground/80">{lane.origin}</div>
-                  <div className="p-4 border-r border-gray-200 text-foreground/80">{lane.destination}</div>
+                  <div className="p-4 border-r border-[#1B3A6B]/15 font-semibold text-foreground">{lane.route}</div>
+                  <div className="p-4 border-r border-[#1B3A6B]/15 text-foreground/80">{lane.origin}</div>
+                  <div className="p-4 border-r border-[#1B3A6B]/15 text-foreground/80">{lane.destination}</div>
                   <div className="p-4 font-semibold text-primary">{lane.transit}</div>
                 </div>
               ))}
@@ -225,7 +222,7 @@ const OceanFreight = () => {
       </section>
 
       {/* ── Section 5: Stats Row ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">PORT COVERAGE</p>
@@ -241,7 +238,7 @@ const OceanFreight = () => {
               { value: "24/7",    label: "Shipment Tracking",   desc: "Real-time cargo visibility"         },
             ].map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.07}>
-                <div className="bg-white rounded-xl border border-gray-200 p-6 text-center shadow-sm h-full">
+                <div className="bg-white rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">
                   <p className="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">{stat.value}</p>
                   <p className="text-base font-bold text-foreground mb-1">{stat.label}</p>
                   <p className="text-xs text-foreground/60 leading-relaxed">{stat.desc}</p>
@@ -264,7 +261,7 @@ const OceanFreight = () => {
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.07}>
-                <div className="border-l-4 border-orange-500 bg-slate-50 rounded-r-xl p-6 h-full">
+                <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
                 </div>
@@ -276,7 +273,6 @@ const OceanFreight = () => {
 
       <CTASection />
 
-      <Footer />
       <WhatsAppButton />
     </>
   );

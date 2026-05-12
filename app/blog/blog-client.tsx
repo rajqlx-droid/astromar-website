@@ -1,10 +1,8 @@
-﻿"use client"
+"use client"
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -39,7 +37,6 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead />
-      <Header />
 
       {/* Hero */}
       <section className="relative bg-brand-navy py-20 overflow-hidden">
@@ -59,10 +56,10 @@ const Blog = () => {
               <span className="text-sm font-bold tracking-[0.2em] uppercase text-orange-500 mb-4 block">
                 RESOURCES & INSIGHTS
               </span>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Logistics Blog
               </h1>
-              <p className="text-white/80 max-w-lg mb-8 text-base sm:text-lg">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 Expert guides and practical tools for importers, exporters, and logistics professionals.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -273,7 +270,6 @@ const Blog = () => {
       )}
 
       <CTASection />
-      <Footer />
       <WhatsAppButton />
     </div>
   );

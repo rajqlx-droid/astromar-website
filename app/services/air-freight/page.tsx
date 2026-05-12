@@ -1,7 +1,5 @@
-﻿"use client"
+"use client"
 import { useState, useRef } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
@@ -47,7 +45,6 @@ const AirFreight = () => {
         description="Express and standard air freight from India to 200+ destinations. Time-critical, temperature-controlled, and charter air cargo with real-time tracking."
         ogImage="/og-freight.jpg"
       />
-      <Header />
 
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
@@ -65,10 +62,10 @@ const AirFreight = () => {
 
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">AIR FREIGHT</p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Air Freight Services from India to the World
               </h1>
-              <p className="text-white/85 text-sm md:text-base leading-relaxed mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 When speed matters, trust AstroMar's air freight solutions. From express next-day delivery to charter
                 services for oversized cargo, we connect India to 100+ destinations worldwide with reliable,
                 trackable air cargo.
@@ -121,7 +118,7 @@ const AirFreight = () => {
           <div className="space-y-3">
             {accordionItems.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.06}>
-                <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                <div className="rounded-xl overflow-hidden border border-[#1B3A6B]/15 shadow-sm">
                   <button
                     onClick={() => setOpenIndex(openIndex === i ? null : i)}
                     className="w-full flex items-center justify-between gap-4 bg-[#0a1628] text-white px-5 py-4 text-left hover:bg-[#0d1f38] transition-colors"
@@ -130,7 +127,7 @@ const AirFreight = () => {
                     <ChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`} />
                   </button>
                   {openIndex === i && (
-                    <div className="bg-slate-50 border-l-4 border-[#f97316] px-5 py-4">
+                    <div className="bg-brand-light border-l-4 border-[#f97316] px-5 py-4">
                       <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
                     </div>
                   )}
@@ -142,7 +139,7 @@ const AirFreight = () => {
       </section>
 
       {/* ── S3: Stats ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">AIR NETWORK</p>
@@ -158,7 +155,7 @@ const AirFreight = () => {
               { value: "24/7",  label: "Support",       desc: "Real-time updates"     },
             ].map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 0.07}>
-                <div className="bg-white rounded-xl border border-gray-200 p-6 text-center shadow-sm h-full">
+                <div className="bg-white rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">
                   <p className="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">{s.value}</p>
                   <p className="text-base font-bold text-foreground mb-1">{s.label}</p>
                   <p className="text-xs text-foreground/60 leading-relaxed">{s.desc}</p>
@@ -181,7 +178,7 @@ const AirFreight = () => {
           <div className="relative">
             <button
               onClick={() => scroll("left")}
-              className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full shadow-md p-2 hover:bg-slate-50 transition-colors hidden md:flex"
+              className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-[#1B3A6B]/15 rounded-full shadow-md p-2 hover:bg-brand-light transition-colors hidden md:flex"
             >
               <ChevronLeft className="w-5 h-5 text-foreground" />
             </button>
@@ -190,7 +187,7 @@ const AirFreight = () => {
               className="flex gap-4 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory"
             >
               {destinations.map((d) => (
-                <div key={d.region} className="snap-start min-w-[260px] sm:min-w-[280px] bg-slate-50 border border-gray-200 rounded-xl p-6 shrink-0">
+                <div key={d.region} className="snap-start min-w-[260px] sm:min-w-[280px] bg-brand-light border border-[#1B3A6B]/15 rounded-xl p-6 shrink-0">
                   <p className="text-base font-bold text-foreground mb-1">{d.region}</p>
                   <p className="text-sm text-foreground/70 mb-3 leading-relaxed">{d.hubs}</p>
                   <span className="inline-block text-xs font-semibold text-orange-500 bg-orange-50 border border-orange-200 rounded-full px-3 py-1">
@@ -201,7 +198,7 @@ const AirFreight = () => {
             </div>
             <button
               onClick={() => scroll("right")}
-              className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full shadow-md p-2 hover:bg-slate-50 transition-colors hidden md:flex"
+              className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-[#1B3A6B]/15 rounded-full shadow-md p-2 hover:bg-brand-light transition-colors hidden md:flex"
             >
               <ChevronRight className="w-5 h-5 text-foreground" />
             </button>
@@ -210,7 +207,7 @@ const AirFreight = () => {
       </section>
 
       {/* ── S5: Image + Text ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
@@ -264,7 +261,7 @@ const AirFreight = () => {
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.07}>
-                <div className="border-l-4 border-orange-500 bg-slate-50 rounded-r-xl p-6 h-full">
+                <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
                 </div>
@@ -276,7 +273,6 @@ const AirFreight = () => {
 
       <CTASection />
 
-      <Footer />
       <WhatsAppButton />
     </>
   );

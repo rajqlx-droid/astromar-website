@@ -1,18 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
+  transpilePackages: ['three', '@react-three/fiber', '@react-three/drei'],
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'eenumepuujkrnartejsh.supabase.co',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
+      { protocol: 'https', hostname: 'eenumepuujkrnartejsh.supabase.co' },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
   },
 }
 
-export default nextConfig
+export default nextConfig;

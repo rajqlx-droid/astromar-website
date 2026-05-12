@@ -1,11 +1,9 @@
-﻿"use client"
+"use client"
 import { useRef, useState, useCallback } from "react";
 import { CheckCircle2, ArrowRight, Warehouse, Snowflake, Globe, FileCheck, Thermometer, BarChart3, Package, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CTASection from "@/components/CTASection";
@@ -78,7 +76,6 @@ const FTWZServices = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead />
-      <Header />
 
       {/* Hero */}
       <section className="relative bg-brand-navy py-20 overflow-hidden">
@@ -107,7 +104,7 @@ const FTWZServices = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-5 leading-tight"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight"
               >
                 FTWZ Warehousing in India — Duty-Free Storage Solutions
               </motion.h1>
@@ -416,7 +413,6 @@ const FTWZServices = () => {
 
       <CTASection />
 
-      <Footer />
       <WhatsAppButton />
     </div>
   );

@@ -11,7 +11,7 @@ const HeroSection = () => {
     <section className="relative w-full min-h-screen flex items-start pb-20 overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
-        alt="Container port aerial view"
+        alt="Astromar Logistics — freight forwarder and FTWZ operator India, container port aerial view"
         fill
         className="absolute inset-0 z-0 object-cover w-full h-full"
         unoptimized
@@ -49,8 +49,8 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold leading-tight mb-6"
           >
-            <span className="text-primary-foreground">Global Logistics Solutions with </span>
-            <span className="text-brand-orange">Seamless Innovation</span>
+            <span className="text-primary-foreground">India's Leading Freight Forwarder & </span>
+            <span className="text-brand-orange">FTWZ Operator</span>
           </motion.h1>
 
           <motion.p

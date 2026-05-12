@@ -1,7 +1,5 @@
-﻿"use client"
+"use client"
 import { useState, useRef } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
@@ -47,7 +45,6 @@ const Warehousing = () => {
         description="Scalable warehousing across India — general, cold storage, bonded, and fulfillment. Real-time WMS, value-added services, and 24/7 security."
         ogImage="/og-home.jpg"
       />
-      <Header />
 
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
@@ -65,10 +62,10 @@ const Warehousing = () => {
 
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">WAREHOUSING</p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Warehousing & Storage Solutions Across India
               </h1>
-              <p className="text-white/85 text-sm md:text-base leading-relaxed mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 From a single pallet to 5 lakh+ sq ft of dedicated FTWZ space, AstroMar provides flexible warehousing
                 solutions with real-time inventory management, value-added services, and multi-temperature capabilities
                 across India's key logistics hubs.
@@ -126,7 +123,7 @@ const Warehousing = () => {
               { value: "24/7", label: "Security",      desc: "CCTV & access control"      },
             ].map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 0.07}>
-                <div className="bg-slate-50 rounded-xl border border-gray-200 p-6 text-center shadow-sm h-full">
+                <div className="bg-brand-light rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">
                   <p className="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">{s.value}</p>
                   <p className="text-base font-bold text-foreground mb-1">{s.label}</p>
                   <p className="text-xs text-foreground/60 leading-relaxed">{s.desc}</p>
@@ -138,7 +135,7 @@ const Warehousing = () => {
       </section>
 
       {/* ── S3: Image + Text ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
@@ -192,7 +189,7 @@ const Warehousing = () => {
           <div className="space-y-3">
             {accordionItems.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.06}>
-                <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                <div className="rounded-xl overflow-hidden border border-[#1B3A6B]/15 shadow-sm">
                   <button
                     onClick={() => setOpenIndex(openIndex === i ? null : i)}
                     className="w-full flex items-center justify-between gap-4 bg-[#0a1628] text-white px-5 py-4 text-left hover:bg-[#0d1f38] transition-colors"
@@ -201,7 +198,7 @@ const Warehousing = () => {
                     <ChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`} />
                   </button>
                   {openIndex === i && (
-                    <div className="bg-slate-50 border-l-4 border-[#f97316] px-5 py-4">
+                    <div className="bg-brand-light border-l-4 border-[#f97316] px-5 py-4">
                       <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
                     </div>
                   )}
@@ -213,7 +210,7 @@ const Warehousing = () => {
       </section>
 
       {/* ── S5: Location Carousel ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">LOCATIONS</p>
@@ -224,7 +221,7 @@ const Warehousing = () => {
           <div className="relative">
             <button
               onClick={() => scroll("left")}
-              className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full shadow-md p-2 hover:bg-slate-50 transition-colors hidden md:flex"
+              className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-[#1B3A6B]/15 rounded-full shadow-md p-2 hover:bg-brand-light transition-colors hidden md:flex"
             >
               <ChevronLeft className="w-5 h-5 text-foreground" />
             </button>
@@ -233,7 +230,7 @@ const Warehousing = () => {
               className="flex gap-4 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory"
             >
               {locationCards.map((loc) => (
-                <div key={loc.city} className="snap-start min-w-[240px] sm:min-w-[260px] bg-white border border-gray-200 rounded-xl p-5 shrink-0 shadow-sm">
+                <div key={loc.city} className="snap-start min-w-[240px] sm:min-w-[260px] bg-white border border-[#1B3A6B]/15 rounded-xl p-5 shrink-0 shadow-sm">
                   <p className="text-base font-bold text-foreground mb-2">{loc.city}</p>
                   <span className="inline-block text-xs font-semibold text-orange-500 bg-orange-50 border border-orange-200 rounded-full px-3 py-1 mb-3">
                     {loc.type}
@@ -249,7 +246,7 @@ const Warehousing = () => {
             </div>
             <button
               onClick={() => scroll("right")}
-              className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-200 rounded-full shadow-md p-2 hover:bg-slate-50 transition-colors hidden md:flex"
+              className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-white border border-[#1B3A6B]/15 rounded-full shadow-md p-2 hover:bg-brand-light transition-colors hidden md:flex"
             >
               <ChevronRight className="w-5 h-5 text-foreground" />
             </button>
@@ -269,7 +266,7 @@ const Warehousing = () => {
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.07}>
-                <div className="border-l-4 border-orange-500 bg-slate-50 rounded-r-xl p-6 h-full">
+                <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
                 </div>
@@ -281,7 +278,6 @@ const Warehousing = () => {
 
       <CTASection />
 
-      <Footer />
       <WhatsAppButton />
     </>
   );

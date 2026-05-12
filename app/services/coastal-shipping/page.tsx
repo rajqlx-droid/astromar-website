@@ -1,7 +1,5 @@
-﻿"use client"
+"use client"
 import { useState } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SEOHead from "@/components/SEOHead";
@@ -59,7 +57,6 @@ const CoastalShipping = () => {
         description="Cost-effective domestic coastal shipping across India's major ports. Save up to 40% on transport costs with eco-friendly sea freight — bulk, container, and project cargo."
         ogImage="/og-home.jpg"
       />
-      <Header />
 
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
@@ -78,10 +75,10 @@ const CoastalShipping = () => {
             {/* Left — text */}
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">COASTAL SHIPPING</p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Domestic Coastal Shipping Services Across India
               </h1>
-              <p className="text-white/85 text-sm md:text-base leading-relaxed mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 Move cargo efficiently along India's 7,500+ km coastline. Our coastal shipping services connect
                 all major and minor Indian ports, offering a greener, more cost-effective alternative to road and
                 rail freight for bulk, containerized, and project cargo.
@@ -215,7 +212,7 @@ const CoastalShipping = () => {
       </section>
 
       {/* ── Section 3: Route Table ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">ROUTE NETWORK</p>
@@ -224,7 +221,7 @@ const CoastalShipping = () => {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.05}>
-            <div className="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+            <div className="border border-[#1B3A6B]/15 rounded-xl overflow-hidden shadow-sm">
               {/* Header */}
               <div className="grid grid-cols-4 bg-[#0a1628] text-white text-sm font-semibold">
                 <div className="p-4 border-r border-white/10">Route</div>
@@ -238,9 +235,9 @@ const CoastalShipping = () => {
                   key={r.route}
                   className={`grid grid-cols-4 text-sm ${i % 2 === 0 ? "bg-white" : "bg-slate-100"}`}
                 >
-                  <div className="p-4 border-r border-gray-200 font-semibold text-foreground">{r.route}</div>
-                  <div className="p-4 border-r border-gray-200 text-foreground/80">{r.origin}</div>
-                  <div className="p-4 border-r border-gray-200 text-foreground/80">{r.destination}</div>
+                  <div className="p-4 border-r border-[#1B3A6B]/15 font-semibold text-foreground">{r.route}</div>
+                  <div className="p-4 border-r border-[#1B3A6B]/15 text-foreground/80">{r.origin}</div>
+                  <div className="p-4 border-r border-[#1B3A6B]/15 text-foreground/80">{r.destination}</div>
                   <div className="p-4 font-semibold text-primary">{r.transit}</div>
                 </div>
               ))}
@@ -266,7 +263,7 @@ const CoastalShipping = () => {
               { value: "Eco",  label: "Friendly",       desc: "Lower carbon footprint"         },
             ].map((stat, i) => (
               <ScrollReveal key={stat.label} delay={i * 0.07}>
-                <div className="bg-slate-50 rounded-xl border border-gray-200 p-6 text-center shadow-sm h-full">
+                <div className="bg-brand-light rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">
                   <p className="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">{stat.value}</p>
                   <p className="text-base font-bold text-foreground mb-1">{stat.label}</p>
                   <p className="text-xs text-foreground/60 leading-relaxed">{stat.desc}</p>
@@ -278,7 +275,7 @@ const CoastalShipping = () => {
       </section>
 
       {/* ── Section 5: Accordion — Cargo Types ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-light">
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CARGO TYPES</p>
@@ -289,7 +286,7 @@ const CoastalShipping = () => {
           <div className="space-y-3">
             {accordionItems.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.06}>
-                <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                <div className="rounded-xl overflow-hidden border border-[#1B3A6B]/15 shadow-sm">
                   {/* Header */}
                   <button
                     onClick={() => toggle(i)}
@@ -325,7 +322,7 @@ const CoastalShipping = () => {
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.07}>
-                <div className="border-l-4 border-orange-500 bg-slate-50 rounded-r-xl p-6 h-full">
+                <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
                 </div>
@@ -337,7 +334,6 @@ const CoastalShipping = () => {
 
       <CTASection />
 
-      <Footer />
       <WhatsAppButton />
     </>
   );
