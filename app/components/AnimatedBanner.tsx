@@ -310,7 +310,7 @@ export default function AnimatedBanner() {
         </p>
 
         <button
-          onClick={() => router.push("/tools")}
+          onClick={() => router.push("/freight-intelligence")}
           className="shrink-0 rounded-full px-4 py-1.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 hover:scale-105 active:scale-95 drop-shadow"
           style={{ background: "white", color: "#1B3A6B" }}
         >
