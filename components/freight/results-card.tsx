@@ -59,10 +59,11 @@ export function ResultsCard({ result, inputsTable, resolveExtras, extras, pdfDis
           disabled={!!pdfDisabledReason}
           title={pdfDisabledReason ?? "Download PDF report"}
           aria-label="Download PDF report"
-          className="no-print inline-flex h-8 w-8 items-center justify-center rounded-md text-white shadow-sm transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+          className="no-print inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-white text-xs font-semibold shadow-sm transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
           style={{ background: "#F97316" }}
         >
-          <Download className="size-4" />
+          <Download className="size-3.5" />
+          PDF
         </button>
       </div>
 

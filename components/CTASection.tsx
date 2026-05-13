@@ -78,7 +78,7 @@ export default function CTASection() {
           <Link
             href="/freight-intelligence"
             className="font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:opacity-90 hover:shadow-md"
-            style={{ background: "#0f1f3d", color: "white", border: "1px solid #F97316" }}
+            style={{ background: "white", color: "#111", border: "2px solid #0E70C0" }}
           >
             Explore Tools
           </Link>
