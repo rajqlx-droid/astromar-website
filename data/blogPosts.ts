@@ -26,6 +26,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "benefits-of-setting-up-a-warehouse-in-a-free-trade-warehousing-zone-ftwz-in-india",
+    thumbnail: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800",
+    title: "'Benefits of Setting Up a Warehouse in a Free Trade Warehousing Zone (FTWZ) in India'",
+    excerpt: "Free Trade Warehousing Zones (FTWZs) offer significant advantages for businesses looking to optimize their supply chain operations in India....",
+    category: "FTWZ",
+    readTime: "8 min read",
+    date: "2026-05-13",
+    featured: false,
+    metaDescription: "Free Trade Warehousing Zones (FTWZs) offer significant advantages for businesses looking to optimize their supply chain operations in India.",
+    content: [
+    "Free Trade Warehousing Zones (FTWZs) offer significant advantages for businesses looking to optimize their supply chain operations in India.",
+    "FTWZs provide customs duty exemption on goods stored within the zone, allowing businesses to defer duty payments until goods enter the domestic market.",
+    "Companies operating in FTWZs benefit from streamlined documentation, reduced transaction costs, and faster clearance procedures.",
+    "The strategic location of FTWZs near ports and airports ensures efficient movement of goods both domestically and internationally.",
+    "Astromar Freezone provides world-class warehousing infrastructure with temperature-controlled storage, advanced security systems, and seamless connectivity to major trade routes."
+],
+    faqs: []
+  },
+
+  {
     slug: "what-is-ftwz-complete-guide",
     thumbnail: ftwzImg,
     title: "What is FTWZ? A Complete Guide to Free Trade Warehousing Zones in India",
