@@ -15,7 +15,7 @@ export default function sitemap() {
     { url: 'https://astromarfreezone.com/ftwz-services', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: 'https://astromarfreezone.com/freight-intelligence', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: 'https://astromarfreezone.com/contact', lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.6 },
-    { url: 'https://astromarfreezone.com/blogs', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://astromarfreezone.com/blog', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
     { url: 'https://astromarfreezone.com/services/ocean-freight', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: 'https://astromarfreezone.com/services/air-freight', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: 'https://astromarfreezone.com/services/coastal-shipping', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
