@@ -122,7 +122,7 @@ const FTWZServices = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="flex flex-wrap gap-4"
               >
-                <a href="/contact" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-colors">
+                <a href="/contact-us" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-colors">
                   Get More Information →
                 </a>
                 <a href="#benefits" className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white text-white font-semibold hover:bg-white/10 transition-colors">

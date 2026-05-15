@@ -5,23 +5,23 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "FTWZ", href: "/ftwz-services" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Services", href: "/free-trade-zone-services" },
+  { label: "FTWZ", href: "/free-trade-zone" },
   { label: "Tools", href: "/freight-intelligence" },
-  { label: "Contact Us", href: "/contact" },
-  { label: "FTWZ Guide", href: "/ftwz-services" },
+  { label: "Contact Us", href: "/contact-us" },
+  { label: "FTWZ Guide", href: "/free-trade-zone" },
 ];
 
 const serviceLinks = [
-  { label: "FTWZ", href: "/ftwz-services" },
-  { label: "Coastal Shipping", href: "/services/coastal-shipping" },
-  { label: "Ocean Freight", href: "/services/ocean-freight" },
-  { label: "Air Freight", href: "/services/air-freight" },
-  { label: "Supply Chain", href: "/services/supply-chain" },
-  { label: "Custom Clearance", href: "/services/custom-clearance" },
-  { label: "Warehousing", href: "/services/warehousing" },
-  { label: "Projects", href: "/services/projects" },
+  { label: "FTWZ", href: "/free-trade-zone" },
+  { label: "Coastal Shipping", href: "/coastal-shipping-free-trade-zone" },
+  { label: "Ocean Freight", href: "/free-trade-zone-services/ocean-freight" },
+  { label: "Air Freight", href: "/free-trade-zone-services/air-freight" },
+  { label: "Supply Chain", href: "/free-trade-zone-services/supply-chain" },
+  { label: "Custom Clearance", href: "/free-trade-zone-services/custom-clearance" },
+  { label: "Warehousing", href: "/free-trade-zone-services/warehousing" },
+  { label: "Projects", href: "/free-trade-zone-services/projects" },
 ];
 
 const Footer = () => {

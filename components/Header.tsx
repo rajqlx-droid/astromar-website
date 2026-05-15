@@ -7,10 +7,10 @@ import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "FTWZ", href: "/ftwz-services" },
-  { label: "Contact", href: "/contact" },
+  { label: "About", href: "/about-us" },
+  { label: "Services", href: "/free-trade-zone-services" },
+  { label: "FTWZ", href: "/free-trade-zone" },
+  { label: "Contact", href: "/contact-us" },
 ];
 
 const Header = () => {

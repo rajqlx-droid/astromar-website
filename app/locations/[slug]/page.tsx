@@ -197,7 +197,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16">
           <div className="max-w-7xl mx-auto">
-            <Link href="/contact" className="inline-flex items-center gap-2 text-white hover:text-[#F97316] text-sm mb-8 transition-colors group">
+            <Link href="/contact-us" className="inline-flex items-center gap-2 text-white hover:text-[#F97316] text-sm mb-8 transition-colors group">
               <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
               Back to Locations
             </Link>
@@ -233,7 +233,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                     Get Directions
                   </a>
                   <a
-                    href="/contact"
+                    href="/contact-us"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all hover:opacity-90"
                     style={{ background: "white", color: "#0f1f3d" }}
                   >
