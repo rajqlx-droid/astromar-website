@@ -85,7 +85,7 @@ const CoastalShipping = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="/contact"
+                  href="/contact-us"
                   className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors"
                 >
                   Get a Quote <ArrowRight className="w-4 h-4" />
@@ -117,7 +117,7 @@ const CoastalShipping = () => {
                   ))}
                 </div>
                 <a
-                  href="/contact"
+                  href="/contact-us"
                   className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors"
                 >
                   Get Instant Quote <ArrowRight className="w-4 h-4" />

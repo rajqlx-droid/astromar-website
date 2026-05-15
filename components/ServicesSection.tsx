@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import { useState } from "react";
 import {
   FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box, Combine,
@@ -89,17 +89,17 @@ const ServicesSection = () => {
               href="/free-trade-zone-services"
               className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition"
             >
-              View All Services →
+              View All Services ?
             </Link>
           </div>
         </div>
       </section>
 
-      {/* FTWZ Overview — image with overlay and text */}
+      {/* FTWZ Overview � image with overlay and text */}
       <section id="ftwz" className="relative overflow-hidden min-h-[500px] flex items-center">
         <img
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
-          alt="FTWZ bonded warehouse facility India – Astromar Logistics"
+          alt="FTWZ bonded warehouse facility India � Astromar Logistics"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/75" />
@@ -115,7 +115,7 @@ const ServicesSection = () => {
                   India's Most Flexible Duty-Free Storage Solution
                 </h2>
                 <p className="text-white/90 leading-relaxed text-base mb-8">
-                  Store imported goods without paying customs duty or GST until final disposition. Re-export globally, consolidate shipments, or defer domestic clearance — all from Astromar's pan-India FTWZ network.
+                  Store imported goods without paying customs duty or GST until final disposition. Re-export globally, consolidate shipments, or defer domestic clearance � all from Astromar's pan-India FTWZ network.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
@@ -135,7 +135,7 @@ const ServicesSection = () => {
               {/* RIGHT - Stats Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                  <p className="text-4xl font-extrabold text-accent mb-2">₹0</p>
+                  <p className="text-4xl font-extrabold text-accent mb-2">?0</p>
                   <p className="text-white/80 text-sm font-semibold">Customs Duty</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
@@ -199,7 +199,7 @@ const ServicesSection = () => {
                         ? "bg-accent text-white"
                         : "bg-primary/10 text-primary"
                     }`}>
-                      {openIndex === i ? "−" : "+"}
+                      {openIndex === i ? "-" : "+"}
                     </div>
                   </button>
                   {openIndex === i && (
@@ -232,7 +232,7 @@ const ServicesSection = () => {
               </div>
               <div className="absolute bottom-4 left-4 right-4 bg-brand-navy/80 rounded-lg p-4">
                 <p className="text-white font-bold text-sm mb-1">Astromar FTWZ Facility</p>
-                <p className="text-white/70 text-xs">Duty-free bonded warehouse • Pan-India network</p>
+                <p className="text-white/70 text-xs">Duty-free bonded warehouse � Pan-India network</p>
               </div>
             </div>
           </div>

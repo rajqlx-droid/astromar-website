@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next'
+import { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -213,7 +213,7 @@ export default async function BlogArticlePage({ params }: Props) {
           <h3 className="text-2xl font-bold text-white mb-3">Need FTWZ Warehousing or Freight Support?</h3>
           <p className="text-blue-200 mb-6">Talk to our logistics experts — free consultation, no commitment.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-orange-500 hover:bg-orange-500 text-white font-semibold px-8 py-3 rounded-xl transition-colors">Request a Consultation</Link>
+            <Link href="/contact-us" className="bg-orange-500 hover:bg-orange-500 text-white font-semibold px-8 py-3 rounded-xl transition-colors">Request a Consultation</Link>
             <Link href="/freight-intelligence" className="border border-white/40 hover:bg-white/10 text-white font-semibold px-8 py-3 rounded-xl transition-colors">Try Free Calculators</Link>
           </div>
         </div>

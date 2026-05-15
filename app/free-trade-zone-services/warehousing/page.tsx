@@ -71,7 +71,7 @@ const Warehousing = () => {
                 across India's key logistics hubs.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="/contact" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
+                <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
                   Get a Quote <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#services" className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -96,7 +96,7 @@ const Warehousing = () => {
                     </div>
                   ))}
                 </div>
-                <a href="/contact" className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
+                <a href="/contact-us" className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
                   Get Warehousing Rates <ArrowRight className="w-4 h-4" />
                 </a>
               </div>

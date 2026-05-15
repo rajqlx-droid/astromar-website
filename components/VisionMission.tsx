@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import { Eye, Target } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 

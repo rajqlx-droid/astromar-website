@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -11,7 +11,7 @@ const HeroSection = () => {
     <section className="relative w-full min-h-screen flex items-start pb-20 overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
-        alt="Astromar Logistics — freight forwarder and FTWZ operator India, container port aerial view"
+        alt="Astromar Logistics � freight forwarder and FTWZ operator India, container port aerial view"
         fill
         className="absolute inset-0 z-0 object-cover w-full h-full"
         unoptimized
@@ -21,7 +21,7 @@ const HeroSection = () => {
 
       <div className="w-full px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-start min-h-[90vh] relative z-20 pt-24">
 
-        {/* LEFT COLUMN — hero text */}
+        {/* LEFT COLUMN � hero text */}
         <div className="flex flex-col justify-center max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -85,7 +85,7 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* RIGHT COLUMN — compact contact form */}
+        {/* RIGHT COLUMN � compact contact form */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -95,7 +95,7 @@ const HeroSection = () => {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-2xl w-full">
             {submitted ? (
               <div className="text-center py-8">
-                <div className="text-4xl mb-3">✓</div>
+                <div className="text-4xl mb-3">?</div>
                 <p className="text-white font-semibold text-lg">Thank you!</p>
                 <p className="text-white/60 text-sm mt-1">We will contact you within 24 hours.</p>
               </div>
@@ -177,7 +177,7 @@ const HeroSection = () => {
                     onClick={() => setSubmitted(true)}
                     className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors"
                   >
-                    Submit Enquiry →
+                    Submit Enquiry ?
                   </button>
 
                   <p className="text-white/40 text-xs text-center">No spam. We respond within 24 hours.</p>

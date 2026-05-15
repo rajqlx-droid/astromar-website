@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import { Phone, Mail, MapPin } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 

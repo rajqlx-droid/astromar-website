@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import { ArrowRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 

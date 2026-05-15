@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -79,7 +79,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
               </div>
             </div>
 
-            {/* Right column — glass form card */}
+            {/* Right column � glass form card */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3 md:p-5">
               <form onSubmit={handleSubmit} className="space-y-3">
 

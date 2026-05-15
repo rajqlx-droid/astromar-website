@@ -69,7 +69,7 @@ export default function CTASection() {
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/contact"
+            href="/contact-us"
             className="font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-orange-50 hover:shadow-md"
             style={{ background: "white", color: "#F97316", border: "1px solid #111" }}
           >

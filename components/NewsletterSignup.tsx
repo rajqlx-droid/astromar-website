@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import { useState } from "react";
 import { Send } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";

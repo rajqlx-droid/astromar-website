@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 import { MapPin, Box, Snowflake, Layers, Users, Clock } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
