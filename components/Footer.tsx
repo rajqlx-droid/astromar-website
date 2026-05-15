@@ -8,6 +8,7 @@ const quickLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Services", href: "/free-trade-zone-services" },
   { label: "FTWZ", href: "/free-trade-zone" },
+  { label: "Blog", href: "/blog" },
   { label: "Tools", href: "/freight-intelligence" },
   { label: "Contact Us", href: "/contact-us" },
   { label: "FTWZ Guide", href: "/free-trade-zone" },
@@ -111,3 +112,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
