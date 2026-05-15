@@ -8,6 +8,7 @@ const quickLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Services", href: "/free-trade-zone-services" },
   { label: "FTWZ", href: "/free-trade-zone" },
+  { label: "Blog", href: "/blogs" },
   { label: "Blog", href: "/blog" },
   { label: "Tools", href: "/freight-intelligence" },
   { label: "Contact Us", href: "/contact-us" },
@@ -16,6 +17,7 @@ const quickLinks = [
 
 const serviceLinks = [
   { label: "FTWZ", href: "/free-trade-zone" },
+  { label: "Blog", href: "/blogs" },
   { label: "Coastal Shipping", href: "/coastal-shipping-free-trade-zone" },
   { label: "Ocean Freight", href: "/free-trade-zone-services/ocean-freight" },
   { label: "Air Freight", href: "/free-trade-zone-services/air-freight" },

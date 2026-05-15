@@ -182,7 +182,7 @@ export default async function BlogArticlePage({ params }: Props) {
         <nav className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-10">
           <Link href="/" className="hover:text-blue-600">Home</Link>
           <span>/</span>
-          <Link href="/blog" className="hover:text-blue-600">Blog</Link>
+          <Link href="/blogs" className="hover:text-blue-600">Blog</Link>
           <span>/</span>
           <span className="text-gray-800 dark:text-gray-100">{article.category}</span>
         </nav>
@@ -220,7 +220,7 @@ export default async function BlogArticlePage({ params }: Props) {
 
         {/* Back to blog */}
         <div className="mt-10 text-center">
-          <Link href="/blog" className="text-blue-600 hover:underline text-sm">← Back to all articles</Link>
+          <Link href="/blogs" className="text-blue-600 hover:underline text-sm">← Back to all articles</Link>
         </div>
       </section>
     </main>
