@@ -86,7 +86,7 @@ const Blog = () => {
                     <span className="text-gray-400 text-xs">📅 Jan 2026</span>
                     <span className="text-gray-400 text-xs">• 18 min read</span>
                   </div>
-                  <a href="/blog/ftwz-customs-duty-gst" className="text-orange-500 text-sm font-semibold hover:text-orange-300">
+                  <a href="/blogs/ftwz-customs-duty-gst" className="text-orange-500 text-sm font-semibold hover:text-orange-300">
                     Read More →
                   </a>
                 </div>
@@ -124,7 +124,7 @@ const Blog = () => {
             <div className="grid lg:grid-cols-5 gap-6">
               {/* Large hero card with thumbnail */}
               <ScrollReveal className="lg:col-span-3">
-                <Link href={`/blog/${heroPost.slug}`} className="block group h-full">
+                <Link href={heroPost.externalUrl ?? `/blogs/${heroPost.slug}`} className="block group h-full">
                   <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                     <div className="relative h-48 sm:h-64 overflow-hidden">
                       <img
@@ -166,7 +166,7 @@ const Blog = () => {
                 <div className="lg:col-span-2 flex flex-col gap-6">
                   {otherFeatured.map((post, i) => (
                     <ScrollReveal key={post.slug} delay={i * 0.1} className="flex-1">
-                      <Link href={`/blog/${post.slug}`} className="block group h-full">
+                      <Link href={post.externalUrl ?? `/blogs/${post.slug}`} className="block group h-full">
                         <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                           <div className="relative h-32 overflow-hidden">
                             <img
@@ -222,7 +222,7 @@ const Blog = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {rest.map((post, i) => (
                 <ScrollReveal key={post.slug} delay={i * 0.08}>
-                  <Link href={`/blog/${post.slug}`} className="block group h-full">
+                  <Link href={post.externalUrl ?? `/blogs/${post.slug}`} className="block group h-full">
                     <article className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                       <div className="relative h-40 overflow-hidden">
                         <img

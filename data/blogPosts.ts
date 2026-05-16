@@ -22,6 +22,7 @@ export interface BlogPost {
   metaDescription: string;
   thumbnail: string;
   faqs?: BlogFAQ[];
+  externalUrl?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -236,6 +237,63 @@ export const blogPosts: BlogPost[] = [
         answer: "Landed cost is the total cost of getting imported goods to your warehouse door, including product cost, international freight, marine insurance, customs duty, IGST, port charges, CHA fees, inland transportation, and all handling charges.",
       },
     ],
+  },
+  {
+    slug: "ftwz-benefits-india",
+    title: "FTWZ Benefits | Free Trade Warehousing Zone India",
+    excerpt: "Explore key benefits of Free Trade Warehousing Zone in India including duty deferment, GST deferment, 100% foreign ownership, and cost-efficient global trade solutions.",
+    category: "FTWZ",
+    readTime: "8 min",
+    date: "2024-10-01",
+    featured: false,
+    thumbnail: "https://framerusercontent.com/images/9pdVpBVd9aQ5MSJj6013Uic0jk.jpg",
+    metaDescription: "Explore FTWZ benefits in India, offering duty deferment, tax advantages, cost-efficient storage, seamless customs processes, and easy global trade access for businesses.",
+    content: [
+      "Free Trade Warehousing Zone (FTWZ) in India offers businesses a range of advantages that streamline international trade and optimize supply chains.",
+      "Key benefits include duty deferment, GST exemptions, 100% foreign ownership, simplified customs process, and strategic locations near major ports.",
+      "Goods can be stored duty-free with no time constraints, allowing businesses to better manage inventory and meet fluctuating demand.",
+      "FTWZs offer specialized value-added services like repacking, labeling, kitting, and assembly for export-ready goods.",
+      "By utilizing Astromar FTWZ, your business can enjoy streamlined international trade processes and improved cost-efficiency.",
+    ],
+    externalUrl: "/ftwz-benefits-india",
+  },
+  {
+    slug: "freight-forwarding-logistics-chennai",
+    title: "Astromar Freezone: A Trusted Partner in Global Logistics and Trade",
+    excerpt: "Astromar Freezone is a trusted FTWZ and logistics company in Chennai offering duty-free warehousing, customs clearance, international freight forwarding, and end-to-end supply chain solutions.",
+    category: "Freight",
+    readTime: "6 min",
+    date: "2026-01-19",
+    featured: false,
+    thumbnail: "https://framerusercontent.com/images/yKvPYdR7oMxp1wk6JMblUZRufc.png",
+    metaDescription: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
+    content: [
+      "Chennai is one of India's most important logistics and trade hubs, connecting businesses to global markets through major seaports and airports.",
+      "Astromar Freezone is a trusted FTWZ and logistics company in Chennai offering Free Trade Warehousing Zone services and international freight forwarding.",
+      "Core services include FTWZ warehousing, storage near Chennai Port, import-export logistics, and cargo consolidation.",
+      "Astromar serves importers, exporters, manufacturing units in Tamil Nadu, traders, distributors, and e-commerce businesses.",
+      "With strategic location near Chennai Port and deep logistics expertise, Astromar helps businesses trade globally with confidence.",
+    ],
+    externalUrl: "/freight-forwarding-logistics-chennai",
+  },
+  {
+    slug: "ftwz-faqs",
+    title: "What is Free Trade Zone India | FTZ FAQs",
+    excerpt: "Discover answers to frequently asked questions about Free Trade Warehousing Zone in India — benefits, permitted activities, customs clearance timelines, and more.",
+    category: "FTWZ",
+    readTime: "5 min",
+    date: "2026-04-26",
+    featured: false,
+    thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    metaDescription: "Discover answers to frequently asked questions about Free Trade Zone in India — benefits, activities, customs clearance, and more.",
+    content: [
+      "FTWZ is a Special Category of Special Economic Zone — a dedicated platform for warehousing and trading governed by SEZ act 2005.",
+      "Businesses benefit from tax exemptions, duty-free imports and exports, and simplified customs procedures in FTWZs.",
+      "Permitted activities include warehousing, re-export, relabeling, packing, kitting, palletization, and assembly of goods.",
+      "Goods can be stored duty-free for 3 years, extendable up to 5 years with special permission.",
+      "Customs clearance through FTWZs is typically completed within 24 to 48 hours.",
+    ],
+    externalUrl: "/ftwz-faqs",
   },
 ];
 
