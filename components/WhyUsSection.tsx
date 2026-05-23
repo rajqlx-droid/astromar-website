@@ -15,6 +15,9 @@ const WhyUsSection = () => {
             <h2 className="text-3xl font-bold text-gray-900">
               Why Astromar Logistics
             </h2>
+            <p className="text-base text-foreground/70 leading-relaxed max-w-3xl mx-auto mt-4 text-center">
+              Strategically positioned Free Trade Zone in India facilities deliver duty deferral, bonded storage, and customs efficiency across India's major ports and inland corridors.
+            </p>
           </div>
         </ScrollReveal>
 
@@ -27,11 +30,10 @@ const WhyUsSection = () => {
             </div>
             <h3 className="text-gray-900 font-bold text-lg mb-3">Network Strength</h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-5">
-              8+ strategically located FTWZ facilities near major ports and airports across India,
-              enabling seamless multimodal connectivity for imports, exports, and domestic distribution.
+              Operating Free Trade Zone in India across 10 strategic locations gives you direct access to duty-free bonded storage near every major Indian port and inland corridor.
             </p>
             <div className="flex flex-col gap-2">
-              {["8+ locations pan-India", "Port & airport proximity", "Multimodal connectivity"].map((point) => (
+              {["10 locations pan-India", "Port & airport proximity", "Multimodal connectivity"].map((point) => (
                 <div key={point} className="flex items-center gap-2">
                   <span className="text-orange-500 text-sm">✓</span>
                   <span className="text-gray-700 text-sm">{point}</span>
@@ -63,7 +65,7 @@ const WhyUsSection = () => {
             {[
               { value: "7+",   label: "Years",     sub: "Of excellence" },
               { value: "500+", label: "Clients",   sub: "Served"        },
-              { value: "8+",   label: "Locations", sub: "Pan-India"     },
+              { value: "10",   label: "Locations", sub: "Pan-India"     },
               { value: "24/7", label: "Support",   sub: "Operations"    },
             ].map((s) => (
               <div key={s.label} className="bg-white border border-gray-200 rounded-xl p-4 text-center">

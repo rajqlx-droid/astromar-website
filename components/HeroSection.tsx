@@ -11,7 +11,7 @@ const HeroSection = () => {
     <section className="relative w-full min-h-screen flex items-start pb-20 overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
-        alt="Astromar Logistics � freight forwarder and FTWZ operator India, container port aerial view"
+        alt="Astromar Logistics — free trade warehousing zone operator and freight forwarder in India, container port aerial view"
         fill
         className="absolute inset-0 z-0 object-cover w-full h-full"
         unoptimized
@@ -38,7 +38,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-sm font-semibold tracking-[0.2em] uppercase text-primary-foreground/60 mb-4"
+            className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4"
           >
             ASTROMAR LOGISTICS PVT LTD
           </motion.p>
@@ -47,10 +47,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold leading-tight mb-6"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold leading-tight mb-6 text-primary-foreground"
           >
-            <span className="text-primary-foreground">India's Leading Freight Forwarder & </span>
-            <span className="text-brand-orange">FTWZ Operator</span>
+            Free Trade Warehousing Zone in India — Duty Free, GST-Deferred
           </motion.h1>
 
           <motion.p
@@ -59,8 +58,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-sm sm:text-base md:text-lg text-white/90 mb-10 leading-relaxed"
           >
-            Delivering dependable freight and supply chain solutions across air, sea, and multimodal
-            networks. Save customs duty &amp; GST with India's premier FTWZ network.
+            Trusted FTWZ operator delivering duty-free warehousing, customs clearance, and integrated logistics solutions. Save customs duty and GST while leveraging Astromar's premier free trade warehousing zone in India network across 10 strategic locations.
           </motion.p>
 
           <motion.div
@@ -70,7 +68,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row justify-start gap-4"
           >
             <a
-              href="#contact"
+              href="/contact-us"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 sm:px-8 py-4 text-base font-semibold text-primary-foreground hover:bg-primary/90 hover:scale-105 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)] transition-all duration-300"
             >
               Request a Consultation
@@ -95,7 +93,7 @@ const HeroSection = () => {
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-2xl w-full">
             {submitted ? (
               <div className="text-center py-8">
-                <div className="text-4xl mb-3">?</div>
+                <div className="text-4xl mb-3">✓</div>
                 <p className="text-white font-semibold text-lg">Thank you!</p>
                 <p className="text-white/60 text-sm mt-1">We will contact you within 24 hours.</p>
               </div>
@@ -177,7 +175,7 @@ const HeroSection = () => {
                     onClick={() => setSubmitted(true)}
                     className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors"
                   >
-                    Submit Enquiry ?
+                    Submit Enquiry →
                   </button>
 
                   <p className="text-white/40 text-xs text-center">No spam. We respond within 24 hours.</p>

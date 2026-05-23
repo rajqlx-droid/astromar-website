@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm leading-relaxed text-white/65">
-              ASTROMAR LOGISTICS PVT LTD – India's leading FTWZ operator offering duty-free storage, deferred customs duty, and GST benefits across 8+ strategic locations. Trusted by 500+ clients since 2017 for seamless end-to-end logistics.
+              ASTROMAR LOGISTICS PVT LTD – India's leading FTWZ operator offering duty-free storage, deferred customs duty, and GST benefits across 10 strategic locations. Trusted by 500+ clients since 2017 for seamless end-to-end logistics.
             </p>
           </div>
 

@@ -1,3 +1,12 @@
+# Astromar Logistics — robots.txt
+# https://astromarfreezone.com
+
+# All bots — full access except non-public paths
 User-agent: *
 Allow: /
+Disallow: /_next/
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
 Sitemap: https://astromarfreezone.com/sitemap.xml

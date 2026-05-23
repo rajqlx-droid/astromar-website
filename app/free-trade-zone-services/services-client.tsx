@@ -2,35 +2,28 @@
 import Image from "next/image";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CTASection from "@/components/CTASection";
-import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import { ArrowRight, FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box } from "lucide-react";
 
 const services = [
-  { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/ftwz-services" },
-  { icon: Ship, title: "Coastal Shipping", desc: "Domestic coastal cargo movement along India's extensive coastline, offering cost-effective and eco-friendly transport alternatives.", href: "/services/coastal-shipping" },
-  { icon: Ship, title: "Ocean Freight", desc: "Full container load (FCL) and less than container load (LCL) ocean freight services across major global trade routes.", href: "/services/ocean-freight" },
-  { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/services/air-freight" },
-  { icon: GitBranch, title: "Supply Chain", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/services/supply-chain" },
-  { icon: ClipboardCheck, title: "Custom Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/services/custom-clearance" },
-  { icon: Snowflake, title: "Warehousing", desc: "Secure, scalable warehousing solutions with real-time inventory management and value-added services.", href: "/services/warehousing" },
-  { icon: Box, title: "Projects", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/services/projects" },
+  { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/free-trade-zone" },
+  { icon: Ship, title: "Coastal Shipping", desc: "Domestic coastal cargo movement along India's extensive coastline, offering cost-effective and eco-friendly transport alternatives.", href: "/coastal-shipping-free-trade-zone" },
+  { icon: Ship, title: "Ocean Freight", desc: "Full container load (FCL) and less than container load (LCL) ocean freight services across major global trade routes.", href: "/free-trade-zone-services/ocean-freight" },
+  { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/free-trade-zone-services/air-freight" },
+  { icon: GitBranch, title: "Supply Chain", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/free-trade-zone-services/supply-chain" },
+  { icon: ClipboardCheck, title: "Custom Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/free-trade-zone-services/custom-clearance" },
+  { icon: Snowflake, title: "Warehousing", desc: "Secure, scalable warehousing solutions with real-time inventory management and value-added services.", href: "/free-trade-zone-services/warehousing" },
+  { icon: Box, title: "Projects", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/free-trade-zone-services/projects" },
 ];
 
 const Services = () => {
   return (
     <>
-      <SEOHead
-        title="Logistics Services | AstroMar Logistics"
-        description="Explore AstroMar's comprehensive logistics services — FTWZ warehousing, sea & air freight, customs clearance, cold storage, and supply chain solutions across India."
-        ogImage="/og-home.jpg"
-      />
-
       {/* Hero */}
       <section className="relative bg-brand-navy py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
-          alt="Logistics warehouse"
+          alt="Astromar Logistics — FTZ India logistics services with FTZ Warehouse network across 10 strategic locations"
           fill
           className="absolute inset-0 object-cover"
           unoptimized
@@ -38,17 +31,17 @@ const Services = () => {
         />
         <div className="absolute inset-0 bg-black/75" />
         <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center">
             {/* LEFT - Text */}
-            <div>
+            <div className="max-w-2xl">
               <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
                 OUR SERVICES
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Comprehensive Logistics Services
+                FTZ India — Freight, Customs & Warehousing
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end logistics solutions across India.
+                Astromar's FTZ India network delivers duty-free bonded warehousing, multimodal freight, customs clearance, and value-added services under one trusted partner.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -70,7 +63,7 @@ const Services = () => {
             {/* RIGHT - Stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">8+</p>
+                <p className="text-4xl font-extrabold text-accent mb-2">8</p>
                 <p className="text-white text-sm font-semibold">Service Types</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
@@ -90,16 +83,32 @@ const Services = () => {
         </div>
       </section>
 
+      {/* NEW Intro Section */}
+      <section className="py-14 bg-blue-50">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
+          <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">OUR SOLUTIONS</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+            End-to-End FTZ India Operations
+          </h2>
+          <p className="text-base sm:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            Astromar combines duty-free warehousing infrastructure with multimodal freight forwarding and customs expertise — letting you scale imports, exports, and re-export operations from a single trusted partner.
+          </p>
+        </div>
+      </section>
+
       {/* Services Grid */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-14 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+          <h2 className="text-xl sm:text-2xl font-bold text-foreground text-center mb-10">
+            Our Service Offerings
+          </h2>
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.06}>
                 <a href={s.href} className="block h-full">
                   <div
-                    className={`relative rounded-xl border bg-brand-light p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
-                      s.featured ? "border-primary" : "border-[#1B3A6B]/15"
+                    className={`relative rounded-xl border-2 bg-white p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col ${
+                      s.featured ? "border-primary" : "border-blue-200"
                     }`}
                   >
                     {s.featured && (
@@ -116,6 +125,103 @@ const Services = () => {
                   </div>
                 </a>
               </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Service Matrix Table */}
+      <section className="py-14 bg-blue-50 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+          <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3 text-center">COMPARE SERVICES</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
+            Choose the Right FTZ Warehouse Service
+          </h2>
+          <p className="text-base text-foreground/70 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
+            Compare our 8 services side-by-side to find the right FTZ Warehouse solution for your industry, cargo profile, and compliance needs.
+          </p>
+          <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
+            <div className="overflow-x-auto rounded-xl border border-gray-200">
+              <table className="w-full text-sm" style={{ borderCollapse: "collapse", minWidth: "640px" }}>
+              <thead>
+                <tr style={{ backgroundColor: "#f9fafb" }}>
+                  <th className="text-left px-4 py-3 font-semibold text-gray-700" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Feature</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>FTWZ</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Coastal</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Ocean</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Air</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Supply</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Customs</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Warehous.</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderBottom: "2px solid #e5e7eb" }}>Projects</th>
+                </tr>
+              </thead>
+              <tbody>
+                {([
+                  ["Duty-free storage", "✓", "✗", "✗", "✗", "✗", "✗", "partial", "✗"],
+                  ["Real-time tracking", "✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"],
+                  ["Customs handling", "✓", "add-on", "add-on", "add-on", "✓", "✓", "add-on", "✓"],
+                  ["Insurance available", "✓", "✓", "✓", "✓", "✓", "✓", "✓", "✓"],
+                  ["Value-add services", "✓", "✗", "✗", "✗", "✓", "✗", "✓", "partial"],
+                  ["Re-export suitable", "✓", "✗", "✓", "✓", "✓", "✓", "partial", "✓"],
+                  ["Cost tier", "$$", "$", "$$", "$$$", "$$", "$", "$$", "$$$"],
+                ] as const).map(([feature, ...cells], i, arr) => {
+                  const isLast = i === arr.length - 1;
+                  const rowBorder = isLast ? undefined : "1px solid #e5e7eb";
+                  return (
+                    <tr key={feature}>
+                      <td className="px-4 py-3 font-medium text-gray-900" style={{ borderRight: "1px solid #e5e7eb", borderBottom: rowBorder }}>{feature}</td>
+                      {cells.map((cell, ci) => {
+                        const isMostRight = ci === cells.length - 1;
+                        const color = cell === "✓" ? "#15803d" : cell === "✗" ? "#b91c1c" : "#ca8a04";
+                        return (
+                          <td key={ci} className="px-3 py-3 text-center" style={{ color, borderRight: isMostRight ? undefined : "1px solid #e5e7eb", borderBottom: rowBorder }}>{cell}</td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            </div>
+          </div>
+          <p className="text-xs text-gray-500 mt-4 text-center">✓ Included &nbsp;·&nbsp; ✗ Not included &nbsp;·&nbsp; partial = limited &nbsp;·&nbsp; add-on = available separately</p>
+        </div>
+      </section>
+
+      {/* NEW: Industry Bundles */}
+      <section className="py-14 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+          <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3 text-center">BY INDUSTRY</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
+            Recommended Service Bundles
+          </h2>
+          <p className="text-base text-foreground/70 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
+            Our FTZ Warehouse bundles are pre-configured by industry — Electronics, Pharma, FMCG, Automotive, Textiles, and Project Cargo — for fast onboarding.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
+            {[
+              { emoji: "💻", title: "Electronics & High-Value", desc: "For importers of consumer electronics, semiconductors, and high-value tech goods.", tags: ["Ocean Freight", "FTWZ", "Customs"] },
+              { emoji: "💊", title: "Pharma & Cold Chain", desc: "Time-sensitive temperature-controlled cargo with strict GDP compliance needs.", tags: ["Air Freight", "FTWZ", "Warehousing"] },
+              { emoji: "⚙️", title: "Automotive & Industrial", desc: "Parts importers, OEMs, and tier-1 suppliers needing just-in-time fulfillment.", tags: ["Ocean Freight", "FTWZ", "Supply Chain"] },
+              { emoji: "🛒", title: "FMCG & Consumer Goods", desc: "Bulk consumer products needing kitting, repackaging, and pan-India distribution.", tags: ["Coastal", "FTWZ", "Supply Chain"] },
+              { emoji: "🏗️", title: "Project Cargo & Heavy-Lift", desc: "Oversized, heavy, or specialized equipment with custom engineering requirements.", tags: ["Projects", "Customs", "FTWZ Storage"] },
+              { emoji: "🧪", title: "Chemicals & Bulk", desc: "Hazardous-classified imports and bulk chemicals needing compliant storage.", tags: ["Ocean Freight", "FTWZ", "Customs"] },
+            ].map((bundle) => (
+              <div key={bundle.title} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-2xl">{bundle.emoji}</span>
+                  <h3 className="text-base font-bold text-foreground">{bundle.title}</h3>
+                </div>
+                <p className="text-sm text-foreground/70 leading-relaxed mb-4">{bundle.desc}</p>
+                <div className="flex flex-wrap gap-2">
+                  {bundle.tags.map((tag) => (
+                    <span key={tag} className="text-xs font-medium px-2.5 py-1 rounded-full" style={{ backgroundColor: "rgba(249,115,22,0.1)", color: "#c2410c" }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

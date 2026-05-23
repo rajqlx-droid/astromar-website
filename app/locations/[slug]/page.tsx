@@ -1,8 +1,32 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin, Phone, Navigation, Warehouse, ArrowLeft, Clock, Globe } from "lucide-react";
-import { ftwzLocationDetails } from "@/data/ftwzLocations";
+import { ftwzLocationDetails, getLocationBySlug } from "@/data/ftwzLocations";
+import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
+
+function KwText({ segments }: { segments?: { text: string; kw?: boolean; href?: string }[] }) {
+  if (!segments) return null;
+  return (
+    <>
+      {segments.map((seg, i) => {
+        const content = seg.kw ? (
+          <span>{seg.text}</span>
+        ) : (
+          <span>{seg.text}</span>
+        );
+        if (seg.href) {
+          return (
+            <Link key={i} href={seg.href} className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">
+              {content}
+            </Link>
+          );
+        }
+        return <span key={i}>{content}</span>;
+      })}
+    </>
+  );
+}
 
 const locations = [
   {
@@ -165,7 +189,40 @@ const locations = [
     services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Container Freight", "Bulk Cargo", "Single Window Clearance"],
     about: "Located at Adani Ports and SEZ (APSEZ), Mundra — India's largest commercial port — Astromar's Mundra FTWZ offers unmatched scale and connectivity for importers, exporters, and re-export operators. Strategically positioned for trade with the Middle East, Africa, and Europe.",
   },
+  {
+    slug: "chennai-hq",
+    city: "Chennai HQ",
+    state: "Tamil Nadu",
+    type: "Registered Office",
+    address: "No. 922, 1st Floor, H-Block, 17th Main Road, Anna Nagar, Chennai - 600 040",
+    phone: "+91 99402 11014",
+    lat: 13.0850,
+    lng: 80.2101,
+    port: "Chennai Port (18 km)",
+    nearestAirport: "Chennai International Airport (MAA) — 18 km",
+    operatingHours: "Mon–Sat: 9:00 AM – 7:00 PM",
+    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80",
+    services: ["FTWZ Consulting", "Customs & Compliance", "Freight Management", "Supply Chain Advisory", "Trade Finance Support", "Business Development"],
+    about: "Astromar Logistics Pvt Ltd's registered and corporate office in Anna Nagar, Chennai. The central hub for all business development, customer support, compliance, and operations coordination across our pan-India FTWZ network.",
+  },
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const seoData = getLocationBySlug(slug);
+  if (!seoData) return {};
+  return {
+    title: seoData.seo.title,
+    description: seoData.seo.description,
+    keywords: seoData.seo.keywords,
+    openGraph: {
+      title: seoData.seo.title,
+      description: seoData.seo.description,
+      url: `https://astromarfreezone.com/locations/${slug}`,
+      type: "website",
+    },
+  };
+}
 
 export async function generateStaticParams() {
   return ftwzLocationDetails.map((loc) => ({ slug: loc.slug }));
@@ -176,10 +233,14 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   const location = locations.find((l) => l.slug === slug);
   if (!location) notFound();
 
+  const seoDetail = getLocationBySlug(slug);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Banner */}
       <section
+        role="img"
+        aria-label={seoDetail?.seo.heroAlt ?? `${location.city} ${location.type} — Astromar Logistics`}
         className="relative py-16 overflow-hidden flex items-center"
         style={{
           backgroundImage: `url(${location.heroImage})`,
@@ -197,10 +258,19 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16">
           <div className="max-w-7xl mx-auto">
-            <Link href="/contact-us" className="inline-flex items-center gap-2 text-white hover:text-[#F97316] text-sm mb-8 transition-colors group">
+            <Link href="/contact-us" className="inline-flex items-center gap-2 text-white hover:text-[#F97316] text-sm mb-4 transition-colors group">
               <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
               Back to Locations
             </Link>
+            {seoDetail?.seo.h1 && (
+              <nav aria-label="Breadcrumb" className="text-xs text-white/60 mb-6">
+                <span className="hover:text-white/80"><Link href="/">Astromar</Link></span>
+                <span className="mx-2">›</span>
+                <span className="hover:text-white/80"><Link href="/contact-us">Locations</Link></span>
+                <span className="mx-2">›</span>
+                <span className="text-[#F97316]">{seoDetail.seo.h1}</span>
+              </nav>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               {/* Left — text content */}
               <div className="flex flex-col h-full">
@@ -210,9 +280,23 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                   <span className="text-xs font-bold tracking-[0.15em] text-[#F97316] uppercase">{location.state} &nbsp;·&nbsp; {location.type}</span>
                 </div>
                 <h1 className="text-2xl sm:text-3xl md:text-3xl font-extrabold text-white mb-3 leading-tight tracking-tight">
-                  {location.city}
-                  <span className="block text-[#F97316]">FTWZ Facility</span>
+                  {seoDetail?.seo.h1 ? (
+                    <>
+                      {seoDetail.seo.h1}
+                      <span className="block text-white/90 text-xl sm:text-2xl md:text-2xl font-bold mt-1">{seoDetail.seo.h1Subtitle}</span>
+                    </>
+                  ) : (
+                    <>
+                      {location.city}
+                      <span className="block text-[#F97316]">FTWZ Facility</span>
+                    </>
+                  )}
                 </h1>
+                {seoDetail?.seo.bannerIntro && (
+                  <p className="text-sm sm:text-base text-white/85 leading-relaxed mb-4 max-w-xl">
+                    <KwText segments={seoDetail.seo.bannerIntro} />
+                  </p>
+                )}
                 <div className="flex items-start gap-2 text-white/90 mb-3">
                   <MapPin className="w-4 h-4 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <span className="text-sm leading-relaxed">{location.address}</span>
@@ -257,7 +341,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                   <p className="text-sm text-white/70 font-medium">Operations</p>
                 </div>
                 <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
-                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">8+</p>
+                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">10</p>
                   <p className="text-sm text-white/70 font-medium">FTWZ Locations</p>
                 </div>
               </div>
@@ -273,9 +357,25 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
             <div>
               <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">ABOUT THIS FACILITY</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">
-                {location.city} FTWZ — Strategic Location Advantage
+                {seoDetail?.seo.aboutH2 ? (
+                  <KwText segments={seoDetail.seo.aboutH2} />
+                ) : (
+                  <>{location.city} FTWZ — Strategic Location Advantage</>
+                )}
               </h2>
-              <p className="text-sm sm:text-base text-foreground/80 leading-relaxed mb-6">{location.about}</p>
+              {seoDetail?.seo.aboutParagraphs ? (
+                <div className="space-y-4 mb-6">
+                  {seoDetail.seo.aboutParagraphs.map((para, idx) => (
+                    <p key={idx} className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+                      <KwText segments={para} />
+                    </p>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-sm sm:text-base text-foreground/80 leading-relaxed mb-6">
+                  {location.about}
+                </p>
+              )}
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
@@ -316,7 +416,13 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
             </div>
             <div>
               <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">SERVICES AVAILABLE</p>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">What We Offer at {location.city}</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">
+                {seoDetail?.seo.servicesH2 ? (
+                  <KwText segments={seoDetail.seo.servicesH2} />
+                ) : (
+                  <>What We Offer at {location.city}</>
+                )}
+              </h2>
               <div className="grid grid-cols-1 gap-3">
                 {location.services.map((service, i) => (
                   <div key={i} className="flex items-center gap-3 p-4 rounded-xl border border-[#1B3A6B]/20 bg-brand-light">
@@ -332,6 +438,147 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
         </div>
       </section>
 
+      {/* Multi-Modal Connectivity Section */}
+      {seoDetail?.connectivity && (
+        <section className="py-16 bg-white border-t border-[#1B3A6B]/10">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+            <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3 text-center">CONNECTIVITY</p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
+              {seoDetail.connectivity.headline}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-brand-light border border-[#1B3A6B]/10 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-3 pb-3 border-b border-[#F97316]/30">
+                  <Navigation className="w-5 h-5 text-[#F97316]" />
+                  <h3 className="text-base font-bold text-[#0f1f3d]">Road</h3>
+                </div>
+                <ul className="space-y-2">
+                  {seoDetail.connectivity.road.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-foreground/80 leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0 mt-2"></span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-brand-light border border-[#1B3A6B]/10 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-3 pb-3 border-b border-[#F97316]/30">
+                  <Warehouse className="w-5 h-5 text-[#F97316]" />
+                  <h3 className="text-base font-bold text-[#0f1f3d]">Rail</h3>
+                </div>
+                <ul className="space-y-2">
+                  {seoDetail.connectivity.rail.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-foreground/80 leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0 mt-2"></span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-brand-light border border-[#1B3A6B]/10 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-3 pb-3 border-b border-[#F97316]/30">
+                  <Globe className="w-5 h-5 text-[#F97316]" />
+                  <h3 className="text-base font-bold text-[#0f1f3d]">Sea</h3>
+                </div>
+                <ul className="space-y-2">
+                  {seoDetail.connectivity.sea.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-foreground/80 leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0 mt-2"></span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-brand-light border border-[#1B3A6B]/10 rounded-xl p-5">
+                <div className="flex items-center gap-2 mb-3 pb-3 border-b border-[#F97316]/30">
+                  <Clock className="w-5 h-5 text-[#F97316]" />
+                  <h3 className="text-base font-bold text-[#0f1f3d]">Air</h3>
+                </div>
+                <ul className="space-y-2">
+                  {seoDetail.connectivity.air.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-foreground/80 leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0 mt-2"></span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Why Choose Section */}
+      {seoDetail?.seo.whyChooseH2 && seoDetail?.seo.whyChooseBlocks && (
+        <section className="py-16 bg-brand-light">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
+              <KwText segments={seoDetail.seo.whyChooseH2} />
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {seoDetail.seo.whyChooseBlocks.map((block, bIdx) => (
+                <div key={bIdx} className="bg-white border border-[#1B3A6B]/10 rounded-xl p-6">
+                  <h3 className="text-base font-bold text-[#0f1f3d] mb-4 pb-3 border-b border-[#F97316]/30">
+                    {block.title}
+                  </h3>
+                  <ul className="space-y-3">
+                    {block.items.map((item, iIdx) => (
+                      <li key={iIdx} className="flex items-start gap-2 text-sm text-foreground/80 leading-relaxed">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#F97316] flex-shrink-0 mt-2"></span>
+                        <span><KwText segments={item} /></span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQ Section */}
+      {seoDetail?.seo.faqH2 && seoDetail?.seo.faqItems && (
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
+              <KwText segments={seoDetail.seo.faqH2} />
+            </h2>
+            <div className="max-w-4xl mx-auto space-y-4">
+              {seoDetail.seo.faqItems.map((item, fIdx) => (
+                <div key={fIdx} className="bg-brand-light border border-[#1B3A6B]/10 rounded-xl p-5">
+                  <h3 className="text-base font-bold text-[#0f1f3d] mb-3 flex gap-3">
+                    <span className="text-[#F97316] flex-shrink-0">Q{fIdx + 1}.</span>
+                    <span><KwText segments={item.question} /></span>
+                  </h3>
+                  <p className="text-sm text-foreground/80 leading-relaxed pl-8">
+                    <KwText segments={item.answer} />
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* JSON-LD Schemas */}
+      {seoDetail?.seo.localBusinessSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(seoDetail.seo.localBusinessSchema) }}
+        />
+      )}
+      {seoDetail?.seo.faqPageSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(seoDetail.seo.faqPageSchema) }}
+        />
+      )}
+      {seoDetail?.seo.breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(seoDetail.seo.breadcrumbSchema) }}
+        />
+      )}
       <CTASection />
     </div>
   );

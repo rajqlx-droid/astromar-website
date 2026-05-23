@@ -2,7 +2,6 @@
 import { useState } from "react";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
@@ -23,7 +22,7 @@ const accordionItems = [
 ];
 
 const whyChoose = [
-  { title: "Licensed Customs Broker",             desc: "Fully licensed CHA with 15+ years of experience at all major Indian ports, airports, and inland ICDs." },
+  { title: "Licensed Customs Broker", desc: "Fully licensed Customs House Agent India with 15+ years of experience at all major Indian ports, airports, and inland ICDs.", descKw: "Customs House Agent India" },
   { title: "Zero Compliance Penalties Record",    desc: "100% compliance rate with zero penalties or delays due to documentation errors or classification issues." },
   { title: "All Ports & ICDs Covered",            desc: "Nationwide clearance at sea ports, airports, land ICDs, and integrated check posts across India." },
   { title: "FTWZ Customs Specialists",            desc: "Deep expertise in FTWZ transactions, DTA removals, and duty deferment strategies for import-heavy businesses." },
@@ -34,17 +33,11 @@ const CustomClearance = () => {
 
   return (
     <>
-      <SEOHead
-        title="Custom Clearance Services India | AstroMar Logistics"
-        description="Expert customs clearance for imports and exports at all Indian ports. HS classification, regulatory compliance, FTA advisory, and ICEGATE electronic filing."
-        ogImage="/og-home.jpg"
-      />
-
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600"
-          alt="Customs and cargo documentation"
+          alt="Customs Clearance Services in India — Astromar licensed customs house agent with pan-India ports coverage"
           fill
           className="absolute inset-0 object-cover"
           unoptimized
@@ -60,9 +53,7 @@ const CustomClearance = () => {
                 Customs Clearance Services in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Navigate India's complex customs landscape with confidence. AstroMar's licensed customs brokers
-                handle all import and export clearances across every Indian port and airport — ensuring compliance,
-                minimizing duty, and eliminating delays.
+                Navigate India's complex customs landscape with confidence. Astromar's licensed Customs Clearance Services in India handle all import and export clearances across every Indian port and airport — ensuring compliance and eliminating delays.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -162,7 +153,7 @@ const CustomClearance = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">EXPERTISE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
-              Our Customs Expertise
+              Licensed Customs House Agent India Expertise
             </h2>
           </ScrollReveal>
           <div className="space-y-3">
@@ -209,8 +200,7 @@ const CustomClearance = () => {
                 Clear Customs Faster & Smarter
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                With 15+ years at India's busiest ports and a 100% compliance track record, our licensed
-                customs brokers deliver fast, penalty-free clearance every time.
+                With 15+ years at India's busiest ports and 100% compliance, Astromar's Customs Clearance Services in India deliver fast, penalty-free clearance every time.
               </p>
               <ul className="space-y-3">
                 {[
@@ -245,7 +235,17 @@ const CustomClearance = () => {
               <ScrollReveal key={item.title} delay={i * 0.07}>
                 <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    {"descKw" in item && item.descKw ? (
+                      <>
+                        {item.desc.split(item.descKw)[0]}
+                        {item.descKw}
+                        {item.desc.split(item.descKw)[1]}
+                      </>
+                    ) : (
+                      item.desc
+                    )}
+                  </p>
                 </div>
               </ScrollReveal>
             ))}

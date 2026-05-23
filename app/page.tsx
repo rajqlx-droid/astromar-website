@@ -7,16 +7,49 @@ import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Freight Forwarder & FTWZ Operator India | Astromar Logistics",
-  description: "India's leading freight forwarder and FTWZ operator. Ocean freight, air freight, customs clearance, bonded warehousing and 3PL supply chain solutions across 9 strategic port locations.",
-  keywords: "freight forwarder india, FTWZ operator india, logistics company india, customs clearance india, bonded warehouse india, ocean freight india, supply chain india",
+  title: "Free Trade Warehousing Zone India — FTWZ & Freight | Astromar",
+  description: "Astromar Logistics — India's leading Free Trade Warehousing Zone operator and freight forwarder. 10 strategic FTWZ locations. Save customs duty & GST with duty-free bonded warehousing across India.",
+  keywords: "free trade warehousing zone, ftwz in india, ftwz operator india, ftwz warehouse, freight forwarder india, custom bonded warehouse, astromar logistics, ftwz solutions, cold storage warehouse, free zone company india",
   openGraph: {
-    title: "Freight Forwarder & FTWZ Operator India | Astromar Logistics",
-    description: "India's leading freight forwarder and FTWZ operator across 9 strategic port locations.",
+    title: "Free Trade Warehousing Zone India — FTWZ & Freight | Astromar",
+    description: "India's leading FTWZ operator and freight forwarder across 10 strategic locations. Duty-free bonded warehousing, customs clearance, and supply chain solutions.",
     url: "https://astromarfreezone.com",
     siteName: "Astromar Logistics",
     type: "website",
   },
+};
+
+const homeOrganizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Astromar Logistics Pvt Ltd",
+  "url": "https://astromarfreezone.com",
+  "logo": "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png",
+  "description": "India's leading Free Trade Warehousing Zone operator and freight forwarder with 10 strategic FTWZ locations across India offering duty-free storage, customs clearance, and supply chain solutions.",
+  "telephone": "+91 99402 11014",
+  "email": "sales@astromarfreezone.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 922, 1st Floor, H-Block, 17th Main Road, Anna Nagar",
+    "addressLocality": "Chennai",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "600040",
+    "addressCountry": "IN"
+  },
+  "areaServed": "IN",
+  "serviceType": ["Free Trade Warehousing Zone", "Customs Bonded Warehouse", "Freight Forwarding", "Customs Clearance", "Supply Chain Management", "Ocean Freight", "Air Freight"]
+};
+
+const homeWebSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Astromar Logistics",
+  "url": "https://astromarfreezone.com",
+  "description": "India's leading Free Trade Warehousing Zone operator and freight forwarder",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Astromar Logistics Pvt Ltd"
+  }
 };
 
 export default function Home() {
@@ -28,6 +61,14 @@ export default function Home() {
       <WhyUsSection />
       <CTASection />
       <WhatsAppButton />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeOrganizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeWebSiteSchema) }}
+      />
     </div>
   );
 }

@@ -12,7 +12,9 @@ const nextConfig = {
     return [
       { source: '/about', destination: '/about-us', permanent: true },
       { source: '/contact', destination: '/contact-us', permanent: true },
-      { source: '/ftwz-services', destination: '/free-trade-zone', permanent: true },
+      { source: '/blog', destination: '/blogs', permanent: true },
+      { source: '/blog/:slug*', destination: '/blogs/:slug*', permanent: true },
+      { source: '/ftwz-services', destination: '/free-trade-zone-services', permanent: true },
       { source: '/services', destination: '/free-trade-zone-services', permanent: true },
       { source: '/services/coastal-shipping', destination: '/coastal-shipping-free-trade-zone', permanent: true },
       { source: '/services/ocean-freight', destination: '/free-trade-zone-services/ocean-freight', permanent: true },

@@ -2,7 +2,6 @@
 import { useState, useRef } from "react";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
@@ -28,7 +27,7 @@ const whyChoose = [
   { title: "Fastest Transit Times in Market",    desc: "Express options connect India to 100+ destinations with industry-leading transit times and same-day booking confirmation." },
   { title: "Pharma & DGR Certified Handling",    desc: "GDP-compliant and IATA DGR certified for pharmaceutical, biotech, and hazardous goods with full audit trails." },
   { title: "FTWZ Air Import Integration",        desc: "Route air imports through our FTWZ facilities to defer customs duty and optimize landed cost on high-value goods." },
-  { title: "Dedicated Air Freight Desk",         desc: "A specialist team manages your air freight end-to-end — from rate enquiry and booking to AWB tracking and final delivery." },
+  { title: "Dedicated Air Freight Desk", desc: "A specialist team manages your air Freight Forwarding Services end-to-end — from rate enquiry to AWB tracking and final delivery.", descKw: "Freight Forwarding Services" },
 ];
 
 const AirFreight = () => {
@@ -40,17 +39,11 @@ const AirFreight = () => {
 
   return (
     <>
-      <SEOHead
-        title="Air Freight Services from India | AstroMar Logistics"
-        description="Express and standard air freight from India to 200+ destinations. Time-critical, temperature-controlled, and charter air cargo with real-time tracking."
-        ogImage="/og-freight.jpg"
-      />
-
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600"
-          alt="Cargo aircraft"
+          alt="Air Freight India — Astromar express cargo and freight forwarding services across 100+ global destinations"
           fill
           className="absolute inset-0 object-cover"
           unoptimized
@@ -63,12 +56,10 @@ const AirFreight = () => {
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">AIR FREIGHT</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Air Freight Services from India to the World
+                Air Freight India — Express Cargo to 100+ Global Destinations
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                When speed matters, trust AstroMar's air freight solutions. From express next-day delivery to charter
-                services for oversized cargo, we connect India to 100+ destinations worldwide with reliable,
-                trackable air cargo.
+                When speed matters, trust AstroMar's Air Freight India solutions — express delivery, charter services, and DGR-certified cargo handling connecting India to 100+ destinations worldwide.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -224,11 +215,10 @@ const AirFreight = () => {
             <ScrollReveal delay={0.1}>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">WHY AIR FREIGHT</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                End-to-End Air Cargo Capabilities
+                End-to-End Air Freight India Capabilities
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From IATA-certified DGR handling to GDP-compliant pharma air freight, our specialist team manages
-                every detail so your cargo arrives on time and in perfect condition.
+                From IATA-certified DGR handling to GDP-compliant pharma cargo, our specialist team manages every Freight Forwarding Services detail so your cargo arrives on time and in perfect condition.
               </p>
               <ul className="space-y-3">
                 {[
@@ -255,7 +245,7 @@ const AirFreight = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">WHY CHOOSE US FOR AIR</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
-              Why Choose Astromar for Air Freight?
+              Why Choose Astromar for Air Freight Forwarding Services?
             </h2>
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
@@ -263,7 +253,17 @@ const AirFreight = () => {
               <ScrollReveal key={item.title} delay={i * 0.07}>
                 <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    {"descKw" in item && item.descKw ? (
+                      <>
+                        {item.desc.split(item.descKw)[0]}
+                        {item.descKw}
+                        {item.desc.split(item.descKw)[1]}
+                      </>
+                    ) : (
+                      item.desc
+                    )}
+                  </p>
                 </div>
               </ScrollReveal>
             ))}

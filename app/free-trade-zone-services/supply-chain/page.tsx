@@ -2,7 +2,6 @@
 import { useState } from "react";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
@@ -53,10 +52,10 @@ const accordionItems = [
 ];
 
 const whyChoose = [
-  { title: "FTWZ-Integrated Warehousing",       desc: "Duty-free bonded storage across 8+ FTWZ locations with pan-India distribution connectivity." },
+  { title: "FTWZ-Integrated Warehousing",       desc: "Duty-free bonded storage across 10 FTWZ locations with pan-India distribution connectivity." },
   { title: "Real-Time WMS Visibility",           desc: "Live inventory dashboards, automated alerts, and full traceability from FTWZ to final customer." },
   { title: "Industry-Specific Expertise",        desc: "Dedicated solutions for pharma, electronics, FMCG, automotive, and textiles supply chains." },
-  { title: "Dedicated Supply Chain Manager",     desc: "A single point of accountability for all logistics, warehousing, and distribution operations." },
+  { title: "Dedicated Supply Chain Manager", desc: "A single point of accountability for all Supply Chain Logistics India operations — including warehousing, distribution, and last-mile delivery.", descKw: "Supply Chain Logistics India" },
 ];
 
 const SupplyChain = () => {
@@ -66,17 +65,11 @@ const SupplyChain = () => {
 
   return (
     <>
-      <SEOHead
-        title="Supply Chain Solutions in India | AstroMar Logistics"
-        description="End-to-end supply chain management — inventory optimization, distribution, fulfillment, and analytics. AI-powered visibility across your entire supply chain."
-        ogImage="/og-home.jpg"
-      />
-
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80"
-          alt="Supply chain and logistics"
+          alt="Supply Chain Solutions India — Astromar integrated supply chain logistics with FTWZ network and real-time visibility"
           fill
           className="absolute inset-0 object-cover"
           unoptimized
@@ -89,12 +82,10 @@ const SupplyChain = () => {
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">SUPPLY CHAIN</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Integrated Supply Chain Solutions
+                Supply Chain Solutions India — Integrated &amp; End-to-End
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                From procurement to last-mile delivery, AstroMar designs and manages supply chains that reduce costs,
-                improve speed, and build resilience. Our technology-driven approach gives you real-time visibility
-                and control across every node in your supply chain.
+                Astromar's Supply Chain Solutions India manage procurement to last-mile delivery — reducing costs, improving speed, and building resilience with real-time visibility across every node in your operations.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -112,7 +103,7 @@ const SupplyChain = () => {
                 <div className="grid grid-cols-2 gap-3 mb-5">
                   {[
                     { value: "500+",       label: "Clients"      },
-                    { value: "8+",         label: "FTWZ Hubs"    },
+                    { value: "10",         label: "FTWZ Hubs"    },
                     { value: "Pan-India",  label: "Network"      },
                     { value: "24/7",       label: "Support"      },
                   ].map((s) => (
@@ -138,7 +129,7 @@ const SupplyChain = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">INDUSTRIES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
-              Industry-Specific Supply Chain Expertise
+              Industry-Specific Supply Chain Logistics India Expertise
             </h2>
           </ScrollReveal>
           {/* Tab buttons */}
@@ -181,13 +172,13 @@ const SupplyChain = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">SUPPLY CHAIN SCALE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
-              Supply Chain at a Glance
+              Astromar's Supply Chain Solutions at a Glance
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               { value: "500+",  label: "Clients Served",    desc: "Across industries"       },
-              { value: "8+",    label: "FTWZ Locations",    desc: "Pan-India hubs"          },
+              { value: "10",    label: "FTWZ Locations",    desc: "Pan-India hubs"          },
               { value: "48hrs", label: "Onboarding",        desc: "Fast go-live"            },
               { value: "99%",   label: "On-time Rate",      desc: "Delivery accuracy"       },
             ].map((s, i) => (
@@ -213,8 +204,7 @@ const SupplyChain = () => {
                 End-to-End Supply Chain Management
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From FTWZ-bonded imports to last-mile delivery, AstroMar manages every link in your supply chain
-                with technology-driven visibility and dedicated operations teams.
+                From FTWZ-bonded imports to last-mile delivery, Astromar's Supply Chain Solutions India manage every link with technology-driven visibility and dedicated operations teams.
               </p>
               <ul className="space-y-3">
                 {[
@@ -252,7 +242,7 @@ const SupplyChain = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">SOLUTIONS</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
-              Supply Chain Capabilities
+              Capabilities Across Supply Chain Companies
             </h2>
           </ScrollReveal>
           <div className="space-y-3">
@@ -292,7 +282,17 @@ const SupplyChain = () => {
               <ScrollReveal key={item.title} delay={i * 0.07}>
                 <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    {"descKw" in item && item.descKw ? (
+                      <>
+                        {item.desc.split(item.descKw)[0]}
+                        {item.descKw}
+                        {item.desc.split(item.descKw)[1]}
+                      </>
+                    ) : (
+                      item.desc
+                    )}
+                  </p>
                 </div>
               </ScrollReveal>
             ))}

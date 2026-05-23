@@ -2,7 +2,6 @@
 import { useState } from "react";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
@@ -42,7 +41,7 @@ const whyChoose = [
   { title: "30% Cheaper Than Road Transport",       desc: "One coastal vessel replaces 700 trucks — dramatically cutting per-unit freight cost on long domestic hauls." },
   { title: "All 12+ Major Indian Ports Covered",    desc: "Pan-India port presence on both coasts gives you direct access to every key domestic logistics gateway." },
   { title: "Eco-Friendly Lower Carbon Shipping",    desc: "Coastal shipping produces ~47% less CO₂ than road transport, supporting your sustainability targets." },
-  { title: "FTWZ Port Integration",                 desc: "Seamlessly connect coastal shipments with FTWZ facilities for duty deferment and bonded warehousing." },
+  { title: "Trusted Coastal Shipping Company", desc: "As an established Coastal Shipping Company, Astromar operates with full regulatory compliance, dedicated vessel partnerships, and 24/7 cargo tracking.", titleKw: "Coastal Shipping Company", descKw: "Coastal Shipping Company" },
 ];
 
 const CoastalShipping = () => {
@@ -52,17 +51,11 @@ const CoastalShipping = () => {
 
   return (
     <>
-      <SEOHead
-        title="Coastal Shipping Services in India | AstroMar Logistics"
-        description="Cost-effective domestic coastal shipping across India's major ports. Save up to 40% on transport costs with eco-friendly sea freight — bulk, container, and project cargo."
-        ogImage="/og-home.jpg"
-      />
-
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1600"
-          alt="Coastal vessel"
+          alt="Port to Port Shipping in India — Astromar coastal shipping company with pan-India port network"
           fill
           className="absolute inset-0 object-cover"
           unoptimized
@@ -76,7 +69,7 @@ const CoastalShipping = () => {
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">COASTAL SHIPPING</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Domestic Coastal Shipping Services Across India
+                Port to Port Shipping in India — Coastal Cargo Network
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 Move cargo efficiently along India's 7,500+ km coastline. Our coastal shipping services connect
@@ -141,8 +134,7 @@ const CoastalShipping = () => {
                 The Smarter Way to Move Cargo Domestically
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                Coastal shipping is India's most underutilised transport mode. It offers reliability, scale, and
-                sustainability that road transport simply cannot match for long-haul domestic cargo.
+                Astromar's Port to Port Shipping network spans India's 7,500+ km coastline, offering bulk, container, and project cargo movement between all major and minor ports.
               </p>
               <ul className="space-y-3">
                 {[
@@ -186,7 +178,7 @@ const CoastalShipping = () => {
             <ScrollReveal delay={0.1}>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CARGO TYPES</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                What We Ship Coastally
+                What We Ship via Coastal Shipping in India
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
                 From liquid bulk and chemicals to containerized goods and project cargo — our coastal network handles
@@ -279,9 +271,12 @@ const CoastalShipping = () => {
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">CARGO TYPES</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
               What We Handle Coastally
             </h2>
+            <p className="text-base text-foreground/70 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
+              Our Coastal Shipping in India network handles every cargo type — from liquid bulk and chemicals to containerized goods and project cargo — with specialized vessels and port expertise.
+            </p>
           </ScrollReveal>
           <div className="space-y-3">
             {accordionItems.map((item, i) => (
@@ -323,8 +318,28 @@ const CoastalShipping = () => {
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.07}>
                 <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
-                  <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
+                  <h3 className="text-base font-bold text-foreground mb-2">
+                    {"titleKw" in item && item.titleKw ? (
+                      <>
+                        {item.title.split(item.titleKw)[0]}
+                        {item.titleKw}
+                        {item.title.split(item.titleKw)[1]}
+                      </>
+                    ) : (
+                      item.title
+                    )}
+                  </h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    {"descKw" in item && item.descKw ? (
+                      <>
+                        {item.desc.split(item.descKw)[0]}
+                        {item.descKw}
+                        {item.desc.split(item.descKw)[1]}
+                      </>
+                    ) : (
+                      item.desc
+                    )}
+                  </p>
                 </div>
               </ScrollReveal>
             ))}

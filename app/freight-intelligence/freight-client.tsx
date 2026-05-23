@@ -417,7 +417,7 @@ function FreightIntelligencePage() {
         {/* BREADCRUMB */}
         <section className="mx-auto max-w-7xl px-6 pb-1 pt-2 md:px-12 lg:px-16">
           <nav aria-label="Breadcrumb" className="flex items-center gap-1 text-xs text-muted-foreground">
-            <Link href="/freight-intelligence" className="hover:text-brand-orange">Home</Link>
+            <Link href="/" className="hover:text-brand-orange">Home</Link>
             <ChevronRight className="size-3" />
             <span>Tools</span>
             <ChevronRight className="size-3" />
@@ -462,7 +462,11 @@ function FreightIntelligencePage() {
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-2">
                       <h2 className="truncate text-lg font-bold text-brand-navy md:text-xl">
-                        {meta.label} Calculator
+                        {active === "cbm" ? (
+                          <><span className="text-blue-600">CBM Calculator</span> — Load Optimizer</>
+                        ) : (
+                          <span className="text-blue-600">{meta.label} Calculator</span>
+                        )}
                       </h2>
                     </div>
                     <p className="flex items-center gap-1.5 truncate text-xs text-muted-foreground md:text-sm">

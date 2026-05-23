@@ -10,14 +10,14 @@ import ScrollReveal from "./ScrollReveal";
 import { Button } from "@/components/ui/button";
 
 const services = [
-  { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/ftwz-services" },
-  { icon: Ship, title: "Coastal Shipping", desc: "Domestic coastal cargo movement along India's extensive coastline, offering cost-effective and eco-friendly transport alternatives.", href: "/services/coastal-shipping" },
-  { icon: Ship, title: "Ocean Freight", desc: "Full container load (FCL) and less than container load (LCL) ocean freight services across major global trade routes.", href: "/services/ocean-freight" },
-  { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/services/air-freight" },
-  { icon: GitBranch, title: "Supply Chain", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/services/supply-chain" },
-  { icon: ClipboardCheck, title: "Custom Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/services/custom-clearance" },
-  { icon: Snowflake, title: "Warehousing", desc: "Secure, scalable warehousing solutions with real-time inventory management and value-added services.", href: "/services/warehousing" },
-  { icon: Box, title: "Projects", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/services/projects" },
+  { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/free-trade-zone" },
+  { icon: Ship, title: "Coastal Shipping", desc: "Domestic coastal cargo movement along India's extensive coastline, offering cost-effective and eco-friendly transport alternatives.", href: "/coastal-shipping-free-trade-zone" },
+  { icon: Ship, title: "Ocean Freight", desc: "Full container load (FCL) and less than container load (LCL) ocean freight services across major global trade routes.", href: "/free-trade-zone-services/ocean-freight" },
+  { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/free-trade-zone-services/air-freight" },
+  { icon: GitBranch, title: "Supply Chain", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/free-trade-zone-services/supply-chain" },
+  { icon: ClipboardCheck, title: "Custom Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/free-trade-zone-services/custom-clearance" },
+  { icon: Snowflake, title: "Warehousing", desc: "Secure, scalable warehousing solutions with real-time inventory management and value-added services.", href: "/free-trade-zone-services/warehousing" },
+  { icon: Box, title: "Projects", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/free-trade-zone-services/projects" },
 ];
 
 const benefits = [
@@ -52,9 +52,8 @@ const ServicesSection = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-6">
               Comprehensive Logistics Services
             </h2>
-            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12 text-sm md:text-base">
-              From duty-free warehousing to last-mile delivery, Astromar Logistics provides end-to-end
-              logistics solutions across India.
+            <p className="text-base sm:text-lg text-foreground/70 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
+              Astromar combines a premier Free Trade Warehousing Zone in India with end-to-end freight, customs, and supply chain capabilities under one trusted partner.
             </p>
           </ScrollReveal>
 
@@ -112,14 +111,11 @@ const ServicesSection = () => {
                   FTWZ WAREHOUSING
                 </p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-5 leading-tight">
-                  India's Most Flexible Duty-Free Storage Solution
+                  Our Free Trade Zone in India: A Network Across 10 Locations
                 </h2>
-                <p className="text-white/90 leading-relaxed text-base mb-8">
-                  Store imported goods without paying customs duty or GST until final disposition. Re-export globally, consolidate shipments, or defer domestic clearance � all from Astromar's pan-India FTWZ network.
-                </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-4 mt-8">
                   <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-                    <a href="#contact">
+                    <a href="/contact-us">
                       Get More Information <ArrowRight className="w-4 h-4 ml-2" />
                     </a>
                   </Button>
@@ -135,7 +131,7 @@ const ServicesSection = () => {
               {/* RIGHT - Stats Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                  <p className="text-4xl font-extrabold text-accent mb-2">?0</p>
+                  <p className="text-4xl font-extrabold text-accent mb-2">₹0</p>
                   <p className="text-white/80 text-sm font-semibold">Customs Duty</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
@@ -147,7 +143,7 @@ const ServicesSection = () => {
                   <p className="text-white/80 text-sm font-semibold">Operations</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                  <p className="text-4xl font-extrabold text-accent mb-2">8+</p>
+                  <p className="text-4xl font-extrabold text-accent mb-2">10</p>
                   <p className="text-white/80 text-sm font-semibold">FTWZ Locations</p>
                 </div>
               </div>
@@ -163,9 +159,12 @@ const ServicesSection = () => {
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">
               OUR SOLUTIONS
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
-              Comprehensive FTWZ Warehousing Solutions
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
+              Comprehensive FTWZ Warehouse Solutions
             </h2>
+            <p className="text-foreground/80 leading-relaxed mb-12 text-center max-w-3xl mx-auto">
+              Our Free Trade Warehousing Zone infrastructure combines bonded storage, customs clearance, and value-added services under one roof.
+            </p>
           </ScrollReveal>
 
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">

@@ -86,7 +86,7 @@ const Blog = () => {
                     <span className="text-gray-400 text-xs">📅 Jan 2026</span>
                     <span className="text-gray-400 text-xs">• 18 min read</span>
                   </div>
-                  <a href="/blogs/ftwz-customs-duty-gst" className="text-orange-500 text-sm font-semibold hover:text-orange-300">
+                  <a href="/blogs/customs-duty-deferment-benefits" className="text-orange-500 text-sm font-semibold hover:text-orange-300">
                     Read More →
                   </a>
                 </div>

@@ -2,13 +2,12 @@
 import { useState, useRef } from "react";
 import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import SEOHead from "@/components/SEOHead";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 
 const accordionItems = [
-  { title: "General FTWZ Storage",      body: "Duty-free bonded warehousing for all commodity types with flexible tenure and WMS integration. Real-time inventory visibility, automated alerts, and MIS reporting." },
+  { title: "General FTWZ Storage", body: "Astromar's Bonded Warehouse India facilities offer duty-free storage for all commodity types with flexible tenure and WMS integration. Real-time inventory visibility, automated alerts, and MIS reporting.", bodyKw: "Bonded Warehouse India" },
   { title: "Cold Chain Storage",         body: "2-8°C and -20°C temperature controlled storage GDP-certified for pharma and perishables. Continuous temperature monitoring with automated alarms and audit trails." },
   { title: "Pharma Warehousing",         body: "Dedicated pharmaceutical storage with GDP compliance, batch tracking and audit trails. Segregated storage zones with restricted access and full documentation control." },
   { title: "Value-Added Services",       body: "Repacking, kitting, labelling, assembly and quality inspection within FTWZ premises. Barcode/RFID integration and serial number tracking for high-value goods." },
@@ -25,10 +24,10 @@ const locationCards = [
 ];
 
 const whyChoose = [
-  { title: "Duty-Free FTWZ Bonded Storage",       desc: "Defer customs duty and GST until goods enter the domestic tariff area — ideal for import-heavy businesses." },
+  { title: "Duty-Free FTWZ Bonded Storage", desc: "Our Custom Bonded Warehouse facilities let you defer customs duty and GST until goods enter the domestic tariff area — ideal for import-heavy businesses.", descKw: "Custom Bonded Warehouse" },
   { title: "Real-Time WMS Inventory Tracking",    desc: "Live stock dashboards, automated reorder triggers, and full RFID/barcode traceability across all locations." },
   { title: "Cold Chain & Pharma Certified",       desc: "GDP-compliant cold storage from -20°C to +8°C with continuous monitoring and full audit documentation." },
-  { title: "8+ Strategic Port Locations",         desc: "FTWZ facilities near India's busiest ports and airports for fast inbound and outbound logistics." },
+  { title: "10 Strategic Port Locations",         desc: "FTWZ facilities near India's busiest ports and airports for fast inbound and outbound logistics." },
 ];
 
 const Warehousing = () => {
@@ -40,17 +39,11 @@ const Warehousing = () => {
 
   return (
     <>
-      <SEOHead
-        title="Warehousing Services in India | AstroMar Logistics"
-        description="Scalable warehousing across India — general, cold storage, bonded, and fulfillment. Real-time WMS, value-added services, and 24/7 security."
-        ogImage="/og-home.jpg"
-      />
-
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600"
-          alt="Modern warehouse interior"
+          alt="Bonded Warehouse India — Astromar custom bonded warehouse and FTWZ storage facilities across 10 pan-India locations"
           fill
           className="absolute inset-0 object-cover"
           unoptimized
@@ -63,12 +56,10 @@ const Warehousing = () => {
             <ScrollReveal>
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">WAREHOUSING</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Warehousing & Storage Solutions Across India
+                Bonded Warehouse India — Warehousing &amp; Storage Solutions
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                From a single pallet to 5 lakh+ sq ft of dedicated FTWZ space, AstroMar provides flexible warehousing
-                solutions with real-time inventory management, value-added services, and multi-temperature capabilities
-                across India's key logistics hubs.
+                From a single pallet to 5 lakh+ sq ft, Astromar's Bonded Warehouse India network delivers FTWZ-bonded storage with real-time inventory management, value-added services, and multi-temperature capabilities across key logistics hubs.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -86,7 +77,7 @@ const Warehousing = () => {
                 <div className="grid grid-cols-2 gap-3 mb-5">
                   {[
                     { value: "5L+ sqft", label: "Space"      },
-                    { value: "8+",       label: "Locations"  },
+                    { value: "10",       label: "Locations"  },
                     { value: "GDP",      label: "Certified"  },
                     { value: "24/7",     label: "Security"   },
                   ].map((s) => (
@@ -118,7 +109,7 @@ const Warehousing = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               { value: "5L+",  label: "Sq Ft Space",   desc: "Total FTWZ area"           },
-              { value: "8+",   label: "Locations",     desc: "Pan-India network"          },
+              { value: "10",   label: "Locations",     desc: "Pan-India network"          },
               { value: "GDP",  label: "Certified",     desc: "Pharma ready"               },
               { value: "24/7", label: "Security",      desc: "CCTV & access control"      },
             ].map((s, i) => (
@@ -152,7 +143,7 @@ const Warehousing = () => {
             <ScrollReveal delay={0.1}>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                Warehousing Solutions for Every Need
+                Custom Bonded Warehouse Solutions for Every Need
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
                 From ambient FTWZ bonded storage to GDP-certified cold chain, our pan-India warehouse network is
@@ -199,7 +190,17 @@ const Warehousing = () => {
                   </button>
                   {openIndex === i && (
                     <div className="bg-brand-light border-l-4 border-[#f97316] px-5 py-4">
-                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
+                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+                        {"bodyKw" in item && item.bodyKw ? (
+                          <>
+                            {item.body.split(item.bodyKw)[0]}
+                            {item.bodyKw}
+                            {item.body.split(item.bodyKw)[1]}
+                          </>
+                        ) : (
+                          item.body
+                        )}
+                      </p>
                     </div>
                   )}
                 </div>
@@ -268,7 +269,17 @@ const Warehousing = () => {
               <ScrollReveal key={item.title} delay={i * 0.07}>
                 <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    {"descKw" in item && item.descKw ? (
+                      <>
+                        {item.desc.split(item.descKw)[0]}
+                        {item.descKw}
+                        {item.desc.split(item.descKw)[1]}
+                      </>
+                    ) : (
+                      item.desc
+                    )}
+                  </p>
                 </div>
               </ScrollReveal>
             ))}

@@ -16,7 +16,7 @@ const accordionItems = [
 ];
 
 const whyChoose = [
-  { title: "ODC & Heavy Lift Specialists",       desc: "Dedicated project cargo team with expertise in ODC transport, SPMT operations, and heavy lift coordination." },
+  { title: "ODC & Heavy Lift Specialists",       desc: <>Dedicated project cargo freight forwarders with expertise in ODC transport, SPMT operations, and heavy lift coordination.</> },
   { title: "Engineered Transport Solutions",     desc: "Every project move is engineered — route surveys, structural calculations, and custom rigging plans for safe execution." },
   { title: "Pan-India Execution Network",        desc: "In-house capabilities across all major Indian ports, highways, and project sites with a nationwide operator network." },
   { title: "Insurance & Risk Management",        desc: "Comprehensive cargo insurance, risk assessment, and contingency planning for every project cargo movement." },
@@ -105,8 +105,9 @@ const Projects = () => {
                 End-to-End Project Logistics
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From heavy-lift cranes to SPMT multi-axle trailers, we have the equipment, expertise, and network
-                to move any project cargo safely across India and internationally.
+                From route surveys to final placement, our heavy lift logistics capabilities
+                cover every phase — engineering studies, permits, multi-modal transport, and on-site execution
+                for energy and infrastructure projects.
               </p>
               <ul className="space-y-3">
                 {[
@@ -153,8 +154,9 @@ const Projects = () => {
                 Turnkey Project Cargo Execution
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From plant relocation to EPC project logistics, our specialist teams coordinate every movement
-                across multiple modes with real-time visibility and dedicated site support.
+                AstroMar delivers integrated heavy lift logistics solutions —
+                from initial feasibility to final placement on site, with engineered transport, multi-modal
+                coordination, and risk-managed execution for EPC and turnkey projects.
               </p>
               <ul className="space-y-3">
                 {[
@@ -241,7 +243,7 @@ const Projects = () => {
             <ScrollReveal>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CAPABILITIES</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                End-to-End Project Capabilities
+                Project Cargo Freight Forwarders — End-to-End Capabilities
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
                 Every project cargo movement is backed by detailed planning, engineering support, and a dedicated

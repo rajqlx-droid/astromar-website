@@ -3,7 +3,6 @@ import { Eye, Target, Shield, Globe, UserCheck, TrendingUp, Medal, Clock, CheckC
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import SEOHead from "@/components/SEOHead";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -11,29 +10,42 @@ import { Button } from "@/components/ui/button";
 
 const stats = [
   { value: "7+", label: "Years of Excellence" },
-  { value: "8+", label: "FTWZ Locations" },
+  { value: "10", label: "FTWZ Locations" },
   { value: "500+", label: "Clients Served" },
   { value: "₹2000Cr+", label: "Cargo Handled" },
 ];
 
 const coreValues = [
-  { icon: Shield, title: "Compliance First", desc: "100% customs compliance with transparent, auditable operations across all FTWZ locations.", image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" },
-  { icon: Globe, title: "Global Connectivity", desc: "Seamless integration with global trade lanes through strategic port proximity.", image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80" },
-  { icon: UserCheck, title: "Client-Centric", desc: "Dedicated account managers and customized logistics solutions for every client.", image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80" },
-  { icon: TrendingUp, title: "Continuous Improvement", desc: "Structured processes and operational efficiency driving measurable outcomes.", image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&q=80" },
-  { icon: Medal, title: "Excellence", desc: "Consistently delivering industry-leading service levels and operational efficiency.", image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" },
-  { icon: Clock, title: "Reliability", desc: "24/7 operations ensuring uninterrupted supply chain continuity.", image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80" },
+  { icon: Shield, title: "Compliance First", descSegments: [
+    { text: "100% customs compliance with transparent, auditable operations across all FTWZ locations. Our in-house compliance team manages every shipment with zero-error documentation, working directly with Indian Customs and SEZ authorities to ensure goods clear quickly and lawfully. From BOE filing to re-export attestation, our FTWZ warehouse operations maintain complete audit trails, real-time regulatory tracking, and proactive compliance updates — keeping your business ahead of changing trade policies and protecting you from costly penalties." }
+  ], image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" },
+  { icon: Globe, title: "Global Connectivity", descSegments: [
+    { text: "Seamless integration with international trade lanes through strategic positioning at India's busiest ports — Chennai, Mumbai (JNPA), Kochi, Vizag, Mundra, and Dahej. Each facility connects directly to global shipping routes, with multimodal access by sea, rail, road, and air. Our network supports importers, exporters, and re-exporters from over 50 countries, with 24/7 customs clearance, single-window documentation, and direct connectivity to over 200 destination ports worldwide." }
+  ], image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80" },
+  { icon: UserCheck, title: "Client-Centric", descSegments: [
+    { text: "Every client gets a dedicated account manager — a single point of contact for everything from quote requests to delivery confirmation. We don't believe in one-size-fits-all logistics. Whether you're a first-time importer testing the FTWZ model or a Fortune 500 brand managing complex multi-port operations, we design solutions around your cargo profile, compliance needs, and growth plans. Transparent pricing, custom SLAs, and proactive issue resolution define every engagement." }
+  ], image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80" },
+  { icon: TrendingUp, title: "Continuous Improvement", descSegments: [
+    { text: "Structured processes, ISO-aligned operations, and data-driven decisions power measurable outcomes for every client. We invest continuously in technology — from cloud-based WMS platforms to AI-driven inventory forecasting — and regularly retrain teams on the latest SEZ Act updates, customs regulations, and global trade developments. Quarterly performance reviews with KPIs around dwell time, accuracy, and cost-per-pallet ensure we're always improving the value we deliver." }
+  ], image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&q=80" },
+  { icon: Medal, title: "Excellence", descSegments: [
+    { text: "Industry-leading service standards backed by 7+ years of operational excellence and ₹2000Cr+ in cargo handled without major compliance incidents. We're recognized as one of India's top FTWZ operators by customers across electronics, pharma, automotive, FMCG, and chemicals industries. Our facilities meet international standards — including GDP for pharmaceuticals, ISO 14001 environmental compliance, and SEZ Act 2005 statutory obligations — making us the trusted partner for high-stakes, high-value cargo." }
+  ], image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" },
+  { icon: Clock, title: "Reliability", descSegments: [
+    { text: "24/7 operations across all 10 strategic locations ensure your supply chain never sleeps. With round-the-clock customs clearance, dedicated security teams at each facility, redundant power and connectivity systems, and tested disaster recovery protocols, we keep cargo moving even when external conditions are challenging. Our SLA-backed uptime commitment of 99.5%+ means importers and exporters can plan production schedules, sales launches, and delivery commitments with absolute confidence." }
+  ], image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80" },
 ];
 
 const milestones = [
   { year: "2017", title: "Founded", desc: "Astromar established in Chennai with a vision to transform India's FTWZ landscape." },
-  { year: "2018", title: "First FTWZ Facility", desc: "Launched our first Free Trade Warehousing Zone facility near Chennai port." },
-  { year: "2019", title: "Pan-India Expansion", desc: "Expanded operations to Mumbai (JNPA) and Cochin." },
+  { year: "2018", title: "First FTWZ Facility", desc: "Launched our first FTWZ Warehouse near Chennai port — establishing the foundation for India's leading FTWZ network." },
+  { year: "2019", title: "Pan-India Expansion", desc: "Expanded operations to Mumbai (JNPA) and Kochi." },
   { year: "2021", title: "Technology Platform", desc: "Deployed real-time inventory management systems." },
-  { year: "2022", title: "7 Locations", desc: "Achieved pan-India coverage with 7 operational FTWZ warehouse locations across key port cities." },
+  { year: "2022", title: "Pan-India Scale", desc: "Established nationwide presence with FTWZ warehouses across key port cities including Chennai, Mumbai, Kochi, and Vizag." },
   { year: "2023", title: "Industry Recognition", desc: "Recognized among India's leading FTWZ operators for service excellence and compliance standards." },
   { year: "2024", title: "Cold Chain Launch", desc: "Introduced GDP-compliant cold storage facilities at Chennai and Mumbai locations." },
-  { year: "2026", title: "Bengaluru Expansion", desc: "Launched new FTWZ warehouse at Devanahalli Aerospace SEZ, Bengaluru, strengthening South India logistics network." },
+  { year: "2025", title: "Bengaluru Expansion", desc: "Launched new FTWZ warehouse at Devanahalli Aerospace SEZ, Bengaluru, strengthening South India logistics network." },
+  { year: "2026", title: "10 FTWZ Locations", desc: "Reached pan-India coverage milestone — operating as India's leading FTWZ operator across 10 strategic ports and inland corridors from Mundra to Chennai." },
 ];
 
 const certifications = [
@@ -59,7 +71,7 @@ const processSteps = [
   {
     num: "03",
     title: "Warehouse Allocation & Setup",
-    desc: "We allocate dedicated warehouse space, configure your WMS access, and set up inbound logistics from your supplier.",
+    desc: "We allocate dedicated FTWZ Warehouse space, configure your WMS access, and set up inbound logistics from your supplier.",
   },
   {
     num: "04",
@@ -71,13 +83,11 @@ const processSteps = [
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
-      <SEOHead />
-
       {/* Hero */}
       <section className="relative bg-brand-navy py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
-          alt="Business and logistics team"
+          alt="Astromar Logistics — Free Trade Warehousing Zone operator with FTWZ Warehouse integration across India"
           fill
           className="absolute inset-0 object-cover"
           unoptimized
@@ -85,17 +95,17 @@ const About = () => {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center w-full">
             {/* LEFT - Text */}
-            <div>
+            <div className="max-w-2xl">
               <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">
                 ABOUT ASTROMAR
               </p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                India's Trusted FTWZ &amp; Logistics Partner
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+                Astromar Logistics — Your Free Trade Warehousing Zone Partner
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Since 2017, Astromar Logistics has been transforming how businesses leverage Free Trade Warehousing Zones to optimize customs duty, defer GST, and streamline global trade across India.
+                Since 2017, Astromar Logistics has been delivering trusted Free Trade Warehousing Zone operations across India — combining duty-free bonded storage, multimodal freight, and customs expertise across 10 strategic locations nationwide.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-colors">
@@ -114,7 +124,7 @@ const About = () => {
                 <p className="text-white/80 text-sm font-semibold">Years of Excellence</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">8+</p>
+                <p className="text-4xl font-extrabold text-accent mb-2">10</p>
                 <p className="text-white/80 text-sm font-semibold">FTWZ Locations</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
@@ -163,6 +173,19 @@ const About = () => {
         </div>
       </section>
 
+      {/* NEW: FTWZ Warehouse Integration */}
+      <section className="py-14 bg-blue-50">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
+          <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">FTWZ INTEGRATION</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+            Streamlining Customs with Strategic FTWZ Warehouse Integration
+          </h2>
+          <p className="text-base sm:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            Our integrated FTWZ Warehouse solutions are custom-built to eliminate traditional supply chain friction, offering businesses elite transit management and agile cargo handling.
+          </p>
+        </div>
+      </section>
+
       {/* Marquee band */}
       <section className="bg-[#0a1628] py-5">
         <div
@@ -177,7 +200,7 @@ const About = () => {
             <div key={pass} className="flex items-center gap-0 shrink-0">
               {[
                 "500+ Clients Served",
-                "8+ FTWZ Locations Across India",
+                "10 FTWZ Locations Across India",
                 "7+ Years of Excellence",
                 "₹2000Cr+ Cargo Handled",
                 "24/7 Operations Support",
@@ -200,9 +223,12 @@ const About = () => {
       <section className="py-20 bg-brand-light">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <div className="text-center mx-auto mb-12">
+            <div className="text-center mx-auto mb-12 max-w-3xl">
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR VALUES</p>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground">What We Stand For</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">A Modern Approach to the Free Trade Warehousing Zone</h2>
+              <p className="text-base text-foreground/70 leading-relaxed">
+                Our values define how we deliver FTWZ Warehouse operations — from compliance and transparency to client partnership and continuous improvement.
+              </p>
             </div>
           </ScrollReveal>
           <div className="space-y-16">
@@ -214,7 +240,15 @@ const About = () => {
                     <item.icon className="w-6 h-6 text-primary" strokeWidth={1.75} />
                   </div>
                   <h3 className="text-xl sm:text-2xl font-extrabold text-foreground mb-3">{item.title}</h3>
-                  <p className="text-base text-foreground/70 leading-relaxed">{item.desc}</p>
+                  <p className="text-base text-foreground/70 leading-relaxed">
+                    {item.descSegments.map((seg, segIdx) => (
+                      seg.kw ? (
+                        <span key={segIdx} className="text-blue-600">{seg.text}</span>
+                      ) : (
+                        <span key={segIdx}>{seg.text}</span>
+                      )
+                    ))}
+                  </p>
                 </div>
               );
               const imageBlock = (
@@ -268,7 +302,7 @@ const About = () => {
                           <div className="rounded-xl border border-gray-200 bg-slate-50 p-5 sm:p-6 shadow-sm text-right">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
                             <p className="font-bold text-foreground mt-1">{m.title}</p>
-                            <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
+                            <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed" dangerouslySetInnerHTML={{ __html: m.desc }}></p>
                           </div>
                         )}
                       </div>
@@ -277,14 +311,14 @@ const About = () => {
                           <div className="rounded-xl border border-gray-200 bg-slate-50 p-5 sm:p-6 shadow-sm">
                             <p className="text-xl font-extrabold text-primary">{m.year}</p>
                             <p className="font-bold text-foreground mt-1">{m.title}</p>
-                            <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
+                            <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed" dangerouslySetInnerHTML={{ __html: m.desc }}></p>
                           </div>
                         )}
                       </div>
                       <div className="md:hidden rounded-xl border border-gray-200 bg-slate-50 p-5 shadow-sm">
                         <p className="text-xl font-extrabold text-primary">{m.year}</p>
                         <p className="font-bold text-foreground mt-1">{m.title}</p>
-                        <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed">{m.desc}</p>
+                        <p className="text-sm sm:text-base text-foreground/80 mt-1 leading-relaxed" dangerouslySetInnerHTML={{ __html: m.desc }}></p>
                       </div>
                     </div>
                   </ScrollReveal>
@@ -327,7 +361,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-orange-500 uppercase mb-2">OUR PROCESS</p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-16">How We Work</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-16">Optimizing Global Trade Operations with Astromar Logistics</h2>
           </ScrollReveal>
 
           <div className="relative">
@@ -344,7 +378,7 @@ const About = () => {
                     </div>
                     <div className="pt-1">
                       <h3 className="text-base font-bold text-foreground mb-1">{step.title}</h3>
-                      <p className="text-sm text-foreground/70 leading-relaxed">{step.desc}</p>
+                      <p className="text-sm text-foreground/70 leading-relaxed" dangerouslySetInnerHTML={{ __html: step.desc }}></p>
                     </div>
                   </div>
                   {/* Desktop: centered column */}
@@ -353,7 +387,7 @@ const About = () => {
                       <span className="text-2xl font-extrabold text-orange-500">{step.num}</span>
                     </div>
                     <h3 className="text-base font-bold text-foreground mb-2">{step.title}</h3>
-                    <p className="text-sm text-foreground/70 leading-relaxed">{step.desc}</p>
+                    <p className="text-sm text-foreground/70 leading-relaxed" dangerouslySetInnerHTML={{ __html: step.desc }}></p>
                   </div>
                 </ScrollReveal>
               ))}
