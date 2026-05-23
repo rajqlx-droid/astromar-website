@@ -191,15 +191,7 @@ const Warehousing = () => {
                   {openIndex === i && (
                     <div className="bg-brand-light border-l-4 border-[#f97316] px-5 py-4">
                       <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-                        {"bodyKw" in item && item.bodyKw ? (
-                          <>
-                            {item.body.split(item.bodyKw)[0]}
-                            {item.bodyKw}
-                            {item.body.split(item.bodyKw)[1]}
-                          </>
-                        ) : (
-                          item.body
-                        )}
+                        {item.body}
                       </p>
                     </div>
                   )}
@@ -270,15 +262,7 @@ const Warehousing = () => {
                 <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    {"descKw" in item && item.descKw ? (
-                      <>
-                        {item.desc.split(item.descKw)[0]}
-                        {item.descKw}
-                        {item.desc.split(item.descKw)[1]}
-                      </>
-                    ) : (
-                      item.desc
-                    )}
+                    {item.desc}
                   </p>
                 </div>
               </ScrollReveal>

@@ -254,15 +254,7 @@ const AirFreight = () => {
                 <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    {"descKw" in item && item.descKw ? (
-                      <>
-                        {item.desc.split(item.descKw)[0]}
-                        {item.descKw}
-                        {item.desc.split(item.descKw)[1]}
-                      </>
-                    ) : (
-                      item.desc
-                    )}
+                    {item.desc}
                   </p>
                 </div>
               </ScrollReveal>

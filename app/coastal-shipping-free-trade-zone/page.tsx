@@ -319,26 +319,10 @@ const CoastalShipping = () => {
               <ScrollReveal key={item.title} delay={i * 0.07}>
                 <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">
-                    {"titleKw" in item && item.titleKw ? (
-                      <>
-                        {item.title.split(item.titleKw)[0]}
-                        {item.titleKw}
-                        {item.title.split(item.titleKw)[1]}
-                      </>
-                    ) : (
-                      item.title
-                    )}
+                    {item.title}
                   </h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
-                    {"descKw" in item && item.descKw ? (
-                      <>
-                        {item.desc.split(item.descKw)[0]}
-                        {item.descKw}
-                        {item.desc.split(item.descKw)[1]}
-                      </>
-                    ) : (
-                      item.desc
-                    )}
+                    {item.desc}
                   </p>
                 </div>
               </ScrollReveal>

@@ -242,11 +242,7 @@ const About = () => {
                   <h3 className="text-xl sm:text-2xl font-extrabold text-foreground mb-3">{item.title}</h3>
                   <p className="text-base text-foreground/70 leading-relaxed">
                     {item.descSegments.map((seg, segIdx) => (
-                      seg.kw ? (
-                        <span key={segIdx} className="text-blue-600">{seg.text}</span>
-                      ) : (
-                        <span key={segIdx}>{seg.text}</span>
-                      )
+                      <span key={segIdx}>{seg.text}</span>
                     ))}
                   </p>
                 </div>
