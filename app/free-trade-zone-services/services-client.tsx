@@ -38,7 +38,7 @@ const Services = () => {
                 OUR SERVICES
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                FTZ India — Freight, Customs & Warehousing
+                Freight, Customs & Bonded Warehousing Services — FTZ India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 Astromar's FTZ India network delivers duty-free bonded warehousing, multimodal freight, customs clearance, and value-added services under one trusted partner.

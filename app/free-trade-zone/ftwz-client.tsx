@@ -222,7 +222,7 @@ const FTWZServices = () => {
             <div className="max-w-2xl">
               <span className="block text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-4">FTWZ WAREHOUSING</span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6 leading-tight">
-                FTWZ in India — Zero Duty Bonded Storage
+                Zero Duty Bonded Storage — FTWZ in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 mb-8 leading-relaxed">
                 Astromar's FTWZ in India network lets you store imported goods without paying customs duty or GST until they leave the zone — operated across 10 strategic Indian locations from Chennai to Mundra.
@@ -259,24 +259,49 @@ const FTWZServices = () => {
       </section>
 
       {/* What is FTWZ - Overview */}
-      <section className="py-16 bg-brand-light">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">OVERVIEW</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
-              What is an FTWZ in India?
-            </h2>
-            <div className="space-y-4 text-sm sm:text-base text-foreground/80 leading-relaxed max-w-4xl">
-              <p>A Free Trade Warehousing Zone (FTWZ) is a Government-notified area established under the SEZ Act, 2005, where imported goods can be stored without immediate payment of customs duty or GST. Goods stay in the zone duty-free until they're cleared for domestic sale, re-exported abroad, or transferred to another FTWZ.</p>
-              <p>Astromar operates 10 strategic FTWZ warehouse locations across India — from Chennai and Mumbai's busiest container ports to inland gateways at Khurja and Bengaluru. Each facility is fully bonded, customs-controlled, and licensed for value-added activities including kitting, labelling, repackaging, and re-export.</p>
-              <p>For importers, this means working capital that isn't trapped in customs duty, GST deferred until point of sale, and the operational flexibility to consolidate, repack, and re-export without triggering tax events.</p>
+            <div className="grid grid-cols-1 lg:grid-cols-[8fr_4fr] gap-12 items-start">
+              <div>
+                <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">OVERVIEW</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
+                  What is an FTWZ in India?
+                </h2>
+                <div className="space-y-4 text-sm sm:text-base text-foreground/80 leading-relaxed">
+                  <p>A Free Trade Warehousing Zone (FTWZ) is a Government-notified area established under the SEZ Act, 2005, where imported goods can be stored without immediate payment of customs duty or GST. Goods stay in the zone duty-free until they're cleared for domestic sale, re-exported abroad, or transferred to another FTWZ.</p>
+                  <p>Astromar operates 10 strategic FTWZ warehouse locations across India — from Chennai and Mumbai's busiest container ports to inland gateways at Khurja and Bengaluru. Each facility is fully bonded, customs-controlled, and licensed for value-added activities including kitting, labelling, repackaging, and re-export.</p>
+                  <p>For importers, this means working capital that isn't trapped in customs duty, GST deferred until point of sale, and the operational flexibility to consolidate, repack, and re-export without triggering tax events.</p>
+                </div>
+              </div>
+              <aside className="bg-gradient-to-br from-[#0f1f3d] to-[#1B3A6B] rounded-xl p-6 sm:p-8 text-white">
+                <p className="text-xs font-bold tracking-[0.2em] text-[#F97316] uppercase mb-4">Key Facts</p>
+                <div className="space-y-4">
+                  <div className="border-b border-white/15 pb-3">
+                    <p className="text-2xl sm:text-3xl font-extrabold text-[#F97316] leading-none">10</p>
+                    <p className="text-sm text-white/80 mt-1">FTWZ Locations Across India</p>
+                  </div>
+                  <div className="border-b border-white/15 pb-3">
+                    <p className="text-2xl sm:text-3xl font-extrabold text-[#F97316] leading-none">100%</p>
+                    <p className="text-sm text-white/80 mt-1">Duty Free Storage</p>
+                  </div>
+                  <div className="border-b border-white/15 pb-3">
+                    <p className="text-2xl sm:text-3xl font-extrabold text-[#F97316] leading-none">0%</p>
+                    <p className="text-sm text-white/80 mt-1">GST Until Domestic Sale</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl sm:text-3xl font-extrabold text-[#F97316] leading-none">SEZ</p>
+                    <p className="text-sm text-white/80 mt-1">Act 2005 Notified</p>
+                  </div>
+                </div>
+              </aside>
             </div>
           </ScrollReveal>
         </div>
       </section>
 
       {/* Key Benefits */}
-      <section id="benefits" className="py-20 bg-white">
+      <section id="benefits" className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-2 text-center">FTWZ ADVANTAGES</p>
@@ -287,7 +312,7 @@ const FTWZServices = () => {
           <div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto items-stretch">
             {benefits.map((b, i) => (
               <ScrollReveal key={b.title} delay={i * 0.07} className="h-full">
-                <div className="rounded-xl border border-gray-200 bg-brand-light p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
+                <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm h-full flex flex-col hover:shadow-md transition-shadow">
                   <CheckCircle2 className="w-8 h-8 text-[#F97316] mb-4" strokeWidth={1.5} />
                   <h3 className="text-lg font-bold text-foreground mb-2">{b.title}</h3>
                   <p className="text-sm sm:text-base text-foreground/70 leading-relaxed flex-1">{b.desc}</p>
@@ -299,7 +324,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Why Astromar Section - NEW */}
-      <section className="py-16 bg-brand-light">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-2 text-center">WHY ASTROMAR</p>
@@ -340,7 +365,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Use Cases Carousel */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-2 text-center">FTWZ USE CASES</p>
@@ -385,7 +410,7 @@ const FTWZServices = () => {
       </section>
 
       {/* Comparison Table - 3 columns */}
-      <section className="py-20 bg-brand-light">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-xs font-semibold tracking-[0.2em] text-[#F97316] uppercase mb-3 text-center">FTWZ COMPARISON</p>
@@ -440,14 +465,14 @@ const FTWZServices = () => {
       </section>
 
       {/* FAQ Section - NEW */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-blue-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
             Frequently Asked Questions
           </h2>
           <div className="max-w-4xl mx-auto space-y-4">
             {ftwzFaqs.map((item, idx) => (
-              <div key={idx} className="bg-brand-light border border-[#1B3A6B]/10 rounded-xl p-5">
+              <div key={idx} className="bg-white border border-[#1B3A6B]/10 rounded-xl p-5 shadow-sm">
                 <h3 className="text-base font-bold text-[#0f1f3d] mb-3 flex gap-3">
                   <span className="text-[#F97316] flex-shrink-0">Q{idx + 1}.</span>
                   <span><KwText segments={item.question} /></span>
@@ -462,7 +487,7 @@ const FTWZServices = () => {
       </section>
 
       {/* FTWZ Locations Footer - Option D */}
-      <section className="py-12 bg-brand-light border-t border-[#1B3A6B]/10">
+      <section className="py-12 bg-white border-t border-[#1B3A6B]/10">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
           <p className="text-xs font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">FTWZ NETWORK</p>
           <p className="text-base sm:text-lg font-semibold text-foreground mb-2">Operating at 10 strategic ports across India</p>
