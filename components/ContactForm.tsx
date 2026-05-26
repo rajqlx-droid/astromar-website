@@ -1,17 +1,18 @@
 "use client"
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 interface ContactFormProps {
   showInfoStrip?: boolean;
 }
 
 const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
-  const { toast } = useToast();
   const [form, setForm] = useState({
     fullName: "", company: "", email: "", phone: "", service: "", location: "", message: "",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const validate = () => {
     const errs: Record<string, string> = {};
@@ -24,13 +25,40 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
     return errs;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitError("");
     const errs = validate();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
     setErrors({});
-    toast({ title: "Enquiry Submitted", description: "Thank you! Our team will get back to you within 24 hours." });
-    setForm({ fullName: "", company: "", email: "", phone: "", service: "", location: "", message: "" });
+    setLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.fullName,
+          email: form.email,
+          phone: form.phone,
+          company: form.company,
+          message: form.message,
+          service: form.service,
+          location: form.location,
+          source: "Contact Page",
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setSubmitted(true);
+        setForm({ fullName: "", company: "", email: "", phone: "", service: "", location: "", message: "" });
+      } else {
+        setSubmitError(data.error || "Failed to submit. Please try again.");
+      }
+    } catch {
+      setSubmitError("Network error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const update = (field: string, value: string) => {
@@ -79,93 +107,106 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
               </div>
             </div>
 
-            {/* Right column � glass form card */}
+            {/* Right column — glass form card */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3 md:p-5">
-              <form onSubmit={handleSubmit} className="space-y-3">
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-semibold text-white mb-1.5">
-                      Full Name <span className="text-orange-500">*</span>
-                    </label>
-                    <input type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={glassInput} />
-                    {errors.fullName && <p className="text-orange-500 text-xs mt-1">{errors.fullName}</p>}
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-white mb-1.5">Company</label>
-                    <input type="text" placeholder="Company name" value={form.company} onChange={(e) => update("company", e.target.value)} maxLength={100} className={glassInput} />
-                  </div>
+              {submitted ? (
+                <div className="text-center py-12">
+                  <div className="text-5xl mb-3">✓</div>
+                  <p className="text-white font-bold text-xl">Enquiry Submitted</p>
+                  <p className="text-white/70 text-sm mt-2">Thank you! Our team will get back to you within 24 hours.</p>
                 </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-3">
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-semibold text-white mb-1.5">
-                      Email <span className="text-orange-500">*</span>
-                    </label>
-                    <input type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={glassInput} />
-                    {errors.email && <p className="text-orange-500 text-xs mt-1">{errors.email}</p>}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <label className="block text-sm font-semibold text-white mb-1.5">
+                        Full Name <span className="text-orange-500">*</span>
+                      </label>
+                      <input type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={glassInput} />
+                      {errors.fullName && <p className="text-orange-500 text-xs mt-1">{errors.fullName}</p>}
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-white mb-1.5">Company</label>
+                      <input type="text" placeholder="Company name" value={form.company} onChange={(e) => update("company", e.target.value)} maxLength={100} className={glassInput} />
+                    </div>
                   </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-white mb-1.5">Phone</label>
-                    <input type="tel" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={20} className={glassInput} />
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <label className="block text-sm font-semibold text-white mb-1.5">
+                        Email <span className="text-orange-500">*</span>
+                      </label>
+                      <input type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={glassInput} />
+                      {errors.email && <p className="text-orange-500 text-xs mt-1">{errors.email}</p>}
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-white mb-1.5">Phone</label>
+                      <input type="tel" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={20} className={glassInput} />
+                    </div>
                   </div>
-                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label className="block text-sm font-semibold text-white mb-1.5">Service Required</label>
-                    <select value={form.service} onChange={(e) => update("service", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
-                      <option value="" className="bg-gray-900 text-white">Select a service</option>
-                      <option value="FTWZ Warehousing" className="bg-gray-900 text-white">FTWZ Warehousing</option>
-                      <option value="Ocean Freight (FCL)" className="bg-gray-900 text-white">Ocean Freight (FCL)</option>
-                      <option value="Ocean Freight (LCL)" className="bg-gray-900 text-white">Ocean Freight (LCL)</option>
-                      <option value="Air Freight" className="bg-gray-900 text-white">Air Freight</option>
-                      <option value="Coastal Shipping" className="bg-gray-900 text-white">Coastal Shipping</option>
-                      <option value="Custom Clearance" className="bg-gray-900 text-white">Custom Clearance</option>
-                      <option value="Supply Chain and Distribution" className="bg-gray-900 text-white">Supply Chain &amp; Distribution</option>
-                      <option value="Project and Specialized Cargo" className="bg-gray-900 text-white">Project &amp; Specialized Cargo</option>
-                      <option value="Other" className="bg-gray-900 text-white">Other</option>
-                    </select>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <label className="block text-sm font-semibold text-white mb-1.5">Service Required</label>
+                      <select value={form.service} onChange={(e) => update("service", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
+                        <option value="" className="bg-gray-900 text-white">Select a service</option>
+                        <option value="FTWZ Warehousing" className="bg-gray-900 text-white">FTWZ Warehousing</option>
+                        <option value="Ocean Freight (FCL)" className="bg-gray-900 text-white">Ocean Freight (FCL)</option>
+                        <option value="Ocean Freight (LCL)" className="bg-gray-900 text-white">Ocean Freight (LCL)</option>
+                        <option value="Air Freight" className="bg-gray-900 text-white">Air Freight</option>
+                        <option value="Coastal Shipping" className="bg-gray-900 text-white">Coastal Shipping</option>
+                        <option value="Custom Clearance" className="bg-gray-900 text-white">Custom Clearance</option>
+                        <option value="Supply Chain and Distribution" className="bg-gray-900 text-white">Supply Chain &amp; Distribution</option>
+                        <option value="Project and Specialized Cargo" className="bg-gray-900 text-white">Project &amp; Specialized Cargo</option>
+                        <option value="Other" className="bg-gray-900 text-white">Other</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-white mb-1.5">FTWZ Location</label>
+                      <select value={form.location} onChange={(e) => update("location", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
+                        <option value="" className="bg-gray-900 text-white">Select a location</option>
+                        <option value="Chennai (Anna Nagar HQ)" className="bg-gray-900 text-white">Chennai (Anna Nagar HQ)</option>
+                        <option value="Chennai (Sriperumbudur)" className="bg-gray-900 text-white">Chennai (Sriperumbudur)</option>
+                        <option value="Chennai (Vallur)" className="bg-gray-900 text-white">Chennai (Vallur)</option>
+                        <option value="Kochi" className="bg-gray-900 text-white">Kochi</option>
+                        <option value="Vizag" className="bg-gray-900 text-white">Vizag</option>
+                        <option value="Mumbai (Panvel)" className="bg-gray-900 text-white">Mumbai (Panvel)</option>
+                        <option value="Mumbai (JNPA)" className="bg-gray-900 text-white">Mumbai (JNPA)</option>
+                        <option value="Delhi (Khurja)" className="bg-gray-900 text-white">Delhi (Khurja)</option>
+                        <option value="Bengaluru" className="bg-gray-900 text-white">Bengaluru</option>
+                        <option value="Dahej" className="bg-gray-900 text-white">Dahej</option>
+                      </select>
+                    </div>
                   </div>
+
                   <div>
-                    <label className="block text-sm font-semibold text-white mb-1.5">FTWZ Location</label>
-                    <select value={form.location} onChange={(e) => update("location", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
-                      <option value="" className="bg-gray-900 text-white">Select a location</option>
-                      <option value="Chennai (Anna Nagar HQ)" className="bg-gray-900 text-white">Chennai (Anna Nagar HQ)</option>
-                      <option value="Chennai (Sriperumbudur)" className="bg-gray-900 text-white">Chennai (Sriperumbudur)</option>
-                      <option value="Chennai (Vallur)" className="bg-gray-900 text-white">Chennai (Vallur)</option>
-                      <option value="Kochi" className="bg-gray-900 text-white">Kochi</option>
-                      <option value="Vizag" className="bg-gray-900 text-white">Vizag</option>
-                      <option value="Mumbai (Panvel)" className="bg-gray-900 text-white">Mumbai (Panvel)</option>
-                      <option value="Mumbai (JNPA)" className="bg-gray-900 text-white">Mumbai (JNPA)</option>
-                      <option value="Delhi (Khurja)" className="bg-gray-900 text-white">Delhi (Khurja)</option>
-                      <option value="Bengaluru" className="bg-gray-900 text-white">Bengaluru</option>
-                      <option value="Dahej" className="bg-gray-900 text-white">Dahej</option>
-                    </select>
+                    <label className="block text-sm font-semibold text-white mb-1.5">Message</label>
+                    <textarea
+                      placeholder="Tell us about your requirements..."
+                      value={form.message}
+                      onChange={(e) => update("message", e.target.value)}
+                      maxLength={1000}
+                      rows={4}
+                      className={`${glassInput} resize-none`}
+                    />
+                    {errors.message && <p className="text-orange-500 text-xs mt-1">{errors.message}</p>}
                   </div>
-                </div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-white mb-1.5">Message</label>
-                  <textarea
-                    placeholder="Tell us about your requirements..."
-                    value={form.message}
-                    onChange={(e) => update("message", e.target.value)}
-                    maxLength={1000}
-                    rows={4}
-                    className={`${glassInput} resize-none`}
-                  />
-                  {errors.message && <p className="text-orange-500 text-xs mt-1">{errors.message}</p>}
-                </div>
+                  {submitError && (
+                    <p className="text-red-300 text-sm">{submitError}</p>
+                  )}
 
-                <button
-                  type="submit"
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors text-base"
-                >
-                  Submit Enquiry
-                </button>
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors text-base disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {loading ? "Sending..." : "Submit Enquiry"}
+                  </button>
 
-              </form>
+                </form>
+              )}
             </div>
 
           </div>

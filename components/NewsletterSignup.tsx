@@ -2,27 +2,37 @@
 import { useState } from "react";
 import { Send } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
-import { useToast } from "@/hooks/use-toast";
 
 const NewsletterSignup = () => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
-  const { toast } = useToast();
+  const [subscribed, setSubscribed] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError("");
     const trimmed = email.trim();
     if (!trimmed || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
-      toast({ title: "Please enter a valid email address.", variant: "destructive" });
+      setError("Please enter a valid email.");
       return;
     }
     setLoading(true);
     try {
-      await new Promise((r) => setTimeout(r, 600));
-      toast({ title: "Subscribed!", description: "You'll receive our latest insights." });
-      setEmail("");
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: trimmed }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setSubscribed(true);
+        setEmail("");
+      } else {
+        setError(data.error || "Subscription failed. Please try again.");
+      }
     } catch {
-      toast({ title: "Something went wrong. Please try again.", variant: "destructive" });
+      setError("Network error. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -39,25 +49,38 @@ const NewsletterSignup = () => {
           <p className="text-gray-600 text-sm mb-6">
             Get expert insights on FTWZ, freight, and trade compliance delivered to your inbox.
           </p>
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              required
-              maxLength={255}
-              className="flex-1 px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-            />
-            <button
-              type="submit"
-              disabled={loading}
-              className="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition-colors disabled:opacity-50"
-            >
-              {loading ? "Subscribing..." : "Subscribe"}
-            </button>
-          </form>
-          <p className="text-gray-400 text-xs mt-4">No spam. Unsubscribe anytime.</p>
+          {subscribed ? (
+            <div className="bg-white border border-green-200 rounded-lg p-6 max-w-md mx-auto">
+              <div className="text-3xl mb-2">✓</div>
+              <p className="text-[#0a1628] font-bold">Subscribed!</p>
+              <p className="text-gray-600 text-sm mt-1">You&apos;ll receive our latest insights.</p>
+            </div>
+          ) : (
+            <>
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  required
+                  maxLength={255}
+                  className="flex-1 px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                />
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {loading ? "Subscribing..." : "Subscribe"}
+                </button>
+              </form>
+              {error && (
+                <p className="text-red-600 text-sm mt-3">{error}</p>
+              )}
+              <p className="text-gray-400 text-xs mt-4">No spam. Unsubscribe anytime.</p>
+            </>
+          )}
         </ScrollReveal>
       </div>
     </section>
@@ -65,4 +88,3 @@ const NewsletterSignup = () => {
 };
 
 export default NewsletterSignup;
-

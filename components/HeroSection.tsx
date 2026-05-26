@@ -6,6 +6,48 @@ import Image from "next/image";
 
 const HeroSection = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async () => {
+    setError("");
+    if (!name.trim() || !email.trim()) {
+      setError("Please fill in name and email.");
+      return;
+    }
+    setLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          company,
+          message,
+          service,
+          source: "Hero Form",
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(data.error || "Failed to submit. Please try again.");
+      }
+    } catch {
+      setError("Network error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section className="relative w-full min-h-screen flex items-start pb-20 overflow-hidden">
@@ -21,7 +63,7 @@ const HeroSection = () => {
 
       <div className="w-full px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-start min-h-[90vh] relative z-20 pt-24">
 
-        {/* LEFT COLUMN � hero text */}
+        {/* LEFT COLUMN — hero text */}
         <div className="flex flex-col justify-center max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -30,7 +72,7 @@ const HeroSection = () => {
             className="inline-flex items-center w-fit rounded-full bg-primary/20 border border-primary/30 px-4 py-1.5 mb-6"
           >
             <span className="text-sm font-semibold text-primary-foreground/90 tracking-wide">
-              India's Leading FTWZ Provider
+              India&apos;s Leading FTWZ Provider
             </span>
           </motion.div>
 
@@ -58,7 +100,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-sm sm:text-base md:text-lg text-white/90 mb-10 leading-relaxed"
           >
-            Trusted FTWZ operator delivering duty-free warehousing, customs clearance, and integrated logistics solutions. Save customs duty and GST while leveraging Astromar's premier free trade warehousing zone in India network across 10 strategic locations.
+            Trusted FTWZ operator delivering duty-free warehousing, customs clearance, and integrated logistics solutions. Save customs duty and GST while leveraging Astromar&apos;s premier free trade warehousing zone in India network across 10 strategic locations.
           </motion.p>
 
           <motion.div
@@ -83,7 +125,7 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* RIGHT COLUMN � compact contact form */}
+        {/* RIGHT COLUMN — compact contact form */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -110,6 +152,8 @@ const HeroSection = () => {
                       <input
                         type="text"
                         placeholder="Your name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/50"
                       />
                     </div>
@@ -118,6 +162,8 @@ const HeroSection = () => {
                       <input
                         type="text"
                         placeholder="Company name"
+                        value={company}
+                        onChange={(e) => setCompany(e.target.value)}
                         className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/50"
                       />
                     </div>
@@ -130,6 +176,8 @@ const HeroSection = () => {
                       <input
                         type="email"
                         placeholder="you@company.com"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/50"
                       />
                     </div>
@@ -138,6 +186,8 @@ const HeroSection = () => {
                       <input
                         type="tel"
                         placeholder="+91 XXXXX XXXXX"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                         className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/50"
                       />
                     </div>
@@ -146,7 +196,11 @@ const HeroSection = () => {
                   {/* Row 3: Service dropdown */}
                   <div>
                     <label className="text-white/70 text-xs mb-1 block">Service Required</label>
-                    <select className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm focus:outline-none focus:border-white/50 appearance-none">
+                    <select
+                      value={service}
+                      onChange={(e) => setService(e.target.value)}
+                      className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm focus:outline-none focus:border-white/50 appearance-none"
+                    >
                       <option value="" className="text-gray-900 dark:text-white">Select a service</option>
                       <option value="ftwz" className="text-gray-900 dark:text-white">FTWZ Warehousing</option>
                       <option value="ocean" className="text-gray-900 dark:text-white">Ocean Freight (FCL)</option>
@@ -164,18 +218,25 @@ const HeroSection = () => {
                     <label className="text-white/70 text-xs mb-1 block">Message</label>
                     <textarea
                       placeholder="Tell us about your requirements..."
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       rows={1}
                       className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 text-sm focus:outline-none focus:border-white/50 resize-none"
                     />
                   </div>
 
+                  {error && (
+                    <p className="text-red-300 text-xs">{error}</p>
+                  )}
+
                   {/* Submit button */}
                   <button
                     type="button"
-                    onClick={() => setSubmitted(true)}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors"
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Submit Enquiry →
+                    {loading ? "Sending..." : "Submit Enquiry →"}
                   </button>
 
                   <p className="text-white/40 text-xs text-center">No spam. We respond within 24 hours.</p>
