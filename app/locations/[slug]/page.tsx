@@ -42,7 +42,7 @@ const locations = [
     nearestAirport: "Cochin International Airport (COK) — 28 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Cold Chain Storage", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Cold Chain Storage", "Single Window Clearance", "Transshipment Hub", "Marine Export Logistics"],
     about: "Astromar's Kochi FTWZ facility is strategically located at the International Container Transshipment Terminal (ICTT), Vallarpadam — India's first dedicated container transshipment terminal. Offering world-class bonded warehousing with seamless port connectivity.",
   },
   {
@@ -58,7 +58,7 @@ const locations = [
     nearestAirport: "Visakhapatnam Airport (VTZ) — 15 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Bonded Warehousing", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Bonded Warehousing", "Single Window Clearance", "Steel & Engineering Logistics", "Pharma Logistics"],
     about: "Located within the Visakhapatnam Special Economic Zone (VSEZ), Astromar's Vizag facility offers strategic access to one of India's busiest eastern ports, supporting imports, exports, and re-export operations across the Bay of Bengal trade corridor.",
   },
   {
@@ -74,7 +74,7 @@ const locations = [
     nearestAirport: "Chhatrapati Shivaji Maharaj International Airport (BOM) — 45 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Cold Chain Storage", "Project Cargo"],
+    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Value-Added Services", "Cold Chain Storage", "Project Cargo", "Automotive Components", "FMCG Logistics"],
     about: "Astromar's Panvel facility is strategically positioned near Nhava Sheva, India's largest container port. This FTWZ warehouse provides unmatched connectivity for importers and exporters operating across Western India and beyond.",
   },
   {
@@ -90,7 +90,7 @@ const locations = [
     nearestAirport: "Chhatrapati Shivaji Maharaj International Airport (BOM) — 40 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Container Freight", "Bonded Warehousing", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Container Freight", "Bonded Warehousing", "Single Window Clearance", "DFC Rail Connectivity", "Break-Bulk & Consolidation"],
     about: "Located at JNPA SEZ, Uran — directly adjacent to India's premier container port — Astromar's JNPA facility offers the fastest turnaround for container-based FTWZ operations, making it the preferred choice for high-volume importers and exporters.",
   },
   {
@@ -106,7 +106,7 @@ const locations = [
     nearestAirport: "Chennai International Airport (MAA) — 42 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Electronics Logistics", "Value-Added Services", "Cold Chain Storage", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "Electronics Logistics", "Value-Added Services", "Cold Chain Storage", "Single Window Clearance", "Automotive Components Hub", "Capital Equipment Imports"],
     about: "Astromar's Sriperumbudur FTWZ is located in the heart of Tamil Nadu's manufacturing corridor — home to global electronics and automotive giants. This facility is purpose-built for electronics, pharma, and high-value cargo operations.",
   },
   {
@@ -122,7 +122,7 @@ const locations = [
     nearestAirport: "Chennai International Airport (MAA) — 35 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Bulk Cargo", "Re-export Hub", "Bonded Warehousing", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "Bulk Cargo", "Re-export Hub", "Bonded Warehousing", "Single Window Clearance", "Multi-Port Logistics", "Energy & Petrochemical Logistics"],
     about: "Strategically located near Kamarajar Port (Ennore), Astromar's Vallur facility serves bulk cargo, coal, and industrial goods importers. Its proximity to North Chennai's industrial belt makes it ideal for manufacturing sector logistics.",
   },
   {
@@ -138,7 +138,7 @@ const locations = [
     nearestAirport: "Indira Gandhi International Airport (DEL) — 75 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "ICD Connectivity", "Value-Added Services", "Bonded Warehousing", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "ICD Connectivity", "Value-Added Services", "Bonded Warehousing", "Single Window Clearance", "Retail & FMCG Distribution", "Consumer Electronics Hub"],
     about: "Astromar's Delhi (Khurja) FTWZ serves the National Capital Region and North India's industrial hinterland. With excellent connectivity to ICD Tughlakabad and Dadri, this facility is ideal for importers and exporters in Delhi, UP, Haryana, and Punjab.",
   },
   {
@@ -154,7 +154,7 @@ const locations = [
     nearestAirport: "Kempegowda International Airport (BLR) — 8 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1565793979038-b5b6d2bda985?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Aerospace Logistics", "High-Value Cargo", "Cold Chain Storage", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "Aerospace Logistics", "High-Value Cargo", "Cold Chain Storage", "Single Window Clearance", "Air Cargo Express", "Biotech & Life Sciences"],
     about: "Located within the Aerospace SEZ at Devanahalli — just 8 km from Bengaluru International Airport — Astromar's Bengaluru FTWZ is purpose-built for aerospace, electronics, and high-value cargo. Ideal for India's growing tech and manufacturing sector.",
   },
   {
@@ -170,7 +170,7 @@ const locations = [
     nearestAirport: "Vadodara Airport (BDQ) — 80 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Chemical Logistics", "Bulk Cargo", "Bonded Warehousing", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "Chemical Logistics", "Bulk Cargo", "Bonded Warehousing", "Single Window Clearance", "Hazmat Handling", "Tanker Terminal Access"],
     about: "Astromar's Dahej FTWZ is located within Dahej SEZ-1, one of India's largest chemical and petrochemical industrial estates. This facility is specially equipped for chemical, polymer, and industrial cargo with full compliance and safety standards.",
   },
   {
@@ -186,7 +186,7 @@ const locations = [
     nearestAirport: "Bhuj Airport (BHJ) — 65 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
     heroImage: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1920&q=80",
-    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Container Freight", "Bulk Cargo", "Single Window Clearance"],
+    services: ["Duty-Free Storage", "GST Deferral", "Re-export Hub", "Container Freight", "Bulk Cargo", "Single Window Clearance", "ULCV Container Operations", "Middle East & Africa Gateway"],
     about: "Located at Adani Ports and SEZ (APSEZ), Mundra — India's largest commercial port — Astromar's Mundra FTWZ offers unmatched scale and connectivity for importers, exporters, and re-export operators. Strategically positioned for trade with the Middle East, Africa, and Europe.",
   },
   {
@@ -353,8 +353,8 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       {/* About Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div>
+          <div className={`grid grid-cols-1 ${seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:grid-cols-5" : "md:grid-cols-2"} gap-12 items-start`}>
+            <div className={seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:col-span-3" : ""}>
               <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">ABOUT THIS FACILITY</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">
                 {seoDetail?.seo.aboutH2 ? (
@@ -376,45 +376,8 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                   {location.about}
                 </p>
               )}
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="block text-sm font-bold text-foreground">Address</strong>
-                    <span className="text-sm text-foreground/70">{location.address}</span>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="block text-sm font-bold text-foreground">Nearest Port</strong>
-                    <span className="text-sm text-foreground/70">{location.port}</span>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Navigation className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="block text-sm font-bold text-foreground">Nearest Airport</strong>
-                    <span className="text-sm text-foreground/70">{location.nearestAirport}</span>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="block text-sm font-bold text-foreground">Operating Hours</strong>
-                    <span className="text-sm text-foreground/70">{location.operatingHours}</span>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <strong className="block text-sm font-bold text-foreground">Phone</strong>
-                    <a href={`tel:${location.phone.replace(/\s/g, "")}`} className="text-sm text-[#F97316] hover:underline">{location.phone}</a>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div>
+            <div className={seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:col-span-2" : ""}>
               <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">SERVICES AVAILABLE</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">
                 {seoDetail?.seo.servicesH2 ? (
@@ -433,6 +396,58 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Facility Details Section */}
+      <section className="py-16 bg-brand-light">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+          <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3 text-center">FACILITY DETAILS</p>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
+            Location &amp; Operations
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {/* Address */}
+            <div className="bg-white border border-[#1B3A6B]/10 rounded-xl p-5 flex flex-col items-center text-center">
+              <div className="w-12 h-12 rounded-lg bg-[rgba(249,115,22,0.10)] flex items-center justify-center mb-3">
+                <MapPin className="w-6 h-6 text-[#F97316]" />
+              </div>
+              <strong className="block text-sm font-bold text-foreground mb-1">Address</strong>
+              <span className="text-sm text-foreground/70">{location.address}</span>
+            </div>
+            {/* Nearest Port */}
+            <div className="bg-white border border-[#1B3A6B]/10 rounded-xl p-5 flex flex-col items-center text-center">
+              <div className="w-12 h-12 rounded-lg bg-[rgba(249,115,22,0.10)] flex items-center justify-center mb-3">
+                <Globe className="w-6 h-6 text-[#F97316]" />
+              </div>
+              <strong className="block text-sm font-bold text-foreground mb-1">Nearest Port</strong>
+              <span className="text-sm text-foreground/70">{location.port}</span>
+            </div>
+            {/* Nearest Airport */}
+            <div className="bg-white border border-[#1B3A6B]/10 rounded-xl p-5 flex flex-col items-center text-center">
+              <div className="w-12 h-12 rounded-lg bg-[rgba(249,115,22,0.10)] flex items-center justify-center mb-3">
+                <Navigation className="w-6 h-6 text-[#F97316]" />
+              </div>
+              <strong className="block text-sm font-bold text-foreground mb-1">Nearest Airport</strong>
+              <span className="text-sm text-foreground/70">{location.nearestAirport}</span>
+            </div>
+            {/* Operating Hours */}
+            <div className="bg-white border border-[#1B3A6B]/10 rounded-xl p-5 flex flex-col items-center text-center">
+              <div className="w-12 h-12 rounded-lg bg-[rgba(249,115,22,0.10)] flex items-center justify-center mb-3">
+                <Clock className="w-6 h-6 text-[#F97316]" />
+              </div>
+              <strong className="block text-sm font-bold text-foreground mb-1">Operating Hours</strong>
+              <span className="text-sm text-foreground/70">{location.operatingHours}</span>
+            </div>
+            {/* Phone */}
+            <div className="bg-white border border-[#1B3A6B]/10 rounded-xl p-5 flex flex-col items-center text-center">
+              <div className="w-12 h-12 rounded-lg bg-[rgba(249,115,22,0.10)] flex items-center justify-center mb-3">
+                <Phone className="w-6 h-6 text-[#F97316]" />
+              </div>
+              <strong className="block text-sm font-bold text-foreground mb-1">Phone</strong>
+              <a href={`tel:${location.phone.replace(/\s/g, "")}`} className="text-sm text-[#F97316] hover:underline">{location.phone}</a>
             </div>
           </div>
         </div>
