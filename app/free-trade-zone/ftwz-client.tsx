@@ -441,9 +441,12 @@ const FTWZServices = () => {
                     ["Customs Duty", "Paid on arrival", "Deferred 1 year", "Deferred indefinitely"],
                     ["GST on Storage", "Fully applicable", "Applicable", "100% deferred until DTA"],
                     ["Storage Duration", "Limited, renewal needed", "1 year limit", "Indefinite storage permitted"],
+                    ["Interest on Duty", "N/A — duty paid upfront", "Interest charged after 90 days", "Zero interest — duty fully deferred"],
                     ["Value-Added Services", "Severely limited", "Restricted", "Full — kitting, labelling, assembly"],
                     ["Re-Export Without Duty", "Not possible", "Limited", "Fully permitted, zero liability"],
                     ["Income Tax (Re-Export)", "Standard rates", "Standard rates", "5-year exemption on profits"],
+                    ["Multi-Currency", "INR only", "INR only", "USD/EUR/INR multi-currency permitted"],
+                    ["Overseas Supplier Stock Holding", "Not allowed", "Not allowed", "Permitted — consignment stocking by foreign suppliers"],
                   ] as const).map(([feature, regular, bonded, ftwz], i, arr) => {
                     const isLast = i === arr.length - 1;
                     const rowBorder = isLast ? undefined : "1px solid #e5e7eb";
