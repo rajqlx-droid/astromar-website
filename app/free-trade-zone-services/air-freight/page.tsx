@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Air Freight India — Express Cargo to 100+ Destinations | Astromar",
   description: "AstroMar Air Freight India: express delivery, charter services & DGR-certified handling. Connecting India to 100+ global destinations with FTWZ integration.",
   keywords: "air freight india, air cargo india, express air freight, charter services india, dgr cargo handling, international air freight, perishable air cargo, freight forwarder india, air freight to usa, air freight to europe",
-  alternates: { canonical: "https://astromarfreezone.com/free-trade-zone-services/air-freight" },
+  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/air-freight" },
   openGraph: {
     title: "Air Freight India — Express Cargo to 100+ Destinations",
     description: "Express delivery, charter services & DGR-certified air freight from India to 100+ global destinations, fully integrated with FTWZ.",
-    url: "https://astromarfreezone.com/free-trade-zone-services/air-freight",
+    url: "https://www.astromarfreezone.com/free-trade-zone-services/air-freight",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -31,7 +31,7 @@ const airFreightSchema = {
   "provider": {
     "@type": "Organization",
     "name": "Astromar Logistics Pvt Ltd",
-    "url": "https://astromarfreezone.com"
+    "url": "https://www.astromarfreezone.com"
   },
   "areaServed": { "@type": "Country", "name": "India" },
   "hasOfferCatalog": {
@@ -51,9 +51,9 @@ const airFreightBreadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://astromarfreezone.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://astromarfreezone.com/free-trade-zone-services" },
-    { "@type": "ListItem", "position": 3, "name": "Air Freight", "item": "https://astromarfreezone.com/free-trade-zone-services/air-freight" }
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.astromarfreezone.com/free-trade-zone-services" },
+    { "@type": "ListItem", "position": 3, "name": "Air Freight", "item": "https://www.astromarfreezone.com/free-trade-zone-services/air-freight" }
   ]
 };
 

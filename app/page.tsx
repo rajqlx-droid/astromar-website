@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free Trade Warehousing Zone India — FTWZ & Freight | Astromar",
     description: "India's leading FTWZ operator and freight forwarder across 10 strategic locations. Duty-free bonded warehousing, customs clearance, and supply chain solutions.",
-    url: "https://astromarfreezone.com",
+    url: "https://www.astromarfreezone.com",
     siteName: "Astromar Logistics",
     type: "website",
   },
@@ -23,7 +23,7 @@ const homeOrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Astromar Logistics Pvt Ltd",
-  "url": "https://astromarfreezone.com",
+  "url": "https://www.astromarfreezone.com",
   "logo": "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png",
   "description": "India's leading Free Trade Warehousing Zone operator and freight forwarder with 10 strategic FTWZ locations across India offering duty-free storage, customs clearance, and supply chain solutions.",
   "telephone": "+91 99402 11014",
@@ -44,7 +44,7 @@ const homeWebSiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Astromar Logistics",
-  "url": "https://astromarfreezone.com",
+  "url": "https://www.astromarfreezone.com",
   "description": "India's leading Free Trade Warehousing Zone operator and freight forwarder",
   "publisher": {
     "@type": "Organization",

@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Contact Astromar Logistics | FTWZ Enquiry & Office Address Chennai",
   description: "Contact Astromar Logistics for FTWZ warehousing, customs clearance, and freight forwarding enquiries. HQ: Anna Nagar, Chennai. Phone +91 99402 11014. Email sales@astromarfreezone.com.",
   keywords: "astromar logistics contact, ftwz enquiry india, astromar chennai office, ftwz contact chennai, freight forwarder contact india, ftwz quote request, astromar phone number, astromar email, free trade warehousing zone contact",
-  alternates: { canonical: "https://astromarfreezone.com/contact-us" },
+  alternates: { canonical: "https://www.astromarfreezone.com/contact-us" },
   openGraph: {
     title: "Contact Astromar Logistics | FTWZ Enquiry Chennai",
     description: "Get in touch with Astromar Logistics — India's leading FTWZ operator. HQ in Anna Nagar, Chennai. Call +91 99402 11014 or email sales@astromarfreezone.com.",
-    url: "https://astromarfreezone.com/contact-us",
+    url: "https://www.astromarfreezone.com/contact-us",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -28,7 +28,7 @@ const localBusinessSchema = {
   name: "Astromar Logistics Pvt Ltd",
   alternateName: "Astromar Freezone",
   description: "India's leading Free Trade Warehousing Zone operator and freight forwarder with 10 strategic FTWZ locations across India.",
-  url: "https://astromarfreezone.com",
+  url: "https://www.astromarfreezone.com",
   logo: "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hMDU2NTM0My1hNjA2LTRkNTItOTRjNC00OTZiMmQ3YTNmZDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCUkFORCBBU1NFVFMvMDAxLnBuZyIsImlhdCI6MTc3NTU0OTQwNCwiZXhwIjoxODM4NjIxNDA0fQ.jgeDhDostzqz1pdHBSMMSoRBb_eG-G2MLkJY6MVCR_w",
   image: "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hMDU2NTM0My1hNjA2LTRkNTItOTRjNC00OTZiMmQ3YTNmZDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCUkFORCBBU1NFVFMvMDAxLnBuZyIsImlhdCI6MTc3NTU0OTQwNCwiZXhwIjoxODM4NjIxNDA0fQ.jgeDhDostzqz1pdHBSMMSoRBb_eG-G2MLkJY6MVCR_w",
   telephone: "+91-99402-11014",
@@ -57,19 +57,19 @@ const localBusinessSchema = {
   ],
   areaServed: { "@type": "Country", name: "India" },
   priceRange: "$$",
-  sameAs: ["https://astromarfreezone.com"],
+  sameAs: ["https://www.astromarfreezone.com"],
 };
 
 const contactPageSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   name: "Contact Astromar Logistics",
-  url: "https://astromarfreezone.com/contact-us",
+  url: "https://www.astromarfreezone.com/contact-us",
   description: "Contact page for Astromar Logistics — India's leading FTWZ operator. Reach our HQ in Anna Nagar, Chennai for FTWZ warehousing, customs clearance, and freight forwarding enquiries.",
   mainEntity: {
     "@type": "Organization",
     name: "Astromar Logistics Pvt Ltd",
-    url: "https://astromarfreezone.com",
+    url: "https://www.astromarfreezone.com",
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -95,8 +95,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://astromarfreezone.com" },
-    { "@type": "ListItem", position: 2, name: "Contact Us", item: "https://astromarfreezone.com/contact-us" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.astromarfreezone.com" },
+    { "@type": "ListItem", position: 2, name: "Contact Us", item: "https://www.astromarfreezone.com/contact-us" },
   ],
 };
 

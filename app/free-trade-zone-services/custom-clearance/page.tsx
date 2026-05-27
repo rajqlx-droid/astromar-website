@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Customs Clearance Services in India | AstroMar Logistics",
   description: "Licensed customs clearance across every Indian port & airport. Astromar handles import/export clearance with compliance expertise — zero delays, full visibility.",
   keywords: "customs clearance services india, customs broker india, import customs clearance, export customs clearance, customs house agent, cha india, port customs clearance, airport customs clearance, ftwz customs, customs compliance india",
-  alternates: { canonical: "https://astromarfreezone.com/free-trade-zone-services/custom-clearance" },
+  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance" },
   openGraph: {
     title: "Customs Clearance Services in India | AstroMar Logistics",
     description: "Licensed customs clearance across every Indian port and airport. Compliance-first import & export clearance with zero delays.",
-    url: "https://astromarfreezone.com/free-trade-zone-services/custom-clearance",
+    url: "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -28,7 +28,7 @@ const customClearanceSchema = {
   "serviceType": "Customs Clearance Services in India",
   "name": "Astromar Customs Clearance",
   "description": "Licensed customs clearance services across every Indian port and airport — import, export, and FTWZ-bonded movement.",
-  "provider": { "@type": "Organization", "name": "Astromar Logistics Pvt Ltd", "url": "https://astromarfreezone.com" },
+  "provider": { "@type": "Organization", "name": "Astromar Logistics Pvt Ltd", "url": "https://www.astromarfreezone.com" },
   "areaServed": { "@type": "Country", "name": "India" },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -47,9 +47,9 @@ const customClearanceBreadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://astromarfreezone.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://astromarfreezone.com/free-trade-zone-services" },
-    { "@type": "ListItem", "position": 3, "name": "Customs Clearance", "item": "https://astromarfreezone.com/free-trade-zone-services/custom-clearance" }
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.astromarfreezone.com/free-trade-zone-services" },
+    { "@type": "ListItem", "position": 3, "name": "Customs Clearance", "item": "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance" }
   ]
 };
 

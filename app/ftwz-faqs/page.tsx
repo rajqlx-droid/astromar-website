@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "What is Free Trade Zone India | FTZ FAQs",
     description: "Discover answers to frequently asked questions about Free Trade Zone in India.",
-    url: "https://astromarfreezone.com/ftwz-faqs",
+    url: "https://www.astromarfreezone.com/ftwz-faqs",
     images: ["https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80"],
   },
 };

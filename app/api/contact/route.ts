@@ -25,7 +25,7 @@ export async function POST(req: Request) {
       ${location ? `<p><strong>FTWZ Location Interest:</strong> ${location}</p>` : ""}
       ${message ? `<p><strong>Message:</strong></p><p>${message.replace(/\n/g, "<br>")}</p>` : ""}
       <hr>
-      <p style="color: #888; font-size: 12px;">Sent from astromarfreezone.com contact form</p>
+      <p style="color: #888; font-size: 12px;">Sent from www.astromarfreezone.com contact form</p>
     `;
 
     const { data, error } = await resend.emails.send({

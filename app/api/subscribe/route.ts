@@ -19,7 +19,7 @@ export async function POST(req: Request) {
       <h2>New Newsletter Subscription</h2>
       <p><strong>Email:</strong> ${email}</p>
       <hr>
-      <p style="color: #888; font-size: 12px;">Sent from astromarfreezone.com newsletter signup</p>
+      <p style="color: #888; font-size: 12px;">Sent from www.astromarfreezone.com newsletter signup</p>
     `;
 
     const { data, error } = await resend.emails.send({

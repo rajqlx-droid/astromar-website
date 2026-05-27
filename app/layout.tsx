@@ -6,14 +6,14 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://astromarfreezone.com'),
+  metadataBase: new URL('https://www.astromarfreezone.com'),
   title: "Astromar Logistics – FTWZ India",
   description: "India's leading Free Trade Warehousing Zone provider offering duty-free storage, customs clearance, and integrated logistics solutions.",
   keywords: 'FTWZ India, Free Trade Warehousing Zone, duty free warehouse, customs clearance, logistics India',
   openGraph: {
     title: "Astromar Logistics – FTWZ India",
     description: "India's leading Free Trade Warehousing Zone provider offering duty-free storage, customs clearance, and integrated logistics solutions.",
-    url: 'https://astromarfreezone.com',
+    url: 'https://www.astromarfreezone.com',
     siteName: 'Astromar Logistics',
     type: 'website',
   },

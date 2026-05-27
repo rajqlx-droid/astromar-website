@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FTWZ Benefits | Free Trade Warehousing Zone India",
     description: "Explore FTWZ benefits in India, offering duty deferment, tax advantages, cost-efficient storage, seamless customs processes, and easy global trade access for businesses.",
-    url: "https://astromarfreezone.com/ftwz-benefits-india",
+    url: "https://www.astromarfreezone.com/ftwz-benefits-india",
     images: ["https://framerusercontent.com/images/9pdVpBVd9aQ5MSJj6013Uic0jk.jpg"],
   },
 };

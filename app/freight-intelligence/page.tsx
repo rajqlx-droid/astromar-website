@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Freight Calculator Tools for India | CBM, Landed Cost, Air vs Sea | Astromar",
   description: "Free freight calculator tools — CBM/load optimizer, IATA volumetric weight, landed cost (BCD + IGST), export price (FOB/CIF), air vs sea comparison, and demurrage risk. Built for Indian importers and exporters.",
   keywords: "freight calculator india, cbm calculator, volumetric weight calculator, landed cost calculator india, export price calculator, fob cif calculator, air vs sea comparison, demurrage calculator, container load calculator, freight tools india, astromar freight intelligence",
-  alternates: { canonical: "https://astromarfreezone.com/freight-intelligence" },
+  alternates: { canonical: "https://www.astromarfreezone.com/freight-intelligence" },
   openGraph: {
     title: "Freight Calculator Tools for India | Astromar",
     description: "Free freight calculators for Indian importers — CBM, landed cost, export pricing, air vs sea, demurrage. No signup, your data stays in your browser.",
-    url: "https://astromarfreezone.com/freight-intelligence",
+    url: "https://www.astromarfreezone.com/freight-intelligence",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -26,7 +26,7 @@ const webApplicationSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Astromar Freight Intelligence",
-  url: "https://astromarfreezone.com/freight-intelligence",
+  url: "https://www.astromarfreezone.com/freight-intelligence",
   description: "Free freight calculator suite for Indian importers and exporters — CBM/load optimizer, IATA volumetric weight, landed cost (BCD + IGST), export price (FOB/CIF), air vs sea comparison, and demurrage risk.",
   applicationCategory: "BusinessApplication",
   applicationSubCategory: "Logistics & Freight Calculator",
@@ -54,7 +54,7 @@ const webApplicationSchema = {
   publisher: {
     "@type": "Organization",
     name: "Astromar Logistics Pvt Ltd",
-    url: "https://astromarfreezone.com",
+    url: "https://www.astromarfreezone.com",
   },
 };
 
@@ -117,8 +117,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://astromarfreezone.com" },
-    { "@type": "ListItem", position: 2, name: "Tools", item: "https://astromarfreezone.com/freight-intelligence" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.astromarfreezone.com" },
+    { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.astromarfreezone.com/freight-intelligence" },
   ],
 };
 

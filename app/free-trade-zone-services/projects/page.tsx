@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Project Cargo & Heavy-Lift Logistics India | AstroMar",
   description: "Oversized, overweight & high-value project cargo across India and globally. Route surveys to final placement — engineered moves with precision, safety, reliability.",
   keywords: "project cargo india, heavy lift logistics, oversized cargo india, odc transport india, project logistics india, heavy haulage india, breakbulk cargo, route survey india, capital equipment logistics, industrial project cargo",
-  alternates: { canonical: "https://astromarfreezone.com/free-trade-zone-services/projects" },
+  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/projects" },
   openGraph: {
     title: "Project Cargo & Heavy-Lift Logistics India | AstroMar",
     description: "Engineered transport of oversized, overweight & high-value project cargo across India and globally — route surveys to final placement.",
-    url: "https://astromarfreezone.com/free-trade-zone-services/projects",
+    url: "https://www.astromarfreezone.com/free-trade-zone-services/projects",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -28,7 +28,7 @@ const projectsSchema = {
   "serviceType": "Project Cargo & Heavy-Lift Logistics in India",
   "name": "Astromar Project Cargo & Heavy-Lift Logistics",
   "description": "Engineered transport of oversized, overweight, and high-value project cargo across India and globally — from route surveys to final placement.",
-  "provider": { "@type": "Organization", "name": "Astromar Logistics Pvt Ltd", "url": "https://astromarfreezone.com" },
+  "provider": { "@type": "Organization", "name": "Astromar Logistics Pvt Ltd", "url": "https://www.astromarfreezone.com" },
   "areaServed": { "@type": "Country", "name": "India" },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -47,9 +47,9 @@ const projectsBreadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://astromarfreezone.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://astromarfreezone.com/free-trade-zone-services" },
-    { "@type": "ListItem", "position": 3, "name": "Project Cargo", "item": "https://astromarfreezone.com/free-trade-zone-services/projects" }
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.astromarfreezone.com/free-trade-zone-services" },
+    { "@type": "ListItem", "position": 3, "name": "Project Cargo", "item": "https://www.astromarfreezone.com/free-trade-zone-services/projects" }
   ]
 };
 

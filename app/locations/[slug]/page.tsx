@@ -218,7 +218,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: seoData.seo.title,
       description: seoData.seo.description,
-      url: `https://astromarfreezone.com/locations/${slug}`,
+      url: `https://www.astromarfreezone.com/locations/${slug}`,
       type: "website",
     },
   };

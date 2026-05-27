@@ -146,7 +146,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Astromar Logistics Pvt Ltd",
-  "url": "https://astromarfreezone.com",
+  "url": "https://www.astromarfreezone.com",
   "logo": "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png",
   "description": "India's leading Free Trade Warehousing Zone operator with 10 strategic FTWZ locations offering duty-free storage, customs clearance, and re-export services.",
   "telephone": "+91 99402 11014",
@@ -180,8 +180,8 @@ const ftwzBreadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://astromarfreezone.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Free Trade Warehousing Zone", "item": "https://astromarfreezone.com/free-trade-zone" }
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Free Trade Warehousing Zone", "item": "https://www.astromarfreezone.com/free-trade-zone" }
   ]
 };
 

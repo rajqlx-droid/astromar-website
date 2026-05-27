@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Astromar Logistics — India's Leading FTWZ Operator",
     description: "India's trusted FTWZ operator since 2017. 10 strategic locations, 500+ clients served, ₹2000Cr+ cargo handled across India.",
-    url: "https://astromarfreezone.com/about-us",
+    url: "https://www.astromarfreezone.com/about-us",
     siteName: "Astromar Logistics",
     type: "website",
   },
@@ -18,7 +18,7 @@ const aboutOrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Astromar Logistics Pvt Ltd",
-  "url": "https://astromarfreezone.com",
+  "url": "https://www.astromarfreezone.com",
   "logo": "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png",
   "description": "India's leading Free Trade Warehousing Zone operator and freight forwarder. Established in 2017, operating 10 strategic FTWZ locations across India offering duty-free storage, customs clearance, and integrated supply chain solutions.",
   "foundingDate": "2017",
@@ -56,8 +56,8 @@ const aboutBreadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://astromarfreezone.com/" },
-    { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://astromarfreezone.com/about-us" }
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.astromarfreezone.com/about-us" }
   ]
 };
 

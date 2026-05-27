@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free Trade Warehousing Zone in India | Astromar Logistics",
     description: "India's leading FTWZ operator across 10 strategic locations. Duty-free storage, GST deferral, customs clearance for importers and exporters.",
-    url: "https://astromarfreezone.com/free-trade-zone",
+    url: "https://www.astromarfreezone.com/free-trade-zone",
     siteName: "Astromar Logistics",
     type: "website",
   },

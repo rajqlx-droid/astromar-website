@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Port to Port Shipping in India — Coastal Cargo Network | Astromar",
   description: "Move cargo along India's 7,500+ km coastline. Greener, cost-effective alternative to road/rail for bulk, containerized & project cargo across all Indian ports.",
   keywords: "coastal shipping india, port to port shipping, indian coastal cargo, sea cargo india, coastal logistics, multimodal logistics india, container coastal shipping, bulk coastal shipping, coastal cargo network, indian ports shipping",
-  alternates: { canonical: "https://astromarfreezone.com/coastal-shipping-free-trade-zone" },
+  alternates: { canonical: "https://www.astromarfreezone.com/coastal-shipping-free-trade-zone" },
   openGraph: {
     title: "Port to Port Shipping in India — Coastal Cargo Network",
     description: "Coastal shipping connecting all major and minor Indian ports — greener, cost-effective alternative to road and rail for bulk and containerized cargo.",
-    url: "https://astromarfreezone.com/coastal-shipping-free-trade-zone",
+    url: "https://www.astromarfreezone.com/coastal-shipping-free-trade-zone",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -28,7 +28,7 @@ const coastalShippingSchema = {
   "serviceType": "Coastal Shipping in India",
   "name": "Astromar Coastal Shipping Network",
   "description": "Port-to-port coastal cargo services across India's 7,500+ km coastline — bulk, containerized, and project cargo.",
-  "provider": { "@type": "Organization", "name": "Astromar Logistics Pvt Ltd", "url": "https://astromarfreezone.com" },
+  "provider": { "@type": "Organization", "name": "Astromar Logistics Pvt Ltd", "url": "https://www.astromarfreezone.com" },
   "areaServed": { "@type": "Country", "name": "India" },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -47,8 +47,8 @@ const coastalShippingBreadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://astromarfreezone.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Coastal Shipping", "item": "https://astromarfreezone.com/coastal-shipping-free-trade-zone" }
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Coastal Shipping", "item": "https://www.astromarfreezone.com/coastal-shipping-free-trade-zone" }
   ]
 };
 

@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { ftwzLocationDetails } from "@/data/ftwzLocations";
 import { blogPosts } from "@/data/blogPosts";
 
-const BASE_URL = "https://astromarfreezone.com";
+const BASE_URL = "https://www.astromarfreezone.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
