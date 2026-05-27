@@ -5,13 +5,21 @@ export const metadata: Metadata = {
   title: "Ocean Freight in India — Ocean Freight Logistics & Sea Freight | Astromar",
   description: "Ocean freight in India with FCL, LCL, breakbulk, and reefer across 150+ ports. Astromar's ocean freight logistics + sea freight India network with FTWZ integration.",
   keywords: "ocean freight in india, ocean freight logistics, sea freight india, ocean freight services india, fcl shipping india, lcl shipping india, freight forwarder india, ocean cargo india, container shipping india",
+  alternates: { canonical: "https://astromarfreezone.com/free-trade-zone-services/ocean-freight" },
   openGraph: {
     title: "Ocean Freight & Freight Forwarding Services from India | Astromar",
     description: "FCL, LCL, breakbulk, and reefer ocean freight from India across 150+ global ports, integrated with FTWZ for duty deferment.",
     url: "https://astromarfreezone.com/free-trade-zone-services/ocean-freight",
     siteName: "Astromar Logistics",
     type: "website",
+    locale: "en_IN",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ocean Freight in India — FCL, LCL, Breakbulk & Reefer",
+    description: "Ocean freight from India across 150+ global ports with FTWZ integration for duty deferment.",
+  },
+  robots: { index: true, follow: true },
 };
 
 const oceanFreightSchema = {
