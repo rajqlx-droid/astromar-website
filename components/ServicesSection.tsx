@@ -94,11 +94,11 @@ const ServicesSection = () => {
         </div>
       </section>
 
-      {/* FTWZ Overview � image with overlay and text */}
+      {/* FTWZ Overview — image with overlay and text */}
       <section id="ftwz" className="relative overflow-hidden min-h-[500px] flex items-center">
         <img
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
-          alt="FTWZ bonded warehouse facility India � Astromar Logistics"
+          alt="FTWZ bonded warehouse facility India — Astromar Logistics"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/75" />
@@ -231,7 +231,7 @@ const ServicesSection = () => {
               </div>
               <div className="absolute bottom-4 left-4 right-4 bg-brand-navy/80 rounded-lg p-4">
                 <p className="text-white font-bold text-sm mb-1">Astromar FTWZ Facility</p>
-                <p className="text-white/70 text-xs">Duty-free bonded warehouse � Pan-India network</p>
+                <p className="text-white/70 text-xs">Duty-free bonded warehouse — Pan-India network</p>
               </div>
             </div>
           </div>

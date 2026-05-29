@@ -59,7 +59,7 @@ const AirFreightClient = () => {
                 Air Freight India — Express Cargo to 100+ Global Destinations
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                When speed matters, trust AstroMar's Air Freight India solutions — express delivery, charter services, and DGR-certified cargo handling connecting India to 100+ destinations worldwide.
+                When speed matters, trust Astromar's Air Freight India solutions — express delivery, charter services, and DGR-certified cargo handling connecting India to 100+ destinations worldwide.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">

@@ -2,12 +2,12 @@ import ProjectsClient from "./projects-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Project Cargo & Heavy-Lift Logistics India | AstroMar",
+  title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
   description: "Oversized, overweight & high-value project cargo across India and globally. Route surveys to final placement — engineered moves with precision, safety, reliability.",
   keywords: "project cargo india, heavy lift logistics, oversized cargo india, odc transport india, project logistics india, heavy haulage india, breakbulk cargo, route survey india, capital equipment logistics, industrial project cargo",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/projects" },
   openGraph: {
-    title: "Project Cargo & Heavy-Lift Logistics India | AstroMar",
+    title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
     description: "Engineered transport of oversized, overweight & high-value project cargo across India and globally — route surveys to final placement.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services/projects",
     siteName: "Astromar Logistics",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Project Cargo & Heavy-Lift Logistics India | AstroMar",
+    title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
     description: "Oversized, overweight & high-value project cargo — engineered with precision, safety, reliability.",
   },
   robots: { index: true, follow: true },

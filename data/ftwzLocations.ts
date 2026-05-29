@@ -664,7 +664,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       headline: "Multi-Modal Connectivity from Panvel",
       road: [
         "Mumbai–Pune Expressway (25 km from facility)",
-        "NH 4 (Mumbai–Bangalore national highway)",
+        "NH 4 (Mumbai–Bengaluru national highway)",
         "Mumbai Trans Harbour Link (MTHL) — direct access to South Mumbai",
         "Panvel–JNPA road corridor (35 km)",
       ],

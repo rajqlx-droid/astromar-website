@@ -2,12 +2,12 @@ import CustomClearanceClient from "./custom-clearance-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Customs Clearance Services in India | AstroMar Logistics",
+  title: "Customs Clearance Services in India | Astromar Logistics",
   description: "Licensed customs clearance across every Indian port & airport. Astromar handles import/export clearance with compliance expertise — zero delays, full visibility.",
   keywords: "customs clearance services india, customs broker india, import customs clearance, export customs clearance, customs house agent, cha india, port customs clearance, airport customs clearance, ftwz customs, customs compliance india",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance" },
   openGraph: {
-    title: "Customs Clearance Services in India | AstroMar Logistics",
+    title: "Customs Clearance Services in India | Astromar Logistics",
     description: "Licensed customs clearance across every Indian port and airport. Compliance-first import & export clearance with zero delays.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance",
     siteName: "Astromar Logistics",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Customs Clearance Services in India | AstroMar Logistics",
+    title: "Customs Clearance Services in India | Astromar Logistics",
     description: "Licensed customs clearance at every Indian port & airport — compliance-first, zero delays.",
   },
   robots: { index: true, follow: true },

@@ -56,7 +56,7 @@ const OceanFreight = () => {
                 Global Ocean Freight in India — FCL, LCL &amp; FTWZ Integration
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Whether you're shipping a single pallet or full containers, AstroMar Logistics offers reliable ocean freight solutions across 150+ global ports — fully integrated with our FTWZ in India network for seamless customs clearance and duty deferral.
+                Whether you're shipping a single pallet or full containers, Astromar Logistics offers reliable ocean freight solutions across 150+ global ports — fully integrated with our FTWZ in India network for seamless customs clearance and duty deferral.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a

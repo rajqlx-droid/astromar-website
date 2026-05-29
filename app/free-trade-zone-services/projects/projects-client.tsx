@@ -46,7 +46,7 @@ const ProjectsClient = () => {
                 Project Cargo & Heavy-Lift Logistics
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Moving the unmovable. AstroMar specializes in the transport of oversized, overweight, and high-value
+                Moving the unmovable. Astromar specializes in the transport of oversized, overweight, and high-value
                 project cargo across India and globally. From route surveys to final placement, we engineer every move
                 with precision, safety, and reliability.
               </p>
@@ -147,7 +147,7 @@ const ProjectsClient = () => {
                 Turnkey Project Cargo Execution
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                AstroMar delivers integrated heavy lift logistics solutions —
+                Astromar delivers integrated heavy lift logistics solutions —
                 from initial feasibility to final placement on site, with engineered transport, multi-modal
                 coordination, and risk-managed execution for EPC and turnkey projects.
               </p>

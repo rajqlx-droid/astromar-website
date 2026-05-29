@@ -152,7 +152,7 @@ const Services = () => {
                   <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Air</th>
                   <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Supply</th>
                   <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Customs</th>
-                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Warehous.</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Warehouse</th>
                   <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderBottom: "2px solid #e5e7eb" }}>Projects</th>
                 </tr>
               </thead>

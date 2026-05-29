@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Air Freight India — Express Cargo to 100+ Destinations | Astromar",
-  description: "AstroMar Air Freight India: express delivery, charter services & DGR-certified handling. Connecting India to 100+ global destinations with FTWZ integration.",
+  description: "Astromar Air Freight India: express delivery, charter services & DGR-certified handling. Connecting India to 100+ global destinations with FTWZ integration.",
   keywords: "air freight india, air cargo india, express air freight, charter services india, dgr cargo handling, international air freight, perishable air cargo, freight forwarder india, air freight to usa, air freight to europe",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/air-freight" },
   openGraph: {
