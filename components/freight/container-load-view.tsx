@@ -245,15 +245,15 @@ export function ContainerLoadView({
     <Card
       id="container-load-viewer"
       tabIndex={-1}
-      className="border-2 p-4 outline-none focus-visible:ring-2 focus-visible:ring-brand-navy sm:p-5 overflow-x-hidden max-w-full"
+      className="border-2 p-4 outline-none focus-visible:ring-2 focus-visible:ring-brand-navy sm:p-5"
       style={{ borderColor: "color-mix(in oklab, #0f1f3d 18%, transparent)" }}
     >
-      <div className="mb-4 flex items-center gap-2">
-        <Boxes className="size-5 text-brand-navy" />
-        <h3 className="text-base font-semibold text-brand-navy">Container Load Optimizer</h3>
+      <div className="mb-4 flex flex-wrap items-center gap-2">
+        <Boxes className="size-5 shrink-0 text-brand-navy" />
+        <h3 className="min-w-0 text-base font-semibold text-brand-navy">Container Load Optimizer</h3>
         {worker.pending && (
           <span
-            className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800 dark:bg-amber-900/40 dark:text-amber-200"
+            className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-800 dark:bg-amber-900/40 dark:text-amber-200"
             role="status"
             aria-live="polite"
           >
@@ -261,7 +261,7 @@ export function ContainerLoadView({
             Calculating…
           </span>
         )}
-        <span className="ml-auto rounded-full bg-muted px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+        <span className="ml-auto shrink-0 whitespace-nowrap rounded-full bg-muted px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
           Indicative
         </span>
       </div>

@@ -251,6 +251,7 @@ export function usePackingWorker(): UsePackingWorker {
 
   return useMemo<UsePackingWorker>(
     () => ({ pack, scenarios, optimise, recommend, pending, cancelAll }),
-    [pack, scenarios, optimise, recommend, pending, cancelAll],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [pack, scenarios, optimise, recommend, cancelAll],
   );
 }
