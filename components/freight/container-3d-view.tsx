@@ -177,15 +177,17 @@ export const Container3DView = forwardRef<Container3DHandle, Props>(function Con
     <div
       ref={wrapperRef}
       className={cn(
-        "relative overflow-hidden rounded-lg border bg-background",
+        "relative overflow-hidden rounded-lg border bg-background w-full max-w-full",
         isFullscreen && "h-screen w-screen rounded-none border-none [&_canvas]:!h-full [&_canvas]:!w-full",
       )}
-      style={isFullscreen ? undefined : { height }}
+      style={isFullscreen ? undefined : { height, contain: "layout paint size", maxWidth: "100%", width: "100%" }}
     >
       <Canvas
         shadows
         dpr={[1, 1.5]}
         frameloop="demand"
+        resize={{ debounce: { scroll: 50, resize: 100 }, scroll: true }}
+        style={{ maxWidth: "100%", width: "100%", display: "block" }}
         gl={{ preserveDrawingBuffer: true, antialias: true }}
         camera={{ position: [Cm.l * 0.9, Cm.h * 1.4, Cm.w * 1.6], fov: 35 }}
         onCreated={({ gl, scene, camera }) => {
@@ -678,17 +680,17 @@ function SceneContents({
 
       {/* Dimension labels */}
       <Html position={[0, -0.2, Cm.w / 2 + 0.3]} center distanceFactor={Math.max(Cm.l, Cm.w) * 1.2}>
-        <span className="rounded bg-brand-navy px-1.5 py-0.5 text-[10px] font-medium text-white shadow">
+        <span className="rounded bg-brand-navy px-1.5 py-0.5 text-[10px] font-medium text-white shadow pointer-events-none select-none">
           {(Cm.l).toFixed(2)} m
         </span>
       </Html>
       <Html position={[Cm.l / 2 + 0.3, -0.2, 0]} center distanceFactor={Math.max(Cm.l, Cm.w) * 1.2}>
-        <span className="rounded bg-brand-navy px-1.5 py-0.5 text-[10px] font-medium text-white shadow">
+        <span className="rounded bg-brand-navy px-1.5 py-0.5 text-[10px] font-medium text-white shadow pointer-events-none select-none">
           {(Cm.w).toFixed(2)} m
         </span>
       </Html>
       <Html position={[-Cm.l / 2 - 0.3, Cm.h / 2, -Cm.w / 2]} center distanceFactor={Math.max(Cm.l, Cm.w) * 1.2}>
-        <span className="rounded bg-brand-navy px-1.5 py-0.5 text-[10px] font-medium text-white shadow">
+        <span className="rounded bg-brand-navy px-1.5 py-0.5 text-[10px] font-medium text-white shadow pointer-events-none select-none">
           {(Cm.h).toFixed(2)} m
         </span>
       </Html>
@@ -707,7 +709,7 @@ function SceneContents({
             center
             distanceFactor={Math.max(Cm.l, Cm.w) * 1.2}
           >
-            <span className="whitespace-nowrap rounded bg-amber-600 px-1.5 py-0.5 text-[10px] font-medium text-white shadow">
+            <span className="rounded bg-amber-600 px-1.5 py-0.5 text-[10px] font-medium text-white shadow max-w-[160px] sm:max-w-none sm:whitespace-nowrap text-center leading-tight">
               Door reserve {doorReserveMm} mm · slack {slackMm.toLocaleString()} mm
             </span>
           </Html>
@@ -1406,7 +1408,7 @@ function CargoBox({
           </lineSegments>
           {/* Floating label confirming the rule + dimensions. */}
           <Html position={[0, hm / 2 + 0.12, 0]} center zIndexRange={[100, 0]}>
-            <div className="whitespace-nowrap rounded-md bg-cyan-600 px-2 py-1 text-[10px] font-semibold text-white shadow-lg">
+            <div className="rounded-md bg-cyan-600 px-2 py-1 text-[10px] font-semibold text-white shadow-lg max-w-[140px] sm:max-w-none sm:whitespace-nowrap text-center leading-tight pointer-events-none select-none">
               1 mm clearance · {Math.round(box.l)}×{Math.round(box.w)}×{Math.round(box.h)} mm
             </div>
           </Html>
@@ -1484,7 +1486,7 @@ function CargoBox({
           (parent clears showCheckmark after ~400ms). */}
       {showCheckmark && (
         <Html position={[0, hm / 2 + 0.18, 0]} center zIndexRange={[100, 0]}>
-          <div className="rounded-full bg-emerald-500 px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow-lg">
+          <div className="rounded-full bg-emerald-500 px-1.5 py-0.5 text-[10px] font-bold leading-none text-white shadow-lg pointer-events-none select-none">
             ✓
           </div>
         </Html>

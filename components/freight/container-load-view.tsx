@@ -245,7 +245,7 @@ export function ContainerLoadView({
     <Card
       id="container-load-viewer"
       tabIndex={-1}
-      className="border-2 p-4 outline-none focus-visible:ring-2 focus-visible:ring-brand-navy sm:p-5"
+      className="border-2 p-4 outline-none focus-visible:ring-2 focus-visible:ring-brand-navy sm:p-5 overflow-x-hidden max-w-full"
       style={{ borderColor: "color-mix(in oklab, #0f1f3d 18%, transparent)" }}
     >
       <div className="mb-4 flex items-center gap-2">
@@ -482,8 +482,8 @@ function SinglePlanBody({
   };
 
   return (
-    <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,300px)]">
-      <div className="space-y-3">
+    <div className="grid gap-4 grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,300px)]">
+      <div className="space-y-3 min-w-0">
         <StatsBar pack={pack} />
         <LimitExplanationPanel pack={pack} />
         {!viewerCollapsed && (

@@ -407,7 +407,7 @@ export function LoadingRowsPanel({
       className="rounded-lg border-2"
       style={{ borderColor: "color-mix(in oklab, #0f1f3d 18%, transparent)" }}
     >
-      <div className="flex items-center gap-2 border-b px-3 py-2">
+      <div className="flex flex-wrap items-center gap-2 border-b px-3 py-2">
         <Layers className="size-4 text-brand-navy" />
         <span className="text-sm font-semibold text-brand-navy">
           Row-by-row loading guide
@@ -426,7 +426,7 @@ export function LoadingRowsPanel({
               title={`Heavy threshold: ${heavyThreshold} kg/pkg`}
             >
               <Settings2 className="size-3.5" />
-              Settings
+              <span className="hidden sm:inline">Settings</span>
               <span
                 className={cn(
                   "ml-0.5 rounded px-1 py-0.5 text-[9px] font-bold tabular-nums",
@@ -494,9 +494,10 @@ export function LoadingRowsPanel({
           size="sm"
           onClick={handlePrint}
           className="h-7 gap-1.5 px-2 text-[11px]"
+          aria-label="Print checklist"
         >
           <Printer className="size-3.5" />
-          Print checklist
+          <span className="hidden sm:inline">Print checklist</span>
         </Button>
       </div>
 

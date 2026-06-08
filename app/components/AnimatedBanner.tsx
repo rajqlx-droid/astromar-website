@@ -295,7 +295,7 @@ export default function AnimatedBanner() {
       {dims.w > 0 && <BgCanvas width={dims.w} height={dims.h} />}
 
       <div
-        className="absolute inset-0 flex items-center justify-center gap-4 py-4 px-6"
+        className="absolute inset-0 flex flex-row items-center justify-center gap-5 sm:gap-4 py-4 px-5 sm:px-6"
         style={{ zIndex: 10 }}
       >
         <span
@@ -305,13 +305,17 @@ export default function AnimatedBanner() {
           NEW
         </span>
 
-        <p className="text-white text-sm font-medium drop-shadow whitespace-nowrap">
+        <div className="sm:hidden text-white text-sm font-bold drop-shadow leading-tight">
+          <span className="block">Smart Freight Calculator</span>
+          <span className="block">+ 3D Loading Plan</span>
+        </div>
+        <p className="hidden sm:block text-white text-sm font-medium drop-shadow whitespace-nowrap">
           Introducing Smart Freight Calculator — Get your container optimization plan. Recommend the best container, render a 3D loading plan.
         </p>
 
         <button
           onClick={() => router.push("/freight-intelligence")}
-          className="shrink-0 rounded-full px-4 py-1.5 text-sm font-semibold whitespace-nowrap transition-all duration-200 hover:scale-105 active:scale-95 drop-shadow"
+          className="shrink-0 rounded-full px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 hover:scale-105 active:scale-95 drop-shadow"
           style={{ background: "white", color: "#1B3A6B" }}
         >
           Try the New Tool →

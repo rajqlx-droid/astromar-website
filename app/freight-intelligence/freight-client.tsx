@@ -323,7 +323,7 @@ function FreightIntelligencePage() {
 
   return (
     <TooltipProvider delayDuration={200}>
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background overflow-x-hidden max-w-full">
 {/* SKIP LINKS — visible only on keyboard focus */}
         <a
           href="#main-content"
