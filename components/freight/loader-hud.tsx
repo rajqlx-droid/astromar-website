@@ -114,7 +114,7 @@ export function LoaderHUD({
 
   return (
     <div className="pointer-events-auto absolute bottom-2 left-1/2 z-10 -translate-x-1/2 max-w-[min(620px,92%)]">
-      <div className="flex items-stretch gap-2 rounded-full border-2 border-brand-navy/60 bg-background/95 px-2 py-1.5 shadow-xl backdrop-blur">
+      <div className="flex items-stretch gap-2 rounded-full border-2 border-brand-navy/60 bg-background/95 px-3 sm:px-2 py-1.5 shadow-xl backdrop-blur">
         {/* State dot + step counter */}
         <div className="flex shrink-0 items-center gap-1.5 pl-1">
           <span
@@ -284,7 +284,7 @@ export function LoaderHUD({
             size="sm"
             variant="ghost"
             onClick={onReset}
-            className="h-7 w-7 p-0 text-brand-navy hover:bg-brand-navy/10"
+            className="h-6 w-6 sm:h-7 sm:w-7 p-0 text-brand-navy hover:bg-brand-navy/10"
             aria-label="Reset to empty"
             title="Reset (empty container)"
           >
@@ -296,7 +296,7 @@ export function LoaderHUD({
             variant="ghost"
             onClick={onPrev}
             disabled={isEmpty}
-            className="h-7 w-7 p-0 text-brand-navy hover:bg-brand-navy/10"
+            className="h-6 w-6 sm:h-7 sm:w-7 p-0 text-brand-navy hover:bg-brand-navy/10"
             aria-label="Previous pallet"
             title="Previous pallet"
           >
@@ -307,7 +307,7 @@ export function LoaderHUD({
             size="sm"
             onClick={onPlayPause}
             className={cn(
-              "h-7 px-2 text-[11px]",
+              "h-6 sm:h-7 px-1.5 sm:px-2 text-[11px]",
               isPlaying
                 ? "bg-emerald-600 text-white hover:bg-emerald-700"
                 : "bg-brand-navy text-white hover:bg-brand-navy/90",
@@ -325,13 +325,13 @@ export function LoaderHUD({
             variant="ghost"
             onClick={onNext}
             disabled={atLast}
-            className="h-7 w-7 p-0 text-brand-navy hover:bg-brand-navy/10"
+            className="h-6 w-6 sm:h-7 sm:w-7 p-0 text-brand-navy hover:bg-brand-navy/10"
             aria-label="Next pallet"
             title="Next pallet"
           >
             <SkipForward className="size-3.5" />
           </Button>
-          <div className="mx-0.5 h-5 w-px bg-brand-navy/20" />
+          <div className="max-sm:hidden mx-0.5 h-5 w-px bg-brand-navy/20" />
           {([0.5, 1, 2] as const).map((s) => (
             <button
               key={s}
@@ -339,6 +339,7 @@ export function LoaderHUD({
               onClick={() => onSpeedChange(s)}
               className={cn(
                 "h-7 rounded px-1.5 text-[10px] font-bold transition-colors",
+                "max-sm:hidden",
                 speed === s
                   ? "bg-brand-navy text-white"
                   : "text-brand-navy hover:bg-brand-navy/10",
