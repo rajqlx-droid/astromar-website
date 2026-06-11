@@ -25,6 +25,19 @@ const serviceLinks = [
   { label: "Projects", href: "/free-trade-zone-services/projects" },
 ];
 
+const locationLinks = [
+  { label: "Kochi", href: "/locations/kochi" },
+  { label: "Vizag", href: "/locations/vizag" },
+  { label: "Mumbai (Panvel)", href: "/locations/mumbai-panvel" },
+  { label: "Mumbai (JNPA)", href: "/locations/mumbai-jnpa" },
+  { label: "Chennai (Sriperumbudur)", href: "/locations/chennai-sriperumbudur" },
+  { label: "Chennai (Vallur)", href: "/locations/chennai-vallur" },
+  { label: "Delhi (Khurja)", href: "/locations/delhi-khurja" },
+  { label: "Bengaluru", href: "/locations/bengaluru" },
+  { label: "Dahej", href: "/locations/dahej" },
+  { label: "Mundra", href: "/locations/mundra" },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-brand-navy text-white/80 pt-16 pb-4 md:pt-20 md:pb-6">
@@ -100,6 +113,20 @@ const Footer = () => {
             </div>
           </div>
 
+        </div>
+
+        {/* Locations */}
+        <div className="border-t border-white/10 pt-6 mb-6">
+          <h4 className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">
+            Our FTWZ Locations
+          </h4>
+          <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            {locationLinks.map((loc) => (
+              <Link key={loc.href} href={loc.href} className="text-white/65 hover:text-[#F97316] transition-colors">
+                {loc.label}
+              </Link>
+            ))}
+          </nav>
         </div>
 
         {/* Bottom */}
