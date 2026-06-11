@@ -48,7 +48,7 @@ export default function FTWZBenefitsPage() {
             <span className="text-[#F97316] text-sm font-semibold">FTWZ</span>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-            FTWZ Benefits | Free Trade Warehousing Zone India
+            FTWZ Benefits in India
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-white/70 text-sm">
             <span>📅 October 1, 2024</span>

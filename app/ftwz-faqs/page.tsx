@@ -78,7 +78,7 @@ export default function FTWZFaqsPage() {
             <span className="text-[#F97316] text-sm font-semibold">FTWZ</span>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-            What is Free Trade Zone India | FTZ FAQs
+            FTWZ in India — Frequently Asked Questions
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-white/70 text-sm">
             <span>📅 April 26, 2026</span>

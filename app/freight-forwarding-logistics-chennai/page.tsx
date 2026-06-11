@@ -48,7 +48,7 @@ export default function FreightForwardingChennaiPage() {
             <span className="text-[#F97316] text-sm font-semibold">Freight</span>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-            Astromar Freezone: A Trusted Partner in Global Logistics and Trade
+            Freight Forwarding & Logistics Company in Chennai
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-white/70 text-sm">
             <span>📅 January 19, 2026</span>
