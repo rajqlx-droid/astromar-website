@@ -5,3 +5,4 @@ node_modules/
 *.log
 dist/
 build/
+seo-audit-report.md

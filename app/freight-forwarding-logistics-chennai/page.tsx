@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Astromar Freezone: A Trusted Partner in Global Logistics and Trade",
     description: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
     url: "https://www.astromarfreezone.com/freight-forwarding-logistics-chennai",
-    images: ["https://framerusercontent.com/images/yKvPYdR7oMxp1wk6JMblUZRufc.png"],
+    images: ["/freight-forwarding-chennai.png"],
   },
 };
 
@@ -20,7 +20,7 @@ export default function FreightForwardingChennaiPage() {
       {/* Banner */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://framerusercontent.com/images/yKvPYdR7oMxp1wk6JMblUZRufc.png"
+          src="/freight-forwarding-chennai.png"
           alt="Astromar Freezone Chennai Logistics"
           fill
           className="object-cover"
