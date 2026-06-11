@@ -2,6 +2,7 @@ import ServicesClient from "./services-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/free-trade-zone-services" },
   title: "FTWZ Services & Logistics Solutions in India | Astromar",
   description: "Astromar's Free Trade Warehousing Zone services and integrated logistics — FTWZ warehousing, ocean freight, air freight, customs clearance, supply chain, and project cargo across India.",
   keywords: "free trade warehousing zone, ftwz in india, ftwz warehouse, free trade zone, free trade warehousing zone india, ftwz services india, logistics services india, ocean freight india, air freight india, customs clearance india, supply chain india, freight forwarding services india",

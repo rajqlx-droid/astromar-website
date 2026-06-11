@@ -2,6 +2,7 @@ import FTWZClient from "./ftwz-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/free-trade-zone" },
   title: "Free Trade Warehousing Zone in India | Astromar Logistics",
   description: "Astromar operates India's leading FTWZ network across 10 strategic locations. Duty-free storage, GST deferral, customs clearance, and re-export services for importers and exporters nationwide.",
   keywords: "free trade warehousing zone, ftwz in india, free trade warehousing zone in india, free trade zones in india, duty-free warehousing, ftwz solutions, ftwz warehouse, custom bonded warehouse, free zone company, ftwz customs clearance, bonded warehouse india",

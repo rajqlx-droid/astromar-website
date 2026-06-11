@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/ftwz-faqs" },
   title: "What is Free Trade Zone India | FTZ FAQs | Astromar",
   description: "Discover answers to frequently asked questions about Free Trade Zone in India — benefits, activities, customs clearance, and more.",
   keywords: ["FTWZ FAQs", "free trade zone India FAQ", "what is FTWZ India", "FTZ questions India", "FTWZ customs clearance"],

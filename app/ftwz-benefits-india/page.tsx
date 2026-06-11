@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/ftwz-benefits-india" },
   title: "FTWZ Benefits | Free Trade Warehousing Zone India | Astromar",
   description: "Explore FTWZ benefits in India, offering duty deferment, tax advantages, cost-efficient storage, seamless customs processes, and easy global trade access for businesses.",
   keywords: ["FTWZ benefits India", "free trade warehousing zone benefits", "duty deferment India", "GST deferment FTWZ", "FTWZ tax benefits"],

@@ -7,6 +7,7 @@ import CTASection from "@/components/CTASection";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   title: "Free Trade Warehousing Zone India — FTWZ & Freight | Astromar",
   description: "Astromar Logistics — India's leading Free Trade Warehousing Zone operator and freight forwarder. 10 strategic FTWZ locations. Save customs duty & GST with duty-free bonded warehousing across India.",
   keywords: "free trade warehousing zone, ftwz in india, ftwz operator india, ftwz warehouse, freight forwarder india, custom bonded warehouse, astromar logistics, ftwz solutions, cold storage warehouse, free zone company india",

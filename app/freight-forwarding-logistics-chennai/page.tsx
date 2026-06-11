@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/freight-forwarding-logistics-chennai" },
   title: "Astromar Freezone: A Trusted Partner in Global Logistics and Trade | Chennai",
   description: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
   keywords: ["freight forwarding Chennai", "FTWZ Chennai logistics", "logistics company Chennai", "customs clearance Chennai", "duty free warehousing Chennai"],

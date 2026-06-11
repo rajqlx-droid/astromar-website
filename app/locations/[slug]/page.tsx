@@ -212,6 +212,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const seoData = getLocationBySlug(slug);
   if (!seoData) return {};
   return {
+    alternates: { canonical: `/locations/${slug}` },
     title: seoData.seo.title,
     description: seoData.seo.description,
     keywords: seoData.seo.keywords,

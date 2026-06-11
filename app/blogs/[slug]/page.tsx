@@ -141,6 +141,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = articles[slug]
   if (!article) return { title: 'Article Not Found' }
   return {
+    alternates: { canonical: `/blogs/${slug}` },
     title: article.title,
     description: article.metaDescription,
     keywords: article.keywords,
