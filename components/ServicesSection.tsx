@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Image from "next/image";
 import {
   FileText, Ship, Plane, ClipboardCheck, Snowflake, GitBranch, Box, Combine,
   Warehouse, Globe, FileCheck, Thermometer, BarChart3, ArrowRight, Package,
@@ -96,9 +97,11 @@ const ServicesSection = () => {
 
       {/* FTWZ Overview — image with overlay and text */}
       <section id="ftwz" className="relative overflow-hidden min-h-[500px] flex items-center">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
           alt="FTWZ bonded warehouse facility India — Astromar Logistics"
+          fill
+          sizes="100vw"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/75" />
@@ -220,9 +223,11 @@ const ServicesSection = () => {
 
             {/* RIGHT - Image */}
             <div className="relative rounded-xl overflow-hidden" style={{ height: '420px' }}>
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800"
                 alt="Astromar FTWZ Warehouse Facility"
+                fill
+                sizes="100vw"
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-brand-navy/50" />

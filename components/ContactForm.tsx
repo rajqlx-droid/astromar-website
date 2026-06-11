@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Image from "next/image";
 
 interface ContactFormProps {
   showInfoStrip?: boolean;
@@ -70,9 +71,11 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
 
   return (
     <section className="relative w-full min-h-[600px] flex items-center">
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200"
         alt="Logistics and cargo handling"
+        fill
+        sizes="100vw"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/75" />

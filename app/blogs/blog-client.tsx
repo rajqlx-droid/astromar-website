@@ -127,11 +127,12 @@ const Blog = () => {
                 <Link href={heroPost.externalUrl ?? `/blogs/${heroPost.slug}`} className="block group h-full">
                   <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                     <div className="relative h-48 sm:h-64 overflow-hidden">
-                      <img
+                      <Image
                         src={heroPost.thumbnail}
                         alt={heroPost.title}
+                        fill
+                        sizes="100vw"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                       <span className={`absolute top-4 left-4 text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[heroPost.category] || "bg-muted text-muted-foreground"}`}>
@@ -169,11 +170,12 @@ const Blog = () => {
                       <Link href={post.externalUrl ?? `/blogs/${post.slug}`} className="block group h-full">
                         <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                           <div className="relative h-32 overflow-hidden">
-                            <img
+                            <Image
                               src={post.thumbnail}
                               alt={post.title}
+                              fill
+                              sizes="100vw"
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                              loading="lazy"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                             <span className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[post.category] || "bg-muted text-muted-foreground"}`}>
@@ -225,11 +227,12 @@ const Blog = () => {
                   <Link href={post.externalUrl ?? `/blogs/${post.slug}`} className="block group h-full">
                     <article className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
                       <div className="relative h-40 overflow-hidden">
-                        <img
+                        <Image
                           src={post.thumbnail}
                           alt={post.title}
+                          fill
+                          sizes="100vw"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                         <span className={`absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[post.category] || "bg-muted text-muted-foreground"}`}>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -185,7 +186,7 @@ export default async function BlogArticlePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative min-h-[420px] flex items-center">
-        <img src={article.image} alt={article.imageAlt} className="absolute inset-0 w-full h-full object-cover" />
+        <Image src={article.image} alt={article.imageAlt} fill sizes="100vw" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20">
           <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-3">{article.category}</p>
