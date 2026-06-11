@@ -4,7 +4,6 @@
 # All bots — full access except non-public paths
 User-agent: *
 Allow: /
-Disallow: /_next/
 Disallow: /api/
 Disallow: /admin/
 
