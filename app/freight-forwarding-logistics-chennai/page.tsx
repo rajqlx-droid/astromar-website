@@ -15,9 +15,21 @@ export const metadata: Metadata = {
   },
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Astromar Freezone: A Trusted Partner in Global Logistics and Trade",
+  description: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
+  image: "https://www.astromarfreezone.com/freight-forwarding-chennai.png",
+  author: { "@type": "Organization", name: "Astromar Logistics" },
+  publisher: { "@type": "Organization", name: "Astromar Logistics", logo: { "@type": "ImageObject", url: "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png" } },
+  mainEntityOfPage: "https://www.astromarfreezone.com/freight-forwarding-logistics-chennai",
+};
+
 export default function FreightForwardingChennaiPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Banner */}
       <section className="relative py-20 overflow-hidden">
         <Image

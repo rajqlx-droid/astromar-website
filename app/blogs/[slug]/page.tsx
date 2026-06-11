@@ -163,8 +163,26 @@ export default async function BlogArticlePage({ params }: Props) {
   const article = articles[slug]
   if (!article) notFound()
 
+  const _articleDate = new Date(article.date);
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.metaDescription,
+    image: article.image,
+    datePublished: isNaN(_articleDate.getTime()) ? undefined : _articleDate.toISOString(),
+    author: { "@type": "Organization", name: "Astromar Logistics" },
+    publisher: {
+      "@type": "Organization",
+      name: "Astromar Logistics",
+      logo: { "@type": "ImageObject", url: "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png" },
+    },
+    mainEntityOfPage: `https://www.astromarfreezone.com/blogs/${slug}`,
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative min-h-[420px] flex items-center">
         <img src={article.image} alt={article.imageAlt} className="absolute inset-0 w-full h-full object-cover" />
