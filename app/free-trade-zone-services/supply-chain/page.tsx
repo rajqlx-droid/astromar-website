@@ -2,7 +2,7 @@ import SupplyChainClient from "./supply-chain-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Supply Chain Solutions India — Integrated & End-to-End | Astromar",
+  title: "Supply Chain Solutions India — End-to-End | Astromar",
   description: "Astromar Supply Chain Solutions India: procurement to last-mile delivery with real-time visibility. Reduce costs, build resilience across every node in your ops.",
   keywords: "supply chain solutions india, end to end supply chain, integrated logistics india, procurement to delivery, last mile delivery india, supply chain visibility, 3pl india, 4pl india, supply chain management india, logistics optimization",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain" },

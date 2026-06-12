@@ -2,7 +2,7 @@ import WarehousingClient from "./warehousing-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bonded Warehouse India — FTWZ Warehousing & Storage | Astromar",
+  title: "Bonded Warehouse India — FTWZ Storage | Astromar",
   description: "FTWZ-bonded warehousing from 1 pallet to 5 lakh+ sq ft. Real-time inventory, value-added services & multi-temperature storage across India's key logistics hubs.",
   keywords: "bonded warehouse india, ftwz warehouse, warehousing services india, cold storage india, temperature controlled warehouse, multi temperature storage, value added services warehouse, bonded storage india, 3pl warehouse india, inventory management warehouse",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/warehousing" },

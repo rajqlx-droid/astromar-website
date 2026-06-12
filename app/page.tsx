@@ -8,11 +8,11 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
-  title: "Free Trade Warehousing Zone India — FTWZ & Freight | Astromar",
+  title: "Free Trade Warehousing Zone India | FTWZ | Astromar",
   description: "Astromar Logistics — India's leading Free Trade Warehousing Zone operator and freight forwarder. 10 strategic FTWZ locations. Save customs duty & GST with duty-free bonded warehousing across India.",
   keywords: "free trade warehousing zone, ftwz in india, ftwz operator india, ftwz warehouse, freight forwarder india, custom bonded warehouse, astromar logistics, ftwz solutions, cold storage warehouse, free zone company india",
   openGraph: {
-    title: "Free Trade Warehousing Zone India — FTWZ & Freight | Astromar",
+    title: "Free Trade Warehousing Zone India | FTWZ | Astromar",
     description: "India's leading FTWZ operator and freight forwarder across 10 strategic locations. Duty-free bonded warehousing, customs clearance, and supply chain solutions.",
     url: "https://www.astromarfreezone.com",
     siteName: "Astromar Logistics",

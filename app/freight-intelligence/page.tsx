@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import FreightClient from "./freight-client";
 
 export const metadata: Metadata = {
-  title: "Freight Calculator Tools for India | CBM, Landed Cost, Air vs Sea | Astromar",
+  title: "Freight Calculator Tools India: CBM, Landed Cost | Astromar",
   description: "Free freight calculator tools — CBM/load optimizer, IATA volumetric weight, landed cost (BCD + IGST), export price (FOB/CIF), air vs sea comparison, and demurrage risk. Built for Indian importers and exporters.",
   keywords: "freight calculator india, cbm calculator, volumetric weight calculator, landed cost calculator india, export price calculator, fob cif calculator, air vs sea comparison, demurrage calculator, container load calculator, freight tools india, astromar freight intelligence",
   alternates: { canonical: "https://www.astromarfreezone.com/freight-intelligence" },

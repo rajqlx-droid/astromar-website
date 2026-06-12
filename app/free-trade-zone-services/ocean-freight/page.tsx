@@ -2,7 +2,7 @@ import OceanFreightClient from "./ocean-freight-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ocean Freight in India — Ocean Freight Logistics & Sea Freight | Astromar",
+  title: "Ocean Freight in India — Sea Freight Logistics | Astromar",
   description: "Ocean freight in India with FCL, LCL, breakbulk, and reefer across 150+ ports. Astromar's ocean freight logistics + sea freight India network with FTWZ integration.",
   keywords: "ocean freight in india, ocean freight logistics, sea freight india, ocean freight services india, fcl shipping india, lcl shipping india, freight forwarder india, ocean cargo india, container shipping india",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/ocean-freight" },
