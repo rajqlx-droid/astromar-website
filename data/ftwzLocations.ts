@@ -280,7 +280,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 83.2185,
     address: "VSEZ, Duvvada, Visakhapatnam, Andhra Pradesh 530049",
     seo: {
-      title: "FTWZ in Vizag — Visakhapatnam Port VSEZ | Astromar Logistics",
+      title: "FTWZ in Vizag — Visakhapatnam Port VSEZ | Astromar",
       description: "Astromar's ftwz in vizag at Visakhapatnam SEZ (VSEZ) — East Coast's largest commercial port. Duty-free FTWZ warehousing for steel, pharma, petrochemicals, and fertilizer industries.",
       keywords: "ftwz in vizag, vizag ftwz, visakhapatnam ftwz, vsez warehouse, bonded warehouse in vizag, custom bonded warehouse in vizag, free trade warehouse zone in vizag, andhra pradesh ftwz",
       h1: "FTWZ in Vizag",
@@ -489,7 +489,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 73.1175,
     address: "Village Sai, Taluka Panvel, District - Raigad, Mumbai, Maharashtra, 410206, India",
     seo: {
-      title: "Free Trade Warehouse Zone in Mumbai — Panvel | Astromar Logistics",
+      title: "Free Trade Warehouse Zone in Mumbai — Panvel | Astromar",
       description: "Astromar's free trade warehouse zone in mumbai at Panvel — gateway between JNPA Port and Mumbai industrial corridor. Duty-free FTWZ warehousing for automotive, electronics, FMCG, and chemicals.",
       keywords: "free trade warehouse zone in mumbai, ftwz in mumbai, ftwz mumbai panvel, bonded warehouse in mumbai, custom bonded warehouse in mumbai, navi mumbai sez warehouse, panvel ftwz",
       h1: "Free Trade Warehouse Zone in Mumbai",
@@ -705,7 +705,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 72.9479,
     address: "JNPA SEZ, Village-Sawarkhar, Uran, Raigad, Maharashtra, 400707",
     seo: {
-      title: "FTWZ in Mumbai — JNPA Nhava Sheva Port | Astromar Logistics",
+      title: "FTWZ in Mumbai — JNPA Nhava Sheva Port | Astromar",
       description: "Astromar's ftwz in mumbai at JNPA — India's #1 container port. On-port duty-free warehousing with zero transit time for re-export, consolidation, and just-in-time supply chains.",
       keywords: "ftwz in mumbai, ftwz mumbai jnpa, nhava sheva ftwz, free trade warehouse zone in mumbai, bonded warehouse mumbai port, custom bonded warehouse in mumbai, jnpa sez warehouse, on port ftwz",
       h1: "FTWZ in Mumbai",
@@ -917,7 +917,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 79.9473,
     address: "Mannur & Valarpuram Village, Sriperumbudur Taluk, Kancheepuram District, 602105, Tamil Nadu, India",
     seo: {
-      title: "Chennai Free Trade Zone (FTWZ) — Sriperumbudur | Astromar Logistics",
+      title: "Chennai Free Trade Zone (FTWZ) — Sriperumbudur | Astromar",
       description: "Astromar's chennai free trade zone at Sriperumbudur — duty-free FTWZ warehousing with GST deferral, 24/7 customs clearance, and direct NH 48 access. Serving Foxconn, Samsung, Hyundai supply chains.",
       keywords: "chennai free trade zone, ftwz chennai, ftwz in chennai, free zone chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, sriperumbudur ftwz",
       h1: "Chennai Free Trade Zone",
@@ -1170,7 +1170,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 80.2843,
     address: "Vallur & Edayanchavadi Village, Ponneri Taluk, Tiruvallur District, 600120, Tamil Nadu, India",
     seo: {
-      title: "Free Trade Warehouse in Chennai — Vallur Ponneri | Astromar Logistics",
+      title: "Free Trade Warehouse in Chennai — Vallur Ponneri | Astromar",
       description: "Astromar's free trade warehouse in chennai at Vallur — port-adjacent FTWZ near Kattupalli & Ennore ports. Customs bonded warehouse in chennai for bulk cargo, chemicals, LNG, and energy sector imports.",
       keywords: "free trade warehouse in chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, customs bonded warehouse in chennai, ftwz vallur, north chennai bonded warehouse, ponneri warehouse",
       h1: "Free Trade Warehouse in Chennai",
@@ -1423,7 +1423,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 77.8538,
     address: "Junction Road, Khurja Industrial Area, Village Maujpur, Khurja, District - Bulandshahr, UP - 203131, India",
     seo: {
-      title: "FTWZ in Delhi NCR — Khurja DFC Corridor | Astromar Logistics",
+      title: "FTWZ in Delhi NCR — Khurja DFC Corridor | Astromar",
       description: "Astromar's ftwz in delhi at Khurja — North India's gateway on the Western Dedicated Freight Corridor. Duty-free FTWZ warehousing serving Delhi, Haryana, Punjab, and UP markets.",
       keywords: "ftwz in delhi, khurja ftwz, delhi ncr bonded warehouse, dfc corridor warehouse, bonded warehouse in delhi, custom bonded warehouse in delhi, free trade warehouse zone in delhi, north india ftwz",
       h1: "FTWZ in Delhi NCR",
@@ -1637,7 +1637,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 77.7066,
     address: "Innomech Aerospace Tooling Pvt Ltd, Aerospace SEZ Sector, Devanahalli, Bengaluru, Karnataka, 562165",
     seo: {
-      title: "FTWZ in Bangalore — Aerospace SEZ Devanahalli | Astromar Logistics",
+      title: "FTWZ in Bangalore — Aerospace SEZ Devanahalli | Astromar",
       description: "Astromar's ftwz in bangalore at Devanahalli Aerospace SEZ — 5 km from Kempegowda Airport. Duty-free FTWZ warehousing for aerospace, defence, electronics, and high-value cargo.",
       keywords: "ftwz in bangalore, bangalore ftwz, devanahalli aerospace sez, aerospace ftwz india, bonded warehouse in bangalore, free trade warehouse zone in bangalore, free trade warehouse in bangalore, karnataka ftwz, kempegowda airport warehouse",
       h1: "FTWZ in Bangalore",
@@ -1853,7 +1853,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 72.5793,
     address: "Z-85/2A, Dahej SEZ - 1, Dahej, Gujarat, India",
     seo: {
-      title: "FTWZ in Dahej — PCPIR Chemical SEZ Gujarat | Astromar Logistics",
+      title: "FTWZ in Dahej — PCPIR Chemical SEZ Gujarat | Astromar",
       description: "Astromar's ftwz in dahej within Dahej SEZ-1 — India's largest petrochemical and chemicals corridor (PCPIR). Duty-free FTWZ warehousing for chemicals, LNG, polymers, and industrial gases.",
       keywords: "ftwz in dahej, dahej ftwz, dahej sez warehouse, pcpir gujarat, bonded warehouse in dahej, custom bonded warehousing in dahej, free trade warehouse zone in dahej, gujarat chemical sez",
       h1: "FTWZ in Dahej",
