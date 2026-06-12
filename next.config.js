@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: false,
   transpilePackages: ['three', '@react-three/fiber', '@react-three/drei'],
   images: {
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     remotePatterns: [
       { protocol: 'https', hostname: 'eenumepuujkrnartejsh.supabase.co' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
