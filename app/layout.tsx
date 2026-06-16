@@ -4,6 +4,7 @@ import AnimatedBanner from "@/app/components/AnimatedBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.astromarfreezone.com'),
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <AnimatedBanner />
           <Header />
           {children}
+          <GoogleAnalytics gaId="G-VLJPPE08DX" />
           <Footer />
         </ThemeProvider>
       </body>
