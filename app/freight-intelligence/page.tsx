@@ -3,21 +3,30 @@ import FreightClient from "./freight-client";
 
 export const metadata: Metadata = {
   title: "Freight Calculator Tools India: CBM, Landed Cost | Astromar",
-  description: "Free freight calculator tools — CBM/load optimizer, IATA volumetric weight, landed cost (BCD + IGST), export price (FOB/CIF), air vs sea comparison, and demurrage risk. Built for Indian importers and exporters.",
+  description: "Free freight calculator tools for India — CBM calculator, container load optimizer, landed cost & air vs sea comparison for importers and exporters.",
   keywords: "freight calculator india, cbm calculator, volumetric weight calculator, landed cost calculator india, export price calculator, fob cif calculator, air vs sea comparison, demurrage calculator, container load calculator, freight tools india, astromar freight intelligence",
   alternates: { canonical: "https://www.astromarfreezone.com/freight-intelligence" },
   openGraph: {
-    title: "Freight Calculator Tools for India | Astromar",
+    title: "Freight Calculator Tools India: CBM, Landed Cost | Astromar",
     description: "Free freight calculators for Indian importers — CBM, landed cost, export pricing, air vs sea, demurrage. No signup, your data stays in your browser.",
     url: "https://www.astromarfreezone.com/freight-intelligence",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
+    images: [
+      {
+        url: "https://www.astromarfreezone.com/og-freight-intelligence.png",
+        width: 1200,
+        height: 630,
+        alt: "Astromar Freight Calculator Tools for India",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freight Calculator Tools for India | Astromar",
+    title: "Freight Calculator Tools India: CBM, Landed Cost | Astromar",
     description: "Free CBM, landed cost, export price, air vs sea, and demurrage calculators for Indian importers and exporters.",
+    images: ["https://www.astromarfreezone.com/og-freight-intelligence.png"],
   },
   robots: { index: true, follow: true },
 };
