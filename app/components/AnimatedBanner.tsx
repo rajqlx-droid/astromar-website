@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 interface Particle {
   x: number; y: number;
@@ -272,6 +272,7 @@ export default function AnimatedBanner() {
   const [dims, setDims] = useState({ w: 0, h: 80 });
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const el = containerRef.current;
@@ -285,6 +286,8 @@ export default function AnimatedBanner() {
     ro.observe(el);
     return () => ro.disconnect();
   }, []);
+
+  if (pathname === "/freight-intelligence") return null;
 
   return (
     <div

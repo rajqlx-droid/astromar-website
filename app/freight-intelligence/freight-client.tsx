@@ -340,7 +340,7 @@ function FreightIntelligencePage() {
 {/* TAB STRIP */}
         <div
           className={
-            "no-print sticky top-[60px] z-40 bg-white bg-background pt-3 pb-1 border-b border-gray-100 shadow-sm backdrop-blur-md transition-shadow duration-200 " +
+            "no-print sticky top-20 z-40 bg-white bg-background pt-3 pb-1 border-b border-gray-100 shadow-sm backdrop-blur-md transition-shadow duration-200 " +
             (scrolled ? "shadow-[0_4px_12px_-4px_rgba(15,23,42,0.18)]" : "")
           }
         >
@@ -461,13 +461,13 @@ function FreightIntelligencePage() {
                   />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-2">
-                      <h2 className="truncate text-lg font-bold text-brand-navy md:text-xl">
+                      <h3 className="truncate text-lg font-bold text-brand-navy md:text-xl">
                         {active === "cbm" ? (
-                          <><span className="text-blue-600">CBM Calculator</span> — Load Optimizer</>
+                          <span className="text-blue-600">CBM Calculator</span>
                         ) : (
                           <span className="text-blue-600">{meta.label} Calculator</span>
                         )}
-                      </h2>
+                      </h3>
                     </div>
                     <p className="flex items-center gap-1.5 truncate text-xs text-muted-foreground md:text-sm">
                       <span className="truncate">{meta.sub}</span>
@@ -619,6 +619,42 @@ function FreightIntelligencePage() {
         <MobileResultBar result={mobileResult ?? null} inputsTable={mobileInputs} />
 
         {/* CTA banner removed — replaced by CommercialPoster above the calculator */}
+
+        {/* Calculator overview sections */}
+        <section className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+              <span className="text-2xl block mb-2">📦</span>
+              <h2 className="text-lg md:text-xl font-bold text-[#1B3A6B]">CBM &amp; Container Loading Calculator</h2>
+              <p className="mt-2 text-gray-600 text-[15px] leading-relaxed">Calculate the total CBM (cubic meters) of your cargo and get a 3D container loading plan showing how it fits a 20ft or 40ft container — ideal for sea freight and LCL shipments.</p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+              <span className="text-2xl block mb-2">✈️</span>
+              <h2 className="text-lg md:text-xl font-bold text-[#1B3A6B]">Volumetric Weight Calculator</h2>
+              <p className="mt-2 text-gray-600 text-[15px] leading-relaxed">Find the volumetric (chargeable) weight of an air shipment from its dimensions, so you know whether the airline bills on actual or volumetric weight before you book.</p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+              <span className="text-2xl block mb-2">💰</span>
+              <h2 className="text-lg md:text-xl font-bold text-[#1B3A6B]">Import Duty Calculator (India)</h2>
+              <p className="mt-2 text-gray-600 text-[15px] leading-relaxed">Estimate the landed cost of an import into India — basic customs duty, GST, and applicable surcharges on your CIF value — to see the total duty payable before you ship.</p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+              <span className="text-2xl block mb-2">📈</span>
+              <h2 className="text-lg md:text-xl font-bold text-[#1B3A6B]">Export Price Calculator (FOB / CIF)</h2>
+              <p className="mt-2 text-gray-600 text-[15px] leading-relaxed">Work out your export price across Incoterms by adding freight, insurance, and margin to your ex-works cost, and convert between FOB and CIF terms for accurate quotes.</p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+              <span className="text-2xl block mb-2">⚖️</span>
+              <h2 className="text-lg md:text-xl font-bold text-[#1B3A6B]">Air vs Sea Freight Comparison</h2>
+              <p className="mt-2 text-gray-600 text-[15px] leading-relaxed">Compare the total cost and transit time of air versus sea freight for the same shipment, so you can choose the cheaper or faster option with confidence.</p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+              <span className="text-2xl block mb-2">⚠️</span>
+              <h2 className="text-lg md:text-xl font-bold text-[#1B3A6B]">Demurrage &amp; Detention Calculator</h2>
+              <p className="mt-2 text-gray-600 text-[15px] leading-relaxed">Estimate demurrage and detention charges from your free days and daily rates, and flag shipments where slow clearance could run up costly port charges.</p>
+            </div>
+          </div>
+        </section>
 
         {/* FAQ */}
         <section className="mx-auto max-w-7xl px-6 pb-12 md:px-12 lg:px-16">

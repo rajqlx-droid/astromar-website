@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import FreightClient from "./freight-client";
 
 export const metadata: Metadata = {
-  title: "Freight Calculator Tools India: CBM, Landed Cost | Astromar",
-  description: "Free freight calculator tools for India — CBM calculator, container load optimizer, landed cost & air vs sea comparison for importers and exporters.",
+  title: "Freight Cost Calculator India: CBM, Import Duty | Astromar",
+  description: "Free freight calculator tools for India — CBM calculator, container load optimizer, import duty & landed cost, air vs sea comparison for importers.",
   keywords: "freight calculator india, cbm calculator, volumetric weight calculator, landed cost calculator india, export price calculator, fob cif calculator, air vs sea comparison, demurrage calculator, container load calculator, freight tools india, astromar freight intelligence",
   alternates: { canonical: "https://www.astromarfreezone.com/freight-intelligence" },
   openGraph: {
-    title: "Freight Calculator Tools India: CBM, Landed Cost | Astromar",
-    description: "Free freight calculators for Indian importers — CBM, landed cost, export pricing, air vs sea, demurrage. No signup, your data stays in your browser.",
+    title: "Freight Cost Calculator India: CBM, Import Duty | Astromar",
+    description: "Free freight calculators for Indian importers — CBM, import duty, export pricing, air vs sea, demurrage. No signup, your data stays in your browser.",
     url: "https://www.astromarfreezone.com/freight-intelligence",
     siteName: "Astromar Logistics",
     type: "website",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freight Calculator Tools India: CBM, Landed Cost | Astromar",
-    description: "Free CBM, landed cost, export price, air vs sea, and demurrage calculators for Indian importers and exporters.",
+    title: "Freight Cost Calculator India: CBM, Import Duty | Astromar",
+    description: "Free CBM, import duty, export price, air vs sea, and demurrage calculators for Indian importers and exporters.",
     images: ["https://www.astromarfreezone.com/og-freight-intelligence.png"],
   },
   robots: { index: true, follow: true },
@@ -138,15 +138,18 @@ export default function FreightIntelligencePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      {/* SEO content — visually hidden via sr-only, fully readable by Google and screen readers */}
-      <div className="sr-only">
-        <h1>
-          <span className="text-blue-600">Freight Calculator</span> Tools for India
+      {/* Visible page heading */}
+      <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 pt-8 pb-8">
+        <h1 className="text-3xl md:text-4xl font-extrabold text-[#1B3A6B] leading-tight">
+          Free Freight Cost Calculator for India
         </h1>
-        <p>
-          Run a free <span className="text-blue-600">freight calculator</span> for CBM, air volume, landed cost, export pricing, air vs sea comparison, and demurrage risk. Built for Indian importers and exporters — no signup, your data stays in your browser.
+        <div className="mt-4 h-[5px] w-[90px] rounded-full bg-gradient-to-r from-[#F97316] to-[#FBBF77]" />
+        <p className="mt-3 text-gray-600 text-base">
+          Free freight calculators for Indian importers and exporters — estimate CBM and container loading, volumetric weight, import duty and landed cost, export pricing, air vs sea, and demurrage. No signup; your data stays in your browser.
         </p>
       </div>
+
+      <div className="border-t border-gray-100" />
 
       <FreightClient />
     </>
