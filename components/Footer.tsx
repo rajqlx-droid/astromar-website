@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="inline-flex items-center mb-4">
               <div className="bg-white rounded-lg p-2 inline-flex items-center gap-2">
                 <Image
-                  src="https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hMDU2NTM0My1hNjA2LTRkNTItOTRjNC00OTZiMmQ3YTNmZDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCUkFORCBBU1NFVFMvMDAxLnBuZyIsImlhdCI6MTc3NTU0OTQwNCwiZXhwIjoxODM4NjIxNDA0fQ.jgeDhDostzqz1pdHBSMMSoRBb_eG-G2MLkJY6MVCR_w"
+                  src="/logo.png"
                   alt="Astromar Logistics"
                   width={120}
                   height={36}

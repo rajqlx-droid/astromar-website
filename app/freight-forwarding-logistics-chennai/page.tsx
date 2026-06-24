@@ -22,7 +22,7 @@ const articleSchema = {
   description: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
   image: "https://www.astromarfreezone.com/freight-forwarding-chennai.png",
   author: { "@type": "Organization", name: "Astromar Logistics" },
-  publisher: { "@type": "Organization", name: "Astromar Logistics", logo: { "@type": "ImageObject", url: "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png" } },
+  publisher: { "@type": "Organization", name: "Astromar Logistics", logo: { "@type": "ImageObject", url: "https://www.astromarfreezone.com/logo.png" } },
   mainEntityOfPage: "https://www.astromarfreezone.com/freight-forwarding-logistics-chennai",
 };
 

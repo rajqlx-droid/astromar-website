@@ -176,7 +176,7 @@ export default async function BlogArticlePage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "Astromar Logistics",
-      logo: { "@type": "ImageObject", url: "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png" },
+      logo: { "@type": "ImageObject", url: "https://www.astromarfreezone.com/logo.png" },
     },
     mainEntityOfPage: `https://www.astromarfreezone.com/blogs/${slug}`,
   };

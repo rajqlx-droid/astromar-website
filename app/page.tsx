@@ -25,7 +25,7 @@ const homeOrganizationSchema = {
   "@type": "Organization",
   "name": "Astromar Logistics Pvt Ltd",
   "url": "https://www.astromarfreezone.com",
-  "logo": "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png",
+  "logo": "https://www.astromarfreezone.com/logo.png",
   "description": "India's leading Free Trade Warehousing Zone operator and freight forwarder with 10 strategic FTWZ locations across India offering duty-free storage, customs clearance, and supply chain solutions.",
   "telephone": "+91 99402 11014",
   "email": "sales@astromarfreezone.com",

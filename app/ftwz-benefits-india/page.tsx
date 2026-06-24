@@ -22,7 +22,7 @@ const articleSchema = {
   description: "Explore FTWZ benefits in India, offering duty deferment, tax advantages, cost-efficient storage, seamless customs processes, and easy global trade access for businesses.",
   image: "https://www.astromarfreezone.com/ftwz-benefits-india.jpg",
   author: { "@type": "Organization", name: "Astromar Logistics" },
-  publisher: { "@type": "Organization", name: "Astromar Logistics", logo: { "@type": "ImageObject", url: "https://eenumepuujkrnartejsh.supabase.co/storage/v1/object/sign/BRAND%20ASSETS/001.png" } },
+  publisher: { "@type": "Organization", name: "Astromar Logistics", logo: { "@type": "ImageObject", url: "https://www.astromarfreezone.com/logo.png" } },
   mainEntityOfPage: "https://www.astromarfreezone.com/ftwz-benefits-india",
 };
 
