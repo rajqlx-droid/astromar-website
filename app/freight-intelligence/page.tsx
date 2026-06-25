@@ -141,11 +141,11 @@ export default function FreightIntelligencePage() {
       {/* Visible page heading */}
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 pt-8 pb-8">
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#1B3A6B] leading-tight">
-          Free Freight Cost Calculator for India
+          Freight Cost Calculator for Importers &amp; Exporters
         </h1>
         <div className="mt-4 h-[5px] w-[90px] rounded-full bg-gradient-to-r from-[#F97316] to-[#FBBF77]" />
         <p className="mt-3 text-gray-600 text-base">
-          Free freight calculators for Indian importers and exporters — estimate CBM and container loading, volumetric weight, import duty and landed cost, export pricing, air vs sea, and demurrage. No signup; your data stays in your browser.
+          Free freight calculators for importers and exporters — estimate CBM and container loading, volumetric weight, import duty and landed cost, export pricing, air vs sea, and demurrage. No signup; your data stays in your browser.
         </p>
       </div>
 
