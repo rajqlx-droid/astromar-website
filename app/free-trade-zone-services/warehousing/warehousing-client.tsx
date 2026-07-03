@@ -1,6 +1,7 @@
 "use client"
 import { useState, useRef } from "react";
 import CTASection from "@/components/CTASection";
+import ServicesCarousel from "../ServicesCarousel";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
@@ -270,6 +271,8 @@ const WarehousingClient = () => {
           </div>
         </div>
       </section>
+
+      <ServicesCarousel currentHref="/free-trade-zone-services/warehousing" />
 
       <CTASection />
 

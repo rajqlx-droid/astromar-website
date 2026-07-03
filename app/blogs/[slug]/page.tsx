@@ -164,6 +164,19 @@ export default async function BlogArticlePage({ params }: Props) {
   const article = articles[slug]
   if (!article) notFound()
 
+  const sameCategory = Object.entries(articles).filter(
+    ([s, a]) => s !== slug && a.category === article.category
+  )
+  const related = [...sameCategory]
+  if (related.length < 3) {
+    const pickedSlugs = new Set(related.map(([s]) => s))
+    const fillers = Object.entries(articles).filter(
+      ([s]) => s !== slug && !pickedSlugs.has(s)
+    )
+    related.push(...fillers)
+  }
+  const relatedTop = related.slice(0, 3)
+
   const _articleDate = new Date(article.date);
   const blogSchema = {
     "@context": "https://schema.org",
@@ -227,6 +240,27 @@ export default async function BlogArticlePage({ params }: Props) {
             ))}
           </div>
         </div>
+
+        {/* Related Articles */}
+        {relatedTop.length > 0 && (
+          <div className="mt-16 pt-8 border-t border-gray-200">
+            <h2 className="text-2xl font-bold text-[#1B3A6B] mb-6">Related Articles</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {relatedTop.map(([s, a]) => (
+                <Link key={s} href={`/blogs/${s}`} className="group block rounded-xl border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                  <div className="relative h-40 w-full overflow-hidden bg-gray-100">
+                    <Image src={a.image} alt={a.imageAlt} fill className="object-cover group-hover:scale-105 transition-transform" sizes="(max-width:768px) 100vw, 33vw" />
+                  </div>
+                  <div className="p-4">
+                    <span className="text-xs font-semibold uppercase tracking-wide text-[#F97316]">{a.category}</span>
+                    <h3 className="mt-1 font-bold text-[#1B3A6B] leading-snug group-hover:text-[#F97316] transition-colors">{a.title}</h3>
+                    <p className="mt-2 text-xs text-gray-500">{a.readTime}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* CTA */}
         <div className="mt-16 bg-blue-900 rounded-2xl p-8 md:p-12 text-center">

@@ -1,5 +1,6 @@
 "use client"
 import CTASection from "@/components/CTASection";
+import ServicesCarousel from "../ServicesCarousel";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
@@ -274,6 +275,8 @@ const OceanFreight = () => {
           </div>
         </div>
       </section>
+
+      <ServicesCarousel currentHref="/free-trade-zone-services/ocean-freight" />
 
       <CTASection />
 

@@ -4,6 +4,7 @@ import { MapPin, Phone, Navigation, Warehouse, ArrowLeft, Clock, Globe } from "l
 import { ftwzLocationDetails, getLocationBySlug } from "@/data/ftwzLocations";
 import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
+import LocationCarousel from "./LocationCarousel";
 
 function KwText({ segments }: { segments?: { text: string; kw?: boolean; href?: string }[] }) {
   if (!segments) return null;
@@ -233,6 +234,11 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const location = locations.find((l) => l.slug === slug);
   if (!location) notFound();
+
+  const others = locations.filter((l) => l.slug !== slug && l.type === "FTWZ Warehouse");
+  const sameState = others.filter((l) => l.state === location.state);
+  const rest = others.filter((l) => l.state !== location.state);
+  const otherLocations = [...sameState, ...rest];
 
   const seoDetail = getLocationBySlug(slug);
 
@@ -575,6 +581,9 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
           </div>
         </section>
       )}
+
+      {/* Other FTWZ Locations */}
+      {otherLocations.length > 0 && <LocationCarousel items={otherLocations} />}
 
       {/* JSON-LD Schemas */}
       {seoDetail?.seo.localBusinessSchema && (
