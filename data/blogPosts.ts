@@ -23,7 +23,7 @@ export interface BlogPost {
   readTime: string;
   date: string;
   featured: boolean;
-  content: string[];
+  content?: string[];
   metaDescription: string;
   thumbnail: string;
   faqs?: BlogFAQ[];
