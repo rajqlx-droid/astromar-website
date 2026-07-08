@@ -46,8 +46,8 @@ const AirFreightClient = () => {
           src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600"
           alt="Air Freight India — Astromar express cargo and freight forwarding services across 100+ global destinations"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/65" />
@@ -208,8 +208,8 @@ const AirFreightClient = () => {
                   src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80"
                   alt="Air cargo operations"
                   fill
+                  sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </ScrollReveal>

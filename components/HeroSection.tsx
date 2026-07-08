@@ -55,8 +55,8 @@ const HeroSection = () => {
         src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
         alt="Astromar Logistics — free trade warehousing zone operator and freight forwarder in India, container port aerial view"
         fill
+        sizes="100vw"
         className="absolute inset-0 z-0 object-cover w-full h-full"
-        unoptimized
         priority
       />
       <div className="absolute inset-0 bg-black/60 z-10" />

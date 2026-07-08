@@ -40,8 +40,8 @@ const CustomClearanceClient = () => {
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600"
           alt="Customs Clearance Services in India — Astromar licensed customs house agent with pan-India ports coverage"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/65" />
@@ -190,8 +190,8 @@ const CustomClearanceClient = () => {
                   src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80"
                   alt="Customs clearance documentation"
                   fill
+                  sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </ScrollReveal>

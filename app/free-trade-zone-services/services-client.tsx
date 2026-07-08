@@ -15,8 +15,8 @@ const Services = () => {
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
           alt="Astromar Logistics — FTZ India logistics services with FTZ Warehouse network across 10 strategic locations"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/75" />

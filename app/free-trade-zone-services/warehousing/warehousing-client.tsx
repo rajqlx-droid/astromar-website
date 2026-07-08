@@ -46,8 +46,8 @@ const WarehousingClient = () => {
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600"
           alt="Bonded Warehouse India — Astromar custom bonded warehouse and FTWZ storage facilities across 10 pan-India locations"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/65" />
@@ -136,8 +136,8 @@ const WarehousingClient = () => {
                   src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
                   alt="Warehouse operations"
                   fill
+                  sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </ScrollReveal>

@@ -89,8 +89,8 @@ const About = () => {
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
           alt="Astromar Logistics — Free Trade Warehousing Zone operator with FTWZ Warehouse integration across India"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
@@ -253,8 +253,8 @@ const About = () => {
                     src={item.image}
                     alt={item.title}
                     fill
+                    sizes="(max-width:768px) 100vw, 50vw"
                     className="object-cover"
-                    unoptimized
                   />
                 </div>
               );

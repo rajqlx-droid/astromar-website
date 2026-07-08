@@ -44,8 +44,8 @@ const Blog = () => {
           src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200"
           alt="Logistics blog and insights"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/60" />

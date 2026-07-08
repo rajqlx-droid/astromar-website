@@ -66,8 +66,8 @@ export default function FTWZFaqsPage() {
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80"
           alt="FTWZ FAQs India"
           fill
+          sizes="100vw"
           className="object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/70" />

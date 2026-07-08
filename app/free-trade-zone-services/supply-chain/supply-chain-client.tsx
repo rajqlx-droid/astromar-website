@@ -72,8 +72,8 @@ const SupplyChainClient = () => {
           src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80"
           alt="Supply Chain Solutions India — Astromar integrated supply chain logistics with FTWZ network and real-time visibility"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/65" />
@@ -228,8 +228,8 @@ const SupplyChainClient = () => {
                   src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80"
                   alt="Supply chain warehouse operations"
                   fill
+                  sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </ScrollReveal>

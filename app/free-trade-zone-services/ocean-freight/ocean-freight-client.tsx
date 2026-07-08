@@ -42,8 +42,8 @@ const OceanFreight = () => {
           src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
           alt="Astromar global ocean freight forwarding services from India with FTWZ integration"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/65" />
@@ -117,8 +117,8 @@ const OceanFreight = () => {
                   src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&q=80"
                   alt="Cargo ships and containers"
                   fill
+                  sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </ScrollReveal>

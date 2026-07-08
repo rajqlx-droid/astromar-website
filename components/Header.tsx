@@ -28,7 +28,6 @@ const Header = () => {
             className="h-10 w-auto object-contain"
             priority
             loading="eager"
-            unoptimized
           />
         </Link>
 

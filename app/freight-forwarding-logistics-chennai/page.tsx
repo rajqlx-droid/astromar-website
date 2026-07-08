@@ -36,8 +36,8 @@ export default function FreightForwardingChennaiPage() {
           src="/freight-forwarding-chennai.png"
           alt="Astromar Freezone Chennai Logistics"
           fill
+          sizes="100vw"
           className="object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/70" />

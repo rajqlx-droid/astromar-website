@@ -55,7 +55,6 @@ const Footer = () => {
                   width={120}
                   height={36}
                   className="h-8 w-auto object-contain"
-                  unoptimized
                 />
               </div>
             </div>

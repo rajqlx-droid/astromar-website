@@ -33,8 +33,8 @@ const ProjectsClient = () => {
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
           alt="Heavy lift crane and industrial cargo"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/65" />
@@ -122,8 +122,8 @@ const ProjectsClient = () => {
                   src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
                   alt="Heavy lift industrial project cargo"
                   fill
+                  sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </ScrollReveal>
@@ -137,8 +137,8 @@ const ProjectsClient = () => {
                   src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
                   alt="Industrial plant and machinery"
                   fill
+                  sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </ScrollReveal>
@@ -264,8 +264,8 @@ const ProjectsClient = () => {
                   src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80"
                   alt="Project cargo transport"
                   fill
+                  sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
-                  unoptimized
                 />
               </div>
             </ScrollReveal>

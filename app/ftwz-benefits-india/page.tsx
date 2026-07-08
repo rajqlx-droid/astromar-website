@@ -36,8 +36,8 @@ export default function FTWZBenefitsPage() {
           src="/ftwz-benefits-india.jpg"
           alt="FTWZ Benefits India"
           fill
+          sizes="100vw"
           className="object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/70" />

@@ -212,8 +212,8 @@ const FTWZServices = () => {
           src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600"
           alt="FTWZ in India — Astromar's bonded warehouse network across 10 strategic locations"
           fill
+          sizes="100vw"
           className="absolute inset-0 object-cover"
-          unoptimized
           priority
         />
         <div className="absolute inset-0 bg-black/60" />
