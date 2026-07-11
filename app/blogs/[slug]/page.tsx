@@ -80,7 +80,7 @@ export default async function BlogArticlePage({ params }: Props) {
       </section>
 
       {/* Article Body */}
-      <section className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16 py-16">
+      <section className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16 py-16">
 
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-10">
