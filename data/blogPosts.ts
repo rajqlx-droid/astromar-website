@@ -400,7 +400,7 @@ export const blogPosts: BlogPost[] = [
       "Free Trade Warehousing Zone (FTWZ) in India offers businesses a range of advantages that streamline international trade and optimize supply chains.",
       "Key benefits include duty deferment, GST exemptions, 100% foreign ownership, simplified customs process, and strategic locations near major ports.",
       "Goods can be stored duty-free with no time constraints, allowing businesses to better manage inventory and meet fluctuating demand.",
-      "FTWZs offer specialized value-added services like repacking, labeling, kitting, and assembly for export-ready goods.",
+      "FTWZs offer specialized value-added services like repacking, labeling, kitting, and CKD/SKD assembly for export-ready goods.",
       "By utilizing Astromar FTWZ, your business can enjoy streamlined international trade processes and improved cost-efficiency.",
     ],
     externalUrl: "/ftwz-benefits-india",
@@ -437,7 +437,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       "FTWZ is a Special Category of Special Economic Zone — a dedicated platform for warehousing and trading governed by SEZ act 2005.",
       "Businesses benefit from tax exemptions, duty-free imports and exports, and simplified customs procedures in FTWZs.",
-      "Permitted activities include warehousing, re-export, relabeling, packing, kitting, palletization, and assembly of goods.",
+      "Permitted activities include warehousing, re-export, relabeling, packing, kitting, palletization, and CKD/SKD assembly of goods.",
       "Goods can be stored duty-free for 3 years, extendable up to 5 years with special permission.",
       "Customs clearance through FTWZs is typically completed within 24 to 48 hours.",
     ],

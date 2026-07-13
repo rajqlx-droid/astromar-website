@@ -65,7 +65,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "SEZ ICTT, Vallarpadam, Kochi, Ernakulam, Kerala 682504",
     seo: {
       title: "FTWZ in Kochi — Vallarpadam ICTT Transshipment | Astromar",
-      description: "Astromar's ftwz in kochi at Vallarpadam ICTT — India's first dedicated transshipment terminal. Duty-free FTWZ warehousing for spices, seafood, rubber, electronics, and pharma imports.",
+      description: "Astromar's ftwz in kochi at Vallarpadam ICTT — India's first transshipment terminal. Duty-free FTWZ warehousing for spices, seafood, and pharma imports.",
       keywords: "ftwz in kochi, kochi ftwz, vallarpadam ictt warehouse, free trade warehouse zone in kochi, bonded warehouse in kochi, custom bonded warehouse in kochi, kerala ftwz",
       h1: "FTWZ in Kochi",
       h1Subtitle: "Vallarpadam ICTT, Kerala",
@@ -281,7 +281,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "VSEZ, Duvvada, Visakhapatnam, Andhra Pradesh 530049",
     seo: {
       title: "FTWZ in Vizag — Visakhapatnam Port VSEZ | Astromar",
-      description: "Astromar's ftwz in vizag at Visakhapatnam SEZ (VSEZ) — East Coast's largest commercial port. Duty-free FTWZ warehousing for steel, pharma, petrochemicals, and fertilizer industries.",
+      description: "Astromar's ftwz in vizag at Visakhapatnam SEZ (VSEZ) — East Coast's largest port. Duty-free FTWZ warehousing for steel, pharma, and fertilizers.",
       keywords: "ftwz in vizag, vizag ftwz, visakhapatnam ftwz, vsez warehouse, bonded warehouse in vizag, custom bonded warehouse in vizag, free trade warehouse zone in vizag, andhra pradesh ftwz",
       h1: "FTWZ in Vizag",
       h1Subtitle: "Visakhapatnam SEZ, Andhra Pradesh",
@@ -490,7 +490,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "Village Sai, Taluka Panvel, District - Raigad, Mumbai, Maharashtra, 410206, India",
     seo: {
       title: "Free Trade Warehouse Zone in Mumbai — Panvel | Astromar",
-      description: "Astromar's free trade warehouse zone in mumbai at Panvel — gateway between JNPA Port and Mumbai industrial corridor. Duty-free FTWZ warehousing for automotive, electronics, FMCG, and chemicals.",
+      description: "Astromar's free trade warehouse zone in mumbai at Panvel, near JNPA Port. Duty-free FTWZ warehousing for automotive, electronics, FMCG, and chemicals.",
       keywords: "free trade warehouse zone in mumbai, ftwz in mumbai, ftwz mumbai panvel, bonded warehouse in mumbai, custom bonded warehouse in mumbai, navi mumbai sez warehouse, panvel ftwz",
       h1: "Free Trade Warehouse Zone in Mumbai",
       h1Subtitle: "Panvel, Navi Mumbai",
@@ -706,7 +706,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "JNPA SEZ, Village-Sawarkhar, Uran, Raigad, Maharashtra, 400707",
     seo: {
       title: "FTWZ in Mumbai — JNPA Nhava Sheva Port | Astromar",
-      description: "Astromar's ftwz in mumbai at JNPA — India's #1 container port. On-port duty-free warehousing with zero transit time for re-export, consolidation, and just-in-time supply chains.",
+      description: "Astromar's ftwz in mumbai at JNPA — India's #1 container port. On-port duty-free warehousing with zero transit time for re-export and consolidation.",
       keywords: "ftwz in mumbai, ftwz mumbai jnpa, nhava sheva ftwz, free trade warehouse zone in mumbai, bonded warehouse mumbai port, custom bonded warehouse in mumbai, jnpa sez warehouse, on port ftwz",
       h1: "FTWZ in Mumbai",
       h1Subtitle: "JNPA Nhava Sheva Port",
@@ -918,7 +918,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "Mannur & Valarpuram Village, Sriperumbudur Taluk, Kancheepuram District, 602105, Tamil Nadu, India",
     seo: {
       title: "Chennai Free Trade Zone (FTWZ) — Sriperumbudur | Astromar",
-      description: "Astromar's chennai free trade zone at Sriperumbudur — duty-free FTWZ warehousing with GST deferral, 24/7 customs clearance, and direct NH 48 access. Serving Foxconn, Samsung, Hyundai supply chains.",
+      description: "Astromar's chennai free trade zone at Sriperumbudur — duty-free FTWZ with GST deferral and direct NH 48 access. Serving Foxconn, Samsung, Hyundai.",
       keywords: "chennai free trade zone, ftwz chennai, ftwz in chennai, free zone chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, sriperumbudur ftwz",
       h1: "Chennai Free Trade Zone",
       h1Subtitle: "Sriperumbudur, Tamil Nadu",
@@ -1032,7 +1032,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "?" },
           ],
           answer: [
-            { text: "A standard bonded warehouse in Chennai allows duty-deferred storage but is restricted in scope — typically 1-year storage limits and limited permitted activities. An FTWZ like Sriperumbudur offers unlimited storage tenure, broader permitted activities (including manufacturing, assembly, and value addition), and stronger tax benefits under the SEZ Act, 2005." },
+            { text: "A standard bonded warehouse in Chennai allows duty-deferred storage but is restricted in scope — typically 1-year storage limits and limited permitted activities. An FTWZ like Sriperumbudur offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities (including CKD/SKD assembly, repacking, relabelling, and other value addition), and stronger tax benefits under the SEZ Act, 2005." },
           ],
         },
         {
@@ -1092,7 +1092,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             "name": "What's the difference between Sriperumbudur FTWZ and a bonded warehouse in chennai?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A standard bonded warehouse in Chennai allows duty-deferred storage but is restricted to 1-year storage limits and limited activities. An FTWZ like Sriperumbudur offers unlimited storage tenure, broader permitted activities including manufacturing and assembly, and stronger tax benefits under the SEZ Act, 2005."
+              "text": "A standard bonded warehouse in Chennai allows duty-deferred storage but is restricted to 1-year storage limits and limited activities. An FTWZ like Sriperumbudur offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities including CKD/SKD assembly, repacking, relabelling, and other value addition, and stronger tax benefits under the SEZ Act, 2005."
             }
           },
           {
@@ -1171,7 +1171,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "Vallur & Edayanchavadi Village, Ponneri Taluk, Tiruvallur District, 600120, Tamil Nadu, India",
     seo: {
       title: "Free Trade Warehouse in Chennai — Vallur Ponneri | Astromar",
-      description: "Astromar's free trade warehouse in chennai at Vallur — port-adjacent FTWZ near Kattupalli & Ennore ports. Customs bonded warehouse in chennai for bulk cargo, chemicals, LNG, and energy sector imports.",
+      description: "Astromar's free trade warehouse in chennai at Vallur — near Kattupalli & Ennore ports. Bonded warehouse in chennai for bulk cargo, chemicals, and LNG.",
       keywords: "free trade warehouse in chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, customs bonded warehouse in chennai, ftwz vallur, north chennai bonded warehouse, ponneri warehouse",
       h1: "Free Trade Warehouse in Chennai",
       h1Subtitle: "Vallur, Ponneri — North Chennai",
@@ -1424,7 +1424,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "Junction Road, Khurja Industrial Area, Village Maujpur, Khurja, District - Bulandshahr, UP - 203131, India",
     seo: {
       title: "FTWZ in Delhi NCR — Khurja DFC Corridor | Astromar",
-      description: "Astromar's ftwz in delhi at Khurja — North India's gateway on the Western Dedicated Freight Corridor. Duty-free FTWZ warehousing serving Delhi, Haryana, Punjab, and UP markets.",
+      description: "Astromar's ftwz in delhi at Khurja, on the Western Dedicated Freight Corridor. Duty-free FTWZ warehousing serving Delhi, Haryana, Punjab, and UP.",
       keywords: "ftwz in delhi, khurja ftwz, delhi ncr bonded warehouse, dfc corridor warehouse, bonded warehouse in delhi, custom bonded warehouse in delhi, free trade warehouse zone in delhi, north india ftwz",
       h1: "FTWZ in Delhi NCR",
       h1Subtitle: "Khurja, Uttar Pradesh",
@@ -1638,7 +1638,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "Innomech Aerospace Tooling Pvt Ltd, Aerospace SEZ Sector, Devanahalli, Bengaluru, Karnataka, 562165",
     seo: {
       title: "FTWZ in Bangalore — Aerospace SEZ Devanahalli | Astromar",
-      description: "Astromar's ftwz in bangalore at Devanahalli Aerospace SEZ — 5 km from Kempegowda Airport. Duty-free FTWZ warehousing for aerospace, defence, electronics, and high-value cargo.",
+      description: "Astromar's ftwz in bangalore at Devanahalli Aerospace SEZ — 5 km from Kempegowda Airport. Duty-free FTWZ warehousing for aerospace and defence.",
       keywords: "ftwz in bangalore, bangalore ftwz, devanahalli aerospace sez, aerospace ftwz india, bonded warehouse in bangalore, free trade warehouse zone in bangalore, free trade warehouse in bangalore, karnataka ftwz, kempegowda airport warehouse",
       h1: "FTWZ in Bangalore",
       h1Subtitle: "Devanahalli Aerospace SEZ, Karnataka",
@@ -1755,7 +1755,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "?" },
           ],
           answer: [
-            { text: "Standard Bangalore bonded warehouses (typically within ICD Whitefield) offer 1-year duty-deferred storage with limited activities. The Devanahalli Aerospace FTWZ offers unlimited storage tenure, broader SEZ Act 2005 activities including manufacturing and assembly, specialised aerospace-grade infrastructure, and direct airport proximity that no inland bonded warehouse can match." },
+            { text: "Standard Bangalore bonded warehouses (typically within ICD Whitefield) offer 1-year duty-deferred storage with limited activities. The Devanahalli Aerospace FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader SEZ Act 2005 activities including CKD/SKD assembly, repacking, and relabelling, specialised aerospace-grade infrastructure, and direct airport proximity that no inland bonded warehouse can match." },
           ],
         },
       ],
@@ -1854,7 +1854,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "Z-85/2A, Dahej SEZ - 1, Dahej, Gujarat, India",
     seo: {
       title: "FTWZ in Dahej — PCPIR Chemical SEZ Gujarat | Astromar",
-      description: "Astromar's ftwz in dahej within Dahej SEZ-1 — India's largest petrochemical and chemicals corridor (PCPIR). Duty-free FTWZ warehousing for chemicals, LNG, polymers, and industrial gases.",
+      description: "Astromar's ftwz in dahej within Dahej SEZ-1 — India's largest petrochemical corridor (PCPIR). Duty-free FTWZ warehousing for chemicals and polymers.",
       keywords: "ftwz in dahej, dahej ftwz, dahej sez warehouse, pcpir gujarat, bonded warehouse in dahej, custom bonded warehousing in dahej, free trade warehouse zone in dahej, gujarat chemical sez",
       h1: "FTWZ in Dahej",
       h1Subtitle: "Dahej SEZ-1, Gujarat",
@@ -2070,7 +2070,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "APSEZ, Survey No. 169/36, Mundra, Kutch, Gujarat 370421",
     seo: {
       title: "FTWZ Mundra — Adani Ports APSEZ India's Largest Port | Astromar",
-      description: "Astromar's ftwz mundra at Adani Ports APSEZ — India's largest commercial port (155M+ MT annually). Duty-free FTWZ warehousing for Middle East, Africa, Europe trade.",
+      description: "Astromar's ftwz mundra at Adani Ports APSEZ — India's largest commercial port. Duty-free FTWZ warehousing for Middle East, Africa, Europe trade.",
       keywords: "ftwz mundra, ftwz in mundra, mundra ftwz, apsez warehouse, adani ports sez, bonded warehousing in mundra, custom bonded warehousing in mundra, free trade warehouse zone in mundra, gujarat ftwz",
       h1: "FTWZ Mundra",
       h1Subtitle: "Adani Ports APSEZ, Gujarat",

@@ -105,7 +105,7 @@ const ftwzFaqs = [
       { text: "How is FTWZ different from a regular bonded warehouse?" },
     ],
     answer: [
-      { text: "Both allow duty-deferred storage, but FTWZs offer significantly broader benefits: unlimited storage tenure versus 1-year limit, permitted activities including manufacturing and value addition, 100% GST deferral, and 5-year income tax exemption on re-export profits. A standard bonded warehouse typically restricts storage to passive holding only." },
+      { text: "Both allow duty-deferred storage, but FTWZs offer significantly broader benefits: storage for 3 years, extendable to 5 years with special permission, versus a 1-year limit, permitted activities including kitting, assembly of CKD/SKD kits, relabelling, and other value addition, 100% GST deferral, and 5-year income tax exemption on re-export profits. A standard bonded warehouse typically restricts storage to passive holding only." },
     ],
   },
   {
@@ -121,7 +121,7 @@ const ftwzFaqs = [
       { text: "Which industries benefit most from FTWZ warehouse operations?" },
     ],
     answer: [
-      { text: "FTWZ warehousing benefits virtually any industry handling significant import volumes: electronics, automotive components, pharmaceuticals (with cold-chain capability), FMCG, textiles, chemicals, project cargo, and bulk commodities. Companies operating from FTWZs typically save ₹2-5 crore annually on duty deferral alone." },
+      { text: "FTWZ warehousing benefits virtually any industry handling significant import volumes: electronics, automotive components, pharmaceuticals (with cold-chain capability), FMCG, textiles, chemicals, project cargo, and bulk commodities." },
     ],
   },
   {
@@ -168,7 +168,7 @@ const ftwzFaqPageSchema = {
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "What is a Free Trade Warehousing Zone?", "acceptedAnswer": { "@type": "Answer", "text": "A Free Trade Warehousing Zone (FTWZ) is a Government-notified area established under the SEZ Act, 2005, where imported goods can be stored without immediate payment of customs duty or GST until they leave the zone." } },
-    { "@type": "Question", "name": "How is FTWZ different from a regular bonded warehouse?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZs offer unlimited storage tenure, broader permitted activities including manufacturing and value addition, 100% GST deferral, and 5-year income tax exemption on re-export profits — versus a regular bonded warehouse's 1-year storage limit." } },
+    { "@type": "Question", "name": "How is FTWZ different from a regular bonded warehouse?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZs offer storage for 3 years, extendable to 5 years with special permission, broader permitted activities including kitting, assembly of CKD/SKD kits, relabelling, and other value addition, 100% GST deferral, and 5-year income tax exemption on re-export profits — versus a regular bonded warehouse's 1-year storage limit." } },
     { "@type": "Question", "name": "What are the tax benefits of operating from an FTWZ in India?", "acceptedAnswer": { "@type": "Answer", "text": "Zero customs duty until goods exit to DTA, 100% GST deferral, service tax exemption on FTWZ operations, and 5-year income tax exemption on re-export profits." } },
     { "@type": "Question", "name": "Which industries benefit most from FTWZ warehousing?", "acceptedAnswer": { "@type": "Answer", "text": "Electronics, automotive components, pharmaceuticals, FMCG, textiles, chemicals, project cargo, and bulk commodities all benefit significantly from FTWZ operations." } },
     { "@type": "Question", "name": "Can I do value-added activities like kitting or labelling inside the FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — kitting, labelling, repackaging, sorting, quality inspection, and assembly are all permitted within an FTWZ without triggering customs duty." } },
@@ -440,9 +440,9 @@ const FTWZServices = () => {
                   {([
                     ["Customs Duty", "Paid on arrival", "Deferred 1 year", "Deferred indefinitely"],
                     ["GST on Storage", "Fully applicable", "Applicable", "100% deferred until DTA"],
-                    ["Storage Duration", "Limited, renewal needed", "1 year limit", "Indefinite storage permitted"],
+                    ["Storage Duration", "Limited, renewal needed", "1 year limit", "3 years, extendable to 5 years with special permission"],
                     ["Interest on Duty", "N/A — duty paid upfront", "Interest charged after 90 days", "Zero interest — duty fully deferred"],
-                    ["Value-Added Services", "Severely limited", "Restricted", "Full — kitting, labelling, assembly"],
+                    ["Value-Added Services", "Severely limited", "Restricted", "Full — kitting, labelling, CKD/SKD assembly"],
                     ["Re-Export Without Duty", "Not possible", "Limited", "Fully permitted, zero liability"],
                     ["Income Tax (Re-Export)", "Standard rates", "Standard rates", "5-year exemption on profits"],
                     ["Multi-Currency", "INR only", "INR only", "USD/EUR/INR multi-currency permitted"],

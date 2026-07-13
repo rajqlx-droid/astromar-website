@@ -170,11 +170,11 @@ export default function FTWZBenefitsPage() {
           <ul className="space-y-3 ml-10">
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed">
               <span className="text-[#F97316] mt-1 flex-shrink-0">•</span>
-              Enjoy the benefits of duty-free storage with no time constraints, allowing businesses to better manage inventory and meet fluctuating demand.
+              Enjoy the benefits of duty-free storage for up to 3 years, extendable to 5 years with special permission, allowing businesses to better manage inventory and meet fluctuating demand.
             </li>
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed">
               <span className="text-[#F97316] mt-1 flex-shrink-0">•</span>
-              Our advanced infrastructure supports value-added services such as repacking, relabeling, and assembly, helping businesses optimize their supply chain.
+              Our advanced infrastructure supports value-added services such as repacking, relabeling, and CKD/SKD assembly, helping businesses optimize their supply chain.
             </li>
           </ul>
         </div>
@@ -202,7 +202,7 @@ export default function FTWZBenefitsPage() {
           <ul className="space-y-3 ml-10">
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed">
               <span className="text-[#F97316] mt-1 flex-shrink-0">•</span>
-              FTWZs offer specialized services like repacking, labeling, kitting, and assembly, enabling businesses to add value before exporting goods to other markets.
+              FTWZs offer specialized services like repacking, labeling, kitting, and CKD/SKD assembly, enabling businesses to add value before exporting goods to other markets.
             </li>
           </ul>
         </div>

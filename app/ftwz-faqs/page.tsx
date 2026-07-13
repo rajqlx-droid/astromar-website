@@ -94,7 +94,7 @@ export default function FTWZFaqsPage() {
         {/* Intro */}
         <div className="bg-brand-light border-l-4 border-[#F97316] rounded-r-xl px-6 py-5 mb-10">
           <p className="text-base text-foreground/80 leading-relaxed">
-            Our Free Trade Zone in Chennai provides the advantage of importing and exporting with duty deferment, tax benefits, cost efficiency, and optimized distribution channels. It also facilitates re-exporting goods from India without the typical burden of Indian duties and taxes. Additionally, we offer comprehensive services like repacking, relabeling, kitting, palletization, and assembly, all tailored for non-duty-paid goods.
+            Our Free Trade Zone in Chennai provides the advantage of importing and exporting with duty deferment, tax benefits, cost efficiency, and optimized distribution channels. It also facilitates re-exporting goods from India without the typical burden of Indian duties and taxes. Additionally, we offer comprehensive services like repacking, relabeling, kitting, palletization, and CKD/SKD assembly, all tailored for non-duty-paid goods.
           </p>
         </div>
 

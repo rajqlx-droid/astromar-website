@@ -11,7 +11,7 @@ const accordionItems = [
   { title: "General FTWZ Storage", body: "Astromar's Bonded Warehouse India facilities offer duty-free storage for all commodity types with flexible tenure and WMS integration. Real-time inventory visibility, automated alerts, and MIS reporting.", bodyKw: "Bonded Warehouse India" },
   { title: "Cold Chain Storage",         body: "2-8°C and -20°C temperature controlled storage GDP-certified for pharma and perishables. Continuous temperature monitoring with automated alarms and audit trails." },
   { title: "Pharma Warehousing",         body: "Dedicated pharmaceutical storage with GDP compliance, batch tracking and audit trails. Segregated storage zones with restricted access and full documentation control." },
-  { title: "Value-Added Services",       body: "Repacking, kitting, labelling, assembly and quality inspection within FTWZ premises. Barcode/RFID integration and serial number tracking for high-value goods." },
+  { title: "Value-Added Services",       body: "Repacking, kitting, labelling, CKD/SKD assembly and quality inspection within FTWZ premises. Barcode/RFID integration and serial number tracking for high-value goods." },
   { title: "Project Cargo Storage",      body: "Oversized and heavy cargo storage with specialized handling equipment. Heavy-bay storage, weighbridge access, and crane facilities for project cargo." },
 ];
 
