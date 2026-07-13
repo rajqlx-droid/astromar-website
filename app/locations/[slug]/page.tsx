@@ -289,7 +289,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                 <h1 className="text-2xl sm:text-3xl md:text-3xl font-extrabold text-white mb-3 leading-tight tracking-tight">
                   {seoDetail?.seo.h1 ? (
                     <>
-                      {seoDetail.seo.h1}
+                      {seoDetail.seo.h1}{" "}
                       <span className="block text-white/90 text-xl sm:text-2xl md:text-2xl font-bold mt-1">{seoDetail.seo.h1Subtitle}</span>
                     </>
                   ) : (
