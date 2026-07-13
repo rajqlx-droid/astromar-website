@@ -360,7 +360,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-12-15",
     featured: false,
     metaDescription:
-      "Complete guide to landed cost calculation for Indian importers. Break down freight, duty, GST, port charges, and hidden costs to know your true import cost.",
+      "Avoid unexpected import costs. See exactly how landed cost is calculated — freight, duty, GST, port charges, and hidden fees, with real examples.",
     content: [
       "Landed cost is the total price of a product once it has arrived at the buyer's door — the comprehensive sum of every expense incurred from the moment the product leaves the supplier's factory.",
       "Studies estimate that 30-40% of importers underestimate their true landed costs by 5-15%, primarily because they fail to account for hidden charges and variable fees.",
