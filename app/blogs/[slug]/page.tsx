@@ -99,6 +99,11 @@ export default async function BlogArticlePage({ params }: Props) {
           <div key={i} className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{section.heading}</h2>
             <div className="text-gray-700 dark:text-gray-200 leading-relaxed whitespace-pre-line">{section.content}</div>
+            {section.relatedLink && (
+              <Link href={section.relatedLink.href} className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#F97316] hover:underline">
+                {section.relatedLink.text} →
+              </Link>
+            )}
           </div>
         ))}
 
