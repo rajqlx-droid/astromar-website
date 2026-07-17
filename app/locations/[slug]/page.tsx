@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
 import LocationCarousel from "./LocationCarousel";
 
-function KwText({ segments }: { segments?: { text: string; kw?: boolean; href?: string }[] }) {
+function KwText({ segments }: { segments?: { text: string; kw?: boolean; href?: string; target?: string; rel?: string }[] }) {
   if (!segments) return null;
   return (
     <>
@@ -18,7 +18,7 @@ function KwText({ segments }: { segments?: { text: string; kw?: boolean; href?: 
         );
         if (seg.href) {
           return (
-            <Link key={i} href={seg.href} className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">
+            <Link key={i} href={seg.href} target={seg.target} rel={seg.rel} className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">
               {content}
             </Link>
           );

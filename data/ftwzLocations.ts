@@ -14,9 +14,9 @@ export interface FTWZLocationDetail {
     h1?: string;
     h1Subtitle?: string;
     heroAlt?: string;
-    bannerIntro?: { text: string; kw?: boolean; href?: string }[];
+    bannerIntro?: { text: string; kw?: boolean; href?: string; target?: string; rel?: string }[];
     aboutH2?: { text: string; kw?: boolean }[];
-    aboutParagraphs?: { text: string; kw?: boolean; href?: string }[][];
+    aboutParagraphs?: { text: string; kw?: boolean; href?: string; target?: string; rel?: string }[][];
     servicesH2?: { text: string; kw?: boolean }[];
     whyChooseH2?: { text: string; kw?: boolean }[];
     whyChooseBlocks?: {
@@ -1663,7 +1663,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: " alongside standard FTWZ storage." },
         ],
         [
-          { text: "The Devanahalli location offers a distinctive advantage: just 5 km from Kempegowda International Airport (BLR) — India's third busiest airport for air cargo after Mumbai and Delhi, handling 500,000+ MT annually. With dedicated air freight stations, cold chain zones, and proximity to Bengaluru's IT/ITES corridor, the facility is ideal for air-freight dependent industries requiring fast turnaround." },
+          { text: "The Devanahalli location offers a distinctive advantage: just 5 km from " },
+          { text: "Kempegowda International Airport (BLR)", kw: true, href: "https://www.bengaluruairport.com/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " — India's third busiest airport for air cargo after Mumbai and Delhi, handling 500,000+ MT annually. With dedicated air freight stations, cold chain zones, and proximity to Bengaluru's IT/ITES corridor, the facility is ideal for air-freight dependent industries requiring fast turnaround." },
         ],
         [
           { text: "As a fully-operational " },
@@ -1874,7 +1876,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         [
           { text: "Astromar's Dahej FTWZ is a Government-notified " },
           { text: "free trade warehouse zone in dahej", kw: true },
-          { text: " operating within Dahej SEZ-1 — part of India's largest Petroleum, Chemicals & Petrochemicals Investment Region (PCPIR). The SEZ spans 2,000+ hectares with 40+ chemical and petrochemical companies on-site, making it the most concentrated industrial cluster of its kind in the country." },
+          { text: " operating within Dahej SEZ-1 — part of India's largest " },
+          { text: "Petroleum, Chemicals & Petrochemicals Investment Region (PCPIR)", kw: true, href: "https://gujaratpcpir.org/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". The SEZ spans 2,000+ hectares with 40+ chemical and petrochemical companies on-site, making it the most concentrated industrial cluster of its kind in the country." },
         ],
         [
           { text: "Dahej's strategic advantage is its on-site port infrastructure: the Dahej Port (GIPCL Jetty) is just 3 km from our FTWZ, with direct bulk vessel and tanker services for chemicals and LNG. The location offers minimal port-to-warehouse transit, dedicated tanker terminals, and adjacent connectivity to Hazira Port (50 km) for additional throughput capacity. NH 48 (Vadodara–Mumbai highway) provides road connectivity to Gujarat's industrial belt." },
@@ -2092,7 +2096,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         [
           { text: "Astromar's Mundra FTWZ is a Government-notified " },
           { text: "free trade warehouse zone in mundra", kw: true },
-          { text: " operating within Adani Ports and SEZ (APSEZ) — India's largest commercial port by cargo volume. The integrated port + SEZ + logistics park spans 13,000+ hectares, providing unmatched scale and infrastructure for importers, exporters, and re-export operators. That scale makes Mundra a natural fit for businesses running " },
+          { text: " operating within " },
+          { text: "Adani Ports and SEZ (APSEZ)", kw: true, href: "https://www.adaniports.com/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " — India's largest commercial port by cargo volume. The integrated port + SEZ + logistics park spans 13,000+ hectares, providing unmatched scale and infrastructure for importers, exporters, and re-export operators. That scale makes Mundra a natural fit for businesses running " },
           { text: "multi-node supply chains", kw: true, href: "/free-trade-zone-services/supply-chain" },
           { text: " across containers, bulk, and FMCG categories, not just single-shipment storage." },
         ],
