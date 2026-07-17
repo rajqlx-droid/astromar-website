@@ -275,7 +275,7 @@ const CoastalShippingClient = () => {
               What We Handle Coastally
             </h2>
             <p className="text-base text-foreground/70 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              Our Coastal Shipping in India network handles every cargo type — from liquid bulk and chemicals to containerized goods and project cargo — with specialized vessels and port expertise.
+              Whether you're moving liquid bulk, chemicals, containerized goods, or project cargo, Astromar's coastal fleet and port partnerships are built to handle it.
             </p>
           </ScrollReveal>
           <div className="space-y-3">
@@ -293,11 +293,9 @@ const CoastalShippingClient = () => {
                     />
                   </button>
                   {/* Body */}
-                  {openIndex === i && (
-                    <div className="bg-white border-l-4 border-orange-500 px-5 py-4">
-                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
-                    </div>
-                  )}
+                  <div className={`bg-white border-l-4 border-orange-500 px-5 py-4 ${openIndex === i ? "block" : "hidden"}`}>
+                    <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}

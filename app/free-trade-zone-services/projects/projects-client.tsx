@@ -218,11 +218,9 @@ const ProjectsClient = () => {
                     <span className="font-semibold text-sm sm:text-base">{item.title}</span>
                     <ChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`} />
                   </button>
-                  {openIndex === i && (
-                    <div className="bg-brand-light border-l-4 border-[#f97316] px-5 py-4">
-                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
-                    </div>
-                  )}
+                  <div className={`bg-brand-light border-l-4 border-[#f97316] px-5 py-4 ${openIndex === i ? "block" : "hidden"}`}>
+                    <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}

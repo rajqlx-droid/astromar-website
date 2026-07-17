@@ -56,13 +56,12 @@ const whyChoose = [
   { title: "FTWZ-Integrated Warehousing",       desc: "Duty-free bonded storage across 10 FTWZ locations with pan-India distribution connectivity." },
   { title: "Real-Time WMS Visibility",           desc: "Live inventory dashboards, automated alerts, and full traceability from FTWZ to final customer." },
   { title: "Industry-Specific Expertise",        desc: "Dedicated solutions for pharma, electronics, FMCG, automotive, and textiles supply chains." },
-  { title: "Dedicated Supply Chain Manager", desc: "A single point of accountability for all Supply Chain Logistics India operations — including warehousing, distribution, and last-mile delivery.", descKw: "Supply Chain Logistics India" },
+  { title: "Dedicated Supply Chain Manager", desc: "A single point of accountability for Supply Chain Logistics India — covering warehousing, distribution, and last-mile delivery.", descKw: "Supply Chain Logistics India" },
 ];
 
 const SupplyChainClient = () => {
   const [activeTab, setActiveTab] = useState<TabKey>("Electronics");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const content = tabContent[activeTab];
 
   return (
     <>
@@ -149,20 +148,27 @@ const SupplyChainClient = () => {
               </button>
             ))}
           </div>
-          {/* Tab content */}
+          {/* Tab content — all 5 panels rendered; only the active one is visible */}
           <div className="bg-brand-light rounded-xl p-6 sm:p-8 border border-[#1B3A6B]/15">
-            <p className="text-xs font-semibold text-foreground/50 uppercase tracking-widest mb-1">Challenge</p>
-            <p className="text-base text-foreground/80 mb-4 leading-relaxed">{content.challenge}</p>
-            <p className="text-xs font-semibold text-foreground/50 uppercase tracking-widest mb-1">Astromar Solution</p>
-            <p className="text-base font-semibold text-foreground mb-5 leading-relaxed">{content.solution}</p>
-            <ul className="flex flex-wrap gap-3">
-              {content.benefits.map((b) => (
-                <li key={b} className="flex items-center gap-2 text-sm text-foreground/80">
-                  <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
-                  {b}
-                </li>
-              ))}
-            </ul>
+            {tabs.map((tab) => {
+              const c = tabContent[tab.key];
+              return (
+                <div key={tab.key} className={activeTab === tab.key ? "block" : "hidden"}>
+                  <p className="text-xs font-semibold text-foreground/50 uppercase tracking-widest mb-1">Challenge</p>
+                  <p className="text-base text-foreground/80 mb-4 leading-relaxed">{c.challenge}</p>
+                  <p className="text-xs font-semibold text-foreground/50 uppercase tracking-widest mb-1">Astromar Solution</p>
+                  <p className="text-base font-semibold text-foreground mb-5 leading-relaxed">{c.solution}</p>
+                  <ul className="flex flex-wrap gap-3">
+                    {c.benefits.map((b) => (
+                      <li key={b} className="flex items-center gap-2 text-sm text-foreground/80">
+                        <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

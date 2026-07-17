@@ -23,7 +23,7 @@ const accordionItems = [
 ];
 
 const whyChoose = [
-  { title: "Licensed Customs Broker", desc: "Fully licensed Customs House Agent India with 15+ years of experience at all major Indian ports, airports, and inland ICDs.", descKw: "Customs House Agent India" },
+  { title: "Licensed Customs Broker", desc: "Customs House Agent India, fully licensed with 15+ years of experience at all major Indian ports, airports, and inland ICDs.", descKw: "Customs House Agent India" },
   { title: "Zero Compliance Penalties Record",    desc: "100% compliance rate with zero penalties or delays due to documentation errors or classification issues." },
   { title: "All Ports & ICDs Covered",            desc: "Nationwide clearance at sea ports, airports, land ICDs, and integrated check posts across India." },
   { title: "FTWZ Customs Specialists",            desc: "Deep expertise in FTWZ transactions, DTA removals, and duty deferment strategies for import-heavy businesses." },
@@ -154,7 +154,7 @@ const CustomClearanceClient = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">EXPERTISE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
-              Licensed Customs House Agent India Expertise
+              Customs House Agent India — Licensed Expertise You Can Trust
             </h2>
           </ScrollReveal>
           <div className="space-y-3">
@@ -168,11 +168,9 @@ const CustomClearanceClient = () => {
                     <span className="font-semibold text-sm sm:text-base">{item.title}</span>
                     <ChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`} />
                   </button>
-                  {openIndex === i && (
-                    <div className="bg-brand-light border-l-4 border-[#f97316] px-5 py-4">
-                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
-                    </div>
-                  )}
+                  <div className={`bg-brand-light border-l-4 border-[#f97316] px-5 py-4 ${openIndex === i ? "block" : "hidden"}`}>
+                    <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">{item.body}</p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}

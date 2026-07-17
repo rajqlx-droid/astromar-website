@@ -1658,7 +1658,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "free trade warehouse zone in bangalore", kw: true },
           { text: " operating within the Aerospace SEZ at Devanahalli — India's premier aerospace and defence manufacturing cluster. As a leading " },
           { text: "free trade warehouse in bangalore", kw: true },
-          { text: ", the SEZ is home to HAL (Hindustan Aeronautics Limited), Boeing, Airbus, and major defence contractors, providing a unique FTWZ environment for high-value aerospace components, precision engineering goods, and advanced electronics." },
+          { text: ", the SEZ is home to HAL (Hindustan Aeronautics Limited), Boeing, Airbus, and major defence contractors, providing a unique FTWZ environment for high-value aerospace components, precision engineering goods, and advanced electronics. Moving aircraft assemblies and defence-grade equipment in and out of the SEZ often calls for " },
+          { text: "coordinated heavy-lift and project cargo logistics", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: " alongside standard FTWZ storage." },
         ],
         [
           { text: "The Devanahalli location offers a distinctive advantage: just 5 km from Kempegowda International Airport (BLR) — India's third busiest airport for air cargo after Mumbai and Delhi, handling 500,000+ MT annually. With dedicated air freight stations, cold chain zones, and proximity to Bengaluru's IT/ITES corridor, the facility is ideal for air-freight dependent industries requiring fast turnaround." },
@@ -1878,7 +1880,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "Dahej's strategic advantage is its on-site port infrastructure: the Dahej Port (GIPCL Jetty) is just 3 km from our FTWZ, with direct bulk vessel and tanker services for chemicals and LNG. The location offers minimal port-to-warehouse transit, dedicated tanker terminals, and adjacent connectivity to Hazira Port (50 km) for additional throughput capacity. NH 48 (Vadodara–Mumbai highway) provides road connectivity to Gujarat's industrial belt." },
         ],
         [
-          { text: "As a fully-operational custom bonded warehousing in dahej facility, Astromar provides " },
+          { text: "As a fully-operational custom bonded warehouse facility in Dahej, Astromar provides " },
           { text: "duty-deferred storage", kw: true, href: "/blogs/customs-duty-deferment-benefits" },
           { text: " for petrochemical feedstocks, bulk chemicals, polymers, and industrial gases with full safety and compliance protocols. Combined with " },
           { text: "specialised project cargo handling", kw: true, href: "/free-trade-zone-services/projects" },
@@ -1889,7 +1891,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         [
           { text: "Dahej serves India's chemicals, petrochemicals, plastics, pharmaceuticals (API), and industrial gases industries — with major operations from ONGC, GAIL, and global chemical MNCs co-located in the PCPIR. For businesses needing a " },
           { text: "bonded warehousing in dahej", kw: true },
-          { text: " with hazmat compliance, dedicated chemical infrastructure, and direct port jetty access, Astromar delivers specialised capability unmatched in the chemical logistics sector." },
+          { text: " with hazmat compliance, dedicated chemical infrastructure, and direct port jetty access, Astromar delivers specialised capability unmatched in the chemical logistics sector. Chemical cargo also carries some of the most complex HS classification and hazmat documentation requirements in Indian trade, which is why Astromar pairs Dahej storage with " },
+          { text: "dedicated customs clearance support", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " for every shipment." },
         ],
       ],
       servicesH2: [
@@ -2088,15 +2092,19 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         [
           { text: "Astromar's Mundra FTWZ is a Government-notified " },
           { text: "free trade warehouse zone in mundra", kw: true },
-          { text: " operating within Adani Ports and SEZ (APSEZ) — India's largest commercial port by cargo volume. The integrated port + SEZ + logistics park spans 13,000+ hectares, providing unmatched scale and infrastructure for importers, exporters, and re-export operators." },
+          { text: " operating within Adani Ports and SEZ (APSEZ) — India's largest commercial port by cargo volume. The integrated port + SEZ + logistics park spans 13,000+ hectares, providing unmatched scale and infrastructure for importers, exporters, and re-export operators. That scale makes Mundra a natural fit for businesses running " },
+          { text: "multi-node supply chains", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: " across containers, bulk, and FMCG categories, not just single-shipment storage." },
         ],
         [
-          { text: "Mundra Port handles 155+ million tonnes annually across 7 container terminals with 6+ million TEU capacity. With 16–17m draft, the port accommodates ultra-large container vessels (ULCVs) and capesize bulkers, providing direct liner services to the Middle East, Europe, Africa, and the Americas. The Mundra Port Railway connects directly to the Western Dedicated Freight Corridor (DFC), enabling efficient rail freight to Delhi, Ludhiana, Jaipur, and Ahmedabad ICDs." },
+          { text: "Mundra Port handles 155+ million tonnes annually across 7 container terminals with 6+ million TEU capacity. With 16–17m draft, the port accommodates ultra-large container vessels (ULCVs) and capesize bulkers, providing direct liner services to the Middle East, Europe, Africa, and the Americas. The Mundra Port Railway connects directly to the Western Dedicated Freight Corridor (DFC), enabling efficient rail freight to Delhi, Ludhiana, Jaipur, and Ahmedabad ICDs. Beyond international liner services, Mundra also functions as a key domestic " },
+          { text: "coastal shipping hub", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: ", with regular vessel connections southward to Paradip and Haldia on India's east coast." },
         ],
         [
           { text: "As a fully-operational " },
           { text: "ftwz in mundra", kw: true },
-          { text: " facility, Astromar provides " },
+          { text: ", Astromar provides " },
           { text: "duty-deferred storage", kw: true, href: "/blogs/customs-duty-deferment-benefits" },
           { text: " ideal for re-export, consolidation, and multi-modal distribution. Combined with " },
           { text: "specialised ocean freight services", kw: true, href: "/free-trade-zone-services/ocean-freight" },
