@@ -1,5 +1,5 @@
 "use client";
-import { lazy, Suspense, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { Package, Boxes, ChevronDown, ChevronUp, Loader2 } from "lucide-react";
 import { LoaderHUD } from "./loader-hud";
 import type { BestPlanMeta } from "@/lib/freight/scenario-runner";
@@ -172,7 +172,92 @@ export function ContainerLoadView({
   // Track container id so we can detect a switch and hard-restart computing.
   const lastContainerIdRef = useRef<string>(deferredContainer.id);
 
+  // ─── Spinner visibility, decoupled from `placed.length` ───────────────
+  // Tracks "a worker.optimise() call is in flight" directly, independent of
+  // whether the resulting pack happens to have 0 boxes — the old
+  // `activePack.placed.length === 0` check only worked for the very first
+  // calculation (placed.length never returns to 0 once a pack has succeeded),
+  // so every recalculation after that showed no loading feedback at all.
+  const MIN_SPINNER_MS = 3000;
+  const [showSpinner, setShowSpinner] = useState(false);
+  const spinnerStartRef = useRef<number | null>(null);
+  const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [elapsedSec, setElapsedSec] = useState(0);
+  // Decided ONCE, when this spinner cycle starts — never re-derived from the
+  // live `pack` on subsequent renders. Fixes: pack.placed.length flips to
+  // non-zero as soon as the real result lands, which — while the
+  // MIN_SPINNER_MS floor keeps the spinner visible past that point — used to
+  // flip the overlay from "Computing optimal fit…" to "Recalculating…"
+  // mid-floor, even on the very first calculation.
+  const [isFirstCalc, setIsFirstCalc] = useState(true);
+
+  const startSpinner = useCallback((first: boolean) => {
+    if (hideTimerRef.current) {
+      clearTimeout(hideTimerRef.current);
+      hideTimerRef.current = null;
+    }
+    spinnerStartRef.current = Date.now();
+    setIsFirstCalc(first);
+    setShowSpinner(true);
+  }, []);
+
+  // Hides the spinner, but never sooner than MIN_SPINNER_MS after it started —
+  // guarantees fast calculations still produce a perceptible loading state.
+  const stopSpinner = useCallback(() => {
+    const start = spinnerStartRef.current;
+    const elapsed = start != null ? Date.now() - start : MIN_SPINNER_MS;
+    const remaining = Math.max(0, MIN_SPINNER_MS - elapsed);
+    if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
+    if (remaining === 0) {
+      spinnerStartRef.current = null;
+      setShowSpinner(false);
+    } else {
+      hideTimerRef.current = setTimeout(() => {
+        spinnerStartRef.current = null;
+        hideTimerRef.current = null;
+        setShowSpinner(false);
+      }, remaining);
+    }
+  }, []);
+
+  // Used only for the "no cargo" case — nothing is calculating, so the
+  // minimum-display floor doesn't apply; hide immediately.
+  const forceHideSpinner = useCallback(() => {
+    if (hideTimerRef.current) {
+      clearTimeout(hideTimerRef.current);
+      hideTimerRef.current = null;
+    }
+    spinnerStartRef.current = null;
+    setShowSpinner(false);
+  }, []);
+
+  // Don't let a pending hide-timer fire after unmount.
   useEffect(() => {
+    return () => {
+      if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
+    };
+  }, []);
+
+  // Live "how long has this been running" counter for the overlay text.
+  useEffect(() => {
+    if (!showSpinner) {
+      setElapsedSec(0);
+      return;
+    }
+    const intervalId = setInterval(() => {
+      const start = spinnerStartRef.current;
+      setElapsedSec(start != null ? Math.floor((Date.now() - start) / 1000) : 0);
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, [showSpinner]);
+
+  useEffect(() => {
+    // Local mirror of "is singlePack currently empty" — tracked by hand,
+    // in lockstep with every setSinglePack call in this pass, because
+    // setSinglePack doesn't synchronously update the `singlePack` closure
+    // variable already captured by this effect invocation.
+    let packIsEmpty = singlePack.placed.length === 0;
+
     // Container-type switch: cancel any in-flight job, clear all derived
     // state, and reset stickiness so the new container gets a fresh sweep
     // across all 4 strategies.
@@ -180,15 +265,19 @@ export function ContainerLoadView({
       worker.cancelAll();
       stickyStrategyRef.current = undefined;
       setSinglePack(makeEmptyPack(deferredContainer));
+      packIsEmpty = true;
       setPlanMeta(null);
       lastContainerIdRef.current = deferredContainer.id;
     }
     if (!hasCargo) {
       setSinglePack(makeEmptyPack(deferredContainer));
+      packIsEmpty = true;
       setPlanMeta(null);
+      forceHideSpinner();
       return;
     }
     let cancelled = false;
+    startSpinner(packIsEmpty);
     worker
       .optimise(deferredItems, deferredContainer, stickyStrategyRef.current)
       .then((res) => {
@@ -198,8 +287,13 @@ export function ContainerLoadView({
         // Remember the winning strategy for stickiness on the next call
         // (only valid for THIS container; cleared on container switch above).
         stickyStrategyRef.current = res.best.strategyId;
+        stopSpinner();
       })
       .catch((err: unknown) => {
+        // A newer request already superseded this one — it owns the spinner
+        // now, so don't touch it here.
+        if (cancelled) return;
+        stopSpinner();
         // Silent: cancellation sentinel is expected on container switch /
         // rapid input edits; worker termination races are equally benign.
         if (err instanceof Error && err.message.startsWith("Cancelled:")) return;
@@ -208,12 +302,19 @@ export function ContainerLoadView({
     return () => {
       cancelled = true;
     };
-  }, [hasCargo, deferredItems, deferredContainer, worker]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- singlePack is read
+  // deliberately without being a dependency: it must NOT retrigger this
+  // effect (this effect is itself what calls setSinglePack), only supply the
+  // current value at the moment this specific invocation runs.
+  }, [hasCargo, deferredItems, deferredContainer, worker, startSpinner, stopSpinner, forceHideSpinner]);
 
   const activePack: AdvancedPackResult = singlePack;
 
-  // True when the worker hasn't returned a real pack yet for the current input.
-  const isCalculating = worker.pending && activePack.placed.length === 0 && hasCargo;
+  // True whenever a worker.optimise() request is in flight for the current
+  // input, held for at least MIN_SPINNER_MS once shown. No longer derived
+  // from `activePack.placed.length` — that only worked for the very first
+  // calculation.
+  const isCalculating = showSpinner && hasCargo;
 
   // Expose snapshot capability to parent (current visible pack).
   // CRITICAL: do NOT put `activePack` in deps. The parent's `onReady` calls
@@ -313,6 +414,8 @@ export function ContainerLoadView({
           viewerCollapsed={viewerCollapsed}
           planMeta={planMeta}
           isCalculating={isCalculating}
+          elapsedSec={elapsedSec}
+          isFirstCalc={isFirstCalc}
         />
       )}
     </Card>
@@ -334,6 +437,8 @@ function SinglePlanBody({
   rollup,
   planMeta = null,
   isCalculating = false,
+  elapsedSec = 0,
+  isFirstCalc = true,
 }: {
   pack: AdvancedPackResult;
   weight: number;
@@ -347,6 +452,8 @@ function SinglePlanBody({
   rollup?: React.ComponentProps<typeof LoadReportPanel>["rollup"];
   planMeta?: BestPlanMeta | null;
   isCalculating?: boolean;
+  elapsedSec?: number;
+  isFirstCalc?: boolean;
 }) {
   // Pallet stepper. palletIdx = index into PalletStep[], -1 = empty container.
   // The stepper drives the text HUD walkthrough only — it never moves, hides,
@@ -488,12 +595,7 @@ function SinglePlanBody({
         <LimitExplanationPanel pack={pack} />
         {!viewerCollapsed && (
           <div className="overflow-hidden rounded-lg border bg-[oklch(0.98_0.005_240)] p-3 dark:bg-[oklch(0.18_0.01_240)]">
-            {isCalculating ? (
-              <div className="flex h-[420px] flex-col items-center justify-center gap-3 text-sm text-muted-foreground">
-                <Loader2 className="size-7 animate-spin text-brand-orange" />
-                <div className="font-semibold text-brand-navy">Computing optimal fit…</div>
-              </div>
-            ) : is3D && mounted ? (
+            {is3D && mounted ? (
               <Suspense
                 fallback={
                   <div className="flex h-[420px] items-center justify-center text-sm text-muted-foreground">
@@ -539,6 +641,32 @@ function SinglePlanBody({
                       ) : null
                     }
                   />
+                  {/* Loading overlays — pure CSS layered on top of the
+                      always-mounted Container3DView. Never gates whether
+                      Container3DView itself renders, so its <Canvas> (and
+                      WebGL context) is created once and never torn down by
+                      container switches / cargo-empty transitions. */}
+                  {isCalculating && isFirstCalc ? (
+                    // First calculation — nothing behind it yet, so use an
+                    // opaque background (not translucent) so it reads as
+                    // "loading", not as a dim layer over visible content.
+                    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 rounded-lg bg-[oklch(0.98_0.005_240)] text-sm text-muted-foreground dark:bg-[oklch(0.18_0.01_240)]">
+                      <Loader2 className="size-7 animate-spin text-brand-orange" />
+                      <div className="font-semibold text-brand-navy">Computing optimal fit… {elapsedSec}s</div>
+                    </div>
+                  ) : isCalculating ? (
+                    // Recalculation — keep the previous (now stale) 3D view
+                    // mounted and visible, but dim it and overlay a spinner so
+                    // it reads clearly as "updating", not as the final result.
+                    <div
+                      className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-2 rounded-lg bg-background/70 backdrop-blur-[1px]"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      <Loader2 className="size-6 animate-spin text-brand-orange" />
+                      <span className="text-sm font-semibold text-brand-navy">Recalculating… {elapsedSec}s</span>
+                    </div>
+                  ) : null}
                 </div>
               </Suspense>
             ) : null}

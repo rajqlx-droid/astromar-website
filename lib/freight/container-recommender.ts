@@ -83,10 +83,21 @@ const ASC = [...CONTAINERS].sort(
 /** The ceiling — only container we ever escalate to. */
 const MAX_CONTAINER = CONTAINERS.find((c) => c.id === "40hc")!;
 
+/**
+ * True when a row has real geometry and quantity — the exact same guard
+ * packContainerAdvanced (packing-advanced.ts:177) uses to decide whether a
+ * row is placed at all. Keeping totals and the packer in agreement here is
+ * what prevents a blank/incomplete row from producing a false shut-out.
+ */
+function isValidCargoItem(it: CbmItem): boolean {
+  return it.length > 0 && it.width > 0 && it.height > 0 && it.qty > 0;
+}
+
 /** Sum CBM for a list of items. */
 function sumCbm(items: CbmItem[]): number {
   let t = 0;
   for (const it of items) {
+    if (!isValidCargoItem(it)) continue;
     t += ((it.length * it.width * it.height) / 1_000_000) * it.qty;
   }
   return t;
@@ -95,14 +106,20 @@ function sumCbm(items: CbmItem[]): number {
 /** Sum weight for a list of items. */
 function sumWeight(items: CbmItem[]): number {
   let t = 0;
-  for (const it of items) t += it.weight * it.qty;
+  for (const it of items) {
+    if (!isValidCargoItem(it)) continue;
+    t += it.weight * it.qty;
+  }
   return t;
 }
 
 /** Sum quantity for a list of items. */
 function sumQty(items: CbmItem[]): number {
   let t = 0;
-  for (const it of items) t += it.qty;
+  for (const it of items) {
+    if (!isValidCargoItem(it)) continue;
+    t += it.qty;
+  }
   return t;
 }
 
@@ -142,6 +159,7 @@ function computeShutOut(
   let cbm = 0;
   let weightKg = 0;
   items.forEach((it, idx) => {
+    if (!isValidCargoItem(it)) return;
     const stat = result.perItem[idx];
     const placed = stat?.placed ?? 0;
     const unplaced = Math.max(0, it.qty - placed);
