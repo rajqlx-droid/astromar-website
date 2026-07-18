@@ -99,13 +99,13 @@ export function AirCalculator({ items, setItems, divisor: _divisor, setDivisor: 
             return Number.isFinite(v) ? Number(v.toFixed(4)) : NaN;
           };
           const setLen = (key: "length" | "width" | "height") => (n: number) =>
-            update(it.id, { [key]: Number.isFinite(n) ? toCm(n, lenUnit) : 0 } as Partial<AirItem>);
+            update(it.id, { [key]: Number.isFinite(n) ? toCm(Math.max(0, n), lenUnit) : 0 } as Partial<AirItem>);
           const showWt = (kg: number) => {
             const v = kgTo(kg, wtUnit);
             return Number.isFinite(v) ? Number(v.toFixed(4)) : NaN;
           };
           const setWt = (n: number) =>
-            update(it.id, { weight: Number.isFinite(n) ? toKg(n, wtUnit) : 0 });
+            update(it.id, { weight: Number.isFinite(n) ? toKg(Math.max(0, n), wtUnit) : 0 });
 
           const rowVolKg = (it.length * it.width * it.height) / div;
           const rowTotalVol = rowVolKg * it.qty;

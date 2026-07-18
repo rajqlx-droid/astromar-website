@@ -1279,9 +1279,9 @@ const CbmRow = memo(function CbmRow({
     return Number.isFinite(v) ? Number(v.toFixed(4)) : NaN;
   };
   const setLen = (key: "length" | "width" | "height") => (n: number) =>
-    onUpdateDraft(it.id, { [key]: Number.isFinite(n) ? toCm(n, rowLen) : 0 } as Partial<CbmItem>);
+    onUpdateDraft(it.id, { [key]: Number.isFinite(n) ? toCm(Math.max(0, n), rowLen) : 0 } as Partial<CbmItem>);
   const setWt = (n: number) =>
-    onUpdateDraft(it.id, { weight: Number.isFinite(n) ? toKg(n, rowWt) : 0 });
+    onUpdateDraft(it.id, { weight: Number.isFinite(n) ? toKg(Math.max(0, n), rowWt) : 0 });
 
   return (
     <Card
