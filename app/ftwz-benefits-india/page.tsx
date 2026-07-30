@@ -69,6 +69,14 @@ export default function FTWZBenefitsPage() {
           <p className="text-base text-foreground/80 leading-relaxed mt-3">
             Our FTWZ locations in India include key hubs like Delhi, Mumbai, Chennai, Cochin and Gujarat, offering strategic benefits for efficient global trade and logistics.
           </p>
+          <a
+            href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=1576930&reg=3&lang=2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[#F97316] hover:underline"
+          >
+            See official government FTWZ data (Lok Sabha, Ministry of Commerce & Industry) →
+          </a>
         </div>
 
         <p className="text-base text-foreground/70 leading-relaxed mb-10">

@@ -97,6 +97,14 @@ export default function FreightForwardingChennaiPage() {
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Re-export goods without paying customs duty</li>
           </ul>
           <p className="text-sm text-foreground/70 leading-relaxed mt-3 ml-10">These <strong>duty-free warehousing services in Chennai</strong> help importers and exporters improve cash flow and inventory control.</p>
+          <a
+            href="https://sezindia.nic.in/cms/sez-act.php"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 ml-10 inline-flex items-center gap-1 text-sm font-semibold text-[#F97316] hover:underline"
+          >
+            Read the Special Economic Zones Act, 2005 →
+          </a>
         </div>
 
         {/* Service 2 */}

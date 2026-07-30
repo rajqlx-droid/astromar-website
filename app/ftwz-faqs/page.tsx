@@ -19,6 +19,7 @@ const faqs = [
   {
     question: "What is a Free Trade Warehousing Zone in India?",
     answer: "Free Trade Warehousing Zone, a Special Category of Special Economic Zone, can be a stand-alone or a demarcated area within a sector-specific or multiproduct specific SEZ. FTWZ is a deemed Foreign Territory with special status and benefits. It is a dedicated platform for warehousing and trading, governed by SEZ act 2005 & Rules 2006.",
+    link: { text: "Read the Special Economic Zones Act, 2005", href: "https://sezindia.nic.in/cms/sez-act.php" },
   },
   {
     question: "How businesses benefit from FTWZ?",
@@ -110,6 +111,16 @@ export default function FTWZFaqsPage() {
               </div>
               <div className="bg-white px-6 py-4 border-l-4 border-[#F97316]">
                 <p className="text-foreground/80 text-sm leading-relaxed">{faq.answer}</p>
+                {faq.link && (
+                  <a
+                    href={faq.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-[#F97316] hover:underline"
+                  >
+                    {faq.link.text} →
+                  </a>
+                )}
               </div>
             </div>
           ))}
