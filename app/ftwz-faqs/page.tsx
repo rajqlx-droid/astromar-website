@@ -36,10 +36,12 @@ const faqs = [
   {
     question: "How long does customs clearance take via FTWZs?",
     answer: "Typically, customs clearance for imported goods through a free trade zone or free trade warehousing zone is completed within 24 to 48 hours.",
+    link: { text: "See CBIC's official customs resources", href: "https://beta.cbic.gov.in/htdocs-cbec/customs" },
   },
   {
     question: "What types of industries commonly utilize FTWZs for trading and business purposes?",
     answer: "FTWZs are utilized by a diverse range of industries, including pharmaceuticals, luxury goods, chemicals, medical devices, liquor, auto parts, aviation, electronics, IT (servers), food, electrical appliances, polymers, pulses, edible oil, sugar, fruits, dry fruits, industrial machinery, and electric machinery and equipment.",
+    link: { text: "See FSSAI's cold storage guidelines", href: "https://fssai.gov.in/" },
   },
   {
     question: "Why do pharmaceutical companies prefer FTWZs?",

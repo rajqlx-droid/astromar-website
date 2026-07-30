@@ -133,6 +133,14 @@ export default function FreightForwardingChennaiPage() {
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Import-export documentation and compliance support</li>
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Sea freight and air freight forwarding services</li>
           </ul>
+          <a
+            href="https://beta.cbic.gov.in/htdocs-cbec/customs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 ml-10 inline-flex items-center gap-1 text-sm font-semibold text-[#F97316] hover:underline"
+          >
+            See CBIC's official customs resources →
+          </a>
         </div>
 
         {/* Service 4 */}
@@ -147,6 +155,14 @@ export default function FreightForwardingChennaiPage() {
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Optimizing freight forwarding operations</li>
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Supporting SMEs and exporters with cost-effective logistics solutions</li>
           </ul>
+          <a
+            href="https://www.dgft.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 ml-10 inline-flex items-center gap-1 text-sm font-semibold text-[#F97316] hover:underline"
+          >
+            Visit DGFT, Ministry of Commerce & Industry →
+          </a>
         </div>
 
         {/* Who Can Benefit */}

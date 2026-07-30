@@ -135,6 +135,14 @@ export default function FTWZBenefitsPage() {
               <span><strong>Single-window clearance</strong> streamlines the entire process, making import/export operations more efficient.</span>
             </li>
           </ul>
+          <a
+            href="https://beta.cbic.gov.in/htdocs-cbec/customs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 ml-10 inline-flex items-center gap-1 text-sm font-semibold text-[#F97316] hover:underline"
+          >
+            See CBIC's official customs resources →
+          </a>
         </div>
 
         {/* Benefit 4 */}
@@ -199,6 +207,14 @@ export default function FTWZBenefitsPage() {
               Goods stored in FTWZs can be re-exported without incurring Indian customs duties, enhancing flexibility for businesses looking to operate globally.
             </li>
           </ul>
+          <a
+            href="https://www.dgft.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 ml-10 inline-flex items-center gap-1 text-sm font-semibold text-[#F97316] hover:underline"
+          >
+            Visit DGFT, Ministry of Commerce & Industry →
+          </a>
         </div>
 
         {/* Benefit 8 */}
