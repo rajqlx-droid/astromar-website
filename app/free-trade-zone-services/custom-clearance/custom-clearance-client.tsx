@@ -29,6 +29,13 @@ const whyChoose = [
   { title: "FTWZ Customs Specialists",            desc: "Deep expertise in FTWZ transactions, DTA removals, and duty deferment strategies for import-heavy businesses." },
 ];
 
+const documentChecklist = [
+  { step: "01", title: "Bill of Entry", desc: "The primary import declaration." },
+  { step: "02", title: "IEC", desc: "Valid Import Export Code required for all import transactions." },
+  { step: "03", title: "Invoice & Packing List", desc: "Commercial invoice and detailed packing list." },
+  { step: "04", title: "Certificate of Origin & PGA Clearances", desc: "Where applicable, plus any Participating Government Agency approvals (e.g. FSSAI, BIS, Drug Controller) depending on product category." },
+];
+
 const CustomClearanceClient = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -144,6 +151,34 @@ const CustomClearanceClient = () => {
                 </div>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── S3b: Documentation Checklist ── */}
+      <section className="py-16 bg-blue-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">DOCUMENTATION</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-14">
+              What You'll Need — Documentation Checklist
+            </h2>
+          </ScrollReveal>
+          <div className="relative">
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
+              {documentChecklist.map((s, i) => (
+                <ScrollReveal key={s.step} delay={i * 0.1}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
+                      {s.step}
+                    </div>
+                    <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed">{s.desc}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>

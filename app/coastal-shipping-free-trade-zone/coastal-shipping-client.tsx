@@ -44,6 +44,13 @@ const whyChoose = [
   { title: "Trusted Coastal Shipping Company", desc: "As an established Coastal Shipping Company, Astromar operates with full regulatory compliance, dedicated vessel partnerships, and 24/7 cargo tracking.", titleKw: "Coastal Shipping Company", descKw: "Coastal Shipping Company" },
 ];
 
+const shipmentSteps = [
+  { step: "01", title: "Cargo Ready", desc: "Packaging and documentation finalized, hazmat classification confirmed where applicable." },
+  { step: "02", title: "Vessel Scheduled", desc: "Booking confirmed against route and sailing schedule." },
+  { step: "03", title: "Port Handling", desc: "Loading under standard customs and safety protocols." },
+  { step: "04", title: "Last-Mile Delivery", desc: "Onward transport to final consignee." },
+];
+
 const CoastalShippingClient = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -262,6 +269,34 @@ const CoastalShippingClient = () => {
                 </div>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Section 4b: Shipment Process ── */}
+      <section className="py-16 bg-blue-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">SHIPMENT PROCESS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-14">
+              How a Coastal Shipment Moves
+            </h2>
+          </ScrollReveal>
+          <div className="relative">
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
+              {shipmentSteps.map((s, i) => (
+                <ScrollReveal key={s.step} delay={i * 0.1}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
+                      {s.step}
+                    </div>
+                    <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed">{s.desc}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>

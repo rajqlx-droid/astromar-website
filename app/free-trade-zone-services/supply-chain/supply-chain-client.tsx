@@ -59,6 +59,13 @@ const whyChoose = [
   { title: "Dedicated Supply Chain Manager", desc: "A single point of accountability for Supply Chain Logistics India — covering warehousing, distribution, and last-mile delivery.", descKw: "Supply Chain Logistics India" },
 ];
 
+const gettingStartedSteps = [
+  { step: "01", title: "Onboarding", desc: "Account setup and requirements review." },
+  { step: "02", title: "WMS Integration", desc: "Inventory systems connected for visibility." },
+  { step: "03", title: "Initial Intake", desc: "First shipment received and logged." },
+  { step: "04", title: "Live Operations", desc: "Real-time tracking, alerts, and reporting active." },
+];
+
 const SupplyChainClient = () => {
   const [activeTab, setActiveTab] = useState<TabKey>("Electronics");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -197,6 +204,34 @@ const SupplyChainClient = () => {
                 </div>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── S3b: Getting Started ── */}
+      <section className="py-16 bg-blue-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">ONBOARDING</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-14">
+              Getting Started
+            </h2>
+          </ScrollReveal>
+          <div className="relative">
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
+              {gettingStartedSteps.map((s, i) => (
+                <ScrollReveal key={s.step} delay={i * 0.1}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
+                      {s.step}
+                    </div>
+                    <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed">{s.desc}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -22,6 +22,13 @@ const whyChoose = [
   { title: "Insurance & Risk Management",        desc: "Comprehensive cargo insurance, risk assessment, and contingency planning for every project cargo movement." },
 ];
 
+const executionSteps = [
+  { step: "01", title: "Route Survey", desc: "Road conditions, bridge capacities, and overhead clearances assessed." },
+  { step: "02", title: "Permits & Escorts", desc: "State transport permits secured, police escort arranged for over-dimensional cargo where required." },
+  { step: "03", title: "Transport", desc: "Specialized equipment (SPMTs, multi-axle trailers) deployed based on cargo weight and dimensions." },
+  { step: "04", title: "Placement", desc: "Cargo positioned at destination site per project requirements." },
+];
+
 const ProjectsClient = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -194,6 +201,34 @@ const ProjectsClient = () => {
                 </div>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── S3b: Project Execution Steps ── */}
+      <section className="py-16 bg-blue-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">PROJECT EXECUTION</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-14">
+              How Heavy-Lift Cargo Gets Moved
+            </h2>
+          </ScrollReveal>
+          <div className="relative">
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
+              {executionSteps.map((s, i) => (
+                <ScrollReveal key={s.step} delay={i * 0.1}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
+                      {s.step}
+                    </div>
+                    <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed">{s.desc}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
