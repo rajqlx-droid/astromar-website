@@ -91,7 +91,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold leading-tight mb-6 text-primary-foreground"
           >
-            Free Trade Warehousing Zone in India — Duty Free, GST-Deferred
+            Free Trade Zone in India — Duty Free, GST-Deferred
           </motion.h1>
 
           <motion.p

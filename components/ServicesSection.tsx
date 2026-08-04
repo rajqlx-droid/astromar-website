@@ -11,7 +11,7 @@ import ScrollReveal from "./ScrollReveal";
 import { Button } from "@/components/ui/button";
 
 const services = [
-  { icon: FileText, title: "FTWZ", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/free-trade-zone" },
+  { icon: FileText, title: "FTWZ Solutions", desc: "Duty-free storage with bonded warehouse facilities across India. Defer customs duty and GST until goods enter the domestic tariff area.", featured: true, href: "/free-trade-zone" },
   { icon: Ship, title: "Coastal Shipping", desc: "Domestic coastal cargo movement along India's extensive coastline, offering cost-effective and eco-friendly transport alternatives.", href: "/coastal-shipping-free-trade-zone" },
   { icon: Ship, title: "Ocean Freight", desc: "Full container load (FCL) and less than container load (LCL) ocean freight services across major global trade routes.", href: "/free-trade-zone-services/ocean-freight" },
   { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/free-trade-zone-services/air-freight" },
@@ -51,7 +51,7 @@ const ServicesSection = () => {
               WHAT WE OFFER
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center text-foreground mb-6">
-              Comprehensive Logistics Services
+              Complete Logistics Services
             </h2>
             <p className="text-base sm:text-lg text-foreground/70 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
               Astromar combines a premier Free Trade Warehousing Zone in India with end-to-end freight, customs, and supply chain capabilities under one trusted partner.
@@ -163,7 +163,7 @@ const ServicesSection = () => {
               OUR SOLUTIONS
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
-              Comprehensive FTWZ Warehouse Solutions
+              Comprehensive Free Trade Warehousing Zone Solutions
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-12 text-center max-w-3xl mx-auto">
               Our Free Trade Warehousing Zone infrastructure combines bonded storage, customs clearance, and value-added services under one roof.
