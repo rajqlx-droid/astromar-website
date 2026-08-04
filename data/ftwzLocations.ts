@@ -182,7 +182,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "?" },
           ],
           answer: [
-            { text: "A standard bonded warehouse in Kochi allows duty-deferred storage but is restricted to typically 1-year storage limits and limited permitted activities. The Vallarpadam FTWZ offers unlimited storage tenure, broader activities including manufacturing and value-addition, transshipment benefits, and stronger tax benefits under the SEZ Act, 2005." },
+            { text: "A standard bonded warehouse in Kochi allows duty-deferred storage but is restricted to typically 1-year storage limits and limited permitted activities. The Vallarpadam FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader activities including CKD/SKD assembly, repacking, relabelling, and other value addition, transshipment benefits, and stronger tax benefits under the SEZ Act, 2005." },
           ],
         },
       ],
@@ -212,7 +212,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "What is the Vallarpadam ICTT and why is the ftwz in kochi strategic?", "acceptedAnswer": { "@type": "Answer", "text": "Vallarpadam ICTT is India's first dedicated container transshipment terminal in Cochin SEZ — accepts direct mother-vessel services, reducing dependency on Colombo/Singapore by 3-5 days." } },
           { "@type": "Question", "name": "Which industries benefit from the Kochi Vallarpadam FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "Spice and agri-products, seafood, rubber and latex, electronics, pharmaceuticals, and textile importers and exporters." } },
           { "@type": "Question", "name": "How does the Kochi FTWZ support re-export to the Middle East?", "acceptedAnswer": { "@type": "Answer", "text": "Direct mother-vessel services to Jebel Ali and Middle East ports enable consolidation and re-export from FTWZ without customs duty, GST, or service tax." } },
-          { "@type": "Question", "name": "What's the difference between Kochi FTWZ and a bonded warehouse in kochi?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZ offers unlimited storage tenure, broader activities including manufacturing, and stronger SEZ Act 2005 tax benefits versus 1-year limited bonded warehouse." } }
+          { "@type": "Question", "name": "What's the difference between Kochi FTWZ and a bonded warehouse in kochi?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader activities including CKD/SKD assembly, repacking, and relabelling, and stronger SEZ Act 2005 tax benefits versus 1-year limited bonded warehouse." } }
         ]
       },
       breadcrumbSchema: {
@@ -607,7 +607,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "?" },
           ],
           answer: [
-            { text: "A standard bonded warehouse in Mumbai allows duty-deferred storage but is restricted in scope — typically 1-year storage limits and limited permitted activities. An FTWZ like Panvel offers unlimited storage tenure, broader permitted activities including manufacturing and value addition, and stronger tax benefits under the SEZ Act, 2005." },
+            { text: "A standard bonded warehouse in Mumbai allows duty-deferred storage but is restricted in scope — typically 1-year storage limits and limited permitted activities. An FTWZ like Panvel offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities including CKD/SKD assembly, repacking, relabelling, and other value addition, and stronger tax benefits under the SEZ Act, 2005." },
           ],
         },
       ],
@@ -637,7 +637,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "What is a free trade warehouse zone in mumbai and how does Panvel qualify?", "acceptedAnswer": { "@type": "Answer", "text": "A free trade warehouse zone in Mumbai is a Government-notified area where imports can be stored without immediate customs duty. Astromar's Panvel facility is notified under the SEZ Act, 2005, offering full FTWZ benefits." } },
           { "@type": "Question", "name": "How close is the Panvel FTWZ to JNPA port?", "acceptedAnswer": { "@type": "Answer", "text": "Approximately 35 km from JNPA, India's largest container port handling 50% of national containerized cargo." } },
           { "@type": "Question", "name": "Which industries benefit most from the Panvel FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "Automotive OEMs, electronics importers, FMCG companies, chemicals/pharma importers, and project cargo operators serving Western India." } },
-          { "@type": "Question", "name": "What's the difference between Panvel FTWZ and a standard bonded warehouse in mumbai?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZ offers unlimited storage tenure, broader activities, and stronger tax benefits under SEZ Act 2005 versus a standard bonded warehouse's 1-year limit." } }
+          { "@type": "Question", "name": "What's the difference between Panvel FTWZ and a standard bonded warehouse in mumbai?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader activities, and stronger tax benefits under SEZ Act 2005 versus a standard bonded warehouse's 1-year limit." } }
         ]
       },
       breadcrumbSchema: {
@@ -995,7 +995,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             [{ text: "Single window clearance for imports and re-exports" }],
             [{ text: "Bonded transport to and from gateway ports" }],
             [
-              { text: "Compared to a standard customs bonded warehouse in chennai, the FTWZ offers deeper financial benefits, unlimited storage tenure, and broader permitted activities" },
+              { text: "Compared to a standard customs bonded warehouse in chennai, the FTWZ offers deeper financial benefits, storage for up to 3 years (extendable to 5 years with special permission), and broader permitted activities" },
             ],
           ],
         },
@@ -1249,7 +1249,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             [{ text: "Bonded transport from Kattupalli, Ennore, and Chennai Ports" }],
             [{ text: "Single window clearance for imports and re-exports" }],
             [
-              { text: "Compared to a standard customs bonded warehouse in chennai, the FTWZ offers unlimited storage tenure and deeper tax benefits" },
+              { text: "Compared to a standard customs bonded warehouse in chennai, the FTWZ offers storage for up to 3 years (extendable to 5 years with special permission) and deeper tax benefits" },
             ],
           ],
         },
@@ -1539,7 +1539,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "?" },
           ],
           answer: [
-            { text: "A standard bonded warehouse in Delhi typically operates within ICD facilities with limited storage tenure (1 year) and restricted permitted activities. The Khurja FTWZ offers unlimited storage tenure, broader permitted activities under SEZ Act 2005, full duty and GST deferral benefits, and DFC rail connectivity that no Delhi-based bonded warehouse can match." },
+            { text: "A standard bonded warehouse in Delhi typically operates within ICD facilities with limited storage tenure (1 year) and restricted permitted activities. The Khurja FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities under SEZ Act 2005, full duty and GST deferral benefits, and DFC rail connectivity that no Delhi-based bonded warehouse can match." },
           ],
         },
       ],
@@ -1569,7 +1569,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "Why is the ftwz in delhi located at Khurja and not in NCR itself?", "acceptedAnswer": { "@type": "Answer", "text": "Khurja is on the Western DFC with 20-24 hour rail transit from JNPA/Mundra ports, lower operating costs than Delhi NCR, and 85 km proximity to the NCR consumption market — combining port connectivity, market reach, and cost efficiency." } },
           { "@type": "Question", "name": "What is the Western DFC and how does it benefit the Khurja FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "Western Dedicated Freight Corridor is India's dedicated rail freight network linking JNPA and Mundra to North India — enabling 100 km/h freight transit and 20-24 hour port-to-Khurja delivery." } },
           { "@type": "Question", "name": "Which industries use the Khurja FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "Consumer electronics, FMCG, retail, automotive parts, ceramics, textiles, and machinery importers serving Delhi NCR and North India." } },
-          { "@type": "Question", "name": "How does Khurja FTWZ compare to a standard bonded warehouse in delhi?", "acceptedAnswer": { "@type": "Answer", "text": "Khurja FTWZ offers unlimited storage tenure, broader activities under SEZ Act 2005, full duty/GST deferral, and DFC rail connectivity unavailable to Delhi bonded warehouses." } }
+          { "@type": "Question", "name": "How does Khurja FTWZ compare to a standard bonded warehouse in delhi?", "acceptedAnswer": { "@type": "Answer", "text": "Khurja FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader activities under SEZ Act 2005, full duty/GST deferral, and DFC rail connectivity unavailable to Delhi bonded warehouses." } }
         ]
       },
       breadcrumbSchema: {
@@ -1789,7 +1789,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "What makes the Devanahalli ftwz in bangalore unique?", "acceptedAnswer": { "@type": "Answer", "text": "Devanahalli is one of India's only FTWZs inside a dedicated Aerospace SEZ — co-located with HAL, Boeing, Airbus. 5 km from Kempegowda Airport for time-sensitive high-value cargo." } },
           { "@type": "Question", "name": "Which industries benefit from the Bengaluru FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "Aerospace and defence, precision engineering, semiconductors, IT hardware, biotech/pharma, machine tools, and renewable energy equipment." } },
           { "@type": "Question", "name": "How does the Bengaluru FTWZ support air freight operations?", "acceptedAnswer": { "@type": "Answer", "text": "Kempegowda Airport handles 500,000+ MT air cargo annually with dedicated freight stations and cold chain zones. 5 km proximity enables next-flight-out logistics." } },
-          { "@type": "Question", "name": "What's the storage advantage over a standard bonded warehouse in bangalore?", "acceptedAnswer": { "@type": "Answer", "text": "Devanahalli FTWZ offers unlimited storage, broader SEZ activities, aerospace-grade infrastructure, and airport proximity unavailable to standard bonded warehouses." } }
+          { "@type": "Question", "name": "What's the storage advantage over a standard bonded warehouse in bangalore?", "acceptedAnswer": { "@type": "Answer", "text": "Devanahalli FTWZ offers storage for up to 3 years, extendable to 5 years with special permission, broader SEZ activities, aerospace-grade infrastructure, and airport proximity unavailable to standard bonded warehouses." } }
         ]
       },
       breadcrumbSchema: {
@@ -1979,7 +1979,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "?" },
           ],
           answer: [
-            { text: "Dahej FTWZ operates with dedicated hazmat-compliant zones, fire suppression systems, gas detection networks, emergency response protocols, and PESO-licensed storage for explosive and flammable cargo. Standard bonded warehouses typically lack this specialised chemical infrastructure. Combined with FTWZ benefits — unlimited storage tenure, broader SEZ Act 2005 activities, and full duty/GST deferral — the facility is purpose-built for the chemical sector." },
+            { text: "Dahej FTWZ operates with dedicated hazmat-compliant zones, fire suppression systems, gas detection networks, emergency response protocols, and PESO-licensed storage for explosive and flammable cargo. Standard bonded warehouses typically lack this specialised chemical infrastructure. Combined with FTWZ benefits — storage for up to 3 years, extendable to 5 years with special permission, broader SEZ Act 2005 activities, and full duty/GST deferral — the facility is purpose-built for the chemical sector." },
           ],
         },
       ],
@@ -2199,7 +2199,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "What's the FTWZ advantage over a standard custom bonded warehousing in mundra facility?" },
           ],
           answer: [
-            { text: "Standard bonded warehousing within APSEZ allows duty-deferred storage but typically with 1-year limits and restricted activities. The Astromar FTWZ at Mundra offers unlimited storage tenure, broader permitted activities under SEZ Act 2005 (including manufacturing, value addition, and re-export), full duty and GST deferral, and 5-year income tax exemption on re-export profits — making it ideal for high-volume international traders and consolidators." },
+            { text: "Standard bonded warehousing within APSEZ allows duty-deferred storage but typically with 1-year limits and restricted activities. The Astromar FTWZ at Mundra offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities under SEZ Act 2005 (including CKD/SKD assembly, repacking, relabelling, and re-export), full duty and GST deferral, and 5-year income tax exemption on re-export profits — making it ideal for high-volume international traders and consolidators." },
           ],
         },
       ],
@@ -2229,7 +2229,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "Why is the ftwz mundra strategic for international trade?", "acceptedAnswer": { "@type": "Answer", "text": "India's largest commercial port (155M+ MT/yr) with direct liner services to Middle East, Africa, Europe, Americas. APSEZ integrates port + SEZ + logistics across 13,000+ hectares with DFC rail to North India." } },
           { "@type": "Question", "name": "What cargo types does Mundra FTWZ handle?", "acceptedAnswer": { "@type": "Answer", "text": "Containers (7 terminals), bulk commodities, chemicals, petrochemicals, automotive (Ro-Ro), energy resources (LNG, crude), and FMCG with ambient, climate-controlled, and hazmat zones." } },
           { "@type": "Question", "name": "How does Mundra compare to JNPA for North India operations?", "acceptedAnswer": { "@type": "Answer", "text": "Mundra offers direct DFC rail to Delhi NCR, lower port charges than JNPA, and larger capacity — typically better for multi-cargo and North India distribution. JNPA optimal for Mumbai/Pune container operations." } },
-          { "@type": "Question", "name": "What's the FTWZ advantage over a standard custom bonded warehousing in mundra facility?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZ offers unlimited storage, broader SEZ Act 2005 activities, full duty/GST deferral, and 5-year income tax exemption on re-export profits versus 1-year limited bonded warehouse." } }
+          { "@type": "Question", "name": "What's the FTWZ advantage over a standard custom bonded warehousing in mundra facility?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader SEZ Act 2005 activities, full duty/GST deferral, and 5-year income tax exemption on re-export profits versus 1-year limited bonded warehouse." } }
         ]
       },
       breadcrumbSchema: {
