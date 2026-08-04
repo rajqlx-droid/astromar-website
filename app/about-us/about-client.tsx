@@ -78,6 +78,11 @@ const processSteps = [
     title: "Go Live & Ongoing Support",
     desc: "Your goods move into the FTWZ. Our operations team provides 24/7 support, stock reports, and release management.",
   },
+  {
+    num: "05",
+    title: "FTZ Warehouse",
+    desc: "Every FTZ Warehouse is inspected and certified against SEZ compliance, security, and storage-zoning standards to ensure consistent facility quality across our network.",
+  },
 ];
 
 const About = () => {
@@ -102,7 +107,7 @@ const About = () => {
                 ABOUT ASTROMAR
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6 leading-tight">
-                Astromar Logistics — Your Free Trade Warehousing Zone Partner
+                Free Trade Zone Port in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
                 Since 2017, Astromar Logistics has been delivering trusted Free Trade Warehousing Zone operations across India — combining duty-free bonded storage, multimodal freight, and customs expertise across 10 strategic locations nationwide.
@@ -225,7 +230,7 @@ const About = () => {
           <ScrollReveal>
             <div className="text-center mx-auto mb-12 max-w-3xl">
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR VALUES</p>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">A Modern Approach to the Free Trade Warehousing Zone</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">A Modern Approach to Free Trade and Warehousing Zones</h2>
               <p className="text-base text-foreground/70 leading-relaxed">
                 Our values define how we deliver FTWZ Warehouse operations — from compliance and transparency to client partnership and continuous improvement.
               </p>
@@ -362,28 +367,25 @@ const About = () => {
 
           <div className="relative">
             {/* Dashed connector line — desktop only, sits behind step circles */}
-            <div className="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="hidden md:block absolute top-10 left-[10%] right-[10%] border-t-2 border-dashed border-orange-300 z-0" />
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-6 relative z-10">
               {processSteps.map((step, i) => (
                 <ScrollReveal key={step.num} delay={i * 0.1}>
-                  {/* Mobile: horizontal row with step number + text */}
-                  <div className="flex flex-row items-start gap-5 md:hidden">
-                    <div className="w-16 h-16 shrink-0 rounded-full border-2 border-orange-500 bg-orange-50 flex items-center justify-center">
+                  {/* Row on mobile (number + text side by side), centered column on desktop. Heading/description render once; only the number badge markup differs by breakpoint. */}
+                  <div className="flex flex-row items-start gap-5 md:flex-col md:items-center md:gap-0 md:text-center">
+                    {/* Mobile number badge */}
+                    <div className="w-16 h-16 shrink-0 rounded-full border-2 border-orange-500 bg-orange-50 flex items-center justify-center md:hidden">
                       <span className="text-xl font-extrabold text-orange-500">{step.num}</span>
                     </div>
-                    <div className="pt-1">
-                      <h3 className="text-base font-bold text-foreground mb-1">{step.title}</h3>
-                      <p className="text-sm text-foreground/70 leading-relaxed" dangerouslySetInnerHTML={{ __html: step.desc }}></p>
-                    </div>
-                  </div>
-                  {/* Desktop: centered column */}
-                  <div className="hidden md:flex flex-col items-center text-center">
-                    <div className="w-20 h-20 rounded-full border-2 border-orange-500 bg-card flex items-center justify-center mb-5 shadow-sm">
+                    {/* Desktop number badge */}
+                    <div className="hidden md:flex w-20 h-20 shrink-0 rounded-full border-2 border-orange-500 bg-card items-center justify-center mb-5 shadow-sm">
                       <span className="text-2xl font-extrabold text-orange-500">{step.num}</span>
                     </div>
-                    <h3 className="text-base font-bold text-foreground mb-2">{step.title}</h3>
-                    <p className="text-sm text-foreground/70 leading-relaxed" dangerouslySetInnerHTML={{ __html: step.desc }}></p>
+                    <div className="pt-1 md:pt-0">
+                      <h3 className="text-base font-bold text-foreground mb-1 md:mb-2">{step.title}</h3>
+                      <p className="text-sm text-foreground/70 leading-relaxed" dangerouslySetInnerHTML={{ __html: step.desc }}></p>
+                    </div>
                   </div>
                 </ScrollReveal>
               ))}
