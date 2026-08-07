@@ -10,9 +10,17 @@ export interface BlogFAQ {
   answer: string;
 }
 
+export interface BlogContentSegment {
+  text: string;
+  kw?: boolean;
+  href?: string;
+  target?: string;
+  rel?: string;
+}
+
 export interface BlogSection {
   heading: string;
-  content: string;
+  content: string | BlogContentSegment[];
   relatedLink?: { text: string; href: string };
 }
 
@@ -1038,6 +1046,254 @@ export const blogPosts: BlogPost[] = [
       { question: "Can one shipment be split across multiple markets from this FTWZ?", answer: "Yes. A single container is often allocated across several destinations — for example, part of a shipment released to Mumbai, part to Pune, and part held for Gujarat distributors — with goods released as actual customer orders come in." },
       { question: "Does Astromar handle transportation as well as warehousing near Panvel?", answer: "Yes. Businesses can combine freight forwarding, ocean freight, air freight, customs clearance, and supply chain support with FTWZ warehousing through one integrated logistics partner." }
     ]
+  },
+  {
+    slug: "why-importers-choose-mundra-north-west-india",
+    thumbnail: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&auto=format&fit=crop&q=70",
+    title: "Why Global Importers Choose Mundra as a Gateway to North and West India",
+    excerpt: "Why experienced importers keep coming back to Mundra — not just for the port, but for how much flexibility it gives them after the shipment arrives.",
+    category: "FTWZ",
+    readTime: "7 min read",
+    date: "2026-08-07",
+    featured: false,
+    metaDescription: "Why global importers choose Mundra as a gateway to North and West India — and why the real advantage begins after the shipment arrives, not at the port.",
+    heroImage: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Container port representing Mundra as a logistics gateway",
+    intro: "Ask someone who's been importing through Mundra for a few years why they keep coming back, and you'll usually get an unexpected answer. Most won't start by talking about the port. They'll talk about how much easier it is to plan everything after the shipment arrives.",
+    sections: [
+      {
+        heading: "A Container Arriving Is Only the Beginning",
+        content: "Take a company importing industrial equipment from Europe — the container clears the port, but that's rarely the end of the story. There's still the question of transport to the end customer, whether it's needed immediately or in six weeks, how many other shipments are due around the same time, and where it makes sense to hold it in the meantime. A shipment arriving is the start of a logistics decision, not the finish line, and how well that decision gets made often matters more than how smoothly the vessel docked."
+      },
+      {
+        heading: "Sometimes Waiting Is the Smarter Decision",
+        content: [
+          { text: "Not every shipment benefits from clearing customs the moment it lands. Demand might not have firmed up yet, the receiving warehouse might not be ready, or the business might simply want to spread duty payments over a longer window instead of paying it all upfront. This is where a " },
+          { text: "Free Trade Warehousing Zone (FTWZ)", kw: true, href: "https://sezindia.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " earns its place. Goods can remain under customs supervision, subject to applicable regulations, until they're actually needed — the shipment isn't delayed, it's simply waiting for the right moment to move." }
+        ]
+      },
+      {
+        heading: "Warehouses Are Where the Real Planning Happens",
+        content: [
+          { text: "Walk into a " },
+          { text: "busy warehouse near Mundra", kw: true, href: "/locations/mundra" },
+          { text: " during peak season and you'll see the real logistics planning happening in real time — pallets reconfigured for different end markets, partial consignments broken out for urgent orders, and inventory repositioned based on which distributor needs stock first. The port gets goods into the country; the warehouse decides how efficiently they actually move from there." }
+        ]
+      },
+      {
+        heading: "No Two Industries — or Shipments — Work the Same Way",
+        content: [
+          { text: "A pharmaceutical importer moving temperature-sensitive stock has very different priorities from an electronics distributor waiting on a single missing component, or a retailer trying to hit a seasonal launch date. Some shipments can sit in storage for weeks without consequence; others are urgent enough that air freight makes sense even at a steep premium. When a shipment is time-critical, the real question is usually " },
+          { text: "what a delay actually costs against the airfare difference", kw: true, href: "/freight-intelligence" },
+          { text: ", not which mode sounds cheaper on paper." }
+        ]
+      },
+      {
+        heading: "Everything Has to Work Together",
+        content: [
+          { text: "Clearing customs", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " is only one piece of a much longer chain — transport to the warehouse, storage, inland movement, and final delivery all have to work together for an import to actually be efficient. A fast customs clearance doesn't help much if the truck booking falls through the next day, and cheap storage doesn't help if inland freight from Mundra to the final destination eats the savings. Importers who do well here tend to treat the whole chain as one system, not a series of separate vendors to manage individually." }
+        ]
+      },
+      {
+        heading: "Mundra's Biggest Strength Isn't Just the Port",
+        content: "Mundra's biggest strength isn't just that it's one of India's largest and best-connected ports — it's what that connectivity actually changes for an importer's planning. Strong rail links into North and West India mean a business isn't forced to hold inventory close to one region just to guarantee fast delivery elsewhere — stock positioned at Mundra can genuinely serve Delhi, Rajasthan, Gujarat, and Maharashtra without duplicating warehousing in each state. Combined with FTWZ storage and customs flexibility nearby, that turns Mundra into a single distribution point for markets that would otherwise need separate planning — not just a place where containers happen to land."
+      }
+    ],
+    faqs: [
+      { question: "How long can goods be stored in an FTWZ near Mundra before duty is paid?", answer: "Goods held in an FTWZ can generally remain under customs supervision for extended periods, subject to applicable regulations, with duty becoming payable only when they are cleared into the domestic market. This lets importers align duty payments with actual sales rather than paying everything on arrival." },
+      { question: "Why do importers prefer Mundra over other Indian ports for North and West India distribution?", answer: "Mundra's rail and road connectivity into North and West India is a major advantage — it's often faster and less congested than routing through some alternative gateways. Paired with nearby FTWZ and warehousing infrastructure, it lets importers store, consolidate, and distribute efficiently once goods arrive." },
+      { question: "Is sea freight through Mundra always cheaper than air freight for urgent shipments?", answer: "Not always. Sea freight is typically the lower-cost option, but for genuinely time-critical shipments, the cost of a delay can outweigh the airfare premium. The right choice depends on how much a delay actually costs the business, not simply which mode has the lower headline rate." }
+    ],
+    keywords: ["mundra ftwz", "mundra port importers", "north india logistics", "west india distribution"],
+  },
+  {
+    slug: "why-dahej-preferred-hub-chemical-industrial-supply-chains",
+    thumbnail: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&auto=format&fit=crop&q=70",
+    title: "Why Dahej Is Becoming India's Preferred Hub for Chemical and Industrial Supply Chains",
+    excerpt: "Why manufacturers and industrial project teams increasingly choose Dahej — not just for the chemical ecosystem, but for how well it handles equipment that arrives before the project is actually ready for it.",
+    category: "FTWZ",
+    readTime: "7 min read",
+    date: "2026-08-07",
+    featured: false,
+    metaDescription: "Why Dahej is becoming India's preferred hub for chemical and industrial supply chains — and how experienced teams manage equipment timing around project schedules.",
+    heroImage: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Industrial chemical plant representing Dahej's manufacturing ecosystem",
+    intro: "When people hear the name Dahej, they usually think of chemicals. And they're right. But spend any time working with manufacturers in this region, and it becomes clear Dahej is about much more than one industry. It's a place where large projects come together — chemical plants, petrochemical complexes, engineering companies, power projects, and heavy industries all operating within the same ecosystem. That changes how logistics has to work. The priority isn't simply moving cargo from one place to another. It's making sure the right equipment, raw materials, and components are available exactly when the project actually needs them.",
+    sections: [
+      {
+        heading: "Industrial Cargo Moves at Its Own Pace",
+        content: [
+          { text: "Handling " },
+          { text: "chemical plants, petrochemical complexes", kw: true, href: "https://gujaratpcpir.org/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", and industrial cargo is very different from moving everyday products. A shipment of consumer goods can usually go straight to the customer the moment it arrives. Industrial projects rarely work that way.\n\nA reactor vessel might reach India weeks before the installation team is ready. A specialised pump could arrive while civil work is still underway. Raw materials for a chemical plant may need to be released in stages, tied to production schedules rather than the shipment's arrival date.\n\nThe cargo has arrived. The project isn't always ready for it. That gap is exactly why planning matters as much as transportation — and why schedules on paper rarely survive contact with an actual construction site." }
+        ]
+      },
+      {
+        heading: "Sometimes the Best Decision Is to Wait",
+        content: "Imagine a heat exchanger arriving from Europe — expensive, built to order, landing in India exactly on schedule. The only problem: the site isn't ready to receive it.\n\nSending it to the project location doesn't help. Leaving it at the port isn't really an option either. This is where a warehouse becomes one of the more important parts of the project — not because it's storing equipment, but because it's protecting the schedule."
+      },
+      {
+        heading: "Every Container Plays a Different Role",
+        content: [
+          { text: "Stand near the unloading area for a while and it becomes obvious that no two containers are really the same. One might carry raw materials headed straight into production. Another holds " },
+          { text: "valves, pressure sensors, and other hazardous cargo", kw: true, href: "https://www.peso.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " requiring specialised handling. A third is full of spare parts that won't be touched unless something unexpectedly fails.\n\nFrom the outside, they're all steel boxes. Behind each one is a different project, with its own deadlines and priorities." }
+        ]
+      },
+      {
+        heading: "Getting the Timing Right",
+        content: "Most heavy equipment naturally arrives by ocean freight. But industrial projects also produce moments where a single small component becomes the reason an entire plant is waiting.\n\nWhen a production line is stalled on one missing part, air freight becomes the fastest way to get things moving again — not because it's cheap, but because in that moment, time is worth more than the freight difference."
+      },
+      {
+        heading: "The Job Doesn't End When Customs Says Yes",
+        content: [
+          { text: "Clearing customs", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " brings a sense of relief — the paperwork's done, the cargo's released. But around Dahej, everyone knows that's only one milestone. The equipment still has to reach the right warehouse, get inspected, and be scheduled for transport once the project team is actually ready for it.\n\nThat's why experienced teams handling industrial cargo stop treating customs, transport, and storage as separate jobs. Managed through " },
+          { text: "one connected, integrated Supply Chain Solutions approach", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: ", projects lose far fewer days to avoidable delays." }
+        ]
+      },
+      {
+        heading: "Dahej Didn't Grow by Accident",
+        content: [
+          { text: "Dahej's reputation was built over years, not overnight. Companies don't choose " },
+          { text: "Dahej", kw: true, href: "/locations/dahej" },
+          { text: " today simply because there's a port nearby. They choose it because the surrounding ecosystem genuinely understands industrial cargo — and when the shipment is chemicals, heavy engineering equipment, or a project on a tight schedule, that experience is what actually keeps things moving." }
+        ]
+      }
+    ],
+    faqs: [
+      { question: "How does an FTWZ at Dahej help with industrial project timing?", answer: "An FTWZ lets equipment and materials be held under customs supervision, subject to applicable regulations, until the project site is actually ready — so imports aren't rushed into a construction site before civil work, installation teams, or production schedules can accommodate them." },
+      { question: "What kinds of cargo does Dahej's logistics ecosystem typically handle?", answer: "Dahej supports a wide mix — chemical and petrochemical raw materials, heavy engineering equipment, hazardous cargo such as valves and pressure sensors, and project spares — reflecting the concentration of chemical plants, petrochemical complexes, and industrial projects in the region." },
+      { question: "Is air freight ever justified for industrial project cargo?", answer: "Yes, when a single missing component is holding up an entire production line or installation milestone. In that situation, the cost of the delay usually outweighs the air freight premium, even though sea freight remains the default for the bulk of heavy equipment and raw materials." }
+    ],
+    keywords: ["dahej industrial logistics", "dahej chemical hub", "dahej ftwz", "industrial project cargo india"],
+  },
+  {
+    slug: "how-vizag-emerging-east-coast-gateway-manufacturing-trade",
+    thumbnail: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&auto=format&fit=crop&q=70",
+    title: "How Vizag Is Emerging as India's East Coast Gateway for Manufacturing and International Trade",
+    excerpt: "Why manufacturers are increasingly choosing Vizag — not just for the port, but for an industrial ecosystem built around steel, pharma, and engineering that's grown alongside it.",
+    category: "FTWZ",
+    readTime: "7 min read",
+    date: "2026-08-07",
+    featured: false,
+    metaDescription: "How Vizag is emerging as India's east coast gateway for manufacturing and international trade — and why the surrounding industrial ecosystem matters as much as the port.",
+    heroImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Industrial port representing Vizag's manufacturing and trade ecosystem",
+    intro: "For a long time, if someone asked where India's major import gateways were, the answer was almost automatic. Mumbai. JNPA. Mundra. The west coast naturally became the centre of many supply chains, and that's where most businesses focused their attention. But things have been changing — quietly, not through one big announcement, but through years of industrial growth, better infrastructure, and manufacturers choosing the east coast for reasons that had little to do with geography alone.",
+    sections: [
+      {
+        heading: "A City That Grew Alongside Industry",
+        content: [
+          { text: "Vizag", kw: true, href: "/locations/vizag" },
+          { text: "'s story has always been closely tied to manufacturing. " },
+          { text: "Steel plants", kw: true, href: "https://www.vizagsteel.com/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", pharmaceutical companies, engineering businesses, food processing units, shipbuilding, and mineral industries have all shaped the city. As these industries expanded, everything around them grew too — road connectivity improved, warehouses became larger and more specialised, and " },
+          { text: "the port", kw: true, href: "https://vizagport.com/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " learned to handle increasingly diverse cargo.\n\nThe city didn't become important because of the port alone. The port became important because industry kept growing around it." }
+        ]
+      },
+      {
+        heading: "Every Factory Has Its Own Rhythm",
+        content: [
+          { text: "No two factories work the same way. A pharmaceutical company may receive small, high-value shipments every week. A steel manufacturer deals with entirely different volumes and timelines. " },
+          { text: "An engineering company importing specialised machinery", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: " plans months ahead, because installation has to land at exactly the right stage of a project.\n\nThe cargo may all arrive through the same city. Everything after that looks completely different — which is why logistics in Vizag isn't really built around containers. It's built around the industries those containers support." }
+        ]
+      },
+      {
+        heading: "The Shipment Arriving Isn't the Finish Line",
+        content: "A shipment reaching the port is often mistaken for the end of the journey. In manufacturing, it's usually just the beginning.\n\nOne production line might be waiting on a specific component while another shipment is earmarked for next month's schedule. Some materials move straight into production; others stay back until the timing is right. Those decisions happen every day, rarely dramatically, but they shape production, inventory, and customer deliveries more than most people realise.\n\nWalk into a warehouse near Vizag and this becomes obvious — forklifts moving between bays, teams checking incoming materials, pallets prepped for dispatch, trucks arriving as others leave. The warehouse speeds up when production speeds up, and eases off when it slows down. The two are far more connected than they look from outside."
+      },
+      {
+        heading: "Sometimes It's the Smallest Part That Matters Most",
+        content: "It doesn't take a major delay to disrupt a factory. Sometimes it's a sensor, a control module, a specialised bearing — small on paper, capable of stopping an entire production line in practice.\n\nThat's why most regular imports continue to move by ocean freight, reliable and economical for planned shipments, while air freight stays available for the moments that can't wait. Nobody plans to use it. But when one missing part is holding up production, the freight premium stops mattering."
+      },
+      {
+        heading: "The Work Doesn't End When Customs Clears the Cargo",
+        content: [
+          { text: "Clearing customs", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " brings real relief — documents complete, cargo finally released. For the production team, though, that's just another milestone. The materials still have to reach the warehouse, inventory has to update, and the production team has to actually know it's ready before the shipment becomes useful.\n\nThat's why experienced manufacturers stop treating customs, storage, and transport as separate jobs. Managed as one continuous process, the supply chain does its work quietly enough that nobody downstream has to think about it — and for businesses distributing across multiple coastal markets, " },
+          { text: "coordinating that movement along India's coastline", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: " becomes just as important as the initial import." }
+        ]
+      },
+      {
+        heading: "Vizag's Story Isn't Just About the Port",
+        content: "Ask someone outside the industry what Vizag is known for, and they'll likely mention the port. Ask someone who's worked here for years, and the answer is usually different — they'll talk about the factories that have grown over time, the engineering companies still expanding, the pharmaceutical manufacturers shipping worldwide, and the supplier relationships built over years.\n\nThe port brings cargo into the region. The manufacturing ecosystem around it is what actually gives the city its strength — and it's why more companies keep investing on India's east coast, not because Vizag is the newest logistics hub, but because it's quietly proven itself over time."
+      }
+    ],
+    faqs: [
+      { question: "What industries make up Vizag's manufacturing ecosystem?", answer: "Vizag's industrial base spans steel production, pharmaceuticals, engineering and machinery, food processing, shipbuilding, and mineral-based industries — a mix that has grown steadily around the port rather than depending on any single sector." },
+      { question: "Why would a business choose Vizag over west coast ports like Mumbai or Mundra?", answer: "For businesses distributing along India's east coast or serving south and east Indian markets, Vizag can mean shorter inland transit and closer proximity to established manufacturing clusters. The right choice still depends on the specific trade lane and destination markets, not a blanket preference for one coast." },
+      { question: "How does FTWZ storage help manufacturers importing through Vizag?", answer: "FTWZ storage lets imported materials and components remain under customs supervision, subject to applicable regulations, until production actually needs them — so procurement can happen ahead of schedule without forcing goods into a factory before it's ready to use them." }
+    ],
+    keywords: ["vizag manufacturing hub", "vizag east coast gateway", "vizag ftwz", "visakhapatnam industrial logistics"],
+  },
+  {
+    slug: "why-delhi-ncr-ideal-distribution-hub-north-india",
+    thumbnail: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=70",
+    title: "Why Delhi NCR Is the Ideal Distribution Hub for Businesses Serving North India",
+    excerpt: "Why businesses expanding across North India increasingly centralise around Delhi NCR — one well-positioned warehouse instead of a facility in every state.",
+    category: "FTWZ",
+    readTime: "7 min read",
+    date: "2026-08-07",
+    featured: false,
+    metaDescription: "Why Delhi NCR is the ideal distribution hub for businesses serving North India — and why one well-positioned warehouse often beats opening several.",
+    heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Warehouse distribution hub representing Delhi NCR logistics",
+    intro: "Every business reaches a stage where selling products becomes easier than delivering them. At first, it isn't much of a problem — most customers are in one city, one warehouse is enough, orders are easy to manage. Then the business grows. A few customers come from Jaipur. New dealers are appointed in Chandigarh. Orders start arriving from Lucknow, Dehradun, Ludhiana. Before long, someone asks the obvious question: \"Do we need another warehouse?\" It's a fair question. But another warehouse isn't always the answer. Sometimes it's simply about choosing a better location.",
+    sections: [
+      {
+        heading: "Delhi NCR Sits in the Middle of the Action",
+        content: [
+          { text: "One of the biggest advantages of " },
+          { text: "Delhi NCR", kw: true, href: "/locations/delhi-khurja" },
+          { text: " is that it puts businesses within reach of a huge customer base — not just Delhi, but Haryana, Punjab, Rajasthan, Uttar Pradesh, Uttarakhand, Himachal Pradesh, and several other nearby markets. For companies supplying North India, that's a real difference. Instead of moving inventory between multiple warehouses, many businesses keep stock in one central location and dispatch as orders come in — a far simpler way to manage inventory as the business grows." }
+        ]
+      },
+      {
+        heading: "Customers Don't Ask Where Your Warehouse Is",
+        content: "Think about the last time you placed an order online. You probably weren't interested in where the product was stored — you only wanted to know one thing: when will it arrive?\n\nBusiness customers think the same way, whether they're ordering machine parts, electrical equipment, medical devices, or consumer goods. The warehouse location matters to the business. The delivery experience matters to the customer. That's exactly why choosing the right distribution hub is such an important decision."
+      },
+      {
+        heading: "One Warehouse Can Go Further Than You Think",
+        content: [
+          { text: "It's easy to assume that expanding into new states means opening more warehouses. Sometimes it's necessary — often it isn't. " },
+          { text: "A well-positioned warehouse", kw: true, href: "/free-trade-zone-services/warehousing" },
+          { text: " in Delhi NCR can support customers across several neighbouring states without spreading inventory across multiple facilities, meaning fewer stock transfers, better visibility, and less time spent figuring out which warehouse has the product." }
+        ]
+      },
+      {
+        heading: "Distribution Doesn't End When the Truck Leaves",
+        content: "People often think distribution is about transport. In reality, transport is only one part of it — the bigger challenge is deciding what should move, where it should go, and when it should leave. Some customers need delivery today; others have orders scheduled for next week. Some orders can be combined to reduce transport costs; others need to leave immediately.\n\nGood distribution isn't about sending everything out as quickly as possible. It's about sending the right products at the right time."
+      },
+      {
+        heading: "Everything Works Better When It's Connected",
+        content: "Most imported cargo reaches India through ocean freight, while urgent shipments rely on air freight. From there, the focus shifts to inventory — goods move through customs clearance, into warehousing, and eventually toward customers across North India. When those stages are planned together instead of separately, the whole operation becomes far easier to manage. That's exactly where integrated supply chain solutions make a real difference — not by adding complexity, but by removing the unnecessary kind."
+      },
+      {
+        heading: "Reliability Matters More Than Speed",
+        content: "Everyone talks about faster deliveries. In reality, most customers care more about reliability. If you promise delivery on Wednesday, they expect Wednesday — and if something changes, they want to know before they have to ask.\n\nThat's why distribution is as much about visibility as it is about transport: knowing exactly what's available, where it's stored, and how quickly it can be dispatched. Those small details are what build trust over time — and it's usually invisible when it's working. Customers see a truck arrive and an order complete; they rarely see the customs clearance, the inventory check, the route planning, and the dispatch scheduling that happened before that moment."
+      },
+      {
+        heading: "Delhi NCR Is About Reach, Not Just Location",
+        content: [
+          { text: "Ask companies why they chose Delhi NCR, and very few will say it was simply because it's the capital. Most chose it because it keeps them close to their customers — access to one of India's largest markets, without needing a warehouse in every major city.\n\nPeople often think of Delhi NCR as the end point where products arrive before delivery. In reality, it's where thousands of journeys begin — trucks leaving every morning for factories, hospitals, retailers, and distributors across North India, with fresh inventory and new orders arriving by evening to start the cycle again.\n\nSuccess in distribution isn't measured by how many warehouses a business operates. It's measured by how consistently the right product reaches the right customer at the right time — and it's a lesson reflected in " },
+          { text: "how Astromar has built its own operations", kw: true, href: "/about-us" },
+          { text: " around exactly that principle." }
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Why do businesses choose Delhi NCR as a central distribution hub instead of opening warehouses in each state?", answer: "A single well-positioned warehouse in Delhi NCR can reach Haryana, Punjab, Rajasthan, Uttar Pradesh, Uttarakhand, and Himachal Pradesh without duplicating inventory across multiple facilities — reducing stock transfers and giving businesses a clearer, single view of what's available and where." },
+      { question: "How does FTWZ warehousing near Delhi NCR support North India distribution?", answer: "FTWZ storage lets imported goods remain under customs supervision, subject to applicable regulations, until they're needed for distribution — so businesses can hold inventory centrally and release it toward North India markets in line with actual demand, rather than clearing everything on arrival." },
+      { question: "Does serving multiple North Indian states from one warehouse slow down delivery?", answer: "Not necessarily. What matters more than warehouse count is how well transport, inventory, and dispatch planning are coordinated. A single central location with reliable, well-planned distribution can often serve multiple states more consistently than several smaller warehouses managed separately." }
+    ],
+    keywords: ["delhi ncr distribution hub", "north india warehousing", "delhi ncr logistics", "khurja ftwz"],
   },
 ];
 

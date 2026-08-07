@@ -2,7 +2,30 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { blogPosts } from '@/data/blogPosts'
+import { blogPosts, BlogContentSegment } from '@/data/blogPosts'
+
+function KwText({ segments }: { segments?: BlogContentSegment[] }) {
+  if (!segments) return null;
+  return (
+    <>
+      {segments.map((seg, i) => {
+        const content = seg.kw ? (
+          <span>{seg.text}</span>
+        ) : (
+          <span>{seg.text}</span>
+        );
+        if (seg.href) {
+          return (
+            <Link key={i} href={seg.href} target={seg.target} rel={seg.rel} className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">
+              {content}
+            </Link>
+          );
+        }
+        return <span key={i}>{content}</span>;
+      })}
+    </>
+  );
+}
 
 const formatDate = (dateStr: string) => {
   const date = new Date(dateStr);
@@ -98,7 +121,13 @@ export default async function BlogArticlePage({ params }: Props) {
         {(article.sections ?? []).map((section, i) => (
           <div key={i} className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{section.heading}</h2>
-            <div className="text-gray-700 dark:text-gray-200 leading-relaxed whitespace-pre-line">{section.content}</div>
+            {typeof section.content === 'string' ? (
+              <div className="text-gray-700 dark:text-gray-200 leading-relaxed whitespace-pre-line">{section.content}</div>
+            ) : (
+              <div className="text-gray-700 dark:text-gray-200 leading-relaxed whitespace-pre-line">
+                <KwText segments={section.content} />
+              </div>
+            )}
             {section.relatedLink && (
               <Link
                 href={section.relatedLink.href}
