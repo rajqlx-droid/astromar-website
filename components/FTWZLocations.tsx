@@ -13,7 +13,7 @@ const locations = [
   { slug: "chennai-sriperumbudur", city: "Chennai (Sriperumbudur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 12.9716, lng: 79.9473, address: "Mannur Village, Sriperumbudur, Kancheepuram, TN 602105" },
   { slug: "chennai-vallur", city: "Chennai (Vallur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2090, lng: 80.2843, address: "Vallur Village, Ponneri, Tiruvallur, TN 600120" },
   { slug: "delhi-khurja", city: "Delhi (Khurja)", state: "Uttar Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 28.2476, lng: 77.8538, address: "Khurja Industrial Area, Bulandshahr, UP 203131" },
-  { slug: "bengaluru", city: "Bengaluru", state: "Karnataka", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2486, lng: 77.7066, address: "Aerospace SEZ, Devanahalli, Bengaluru, Karnataka 562165" },
+  { slug: "bengaluru", city: "Bengaluru", state: "Karnataka", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2486, lng: 77.7066, address: "Devanahalli, Bengaluru, Karnataka 562165" },
   { slug: "dahej", city: "Dahej", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 21.7051, lng: 72.5793, address: "Z-85/2A, Dahej SEZ-1, Dahej, Gujarat" },
   { slug: "mundra", city: "Mundra", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 22.8386, lng: 69.7295, address: "APSEZ, Survey No. 169/36, Mundra, Kutch, Gujarat 370421" },
 ];
@@ -109,10 +109,13 @@ const FTWZLocations = () => {
                       </a>
                     </div>
                     <a
-                      href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(loc.address)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
+                      href={loc.slug === "bengaluru" ? undefined : `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(loc.address)}`}
+                      target={loc.slug === "bengaluru" ? undefined : "_blank"}
+                      rel={loc.slug === "bengaluru" ? undefined : "noopener noreferrer"}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (loc.slug === "bengaluru") e.preventDefault();
+                      }}
                       className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary/80 transition-colors"
                     >
                       <Navigation size={13} />
