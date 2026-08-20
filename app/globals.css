@@ -252,8 +252,8 @@
 }
 
 @keyframes shine-sweep {
-  0% { left: -60%; }
-  100% { left: 160%; }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(733.33%); }
 }
 
 @keyframes float-shape-1 {
