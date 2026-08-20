@@ -40,7 +40,7 @@ const accordionItems = [
 const whyChoose = [
   { title: "30% Cheaper Than Road Transport",       desc: "One coastal vessel replaces 700 trucks — dramatically cutting per-unit freight cost on long domestic hauls." },
   { title: "All 12+ Major Indian Ports Covered",    desc: "Pan-India port presence on both coasts gives you direct access to every key domestic logistics gateway." },
-  { title: "Eco-Friendly Lower Carbon Shipping",    desc: "Coastal shipping produces ~47% less CO₂ than road transport, supporting your sustainability targets." },
+  { title: "Eco-Friendly Lower Carbon Shipping",    desc: <>Coastal shipping produces ~47% less CO₂ than road transport, supporting your sustainability targets, in line with the <a href="https://sagarmala.gov.in/coastal-shipping" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Sagarmala Programme</a>'s coastal shipping development goals.</> },
   { title: "Trusted Coastal Shipping Company", desc: "As an established Coastal Shipping Company, Astromar operates with full regulatory compliance, dedicated vessel partnerships, and 24/7 cargo tracking.", titleKw: "Coastal Shipping Company", descKw: "Coastal Shipping Company" },
 ];
 

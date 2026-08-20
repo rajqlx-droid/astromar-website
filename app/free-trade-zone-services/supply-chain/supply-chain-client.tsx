@@ -46,7 +46,7 @@ const tabContent: Record<TabKey, { challenge: string; solution: string; benefits
 };
 
 const accordionItems = [
-  { title: "Warehousing & Inventory Management",    body: "FTWZ bonded warehousing with real-time WMS inventory visibility across all locations. Automated reorder triggers, cycle counts, and MIS reporting." },
+  { title: "Warehousing & Inventory Management",    body: <><a href="/blogs/customs-duty-deferment-benefits" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">FTWZ bonded warehousing</a> with real-time WMS inventory visibility across all locations. Automated reorder triggers, cycle counts, and MIS reporting.</> },
   { title: "Order Fulfillment & Distribution",      body: "End-to-end order processing from receipt to last-mile delivery nationwide. Multi-channel fulfillment for e-commerce, retail, and B2B." },
   { title: "Reverse Logistics",                     body: "Efficient returns management and reverse supply chain processing for e-commerce and retail. Disposition management and refurbishment services." },
   { title: "Supply Chain Analytics",                body: "Data-driven insights and reporting to optimize your supply chain performance and costs. Real-time dashboards, KPI tracking, and predictive analytics." },

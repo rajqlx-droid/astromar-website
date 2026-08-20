@@ -24,7 +24,7 @@ const whyChoose = [
 
 const executionSteps = [
   { step: "01", title: "Route Survey", desc: "Road conditions, bridge capacities, and overhead clearances assessed." },
-  { step: "02", title: "Permits & Escorts", desc: "State transport permits secured, police escort arranged for over-dimensional cargo where required." },
+  { step: "02", title: "Permits & Escorts", desc: <>State transport permits secured, police escort arranged for <a href="https://www.nhai.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">over-dimensional cargo</a> where required.</> },
   { step: "03", title: "Transport", desc: "Specialized equipment (SPMTs, multi-axle trailers) deployed based on cargo weight and dimensions." },
   { step: "04", title: "Placement", desc: "Cargo positioned at destination site per project requirements." },
 ];

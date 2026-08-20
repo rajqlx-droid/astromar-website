@@ -10,7 +10,7 @@ import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
 const steps = [
   { step: "01", title: "Document Review & HS Classification",  desc: "Collect and verify all shipping documents, classify goods under correct HS codes to ensure accurate duty calculation." },
   { step: "02", title: "Duty Assessment & Payment",            desc: "Calculate applicable duties, FTA benefits, and exemptions. Coordinate duty payment and confirm with customs authorities." },
-  { step: "03", title: "Port Filing & Examination",            desc: "Electronic filing via ICEGATE, real-time status tracking, and coordination with customs officers for cargo examination." },
+  { step: "03", title: "Port Filing & Examination",            desc: <>Electronic filing via <a href="https://www.cbic.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">ICEGATE</a>, real-time status tracking, and coordination with customs officers for cargo examination.</> },
   { step: "04", title: "Cargo Release & Delivery",             desc: "Process out-of-charge, collect delivery order, and arrange final-mile delivery to your warehouse or customer." },
 ];
 
