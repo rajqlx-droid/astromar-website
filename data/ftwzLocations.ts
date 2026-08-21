@@ -28,6 +28,7 @@ export interface FTWZLocationDetail {
       question: { text: string; kw?: boolean }[];
       answer: { text: string; kw?: boolean }[];
     }[];
+    relatedReading?: { title: string; href: string }[];
     localBusinessSchema?: object;
     faqPageSchema?: object;
     breadcrumbSchema?: object;
@@ -2098,7 +2099,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "free trade warehouse zone in mundra", kw: true },
           { text: " operating within " },
           { text: "Adani Ports and SEZ (APSEZ)", kw: true, href: "https://www.adaniports.com/", target: "_blank", rel: "noopener noreferrer" },
-          { text: " — India's largest commercial port by cargo volume. The integrated port + SEZ + logistics park spans 13,000+ hectares, providing unmatched scale and infrastructure for importers, exporters, and re-export operators. That scale makes Mundra a natural fit for businesses running " },
+          { text: " — India's largest commercial port by cargo volume. Spanning more than 13,000 hectares of integrated port, SEZ, and logistics infrastructure, this apsez warehouse gives importers, exporters, and re-export operators a scale of operation unmatched anywhere else in India. That scale makes Mundra a natural fit for businesses running " },
           { text: "multi-node supply chains", kw: true, href: "/free-trade-zone-services/supply-chain" },
           { text: " across containers, bulk, and FMCG categories, not just single-shipment storage." },
         ],
@@ -2119,7 +2120,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "." },
         ],
         [
-          { text: "Mundra serves businesses operating across containers, bulk commodities, chemicals, petrochemicals, automotive parts, energy resources, and FMCG categories. For businesses seeking custom bonded warehousing in mundra with multi-cargo capabilities, integrated port operations, and the strategic positioning for Middle East and Africa trade lanes, APSEZ delivers operational scale unmatched in India." },
+          { text: "Mundra serves businesses operating across containers, bulk commodities, chemicals, petrochemicals, automotive parts, energy resources, and FMCG categories. With multi-cargo capabilities, integrated port operations, and a strategic position for Middle East and Africa trade lanes, this Gujarat FTWZ delivers custom bonded warehousing in mundra at a scale unmatched anywhere else in India." },
         ],
       ],
       servicesH2: [
@@ -2143,7 +2144,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         {
           title: "Scale & Capacity",
           items: [
-            [{ text: "APSEZ spans 13,000+ hectares (largest in India)" }],
+            [{ text: "Adani Ports SEZ (APSEZ) spans 13,000+ hectares (largest in India)" }],
             [{ text: "Integrated port + SEZ + logistics park" }],
             [{ text: "Direct liner services to 40+ countries" }],
             [{ text: "Strategic for Middle East, Africa, Europe trade" }],
@@ -2202,6 +2203,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "Standard bonded warehousing within APSEZ allows duty-deferred storage but typically with 1-year limits and restricted activities. The Astromar FTWZ at Mundra offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities under SEZ Act 2005 (including CKD/SKD assembly, repacking, relabelling, and re-export), full duty and GST deferral, and 5-year income tax exemption on re-export profits — making it ideal for high-volume international traders and consolidators." },
           ],
         },
+      ],
+      relatedReading: [
+        { title: "Why Global Importers Choose Mundra as a Gateway to North and West India", href: "/blogs/why-importers-choose-mundra-north-west-india" },
       ],
       localBusinessSchema: {
         "@context": "https://schema.org",

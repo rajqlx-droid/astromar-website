@@ -582,6 +582,30 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
         </section>
       )}
 
+      {/* Related Reading */}
+      {seoDetail?.seo.relatedReading && seoDetail.seo.relatedReading.length > 0 && (
+        <section className="py-16 bg-brand-light">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
+              Related Reading
+            </h2>
+            <div className="max-w-3xl mx-auto space-y-4">
+              {seoDetail.seo.relatedReading.map((item, rIdx) => (
+                <Link
+                  key={rIdx}
+                  href={item.href}
+                  className="block bg-white border border-[#1B3A6B]/10 rounded-xl p-5 hover:shadow-md hover:border-[#F97316]/40 transition-all"
+                >
+                  <span className="text-sm sm:text-base font-bold text-[#0f1f3d] hover:text-[#F97316] transition-colors">
+                    {item.title} →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Other FTWZ Locations */}
       {otherLocations.length > 0 && <LocationCarousel items={otherLocations} />}
 
