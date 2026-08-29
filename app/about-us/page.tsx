@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   alternates: { canonical: "/about-us" },
   title: "About Astromar Logistics — India's Leading FTWZ Operator",
-  description: "Astromar Logistics — India's trusted FTWZ in India operator since 2017. 10 strategic Free Trade Warehousing Zone locations, ₹2000Cr+ cargo handled, 500+ clients served across India.",
+  description: "Astromar Logistics — India's trusted FTWZ in India operator since 2017. 10 strategic Free Trade Warehousing Zone locations, 500+ clients served across India.",
   keywords: "ftwz in india, astromar logistics, ftwz operator india, free trade warehousing zone, freight forwarder india, free zone company india, india logistics company, ftwz solutions, sez warehousing, ftwz warehouse",
   openGraph: {
     title: "About Astromar Logistics — India's Leading FTWZ Operator",
-    description: "India's trusted FTWZ operator since 2017. 10 strategic locations, 500+ clients served, ₹2000Cr+ cargo handled across India.",
+    description: "India's trusted FTWZ operator since 2017. 10 strategic locations, 500+ clients served across India.",
     url: "https://www.astromarfreezone.com/about-us",
     siteName: "Astromar Logistics",
     type: "website",

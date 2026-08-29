@@ -1023,7 +1023,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: " save money for importers?" },
           ],
           answer: [
-            { text: "An FTWZ in Chennai saves money in four ways: (1) zero customs duty until goods leave the zone, freeing up working capital; (2) 100% GST deferral on imports; (3) no duty on goods that are re-exported; (4) income tax exemption on profits from re-export activity for the first 5 years. A typical electronics importer saves ₹2-5 crore annually on duty deferral alone." },
+            { text: "An FTWZ in Chennai saves money in four ways: (1) zero customs duty until goods leave the zone, freeing up working capital; (2) 100% GST deferral on imports; (3) no duty on goods that are re-exported; (4) income tax exemption on profits from re-export activity for the first 5 years." },
           ],
         },
         {
@@ -1173,7 +1173,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     seo: {
       title: "Free Trade Warehouse in Chennai — Vallur Ponneri | Astromar",
       description: "Astromar's free trade warehouse in chennai at Vallur — near Kattupalli & Ennore ports. Bonded warehouse in chennai for bulk cargo, chemicals, and LNG.",
-      keywords: "free trade warehouse in chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, customs bonded warehouse in chennai, ftwz vallur, north chennai bonded warehouse, ponneri warehouse",
+      keywords: "free trade warehouse in chennai, customs bonded warehouse in chennai, ftwz vallur, north chennai bonded warehouse, ponneri warehouse, kattupalli port warehouse, ennore port ftwz, lng bonded storage chennai",
       h1: "Free Trade Warehouse in Chennai",
       h1Subtitle: "Vallur, Ponneri — North Chennai",
       heroAlt: "Free trade warehouse in Chennai at Vallur Ponneri — Astromar port-adjacent FTWZ",
@@ -1275,7 +1275,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "Why choose a port-adjacent customs bonded warehouse in chennai?" },
           ],
           answer: [
-            { text: "Port-adjacent bonded warehouses like Vallur (15 km from Kattupalli Port) deliver three critical advantages over inland warehouses: (1) sharply reduced port detention and demurrage costs by enabling immediate container drawback; (2) faster customs clearance because customs officers operate on-site; (3) lower transport and trucking costs for high-frequency import operations. For bulk cargo and chemical importers, port-adjacent FTWZs typically save ₹3-8 lakh per shipment versus inland alternatives." },
+            { text: "Port-adjacent bonded warehouses like Vallur (15 km from Kattupalli Port) deliver three critical advantages over inland warehouses: (1) sharply reduced port detention and demurrage costs by enabling immediate container drawback; (2) faster customs clearance because customs officers operate on-site; (3) lower transport and trucking costs for high-frequency import operations." },
           ],
         },
         {
@@ -1337,7 +1337,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             "name": "Why choose a port-adjacent customs bonded warehouse in chennai?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Port-adjacent warehouses like Vallur (15 km from Kattupalli Port) save ₹3-8 lakh per shipment versus inland alternatives by reducing demurrage, enabling faster clearance, and lowering trucking costs."
+              "text": "Port-adjacent warehouses like Vallur (15 km from Kattupalli Port) reduce demurrage costs, enable faster clearance, and lower trucking costs versus inland alternatives."
             }
           },
           {

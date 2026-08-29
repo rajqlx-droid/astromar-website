@@ -12,7 +12,6 @@ const stats = [
   { value: "7+", label: "Years of Excellence" },
   { value: "10", label: "FTWZ Locations" },
   { value: "500+", label: "Clients Served" },
-  { value: "₹2000Cr+", label: "Cargo Handled" },
 ];
 
 const coreValues = [
@@ -29,7 +28,7 @@ const coreValues = [
     { text: "Structured processes, ISO-aligned operations, and data-driven decisions power measurable outcomes for every client. We invest continuously in technology — from cloud-based WMS platforms to AI-driven inventory forecasting — and regularly retrain teams on the latest SEZ Act updates, customs regulations, and global trade developments. Quarterly performance reviews with KPIs around dwell time, accuracy, and cost-per-pallet ensure we're always improving the value we deliver." }
   ], image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&q=80" },
   { icon: Medal, title: "Excellence", descSegments: [
-    { text: "Industry-leading service standards backed by 7+ years of operational excellence and ₹2000Cr+ in cargo handled without major compliance incidents. We're recognized as one of India's top FTWZ operators by customers across electronics, pharma, automotive, FMCG, and chemicals industries. Our facilities meet international standards — including GDP for pharmaceuticals, ISO 14001 environmental compliance, and SEZ Act 2005 statutory obligations — making us the trusted partner for high-stakes, high-value cargo." }
+    { text: "Industry-leading service standards backed by 7+ years of operational excellence without major compliance incidents. We're recognized as one of India's top FTWZ operators by customers across electronics, pharma, automotive, FMCG, and chemicals industries. Our facilities meet international standards — including GDP for pharmaceuticals, ISO 14001 environmental compliance, and SEZ Act 2005 statutory obligations — making us the trusted partner for high-stakes, high-value cargo." }
   ], image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" },
   { icon: Clock, title: "Reliability", descSegments: [
     { text: "24/7 operations across all 10 strategic locations ensure your supply chain never sleeps. With round-the-clock customs clearance, dedicated security teams at each facility, redundant power and connectivity systems, and tested disaster recovery protocols, we keep cargo moving even when external conditions are challenging. Our SLA-backed uptime commitment of 99.5%+ means importers and exporters can plan production schedules, sales launches, and delivery commitments with absolute confidence." }
@@ -207,7 +206,6 @@ const About = () => {
                 "500+ Clients Served",
                 "10 FTWZ Locations Across India",
                 "7+ Years of Excellence",
-                "₹2000Cr+ Cargo Handled",
                 "24/7 Operations Support",
                 "SEZ & FTWZ Licensed",
                 "MSME & IEC Registered",
