@@ -1308,7 +1308,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — Free Trade Warehouse Chennai (Vallur)",
         "description": "Port-adjacent FTWZ and customs bonded warehouse at Vallur, Ponneri offering duty-free storage, GST deferral, and free trade zone benefits for bulk cargo, chemicals, LNG, and energy sector imports.",
         "url": "https://www.astromarfreezone.com/locations/chennai-vallur",
-        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
+        "image": "https://images.unsplash.com/photo-1670121180530-cfcba4438038?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",

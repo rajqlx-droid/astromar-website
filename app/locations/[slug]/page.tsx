@@ -122,7 +122,7 @@ const locations = [
     port: "Kamarajar Port (Ennore)",
     nearestAirport: "Chennai International Airport (MAA) — 35 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
-    heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1670121180530-cfcba4438038?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Bulk Cargo", "Re-export Hub", "Bonded Warehousing", "Single Window Clearance", "Multi-Port Logistics", "Energy & Petrochemical Logistics"],
     about: "Strategically located near Kamarajar Port (Ennore), Astromar's Vallur facility serves bulk cargo, coal, and industrial goods importers. Its proximity to North Chennai's industrial belt makes it ideal for manufacturing sector logistics.",
   },

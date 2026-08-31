@@ -722,7 +722,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-07-30",
     readTime: "9 min read",
     featured: false,
-    thumbnail: airSeaImg,
+    thumbnail: cbmImg,
     heroImage: airSeaImg,
     imageAlt: "Containers being loaded for export at a port, representing the FTWZ re-export process",
     metaDescription: "A step-by-step guide to re-exporting goods through an FTWZ in India, from the initial sourcing decision through customs-controlled storage to final export.",
@@ -826,7 +826,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-07-30",
     readTime: "9 min read",
     featured: false,
-    thumbnail: airSeaImg,
+    thumbnail: cbmImg,
     heroImage: airSeaImg,
     imageAlt: "Containers stacked at JNPA port, representing duty-free warehousing options nearby",
     metaDescription: "How importers near JNPA use an FTWZ to control inventory timing and costs, with examples from automotive, engineering, electronics, and chemicals.",
@@ -1683,7 +1683,7 @@ When choosing hazardous chemical storage, the right question isn't simply how mu
     date: "2026-08-20",
     featured: false,
     metaDescription: "Supply chain solutions for textile importers and exporters via Mundra FTWZ — seasonal inventory, multi-supplier consolidation, and re-export flexibility.",
-    thumbnail: airSeaImg,
+    thumbnail: cbmImg,
     imageAlt: "Textile bales and fabric rolls stored in a warehouse ready for distribution",
     keywords: [
       "textile supply chain FTWZ",
@@ -1812,7 +1812,7 @@ For a textile importer, the most useful question may not be "where can the goods
     date: "2026-08-20",
     featured: false,
     metaDescription: "Customs clearance for auto component imports near Chennai and Sriperumbudur — HS classification, CKD/SKD documentation, and valuation for auto parts importers.",
-    thumbnail: airSeaImg,
+    thumbnail: cbmImg,
     imageAlt: "Automotive components and parts being inspected and documented at a customs warehouse",
     keywords: [
       "customs clearance auto components India",
@@ -1959,7 +1959,7 @@ None of these checks is particularly complicated. The benefit comes from doing t
     date: "2026-08-20",
     featured: false,
     metaDescription: "How the FTWZ supply chain model works for first-time importers — inventory timing, working capital, consolidation, customs clearance, and re-export flexibility.",
-    thumbnail: airSeaImg,
+    thumbnail: cbmImg,
     imageAlt: "Warehouse inventory management with imported goods staged for distribution",
     keywords: [
       "FTWZ supply chain guide",
@@ -2245,7 +2245,7 @@ The importer can collect the technical information available from the manufactur
     date: "2026-08-20",
     featured: false,
     metaDescription: "Coastal shipping vs road freight for high-volume importers in India — full cost comparison, transit time trade-offs, and how FTWZ warehousing fits a multimodal supply chain.",
-    thumbnail: airSeaImg,
+    thumbnail: cbmImg,
     imageAlt: "Cargo vessel and trucks at an Indian port handling coastal shipping freight",
     keywords: [
       "coastal shipping vs road freight",
@@ -2385,7 +2385,7 @@ The best transportation model is not necessarily the one with the lowest individ
     date: "2026-08-20",
     featured: false,
     metaDescription: "Project cargo logistics for power and renewable energy equipment imports — port handling, customs clearance, oversized cargo routing, and FTWZ warehousing for project schedules.",
-    thumbnail: airSeaImg,
+    thumbnail: cbmImg,
     imageAlt: "Heavy transformer and renewable energy equipment being loaded for project cargo transport",
     keywords: [
       "project cargo logistics India",
@@ -2511,6 +2511,298 @@ In project logistics, successful delivery is not just about getting the equipmen
       {
         question: "Can an FTWZ be used for project cargo?",
         answer: "For eligible imported goods, an FTWZ can be considered where equipment needs to be stored before domestic clearance or onward movement, subject to the applicable customs framework."
+      }
+    ]
+  },
+  {
+    slug: "ftwz-customs-clearance-vs-standard-port-clearance-comparison",
+    title: "FTWZ-Based Customs Clearance vs Standard Port Clearance: A Practical Comparison",
+    excerpt: "When immediate domestic clearance makes sense, and when holding eligible goods in an FTWZ gives an importer more control over timing, inventory, and re-export options.",
+    category: "FTWZ",
+    readTime: "12 min read",
+    date: "2026-08-20",
+    featured: false,
+    metaDescription: "FTWZ-based customs clearance vs standard port clearance compared — timing, inventory flexibility, working capital, and re-export considerations for importers.",
+    thumbnail: dutyImg,
+    imageAlt: "Cargo containers at a customs-controlled warehouse facility awaiting clearance",
+    keywords: [
+      "FTWZ vs port clearance",
+      "customs clearance comparison India",
+      "FTWZ customs framework",
+      "standard port clearance India",
+      "FTWZ inventory flexibility",
+      "customs clearance"
+    ],
+    intro: `When an imported shipment reaches an Indian port, the first thought is usually simple: get it cleared and move it out. That makes sense when the goods are already needed by a customer, a factory or a project site.
+
+But what happens when they are not needed immediately? A company might import a large quantity because the supplier requires a minimum order. A manufacturer might receive components several weeks before they're needed. An international trader may not yet know which customer will take the inventory. Some goods may eventually be re-exported.
+
+In these situations, immediately moving every shipment into the domestic market may not always be the most suitable approach. This is where businesses often start looking at an FTWZ — a Free Trade Warehousing Zone that provides a customs-controlled environment for eligible imported goods and can give businesses another way to manage inventory before it moves into the domestic market or follows another permitted route.`,
+    sections: [
+      {
+        heading: "How Standard Port Clearance Works",
+        content: [
+          { text: "The conventional import model is fairly familiar. A shipment arrives at an Indian port, the importer submits the required documents and completes the applicable " },
+          { text: "customs formalities", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", and once the shipment is cleared and applicable duties are dealt with, the goods are released for domestic use.\n\nFor many importers, this is exactly what they need. If a manufacturer is waiting for a machine, there may be no reason to keep that machine in storage after it reaches India. Standard customs clearance is not a problem that needs to be replaced — it works perfectly well when the business needs the goods immediately. The situation changes when the goods arrive before the business is ready to use them." }
+        ]
+      },
+      {
+        heading: "What Changes With an FTWZ?",
+        content: [
+          { text: "An " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " provides a different way of managing eligible imported goods. Instead of treating the arrival of a container at an Indian port as the point at which the inventory must immediately enter the domestic supply chain, the goods can be moved into the FTWZ under the applicable customs framework — creating a separation between import arrival and domestic utilisation.\n\nImagine an importer brings in 1,000 units of a product. Only 200 are required immediately, another 300 will be needed over the next month, and the rest may be required later or could potentially be re-exported. For eligible goods, an FTWZ can provide the option to hold that inventory in a customs-controlled environment rather than immediately treating the entire shipment as domestic inventory." }
+        ]
+      },
+      {
+        heading: "The Biggest Difference Is Timing",
+        content: `The easiest way to understand the difference is to look at when the goods enter the domestic supply chain. With conventional port clearance, the goods are cleared for domestic use and then move into the domestic logistics network. With an FTWZ model, eligible goods can be stored and managed within the FTWZ before the relevant domestic clearance or onward movement takes place.
+
+This matters because international purchasing and domestic demand don't always move at the same speed. A supplier may want to ship a full container while the buyer only needs part of it immediately. A vessel may arrive earlier than expected, or a project may be delayed. The goods have still arrived — the business simply isn't ready for them yet. An FTWZ can provide a way to manage that gap.`
+      },
+      {
+        heading: "When Standard Clearance Is Still the Better Choice",
+        content: `It's easy to assume an FTWZ is automatically more efficient. That's not the case. If an importer needs the goods immediately, adding another storage stage may not make sense.
+
+Suppose a company imports a machine specifically for a factory expansion, the machine arrives in Chennai, and the project team is ready to receive it. In that situation, the most practical route is simply port → customs clearance → factory. There's little reason to hold the machine somewhere else if it's ready to move. The decision should start with the business requirement, not with the question of whether an FTWZ is available.`
+      },
+      {
+        heading: "When an FTWZ Starts Making More Sense",
+        content: `An FTWZ becomes more interesting when there's a gap between the arrival of the goods and their actual requirement. A company may purchase in bulk to get better supplier pricing. A manufacturer may import components ahead of its production schedule. A trader may need to maintain inventory for multiple customers. A project company may receive equipment months before the site is ready. There may also be situations where some of the goods are intended for re-export.
+
+In these cases, flexibility becomes more important than simply getting the container out of the port as quickly as possible.`
+      },
+      {
+        heading: "What About Customs Duty?",
+        content: `Customs duty is one of the areas that often attracts attention when businesses compare the two models. In a conventional import, applicable customs duties are generally dealt with when the goods enter domestic circulation. Under an FTWZ structure, eligible imported goods can remain within the customs-controlled environment before the relevant domestic clearance takes place.
+
+This can have a working-capital benefit, because the business doesn't necessarily have to treat the entire shipment as domestic inventory at the same point in time. However, it's important not to describe this as simply "saving customs duty" — an FTWZ does not automatically eliminate customs duty. The eventual treatment depends on what happens to the goods and the applicable customs provisions. The more accurate way to look at it is duty timing and inventory management.`
+      },
+      {
+        heading: "An FTWZ Is Not Just Another Warehouse",
+        content: [
+          { text: "A conventional warehouse primarily provides storage and handling. An FTWZ also operates within a specific customs framework, governed by " },
+          { text: "India's SEZ Act and Rules", href: "https://sezindia.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". That means businesses considering an FTWZ need to look beyond warehouse capacity — they need to understand how the facility handles customs procedures, inventory records, cargo receipt, permitted activities, domestic clearance, re-export, movement of goods, documentation, and applicable duties and taxes.\n\nThe physical warehouse is only one part of the solution. The customs and operational structure around it is equally important." }
+        ]
+      },
+      {
+        heading: "Re-Export Is Another Important Consideration",
+        content: `Not every shipment entering India is necessarily going to an Indian customer. A conventional domestic clearance route may not be the most suitable structure when the goods are ultimately intended to leave India again.
+
+For eligible goods and transactions, an FTWZ can provide a customs-controlled environment for managing inventory before re-export — particularly relevant for companies using India as a regional distribution or logistics base. The advantage is flexibility: inventory can be positioned closer to the market without necessarily treating every item as domestic inventory immediately.`
+      },
+      {
+        heading: "Comparing the Two Models",
+        content: `The difference can be broadly summarised across a few factors. On main purpose, standard port clearance moves goods into domestic circulation, while an FTWZ-based model manages eligible imported goods within the FTWZ framework. On timing, standard clearance generally means goods are cleared for domestic use right after customs processing, while an FTWZ model allows domestic clearance to be aligned with later requirements, subject to applicable rules.
+
+On inventory flexibility, standard clearance offers limited flexibility once goods enter domestic circulation, while an FTWZ offers greater flexibility for eligible goods. On re-export, standard clearance follows applicable export procedures, while an FTWZ can be useful for eligible inventory intended for re-export. On working capital, standard clearance means applicable duties are dealt with during domestic import clearance, while an FTWZ model can potentially defer that while eligible goods remain within the framework.
+
+On storage, standard clearance uses a domestic warehouse after clearance, while an FTWZ uses a customs-controlled environment. Standard clearance is best suited for immediate domestic requirements, while an FTWZ suits inventory that may be required later, or certain international distribution and re-export models. This is a simplified comparison — the actual treatment depends on the goods, transaction structure and regulations applicable at the time.`
+      },
+      {
+        heading: "How Should an Importer Decide?",
+        content: [
+          { text: "The decision becomes much easier with a few practical questions: When does the business actually need the goods — if immediately, standard " },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " may be the obvious choice. How long might the inventory remain unused — if likely weeks or months, an FTWZ may be worth evaluating. Is the inventory being held for multiple customers? Could some of the goods be re-exported? Are there permitted activities that need to be carried out before final delivery? And how important is working capital for this particular business?\n\nThese questions usually reveal more than simply comparing warehouse rates." }
+        ],
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+      },
+      {
+        heading: "Don't Choose an FTWZ Just Because It Sounds Better",
+        content: [
+          { text: "An FTWZ is not a magic solution for every importer. If goods are arriving today and need to reach a domestic customer tomorrow, the simplest route may be the best one. If goods are arriving months before they're needed, the business may benefit from having another option — the same applies to international businesses managing inventory across " },
+          { text: "multiple trade locations", kw: true, href: "/locations" },
+          { text: ".\n\nThe right question is not \"is an FTWZ better than normal customs clearance?\" It's \"which model fits the way this particular business buys, stores and sells its goods?\" That's a much more useful question." }
+        ]
+      },
+      {
+        heading: "The Role of the Logistics Partner",
+        content: [
+          { text: "The choice between standard clearance and FTWZ is not only a customs decision — it's also an operational decision. A business may need one partner to coordinate cargo receipt, " },
+          { text: "customs processes", href: "https://www.icegate.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", inventory, storage, domestic clearance and transportation, especially when dealing with multiple shipments or suppliers.\n\nThe logistics partner should understand both the physical movement of the cargo and the customs framework governing it. That combination can make the difference between an FTWZ being genuinely useful and simply becoming another storage location." }
+        ]
+      },
+      {
+        heading: "Final Thoughts",
+        content: `Customs clearance is often discussed as though it's simply a hurdle between a ship and a truck. For businesses managing international inventory, it's much more than that — the way goods are cleared and stored can affect working capital, inventory planning, re-export options and the overall efficiency of the supply chain.
+
+Standard port clearance remains the right solution for many shipments. When goods are required immediately, there may be no reason to do anything differently. But when there's a gap between when goods arrive and when they're actually needed, an FTWZ can provide another option — without removing customs requirements, and without automatically making every import cheaper.
+
+A company importing machinery for immediate installation may prefer direct customs clearance and delivery. A manufacturer importing components for several months of production may find an FTWZ worth evaluating. The important thing is to look at the entire journey — from supplier to port, from customs to warehouse, and from inventory to the final customer.
+
+Astromar Logistics Pvt. Ltd. provides FTWZ, customs clearance, warehousing and supply chain solutions for businesses managing international cargo across major Indian trade locations.`
+      }
+    ],
+    faqs: [
+      {
+        question: "Does an FTWZ eliminate customs duty on imported goods?",
+        answer: "No. An FTWZ does not automatically eliminate customs duty. What it can provide, for eligible goods, is flexibility in the timing of domestic clearance, which can have working-capital benefits. The eventual duty treatment still depends on what happens to the goods and the applicable customs provisions."
+      },
+      {
+        question: "Is an FTWZ always a better option than standard port clearance?",
+        answer: "No. When goods are needed immediately, standard port clearance is often the simpler and more direct route. An FTWZ tends to make more sense when there's a genuine gap between when goods arrive and when they're actually required."
+      },
+      {
+        question: "Can goods held in an FTWZ be re-exported instead of entering the domestic market?",
+        answer: "For eligible transactions, an FTWZ can provide a customs-controlled environment for managing inventory before re-export, which can be useful for businesses using India as a regional distribution base. The specific process depends on the transaction and applicable regulations."
+      },
+      {
+        question: "Is an FTWZ the same as a regular warehouse?",
+        answer: "No. A conventional warehouse primarily provides storage and handling, while an FTWZ also operates within a specific customs framework covering inventory records, permitted activities, domestic clearance and re-export procedures."
+      }
+    ]
+  },
+  {
+    slug: "coastal-shipping-ftwz-warehousing-multimodal-supply-chain",
+    title: "Combining Coastal Shipping and FTWZ Warehousing: A Multimodal Supply Chain Model",
+    excerpt: "How pairing coastal shipping for long-distance movement with FTWZ warehousing near the destination market creates a more flexible supply chain than relying on road transport alone.",
+    category: "FTWZ",
+    readTime: "13 min read",
+    date: "2026-08-20",
+    featured: false,
+    metaDescription: "Combining coastal shipping and FTWZ warehousing for a multimodal supply chain — when it works, how it compares to road freight, and how inventory planning fits in.",
+    thumbnail: cbmImg,
+    imageAlt: "Cargo ship and warehouse facility connected by road transport in a multimodal logistics network",
+    keywords: [
+      "coastal shipping FTWZ combination",
+      "multimodal supply chain India",
+      "coastal shipping warehousing",
+      "FTWZ inventory buffer",
+      "coastal shipping vs road transport",
+      "multimodal logistics India"
+    ],
+    intro: `When a company needs to move a large quantity of cargo from one part of India to another, the first option that usually comes to mind is a truck. It's easy to understand why — trucks are flexible, they can pick up cargo from almost anywhere, and they can deliver directly to a factory, warehouse or customer.
+
+But when the distance is long and the cargo is heavy or available in large volumes, road transport isn't always the most practical answer. This is where coastal shipping becomes interesting — and where a further question arises: what happens after the cargo reaches the destination port?
+
+Not every shipment needs to go directly from the port to a factory or customer on the same day. Sometimes the business needs to hold the cargo, distribute it gradually, consolidate different shipments or wait for the customer to be ready. This is where FTWZ warehousing can become part of the picture. The basic model can look like: Port → Coastal Shipping → Destination Port → FTWZ → Factory or Customer.`,
+    sections: [
+      {
+        heading: "Why Businesses Are Looking Beyond Road Transport",
+        content: `Road transport will continue to be an important part of India's logistics network. The issue isn't that road transport is bad — it's that moving large volumes over long distances can become expensive and difficult to manage. Fuel costs, tolls, vehicle availability, traffic, road conditions and driver availability can all affect the final cost and delivery schedule.
+
+For a company moving a few pallets, these issues may not be particularly significant. For a company moving hundreds or thousands of tonnes, they become much more important — and that's where coastal shipping can offer another option, using road transport for the shorter inland legs and sea transport for the longer coastal movement.`
+      },
+      {
+        heading: "What Exactly Is Coastal Shipping?",
+        content: [
+          { text: "Coastal shipping is the movement of cargo between Indian ports by sea, supported nationally through initiatives such as the " },
+          { text: "Sagarmala Programme", href: "https://sagarmala.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". The cargo isn't being transported internationally — it's moving from one domestic port to another. For certain commodities, this can be attractive because a vessel can carry a much larger quantity than an individual truck.\n\nSteel, minerals, industrial raw materials, construction materials and other heavy or bulk cargo can potentially be suitable, depending on the route and available services. However, coastal shipping is not automatically cheaper for every shipment — volume, distance, port charges, handling requirements, vessel schedule and inland transportation all have to be considered." }
+        ]
+      },
+      {
+        heading: "Where FTWZ Warehousing Comes In",
+        content: [
+          { text: "Coastal shipping takes care of the long-distance movement. " },
+          { text: "FTWZ warehousing", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: " can help with what happens after the cargo arrives.\n\nImagine a company moving a large quantity of material from a western Indian port to customers in southern India. The customers may not all need the material at the same time — one may require 100 tonnes this month, another 200 tonnes next month, the rest later. Sending the entire shipment directly to individual customers may not be the most efficient way to manage inventory. For eligible imported goods, an FTWZ can offer a customs-controlled environment where the inventory can be managed before the relevant domestic clearance or onward movement.\n\nThe two parts solve different problems: coastal shipping answers how a large quantity of cargo can be moved between coastal locations efficiently, while FTWZ warehousing addresses how eligible inventory can be held and managed after it reaches the destination region. Put together, the supply chain becomes more flexible." }
+        ],
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+      },
+      {
+        heading: "A Simple Example",
+        content: `Consider an importer bringing industrial material into India through a western port, while the company's customers are located in southern India. One approach: Origin Port → Coastal Vessel → Southern Port → FTWZ / Warehouse → Customers.
+
+The long-distance portion is handled by sea. The cargo is then stored or managed closer to the customer base. Final delivery takes place by road. This doesn't mean the FTWZ model will always be cheaper — it means the business has another supply chain option to evaluate, and sometimes flexibility is just as important as the headline freight rate.`
+      },
+      {
+        heading: "Not Every Cargo Is Suitable",
+        content: `Coastal shipping shouldn't be treated as the default answer for every shipment. A company should consider: how heavy is the cargo, how much volume is involved, how urgently is it required, can the shipment be planned in advance, is there a suitable coastal route, and how much inventory needs to be stored after arrival.
+
+Transit time matters as much as cost. A truck can normally be arranged around the customer's requirement, while a vessel operates on a schedule, with port handling before and after the sea movement. For an urgent shipment, those additional steps can make coastal shipping less attractive. But many industrial supply chains are planned weeks or months in advance — when a factory knows how much material it will require next month, the logistics team has more room to plan around a coastal schedule.`
+      },
+      {
+        heading: "Inventory Planning Makes the Model Stronger",
+        content: [
+          { text: "Suppose a company consumes 500 tonnes of a particular raw material every month. Instead of arranging small road movements whenever stock becomes low, the company could plan larger replenishment movements as part of its wider " },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: " strategy. The material can move by coastal shipping and then be positioned at a suitable warehouse or FTWZ near the destination market, with the factory or customers receiving smaller quantities as needed.\n\nThis creates a buffer between the supply chain and the production schedule — the company doesn't have to make every transportation decision at the last minute." }
+        ]
+      },
+      {
+        heading: "FTWZ Is Not Simply a Storage Facility",
+        content: [
+          { text: "An " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " is not simply a regular warehouse with a different sign outside — it operates under a specific customs framework set out in " },
+          { text: "India's SEZ Act and Rules", href: "https://sezindia.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". For eligible imported goods, the facility can provide a customs-controlled environment for storage and permitted activities, which means the business needs to consider more than warehouse space — customs procedures, inventory controls, documentation and permitted movements all matter, and depend on the goods and transaction." }
+        ]
+      },
+      {
+        heading: "The Working-Capital Consideration",
+        content: [
+          { text: "Inventory can tie up a significant amount of money, especially when imported goods are high in value. For eligible goods, an FTWZ structure may allow inventory to remain within the applicable customs-controlled environment before the relevant " },
+          { text: "domestic clearance", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: " takes place, giving businesses more flexibility around the timing of that financial outflow.\n\nThis shouldn't be presented as simply \"avoiding duty\" — the eventual customs treatment still matters. The benefit is more accurately understood as flexibility in inventory and duty timing, which can be meaningful for a business holding significant quantities of imported goods." }
+        ]
+      },
+      {
+        heading: "Coastal Shipping Does Not Eliminate Trucks",
+        content: `Coastal shipping is not a replacement for road transport — it usually works alongside it. A typical movement could look like: Factory → Truck → Origin Port → Coastal Vessel → Destination Port → Truck → FTWZ → Customer. The truck handles the shorter inland movement, the vessel handles the longer coastal leg, the FTWZ provides the inventory buffer, and another truck eventually takes the cargo to the customer.
+
+Companies dealing with multiple suppliers may also have an opportunity to consolidate cargo, combining compatible shipments into larger movements once they reach the destination region. But consolidation has to be planned carefully — if an urgent shipment is held back waiting for another, the supposed efficiency can turn into a delay.`
+      },
+      {
+        heading: "Choosing the Right Destination",
+        content: `The location of the warehouse matters almost as much as the transportation route. If the coastal shipment arrives at a port that's convenient but the warehouse is hundreds of kilometres from the customer base, some of the advantage can disappear.
+
+Businesses should look at the full journey: where the vessel arrives, how far the warehouse is from the port, where the major customers and factories are, and how easy it is to arrange the final road movement. A well-positioned FTWZ can become a useful distribution point — the wrong location can simply add another leg to the journey.`
+      },
+      {
+        heading: "Industrial Cargo and Imported Goods Can Be a Strong Fit",
+        content: `Heavy industrial cargo is one area where the combination deserves attention — steel products, industrial raw materials, metals, machinery and other large-volume cargo. Moving these products long distances entirely by road can be expensive; coastal shipping can handle the long-distance portion while the destination warehouse manages inventory and final distribution.
+
+The model can also be relevant to importers. A business may have a strong international shipping connection through one Indian port while most of its customers are located elsewhere. Instead of moving everything directly by road, coastal shipping can be evaluated for the domestic movement, with an FTWZ used as part of the inventory strategy when goods aren't required immediately after arrival.`
+      },
+      {
+        heading: "Comparing Coastal Shipping With Direct Road Movement",
+        content: `There's no simple answer to which option is cheaper — a meaningful comparison should include the full cost. For road transport, that includes freight, fuel-related costs, tolls, waiting time and vehicle availability. For coastal shipping, the business needs to consider origin port handling, coastal freight, destination port charges, loading and unloading, inland transportation, warehouse or FTWZ costs, and transit time.
+
+The comparison should also consider the value of inventory flexibility. A slightly higher logistics cost may still make commercial sense if it gives the company better inventory control or reduces dependence on long-distance road movement.`
+      },
+      {
+        heading: "When This Model Works Best (and When It Doesn't)",
+        content: `A coastal shipping and FTWZ model is generally worth evaluating when the shipment is relatively large, the cargo isn't extremely time-sensitive, the origin and destination are connected through a practical coastal route, demand can be forecast reasonably well, and the business is comfortable planning shipments ahead of time.
+
+There are also plenty of cases where direct road transport remains the better option — a small shipment doesn't justify complicated multimodal handling, an urgent shipment may need the flexibility of a truck, or a destination far from a suitable port may add too much inland transportation. Multimodal logistics is about having options, not forcing every shipment into the same model.`
+      },
+      {
+        heading: "The Real Benefit Is Flexibility",
+        content: `The biggest advantage of combining coastal shipping and FTWZ warehousing is not necessarily one particular cost saving — it's flexibility. The business can move large volumes by sea, hold eligible inventory closer to the destination market, distribute cargo gradually, and plan replenishment rather than constantly arrange urgent movements.
+
+Many companies still plan logistics shipment by shipment: a container arrives, a truck is arranged, the cargo is delivered, and the next shipment is handled the same way. That approach works when volumes are small. As volumes increase, it's worth stepping back and looking at the network as a whole — where suppliers are, where imports enter India, where customers are located, and which routes are used repeatedly.`
+      },
+      {
+        heading: "Final Thoughts",
+        content: `There's no single transport solution that works for every cargo movement in India. Road transport remains essential, coastal shipping can make sense for certain high-volume, long-distance movements, and warehousing becomes important when the timing of supply and demand doesn't match. For eligible imported goods, an FTWZ can provide another layer of flexibility within the applicable customs framework.
+
+The basic journey may look like: Origin → Port → Coastal Shipping → Destination Port → FTWZ → Customer. But the real value lies in what happens between those points — the business can move large quantities efficiently, position inventory closer to its customers, and release goods according to actual requirements, using both coastal shipping and road transport rather than choosing between them.
+
+Astromar Logistics Pvt. Ltd. provides coastal shipping, FTWZ warehousing, customs clearance and integrated supply chain solutions for businesses moving cargo across India.`
+      }
+    ],
+    faqs: [
+      {
+        question: "Does combining coastal shipping with FTWZ warehousing always reduce logistics costs?",
+        answer: "Not automatically. The full cost — port handling, vessel freight, inland transport and warehousing — needs to be compared against direct road movement. The benefit often comes from inventory flexibility as much as cost savings."
+      },
+      {
+        question: "Is this multimodal model suitable for urgent shipments?",
+        answer: "Generally not. Coastal shipping involves a vessel schedule and additional port handling, which suits planned, non-urgent movements better than time-sensitive deliveries where road transport's flexibility is usually preferable."
+      },
+      {
+        question: "Can imported cargo use this coastal shipping and FTWZ model, or only domestic goods?",
+        answer: "It can be relevant to importers too. A business may bring goods through one Indian port for international connectivity, then use coastal shipping for the onward domestic movement, with an FTWZ managing eligible inventory near the destination market."
+      },
+      {
+        question: "Does using an FTWZ in this model eliminate customs duty?",
+        answer: "No. An FTWZ can provide flexibility in the timing of domestic clearance for eligible goods, but it doesn't automatically eliminate customs duty. The eventual treatment still depends on the applicable customs provisions."
       }
     ]
   },

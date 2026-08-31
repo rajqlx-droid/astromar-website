@@ -159,7 +159,7 @@ const CoastalShippingClient = () => {
             <ScrollReveal delay={0.1}>
               <div className="relative rounded-xl overflow-hidden h-64 shadow-md w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800&q=80"
                   alt="Coastal shipping vessels"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
@@ -174,7 +174,7 @@ const CoastalShippingClient = () => {
             <ScrollReveal>
               <div className="relative rounded-xl overflow-hidden h-64 shadow-md w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1784914184990-aaaf0e6c81fe?w=800&q=80"
                   alt="Port operations and cargo"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
