@@ -193,6 +193,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Kochi (Vallarpadam ICTT)",
         "description": "Duty-free FTWZ warehousing at Vallarpadam ICTT — India's first dedicated transshipment terminal in Cochin SEZ.",
         "url": "https://www.astromarfreezone.com/locations/kochi",
+        "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -403,6 +404,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Vizag (VSEZ Duvvada)",
         "description": "Duty-free FTWZ warehousing at Visakhapatnam SEZ (VSEZ) adjacent to East Coast India's largest commercial port.",
         "url": "https://www.astromarfreezone.com/locations/vizag",
+        "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -618,6 +620,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — Free Trade Warehouse Zone Mumbai (Panvel)",
         "description": "FTWZ warehouse at Panvel offering duty-free storage, GST deferral, and free trade zone benefits for automotive, electronics, FMCG, and chemicals sectors.",
         "url": "https://www.astromarfreezone.com/locations/mumbai-panvel",
+        "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -832,6 +835,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Mumbai (JNPA Nhava Sheva)",
         "description": "On-port FTWZ at JNPA Nhava Sheva offering duty-free warehousing inside India's busiest container port. Zero transit time for re-export, consolidation, and just-in-time supply chains.",
         "url": "https://www.astromarfreezone.com/locations/mumbai-jnpa",
+        "image": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -1051,6 +1055,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — Chennai Free Trade Zone (Sriperumbudur)",
         "description": "FTWZ warehouse at Sriperumbudur offering duty-free storage, GST deferral, and free trade zone benefits for electronics, automotive, and pharma sectors.",
         "url": "https://www.astromarfreezone.com/locations/chennai-sriperumbudur",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -1303,6 +1308,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — Free Trade Warehouse Chennai (Vallur)",
         "description": "Port-adjacent FTWZ and customs bonded warehouse at Vallur, Ponneri offering duty-free storage, GST deferral, and free trade zone benefits for bulk cargo, chemicals, LNG, and energy sector imports.",
         "url": "https://www.astromarfreezone.com/locations/chennai-vallur",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -1550,6 +1556,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Delhi NCR (Khurja DFC)",
         "description": "FTWZ warehousing at Khurja on the Western DFC — North India's inland gateway for Delhi NCR, Haryana, Punjab, UP, and Rajasthan markets.",
         "url": "https://www.astromarfreezone.com/locations/delhi-khurja",
+        "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -1770,6 +1777,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Bangalore (Devanahalli Aerospace SEZ)",
         "description": "FTWZ warehousing in Devanahalli Aerospace SEZ — 5 km from Kempegowda Airport. Specialised for aerospace, defence, electronics, and high-value cargo.",
         "url": "https://www.astromarfreezone.com/locations/bengaluru",
+        "image": "https://images.unsplash.com/photo-1565793979038-b5b6d2bda985?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -1990,6 +1998,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Dahej (PCPIR SEZ-1)",
         "description": "FTWZ warehousing within Dahej SEZ-1 PCPIR cluster — specialised for chemicals, petrochemicals, LNG, polymers, and industrial gases.",
         "url": "https://www.astromarfreezone.com/locations/dahej",
+        "image": "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -2213,6 +2222,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ Mundra (APSEZ)",
         "description": "FTWZ warehousing within Adani Ports APSEZ — India's largest commercial port. Multi-cargo capabilities for Middle East, Africa, Europe, and Americas trade.",
         "url": "https://www.astromarfreezone.com/locations/mundra",
+        "image": "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
