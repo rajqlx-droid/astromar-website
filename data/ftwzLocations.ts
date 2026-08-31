@@ -934,28 +934,28 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       ],
       aboutParagraphs: [
         [
-          { text: "Astromar's Sriperumbudur facility is a Government-notified " },
+          { text: "Sriperumbudur sits at the centre of South India's largest electronics and automotive manufacturing belt, and Astromar's facility here is notified as a Government-recognised " },
           { text: "free trade warehousing zone in chennai", kw: true },
-          { text: ", operating under the SEZ Act, 2005. Strategically located in Kancheepuram district along the NH 48 corridor — just 42 km from Chennai International Airport and 52 km from Chennai Port — the facility serves as a critical logistics gateway for South India's largest industrial cluster." },
+          { text: " under the SEZ Act, 2005, subject to applicable regulations governing FTWZ operations. The site sits directly on the NH 48 corridor, 42 km from Chennai International Airport and 52 km from Chennai Port, putting component importers within reach of both gateways from a single location." },
         ],
         [
-          { text: "The Sriperumbudur belt is home to Foxconn, Samsung, Dell, Hyundai, BMW, and over 200 Tier-1 automotive and electronics suppliers. Our FTWZ provides these manufacturers with " },
+          { text: "More than 200 Tier-1 electronics and auto-component suppliers operate within this belt, feeding assembly lines at Foxconn, Samsung, Dell, Hyundai, and BMW on strict just-in-time schedules. Astromar's " },
           { text: "duty-deferred storage", kw: true, href: "/blogs/customs-duty-deferment-benefits" },
-          { text: " for imported components, sub-assemblies, and capital equipment — eliminating the upfront customs duty burden and improving working capital efficiency." },
+          { text: " lets these manufacturers hold imported components and sub-assemblies at the zone without paying customs duty upfront, so working capital isn't tied up in parts sitting on a shelf awaiting a production call-off." },
         ],
         [
-          { text: "Beyond electronics and automotive, the facility supports pharmaceutical importers, high-value engineering goods, and renewable energy equipment. Operating 24/7 with " },
+          { text: "Because a shortage on a JIT line is measured in hours rather than days, the facility runs " },
           { text: "on-site customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
-          { text: ", single-window approvals, and value-added services including labelling, kitting, and re-export packaging, the Sriperumbudur Astromar facility delivers the " },
+          { text: " around the clock, with the 42 km run to Chennai International Airport keeping urgent electronics and auto-parts air freight within reach for emergency replenishment. Permitted zone activities — repacking, relabelling, sorting, kitting, quality inspection, consolidation, and CKD/SKD assembly — let importers stage components exactly as the line needs them, before drawing on the " },
           { text: "full FTWZ benefit stack", kw: true, href: "/free-trade-zone" },
-          { text: ": zero customs duty on stored goods, 100% GST deferral, no income tax on re-export profits, and seamless inter-zone transfers across our 8 other FTWZ locations in India." },
+          { text: ": zero customs duty on stored goods, GST deferral, and income tax relief on qualifying re-export profits, subject to applicable regulations." },
         ],
         [
-          { text: "For importers seeking " },
+          { text: "For component-sourcing teams comparing options, Sriperumbudur combines the reach of a " },
           { text: "bonded warehouse in chennai", kw: true },
-          { text: " services with the added advantages of an SEZ-notified zone — or a fully-licensed " },
+          { text: " with the deeper benefit stack of an SEZ-notified " },
           { text: "free trade warehouse zone in chennai", kw: true },
-          { text: " — Sriperumbudur combines the operational efficiency of an industrial-grade warehouse with the financial benefits of a free trade zone, making it the preferred choice for businesses scaling their South India operations." },
+          { text: " — inventory can stay in the zone for up to 3 years, extendable to 5 years with special permission, well beyond what a standalone bonded facility allows. That mix of manufacturing-cluster proximity, expressway access, and extended storage flexibility is why component-intensive importers scaling their South India operations choose this site." },
         ],
       ],
       servicesH2: [
@@ -968,35 +968,35 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       ],
       whyChooseBlocks: [
         {
-          title: "Strategic Location",
+          title: "On the Manufacturing Corridor",
           items: [
-            [{ text: "Located on NH 48 — the Chennai–Bengaluru manufacturing corridor" }],
-            [{ text: "42 km from Chennai International Airport for air cargo operations" }],
-            [{ text: "52 km from Chennai Port for ocean container movement" }],
-            [{ text: "Within 30 km of major electronics and auto OEM plants" }],
+            [{ text: "Sits directly on NH 48, the Chennai–Bengaluru corridor linking Sriperumbudur's OEM plants to the wider supply chain" }],
+            [{ text: "42 km from Chennai International Airport — close enough for same-day air freight on urgent component shortages" }],
+            [{ text: "52 km from Chennai Port for scheduled ocean container movement" }],
+            [{ text: "Within 30 km of the major electronics and automotive OEM plants the zone was built to serve" }],
           ],
         },
         {
-          title: "Financial Benefits",
+          title: "Cost Advantages for JIT Sourcing",
           items: [
             [
-              { text: "Operating from a " },
+              { text: "Holding components in this " },
               { text: "free trade zone in chennai", kw: true },
-              { text: " gives zero customs duty on goods stored in the FTWZ" },
+              { text: " keeps customs duty at zero until the parts actually leave the warehouse" },
             ],
-            [{ text: "100% GST deferral until goods exit the zone" }],
-            [{ text: "Service tax exemption on FTWZ operations" }],
-            [{ text: "Income tax exemption on re-export profits for the first 5 years" }],
+            [{ text: "100% GST deferral on stored inventory until it exits the zone" }],
+            [{ text: "Service tax exemption on FTWZ operations, trimming the landed cost of every component batch" }],
+            [{ text: "Income tax exemption on re-export profits for the first 5 years, subject to applicable regulations" }],
           ],
         },
         {
-          title: "Operational Advantages",
+          title: "Built for Component-Sourcing Operations",
           items: [
-            [{ text: "24/7 operations with on-site customs officer" }],
-            [{ text: "Single window clearance for imports and re-exports" }],
-            [{ text: "Bonded transport to and from gateway ports" }],
+            [{ text: "24/7 operations with an on-site customs officer, so component releases aren't held up by clearance office hours" }],
+            [{ text: "Single-window clearance covering both imports and re-exports" }],
+            [{ text: "Bonded transport linking the facility to Chennai Port and Chennai International Airport" }],
             [
-              { text: "Compared to a standard customs bonded warehouse in chennai, the FTWZ offers deeper financial benefits, storage for up to 3 years (extendable to 5 years with special permission), and broader permitted activities" },
+              { text: "Broader permitted activities than a standard bonded warehouse in chennai — repacking, relabelling, sorting, kitting, quality inspection, consolidation, and CKD/SKD assembly — with storage available for up to 3 years, extendable to 5 years with special permission" },
             ],
           ],
         },
@@ -1008,40 +1008,40 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       faqItems: [
         {
           question: [
-            { text: "What is a " },
+            { text: "Astromar's Sriperumbudur site is called a " },
             { text: "chennai free trade zone", kw: true },
-            { text: " and how does Sriperumbudur qualify?" },
+            { text: " — what does that mean for an importer?" },
           ],
           answer: [
-            { text: "A Chennai free trade zone is a government-notified area where imported goods can be stored without payment of customs duty until they leave the zone. Astromar's Sriperumbudur facility is notified under the SEZ Act, 2005, making it a fully-operational FTWZ with all statutory benefits. Goods can be stored, labelled, kitted, repackaged, or re-exported without triggering customs duty or GST liabilities." },
+            { text: "It means imported goods can sit in the zone without customs duty being charged until they leave it. The facility is notified under the SEZ Act, 2005, subject to applicable regulations governing FTWZ status, and inside it importers can repack, relabel, sort, kit, inspect for quality, consolidate shipments, or run CKD/SKD assembly on components without triggering duty or GST liability." },
           ],
         },
         {
           question: [
-            { text: "How does an " },
+            { text: "Where does the cost saving actually come from in an " },
             { text: "FTWZ in chennai", kw: true },
-            { text: " save money for importers?" },
+            { text: " like this one?" },
           ],
           answer: [
-            { text: "An FTWZ in Chennai saves money in four ways: (1) zero customs duty until goods leave the zone, freeing up working capital; (2) 100% GST deferral on imports; (3) no duty on goods that are re-exported; (4) income tax exemption on profits from re-export activity for the first 5 years." },
+            { text: "Four places: duty stays at zero while goods are in the zone, freeing up cash that would otherwise be locked in customs payments; GST is deferred in full; goods that are re-exported never attract duty at all; and profit from re-export activity is exempt from income tax for the first five years, subject to applicable regulations." },
           ],
         },
         {
           question: [
-            { text: "What's the difference between Sriperumbudur FTWZ and a " },
+            { text: "Sriperumbudur already has plenty of " },
             { text: "bonded warehouse in chennai", kw: true },
-            { text: "?" },
+            { text: " options nearby — why go with the FTWZ instead?" },
           ],
           answer: [
-            { text: "A standard bonded warehouse in Chennai allows duty-deferred storage but is restricted in scope — typically 1-year storage limits and limited permitted activities. An FTWZ like Sriperumbudur offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities (including CKD/SKD assembly, repacking, relabelling, and other value addition), and stronger tax benefits under the SEZ Act, 2005." },
+            { text: "A standard bonded warehouse typically caps storage at one year and limits what you can do with goods while they're stored. Sriperumbudur's FTWZ allows storage for up to 3 years, extendable to 5 years with special permission, and permits value-addition work — repacking, relabelling, sorting, kitting, quality inspection, consolidation, and CKD/SKD assembly — that a plain bonded facility won't, on top of the tax benefits available under the SEZ Act, 2005." },
           ],
         },
         {
           question: [
-            { text: "Which industries benefit most from the Sriperumbudur FTWZ?" },
+            { text: "Which importers get the most out of the Sriperumbudur facility?" },
           ],
           answer: [
-            { text: "The Sriperumbudur FTWZ is optimised for: (a) electronics and IT hardware importers serving Foxconn, Samsung, Dell, and their supplier network; (b) automotive OEMs and Tier-1 component manufacturers near Hyundai, BMW, and Renault-Nissan plants; (c) pharmaceutical importers requiring cold-chain bonded storage; (d) renewable energy equipment importers serving Tamil Nadu's growing wind and solar sector." },
+            { text: "Electronics and IT hardware importers feeding Foxconn, Samsung, and Dell's supplier network; automotive OEMs and Tier-1 component makers supplying Hyundai, BMW, and Renault-Nissan; pharmaceutical importers needing bonded cold-chain storage; and renewable energy equipment importers serving Tamil Nadu's wind and solar sector." },
           ],
         },
       ],
@@ -1074,34 +1074,34 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What is a chennai free trade zone and how does Sriperumbudur qualify?",
+            "name": "Astromar's Sriperumbudur site is called a chennai free trade zone — what does that mean for an importer?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A Chennai free trade zone is a government-notified area where imported goods can be stored without payment of customs duty until they leave the zone. Astromar's Sriperumbudur facility is notified under the SEZ Act, 2005, making it a fully-operational FTWZ with all statutory benefits."
+              "text": "Imported goods can sit in the zone without customs duty being charged until they leave it. The facility is notified under the SEZ Act, 2005, and inside it importers can repack, relabel, sort, kit, inspect for quality, consolidate shipments, or run CKD/SKD assembly on components without triggering duty or GST liability."
             }
           },
           {
             "@type": "Question",
-            "name": "How does an FTWZ in chennai save money for importers?",
+            "name": "Where does the cost saving actually come from in an FTWZ in chennai like this one?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "An FTWZ in Chennai saves money through zero customs duty until goods leave the zone, 100% GST deferral, no duty on re-exported goods, and income tax exemption on re-export profits for the first 5 years."
+              "text": "Duty stays at zero while goods are in the zone, GST is deferred in full, re-exported goods never attract duty, and profit from re-export activity is exempt from income tax for the first five years, subject to applicable regulations."
             }
           },
           {
             "@type": "Question",
-            "name": "What's the difference between Sriperumbudur FTWZ and a bonded warehouse in chennai?",
+            "name": "Sriperumbudur already has plenty of bonded warehouse in chennai options nearby — why go with the FTWZ instead?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A standard bonded warehouse in Chennai allows duty-deferred storage but is restricted to 1-year storage limits and limited activities. An FTWZ like Sriperumbudur offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities including CKD/SKD assembly, repacking, relabelling, and other value addition, and stronger tax benefits under the SEZ Act, 2005."
+              "text": "A standard bonded warehouse typically caps storage at one year with limited permitted activities. Sriperumbudur's FTWZ allows storage for up to 3 years, extendable to 5 years with special permission, and permits repacking, relabelling, sorting, kitting, quality inspection, consolidation, and CKD/SKD assembly, plus the tax benefits under the SEZ Act, 2005."
             }
           },
           {
             "@type": "Question",
-            "name": "Which industries benefit most from the Sriperumbudur FTWZ?",
+            "name": "Which importers get the most out of the Sriperumbudur facility?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The Sriperumbudur FTWZ is optimised for electronics and IT hardware importers, automotive OEMs and Tier-1 component manufacturers, pharmaceutical importers requiring cold-chain bonded storage, and renewable energy equipment importers."
+              "text": "Electronics and IT hardware importers, automotive OEMs and Tier-1 component makers, pharmaceutical importers needing bonded cold-chain storage, and renewable energy equipment importers serving Tamil Nadu's wind and solar sector."
             }
           }
         ]
@@ -1188,28 +1188,28 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       ],
       aboutParagraphs: [
         [
-          { text: "Astromar's Vallur facility is a Government-notified " },
+          { text: "Vallur's advantage starts with geography: Astromar's Ponneri Taluk facility sits within a 35 km radius of three working ports — Kattupalli (Adani), Ennore (Kamarajar), and Chennai Port — a spread no other FTWZ site in Tamil Nadu matches. The zone is notified as a " },
           { text: "free trade warehousing zone in chennai", kw: true },
-          { text: ", operating as a fully-licensed bonded warehouse under the SEZ Act, 2005. Located in Ponneri Taluk of Tiruvallur district — at the heart of North Chennai's port and industrial corridor — the facility offers the rare advantage of access to three major ports within a 35 km radius: Kattupalli Port (Adani), Ennore (Kamarajar) Port, and Chennai Port." },
+          { text: " under the SEZ Act, 2005, and operates as a fully-licensed bonded facility, subject to applicable regulations governing FTWZ status." },
         ],
         [
-          { text: "The Vallur location is purpose-built for industries that depend on rapid port turnaround — bulk commodities, petrochemicals, LNG, fertilizers, coal, and industrial cargo. With Kattupalli Port just 15 km away, our facility offers the shortest port-to-warehouse transit time in Tamil Nadu, eliminating costly detention and demurrage charges that plague inland warehousing operations." },
+          { text: "Bulk commodities, petrochemicals, LNG-linked equipment, fertilizers, coal, and other industrial cargo move through this corridor in volumes that punish inland warehousing with detention and demurrage. At 15 km from Kattupalli Port, Vallur cuts that port-to-warehouse leg to the shortest of any Astromar site in the state, so containers clear the terminal and reach bonded storage before demurrage costs have a chance to build up." },
         ],
         [
-          { text: "As a fully-operational customs bonded warehouse in chennai, our Vallur facility provides " },
+          { text: "As a customs bonded warehouse in chennai, Vallur lets importers defer duty on goods bound for domestic sale or re-export through " },
           { text: "duty-deferred storage", kw: true, href: "/blogs/customs-duty-deferment-benefits" },
-          { text: " for imported goods, allowing businesses to defer customs duty until products are released for domestic sale or re-export. Combined with " },
+          { text: ", backed by " },
           { text: "on-site customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
-          { text: " and bonded transport from gateway ports, importers benefit from working capital efficiency and streamlined compliance under the " },
+          { text: " and bonded transport straight from the gateway ports. Together with the " },
           { text: "full FTWZ benefit stack", kw: true, href: "/free-trade-zone" },
-          { text: "." },
+          { text: " — zero customs duty on stored goods, GST deferral, and income tax relief on qualifying re-export profits — the setup trims the working capital otherwise tied up while cargo waits for onward movement, subject to applicable regulations." },
         ],
         [
-          { text: "Vallur serves North Chennai's manufacturing and energy cluster, including NTPC's thermal power station at Vallur, Chennai Petroleum Corporation, and the upcoming Sembcorp LNG terminal. As a leading " },
+          { text: "The facility sits inside North Chennai's energy and heavy-industry belt, close to NTPC's Vallur thermal station, Chennai Petroleum Corporation, and the Sembcorp LNG terminal under development nearby — which is why the ambient and climate-controlled zones here are built around chemical and bulk cargo rather than general merchandise. For importers who need a " },
           { text: "free trade warehouse zone in chennai", kw: true },
-          { text: " with ambient and climate-controlled storage zones, Astromar's Vallur facility delivers operational depth and regulatory flexibility unmatched in North Chennai — serving every business need for a versatile " },
+          { text: " matched to that cargo profile, or simply a " },
           { text: "bonded warehouse in chennai", kw: true },
-          { text: " under FTWZ-notified status." },
+          { text: " with port access built in, Vallur is designed around the traffic this corridor actually carries." },
         ],
       ],
       servicesH2: [
@@ -1222,35 +1222,35 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       ],
       whyChooseBlocks: [
         {
-          title: "Strategic Location",
+          title: "Positioned Between Three Ports",
           items: [
-            [{ text: "Adjacent to Kattupalli Port (15 km) — shortest port-to-warehouse transit in Tamil Nadu" }],
-            [{ text: "20 km from Ennore (Kamarajar) Port for bulk and LNG cargo" }],
-            [{ text: "35 km from Chennai Port via Ennore Expressway" }],
-            [{ text: "NH 16 (East Coast highway) 8 km from facility" }],
+            [{ text: "15 km from Kattupalli Port — the shortest port-to-warehouse run of any Astromar facility in Tamil Nadu" }],
+            [{ text: "20 km from Ennore (Kamarajar) Port, the region's dedicated bulk and LNG gateway" }],
+            [{ text: "35 km from Chennai Port via the Ennore Expressway" }],
+            [{ text: "NH 16, the East Coast highway, runs just 8 km from the facility" }],
           ],
         },
         {
-          title: "Industry Specialisation",
+          title: "Built for Bulk and Chemical Cargo",
           items: [
             [
-              { text: "Purpose-built for " },
+              { text: "Storage bays engineered for " },
               { text: "bulk cargo bonded warehouse in chennai", kw: true },
-              { text: " operations" },
+              { text: " operations, not general merchandise" },
             ],
-            [{ text: "Chemical, petrochemical, and LNG-grade storage with full safety compliance" }],
-            [{ text: "Adjacent to thermal power, fertilizer, and steel industrial clusters" }],
-            [{ text: "Energy sector cargo handling under FTWZ-notified status" }],
+            [{ text: "Chemical, petrochemical, and LNG-grade storage areas built to full safety-compliance standards" }],
+            [{ text: "Sits alongside North Chennai's thermal power, fertilizer, and steel industrial clusters" }],
+            [{ text: "Handles energy-sector cargo under FTWZ-notified status, subject to applicable regulations" }],
           ],
         },
         {
-          title: "Operational Advantages",
+          title: "Lower Detention and Demurrage",
           items: [
-            [{ text: "24/7 operations with dedicated customs officer" }],
-            [{ text: "Bonded transport from Kattupalli, Ennore, and Chennai Ports" }],
-            [{ text: "Single window clearance for imports and re-exports" }],
+            [{ text: "24/7 operations with a dedicated customs officer on site" }],
+            [{ text: "Bonded transport runs directly from Kattupalli, Ennore, and Chennai Ports" }],
+            [{ text: "Single-window clearance for both imports and re-exports" }],
             [
-              { text: "Compared to a standard customs bonded warehouse in chennai, the FTWZ offers storage for up to 3 years (extendable to 5 years with special permission) and deeper tax benefits" },
+              { text: "Storage available for up to 3 years, extendable to 5 years with special permission — well beyond a standard customs bonded warehouse in chennai, with deeper duty and tax benefits besides" },
             ],
           ],
         },
@@ -1262,38 +1262,38 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       faqItems: [
         {
           question: [
-            { text: "What is a " },
+            { text: "What actually makes Vallur count as a " },
             { text: "free trade warehouse in chennai", kw: true },
-            { text: " and how does Vallur qualify?" },
+            { text: ", rather than just a bonded facility near the ports?" },
           ],
           answer: [
-            { text: "A free trade warehouse in Chennai is a customs-licensed, Government-notified facility where imported goods can be stored without immediate payment of customs duty. Astromar's Vallur facility is both an FTWZ (Free Trade Warehousing Zone) and a customs-bonded operation, giving importers the combined benefits of duty deferment and wider statutory privileges under the SEZ Act, 2005. Stored goods can be re-exported, transferred between FTWZs, or cleared for domestic use without duty until release." },
+            { text: "Vallur holds dual status — it's notified as an FTWZ under the SEZ Act, 2005 and licensed as a customs bonded facility, subject to applicable regulations. That combination lets goods move in, get stored, re-exported, transferred to another FTWZ, or released for domestic sale, all without duty being charged until the point they actually leave the zone." },
           ],
         },
         {
           question: [
-            { text: "Why choose a port-adjacent customs bonded warehouse in chennai?" },
+            { text: "Does being 15 km from Kattupalli Port actually save money, or is that just marketing?" },
           ],
           answer: [
-            { text: "Port-adjacent bonded warehouses like Vallur (15 km from Kattupalli Port) deliver three critical advantages over inland warehouses: (1) sharply reduced port detention and demurrage costs by enabling immediate container drawback; (2) faster customs clearance because customs officers operate on-site; (3) lower transport and trucking costs for high-frequency import operations." },
+            { text: "It's a real, measurable saving. Containers clear the terminal and reach bonded storage fast enough to avoid the detention and demurrage charges that build up when cargo sits waiting for transport to an inland warehouse. On-site customs officers add to the saving by clearing shipments without the delay of routing paperwork elsewhere." },
           ],
         },
         {
           question: [
-            { text: "What types of cargo can be stored in the Vallur FTWZ?" },
+            { text: "What kind of cargo is Vallur actually set up to handle?" },
           ],
           answer: [
-            { text: "The Vallur facility handles a wide range of cargo categories under its FTWZ-notified status: containerized goods, bulk commodities (coal, iron ore, fertilizers), chemicals and petrochemicals, LNG-related equipment, automotive parts, steel and metals, and FMCG goods. The facility includes ambient, climate-controlled, and hazmat-compliant storage zones suitable for sensitive industrial cargo." },
+            { text: "Containerised goods, bulk commodities such as coal, iron ore, and fertilizers, chemicals and petrochemicals, LNG-related equipment, automotive parts, steel and metals, and FMCG goods. The facility has ambient, climate-controlled, and hazmat-compliant zones built for that mix, rather than general-purpose storage." },
           ],
         },
         {
           question: [
-            { text: "How does Vallur differ from Astromar's Sriperumbudur " },
+            { text: "How should an importer choose between Vallur and Astromar's Sriperumbudur " },
             { text: "bonded warehouse in chennai", kw: true },
             { text: "?" },
           ],
           answer: [
-            { text: "Astromar operates two strategic FTWZ facilities in the Chennai region. Sriperumbudur (Kancheepuram) serves the electronics, automotive, and high-value manufacturing belt with NH 48 corridor access — ideal for component imports and finished goods exports. Vallur (Ponneri) serves the port-side bulk cargo, chemicals, and energy sector — ideal for high-volume importers needing immediate port turnaround. Many clients use both facilities under a single FTWZ-network agreement for distributed pan-South-India operations." },
+            { text: "It comes down to what's moving. Sriperumbudur sits on the NH 48 manufacturing corridor and suits electronics and automotive component flows tied to nearby OEM plants. Vallur sits between three ports and suits bulk, chemical, and energy-sector cargo that needs a short port-to-warehouse leg. A number of clients run both under one FTWZ-network agreement to cover both cargo types across South India." },
           ],
         },
       ],
@@ -1326,34 +1326,34 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What is a free trade warehouse in chennai and how does Vallur qualify?",
+            "name": "What actually makes Vallur count as a free trade warehouse in chennai, rather than just a bonded facility near the ports?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A free trade warehouse in Chennai is a customs-licensed, Government-notified facility where imported goods can be stored without immediate payment of customs duty. Astromar's Vallur facility is both an FTWZ and a customs-bonded operation under the SEZ Act, 2005."
+              "text": "Vallur holds dual status — notified as an FTWZ under the SEZ Act, 2005 and licensed as a customs bonded facility. Goods can move in, be stored, re-exported, transferred to another FTWZ, or released for domestic sale, without duty being charged until they leave the zone."
             }
           },
           {
             "@type": "Question",
-            "name": "Why choose a port-adjacent customs bonded warehouse in chennai?",
+            "name": "Does being 15 km from Kattupalli Port actually save money, or is that just marketing?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Port-adjacent warehouses like Vallur (15 km from Kattupalli Port) reduce demurrage costs, enable faster clearance, and lower trucking costs versus inland alternatives."
+              "text": "It's a measurable saving — containers reach bonded storage fast enough to avoid detention and demurrage charges, and on-site customs officers clear shipments without routing delays."
             }
           },
           {
             "@type": "Question",
-            "name": "What types of cargo can be stored in the Vallur FTWZ?",
+            "name": "What kind of cargo is Vallur actually set up to handle?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Containerized goods, bulk commodities, chemicals and petrochemicals, LNG equipment, automotive parts, steel and metals, and FMCG goods. The facility includes ambient, climate-controlled, and hazmat-compliant storage zones."
+              "text": "Containerised goods, bulk commodities such as coal, iron ore, and fertilizers, chemicals and petrochemicals, LNG-related equipment, automotive parts, steel and metals, and FMCG goods, across ambient, climate-controlled, and hazmat-compliant zones."
             }
           },
           {
             "@type": "Question",
-            "name": "How does Vallur differ from Astromar's Sriperumbudur bonded warehouse in chennai?",
+            "name": "How should an importer choose between Vallur and Astromar's Sriperumbudur bonded warehouse in chennai?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sriperumbudur serves the electronics, automotive, and manufacturing belt with NH 48 corridor access. Vallur serves port-side bulk cargo, chemicals, and energy sector with shortest port-to-warehouse transit time. Many clients use both under a single FTWZ-network agreement."
+              "text": "Sriperumbudur suits electronics and automotive component flows tied to the NH 48 manufacturing corridor. Vallur suits bulk, chemical, and energy-sector cargo needing a short port-to-warehouse leg. Many clients run both under one FTWZ-network agreement."
             }
           }
         ]
