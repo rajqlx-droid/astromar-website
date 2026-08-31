@@ -135,7 +135,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-is-ftwz-complete-guide",
-    thumbnail: ftwzImg,
+    thumbnail: "/blog/ftwz-guide.jpg",
     title: "What is FTWZ? A Complete Guide to Free Trade Warehousing Zones in India",
     excerpt:
       "Understand how FTWZ warehousing helps importers defer customs duty and GST, re-export duty-free, and optimize working capital across India's trade zones.",
@@ -191,7 +191,7 @@ export const blogPosts: BlogPost[] = [
         answer: "Most clients are operational within 2-3 weeks of initial engagement, with full cost savings realised from the very first shipment. The process includes customs documentation, bond creation, warehouse allocation, and inventory management system integration.",
       },
     ],
-    heroImage: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200',
+    heroImage: "/blog/ftwz-guide.jpg",
     imageAlt: 'FTWZ bonded warehouse India with pallet racking',
     intro: 'A Free Trade Warehousing Zone (FTWZ) is a specially designated area in India where imported goods can be stored, processed, and re-exported without paying customs duty or GST — until the goods actually enter the domestic market. For importers, exporters, and multinational companies, FTWZ is one of the most powerful tools to reduce working capital costs, defer taxes, and streamline cross-border trade.',
     sections: [
@@ -207,7 +207,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "cbm-calculation-freight-shipping",
-    thumbnail: cbmImg,
+    thumbnail: "/blog/cbm-calculation.jpg",
     title: "How to Calculate CBM for Freight Shipping: Formula, Examples & Tools",
     excerpt:
       "Master CBM calculation for sea and air freight. Learn volumetric weight formulas, container optimization, and how to reduce shipping costs.",
@@ -234,7 +234,7 @@ export const blogPosts: BlogPost[] = [
         answer: "For sea freight, use the formula: Length (m) x Width (m) x Height (m) = CBM. Shipping lines charge based on revenue tons — whichever is greater between the actual weight in metric tons and the volume in CBM.",
       },
     ],
-    heroImage: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200',
+    heroImage: "/blog/cbm-calculation.jpg",
     imageAlt: 'Container ship sea freight CBM calculation',
     intro: 'CBM — Cubic Meter — is the standard unit for measuring cargo volume in international freight. Whether shipping by sea, air, or land, understanding CBM calculation correctly can save thousands in freight costs. This guide covers the CBM formula, worked examples, air volumetric weight, and how to choose the right container.',
     sections: [
@@ -250,7 +250,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "customs-duty-deferment-benefits",
-    thumbnail: dutyImg,
+    thumbnail: "/blog/customs-duty.jpg",
     title: "5 Ways Customs Duty Deferment Saves Your Business Money in India",
     excerpt:
       "Discover how duty deferment through FTWZ improves cash flow, reduces upfront costs, and provides competitive advantage in import-export operations.",
@@ -273,7 +273,7 @@ export const blogPosts: BlogPost[] = [
         answer: "Customs duty deferment allows importers to delay paying customs duty and IGST by storing goods in FTWZs. Duty is paid only when goods are cleared into the Domestic Tariff Area, improving working capital by 15-25%.",
       },
     ],
-    heroImage: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200',
+    heroImage: "/blog/customs-duty.jpg",
     imageAlt: 'Customs clearance documentation India import duty',
     intro: 'Every rupee of customs duty paid upfront is working capital locked away. For importers bringing large volumes into India, customs duty and IGST liability can add up to a significant sum — paid months before goods are sold. FTWZ duty deferment solves this by allowing duty payment only when goods leave the warehouse for domestic sale.',
     sections: [
@@ -288,7 +288,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "cold-chain-logistics-india",
-    thumbnail: coldImg,
+    thumbnail: "/blog/cold-chain.jpg",
     title: "Cold Chain Logistics in India: Challenges, Solutions & FTWZ Integration",
     excerpt:
       "How pharma, food, and perishable importers can leverage FTWZ cold storage for GDP-compliant warehousing with temperature-controlled zones.",
@@ -311,7 +311,7 @@ export const blogPosts: BlogPost[] = [
         answer: "Cold chain logistics covers multiple temperature ranges: frozen storage at -18C to -25C for seafood and ice cream, refrigerated storage at 2C to 8C for pharmaceuticals and dairy, and controlled ambient at 15C to 25C for chocolates and cosmetics.",
       },
     ],
-    heroImage: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200',
+    heroImage: "/blog/cold-chain.jpg",
     imageAlt: 'Cold chain logistics warehouse temperature controlled storage India',
     intro: 'India\'s cold chain logistics sector is growing rapidly — driven by pharmaceutical exports, food processing, and expanding retail. Yet infrastructure gaps, GDP compliance requirements, and import duty make cold chain one of the most complex logistics segments. FTWZ cold storage offers a powerful solution: duty-free, GDP-compliant temperature-controlled warehousing near major ports.',
     sections: [
@@ -325,7 +325,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "air-vs-sea-freight-comparison",
-    thumbnail: airSeaImg,
+    thumbnail: "/blog/air-vs-sea.jpg",
     title: "Air Freight vs Sea Freight: Complete Guide to Choosing the Right Shipping Mode",
     excerpt:
       "A detailed comparison of air and sea freight covering cost, transit time, cargo type suitability, and break-even analysis for informed decisions.",
@@ -348,7 +348,7 @@ export const blogPosts: BlogPost[] = [
         answer: "Choose air freight for high-value, low-volume goods, perishable or time-sensitive products, and emergency shipments. Air freight is typically 4-5x more expensive but 8-10x faster.",
       },
     ],
-    heroImage: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200',
+    heroImage: "/blog/air-vs-sea.jpg",
     imageAlt: 'Air freight cargo aircraft vs sea freight container ship comparison',
     intro: 'The decision between air freight and sea freight is one of the most important choices in international logistics. Air freight is fast but expensive. Sea freight is economical but slow. But the real decision is far more nuanced — this guide gives you a complete framework to choose the right mode for your cargo, timeline, and budget.',
     sections: [
@@ -362,7 +362,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "landed-cost-calculation-importers",
-    thumbnail: landedImg,
+    thumbnail: "/blog/landed-cost.jpg",
     title: "Landed Cost Calculation for Importers: Every Cost You Need to Know",
     excerpt:
       "Break down the true cost of importing goods including freight, insurance, customs duty, GST, port charges, and hidden fees with our comprehensive guide.",
@@ -385,7 +385,7 @@ export const blogPosts: BlogPost[] = [
         answer: "Landed cost is the total cost of getting imported goods to your warehouse door, including product cost, international freight, marine insurance, customs duty, IGST, port charges, CHA fees, inland transportation, and all handling charges.",
       },
     ],
-    heroImage: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200',
+    heroImage: "/blog/landed-cost.jpg",
     imageAlt: 'Landed cost calculation import India customs duty GST',
     intro: 'Landed cost is the total cost of getting an imported product to your warehouse door in India — including product cost, freight, insurance, customs duty, IGST, port charges, CHA fees, and last-mile delivery. Many importers underestimate landed cost by 20–40%, causing margin erosion and pricing mistakes. This guide explains every component of landed cost with worked examples.',
     sections: [
