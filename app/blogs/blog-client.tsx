@@ -129,7 +129,7 @@ const Blog = () => {
                     <div className="relative h-48 sm:h-64 overflow-hidden">
                       <Image
                         src={heroPost.thumbnail}
-                        alt={heroPost.title}
+                        alt={heroPost.imageAlt ?? heroPost.title}
                         fill
                         sizes="100vw"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -172,7 +172,7 @@ const Blog = () => {
                           <div className="relative h-32 overflow-hidden">
                             <Image
                               src={post.thumbnail}
-                              alt={post.title}
+                              alt={post.imageAlt ?? post.title}
                               fill
                               sizes="100vw"
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -229,7 +229,7 @@ const Blog = () => {
                       <div className="relative h-40 overflow-hidden">
                         <Image
                           src={post.thumbnail}
-                          alt={post.title}
+                          alt={post.imageAlt ?? post.title}
                           fill
                           sizes="100vw"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

@@ -406,6 +406,7 @@ export const blogPosts: BlogPost[] = [
     date: "2024-10-01",
     featured: false,
     thumbnail: "/ftwz-benefits-india.jpg",
+    imageAlt: "FTWZ Benefits banner graphic with warehouse racking and storage inset image",
     metaDescription: "Explore FTWZ benefits in India, offering duty deferment, tax advantages, cost-efficient storage, seamless customs processes, and easy global trade access for businesses.",
     content: [
       "Free Trade Warehousing Zone (FTWZ) in India offers businesses a range of advantages that streamline international trade and optimize supply chains.",
@@ -425,6 +426,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-01-19",
     featured: false,
     thumbnail: "/freight-forwarding-chennai.png",
+    imageAlt: "Freight forwarding Chennai banner graphic with warehouse pallet racking",
     metaDescription: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
     content: [
       "Chennai is one of India's most important logistics and trade hubs, connecting businesses to global markets through major seaports and airports.",
@@ -444,6 +446,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-26",
     featured: false,
     thumbnail: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    imageAlt: "Business professionals reviewing documents and planning notes at a desk",
     metaDescription: "Discover answers to frequently asked questions about Free Trade Zone in India — benefits, activities, customs clearance, and more.",
     content: [
       "FTWZ is a Special Category of Special Economic Zone — a dedicated platform for warehousing and trading governed by SEZ act 2005.",
