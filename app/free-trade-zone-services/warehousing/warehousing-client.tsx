@@ -134,7 +134,7 @@ const WarehousingClient = () => {
               <div className="relative rounded-xl overflow-hidden h-96 shadow-md w-full">
                 <Image
                   src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
-                  alt="Warehouse operations"
+                  alt="Astromar FTWZ bonded warehouse facility exterior"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"

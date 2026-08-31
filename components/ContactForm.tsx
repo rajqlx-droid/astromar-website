@@ -73,7 +73,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
     <section className="relative w-full min-h-[600px] flex items-center">
       <Image
         src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200"
-        alt="Logistics and cargo handling"
+        alt="Logistics team coordinating cargo and warehouse operations"
         fill
         sizes="100vw"
         className="absolute inset-0 w-full h-full object-cover"

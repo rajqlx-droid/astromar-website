@@ -17,22 +17,22 @@ const stats = [
 const coreValues = [
   { icon: Shield, title: "Compliance First", descSegments: [
     { text: "100% customs compliance with transparent, auditable operations across all FTWZ locations. Our in-house compliance team manages every shipment with zero-error documentation, working directly with Indian Customs and SEZ authorities to ensure goods clear quickly and lawfully. From BOE filing to re-export attestation, our FTWZ warehouse operations maintain complete audit trails, real-time regulatory tracking, and proactive compliance updates — keeping your business ahead of changing trade policies and protecting you from costly penalties." }
-  ], image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" },
+  ], image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80", alt: "Team reviewing regulatory documentation and compliance procedures" },
   { icon: Globe, title: "Global Connectivity", descSegments: [
     { text: "Seamless integration with international trade lanes through strategic positioning at India's busiest ports — Chennai, Mumbai (JNPA), Kochi, Vizag, Mundra, and Dahej. Each facility connects directly to global shipping routes, with multimodal access by sea, rail, road, and air. Our network supports importers, exporters, and re-exporters from over 50 countries, with 24/7 customs clearance, single-window documentation, and direct connectivity to over 200 destination ports worldwide." }
-  ], image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80" },
+  ], image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80", alt: "International shipping network map with global trade routes" },
   { icon: UserCheck, title: "Client-Centric", descSegments: [
     { text: "Every client gets a dedicated account manager — a single point of contact for everything from quote requests to delivery confirmation. We don't believe in one-size-fits-all logistics. Whether you're a first-time importer testing the FTWZ model or a Fortune 500 brand managing complex multi-port operations, we design solutions around your cargo profile, compliance needs, and growth plans. Transparent pricing, custom SLAs, and proactive issue resolution define every engagement." }
-  ], image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80" },
+  ], image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80", alt: "Business professionals in a client consultation meeting" },
   { icon: TrendingUp, title: "Continuous Improvement", descSegments: [
     { text: "Structured processes, ISO-aligned operations, and data-driven decisions power measurable outcomes for every client. We invest continuously in technology — from cloud-based WMS platforms to AI-driven inventory forecasting — and regularly retrain teams on the latest SEZ Act updates, customs regulations, and global trade developments. Quarterly performance reviews with KPIs around dwell time, accuracy, and cost-per-pallet ensure we're always improving the value we deliver." }
-  ], image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&q=80" },
+  ], image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&q=80", alt: "Team analyzing performance metrics and process improvements" },
   { icon: Medal, title: "Excellence", descSegments: [
     { text: "Industry-leading service standards backed by 7+ years of operational excellence without major compliance incidents. We're recognized as one of India's top FTWZ operators by customers across electronics, pharma, automotive, FMCG, and chemicals industries. Our facilities meet international standards — including GDP for pharmaceuticals, ISO 14001 environmental compliance, and SEZ Act 2005 statutory obligations — making us the trusted partner for high-stakes, high-value cargo." }
-  ], image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" },
+  ], image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80", alt: "Quality inspection of warehouse operations" },
   { icon: Clock, title: "Reliability", descSegments: [
     { text: "24/7 operations across all 10 strategic locations ensure your supply chain never sleeps. With round-the-clock customs clearance, dedicated security teams at each facility, redundant power and connectivity systems, and tested disaster recovery protocols, we keep cargo moving even when external conditions are challenging. Our SLA-backed uptime commitment of 99.5%+ means importers and exporters can plan production schedules, sales launches, and delivery commitments with absolute confidence." }
-  ], image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80" },
+  ], image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80", alt: "Team meeting to discuss client reliability and service standards" },
 ];
 
 const milestones = [
@@ -254,7 +254,7 @@ const About = () => {
                 <div className="relative h-[300px] w-full rounded-xl overflow-hidden">
                   <Image
                     src={item.image}
-                    alt={item.title}
+                    alt={item.alt}
                     fill
                     sizes="(max-width:768px) 100vw, 50vw"
                     className="object-cover"
