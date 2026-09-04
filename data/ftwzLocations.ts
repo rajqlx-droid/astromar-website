@@ -304,7 +304,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: " operating within the Visakhapatnam SEZ (VSEZ) at Duvvada. Visakhapatnam Port is the largest cargo port on India's East Coast — handling over 70 million tonnes annually across containers, bulk commodities, iron ore, coal, petroleum, and fertilizers." },
         ],
         [
-          { text: "VSEZ spans 360 hectares as a multi-product SEZ, providing extensive infrastructure for steel, pharma, petrochemicals, engineering goods, and food processing industries. With inner harbour at 10.7m draft and outer harbour at 18.1m draft, the port accommodates capesize vessels, while the container terminal offers 0.7 million TEUs capacity. NH 16 and NH 65 provide road connectivity to Hyderabad and other major hinterland markets." },
+          { text: "VSEZ spans 360 hectares as a multi-product SEZ, providing extensive infrastructure for steel, pharma, petrochemicals, engineering goods, and food processing industries. With inner harbour at 10.7m draft and outer harbour at 18.1m draft, the port accommodates capesize vessels, while the container terminal offers 0.7 million TEUs capacity. NH 16 and NH 65 provide road connectivity to Hyderabad and other major hinterland markets. Astromar's Vizag facility also supports the movement of " },
+          { text: "heavy machinery and project cargo", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: " for the region's steel and shipbuilding industries." },
         ],
         [
           { text: "As a fully-operational " },
@@ -1449,7 +1451,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         [
           { text: "Astromar's Khurja FTWZ is a Government-notified " },
           { text: "free trade warehouse zone in delhi", kw: true },
-          { text: " inland gateway located in Bulandshahr district, Uttar Pradesh. Positioned directly on the Western Dedicated Freight Corridor (DFC) — India's most important rail freight artery — the facility connects Mumbai's JNPA port and Gujarat's Mundra port to North India's 600+ million consumer market." },
+          { text: " inland gateway located in Bulandshahr district, Uttar Pradesh. Positioned directly on the Western Dedicated Freight Corridor (DFC) — India's most important rail freight artery — the facility connects Mumbai's JNPA port and Gujarat's Mundra port to North India's 600+ million consumer market. Shipments benefit from " },
+          { text: "dedicated customs clearance support", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: ", ensuring smooth movement from port of entry to final distribution across North India." },
         ],
         [
           { text: "Khurja's strategic location offers exceptional connectivity: 85 km from Delhi NCR via Noida expressway, 15 km from NH 91 (Delhi–Agra highway), 28 km from Yamuna Expressway, and direct DFC rail access enabling 20-24 hour transit from western ports. The upcoming Noida International Airport (Jewar) at 50 km will transform regional logistics infrastructure." },
@@ -1689,7 +1693,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         [
           { text: "Bengaluru's Aerospace SEZ serves aerospace and defence manufacturers, precision engineering companies, semiconductor importers, IT hardware suppliers, biotech and life sciences firms, and machine tool manufacturers across South India. For businesses seeking a Karnataka " },
           { text: "ftwz", kw: true },
-          { text: " location with direct airport access and specialised infrastructure for hi-tech manufacturing supply chains, Devanahalli delivers operational depth unmatched in the region." },
+          { text: " location with direct airport access and specialised infrastructure for hi-tech manufacturing supply chains, Devanahalli delivers operational depth unmatched in the region. " },
+          { text: "Efficient customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " helps aerospace and electronics components move quickly from arrival to production line." },
         ],
       ],
       servicesH2: [
@@ -1991,6 +1997,22 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "Dahej FTWZ operates with dedicated hazmat-compliant zones, fire suppression systems, gas detection networks, emergency response protocols, and PESO-licensed storage for explosive and flammable cargo. Standard bonded warehouses typically lack this specialised chemical infrastructure. Combined with FTWZ benefits — storage for up to 3 years, extendable to 5 years with special permission, broader SEZ Act 2005 activities, and full duty/GST deferral — the facility is purpose-built for the chemical sector." },
           ],
         },
+        {
+          question: [
+            { text: "What types of dangerous goods can be stored at your Dahej facility?" },
+          ],
+          answer: [
+            { text: "Astromar's Dahej facility handles dangerous goods storage across multiple industries — including chemicals, metals, pharmaceutical inputs, textiles, and industrial spare parts — under applicable safety regulations, subject to appropriate classification and documentation." },
+          ],
+        },
+        {
+          question: [
+            { text: "Can businesses outside the chemical industry use Dahej for bonded or hazardous goods storage?" },
+          ],
+          answer: [
+            { text: "Yes — while Dahej is well known for its chemical and petrochemical corridor, Astromar's facility also supports bonded and dangerous goods storage for metal, pharmaceutical, textile, and spare parts importers, subject to applicable regulations and cargo classification." },
+          ],
+        },
       ],
       localBusinessSchema: {
         "@context": "https://schema.org",
@@ -2019,7 +2041,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "What is the PCPIR and why is the ftwz in dahej strategic for chemicals?", "acceptedAnswer": { "@type": "Answer", "text": "PCPIR is India's largest petrochemical investment region with 40+ chemical companies. FTWZ inside PCPIR gives B2B co-location, hazmat infrastructure, and 3 km port jetty access." } },
           { "@type": "Question", "name": "What types of chemical cargo can Dahej FTWZ handle?", "acceptedAnswer": { "@type": "Answer", "text": "Petrochemical feedstocks, bulk chemicals, polymers, industrial gases, pharmaceutical APIs, specialty chemicals, LNG equipment, and IMDG-classified dangerous goods." } },
           { "@type": "Question", "name": "How does the Dahej Port jetty integration work?", "acceptedAnswer": { "@type": "Answer", "text": "GIPCL Jetty is 3 km from FTWZ. Imported chemicals/LNG move via pipeline or short-haul tanker — eliminating long road transport and supporting just-in-time PCPIR delivery." } },
-          { "@type": "Question", "name": "What's the safety advantage of FTWZ over a standard bonded warehouse in dahej?", "acceptedAnswer": { "@type": "Answer", "text": "Dahej FTWZ has hazmat zones, fire suppression, gas detection, PESO-licensed storage. Standard bonded warehouses lack this chemical infrastructure." } }
+          { "@type": "Question", "name": "What's the safety advantage of FTWZ over a standard bonded warehouse in dahej?", "acceptedAnswer": { "@type": "Answer", "text": "Dahej FTWZ has hazmat zones, fire suppression, gas detection, PESO-licensed storage. Standard bonded warehouses lack this chemical infrastructure." } },
+          { "@type": "Question", "name": "What types of dangerous goods can be stored at your Dahej facility?", "acceptedAnswer": { "@type": "Answer", "text": "Astromar's Dahej facility handles dangerous goods storage across multiple industries — including chemicals, metals, pharmaceutical inputs, textiles, and industrial spare parts — under applicable safety regulations, subject to appropriate classification and documentation." } },
+          { "@type": "Question", "name": "Can businesses outside the chemical industry use Dahej for bonded or hazardous goods storage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — while Dahej is well known for its chemical and petrochemical corridor, Astromar's facility also supports bonded and dangerous goods storage for metal, pharmaceutical, textile, and spare parts importers, subject to applicable regulations and cargo classification." } }
         ]
       },
       breadcrumbSchema: {
@@ -2129,7 +2153,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "." },
         ],
         [
-          { text: "Mundra serves businesses operating across containers, bulk commodities, chemicals, petrochemicals, automotive parts, energy resources, and FMCG categories. With multi-cargo capabilities, integrated port operations, and a strategic position for Middle East and Africa trade lanes, this Gujarat FTWZ delivers custom bonded warehousing in mundra at a scale unmatched anywhere else in India." },
+          { text: "Mundra serves businesses operating across containers, bulk commodities, chemicals, petrochemicals, automotive parts, energy resources, and FMCG categories. With multi-cargo capabilities, integrated port operations, and a strategic position for Middle East and Africa trade lanes, this Gujarat FTWZ delivers custom bonded warehousing in mundra at a scale unmatched anywhere else in India. Businesses distributing goods along India's coastline can also take advantage of " },
+          { text: "coastal shipping services", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: " connecting Mundra to other major ports." },
         ],
       ],
       servicesH2: [
