@@ -15,10 +15,10 @@ const services = [
   { icon: Ship, title: "Coastal Shipping", desc: "Domestic coastal cargo movement along India's extensive coastline, offering cost-effective and eco-friendly transport alternatives.", href: "/coastal-shipping-free-trade-zone" },
   { icon: Ship, title: "Ocean Freight", desc: "Full container load (FCL) and less than container load (LCL) ocean freight services across major global trade routes.", href: "/free-trade-zone-services/ocean-freight" },
   { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/free-trade-zone-services/air-freight" },
-  { icon: GitBranch, title: "Supply Chain", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/free-trade-zone-services/supply-chain" },
-  { icon: ClipboardCheck, title: "Custom Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/free-trade-zone-services/custom-clearance" },
+  { icon: GitBranch, title: "Supply Chain Solutions", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/free-trade-zone-services/supply-chain" },
+  { icon: ClipboardCheck, title: "Customs Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/free-trade-zone-services/custom-clearance" },
+  { icon: Box, title: "Project Cargo & Heavy-Lift", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/free-trade-zone-services/projects" },
   { icon: Snowflake, title: "Warehousing", desc: "Secure, scalable warehousing solutions with real-time inventory management and value-added services.", href: "/free-trade-zone-services/warehousing" },
-  { icon: Box, title: "Projects", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/free-trade-zone-services/projects" },
 ];
 
 const benefits = [
@@ -59,7 +59,7 @@ const ServicesSection = () => {
           </ScrollReveal>
 
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6 items-stretch">
-            {services.slice(0, 4).map((s, i) => (
+            {services.slice(0, 7).map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 0.06} className="h-full">
                 <a href={s.href} className="block h-full">
                   <div
