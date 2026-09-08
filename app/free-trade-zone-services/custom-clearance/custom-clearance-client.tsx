@@ -10,7 +10,7 @@ import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
 const steps = [
   { step: "01", title: "Document Review & HS Classification",  desc: "Collect and verify all shipping documents, classify goods under correct HS codes to ensure accurate duty calculation." },
   { step: "02", title: "Duty Assessment & Payment",            desc: "Calculate applicable duties, FTA benefits, and exemptions. Coordinate duty payment and confirm with customs authorities." },
-  { step: "03", title: "Port Filing & Examination",            desc: <>Electronic filing via <a href="https://www.cbic.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">ICEGATE</a>, real-time status tracking, and coordination with customs officers for cargo examination.</> },
+  { step: "03", title: "Port Filing & Examination",            desc: <>Electronic filing via <a href="https://www.cbic.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">ICEGATE</a>, live shipment status updates, and coordination with customs officers for cargo examination.</> },
   { step: "04", title: "Cargo Release & Delivery",             desc: "Process out-of-charge, collect delivery order, and arrange final-mile delivery to your warehouse or customer." },
 ];
 
@@ -18,7 +18,7 @@ const accordionItems = [
   { title: "Import Customs Clearance",        body: "Complete import documentation, HS classification, duty calculation and port filing for all cargo types. Bill of Entry filing, examination coordination, and out-of-charge processing at all Indian ports and airports." },
   { title: "Export Customs Clearance",        body: "Shipping bill filing, export documentation, and customs examination coordination for all exporters. LEO processing, drawback claims, and export promotion scheme compliance." },
   { title: "SEZ & FTWZ Clearance",           body: "Specialized customs clearance for SEZ and FTWZ transactions including DTA removals, re-exports, and inter-unit transfers. Full compliance with SEZ rules and FTWZ regulations." },
-  { title: "Duty Drawback & Exemptions",      body: "Filing and follow-up for duty drawback claims, advance authorization and EPCG license benefits. Maximize duty savings with expert HS classification and FTA utilization." },
+  { title: "Duty Drawback & Exemptions",      body: <>Filing and follow-up for duty drawback claims, <a href="https://www.dgft.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">advance authorization and EPCG license benefits</a>. Maximize duty savings with expert HS classification and FTA utilization.</> },
   { title: "Post-Clearance Audit Support",    body: "Documentation review, compliance verification and representation during customs audits. Bond and bank guarantee management with penalty and dispute resolution." },
 ];
 
@@ -141,7 +141,7 @@ const CustomClearanceClient = () => {
               { value: "10K+",  label: "Shipments Cleared",  desc: "Successfully processed"   },
               { value: "100%",  label: "Compliance Rate",    desc: "Zero penalties"            },
               { value: "24hrs", label: "Avg Clearance",      desc: "Express handling"          },
-              { value: "15+",   label: "Ports & ICDs",       desc: "Pan-India coverage"        },
+              { value: "15+",   label: "Ports & ICDs",       desc: "Nationwide port network"   },
             ].map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 0.07}>
                 <div className="bg-white rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">

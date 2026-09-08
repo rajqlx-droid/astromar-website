@@ -141,13 +141,13 @@ const CoastalShippingClient = () => {
                 The Smarter Way to Move Cargo Domestically
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                Astromar's Port to Port Shipping network spans India's 7,500+ km coastline, offering bulk, container, and project cargo movement between all major and minor ports.
+                <a href="/" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Astromar</a>'s Port to Port Shipping network runs the length of India's 7,500+ km coastline, linking 12+ major and minor ports recognised by the <a href="https://www.ipa.nic.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Indian Ports Association</a> on both coasts. It's how Astromar moves cargo that road and rail can't carry as economically — a single coastal vessel replaces roughly 700 truckloads, and coastal shipping produces up to 47% less CO₂ than the same cargo moved by road. The Northern corridor alone connects <a href="/locations/mundra" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Mundra</a>, India's largest port by cargo volume, to Paradip and Haldia in 5–6 days.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Bulk & break-bulk cargo",
-                  "Container coastal movement",
-                  "RoRo and project cargo",
+                  "Bulk & break-bulk cargo (coal, grain, steel)",
+                  "FCL & LCL container coastal movement",
+                  "RoRo & project cargo between major ports",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
                     <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
@@ -188,14 +188,13 @@ const CoastalShippingClient = () => {
                 What We Ship via Coastal Shipping in India
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From liquid bulk and chemicals to containerized goods and project cargo — our coastal network handles
-                every commodity type with specialized vessels and port expertise.
+                From liquid bulk and chemical tankers to containerized goods and RoRo vehicle cargo, Astromar's coastal fleet handles the full range of domestic freight — including the East Coast route into <a href="/locations/vizag" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Vizag</a>, one of India's busiest gateways for steel and bulk commodity cargo. For shipments that begin their journey overseas before continuing along the coast, coastal shipping connects directly with Astromar's <a href="/free-trade-zone-services/ocean-freight" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">ocean freight</a> services at the originating port.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Chemical tanker services",
-                  "Port-to-port delivery",
-                  "Integrated inland delivery",
+                  "Chemical & liquid tanker services",
+                  "Port-to-port delivery on 5 core coastal routes",
+                  "Integrated inland (last-mile) delivery",
                   "Real-time vessel tracking",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
