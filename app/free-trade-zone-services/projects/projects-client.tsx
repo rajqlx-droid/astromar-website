@@ -11,14 +11,14 @@ const accordionItems = [
   { title: "Oil & Gas",                    body: "Reactors, pressure vessels and processing equipment with SPMT and heavy lift solutions. Full route survey, permit management, and engineered lashing for critical assets." },
   { title: "Power & Energy",               body: "Transformers, turbines and generators with engineered lashing and specialized transport. Wind turbine components and solar infrastructure with multi-axle trailer solutions." },
   { title: "Infrastructure & Construction", body: "Steel structures, precast elements and construction equipment nationwide. Bridge girders, metro rail components, and large-scale infrastructure project logistics." },
-  { title: "Renewable Energy",             body: "Wind turbine blades, towers and solar panel equipment with special trailers. Blade transport with specialized dollies, police escorts, and route planning." },
+  { title: "Renewable Energy",             body: <>Wind turbine blades, towers and <a href="https://mnre.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">solar panel equipment</a> with special trailers. Blade transport with specialized dollies, police escorts, and route planning.</> },
   { title: "Defence & Aerospace",          body: "Sensitive equipment handling with security clearance and specialized packaging. Compliance with defence procurement protocols and restricted area delivery." },
 ];
 
 const whyChoose = [
   { title: "ODC & Heavy Lift Specialists",       desc: <>Dedicated project cargo freight forwarders with expertise in ODC transport, SPMT operations, and heavy lift coordination.</> },
   { title: "Engineered Transport Solutions",     desc: "Every project move is engineered — route surveys, structural calculations, and custom rigging plans for safe execution." },
-  { title: "Pan-India Execution Network",        desc: "In-house capabilities across all major Indian ports, highways, and project sites with a nationwide operator network." },
+  { title: "Full-Coverage Execution Network",     desc: "In-house capabilities across all major Indian ports, highways, and project sites with a nationwide operator network." },
   { title: "Insurance & Risk Management",        desc: "Comprehensive cargo insurance, risk assessment, and contingency planning for every project cargo movement." },
 ];
 
@@ -191,7 +191,7 @@ const ProjectsClient = () => {
               { value: "500+",   label: "Projects Done",   desc: "Successfully delivered"    },
               { value: "50T+",   label: "Max Lift",        desc: "Heavy equipment"           },
               { value: "Multi",  label: "Modal",           desc: "Sea, air, road, rail"      },
-              { value: "24/7",   label: "Site Support",    desc: "Dedicated team"            },
+              { value: "Round-the-Clock", label: "Site Teams", desc: "Dedicated team"         },
             ].map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 0.07}>
                 <div className="bg-white rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">
@@ -281,8 +281,8 @@ const ProjectsClient = () => {
                   "Route survey & feasibility study",
                   "Engineered transport solutions",
                   "Insurance & risk management",
-                  "Pan-India execution network",
-                  "Real-time project tracking",
+                  "Nationwide project execution capability",
+                  "Continuous shipment monitoring",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
                     <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
