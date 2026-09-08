@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import type { ReactNode } from "react";
 import CTASection from "@/components/CTASection";
 import ServicesCarousel from "../ServicesCarousel";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -17,7 +18,7 @@ const tabs: { key: TabKey; label: string }[] = [
   { key: "Textiles",    label: "Textiles"    },
 ];
 
-const tabContent: Record<TabKey, { challenge: string; solution: string; benefits: string[] }> = {
+const tabContent: Record<TabKey, { challenge: string; solution: string | ReactNode; benefits: string[] }> = {
   Electronics: {
     challenge: "High-value inventory risk and duty exposure on imported components",
     solution:  "FTWZ bonded storage with duty deferment and secure WMS-tracked inventory",
@@ -25,13 +26,13 @@ const tabContent: Record<TabKey, { challenge: string; solution: string; benefits
   },
   Pharma: {
     challenge: "Strict temperature control and GDP compliance requirements",
-    solution:  "GDP-certified cold chain warehousing with full audit documentation",
+    solution:  <><a href="https://cdsco.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">GDP-certified</a> cold chain warehousing with full audit documentation</>,
     benefits:  ["2-8°C storage", "GDP certified", "Compliance docs"],
   },
   FMCG: {
     challenge: "Fast inventory turnover and multi-channel fulfillment demands",
-    solution:  "Integrated WMS with real-time stock visibility and rapid dispatch",
-    benefits:  ["Real-time stock", "Fast dispatch", "Returns handling"],
+    solution:  "Integrated WMS with continuous stock visibility and rapid dispatch",
+    benefits:  ["Live stock", "Fast dispatch", "Returns handling"],
   },
   Automotive: {
     challenge: "Just-in-time delivery needs and zero production line downtime",
@@ -49,11 +50,11 @@ const accordionItems = [
   { title: "Warehousing & Inventory Management",    body: <><a href="/blogs/customs-duty-deferment-benefits" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">FTWZ bonded warehousing</a> with real-time WMS inventory visibility across all locations. Automated reorder triggers, cycle counts, and MIS reporting.</> },
   { title: "Order Fulfillment & Distribution",      body: "End-to-end order processing from receipt to last-mile delivery nationwide. Multi-channel fulfillment for e-commerce, retail, and B2B." },
   { title: "Reverse Logistics",                     body: "Efficient returns management and reverse supply chain processing for e-commerce and retail. Disposition management and refurbishment services." },
-  { title: "Supply Chain Analytics",                body: "Data-driven insights and reporting to optimize your supply chain performance and costs. Real-time dashboards, KPI tracking, and predictive analytics." },
+  { title: "Supply Chain Analytics",                body: "Data-driven insights and reporting to optimize your supply chain performance and costs. Up-to-the-minute dashboards, KPI tracking, and predictive analytics." },
 ];
 
 const whyChoose = [
-  { title: "FTWZ-Integrated Warehousing",       desc: "Duty-free bonded storage across 10 FTWZ locations with pan-India distribution connectivity." },
+  { title: "FTWZ-Integrated Warehousing",       desc: "Duty-free bonded storage across 10 FTWZ locations with distribution reach across India." },
   { title: "Real-Time WMS Visibility",           desc: "Live inventory dashboards, automated alerts, and full traceability from FTWZ to final customer." },
   { title: "Industry-Specific Expertise",        desc: "Dedicated solutions for pharma, electronics, FMCG, automotive, and textiles supply chains." },
   { title: "Dedicated Supply Chain Manager", desc: "A single point of accountability for Supply Chain Logistics India — covering warehousing, distribution, and last-mile delivery.", descKw: "Supply Chain Logistics India" },
@@ -63,7 +64,7 @@ const gettingStartedSteps = [
   { step: "01", title: "Onboarding", desc: "Account setup and requirements review." },
   { step: "02", title: "WMS Integration", desc: "Inventory systems connected for visibility." },
   { step: "03", title: "Initial Intake", desc: "First shipment received and logged." },
-  { step: "04", title: "Live Operations", desc: "Real-time tracking, alerts, and reporting active." },
+  { step: "04", title: "Live Operations", desc: "Continuous tracking, alerts, and reporting active." },
 ];
 
 const SupplyChainClient = () => {
@@ -76,7 +77,7 @@ const SupplyChainClient = () => {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80"
-          alt="Supply Chain Solutions India — Astromar integrated supply chain logistics with FTWZ network and real-time visibility"
+          alt="Supply Chain Solutions India — Astromar integrated supply chain logistics with FTWZ network and live visibility"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"
@@ -92,7 +93,7 @@ const SupplyChainClient = () => {
                 Supply Chain Solutions India — Integrated &amp; End-to-End
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Astromar's Supply Chain Solutions India manage procurement to last-mile delivery — reducing costs, improving speed, and building resilience with real-time visibility across every node in your operations.
+                Astromar's Supply Chain Solutions India manage procurement to last-mile delivery — reducing costs, improving speed, and building resilience with live visibility across every node in your operations, aligned with the goals of India's <a href="https://logistics.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-orange-400/60 underline-offset-2 hover:decoration-orange-400">National Logistics Policy</a>.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -111,8 +112,8 @@ const SupplyChainClient = () => {
                   {[
                     { value: "500+",       label: "Clients"      },
                     { value: "10",         label: "FTWZ Hubs"    },
-                    { value: "Pan-India",  label: "Network"      },
-                    { value: "24/7",       label: "Support"      },
+                    { value: "Nationwide", label: "Network"      },
+                    { value: "Always-On",  label: "Support Team" },
                   ].map((s) => (
                     <div key={s.label} className="bg-white/10 border border-white/20 rounded-xl p-4 text-center">
                       <p className="text-xl sm:text-2xl font-extrabold text-white leading-tight">{s.value}</p>
@@ -266,7 +267,7 @@ const SupplyChainClient = () => {
             <ScrollReveal delay={0.1}>
               <div className="relative rounded-xl overflow-hidden h-96 shadow-md w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?w=800&q=80"
                   alt="Supply chain warehouse operations"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
