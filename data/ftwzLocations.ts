@@ -496,7 +496,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     seo: {
       title: "Free Trade Warehouse Zone in Mumbai — Panvel | Astromar",
       description: "Astromar's free trade warehouse zone in mumbai at Panvel, near JNPA Port. Duty-free FTWZ warehousing for automotive, electronics, FMCG, and chemicals.",
-      keywords: "free trade warehouse zone in mumbai, ftwz in mumbai, ftwz mumbai panvel, bonded warehouse in mumbai, custom bonded warehouse in mumbai, navi mumbai sez warehouse, panvel ftwz",
+      keywords: "free trade warehouse zone in mumbai, ftwz in mumbai, ftwz mumbai panvel, bonded warehouse in mumbai, custom bonded warehouse in mumbai, navi mumbai sez warehouse, panvel ftwz, dangerous goods warehouse mumbai, hazardous goods warehouse panvel",
       h1: "Free Trade Warehouse Zone in Mumbai",
       h1Subtitle: "Panvel, Navi Mumbai",
       heroAlt: "Free trade warehouse zone in Mumbai at Panvel — Astromar FTWZ near JNPA port",
@@ -615,6 +615,14 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "A standard bonded warehouse in Mumbai allows duty-deferred storage but is restricted in scope — typically 1-year storage limits and limited permitted activities. An FTWZ like Panvel offers storage for up to 3 years (extendable to 5 years with special permission), broader permitted activities including CKD/SKD assembly, repacking, relabelling, and other value addition, and stronger tax benefits under the SEZ Act, 2005." },
           ],
         },
+        {
+          question: [
+            { text: "Do you have a hazardous goods warehouse near JNPA?" },
+          ],
+          answer: [
+            { text: "Yes — Astromar's Panvel facility operates as a dangerous goods warehouse alongside standard FTWZ warehousing, supporting importers across multiple industries." },
+          ],
+        },
       ],
       localBusinessSchema: {
         "@context": "https://schema.org",
@@ -643,7 +651,8 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "What is a free trade warehouse zone in mumbai and how does Panvel qualify?", "acceptedAnswer": { "@type": "Answer", "text": "A free trade warehouse zone in Mumbai is a Government-notified area where imports can be stored without immediate customs duty. Astromar's Panvel facility is notified under the SEZ Act, 2005, offering full FTWZ benefits." } },
           { "@type": "Question", "name": "How close is the Panvel FTWZ to JNPA port?", "acceptedAnswer": { "@type": "Answer", "text": "Approximately 35 km from JNPA, India's largest container port handling 50% of national containerized cargo." } },
           { "@type": "Question", "name": "Which industries benefit most from the Panvel FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "Automotive OEMs, electronics importers, FMCG companies, chemicals/pharma importers, and project cargo operators serving Western India." } },
-          { "@type": "Question", "name": "What's the difference between Panvel FTWZ and a standard bonded warehouse in mumbai?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader activities, and stronger tax benefits under SEZ Act 2005 versus a standard bonded warehouse's 1-year limit." } }
+          { "@type": "Question", "name": "What's the difference between Panvel FTWZ and a standard bonded warehouse in mumbai?", "acceptedAnswer": { "@type": "Answer", "text": "FTWZ offers storage for up to 3 years (extendable to 5 years with special permission), broader activities, and stronger tax benefits under SEZ Act 2005 versus a standard bonded warehouse's 1-year limit." } },
+          { "@type": "Question", "name": "Do you have a hazardous goods warehouse near JNPA?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Astromar's Panvel facility operates as a dangerous goods warehouse alongside standard FTWZ warehousing, supporting importers across multiple industries." } }
         ]
       },
       breadcrumbSchema: {
@@ -713,7 +722,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     seo: {
       title: "FTWZ in Mumbai — JNPA Nhava Sheva Port | Astromar",
       description: "Astromar's ftwz in mumbai at JNPA — India's #1 container port. On-port duty-free warehousing with zero transit time for re-export and consolidation.",
-      keywords: "ftwz in mumbai, ftwz mumbai jnpa, nhava sheva ftwz, free trade warehouse zone in mumbai, bonded warehouse mumbai port, custom bonded warehouse in mumbai, jnpa sez warehouse, on port ftwz",
+      keywords: "ftwz in mumbai, ftwz mumbai jnpa, nhava sheva ftwz, free trade warehouse zone in mumbai, bonded warehouse mumbai port, custom bonded warehouse in mumbai, jnpa sez warehouse, on port ftwz, dangerous goods warehouse nhava sheva, hazardous goods warehouse jnpa",
       h1: "FTWZ in Mumbai",
       h1Subtitle: "JNPA Nhava Sheva Port",
       heroAlt: "FTWZ in Mumbai at JNPA Nhava Sheva — Astromar on-port duty-free warehouse",
@@ -830,6 +839,14 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "JNPA is best for high-volume container operations, re-export, and businesses needing zero port transit. Panvel offers broader industrial flexibility, lower costs, and better access to Mumbai's hinterland markets. Many Astromar clients use both — JNPA for fast-turn container ops, Panvel for distribution and value-addition. Talk to our team about hybrid setups." },
           ],
         },
+        {
+          question: [
+            { text: "Is your Nhava Sheva facility a licensed dangerous goods warehouse?" },
+          ],
+          answer: [
+            { text: "Yes — Astromar's JNPA facility operates as a hazardous goods warehouse under applicable safety compliance, alongside its on-port FTWZ services." },
+          ],
+        },
       ],
       localBusinessSchema: {
         "@context": "https://schema.org",
@@ -858,7 +875,8 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "What makes the JNPA ftwz in mumbai different from inland facilities?", "acceptedAnswer": { "@type": "Answer", "text": "JNPA FTWZ is on-port inside JNPA SEZ — zero transit time between terminal and warehouse, eliminating trucking costs and detention charges." } },
           { "@type": "Question", "name": "Who benefits most from the JNPA on-port FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "High-volume container importers, re-exporters, consolidators, global trading houses, and just-in-time supply chain operators." } },
           { "@type": "Question", "name": "What cargo categories does the JNPA FTWZ handle?", "acceptedAnswer": { "@type": "Answer", "text": "Containerised electronics, automotive parts, consumer goods, pharmaceuticals, chemicals, textiles, apparel, and machinery." } },
-          { "@type": "Question", "name": "Should I use Panvel or JNPA for my Mumbai operations?", "acceptedAnswer": { "@type": "Answer", "text": "JNPA for fast-turn container operations and re-export. Panvel for broader industrial flexibility, lower costs, and Mumbai hinterland distribution. Many clients use both." } }
+          { "@type": "Question", "name": "Should I use Panvel or JNPA for my Mumbai operations?", "acceptedAnswer": { "@type": "Answer", "text": "JNPA for fast-turn container operations and re-export. Panvel for broader industrial flexibility, lower costs, and Mumbai hinterland distribution. Many clients use both." } },
+          { "@type": "Question", "name": "Is your Nhava Sheva facility a licensed dangerous goods warehouse?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Astromar's JNPA facility operates as a hazardous goods warehouse under applicable safety compliance, alongside its on-port FTWZ services." } }
         ]
       },
       breadcrumbSchema: {
@@ -926,7 +944,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     seo: {
       title: "Chennai Free Trade Zone (FTWZ) — Sriperumbudur | Astromar",
       description: "Astromar's chennai free trade zone at Sriperumbudur — duty-free FTWZ with GST deferral and direct NH 48 access. Serving Foxconn, Samsung, Hyundai.",
-      keywords: "chennai free trade zone, ftwz chennai, ftwz in chennai, free zone chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, sriperumbudur ftwz",
+      keywords: "chennai free trade zone, ftwz chennai, ftwz in chennai, free zone chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, sriperumbudur ftwz, dangerous goods warehouse sriperumbudur, hazardous goods warehouse chennai",
       h1: "Chennai Free Trade Zone",
       h1Subtitle: "Sriperumbudur, Tamil Nadu",
       bannerIntro: [
@@ -1050,6 +1068,14 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "Electronics and IT hardware importers feeding Foxconn, Samsung, and Dell's supplier network; automotive OEMs and Tier-1 component makers supplying Hyundai, BMW, and Renault-Nissan; pharmaceutical importers needing bonded cold-chain storage; and renewable energy equipment importers serving Tamil Nadu's wind and solar sector." },
           ],
         },
+        {
+          question: [
+            { text: "Do you operate a hazardous goods warehouse near Sriperumbudur?" },
+          ],
+          answer: [
+            { text: "Yes — Astromar's Sriperumbudur facility functions as a dangerous goods warehouse alongside standard FTWZ services, supporting electronics, automotive, and other industries handling hazardous components." },
+          ],
+        },
       ],
       localBusinessSchema: {
         "@context": "https://schema.org",
@@ -1109,6 +1135,14 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Electronics and IT hardware importers, automotive OEMs and Tier-1 component makers, pharmaceutical importers needing bonded cold-chain storage, and renewable energy equipment importers serving Tamil Nadu's wind and solar sector."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you operate a hazardous goods warehouse near Sriperumbudur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — Astromar's Sriperumbudur facility functions as a dangerous goods warehouse alongside standard FTWZ services, supporting electronics, automotive, and other industries handling hazardous components."
             }
           }
         ]
@@ -1180,7 +1214,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     seo: {
       title: "Free Trade Warehouse in Chennai — Vallur Ponneri | Astromar",
       description: "Astromar's free trade warehouse in chennai at Vallur — near Kattupalli & Ennore ports. Bonded warehouse in chennai for bulk cargo, chemicals, and LNG.",
-      keywords: "free trade warehouse in chennai, customs bonded warehouse in chennai, ftwz vallur, north chennai bonded warehouse, ponneri warehouse, kattupalli port warehouse, ennore port ftwz, lng bonded storage chennai",
+      keywords: "free trade warehouse in chennai, customs bonded warehouse in chennai, ftwz vallur, north chennai bonded warehouse, ponneri warehouse, kattupalli port warehouse, ennore port ftwz, lng bonded storage chennai, dangerous goods warehouse vallur, hazardous goods warehouse north chennai",
       h1: "Free Trade Warehouse in Chennai",
       h1Subtitle: "Vallur, Ponneri — North Chennai",
       heroAlt: "Free trade warehouse in Chennai at Vallur Ponneri — Astromar port-adjacent FTWZ",
@@ -1303,6 +1337,14 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "It comes down to what's moving. Sriperumbudur sits on the NH 48 manufacturing corridor and suits electronics and automotive component flows tied to nearby OEM plants. Vallur sits between three ports and suits bulk, chemical, and energy-sector cargo that needs a short port-to-warehouse leg. A number of clients run both under one FTWZ-network agreement to cover both cargo types across South India." },
           ],
         },
+        {
+          question: [
+            { text: "Is there a dangerous goods warehouse near Kattupalli or Ennore port?" },
+          ],
+          answer: [
+            { text: "Yes — Astromar's Vallur facility operates as a hazardous goods warehouse for bulk and industrial cargo, in addition to standard bonded warehousing near both ports." },
+          ],
+        },
       ],
       localBusinessSchema: {
         "@context": "https://schema.org",
@@ -1362,6 +1404,14 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Sriperumbudur suits electronics and automotive component flows tied to the NH 48 manufacturing corridor. Vallur suits bulk, chemical, and energy-sector cargo needing a short port-to-warehouse leg. Many clients run both under one FTWZ-network agreement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a dangerous goods warehouse near Kattupalli or Ennore port?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — Astromar's Vallur facility operates as a hazardous goods warehouse for bulk and industrial cargo, in addition to standard bonded warehousing near both ports."
             }
           }
         ]
@@ -1874,7 +1924,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     seo: {
       title: "FTWZ in Dahej — PCPIR Chemical SEZ Gujarat | Astromar",
       description: "Astromar's ftwz in dahej within Dahej SEZ-1 — India's largest petrochemical corridor (PCPIR). Duty-free FTWZ warehousing for chemicals and polymers.",
-      keywords: "ftwz in dahej, dahej ftwz, dahej sez warehouse, pcpir gujarat, bonded warehouse in dahej, custom bonded warehousing in dahej, free trade warehouse zone in dahej, gujarat chemical sez",
+      keywords: "ftwz in dahej, dahej ftwz, dahej sez warehouse, pcpir gujarat, bonded warehouse in dahej, custom bonded warehousing in dahej, free trade warehouse zone in dahej, gujarat chemical sez, dangerous goods warehouse dahej, hazardous goods warehouse dahej",
       h1: "FTWZ in Dahej",
       h1Subtitle: "Dahej SEZ-1, Gujarat",
       heroAlt: "FTWZ in Dahej at Dahej SEZ-1 — Astromar PCPIR chemical and LNG warehouse",
@@ -2013,6 +2063,14 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
             { text: "Yes — while Dahej is well known for its chemical and petrochemical corridor, Astromar's facility also supports bonded and dangerous goods storage for metal, pharmaceutical, textile, and spare parts importers, subject to applicable regulations and cargo classification." },
           ],
         },
+        {
+          question: [
+            { text: "Is Astromar a licensed dangerous goods warehouse in Dahej?" },
+          ],
+          answer: [
+            { text: "Yes — Astromar's Dahej facility operates as a dangerous goods warehouse handling hazardous cargo under applicable safety regulations, subject to appropriate classification and documentation." },
+          ],
+        },
       ],
       localBusinessSchema: {
         "@context": "https://schema.org",
@@ -2043,7 +2101,8 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { "@type": "Question", "name": "How does the Dahej Port jetty integration work?", "acceptedAnswer": { "@type": "Answer", "text": "GIPCL Jetty is 3 km from FTWZ. Imported chemicals/LNG move via pipeline or short-haul tanker — eliminating long road transport and supporting just-in-time PCPIR delivery." } },
           { "@type": "Question", "name": "What's the safety advantage of FTWZ over a standard bonded warehouse in dahej?", "acceptedAnswer": { "@type": "Answer", "text": "Dahej FTWZ has hazmat zones, fire suppression, gas detection, PESO-licensed storage. Standard bonded warehouses lack this chemical infrastructure." } },
           { "@type": "Question", "name": "What types of dangerous goods can be stored at your Dahej facility?", "acceptedAnswer": { "@type": "Answer", "text": "Astromar's Dahej facility handles dangerous goods storage across multiple industries — including chemicals, metals, pharmaceutical inputs, textiles, and industrial spare parts — under applicable safety regulations, subject to appropriate classification and documentation." } },
-          { "@type": "Question", "name": "Can businesses outside the chemical industry use Dahej for bonded or hazardous goods storage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — while Dahej is well known for its chemical and petrochemical corridor, Astromar's facility also supports bonded and dangerous goods storage for metal, pharmaceutical, textile, and spare parts importers, subject to applicable regulations and cargo classification." } }
+          { "@type": "Question", "name": "Can businesses outside the chemical industry use Dahej for bonded or hazardous goods storage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — while Dahej is well known for its chemical and petrochemical corridor, Astromar's facility also supports bonded and dangerous goods storage for metal, pharmaceutical, textile, and spare parts importers, subject to applicable regulations and cargo classification." } },
+          { "@type": "Question", "name": "Is Astromar a licensed dangerous goods warehouse in Dahej?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Astromar's Dahej facility operates as a dangerous goods warehouse handling hazardous cargo under applicable safety regulations, subject to appropriate classification and documentation." } }
         ]
       },
       breadcrumbSchema: {
