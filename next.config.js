@@ -23,6 +23,10 @@ const nextConfig = {
       { source: '/services/custom-clearance', destination: '/free-trade-zone-services/custom-clearance', permanent: true },
       { source: '/services/warehousing', destination: '/free-trade-zone-services/warehousing', permanent: true },
       { source: '/services/projects', destination: '/free-trade-zone-services/projects', permanent: true },
+      { source: '/ftz-in-india', destination: '/free-trade-zone', permanent: true },
+      { source: '/free-zone-chennai', destination: '/locations/chennai-sriperumbudur', permanent: true },
+      { source: '/ecommerce-scm-ftz', destination: '/blogs/ecommerce-warehousing-solutions', permanent: true },
+      { source: '/value-added-services-in-free-trade-warehousing-zone-india', destination: '/blogs/value-added-services-ftwz', permanent: true },
     ]
   },
   async headers() {
