@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Port to Port Shipping in India — Coastal Cargo | Astromar",
-  description: "Move cargo along India's 7,500+ km coastline. Greener, cost-effective alternative to road/rail for bulk, containerized & project cargo across all Indian ports.",
+  description: "Move cargo along India's 7,500+ km coastline with Astromar's coastal shipping — 12+ ports covered, up to 47% lower emissions than road transport.",
   keywords: "coastal shipping india, port to port shipping, indian coastal cargo, sea cargo india, coastal logistics, multimodal logistics india, container coastal shipping, bulk coastal shipping, coastal cargo network, indian ports shipping",
   alternates: { canonical: "https://www.astromarfreezone.com/coastal-shipping-free-trade-zone" },
   openGraph: {

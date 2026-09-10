@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
-  description: "Oversized, overweight & high-value project cargo across India and globally. Route surveys to final placement — engineered moves with precision, safety, reliability.",
+  description: "Oversized and high-value project cargo logistics across India — from route surveys to final placement, engineered for precision and safety.",
   keywords: "project cargo india, heavy lift logistics, oversized cargo india, odc transport india, project logistics india, heavy haulage india, breakbulk cargo, route survey india, capital equipment logistics, industrial project cargo",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/projects" },
   openGraph: {
