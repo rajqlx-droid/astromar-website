@@ -2056,10 +2056,10 @@ For eligible transactions, an FTWZ can provide flexibility in managing the timin
         heading: "Common Mistakes to Avoid",
         content: [
           { text: "The first mistake is assuming that an FTWZ is simply a cheaper warehouse. It isn't necessarily — its value comes from how it fits into the company's import and inventory strategy.\n\nAnother mistake is leaving customs planning until the cargo arrives, which can create unnecessary pressure when documentation needs clarification. It's also important not to assume the same approach works for every product — every shipment has its own commercial and regulatory characteristics. Finally, companies should avoid choosing an " },
-          { text: "FTWZ location", kw: true, href: "/locations" },
+          { text: "FTWZ location", kw: true, href: "/free-trade-zone" },
           { text: " without looking at the complete movement of goods. The warehouse may be excellent, but if transportation to the final customer is inefficient, the overall supply chain may still not work as expected." }
         ],
-        relatedLink: { text: "Explore Astromar's FTWZ locations", href: "/locations" }
+        relatedLink: { text: "Explore Astromar's FTWZ locations", href: "/free-trade-zone" }
       },
       {
         heading: "Final Thoughts",
@@ -2614,7 +2614,7 @@ On storage, standard clearance uses a domestic warehouse after clearance, while 
         heading: "Don't Choose an FTWZ Just Because It Sounds Better",
         content: [
           { text: "An FTWZ is not a magic solution for every importer. If goods are arriving today and need to reach a domestic customer tomorrow, the simplest route may be the best one. If goods are arriving months before they're needed, the business may benefit from having another option — the same applies to international businesses managing inventory across " },
-          { text: "multiple trade locations", kw: true, href: "/locations" },
+          { text: "multiple trade locations", kw: true, href: "/free-trade-zone" },
           { text: ".\n\nThe right question is not \"is an FTWZ better than normal customs clearance?\" It's \"which model fits the way this particular business buys, stores and sells its goods?\" That's a much more useful question." }
         ]
       },
@@ -3062,7 +3062,7 @@ With air freight, there can be several handling points between aircraft arrival 
           { text: "For some businesses, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " (Free Trade Warehousing Zone) can form part of the supply-chain solution. It operates within India's applicable SEZ and customs framework and provides a customs-controlled environment for eligible imported goods — useful for companies that don't necessarily need to move the entire shipment into domestic circulation immediately.\n\nAn international business may import products into India and distribute them gradually across " },
-          { text: "multiple locations", href: "/locations" },
+          { text: "multiple locations", href: "/free-trade-zone" },
           { text: ", or there may be situations where imported goods are eventually re-exported. The exact treatment depends on the product, transaction structure and applicable regulations — so it's better not to think of an FTWZ simply as a \"duty-free warehouse.\" It's a customs and supply-chain structure that may be useful for certain types of businesses." }
         ]
       },
