@@ -1316,7 +1316,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Why Dahej Is Different for Chemical Logistics",
         content: "The logistics requirements of a chemical business differ from those of a conventional importer. A shipment may involve chemical raw materials, petrochemical feedstock, solvents, polymers and additives, chemical intermediates, specialty chemicals, finished chemical products, temperature-sensitive materials, or hazardous and regulated cargo — and the cargo itself may not be the only challenge. Companies also have to consider customs documentation, storage compatibility, packaging, safety requirements, inventory visibility, and the timing of domestic clearance or re-export. Dahej's industrial ecosystem makes the region particularly relevant for these requirements, meaning a company importing chemicals into India doesn't necessarily need to treat the port as the end of its logistics process — instead, the movement can be structured around an FTWZ: International Supplier → Indian Port → FTWZ → Domestic Customer / Manufacturing Unit / Re-export Market. The FTWZ becomes the controlled point where inventory can be stored, consolidated, documented, and subsequently moved according to the company's commercial requirement.",
-        relatedLink: { text: "Dahej", href: "PASTE_DAHEJ_LOCATION_URL" }
+        relatedLink: { text: "Dahej", href: "/locations/dahej" }
       },
       {
         heading: "What a Dahej FTWZ Can Do for Chemical Importers",
@@ -1333,7 +1333,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Bringing Freight, Warehousing and Customs Together",
         content: "Chemical logistics becomes complicated when every activity is handled independently — one company arranges international freight, another coordinates port movement, a third handles warehousing, a customs broker manages documentation, and a transporter moves cargo to the customer, leaving the importer to coordinate all of them. This fragmented model can work, but it creates more points where information can be lost. A more integrated supply chain approach connects freight movement, FTWZ storage, inventory management, and customs processes into one visible sequence: supplier booking, ocean freight, port arrival, FTWZ movement, customs documentation, warehousing, inventory control, customer-specific clearance, and final delivery. The advantage is operational visibility — instead of asking five different service providers where a shipment is, the logistics team works with one coordinated process, which becomes particularly important when shipments involve multiple SKUs, different customers, or batch-level inventory.",
-        relatedLink: { text: "supply chain", href: "PASTE_SUPPLY_CHAIN_URL" }
+        relatedLink: { text: "supply chain", href: "/free-trade-zone-services/supply-chain" }
       },
       {
         heading: "Consolidation Can Change the Economics",
@@ -1342,7 +1342,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Customs Clearance for Chemical Cargo Needs Careful Planning",
         content: "Chemical shipments can become particularly sensitive at the customs stage — documentation has to accurately represent the cargo, while classification, valuation, and licensing may need assessment depending on the product. For businesses handling chemical imports, customs clearance shouldn't be treated as a final administrative step after cargo arrives — it should be incorporated into the logistics plan from the beginning. Before shipment, companies should establish product description and technical specifications, correct HS classification, applicable import requirements, required licences or approvals, Safety Data Sheets, packaging and labelling requirements, country-of-origin documentation, commercial invoice and packing list, transport documentation, FTWZ movement requirements, and a final clearance or re-export strategy. This is particularly important for hazardous and regulated chemicals, since a documentation problem can quickly become an operational one — cargo may be physically available but commercially unusable until it's resolved. For logistics managers, the lesson is simple: customs planning should begin before the container reaches the port.",
-        relatedLink: { text: "customs clearance", href: "PASTE_CUSTOMS_CLEARANCE_URL" }
+        relatedLink: { text: "customs clearance", href: "/free-trade-zone-services/custom-clearance" }
       },
       {
         heading: "What About Re-Exports?",
@@ -1363,7 +1363,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "The Bigger Opportunity for Dahej-Based Chemical Businesses",
         content: "Dahej's industrial ecosystem continues to make it an important location for chemical and petrochemical activity — a dedicated petroleum, chemicals and petrochemicals investment area, with clustering benefits created by sector-specific industrial estates and supporting infrastructure. For businesses operating within that ecosystem, logistics decisions increasingly need to consider more than transportation cost: where should imported inventory be held, when should it enter the domestic market, can multiple shipments be consolidated, can excess inventory be redirected to another customer, and can customs, warehousing, and transportation be coordinated under one operating model? An FTWZ can provide part of the infrastructure needed to answer those questions — the real value comes from designing the entire movement around the company's trade requirements. A well-planned FTWZ model can help businesses manage imported inventory, postpone domestic clearance where permitted, consolidate cargo, support re-export operations, and coordinate customs with physical logistics. For importers, exporters, and international traders operating in this sector, the question is no longer simply where to store chemical cargo — it's how to position inventory so that customs, cash flow, warehousing, and distribution work together. That's where an integrated Free Trade Zone strategy can create practical value.",
-        relatedLink: { text: "Free Trade Zone", href: "PASTE_HOMEPAGE_URL" }
+        relatedLink: { text: "Free Trade Zone", href: "/free-trade-zone" }
       }
     ],
     faqs: [
