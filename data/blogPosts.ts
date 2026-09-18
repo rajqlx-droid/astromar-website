@@ -5279,6 +5279,367 @@ Astromar Logistics Pvt. Ltd. provides FTWZ operations, bonded warehousing, custo
       }
     ]
   },
+  {
+    slug: "route-surveys-odc-permits-project-cargo",
+    title: "Route Surveys and ODC Permits: What Happens Before Heavy Cargo Ever Moves",
+    excerpt: "The truck on the highway is the visible part of project cargo. The route survey, the permits, and the coordination behind it are what actually determine whether the movement works.",
+    category: "Freight",
+    date: "2026-09-11",
+    readTime: "10 min read",
+    featured: false,
+    thumbnail: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=70",
+    heroImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Heavy equipment transport representing route survey and ODC permit process",
+    metaDescription: "What happens before heavy or oversized cargo moves — route surveys, ODC permits, and why this planning stage determines project cargo success.",
+    keywords: ["odc permits india", "route survey heavy cargo", "project cargo planning", "over dimensional cargo transport"],
+    intro: `When people see an oversized machine moving on a trailer, the first thing they usually notice is the size of the cargo.
+
+What is less obvious is everything that had to happen before that truck was allowed to move.
+
+For project cargo, transportation does not begin when the trailer leaves the port. In many cases, the planning starts much earlier, when the cargo dimensions are confirmed and the logistics team begins looking at the road between the port and the final destination.
+
+A normal container can usually follow an established transport route.
+
+An oversized transformer, industrial vessel, large machine or heavy engineering component is different.
+
+The route has to work for the cargo.
+
+That means checking bridges, road widths, turning points, overhead structures, access roads and the final delivery location. It also means understanding the permits and local coordination required for the particular movement.
+
+This preparation may not be visible to the customer, but it can determine whether the actual movement goes smoothly or turns into a series of expensive delays.`,
+    sections: [
+      {
+        heading: "It Starts With Understanding the Cargo",
+        content: `Before anyone starts discussing routes, the logistics team needs to know what is actually being moved.
+
+That sounds obvious, but project cargo can change considerably depending on the equipment.
+
+A machine may be extremely heavy but relatively compact. Another piece may not be particularly heavy but could be several metres wide or unusually long.
+
+The dimensions, weight and configuration all influence the transport solution.
+
+The trailer selection also matters.
+
+The overall height of the loaded vehicle is different from the height of the cargo sitting on its own. The same applies to the overall length and width.
+
+So the route cannot really be finalised until the transport configuration is understood.
+
+This is one of the basic differences between standard freight and project cargo.
+
+With regular container movement, the logistics team is working within a familiar set of dimensions.
+
+With ODC cargo, the cargo itself can change the route.`
+      },
+      {
+        heading: "Why a Route Survey Is Necessary",
+        content: [
+          { text: `A route may look completely suitable on a map.
+
+That does not mean a large trailer can actually travel along it.
+
+This is where the physical route survey becomes important.
+
+The proposed route is examined for the conditions that could affect the movement.
+
+Bridges and culverts — maintained under standards set by the ` },
+          { text: "National Highways Authority of India", kw: true, href: "https://www.nhai.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ` — need to be considered in relation to the vehicle and cargo weight. Road width becomes important when the vehicle is particularly wide. Junctions need to provide enough space for the trailer to turn.
+
+Then there are the overhead obstacles.
+
+Flyovers, power lines, sign structures, toll gantries and other installations can become a problem when cargo height is significant.
+
+These are not necessarily issues that can be identified simply by looking at a standard route map.
+
+The final approach to the customer's premises can be even more important.
+
+A trailer may travel hundreds of kilometres without a problem and then struggle with the last turn into the factory.
+
+That is why the survey needs to look at the complete route, not just the major highway.` }
+        ]
+      },
+      {
+        heading: "A Normal Road Is Not Always a Project Cargo Road",
+        content: `This is an easy point to overlook.
+
+A road that is perfectly comfortable for cars, trucks and container trailers may not work for an ODC vehicle.
+
+Consider a large industrial machine mounted on a long trailer.
+
+The highway itself may have plenty of width.
+
+But at the next junction, the trailer may need significantly more space to make the turn. A median or roadside structure could restrict the available path.
+
+Or perhaps the road narrows near an industrial area.
+
+These details matter.
+
+The transport team is not simply asking, "Can a truck use this road?"
+
+It is asking: Can this particular truck, carrying this particular cargo, safely negotiate this particular route?
+
+That is a much more useful question.`
+      },
+      {
+        heading: "Overhead Clearance Can Become a Serious Issue",
+        content: `Height is one of the first things considered when planning an ODC movement.
+
+A cargo unit may have plenty of clearance when it is sitting inside a warehouse or at the port.
+
+Once it is placed on a trailer, the overall height increases.
+
+The route then has to be assessed accordingly.
+
+A low flyover is an obvious concern, but it is not the only one.
+
+Power lines, communication cables, road signs and other overhead structures can also need attention.
+
+The important thing is to identify these issues before the movement begins.
+
+Discovering an obstruction when the trailer is already standing underneath it is a very different situation from discovering it during the planning stage.
+
+At the planning stage, there is time to evaluate alternatives.
+
+On the road, the options become much more complicated.`
+      },
+      {
+        heading: "Then Come the Permits and Local Requirements",
+        content: [
+          { text: `Once the route has been assessed, the next step is understanding the permissions required for the movement.
+
+ODC transportation can involve state-level requirements and other permissions depending on the cargo, vehicle, dimensions, route and applicable regulations, set within the broader motor vehicle framework administered by the ` },
+          { text: "Ministry of Road Transport and Highways", kw: true, href: "https://morth.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `.
+
+There is no single permit process that can simply be copied for every shipment.
+
+A movement through one state may have different requirements from a movement through another.
+
+The route itself can also influence what coordination is needed.
+
+Depending on the circumstances, coordination with local authorities or police may form part of the movement plan.
+
+This is why permit planning needs to happen early.
+
+The objective is not just to collect paperwork.
+
+It is to make sure the planned movement is properly coordinated before the cargo is committed to the road.` }
+        ]
+      },
+      {
+        heading: "Timing the Movement Is Part of the Plan",
+        content: `Once the route and permissions are understood, the logistics team also has to think about timing.
+
+For certain heavy or oversized movements, travelling during periods of lower traffic can make practical sense.
+
+But an overnight movement is not automatically the answer.
+
+There may be local restrictions, movement windows, road conditions or other requirements that need to be considered.
+
+The destination also needs to be ready.
+
+There is little value in arranging a movement at a convenient time if the receiving facility cannot accept the cargo when it arrives.
+
+So the timing decision connects several things: route conditions, local requirements, transport equipment, traffic conditions, port release, and destination readiness.
+
+Project cargo planning is really about getting all of these pieces to line up.`
+      },
+      {
+        heading: "The Port Exit Deserves Attention",
+        content: [
+          { text: `For imported project cargo, the movement does not suddenly become simple once the vessel has arrived.
+
+In fact, the transition from port to road is an important stage.
+
+The cargo may need to be handled, inspected or released through the ` },
+          { text: "applicable processes", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " before it can leave the port, which in turn depend on the customs framework set by " },
+          { text: "CBIC", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `.
+
+The specialised trailer needs to be available.
+
+The loading arrangement needs to be ready.
+
+The transport team needs to know the route.
+
+The required permissions and coordination should already be in place.
+
+If one of these pieces is missing, the vehicle can end up waiting.
+
+And when specialised equipment is involved, waiting is rarely just a matter of losing a few hours.
+
+Vehicles, manpower, lifting equipment and other resources may all remain committed while the problem is being resolved.
+
+That is why project logistics planning should begin before the cargo reaches the final stage of port release.` }
+        ]
+      },
+      {
+        heading: "The Last Few Kilometres Can Be the Hardest",
+        content: `One of the most overlooked parts of project cargo planning is the final approach to the destination.
+
+Imagine a large trailer has successfully travelled 400 kilometres.
+
+The highway portion is complete.
+
+There are only a few kilometres left.
+
+Then the driver reaches the industrial estate and discovers that the entrance is too narrow for the trailer to turn comfortably.
+
+Or the road inside the facility does not provide enough space for positioning.
+
+Or the unloading area has not been prepared.
+
+The entire movement can come to a stop.
+
+This is why a good route survey should include the destination itself.
+
+The logistics team needs to understand how the vehicle will enter the premises, where it will be positioned and how the cargo will eventually be unloaded.
+
+For some projects, this may also require planning for cranes or other specialised lifting equipment.
+
+The delivery is not finished when the truck reaches the customer's address.
+
+It is finished when the cargo can be safely unloaded and positioned.`
+      },
+      {
+        heading: "What Happens When the Route Changes?",
+        content: `Route surveys are designed to identify problems early, but project logistics rarely happens in a completely static environment.
+
+Road conditions can change.
+
+Construction can begin.
+
+Temporary restrictions can appear.
+
+An alternative route may become necessary.
+
+When that happens, changing the road is not always as simple as opening a map and choosing another line.
+
+The new route needs to be checked against the cargo dimensions and vehicle configuration.
+
+Bridge conditions may be different.
+
+Turning points may be tighter.
+
+Additional permissions may be required.
+
+The movement timing may have to change.
+
+This is why contingency planning is useful for large project shipments.
+
+The goal is not to predict every possible problem.
+
+It is to make sure there is a practical way to respond if the original plan changes.`
+      },
+      {
+        heading: "A Hypothetical Example",
+        content: [
+          { text: "Consider a hypothetical company importing a large industrial machine through a port like " },
+          { text: "Vizag", kw: true, href: "/locations/vizag" },
+          { text: `, known for its steel and heavy-industry base.
+
+The machine needs to be transported to a manufacturing facility inland.
+
+The initial route looks straightforward. Most of the journey is along major roads, and there appears to be good connectivity between the port and the destination.
+
+During the physical survey, however, the logistics team identifies a difficult turn close to the customer's facility.
+
+There is also an overhead structure that needs to be considered because of the loaded vehicle's height.
+
+The issue is found before the cargo leaves the port.
+
+That gives the team time to assess an alternative approach, check the relevant requirements and coordinate the movement.
+
+Now imagine the same issue being discovered after the trailer has already travelled several hundred kilometres.
+
+The cargo is already committed to the road.
+
+The vehicle is already occupied.
+
+The customer may already be preparing to receive it.
+
+A simple routing problem has suddenly become a much larger operational issue.
+
+That is the real value of a route survey.
+
+It moves the problem from the road to the planning table — where it is much easier to deal with.` }
+        ]
+      },
+      {
+        heading: "Where Warehousing and FTWZ Can Come Into the Picture",
+        content: [
+          { text: "Not every project cargo shipment moves directly from the port to the final customer.\n\nDepending on the cargo and transaction structure, there may be a requirement for temporary storage, customs coordination or inventory positioning before the next stage of movement.\n\nAn " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " can be considered where such a structure is appropriate.\n\nFor imported equipment, an FTWZ warehouse can potentially form part of the wider logistics plan, subject to the applicable customs and regulatory requirements.\n\nBut project cargo creates another consideration.\n\nThe facility needs to be capable of handling the cargo.\n\nWarehouse size alone does not tell the full story.\n\nFloor loading, access, handling equipment, vehicle movement, loading and unloading arrangements and the physical characteristics of the cargo all need to be considered.\n\nA large machine cannot simply be treated like a pallet of general cargo because there happens to be enough floor space.\n\nThe warehouse and transport plan have to work together." }
+        ]
+      },
+      {
+        heading: "The Real Cost of Poor Planning",
+        content: `When a project cargo movement goes wrong, the cost is not always limited to the transport invoice.
+
+A delay can affect cranes, labour, the receiving site's schedule, and installation work.
+
+It can leave specialised trailers waiting.
+
+It can also create knock-on effects for other shipments that were planned around the same resources.
+
+This is why project cargo quotations should not be evaluated only by looking at the lowest freight number.
+
+The planning behind the movement matters.
+
+A slightly different transport arrangement may make more sense if it reduces the likelihood of major operational problems later.
+
+That does not mean expensive is automatically better.
+
+It means the full movement needs to be considered rather than looking at transportation as a standalone cost.`
+      },
+      {
+        heading: "A Practical Project Cargo Checklist",
+        content: `Before an ODC shipment moves, the logistics team should have clarity on the basics: exact cargo dimensions and weight, loading and securing arrangements, suitable trailer and transport equipment, complete route assessment, bridge and road conditions, overhead clearances, turning points and road widths, applicable permits and permissions, movement restrictions, required local coordination, escort or support arrangements where applicable, port exit arrangements, destination access, unloading location, crane or lifting requirements, customs and shipment documentation, and contingency arrangements.
+
+The level of planning will depend on the shipment.
+
+A relatively straightforward heavy movement may require less coordination than an exceptionally large industrial module travelling across several states.
+
+The important thing is that the planning should match the actual risk.`
+      },
+      {
+        heading: "Project Cargo Starts Before the Truck Moves",
+        content: `The truck on the highway is the part everyone sees.
+
+The route survey is not. The permit applications are not. The calls between the transport team, port, authorities and receiving facility are not.
+
+But these are the activities that often determine whether the physical movement works as planned.
+
+For heavy and over-dimensional cargo, the road journey is only one part of the operation.
+
+The real logistics work begins with understanding the cargo, studying the route, checking the practical constraints, arranging the required permissions and making sure the destination is ready.
+
+A good project cargo plan does not guarantee that nothing will go wrong.
+
+What it does is identify as many problems as possible before the cargo is on the road.
+
+And that is where much of the risk in project logistics is managed.
+
+Astromar Logistics Pvt. Ltd. provides FTWZ operations, bonded warehousing, customs coordination, ocean freight, air freight, project cargo and integrated supply chain solutions for importers, exporters, manufacturers and international trading companies. For project cargo movements, requirements can extend from port handling and storage to customs coordination, specialised transportation and final delivery planning, depending on the cargo and transaction structure. The focus is on building the logistics plan around the actual cargo, route and destination rather than treating an oversized movement like a standard freight shipment.`
+      }
+    ],
+    faqs: [
+      {
+        question: "What is considered ODC (Over Dimensional Cargo) in India?",
+        answer: "Cargo is generally treated as over dimensional when its loaded dimensions or weight exceed standard road transport limits, requiring a specialised trailer and route assessment rather than a conventional truck or container. The exact thresholds and applicable permit requirements depend on the vehicle, cargo and the specific state or route involved."
+      },
+      {
+        question: "Why is a route survey necessary if the destination is already connected by highway?",
+        answer: "A highway being suitable for regular trucks does not mean it is suitable for an oversized trailer. Turning radius at junctions, bridge and culvert capacity, road width, and overhead clearances all need to be checked specifically against the loaded vehicle's dimensions — issues that a standard map or highway rating won't reveal."
+      },
+      {
+        question: "How far in advance should ODC permits and route planning begin?",
+        answer: "As early as possible, ideally once cargo dimensions and the transport configuration are confirmed. Permit and coordination requirements can vary by state and route, and identifying routing or clearance issues during planning is far easier to resolve than discovering them once the cargo is already committed to the road."
+      }
+    ]
+  },
 ];
 
 export const categoryColors: Record<string, string> = {
