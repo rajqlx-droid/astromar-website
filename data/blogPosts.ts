@@ -2829,19 +2829,33 @@ The advantage here is predictability. Container coastal shipping fits into exist
       },
       {
         heading: "Bulk Coastal Shipping",
-        content: `This is a different operation entirely — cargo like cement, grain, coal, or fertilizer moved loose, not containerized. It requires bulk-handling infrastructure at both loading and discharge ports, and the economics work differently: bulk shipping generally makes sense at higher volumes than container shipping does, since the cost advantage compounds with scale.`
+        content: [
+          { text: "This is a different operation entirely — cargo like cement, grain, coal, or fertilizer moved loose, not containerized. It requires bulk-handling infrastructure at both loading and discharge ports, much of it built out under the government's " },
+          { text: "Sagarmala Programme", kw: true, href: "https://sagarmala.gov.in/coastal-shipping", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", and the economics work differently: bulk shipping generally makes sense at higher volumes than container shipping does, since the cost advantage compounds with scale." }
+        ]
       },
       {
         heading: "The Decision That Actually Matters",
         content: [
-          { text: "The real question isn't \"container or bulk\" in the abstract — it's whether your cargo is naturally unitized or naturally loose, and whether your origin and destination ports actually have the right handling infrastructure for the mode you're considering. A port with excellent container handling but no bulk terminal makes bulk coastal shipping impractical, regardless of the cost math.\n\nThis is also where " },
+          { text: "The real question isn't \"container or bulk\" in the abstract — it's whether your cargo is naturally unitized or naturally loose, and whether your origin and destination ports actually have the right handling infrastructure — and " },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " procedures in place — for the mode you're considering. A port with excellent container handling but no bulk terminal makes bulk coastal shipping impractical, regardless of the cost math. A port like " },
+          { text: "Mundra", kw: true, href: "/locations/mundra" },
+          { text: ", for instance, has infrastructure for both container and bulk cargo, which isn't true everywhere — port-wise handling capability is tracked by the " },
+          { text: "Indian Ports Association", kw: true, href: "https://www.ipa.nic.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", which is worth checking before assuming a port can support a given cargo type.\n\nThis is also where " },
           { text: "coastal shipping services", kw: true, href: "/coastal-shipping-free-trade-zone" },
           { text: " built around a specific port network matter — the right coastal shipping partner should already know which of their ports handle which cargo type well, rather than treating every route as interchangeable." }
         ]
       },
       {
         heading: "Final Thoughts",
-        content: `Coastal shipping isn't a single decision — it's two different logistics models wearing the same name. Getting the container-vs-bulk question right before booking anything is what separates a coastal shipping strategy that actually saves money from one that just adds a step.`
+        content: [
+          { text: "Coastal shipping isn't a single decision — it's two different logistics models wearing the same name. Getting the container-vs-bulk question right before booking anything is what separates a coastal shipping strategy that actually saves money from one that just adds a step. Coastal vessel operations themselves are separately regulated by the " },
+          { text: "Directorate General of Shipping", kw: true, href: "https://www.dgshipping.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", which is worth being aware of if you're evaluating a coastal route for the first time." }
+        ]
       }
     ],
     faqs: [
@@ -5045,7 +5059,8 @@ Instead of automatically sending everything to the project site, the company map
     sections: [
       {
         heading: "So, what exactly is AEO?",
-        content: `AEO stands for Authorized Economic Operator.
+        content: [
+          { text: `AEO stands for Authorized Economic Operator.
 
 In India, the programme is administered by the Central Board of Indirect Taxes and Customs (CBIC). It is a voluntary programme intended to recognize businesses and eligible supply-chain participants that meet specified compliance and security requirements.
 
@@ -5053,9 +5068,12 @@ The programme is based on the broader concept of trusted economic operators in i
 
 A business that consistently maintains its customs records, follows applicable requirements and has appropriate internal controls can receive customs facilitation in recognition of that compliance.
 
-India's AEO programme has different levels for eligible importers and exporters, including AEO-T1, AEO-T2 and AEO-T3, with increasing requirements and facilitation. There is also a separate framework for eligible logistics operators.
+India's AEO programme has different levels for eligible importers and exporters, including AEO-T1, AEO-T2 and AEO-T3, with increasing requirements and facilitation. Applications and tier-specific requirements are published on the ` },
+          { text: "Indian AEO Portal", kw: true, href: "https://aeoindia.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `. There is also a separate framework for eligible logistics operators.
 
-The exact eligibility requirements and benefits depend on the applicable AEO provisions.`
+The exact eligibility requirements and benefits depend on the applicable AEO provisions.` }
+        ]
       },
       {
         heading: "What changes after getting AEO status?",
@@ -5079,17 +5097,21 @@ Rather than thinking of AEO as a fast-track certificate, it is better to think o
       },
       {
         heading: "Does AEO mean customs clearance will always be faster?",
-        content: `Getting AEO status does not mean every shipment will automatically clear customs within a fixed period.
+        content: [
+          { text: `Getting AEO status does not mean every shipment will automatically clear customs within a fixed period.
 
 Customs continues to operate risk-management and assessment processes, and individual consignments can still be subject to applicable requirements.
 
 What AEO can do is provide eligible businesses with greater levels of facilitation.
 
-There is evidence that this can make a difference at a system level. CBIC's National Time Release Study has shown that bills of entry combining advance filing, facilitation, and AEO status can clear significantly faster — in the range of 35-45% faster, depending on the port type — compared to the average release time across all bills of entry.
+There is evidence that this can make a difference at a system level. ` },
+          { text: "CBIC", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `'s National Time Release Study has shown that bills of entry combining advance filing, facilitation, and AEO status can clear significantly faster — in the range of 35-45% faster, depending on the port type — compared to the average release time across all bills of entry.
 
 That figure reflects a broader combination of trade-facilitation factors, not AEO status in isolation, and shouldn't be read as a guarantee for any individual shipment. It illustrates the type of operational improvement the framework is intended to support.
 
-For a business handling hundreds of import transactions, even improvements in predictability can be valuable.`
+For a business handling hundreds of import transactions, even improvements in predictability can be valuable.` }
+        ]
       },
       {
         heading: "AEO is really about what happens inside the company",
@@ -5119,17 +5141,21 @@ AEO is built around compliance. It cannot compensate for poor information at the
       },
       {
         heading: "Documentation still needs to be accurate",
-        content: `There is sometimes an assumption that AEO status means customs documentation becomes less important.
+        content: [
+          { text: `There is sometimes an assumption that AEO status means customs documentation becomes less important.
 
 It is actually the opposite.
 
 Good documentation is part of the foundation on which the status is built.
 
-Commercial invoices, packing details, transport documents and other supporting records need to be maintained properly according to the nature of the transaction.
+Commercial invoices, packing details, transport documents and other supporting records need to be maintained properly according to the nature of the transaction — this is the underlying information reflected in declarations filed through ` },
+          { text: "ICEGATE", kw: true, href: "https://www.icegate.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `.
 
 When a business imports regularly, small documentation inconsistencies can become repetitive operational problems.
 
-A well-organized documentation process helps reduce that risk and makes it easier to respond when clarification or supporting information is required.`
+A well-organized documentation process helps reduce that risk and makes it easier to respond when clarification or supporting information is required.` }
+        ]
       },
       {
         heading: "Where does the customs broker fit in?",
@@ -5141,7 +5167,8 @@ A well-organized documentation process helps reduce that risk and makes it easie
       },
       {
         heading: "Who should seriously look at AEO?",
-        content: `AEO is unlikely to be equally valuable for every importer.
+        content: [
+          { text: `AEO is unlikely to be equally valuable for every importer.
 
 A company importing one shipment occasionally has a different business case from a manufacturer receiving international cargo every week.
 
@@ -5149,7 +5176,12 @@ For businesses with regular trade activity, however, AEO may be worth evaluating
 
 This can include manufacturers importing raw materials, machinery or components; importers and distributors receiving regular overseas shipments; exporters with consistent international shipments; international trading companies handling significant cross-border inventory; and eligible logistics operators.
 
-The key is not simply shipment volume. The business should also have the internal systems and compliance discipline required to support the programme.`
+High-frequency importers working through a major gateway port — such as ` },
+          { text: "Mumbai-JNPA", kw: true, href: "/locations/mumbai-jnpa" },
+          { text: `, where on-port facilities are built for frequent, time-sensitive cargo movement — are often well positioned to benefit from that kind of facilitation.
+
+The key is not simply shipment volume. The business should also have the internal systems and compliance discipline required to support the programme.` }
+        ]
       },
       {
         heading: "AEO is not something to pursue just for a certificate",
