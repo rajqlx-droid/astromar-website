@@ -6073,6 +6073,119 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) service
       }
     ]
   },
+  {
+    slug: "multi-location-inventory-visibility-warehouses",
+    title: "Multi-Location Inventory Visibility: Why Businesses Lose Track of Stock Across Warehouses",
+    excerpt: "More locations create more opportunities — and more blind spots. Here's why inventory visibility breaks down as businesses grow, and how to fix it.",
+    category: "FTWZ",
+    date: "2026-09-19",
+    readTime: "4 min read",
+    featured: false,
+    thumbnail: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&auto=format&fit=crop&q=70",
+    heroImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Warehouse and port operations representing multi-location inventory management",
+    metaDescription: "Why inventory visibility breaks down across multiple warehouses as businesses grow, and practical steps to fix it.",
+    keywords: ["multi location inventory visibility", "warehouse inventory management india", "supply chain inventory tracking", "ftwz inventory visibility"],
+    intro: `As businesses grow, they naturally expand into more warehouses — different ports, industrial hubs, or locations closer to customers. That flexibility is valuable, but it comes with a real cost: keeping track of what's actually in stock, where it is, and when it's available becomes genuinely difficult.`,
+    sections: [
+      {
+        heading: "A Common Challenge for Growing Businesses",
+        content: [
+          { text: "As businesses grow, it's natural to use multiple warehouses — at different ports (" },
+          { text: "Kochi", kw: true, href: "/locations/kochi" },
+          { text: `, for example), industrial hubs or near customers. It helps you store goods closer to where they are needed, reduce transit time and respond faster to demand.
+
+But with more locations comes a new challenge: keeping track of what is actually in stock, where it is, and when it will be available.
+
+Many importers and manufacturers discover that inventory visibility becomes harder than expected once stock is spread across several warehouses, FTWZ locations, and in-transit shipments.` }
+        ]
+      },
+      {
+        heading: "Why Inventory Visibility Breaks Down",
+        content: [
+          { text: `There is rarely a single reason. In most cases, it's a combination of factors.
+
+Data in different systems: each warehouse or location may use a different system or process, making it difficult to get a single, accurate view.
+
+Manual updates and delays: when stock movements are updated manually, there can be a time gap between physical movement and system records.
+
+In-transit shipments not tracked properly: goods may have been shipped from the port or another warehouse, but are not yet updated in the inventory system.
+
+Lack of coordination between teams: procurement, logistics, warehousing and sales teams may be working with different information.
+
+Multiple stock categories: stock in FTWZ, domestic warehouses, at customer sites or with third-party providers can create confusion if there is no clear structure. Stock held in an FTWZ or bonded warehouse also remains subject to the applicable ` },
+          { text: "customs framework", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `, which has its own record-keeping requirements.
+
+The result is often the same: businesses end up with either too much stock in one location, or a shortage in another — even though there may be enough inventory overall.` }
+        ]
+      },
+      {
+        heading: "The Real Impact on Your Business",
+        content: `Poor inventory visibility can create issues across the supply chain: delayed production, higher inventory costs, missed sales opportunities, unhappy customers, emergency shipments, and inefficient planning.
+
+These are not just operational headaches. They can affect working capital, customer relationships and overall supply-chain performance.`
+      },
+      {
+        heading: "What Better Visibility Looks Like",
+        content: `Good inventory visibility doesn't mean checking stock once in a while. It means having a clear, up-to-date view of inventory across all locations, including FTWZ warehouses, domestic warehouses, cold storage facilities, in-transit shipments, and customer or project sites.`
+      },
+      {
+        heading: "Practical Steps to Improve Inventory Visibility",
+        content: [
+          { text: `Every business is different, but a few practical steps can help.
+
+Use a centralized inventory system — bring all locations onto a single platform, where possible.
+
+Standardize processes — ensure stock movements are recorded consistently across warehouses. Common identification standards, such as ` },
+          { text: "GS1", kw: true, href: "https://www.gs1india.org/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ` barcodes, can help keep records consistent across sites.
+
+Track in-transit cargo — include shipments from ports, FTWZ facilities and between locations in your inventory view.
+
+Work with an experienced logistics partner — a partner with multiple locations can help provide a consolidated view of your inventory.
+
+Review regularly — reconcile physical stock with system records and address variances early.` }
+        ]
+      },
+      {
+        heading: "How Astromar Supports Better Inventory Visibility",
+        content: [
+          { text: "With " },
+          { text: "FTWZ and bonded warehousing", kw: true, href: "/free-trade-zone" },
+          { text: " facilities across multiple locations in India, Astromar works with importers, exporters and manufacturers to help manage their inventory more effectively. Our integrated approach — combining warehousing, customs coordination, ocean freight, air freight, cold storage and " },
+          { text: "supply chain solutions", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: " — helps businesses keep their goods moving and their inventory better aligned with demand." }
+        ]
+      },
+      {
+        heading: "The Bigger Picture",
+        content: [
+          { text: "Multi-location inventory will continue to be part of modern supply chains. The key is not just having warehouses in the right places, but having the right processes, systems and partners to keep track of inventory across the network. India's " },
+          { text: "National Logistics Policy", kw: true, href: "https://logistics.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ` also places emphasis on better data and coordination across the logistics chain.
+
+When you can see your stock clearly, you can plan better, respond faster and make smarter decisions — no matter how many locations you operate.
+
+Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) services, bonded warehousing, customs coordination, ocean freight, air freight, cold storage, project cargo, and integrated supply chain solutions for importers, exporters, manufacturers, and international trading companies.` }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Why does inventory visibility get harder when a business adds more warehouses?",
+        answer: "Each location may use a different system or process, stock movements may be updated manually with a delay, and in-transit shipments are often not reflected in the inventory record. Different teams then work from different information, so the business loses a single, accurate view of what is where."
+      },
+      {
+        question: "What should a multi-location inventory view include?",
+        answer: "It should cover all stock locations, including FTWZ warehouses, domestic warehouses, cold storage facilities, in-transit shipments, and customer or project sites, so that stock in every category is visible in one up-to-date view."
+      },
+      {
+        question: "What are practical first steps to improve inventory visibility?",
+        answer: "Bring all locations onto a centralised inventory system where possible, standardise how stock movements are recorded, include in-transit cargo in the inventory view, and reconcile physical stock with system records regularly so variances are addressed early."
+      }
+    ]
+  },
 ];
 
 export const categoryColors: Record<string, string> = {
