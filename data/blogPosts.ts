@@ -5855,6 +5855,129 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) service
       }
     ]
   },
+  {
+    slug: "customs-valuation-disputes-declared-value",
+    title: "Customs Valuation Disputes: What Happens When Customs Doesn't Agree With Your Declared Value",
+    excerpt: "A valuation query doesn't mean you've done something wrong. Here's why customs sometimes questions a declared value, and how importers can handle it effectively.",
+    category: "Customs",
+    date: "2026-09-19",
+    readTime: "8 min read",
+    featured: false,
+    thumbnail: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&auto=format&fit=crop&q=70",
+    heroImage: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Import documentation representing customs valuation review process",
+    metaDescription: "What happens when customs questions your declared import value — why valuation disputes arise and how importers can respond effectively.",
+    keywords: ["customs valuation dispute india", "declared value customs query", "customs act section 14", "import valuation india"],
+    intro: `Every importer eventually hits this moment. You've filed your documents, your invoice matches what you actually paid, and then customs comes back questioning the value.
+
+It's an unsettling feeling — not because you've done anything wrong, but because it's not always obvious why it's happening or what to do next.`,
+    sections: [
+      {
+        heading: "An Apparently Simple Invoice Can Still Be Questioned",
+        content: [
+          { text: `Here's the thing that catches most importers off guard: having a genuine invoice doesn't automatically mean customs will accept the declared value for assessment. The invoice can reflect exactly what you paid, and customs can still raise a query.
+
+That's not customs being difficult for its own sake. Under ` },
+          { text: "Section 14 of the Customs Act", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `, the valuation framework starts with the transaction value — but it's subject to conditions and adjustments under the applicable customs valuation rules, and the law specifically allows customs to examine the value if there's reason to doubt its truth or accuracy.
+
+Understanding what happens at this stage makes a real difference in how quickly and smoothly a valuation query gets resolved.` }
+        ]
+      },
+      {
+        heading: "Why Would Customs Question the Declared Value?",
+        content: `There are a handful of reasons a declared value tends to attract a closer look. The declared value might look different from what customs has seen on similar imports. The product specs, quantities, or commercial terms might need clarifying. There could be discounts or arrangements in play that need explaining. The buyer and supplier might be related parties. Or customs might simply have a reason to doubt whether the declared value reflects the real transaction.
+
+None of this means the invoice is wrong. Products genuinely differ in specification, brand, quality, and the commercial arrangement behind them — the importer just needs to be able to explain that with proper documentation.`
+      },
+      {
+        heading: "The Invoice Matters — But It's Not the Whole Story",
+        content: [
+          { text: `A commercial invoice is one of the key documents in an import transaction, but the full valuation picture can involve more than the basic invoice price.
+
+Section 14 provides for including — subject to the applicable rules — certain costs and services connected to the imported goods: things like commissions and brokerage, engineering and design work, royalties and licence fees, transportation, insurance, and loading, unloading and handling charges.
+
+In practice, this means an importer needs to look at the whole commercial arrangement when preparing a ` },
+          { text: "customs declaration", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: ` — not just treat "invoice value" and "customs value" as automatically the same thing.` }
+        ]
+      },
+      {
+        heading: "What Happens When Customs Has Doubts?",
+        content: `A valuation query doesn't mean you've done something wrong. It means the declared value may need to be examined under the applicable framework — that's it.
+
+When that happens, you might be asked for supporting information like commercial invoices, purchase orders, contracts, payment records, product specs, price lists, import history, discount details, freight and insurance information, correspondence with your overseas supplier, or anything else that explains unusual pricing or commercial terms.
+
+Exactly what's asked for depends on the transaction and the specific issue being raised.`
+      },
+      {
+        heading: "Related-Party Transactions Need Particular Attention",
+        content: [
+          { text: `Things get more complicated when the importer and overseas supplier are related parties. That doesn't automatically make the declared price unacceptable — but the relationship between buyer and seller becomes part of the valuation analysis.
+
+Importers in this position may need to show the circumstances of the sale satisfy the applicable valuation requirements. If you're part of a multinational structure, keeping strong documentation around intercompany pricing and import transactions genuinely matters here — it's the difference between a quick clarification and a drawn-out review. For the official position on how valuation is examined, the ` },
+          { text: "Directorate General of Valuation", kw: true, href: "https://dov.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " is the source to check." }
+        ]
+      },
+      {
+        heading: "What If the Transaction Value Isn't Accepted?",
+        content: `If the declared transaction value can't be accepted, valuation gets determined using the prescribed framework and methods. What customs can't do is just pick an arbitrary number because the invoice price "looks low."
+
+The importer usually still gets the chance to provide information, clarify the transaction, and respond before the assessment is finalized.`
+      },
+      {
+        heading: "A Simple Example",
+        content: [
+          { text: "Say you're importing a specialized component through " },
+          { text: "JNPA (Mumbai)", kw: true, href: "/locations/mumbai-jnpa" },
+          { text: ` at USD 80 per unit. Customs questions the value because comparable imports seem to show higher prices.
+
+You should be ready to explain why USD 80 is right — maybe it's a larger order quantity, a different spec, a documented commercial discount, or a long-term pricing arrangement. Whatever the explanation, it needs to be backed by actual records, not just an assertion.` }
+        ]
+      },
+      {
+        heading: "Where Importers Often Create Problems for Themselves",
+        content: `Honestly, a lot of valuation disputes get harder than they need to be simply because the documentation doesn't line up. The invoice shows one price, the purchase order shows another, or a discount mentioned in email correspondence never made it into the actual paperwork.
+
+A clean documentary trail — purchase order to invoice to payment to shipment — is what keeps a straightforward transaction from turning into an extended back-and-forth.`
+      },
+      {
+        heading: "How Can Importers Prepare Better?",
+        content: [
+          { text: "Before a shipment goes through, it's worth reviewing anything valuation-sensitive: does the invoice price match the purchase order? Are discounts properly documented? Are the buyer and seller related? Are there royalties, licence fees, or other relevant costs? Can you explain any significant difference from comparable purchases? Are payment records consistent? Is the product specification clearly documented? It also helps to check the details you plan to declare against your paperwork before filing on " },
+          { text: "ICEGATE", kw: true, href: "https://www.icegate.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `.
+
+Catching a gap in that list before shipment is a lot less painful than catching it during a customs query.` }
+        ]
+      },
+      {
+        heading: "Where Does an FTWZ Fit Into This?",
+        content: [
+          { text: "An " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: ` can support inventory and logistics planning for eligible imported goods. What it isn't is a solution to a customs valuation dispute — valuation remains a customs matter, and the right treatment depends on the goods, the transaction structure, and the applicable regulations.
+
+Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) services, bonded warehousing, customs coordination, ocean freight, air freight, cold storage, project cargo, and integrated supply chain solutions for importers, exporters, manufacturers, and international trading companies.` }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Does a customs valuation query mean I have done something wrong?",
+        answer: "No. A valuation query means the declared value may need to be examined under the applicable framework. Genuine invoices can still be questioned, for example when the price differs from similar imports or when commercial terms need clarifying. The usual response is to provide supporting documents and explain the transaction."
+      },
+      {
+        question: "What documents are usually needed to support a declared value?",
+        answer: "Typically commercial invoices, purchase orders, contracts, payment records, product specifications, price lists, discount details, freight and insurance information, and correspondence with the overseas supplier. What is actually requested depends on the transaction and the specific issue being raised."
+      },
+      {
+        question: "Can customs simply substitute a different value if the invoice price looks low?",
+        answer: "Not arbitrarily. If the declared transaction value cannot be accepted, the value is determined using the prescribed valuation framework and methods, and the importer generally gets the chance to provide information and respond before the assessment is finalised."
+      }
+    ]
+  },
 ];
 
 export const categoryColors: Record<string, string> = {
