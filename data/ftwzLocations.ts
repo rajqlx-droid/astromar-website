@@ -87,7 +87,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: " operating within the Cochin SEZ at Vallarpadam — India's first dedicated container transshipment terminal. Operated by DP World (Adani Ports), the ICTT handles containerized cargo with direct mother-vessel calls, reducing transshipment dependency on Colombo or Singapore by 3-5 days." },
         ],
         [
-          { text: "The Vallarpadam ICTT operates with 14.5m draft accommodating Post-Panamax vessels, with annual handling capacity of 1 million TEUs. Direct mother-vessel services connect Kochi to Europe, Middle East, and the Far East — making it a strategic gateway for South India's import-export trade. A dedicated rail corridor links ICTT to Indian Railways, enabling efficient hinterland distribution across Kerala and Tamil Nadu." },
+          { text: "The Vallarpadam ICTT operates with 14.5m draft accommodating Post-Panamax vessels, with annual handling capacity of 1 million TEUs. Direct mother-vessel services connect Kochi to Europe, Middle East, and the Far East — making it a strategic gateway for South India's import-export trade. A dedicated rail corridor links ICTT to Indian Railways, enabling efficient hinterland distribution across Kerala and Tamil Nadu. For businesses also moving cargo along India's coastline, this connects naturally with Astromar's " },
+          { text: "coastal shipping network", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "." },
         ],
         [
           { text: "As a fully-operational " },
@@ -530,7 +532,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "." },
         ],
         [
-          { text: "Panvel serves Maharashtra's automotive, electronics, FMCG, and chemicals industries — supporting OEMs, Tier-1 suppliers, and export-oriented manufacturers across Pune, Nashik, Aurangabad, and the Mumbai metropolitan region. For businesses seeking a custom bonded warehouse in mumbai with the added benefits of an SEZ-notified zone, Panvel combines port proximity, expressway connectivity, and lower operating costs than core Mumbai." },
+          { text: "Panvel serves Maharashtra's automotive, electronics, FMCG, and chemicals industries — supporting OEMs, Tier-1 suppliers, and export-oriented manufacturers across Pune, Nashik, Aurangabad, and the Mumbai metropolitan region, supported by " },
+          { text: "integrated supply chain management", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: ". For businesses seeking a custom bonded warehouse in mumbai with the added benefits of an SEZ-notified zone, Panvel combines port proximity, expressway connectivity, and lower operating costs than core Mumbai." },
         ],
       ],
       servicesH2: [
@@ -753,7 +757,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "duty-deferred storage", kw: true, href: "/blogs/customs-duty-deferment-benefits" },
           { text: " ideal for re-export, consolidation, and break-bulk operations. Combined with " },
           { text: "specialised ocean freight services", kw: true, href: "/free-trade-zone-services/ocean-freight" },
-          { text: " and on-site customs clearance, importers achieve maximum efficiency under the " },
+          { text: " and " },
+          { text: "on-site customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: ", importers achieve maximum efficiency under the " },
           { text: "full FTWZ benefit stack", kw: true, href: "/free-trade-zone" },
           { text: "." },
         ],
@@ -963,7 +969,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: " under the SEZ Act, 2005, subject to applicable regulations governing FTWZ operations. The site sits directly on the NH 48 corridor, 42 km from Chennai International Airport and 52 km from Chennai Port, putting component importers within reach of both gateways from a single location." },
         ],
         [
-          { text: "More than 200 Tier-1 electronics and auto-component suppliers operate within this belt, feeding assembly lines at Foxconn, Samsung, Dell, Hyundai, and BMW on strict just-in-time schedules. Astromar's " },
+          { text: "More than 200 Tier-1 electronics and auto-component suppliers operate within this belt, feeding assembly lines at Foxconn, Samsung, Dell, Hyundai, and BMW on strict just-in-time schedules, supported by tightly coordinated " },
+          { text: "supply chain management", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: " to keep production on schedule. Astromar's " },
           { text: "duty-deferred storage", kw: true, href: "/blogs/customs-duty-deferment-benefits" },
           { text: " lets these manufacturers hold imported components and sub-assemblies at the zone without paying customs duty upfront, so working capital isn't tied up in parts sitting on a shelf awaiting a production call-off." },
         ],
@@ -1234,7 +1242,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: " under the SEZ Act, 2005, and operates as a fully-licensed bonded facility, subject to applicable regulations governing FTWZ status." },
         ],
         [
-          { text: "Bulk commodities, petrochemicals, LNG-linked equipment, fertilizers, coal, and other industrial cargo move through this corridor in volumes that punish inland warehousing with detention and demurrage. At 15 km from Kattupalli Port, Vallur cuts that port-to-warehouse leg to the shortest of any Astromar site in the state, so containers clear the terminal and reach bonded storage before demurrage costs have a chance to build up." },
+          { text: "Bulk commodities, petrochemicals, LNG-linked equipment, fertilizers, coal, and other industrial cargo move through this corridor in volumes that punish inland warehousing with detention and demurrage, much of it moved along India's coastline through Astromar's " },
+          { text: "coastal shipping network", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: ". At 15 km from Kattupalli Port, Vallur cuts that port-to-warehouse leg to the shortest of any Astromar site in the state, so containers clear the terminal and reach bonded storage before demurrage costs have a chance to build up." },
         ],
         [
           { text: "As a customs bonded warehouse in chennai, Vallur lets importers defer duty on goods bound for domestic sale or re-export through " },
@@ -1743,7 +1753,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         [
           { text: "Bengaluru's Aerospace SEZ serves aerospace and defence manufacturers, precision engineering companies, semiconductor importers, IT hardware suppliers, biotech and life sciences firms, and machine tool manufacturers across South India. For businesses seeking a Karnataka " },
           { text: "ftwz", kw: true },
-          { text: " location with direct airport access and specialised infrastructure for hi-tech manufacturing supply chains, Devanahalli delivers operational depth unmatched in the region. " },
+          { text: " location with direct airport access and specialised infrastructure for hi-tech " },
+          { text: "manufacturing supply chains", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: ", Devanahalli delivers operational depth unmatched in the region. " },
           { text: "Efficient customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
           { text: " helps aerospace and electronics components move quickly from arrival to production line." },
         ],
@@ -1958,7 +1970,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "." },
         ],
         [
-          { text: "Dahej serves India's chemicals, petrochemicals, plastics, pharmaceuticals (API), and industrial gases industries — with major operations from ONGC, GAIL, and global chemical MNCs co-located in the PCPIR. For businesses needing a " },
+          { text: "Dahej serves India's chemicals, petrochemicals, plastics, pharmaceuticals (API), and industrial gases industries, supported by " },
+          { text: "integrated supply chain coordination", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: " across the region — with major operations from ONGC, GAIL, and global chemical MNCs co-located in the PCPIR. For businesses needing a " },
           { text: "bonded warehousing in dahej", kw: true },
           { text: " with hazmat compliance, dedicated chemical infrastructure, and direct port jetty access, Astromar delivers specialised capability unmatched in the chemical logistics sector. Chemical cargo also carries some of the most complex HS classification and hazmat documentation requirements in Indian trade, which is why Astromar pairs Dahej storage with " },
           { text: "dedicated customs clearance support", kw: true, href: "/free-trade-zone-services/custom-clearance" },

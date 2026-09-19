@@ -636,7 +636,7 @@ function FreightIntelligencePage() {
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
               <span className="text-2xl block mb-2">💰</span>
               <h2 className="text-lg md:text-xl font-bold text-[#1B3A6B]">Import Duty Calculator (India)</h2>
-              <p className="mt-2 text-gray-600 text-[15px] leading-relaxed">Estimate the landed cost of an import into India — basic customs duty, GST, and applicable surcharges on your CIF value — to see the total duty payable before you ship.</p>
+              <p className="mt-2 text-gray-600 text-[15px] leading-relaxed">Estimate the landed cost of an import into India — basic customs duty, GST, and applicable surcharges on your CIF value — to see the total duty payable before you ship. For help with the filing itself, see our <Link href="/free-trade-zone-services/custom-clearance" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">customs clearance services</Link>.</p>
             </div>
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
               <span className="text-2xl block mb-2">📈</span>
