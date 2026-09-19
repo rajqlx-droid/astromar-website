@@ -5978,6 +5978,101 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) service
       }
     ]
   },
+  {
+    slug: "choosing-spmt-multi-axle-trailer-crane-heavy-cargo",
+    title: "Choosing Between SPMTs, Multi-Axle Trailers, and Cranes for Heavy Cargo",
+    excerpt: "The right equipment for your project depends on the cargo, route, site conditions and final positioning requirement — not just which vehicle looks biggest.",
+    category: "Freight",
+    date: "2026-09-19",
+    readTime: "4 min read",
+    featured: false,
+    thumbnail: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&auto=format&fit=crop&q=70",
+    heroImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Heavy industrial equipment transport using SPMT and crane at port",
+    metaDescription: "SPMTs, multi-axle trailers, or cranes — how to choose the right equipment for moving heavy or oversized project cargo in India.",
+    keywords: ["spmt vs trailer", "heavy cargo transport equipment", "project cargo crane selection", "multi axle trailer heavy lift"],
+    intro: `Choosing between an SPMT, a multi-axle trailer, and a crane isn't about which one looks biggest or most powerful. It comes down to the cargo's dimensions and weight, the route it needs to travel, the site conditions at both ends, and how precisely it needs to be positioned at the finish.`,
+    sections: [
+      {
+        heading: "Start With the Cargo, Not the Equipment",
+        content: [
+          { text: `Moving heavy project cargo is not just about finding the biggest truck or crane. Every project is different. A transformer, reactor, pressure vessel or industrial module may need to travel from a port to a project site, move through congested areas and finally be positioned with precision.
+
+The equipment should be selected based on cargo dimensions, weight distribution, route, ground conditions, available space and the final installation requirement. For pressure vessels and certain other regulated equipment, the ` },
+          { text: "Petroleum and Explosives Safety Organisation (PESO)", kw: true, href: "https://peso.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " is the body whose rules may apply, depending on the equipment." }
+        ]
+      },
+      {
+        heading: "Where Multi-Axle Trailers Make Sense",
+        content: [
+          { text: "Multi-axle trailers are a proven solution for heavy transport. They can distribute high loads across multiple axles and are ideal for long-distance movement when the route is suitable for road transport. They work well when the cargo can be carried without the extreme manoeuvrability needed inside a congested site. Factors like road geometry, bridge capacities, gradients, overhead clearances and permits all influence the final setup. For national highway stretches, the " },
+          { text: "National Highways Authority of India", kw: true, href: "https://www.nhai.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " is a useful reference point." }
+        ]
+      },
+      {
+        heading: "When an SPMT Becomes More Useful",
+        content: `A Self-Propelled Modular Transporter (SPMT) offers high manoeuvrability and can be configured in different ways to suit the cargo. It has its own power and steering, allowing sideways movement and tight-radius turns. This makes it ideal for plant moves, module transportation and operations within restricted areas where conventional trailers may struggle. Hydraulic suspension also allows the platform height to be adjusted during operations.`
+      },
+      {
+        heading: "SPMT Does Not Mean \"No Engineering Required\"",
+        content: `The manoeuvrability of an SPMT should not be confused with simplicity. Detailed engineering is essential to assess stability, load distribution, ground bearing pressure and movement path. Factors such as acceleration, braking, wind and road camber can affect the cargo. In many cases, ground preparation, steel plates or other measures may be required, depending on the site conditions.`
+      },
+      {
+        heading: "And Then There Is the Crane",
+        content: `A crane solves a different problem. Trailers and SPMTs help move the cargo, while a crane helps lift and position it. Cranes are required for loading and unloading at ports, transferring cargo between transport systems and final installation at the project site. The type and capacity of crane will depend on the cargo weight, radius, available space and site conditions. In many projects, cranes and SPMTs work together.`
+      },
+      {
+        heading: "Key Factors to Consider",
+        content: [
+          { text: "When deciding between an SPMT, multi-axle trailer or crane, consider: cargo weight, size and centre of gravity; route survey and road conditions; turning radius and available space; load-bearing points and support arrangement; ground bearing capacity; height restrictions and overhead clearances; loading and unloading method; final installation position; required equipment configuration; permits and regulatory approvals; site conditions and weather; and project timeline and coordination. For the road transport framework behind those permits, the " },
+          { text: "Ministry of Road Transport and Highways", kw: true, href: "https://morth.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " is the reference to check." }
+        ]
+      },
+      {
+        heading: "A Practical Example",
+        content: [
+          { text: "Consider a hypothetical scenario: a large reactor arriving at an Indian port such as " },
+          { text: "Dahej", kw: true, href: "/locations/dahej" },
+          { text: `. It is first lifted from the vessel using a heavy-lift crane and placed onto an SPMT for movement within the port. The same SPMT then transports the reactor to the project site, where it is again lifted using a high-capacity crane and positioned onto the foundation. This combination ensures safe movement and precise installation.` }
+        ]
+      },
+      {
+        heading: "Work With an Experienced Project Logistics Partner",
+        content: [
+          { text: "Heavy cargo movement involves multiple disciplines — routing, engineering, equipment selection, permits, lifting plans and on-site execution. An experienced " },
+          { text: "project logistics partner", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: " can help plan the complete movement, coordinate the right equipment and manage the interface between transport, lifting and installation teams. Where imported equipment needs to be stored before it moves to site, an " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " can also form part of the plan, subject to the applicable procedures." }
+        ]
+      },
+      {
+        heading: "The Bigger Picture",
+        content: `There is no single piece of equipment that works for every project. Multi-axle trailers, SPMTs and cranes each have a specific role. The right choice comes from understanding the cargo, route and site conditions, and then designing a safe, practical and cost-effective plan.
+
+With the right planning and execution, even the most challenging heavy cargo can be moved and installed safely.
+
+Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) services, bonded warehousing, customs coordination, ocean freight, air freight, cold storage, project cargo, and integrated supply chain solutions for importers, exporters, manufacturers, and international trading companies.`
+      }
+    ],
+    faqs: [
+      {
+        question: "When should an SPMT be used instead of a multi-axle trailer?",
+        answer: "An SPMT is usually more useful where manoeuvrability matters, such as plant moves, module transportation and restricted or congested areas that conventional trailers may struggle with. Multi-axle trailers are a proven option for long-distance road movement when the route is suitable."
+      },
+      {
+        question: "Does using an SPMT reduce the need for engineering and site preparation?",
+        answer: "No. Detailed engineering is still needed to assess stability, load distribution, ground bearing pressure and the movement path. Depending on site conditions, ground preparation or steel plates may also be required."
+      },
+      {
+        question: "Why is a crane often needed even when a trailer or SPMT carries the cargo?",
+        answer: "Trailers and SPMTs move the cargo, while a crane lifts and positions it. Cranes are typically needed for loading and unloading at ports, transferring cargo between transport systems and final installation at the site, and in many projects cranes and SPMTs work together."
+      }
+    ]
+  },
 ];
 
 export const categoryColors: Record<string, string> = {
