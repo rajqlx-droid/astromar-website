@@ -5753,6 +5753,108 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) operati
       }
     ]
   },
+  {
+    slug: "coastal-shipping-cabotage-rules-importers",
+    title: "Coastal Shipping and Cabotage Rules: What Importers Need to Know",
+    excerpt: "A practical guide to using India's coastal shipping network for smoother, more efficient movement of cargo — and what the Coastal Shipping Act, 2025 actually changed.",
+    category: "Freight",
+    date: "2026-09-19",
+    readTime: "8 min read",
+    featured: false,
+    thumbnail: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800&auto=format&fit=crop&q=70",
+    heroImage: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Container ship at port representing India's coastal shipping network",
+    metaDescription: "A practical guide to coastal shipping and cabotage rules in India under the Coastal Shipping Act, 2025 — what importers need to know.",
+    keywords: ["coastal shipping cabotage india", "coastal shipping act 2025", "cabotage rules india", "coastal shipping regulations"],
+    intro: `India's coastline gives us a natural advantage. Major ports on the west and east coasts are well connected, and coastal shipping can move cargo between them without the need for long road journeys. For many importers, this can mean a more efficient, reliable and cost-effective way to move containers and bulk cargo domestically.
+
+Yet, despite these benefits, many businesses still rely almost entirely on trucks or rail for domestic movement. One of the main reasons is confusion around cabotage rules — what is allowed, what is restricted, and when permission is required.
+
+This article explains the basics of coastal shipping and India's current cabotage framework in simple terms, and how importers can use this mode of transport more confidently in their supply chain.`,
+    sections: [
+      {
+        heading: "What Is Coastal Shipping?",
+        content: [
+          { text: `Coastal shipping refers to the movement of goods by sea between ports within India. It can be used for containers, bulk cargo, project cargo and several other types of shipments.
+
+For importers, this means cargo that arrives at one Indian port — such as Nhava Sheva, ` },
+          { text: "Mundra", kw: true, href: "/locations/mundra" },
+          { text: `, Chennai or Kolkata — can be moved to another Indian port by coastal vessel, instead of by road or rail. From there, the cargo can be cleared for domestic use or moved to an FTWZ, SEZ, or other facility, depending on the requirement.` }
+        ]
+      },
+      {
+        heading: "Understanding Cabotage Rules Under the Coastal Shipping Act, 2025",
+        content: [
+          { text: `Cabotage refers to the rules that regulate movement of goods and passengers between Indian ports. For decades, this was governed under the Merchant Shipping Act, 1958 — legislation originally written for ocean-going vessels, not the specific needs of domestic coastal trade.
+
+That changed with the Coastal Shipping Act, 2025, which replaced the older cabotage framework with a dedicated law built specifically for coastal trade. The new Act simplifies vessel licensing into a single coastal trade licence, expands the categories of vessels — including certain foreign-flagged vessels on specific permitted routes — that can participate under clearly defined conditions, and moves much of the documentation onto the National Logistics Portal.
+
+The core principle remains the same: Indian-flagged vessels continue to get priority on coastal routes. What has changed is how exceptions are handled — the newer framework creates more structured, defined pathways for foreign vessels to participate where Indian capacity genuinely falls short, rather than relying on a slower, case-by-case licensing process.
+
+The objective is still to support India's domestic shipping industry, but the current law is designed to reduce unnecessary friction for shippers while keeping that priority intact. For the official position on licensing and vessel requirements, the ` },
+          { text: "Directorate General of Shipping", kw: true, href: "https://www.dgshipping.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: " is the source to check." }
+        ]
+      },
+      {
+        heading: "When Can a Foreign Vessel Be Used?",
+        content: `Under the Coastal Shipping Act, 2025, foreign-flagged vessels can participate in coastal trade on specific permitted routes and under defined conditions — for example, where Indian vessel capacity is not available for a required movement.
+
+This is not unrestricted access. The framework is structured to preserve priority for Indian operators while giving shippers a clearer, faster path when genuine capacity gaps exist, compared to the older permission process.
+
+For most commercial shipments, Indian-flagged vessels remain the default, and most importers work with Indian operators as a matter of course rather than needing to navigate the foreign-vessel provisions at all.`
+      },
+      {
+        heading: "Key Benefits for Importers",
+        content: [
+          { text: "When used correctly, coastal shipping can offer several advantages: lower logistics costs compared to long-distance road transport, especially for large volumes; reduced road congestion and fewer transit-related delays; a more environmentally friendly option, since a single coastal vessel can carry the equivalent of hundreds of truckloads; better connectivity between major ports and non-metro regions (a goal also central to the government's " },
+          { text: "Sagarmala", kw: true, href: "https://sagarmala.gov.in/coastal-shipping", target: "_blank", rel: "noopener noreferrer" },
+          { text: " programme); and it can be useful for moving cargo to FTWZs, SEZs, or industrial hubs located near coastal ports." }
+        ]
+      },
+      {
+        heading: "Common Challenges",
+        content: `While the benefits are clear, there are a few challenges that importers should keep in mind: limited vessel frequency on certain routes; longer transit time compared to road in some cases; the need for better coordination between vessel schedules, port operations and final delivery; space constraints during peak seasons; and additional planning required, especially for time-sensitive cargo.
+
+Most of these challenges can be managed with proper planning and by working with a logistics partner who has experience in coastal shipping operations.`
+      },
+      {
+        heading: "Tips for Using Coastal Shipping Effectively",
+        content: [
+          { text: "If you are considering coastal shipping for your imports, a few practical steps can help: plan early and check vessel schedules for your route; confirm availability of Indian-flagged vessels; coordinate with your freight forwarder for seamless port handling, " },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " and onward movement; consider using FTWZs or bonded warehouses near the destination port if the cargo is not immediately required for domestic use; and build some flexibility into your supply chain, especially during peak periods." }
+        ]
+      },
+      {
+        heading: "A Smarter Way to Move Cargo Across India",
+        content: [
+          { text: "Coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: ` is becoming an increasingly important part of India's logistics landscape. With the right planning and understanding of the current cabotage framework, importers can use this mode to move cargo more efficiently, reduce dependence on road transport and build a more resilient supply chain.
+
+As port infrastructure and coastal connectivity continue to improve, with policy direction from the ` },
+          { text: "Ministry of Ports, Shipping and Waterways", kw: true, href: "https://shipmin.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `, coastal shipping is likely to play an even bigger role in supporting India's trade and economic growth.
+
+Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) services, bonded warehousing, customs coordination, ocean freight, air freight, cold storage, project cargo, and integrated supply chain solutions for importers, exporters, manufacturers, and international trading companies.` }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "What is cabotage in the context of Indian shipping?",
+        answer: "Cabotage refers to the rules governing the movement of goods and passengers between ports within a country. In India, these rules give Indian-flagged vessels priority on coastal routes, and they are now set out in the Coastal Shipping Act, 2025, which replaced the older framework under the Merchant Shipping Act, 1958."
+      },
+      {
+        question: "Can foreign-flagged vessels carry cargo between Indian ports?",
+        answer: "Under the Coastal Shipping Act, 2025, foreign-flagged vessels can participate on specific permitted routes and under defined conditions, for example where Indian vessel capacity is not available for a required movement. It is not unrestricted access, and Indian-flagged vessels remain the default for most commercial shipments."
+      },
+      {
+        question: "Is coastal shipping suitable for time-sensitive cargo?",
+        answer: "It can be, but it needs more planning. Vessel frequency is limited on some routes and transit can take longer than road in some cases, so schedules, port handling and onward delivery need to be coordinated in advance. For urgent or highly time-critical cargo, many importers compare coastal shipping against road or rail before deciding."
+      }
+    ]
+  },
 ];
 
 export const categoryColors: Record<string, string> = {
