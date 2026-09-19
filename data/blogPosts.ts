@@ -5640,6 +5640,119 @@ Astromar Logistics Pvt. Ltd. provides FTWZ operations, bonded warehousing, custo
       }
     ]
   },
+  {
+    slug: "supply-chain-resilience-ftwz-inventory-buffers",
+    title: "Building Supply Chain Resilience: Planning for Disruption with FTWZ-Based Inventory Buffers",
+    excerpt: "Supply chain resilience isn't about holding more stock — it's about having genuine flexibility in where inventory sits and when it moves. Here's how an FTWZ-based inventory buffer fits into that.",
+    category: "FTWZ",
+    date: "2026-09-19",
+    readTime: "9 min read",
+    featured: false,
+    thumbnail: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&auto=format&fit=crop&q=70",
+    heroImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&auto=format&fit=crop&q=75",
+    imageAlt: "Warehouse inventory representing supply chain resilience planning",
+    metaDescription: "How FTWZ-based inventory buffers help businesses build supply chain resilience and respond to disruption without full duty commitment.",
+    keywords: ["supply chain resilience india", "ftwz inventory buffer", "supply chain disruption planning", "inventory flexibility ftwz"],
+    intro: `A supply chain usually gets attention when something goes wrong.
+
+When containers arrive on time, production runs normally and customers receive their orders, nobody spends much time thinking about the structure behind it.
+
+The situation changes quickly when one part of that chain stops working. A vessel is delayed. A supplier pushes back a shipment. A customer suddenly needs more material. A production line is waiting for one particular component.
+
+That is when the location of inventory becomes just as important as the quantity of inventory. A company may have enough stock on paper, but if that stock is sitting in the wrong place, it may not help much when the business needs it.
+
+This is why inventory buffers are becoming an important part of supply chain planning. The objective is not to fill warehouses with extra stock. It is to create enough flexibility to handle normal uncertainty without turning every disruption into an emergency.
+
+For businesses dealing with imported goods, an FTWZ-based inventory model can be one option to consider. It will not suit every company or every product. But for businesses with long international lead times, changing demand or the need to manage imported inventory more flexibly, it can be worth looking at.`,
+    sections: [
+      {
+        heading: "The Supply Chain Usually Works — Until It Doesn't",
+        content: [
+          { text: "Most companies build their " },
+          { text: "supply chains", kw: true, href: "https://logistics.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ` around what normally happens. A supplier ships every month, the vessel arrives within the expected window, the goods are cleared and moved to the warehouse, production consumes the inventory and the next shipment arrives before the existing stock runs out.
+
+There is nothing wrong with this model when the assumptions remain valid. The problem is that supply chains rarely stay predictable for very long. A supplier can have a production problem. A vessel can arrive later than planned. A customer can bring forward an order. A new project can suddenly require material that was not part of the original forecast.
+
+When there is no buffer anywhere in the chain, even a small disruption can become a production or customer-service problem. That does not mean the company needs months of additional stock. It means the company needs to decide where some flexibility is worth paying for.` }
+        ]
+      },
+      {
+        heading: "Just-in-Time Has a Limit",
+        content: `Keeping inventory low is generally a good business practice. Nobody wants capital sitting unnecessarily in a warehouse. But reducing inventory to the absolute minimum can create another risk.
+
+Imagine an importer receives a critical component from overseas every two weeks. The company maintains only enough stock for its normal production schedule. Then one shipment is delayed. There may be no immediate alternative. The factory still needs the component, but the next replenishment has moved further away.
+
+The issue was not necessarily that the company had too little inventory. The issue was that it had no room to absorb the delay. That is where a buffer becomes useful. The buffer does not need to be huge. It simply needs to be positioned and managed in a way that gives the business some breathing room.`
+      },
+      {
+        heading: "More Inventory Is Not Automatically More Resilience",
+        content: `A company can increase inventory and still have a fragile supply chain. Suppose all the stock is concentrated in one location. If that location becomes difficult to access, the business may still struggle. Or suppose the company holds large quantities of imported products that have already been fully committed to the domestic market, even though customer demand remains uncertain.
+
+Real resilience comes from having choices. Where should stock be held? When should it be released? How quickly can it reach the factory or customer? Can different shipments be consolidated? Is there another transport option? Can imported inventory be held before it is required for domestic consumption, where the applicable framework allows it?`
+      },
+      {
+        heading: "Where an FTWZ Can Fit",
+        content: [
+          { text: "An " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " can provide a location for eligible imported goods to be stored under the " },
+          { text: "applicable customs framework", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: ` before they are cleared into the domestic market or otherwise handled through a permitted transaction structure.
+
+For an importer, that can create another stage between the overseas supplier and the final domestic requirement. Instead of every shipment immediately moving into domestic inventory, the company can evaluate whether certain goods are better positioned within an FTWZ arrangement until there is a clearer requirement.
+
+The exact customs and tax treatment depends on the cargo, transaction structure and applicable regulations. So an FTWZ should not be presented simply as a way to "save duty." The more interesting question is whether the arrangement gives the business more flexibility over inventory timing.` }
+        ]
+      },
+      {
+        heading: "Think About the Inventory Before It Becomes Urgent",
+        content: [
+          { text: `A product starts with an overseas supplier, then enters international transit, reaches India and needs to be stored or moved somewhere before being consumed, sold or sent onward. The difficult part is often the period between arrival and actual requirement. The business knows it will need the goods, but it may not know exactly when every unit will be required.
+
+If everything is immediately cleared and moved into the domestic market, the company may end up carrying more domestic inventory than necessary. If the company waits too long to bring the goods into the country, it may find itself short when demand increases. For suitable international inventory, an FTWZ can potentially sit between those two situations. The goods are positioned within the ` },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: ", while the company retains flexibility around the next step, subject to the applicable procedures." }
+        ]
+      },
+      {
+        heading: "A Hypothetical Example",
+        content: [
+          { text: "Consider a hypothetical " },
+          { text: "electronics manufacturer", kw: true, href: "/locations/chennai-sriperumbudur" },
+          { text: " that imports components from suppliers in several countries to assemble a finished product for the " },
+          { text: "Indian market", kw: true, href: "https://www.investindia.gov.in/", target: "_blank", rel: "noopener noreferrer" },
+          { text: `. At the same time, demand for the finished product can shift with market conditions.
+
+One month, the company projects steady demand and orders accordingly. Then a new project brings forward a large order, or a competitor's shortage shifts additional demand onto the company sooner than expected. Under a standard model, some component shipments would already be sitting in domestic inventory, some would still be in transit, and the company would have little room to adjust once goods are cleared and committed.
+
+If suitable component shipments were instead positioned within an FTWZ arrangement as they arrived, the company could evaluate demand more precisely before deciding what to bring into the domestic market and when. It does not remove the need for forecasting. It simply gives the company a slightly later, better-informed decision point.` }
+        ]
+      },
+      {
+        heading: "Final Thoughts",
+        content: `Supply chain resilience is not primarily about holding more stock — it is about having genuine flexibility in where inventory sits and when it moves. Most supply chains work fine under normal conditions; the real test comes when a shipment is delayed, demand shifts, or a plan changes partway through.
+
+An FTWZ-based inventory buffer is one structural option worth evaluating for businesses managing regular imports with variable demand or long international lead times. It does not solve every disruption on its own, and it will not suit every product or transaction structure. What it can offer is an additional decision point between arrival and final requirement — one more piece of flexibility in a supply chain that will, sooner or later, be tested.
+
+Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) operations, bonded warehousing, customs coordination, ocean freight, air freight, and integrated supply chain solutions for importers, exporters, manufacturers, and international trading companies. For businesses managing imported inventory across variable demand and long international lead times, Astromar supports positioning goods flexibly within the applicable customs and regulatory framework, subject to the specific cargo, transaction structure, and applicable procedures.`
+      }
+    ],
+    faqs: [
+      {
+        question: "What is an inventory buffer in supply chain planning?",
+        answer: "An inventory buffer is a deliberate amount of stock, or a deliberate positioning of stock, that lets a business absorb normal uncertainty such as a delayed vessel, a late supplier shipment or a sudden change in demand. The aim is not simply to hold more inventory, but to decide where flexibility is worth paying for."
+      },
+      {
+        question: "How can an FTWZ help with supply chain resilience?",
+        answer: "For eligible imported goods, an FTWZ can add a stage between arrival and domestic clearance. Instead of every shipment immediately moving into domestic inventory, a business can evaluate whether certain goods are better held within an FTWZ arrangement until the requirement is clearer, subject to the applicable customs framework and procedures."
+      },
+      {
+        question: "Is an FTWZ-based inventory buffer suitable for every business?",
+        answer: "No. The suitability depends on the product, the transaction structure, demand variability, international lead times and the applicable regulations. It tends to be most worth evaluating for businesses with regular imports, long lead times or uncertain demand, and it does not replace sound forecasting or supplier planning."
+      }
+    ]
+  },
 ];
 
 export const categoryColors: Record<string, string> = {
