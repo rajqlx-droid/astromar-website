@@ -6748,6 +6748,565 @@ When those pieces are planned together, project cargo becomes easier to manage �
       }
     ]
   },
+  {
+    slug: "customs-clearance-jewelry-precious-metals-imports",
+    title: "Customs Clearance for Jewelry and Precious Metals Imports in India",
+    excerpt: "Why a small jewelry shipment can carry outsized value and risk — customs valuation, the BIS hallmarking process that starts after clearance, and the security and insurance questions most cargo doesn't need to ask.",
+    category: "FTWZ",
+    readTime: "15 min read",
+    date: "2026-08-20",
+    featured: false,
+    metaDescription: "Customs clearance for jewelry and precious metals imports in India — valuation, HS classification, BIS hallmarking, security, and insurance considerations.",
+    thumbnail: dutyImg,
+    imageAlt: "Gold jewelry and precious metal articles being documented for customs clearance",
+    keywords: [
+      "jewelry import customs clearance India",
+      "precious metals import India",
+      "BIS hallmarking imported jewelry",
+      "gold jewelry customs valuation",
+      "high value cargo security",
+      "customs clearance"
+    ],
+    intro: `Jewellery may not take up much space in a shipment, but from a logistics and customs perspective, it can be very different from ordinary commercial cargo. A small package can represent a substantial value — the description of the goods matters, weight and purity can matter, and documentation needs to match the actual shipment precisely.
+
+The shipment may move through the same broad import chain as other cargo — supplier, international freight, Indian port or airport, customs and final destination — but the level of attention required at each stage can be considerably higher.
+
+For importers, the safest approach is to understand the requirements before the shipment leaves the supplier rather than trying to resolve everything after the cargo has arrived.`,
+    sections: [
+      {
+        heading: "A Small Shipment Can Still Be a High-Value Shipment",
+        content: `One of the biggest differences with jewellery and precious metals is the relationship between physical size and commercial value. A few cartons may contain goods worth considerably more than a much larger shipment of conventional products.
+
+That affects how the cargo needs to be handled. The importer needs to think about more than transportation — documentation, valuation, product classification, security, insurance and applicable regulatory requirements all come into play. The information on the commercial invoice should properly describe the goods, and packing details, weights and other supporting information should be consistent with the actual shipment. When cargo is high in value, even a small discrepancy can become a matter that needs clarification.`
+      },
+      {
+        heading: "Customs Valuation Needs Proper Attention",
+        content: [
+          { text: "Valuation is important for all imports, but it becomes particularly significant when dealing with precious-metal products, whose value may be influenced by precious-metal content, product characteristics and transaction terms. The importer needs to ensure the declared value is properly supported by relevant commercial documents and follows the applicable " },
+          { text: "customs valuation", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: " rules — this isn't something that should be estimated by looking at the value of a previous shipment.\n\nThe same principle applies to duties and taxes, which should be determined based on the applicable classification, valuation and prevailing rules rather than using a general rate as a reference." }
+        ]
+      },
+      {
+        heading: "Classification Can Become Complicated",
+        content: [
+          { text: "Not everything described as jewellery necessarily follows the same " },
+          { text: "customs treatment", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: ". Gold jewellery, silver articles, precious-metal components, bullion and unfinished articles can have different classifications and regulatory considerations — even products that look similar may need to be examined differently depending on composition and intended use.\n\nHS classification should be settled before the shipment arrives whenever possible. A previous import declaration may provide useful background, but it shouldn't automatically be copied for a new shipment — the classification should reflect the actual product being imported, and where there's uncertainty, the importer should obtain appropriate customs or trade-compliance advice before filing the declaration." }
+        ]
+      },
+      {
+        heading: "Hallmarking Is Another Part of the Picture",
+        content: [
+          { text: "Customs clearance and hallmarking are related to the overall import process, but they are not the same thing. " },
+          { text: "BIS", href: "https://www.bis.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: " operates India's hallmarking framework for gold and silver jewellery and artefacts — its guidance covers requirements applicable to hallmarked articles and identifies specific categories and exemptions.\n\nFor imported jewellery, BIS states that imported articles can be sold by a registered jeweller after the applicable testing and hallmarking process through a BIS-recognised hallmarking centre, subject to relevant requirements. This means an importer needs to look beyond the customs gate — getting a shipment cleared does not automatically mean every requirement relating to its subsequent sale in India has been completed. The importer should check the current BIS requirements applicable to the specific product before importing it." }
+        ]
+      },
+      {
+        heading: "The Paperwork Needs to Match the Jewellery",
+        content: `For a high-value shipment, documentation is not just a formality. Depending on the product and transaction, information may be required regarding description, quantity, weight, purity or fineness, value, country of origin, supplier and buyer details, packing details, and applicable certificates.
+
+The exact requirements can vary, but what matters operationally is consistency. If the commercial invoice says one thing and the packing details or physical cargo indicate something different, the shipment may require additional clarification during the clearance process. Good customs preparation therefore starts with getting the product information right.`
+      },
+      {
+        heading: "Security Becomes Part of Logistics Planning",
+        content: `Moving a high-value shipment requires greater attention to custody and handling than ordinary commercial cargo. The importer should consider what happens to the goods at every stage: Supplier → International transportation → Port or airport → Customs → Warehouse → Final delivery.
+
+Who is responsible at each stage? Where are the goods stored, and who has access? What security arrangements are in place during transportation? These questions should be addressed before the shipment arrives — the exact measures will depend on the value and nature of the goods, the route and the arrangements between the parties.`
+      },
+      {
+        heading: "Insurance Should Be Checked Before the Cargo Moves",
+        content: `An importer should not assume goods are automatically covered simply because a freight movement has been booked. The insurance arrangement should be checked for the relevant stages of the journey — transportation from the port or airport, warehouse storage and onward transportation, depending on the policy and business arrangement.
+
+Policy conditions and exclusions also matter. Security requirements, declared values and handling conditions may affect coverage, which is why the logistics team and insurance provider should have a clear understanding of the cargo and its intended movement.`
+      },
+      {
+        heading: "What Happens After the Cargo Reaches India?",
+        content: `A jewellery shipment can involve several different parties — the overseas supplier preparing goods and documents, the freight forwarder managing international transportation, and the importer coordinating with customs professionals on documentation and clearance. Once the goods are released, they still need to move safely to their next destination, and any additional regulatory requirements need to be considered as part of the overall plan.
+
+This is why it helps to have the complete movement mapped before the vessel or aircraft arrives — the customs declaration is only one part of the journey.`
+      },
+      {
+        heading: "Where an FTWZ May Fit",
+        content: [
+          { text: "An FTWZ is not automatically required for jewellery imports. Whether it makes sense depends on the nature of the goods, the transaction structure, the intended destination and the applicable customs framework. Where appropriate, an " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " warehouse can be considered for eligible imported goods that need to be positioned before their next stage of movement.\n\nFor high-value goods, however, warehouse selection should involve more than simply comparing storage rates — security, controlled access, inventory records, transportation, insurance and compliance requirements all need to be considered. The warehouse has to fit the risk profile of the cargo." }
+        ]
+      },
+      {
+        heading: "Inventory Control Matters More When Every Unit Has a High Value",
+        content: [
+          { text: "With ordinary products, an inventory difference of a few pieces may already be a concern. With jewellery and precious metals, the consequences of a discrepancy can be considerably more serious — the business may need detailed records of quantities, weights, product references and other relevant information as part of a broader " },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: " control system.\n\nEvery movement should be traceable, particularly important when goods pass through several stages — entering storage, moving for an applicable testing or hallmarking process, returning to storage, and eventually being delivered to the customer or domestic sales channel. Good inventory control is therefore not just an accounting function — it's part of the overall security and risk-management process." }
+        ]
+      },
+      {
+        heading: "Not Every Jewellery Import Is the Same",
+        content: [
+          { text: "\"Jewellery\" is a broad category. Gold jewellery, silver jewellery, bullion, components, unfinished articles and products intended for different purposes may have different customs and regulatory considerations, an industry represented in part by the " },
+          { text: "Gem and Jewellery Export Promotion Council", href: "https://www.gjepc.org", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". BIS also identifies specific categories and exemptions within its hallmarking framework, so requirements should be checked against the actual product rather than assumed from its general description — a process that worked for one shipment may not automatically apply to the next one." }
+        ]
+      },
+      {
+        heading: "Final Thoughts",
+        content: `For jewellery and precious-metal imports, customs clearance works best when it's treated as part of the complete logistics plan. The shipment needs to move through several connected stages: Supplier → International freight → Indian gateway → Customs clearance → Appropriate storage or handling → Applicable regulatory requirements → Final destination.
+
+Each stage has its own considerations. When freight, customs, security, insurance and warehousing are planned together, the importer has much better visibility over what happens to the shipment from the moment it leaves the supplier until it reaches its final destination.
+
+Astromar Logistics Pvt. Ltd. provides FTWZ warehousing, customs coordination and related supply-chain solutions across strategic locations in India. With 10 FTWZ locations, 2 lakh+ sq ft of warehousing space, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients, operating since 2017, Astromar focuses on connecting the customs, security, transportation and storage requirements around the actual cargo rather than treating customs clearance as a standalone activity.
+
+Requirements relating to customs classification, valuation, duties, BIS hallmarking and import procedures can change and may vary according to the product and transaction structure. Importers should verify current requirements applicable to their specific shipment with the relevant authorities and qualified customs or compliance professionals.`
+      }
+    ],
+    faqs: [
+      {
+        question: "Does customs clearance for imported jewellery include BIS hallmarking?",
+        answer: "No. Customs clearance and BIS hallmarking are separate processes. Imported jewellery may need to go through testing and hallmarking at a BIS-recognised centre before it can be sold by a registered jeweller, even after the shipment has already cleared customs."
+      },
+      {
+        question: "Why does customs valuation get more scrutiny for jewelry imports?",
+        answer: "Because a small, physically compact shipment can represent very high commercial value, valuation needs to be properly supported by commercial documents and based on the actual product and transaction — not estimated from a general rate or a previous shipment's value."
+      },
+      {
+        question: "Should insurance coverage be assumed once freight is booked?",
+        answer: "No. Insurance coverage for each stage of the journey — transportation, warehouse storage, onward movement — should be explicitly checked rather than assumed. Policy conditions, exclusions and declared values can all affect what's actually covered."
+      },
+      {
+        question: "Is the same HS classification and documentation process used for all jewellery imports?",
+        answer: "No. Gold jewellery, silver articles, bullion, components and unfinished articles can have different classifications and regulatory considerations. A process that worked for one shipment shouldn't be assumed to automatically apply to the next."
+      }
+    ]
+  },
+  {
+    slug: "medical-device-diagnostic-equipment-supply-chain",
+    title: "Medical Device and Diagnostic Equipment Supply Chains: Inventory and Calibration Considerations",
+    excerpt: "Why medical devices split into two very different inventory problems — capital equipment waiting for installation readiness, and spare parts supporting machines already in the field.",
+    category: "FTWZ",
+    readTime: "17 min read",
+    date: "2026-08-20",
+    featured: false,
+    metaDescription: "Medical device and diagnostic equipment supply chains — inventory planning, installation coordination, calibration, and spare-parts strategy for imported equipment.",
+    thumbnail: dutyImg,
+    imageAlt: "Diagnostic medical equipment being prepared for installation at a healthcare facility",
+    keywords: [
+      "medical device supply chain India",
+      "diagnostic equipment import logistics",
+      "medical equipment installation logistics",
+      "spare parts inventory medical device",
+      "FTWZ medical equipment",
+      "CDSCO import equipment"
+    ],
+    intro: `A medical device can arrive in India long before a hospital is ready to use it. That's one of the less obvious challenges in medical-device logistics.
+
+A hospital may order a diagnostic analyser, imaging system or other specialised equipment months in advance. The manufacturer may complete production and ship the equipment on schedule, but the installation site may still be under preparation when the equipment reaches India — the laboratory may not be ready, electrical work may still be underway, or the technical team may have a later installation date.
+
+This is where medical-device supply chains become different from ordinary distribution. The challenge isn't simply moving the equipment from the port to the customer — it's coordinating import, storage, site readiness, installation, commissioning, calibration and future service requirements.`,
+    sections: [
+      {
+        heading: "Not All Medical Inventory Behaves the Same Way",
+        content: `A medical-device company can have very different types of inventory at the same time — high-value capital equipment like imaging systems and laboratory analysers, alongside smaller equipment, consumables, reagents and replacement components.
+
+A large diagnostic machine might be purchased for one specific hospital and remain in storage until the installation site is ready. A spare component, on the other hand, may need to be available quickly because a machine already operating in a hospital has developed a fault. These are two completely different inventory problems — one is about planning the arrival and installation of equipment, the other about supporting equipment already in operation. Trying to manage both with the same inventory approach creates unnecessary complications.`
+      },
+      {
+        heading: "When the Equipment Arrives Before the Hospital Is Ready",
+        content: [
+          { text: "Consider a hypothetical diagnostic analyser being imported for a hospital laboratory. The equipment arrives in India on schedule, but the laboratory is still being prepared — additional electrical work may be needed, or the hospital's technical team may have scheduled installation for a later date. Sending the equipment immediately to the hospital may not be practical.\n\nWhere the transaction and applicable regulations allow, an " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " warehouse can potentially provide an intermediate location for eligible imported equipment until the installation schedule is ready. This separates two events that don't always happen at the same time: the equipment arriving in India, and the customer being ready to receive and install it." }
+        ]
+      },
+      {
+        heading: "A Diagnostic Machine Is Not Ordinary Warehouse Cargo",
+        content: `A high-value medical machine cannot simply be treated like a standard pallet of consumer products — its size, weight, packaging, handling requirements and value may all be different, and some equipment may have specific manufacturer instructions regarding storage, transportation or environmental conditions.
+
+Keeping the original packaging intact may be important until installation. Access to the equipment may need to be controlled. Handling equipment may need to be suitable for the size and weight of the machine. Medical-equipment warehousing should begin with an understanding of the equipment itself rather than simply the number of pallets involved.`
+      },
+      {
+        heading: "Installation Becomes Part of the Logistics Plan",
+        content: `With many conventional products, delivery is effectively the final step. With medical equipment, it may only be the beginning — a diagnostic system can require installation, configuration, testing or commissioning before it can be put into service, and installation may depend on the readiness of the hospital or laboratory.
+
+The logistics team may need to coordinate with people not normally involved in a standard warehouse delivery — a hospital project team, equipment supplier engineers, an installation contractor. A delivery date therefore cannot always be decided simply by looking at the vessel or flight arrival date.`
+      },
+      {
+        heading: "Calibration Needs to Be Considered Separately",
+        content: `It would be incorrect to assume every medical device follows the same calibration process. Requirements depend on the type of equipment, manufacturer specifications, intended use, applicable standards and the organisation's quality procedures — for some equipment, calibration or verification may form part of commissioning or periodic maintenance; for other products, different technical procedures may apply.
+
+The logistics team needs to understand the manufacturer's requirements before moving or commissioning the equipment, which is one reason medical-device logistics often requires closer coordination between the warehouse, transport provider, technical team and end user.`
+      },
+      {
+        heading: "The Supply Chain Does Not End After Installation",
+        content: `A medical-device company may have hundreds of machines already operating across hospitals, laboratories and diagnostic centres — those machines will eventually need servicing. A component may fail, a replacement part may be required, preventive maintenance may be scheduled.
+
+At that point, the supply chain has another responsibility: getting the right spare part to the right machine quickly. This can be more challenging than managing the original equipment, since the original machine may have been planned months in advance while a spare-parts requirement can appear with very little warning.`
+      },
+      {
+        heading: "Spare Parts Need Their Own Strategy",
+        content: `Keeping every possible spare part at every location would obviously be expensive, but keeping nothing locally can result in long service delays. Some frequently required parts may be positioned closer to the installed equipment, while other less frequently required components may remain at a central inventory location and move when required.
+
+The right approach depends on the installed equipment base, supplier lead times, geographical coverage, component value and service requirements — making spare-parts inventory a very different problem from simply storing finished medical devices.`
+      },
+      {
+        heading: "Where FTWZ Can Become Useful",
+        content: [
+          { text: "An FTWZ can potentially play different roles in this supply chain — for imported capital equipment, it may provide an appropriate location to position eligible goods while waiting for the hospital or laboratory to become ready. For selected imported spare parts, it may also form part of the broader inventory structure as part of a wider " },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: " strategy before the goods move to their next destination.\n\nBut an FTWZ should not automatically be used for every medical-device shipment. Sometimes direct movement from the Indian gateway to the hospital is the most practical option; in other situations, having an intermediate warehouse provides useful flexibility." }
+        ],
+        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain" }
+      },
+      {
+        heading: "Customs Planning Should Happen Early",
+        content: [
+          { text: "Medical devices and diagnostic equipment require proper attention to " },
+          { text: "import documentation", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " and applicable regulatory requirements. India's medical-device regulatory framework is administered through " },
+          { text: "CDSCO", href: "https://cdsco.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", and medical devices and in-vitro diagnostic products have their own applicable requirements.\n\nFor the logistics team, the practical lesson is simple: the regulatory and customs process should be understood before the equipment arrives. A shipment that reaches the port without the necessary planning can disrupt more than customs clearance — it can affect installation schedules, warehouse planning and customer commitments." }
+        ]
+      },
+      {
+        heading: "A Warehouse Can Act as a Buffer",
+        content: `Returning to the hospital example: suppose the equipment has arrived but the installation site will only be ready next month. If sent immediately to the hospital, the customer may have to find temporary space for a large, valuable machine.
+
+If an appropriate FTWZ arrangement is available, the importer can evaluate whether the equipment can remain at the warehouse until the installation date is confirmed, with the subsequent movement coordinated with the technical team and hospital. In this situation, the warehouse is doing more than storing the equipment — it's helping align international arrival with project readiness.`
+      },
+      {
+        heading: "Consumables and Equipment Should Not Be Managed Identically",
+        content: `A diagnostic machine may have a long operating life and require service support over several years. A reagent or consumable may have a much shorter shelf life and different storage requirements. The two should not automatically be managed under the same inventory rules.
+
+Where a business handles both, the warehouse and inventory system should clearly distinguish between the different product categories and their respective requirements — especially important when consumables, spare parts and capital equipment are all moving through the same wider supply chain.`
+      },
+      {
+        heading: "The Service Network Should Influence Inventory Locations",
+        content: [
+          { text: "Suppose a medical-device manufacturer, coordinated in part through industry bodies like " },
+          { text: "AiMeD", href: "https://www.aimedindia.com", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", has equipment operating across Chennai, Bengaluru, Hyderabad and other cities. A centralised spare-parts model may provide good control, but response time needs to be considered — alternatively, selected parts may be positioned closer to major service markets.\n\nThe right model depends on the company's service commitments, equipment population and expected demand for parts. This is why medical-device supply-chain planning shouldn't stop when the original machine is delivered — the logistics network needs to support the equipment throughout its operating life." }
+        ]
+      },
+      {
+        heading: "Planning Before the Equipment Leaves the Manufacturer",
+        content: `For high-value medical equipment, logistics planning should start well before shipment. Some basic questions can prevent problems later: Is the hospital or laboratory ready for installation? What handling requirements does the equipment have? Are there manufacturer-specific storage requirements? Will installation or commissioning require a technical team? Is calibration or verification relevant to the equipment? Where will spare parts be positioned after installation? Would an FTWZ be useful if the site isn't yet ready?
+
+These questions connect the physical movement of the equipment with the customer's actual project schedule.`
+      },
+      {
+        heading: "Final Thoughts",
+        content: [
+          { text: "A medical-device supply chain is more than Supplier → Port → Hospital. A more realistic picture is: Manufacturer → International freight → Indian gateway → " },
+          { text: "Customs clearance", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: " → Warehouse → Site preparation → Transportation → Installation → Commissioning/calibration where applicable → Service and spare-parts support. Not every product follows every stage — some equipment moves directly to the customer, some requires temporary storage, some requires more extensive technical support.\n\nMedical-device logistics works best when the different parts of the supply chain are planned together — the freight team knowing when equipment is expected, the customs team having correct documentation, the warehouse understanding handling requirements, and the hospital being ready for installation. For eligible imported equipment, an FTWZ can potentially provide another point between international arrival and final installation; for equipment already in the field, the focus shifts to spare-parts availability and service support.\n\nAstromar Logistics Pvt. Ltd. provides FTWZ warehousing and related supply-chain solutions across strategic locations in India. With 10 FTWZ locations, 2 lakh+ sq ft of warehousing space, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients, operating since 2017, Astromar focuses on connecting international freight, customs clearance, inventory positioning, warehousing, transportation and installation requirements into a practical supply-chain structure.\n\nMedical-device import, storage, installation, calibration and distribution requirements vary by product and intended use. Importers should verify current CDSCO, customs, manufacturer and applicable standards or quality-system requirements for their specific equipment before shipment." }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Why is medical device inventory management different from managing pharmaceutical stock?",
+        answer: "Medical devices involve capital equipment that needs installation, commissioning and calibration coordinated with a customer's project readiness, plus a separate spare-parts network supporting equipment already in the field. This is a fundamentally different inventory problem from batch and expiry-driven pharmaceutical stock management."
+      },
+      {
+        question: "What happens if medical equipment arrives before the hospital is ready for installation?",
+        answer: "For eligible imported equipment, an FTWZ warehouse can potentially provide an intermediate location until the installation site and schedule are confirmed, rather than sending the equipment directly to a hospital that isn't yet ready to receive and install it."
+      },
+      {
+        question: "Does every medical device require the same calibration process?",
+        answer: "No. Calibration and verification requirements depend on the type of equipment, manufacturer specifications, intended use, applicable standards and the organisation's quality procedures — they should never be assumed to be identical across different equipment types."
+      },
+      {
+        question: "How should companies decide where to position spare parts for installed medical equipment?",
+        answer: "The right model depends on the installed equipment base, supplier lead times, geographical coverage, component value and service requirements — frequently needed parts may be positioned closer to service markets, while less common components can remain at a central inventory location."
+      }
+    ]
+  },
+  {
+    slug: "automobile-vehicle-coastal-shipping-roro-india",
+    title: "Automobile and Vehicle Coastal Shipping: RORO Movement in India",
+    excerpt: "Why RORO shipping is fundamentally different from container cargo — vehicles driven directly onto the vessel — and how it fits alongside road transport for large-volume automobile movements between coastal markets.",
+    category: "FTWZ",
+    readTime: "16 min read",
+    date: "2026-08-20",
+    featured: false,
+    metaDescription: "RORO coastal shipping for automobiles and vehicles in India — how it works, cost comparison with road transport, and multimodal logistics planning.",
+    thumbnail: cbmImg,
+    imageAlt: "Vehicles being loaded onto a RORO vessel for coastal shipping between Indian ports",
+    keywords: [
+      "RORO shipping India",
+      "automobile coastal shipping",
+      "vehicle transport India",
+      "roll-on roll-off vessel",
+      "automobile logistics India",
+      "coastal shipping vehicles"
+    ],
+    intro: `When a company needs to move a large number of vehicles across India, the first option that usually comes to mind is road transportation. That makes sense for many movements. But when the distance is long and both the origin and destination have suitable port connections, there's another option worth considering: coastal shipping through RORO vessels.
+
+RORO stands for Roll-on/Roll-off. Instead of loading vehicles into containers, vehicles are driven or moved onto a vessel through a ramp and secured for the sea journey — at the destination, they're moved off the vessel much the same way.
+
+For automobile manufacturers, vehicle distributors and businesses handling large volumes of vehicles, this creates a different way to think about domestic transportation. The vehicle doesn't have to travel the entire distance by road — it can move by road to a port, by sea to another port, and by road again to its final destination.`,
+    sections: [
+      {
+        heading: "Why Move Vehicles by Sea?",
+        content: [
+          { text: "A vehicle travelling a few hundred kilometres may be easier to move by road. The calculation can be different when hundreds of vehicles need to travel a much longer distance — moving every vehicle individually by road means coordinating a large number of movements, drivers, routes and delivery schedules. A " },
+          { text: "coastal", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: " vessel can consolidate many vehicles into one port-to-port movement.\n\nThat doesn't mean RORO is automatically cheaper or faster — the actual comparison depends on the route, available vessel service, port charges, inland transportation and shipment volume. But for suitable movements, coastal shipping provides another option alongside road transportation." }
+        ],
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+      },
+      {
+        heading: "How RORO Works",
+        content: `Vehicles arrive at the origin port and are moved onto the RORO vessel using the vessel's loading arrangements. Inside the vessel, they're positioned and secured for the voyage. At the destination port, the vehicles are unloaded and handed over for their next movement.
+
+A typical domestic movement could look like: Manufacturing plant → Road transport → Origin port → RORO vessel → Destination port → Road transport → Dealer or distribution centre. The vehicle uses more than one mode of transportation, but the entire journey can be planned as a single logistics movement.`
+      },
+      {
+        heading: "The Port Is Only One Part of the Operation",
+        content: `It's tempting to think that once the vehicles reach the port, the difficult part is over. In practice, port operations need to fit closely with the manufacturer's or distributor's schedule — vehicles need to be ready when the sailing is planned, the inland transporter needs to deliver them at the right time, and at the destination, transportation needs to be ready for the vehicles after discharge.
+
+A delay at any one of these stages can affect the rest of the movement, which is why RORO planning starts before the vehicles reach the port.`
+      },
+      {
+        heading: "Vehicle Readiness Matters",
+        content: `Automobile logistics often involves large batches of vehicles moving together. Imagine a manufacturer has planned a shipment of 300 vehicles for a particular sailing — if only part of the vehicles are ready when the vessel is scheduled, the logistics plan may have to change.
+
+Production planning and transportation planning therefore need to be connected. The logistics team needs visibility over how many vehicles are ready, when they'll be ready, which sailing they're planned for, and what transportation is required at the destination. This becomes particularly important when vehicle volumes are high.`
+      },
+      {
+        heading: "RORO Is Different From Container Shipping",
+        content: `With containerised cargo, goods are packed into containers and moved using cranes and terminal equipment. With RORO, the vehicle itself becomes the cargo unit — that makes the handling process more direct for suitable wheeled cargo.
+
+Passenger cars are the most obvious example, but RORO services can also be relevant to commercial vehicles, buses, trucks, trailers and certain types of mobile equipment, depending on vessel specifications and port capabilities. The suitability of a particular vehicle depends on its dimensions, weight, configuration and the requirements of the available service.`
+      },
+      {
+        heading: "Vehicle Handling Requires Attention to Detail",
+        content: [
+          { text: "Vehicles may be more robust than some types of cargo, but they still need to be handled carefully. The logistics process may need to account for vehicle identification, condition, documentation and movement records, an area governed in part by " },
+          { text: "MoRTH", href: "https://morth.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: " regulations. For new vehicles, large-volume movements can involve hundreds of individual units, making accurate tracking important.\n\nThe process also needs to consider how vehicles are positioned, secured and released. The objective is straightforward: maintain control of the vehicles throughout the movement and make sure the right units reach the right destination." }
+        ]
+      },
+      {
+        heading: "Coastal Shipping Can Connect Automobile Markets",
+        content: `India's coastline creates the possibility of moving cargo between different coastal regions without sending the entire journey overland. For an automobile manufacturer or distributor, a combined road-and-sea movement can be considered where suitable services are available: Factory → Origin port → Coastal RORO → Destination port → Dealer network.
+
+The road legs remain important — vehicles still need to reach the origin port and dealers after arriving at the destination port. The coastal vessel handles the long port-to-port section, which is why coastal shipping should be viewed as part of a multimodal supply chain rather than a replacement for road transportation.`
+      },
+      {
+        heading: "A Hypothetical Vehicle Movement",
+        content: `Consider a manufacturer with a large batch of finished vehicles ready for delivery to another coastal market. The distance is significant, and moving every vehicle entirely by road would require extensive vehicle transportation arrangements.
+
+The logistics team could evaluate whether a suitable RORO service connects the relevant ports. If available, vehicles could move by road from the manufacturing plant to the origin port, travel by RORO vessel, and continue by road from the destination port to final distribution points. Whether this makes commercial sense depends on the available sailing, port arrangements, volume, inland transportation and total logistics cost — the transportation decision should be based on the complete journey, not just one part of it.`
+      },
+      {
+        heading: "Sailing Schedules Need to Be Considered",
+        content: [
+          { text: "One practical difference between road and coastal transportation is scheduling. A truck can often be dispatched according to the customer's preferred timing; a vessel operates according to its sailing schedule, coordinated in part through infrastructure overseen by the " },
+          { text: "Ministry of Ports, Shipping and Waterways", href: "https://shipmin.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". That means automobile companies considering RORO need to work backwards from the sailing date — vehicles need to be ready, port movement arranged, documentation completed, and the destination team informed of the vessel's expected arrival.\n\nFor companies with predictable production volumes, this can be built into regular planning. For urgent or highly irregular movements, road transportation may provide greater flexibility." }
+        ]
+      },
+      {
+        heading: "What Determines the Overall Cost?",
+        content: `A proper road-versus-coastal comparison should look at the entire movement: transport from the factory to the origin port, port handling, RORO charges, destination port handling, transportation from the destination port, vehicle handling requirements, insurance, storage where required, and transit time.
+
+Looking only at the vessel charge can give a misleading picture — a coastal service may reduce the long-distance road component but introduce two additional port-to-road connections. The right question is what the total cost and operational impact is of moving the vehicles from origin to final destination.`
+      },
+      {
+        heading: "When RORO May Not Be the Right Fit",
+        content: [
+          { text: "There needs to be an appropriate service and suitable port infrastructure, a sailing schedule that works with the required delivery date, and enough shipment volume to make the arrangement practical. For a small number of vehicles on a short route, direct road transportation may be simpler.\n\nCoordinated in part through automotive industry bodies such as " },
+          { text: "SIAM", href: "https://www.siam.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", the decision should be based on the actual route and operating requirements rather than applying the same model to every shipment." }
+        ]
+      },
+      {
+        heading: "Where FTWZ Can Fit Into the Wider Movement",
+        content: [
+          { text: "RORO and FTWZ solve different parts of a logistics problem. The RORO vessel provides port-to-port transportation. An " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " can potentially provide a warehousing and inventory-management point for eligible imported goods, as part of a broader " },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: " structure, depending on the transaction structure and applicable customs requirements.\n\nFor example, where imported vehicles or related inventory need to be positioned before their next stage of distribution, an FTWZ can be evaluated as part of the broader supply chain. It's not necessary for every RORO movement — the two simply need to be considered separately and then connected where they genuinely fit the business requirement." }
+        ]
+      },
+      {
+        heading: "The Final Delivery Still Matters",
+        content: `A successful coastal shipment isn't finished when the vessel reaches the destination port. The vehicles still need to reach their next destination — a dealer, distribution centre, manufacturing facility or another customer location. This means the destination transportation should be planned before the vessel arrives.
+
+The same applies to documentation and vehicle tracking — when large numbers of vehicles are moving together, the ability to identify and account for each unit becomes increasingly important.`
+      },
+      {
+        heading: "Final Thoughts",
+        content: `The strongest RORO operations aren't built around the vessel alone — they're built around the complete movement: Vehicle production → Vehicle readiness → Inland transportation → Origin port → RORO sailing → Destination port → Final delivery. Each stage needs to connect with the next — production aligning with the sailing, the port aligning with the vessel, and final delivery aligning with the customer's requirements.
+
+India's automobile industry operates across a wide network of manufacturing locations, ports, dealerships and distribution centres. For suitable routes and volumes, coastal RORO can provide another way to connect those markets — it doesn't replace road transportation, but can become one part of a multimodal network where the long-distance section moves by sea and the first and final legs are handled by road.
+
+Astromar Logistics Pvt. Ltd. supports businesses with coastal shipping, ocean freight, FTWZ warehousing and related supply-chain solutions across strategic locations in India. With 10 FTWZ locations, 2 lakh+ sq ft of warehousing space, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients, operating since 2017, Astromar focuses on connecting port operations, coastal transportation, warehousing and inland delivery into one practical logistics plan.
+
+RORO availability, vessel schedules, port facilities, vehicle-handling procedures and applicable regulations vary by route and service. The suitability and economics of coastal shipping should be evaluated for the specific vehicle type, origin, destination and shipment volume.`
+      }
+    ],
+    faqs: [
+      {
+        question: "What's the difference between RORO shipping and container shipping for vehicles?",
+        answer: "With RORO, vehicles are driven directly onto the vessel through a ramp and secured for the voyage, rather than being loaded into containers and moved with cranes. This makes handling more direct for suitable wheeled cargo like cars, commercial vehicles and trailers."
+      },
+      {
+        question: "Is RORO shipping always cheaper than moving vehicles by road?",
+        answer: "No. The comparison depends on the route, available vessel service, port charges at both ends, and inland transportation legs. A coastal service can reduce the long-distance road component but introduces two additional port-to-road connections that need to be factored into the total cost."
+      },
+      {
+        question: "What types of vehicles can move via RORO?",
+        answer: "Passenger cars are the most common, but RORO services can also handle commercial vehicles, buses, trucks, trailers and certain mobile equipment, depending on the vessel's specifications and the port's capabilities."
+      },
+      {
+        question: "How does an FTWZ relate to RORO vehicle shipments?",
+        answer: "They address different parts of the logistics chain. RORO handles port-to-port transportation, while an FTWZ can provide warehousing for eligible imported vehicles or related inventory before their next stage of distribution. The two aren't necessarily linked — they're evaluated separately based on the specific business need."
+      }
+    ]
+  },
+  {
+    slug: "mining-heavy-equipment-project-cargo-india",
+    title: "Mining and Heavy Equipment: Project Cargo Considerations for Indian Sites",
+    excerpt: "Why mining equipment logistics has to look past the port to the route, the remote site, and the installation sequence — coordinating excavators, crushers, and conveyor sections that don't all arrive together.",
+    category: "FTWZ",
+    readTime: "17 min read",
+    date: "2026-08-20",
+    featured: false,
+    metaDescription: "Project cargo logistics for mining and heavy equipment in India — route planning, customs clearance, staging warehousing, and spare-parts strategy for remote sites.",
+    thumbnail: dutyImg,
+    imageAlt: "Heavy mining equipment and excavator components being transported as project cargo",
+    keywords: [
+      "mining equipment project cargo India",
+      "heavy equipment import logistics",
+      "oversized cargo route planning",
+      "mining machinery transportation India",
+      "FTWZ mining equipment",
+      "excavator crusher import logistics"
+    ],
+    intro: `Moving mining and heavy equipment into India is rarely just a matter of getting cargo from a port to a project site. An excavator may arrive as one complete machine, while a crusher can come as multiple heavy components. Conveyor systems may be shipped in sections, and larger equipment such as draglines or specialised mining machinery can require detailed planning before the cargo even reaches the port.
+
+For companies handling these projects, the difficult part often begins after the vessel arrives. Heavy and oversized equipment can involve special handling, lifting arrangements, suitable transport equipment, route planning, temporary storage, customs clearance and coordination between several parties — a delay at one stage can affect installation schedules at the project site.
+
+This is why project cargo logistics needs to be planned around the equipment, the destination and the project schedule, not simply around the shipment itself.`,
+    sections: [
+      {
+        heading: "The Equipment Often Determines the Logistics Plan",
+        content: `Mining and infrastructure equipment doesn't move like ordinary commercial cargo. A shipment may include excavators, crushers, feeders, conveyor components, drilling equipment, loaders, generators and electrical systems — some containerised, others requiring specialised transport depending on their dimensions and weight.
+
+Before shipment, logistics teams need to understand the physical characteristics of the cargo: dimensions, weight, lifting points, packaging, dismantling arrangements and the final installation location. A machine that's technically transportable by road may still require a different route if its dimensions create restrictions along the journey — this is why project cargo planning normally starts well before the vessel arrives at an Indian port.`
+      },
+      {
+        heading: "Port Arrival Is Only One Part of the Movement",
+        content: [
+          { text: "For heavy project equipment, the port is better viewed as one stage in a longer movement: Overseas supplier → Indian port → " },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: " → handling or staging → specialised transportation → project site → installation. Every transition needs coordination — at the port, cargo may need to be discharged, inspected, cleared and transferred to suitable transport equipment.\n\nIf the final project site is several hours or days away from the port, the road movement becomes another major planning exercise. The logistics provider needs visibility beyond the port gate." }
+        ]
+      },
+      {
+        heading: "Route Planning Can Become a Project in Itself",
+        content: [
+          { text: "A standard truck can use a large number of roads. An oversized load has fewer practical options — the transport plan may need to consider road width, turning areas, bridges, clearances, gradients, local restrictions and access to the final project site, some requiring specific permissions from authorities such as the " },
+          { text: "National Highways Authority of India", href: "https://www.nhai.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ".\n\nFor remote mining locations, the final stretch can be particularly important — a major highway may provide good access for most of the journey, but the road leading to the project site may present completely different conditions. Route planning should not stop at identifying the nearest port or highway; the final delivery point needs to be considered from the beginning." }
+        ]
+      },
+      {
+        heading: "When Equipment Arrives Before the Project Is Ready",
+        content: [
+          { text: "The equipment may be ready for shipment before the Indian project site is ready to receive it — civil works may still be underway, foundations may not be completed, or heavy lifting equipment may not be available at the site. Sending the equipment directly in such circumstances can create unnecessary pressure.\n\nDepending on the cargo, transaction structure and applicable regulations, an " },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone" },
+          { text: " warehouse or other suitable staging facility may be considered for holding cargo before its final movement — particularly relevant when different equipment packages arrive at different times. Instead of treating every shipment as an isolated movement, project logistics can be planned around the actual installation schedule." }
+        ]
+      },
+      {
+        heading: "Where FTWZ Warehousing Can Fit",
+        content: [
+          { text: "FTWZ is not a substitute for specialised project transportation — its role is different. For eligible cargo and suitable transaction structures, an FTWZ can provide a controlled location for holding imported goods before they move to their next destination, useful as part of the wider " },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: " strategy when equipment arrives before the site is ready, multiple shipments need coordination, or components arrive separately from different suppliers.\n\nThe exact customs treatment and permitted activities depend on the nature of the transaction, cargo and applicable regulations. The important point is that warehousing should support the project schedule rather than become an isolated storage activity." }
+        ],
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+      },
+      {
+        heading: "A Hypothetical Mining Equipment Movement",
+        content: `Consider a hypothetical mining project where equipment is being imported from several overseas suppliers — excavator components, crusher equipment, conveyor sections and electrical control equipment, not all arriving at the same time.
+
+The first shipment reaches the Indian port while the project site is still preparing its foundations; another shipment is scheduled several weeks later. Instead of moving everything immediately to the site, the logistics plan could include suitable staging arrangements for cargo not yet required. Once the project reaches the appropriate installation stage, equipment can be planned for onward transportation based on site readiness — this doesn't eliminate the need for project planning, but gives the project team another option for managing the gap between cargo arrival and equipment requirement.`
+      },
+      {
+        heading: "Heavy Equipment Needs More Than a Truck",
+        content: `Depending on the cargo, movement may require specialised trailers, and loading and unloading may require cranes or lifting equipment appropriate for the cargo. The equipment used for transportation must be compatible with the cargo's dimensions and weight.
+
+This is particularly important when machinery is shipped in dismantled sections — each component may have different handling requirements, even though all of them ultimately form part of the same machine. A project logistics plan needs to look at the shipment as a complete system rather than treating every package as ordinary cargo.`
+      },
+      {
+        heading: "Customs Clearance Needs to Be Aligned With the Project",
+        content: [
+          { text: "Large machinery may consist of numerous components, and commercial documentation needs to correspond appropriately with the shipment under the framework maintained by " },
+          { text: "CBIC", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". Classification, valuation and documentation requirements can vary depending on the equipment and transaction — customs documentation should be reviewed before the cargo reaches the port rather than treated as something to resolve after arrival.\n\nWhere multiple shipments are involved, maintaining consistency across commercial documents, packing details and shipment information can also help reduce avoidable coordination issues." }
+        ]
+      },
+      {
+        heading: "Installation Readiness Matters Just as Much as Transport",
+        content: `There's little benefit in delivering a large machine to a site where it cannot yet be installed. Project schedules can change — civil works may be delayed, foundations may require additional preparation, or specialist installation teams may arrive later than planned.
+
+Before final dispatch, basic questions should be answered: Is the site ready to receive the equipment? Is the unloading area accessible? Is the required lifting equipment available? Has the installation sequence been confirmed? These questions are operational rather than purely logistical, but they have a direct impact on transportation planning.`
+      },
+      {
+        heading: "Spare Parts Should Not Be Forgotten",
+        content: `Heavy equipment projects don't end when the main machine is installed. Replacement parts, maintenance components and supporting equipment may be required throughout the operating life of the project. For remote mining and industrial sites, the availability of critical spare parts can be particularly important because sourcing a component after an equipment failure may take considerably longer than expected.
+
+A planned inventory strategy can therefore consider not only the main equipment but also selected spare parts and supporting components — depending on the business model, FTWZ warehousing may also be considered for certain imported inventory that needs to be held before being released or moved onward.`
+      },
+      {
+        heading: "Coordination Becomes More Important as the Project Grows",
+        content: [
+          { text: "A large project may involve the equipment manufacturer, freight forwarder, shipping line, port operator, customs professionals, transport contractors, lifting contractors, warehouse operators, engineering teams and the project owner, an industry overseen in part by India's " },
+          { text: "Ministry of Mines", href: "https://mines.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". Each party may have responsibility for only one section of the movement — the challenge is making sure those sections connect properly.\n\nA vessel arrival date affects port planning. Port clearance affects transportation. Transportation affects site delivery. Site readiness affects the final dispatch date. Project logistics therefore depends heavily on coordination and visibility." }
+        ]
+      },
+      {
+        heading: "When a Project Cargo Approach Makes Sense",
+        content: `A specialised project logistics approach can be particularly relevant when cargo is heavy or oversized, difficult to handle using standard transportation, arriving in multiple equipment packages, destined for a remote or industrial project site, dependent on lifting and installation arrangements, or linked to a fixed project commissioning schedule.
+
+For smaller or standardised equipment that can move through conventional container logistics, a simpler supply-chain arrangement may be more appropriate. The right model depends on the cargo rather than simply the value of the shipment.`
+      },
+      {
+        heading: "Final Thoughts",
+        content: `Mining and heavy equipment movements require a different mindset from routine freight. The port is only one part of the journey — the final delivery route, unloading arrangements, project schedule, customs requirements and installation readiness all need to be considered together.
+
+For businesses importing heavy equipment into India, combining project cargo logistics, customs clearance, transportation, staging and FTWZ warehousing where appropriate can provide a more coordinated approach to complex movements.
+
+Astromar Logistics Pvt. Ltd. supports businesses with FTWZ warehousing, project cargo coordination, customs clearance and related supply-chain solutions. With 10 FTWZ locations, 2 lakh+ sq ft of warehousing, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients, operating since 2017, Astromar can support project-related cargo requirements across multiple locations in India, subject to the cargo, transaction structure and applicable regulations.`
+      }
+    ],
+    faqs: [
+      {
+        question: "Why does route planning matter so much for mining equipment shipments?",
+        answer: "Oversized or heavy equipment has far fewer practical road options than standard cargo — bridges, road width, turning radius and local restrictions can all rule out routes that look fine on a map. For remote mining sites, the final stretch of road is often the most restrictive part of the journey and needs planning from the start."
+      },
+      {
+        question: "What happens if mining equipment arrives before the site is ready?",
+        answer: "Temporary staging through an FTWZ or other suitable facility can hold the cargo until civil works, foundations and lifting equipment are ready at the site, rather than sending equipment directly to a location that can't yet receive or install it."
+      },
+      {
+        question: "Should spare parts be planned for alongside the main equipment shipment?",
+        answer: "Yes. For remote mining and industrial sites, sourcing a replacement component after an equipment failure can take considerably longer than expected, so a planned inventory strategy should account for critical spare parts and supporting components, not just the primary machinery."
+      },
+      {
+        question: "Why is customs documentation more complicated for large machinery shipments?",
+        answer: "Large machinery often consists of numerous components with different classification and valuation considerations. Commercial documentation needs to correspond precisely with the actual shipment, and reviewing it before the cargo reaches the port avoids delays that can affect installation schedules downstream."
+      }
+    ]
+  },
 ];
 
 export const categoryColors: Record<string, string> = {
