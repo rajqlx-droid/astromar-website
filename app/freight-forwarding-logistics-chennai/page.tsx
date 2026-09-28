@@ -26,10 +26,20 @@ const articleSchema = {
   mainEntityOfPage: "https://www.astromarfreezone.com/freight-forwarding-logistics-chennai",
 };
 
+const chennaiBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Freight Forwarding Chennai", "item": "https://www.astromarfreezone.com/freight-forwarding-logistics-chennai" }
+  ]
+};
+
 export default function FreightForwardingChennaiPage() {
   return (
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(chennaiBreadcrumbSchema) }} />
       {/* Banner */}
       <section className="relative py-20 overflow-hidden">
         <Image

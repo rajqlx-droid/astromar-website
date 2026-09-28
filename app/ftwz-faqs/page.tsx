@@ -59,10 +59,20 @@ const faqSchema = {
   })),
 };
 
+const faqsBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "FTWZ FAQs", "item": "https://www.astromarfreezone.com/ftwz-faqs" }
+  ]
+};
+
 export default function FTWZFaqsPage() {
   return (
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqsBreadcrumbSchema) }} />
       {/* Banner */}
       <section className="relative py-20 overflow-hidden">
         <Image

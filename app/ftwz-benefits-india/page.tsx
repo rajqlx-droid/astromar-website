@@ -26,10 +26,20 @@ const articleSchema = {
   mainEntityOfPage: "https://www.astromarfreezone.com/ftwz-benefits-india",
 };
 
+const benefitsBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+    { "@type": "ListItem", "position": 2, "name": "FTWZ Benefits", "item": "https://www.astromarfreezone.com/ftwz-benefits-india" }
+  ]
+};
+
 export default function FTWZBenefitsPage() {
   return (
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(benefitsBreadcrumbSchema) }} />
       {/* Banner */}
       <section className="relative py-20 overflow-hidden">
         <Image

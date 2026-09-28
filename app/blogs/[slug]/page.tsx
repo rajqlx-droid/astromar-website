@@ -88,9 +88,20 @@ export default async function BlogArticlePage({ params }: Props) {
     mainEntityOfPage: `https://www.astromarfreezone.com/blogs/${slug}`,
   };
 
+  const blogBreadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.astromarfreezone.com/blogs" },
+      { "@type": "ListItem", "position": 3, "name": article.title, "item": `https://www.astromarfreezone.com/blogs/${slug}` }
+    ]
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogBreadcrumbSchema) }} />
       {/* Hero */}
       <section className="relative min-h-[420px] flex items-center">
         <Image src={article.heroImage ?? article.thumbnail} alt={article.imageAlt ?? article.title} fill sizes="100vw" className="absolute inset-0 w-full h-full object-cover" />
