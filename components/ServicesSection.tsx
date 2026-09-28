@@ -54,7 +54,7 @@ const ServicesSection = () => {
               Complete Logistics Services
             </h2>
             <p className="text-base sm:text-lg text-foreground/70 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
-              Astromar combines a premier Free Trade Warehousing Zone in India with end-to-end freight, customs, and supply chain capabilities under one trusted partner.
+              Astromar combines warehousing in a free trade zone in India with end-to-end freight, customs, and supply chain capabilities under one trusted partner.
             </p>
           </ScrollReveal>
 
@@ -114,7 +114,7 @@ const ServicesSection = () => {
                   FTWZ WAREHOUSING
                 </p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-5 leading-tight">
-                  Our Free Trade Zone in India: A Network Across 10 Locations
+                  Our Network Across 10 Locations
                 </h2>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
@@ -163,10 +163,10 @@ const ServicesSection = () => {
               OUR SOLUTIONS
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
-              Comprehensive Free Trade Warehousing Zone Solutions
+              Storage Solutions for Every Cargo Type
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-12 text-center max-w-3xl mx-auto">
-              Our Free Trade Warehousing Zone infrastructure combines bonded storage, customs clearance, and value-added services under one roof.
+              Our infrastructure combines bonded storage, customs clearance, and value-added services under one roof.
             </p>
           </ScrollReveal>
 

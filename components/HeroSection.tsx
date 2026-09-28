@@ -100,7 +100,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="text-sm sm:text-base md:text-lg text-white/90 mb-10 leading-relaxed"
           >
-            Trusted FTWZ operator delivering duty-free warehousing, customs clearance, and integrated logistics solutions. Save customs duty and GST while leveraging Astromar&apos;s premier free trade warehousing zone in India network across 10 strategic locations.
+            Trusted FTWZ operator delivering duty-free warehousing, customs clearance, and integrated logistics solutions. Save customs duty and GST with Astromar&apos;s free trade zone in India network across 10 strategic locations.
           </motion.p>
 
           <motion.div

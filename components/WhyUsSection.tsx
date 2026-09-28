@@ -16,7 +16,7 @@ const WhyUsSection = () => {
               Why Astromar Logistics
             </h2>
             <p className="text-base text-foreground/70 leading-relaxed max-w-3xl mx-auto mt-4 text-center">
-              Strategically positioned Free Trade Zone in India facilities deliver duty deferral, bonded storage, and customs efficiency across India's major ports and inland corridors.
+              Our strategically positioned facilities in a free trade zone in India deliver duty deferral, bonded storage, and customs efficiency near major ports and inland corridors.
             </p>
           </div>
         </ScrollReveal>
@@ -30,7 +30,7 @@ const WhyUsSection = () => {
             </div>
             <h3 className="text-gray-900 font-bold text-lg mb-3">Network Strength</h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-5">
-              Operating Free Trade Zone in India across 10 strategic locations gives you direct access to duty-free bonded storage near every major Indian port and inland corridor.
+              With 10 strategic locations, you get direct access to duty-free bonded storage near every major Indian port and inland corridor.
             </p>
             <div className="flex flex-col gap-2">
               {["10 locations pan-India", "Port & airport proximity", "Multimodal connectivity"].map((point) => (
