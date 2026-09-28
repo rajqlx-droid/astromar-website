@@ -16,13 +16,13 @@ const quickLinks = [
 
 const serviceLinks = [
   { label: "FTWZ", href: "/free-trade-zone" },
-  { label: "Coastal Shipping", href: "/coastal-shipping-free-trade-zone" },
+  { label: "Coastal Shipping", href: "/free-trade-zone-services/coastal-shipping" },
   { label: "Ocean Freight", href: "/free-trade-zone-services/ocean-freight" },
   { label: "Air Freight", href: "/free-trade-zone-services/air-freight" },
-  { label: "Supply Chain", href: "/free-trade-zone-services/supply-chain" },
-  { label: "Custom Clearance", href: "/free-trade-zone-services/custom-clearance" },
+  { label: "Supply Chain", href: "/free-trade-zone-services/supply-chain-management" },
+  { label: "Custom Clearance", href: "/free-trade-zone-services/customs-clearance" },
   { label: "Warehousing", href: "/free-trade-zone-services/warehousing" },
-  { label: "Projects", href: "/free-trade-zone-services/projects" },
+  { label: "Projects", href: "/free-trade-zone-services/project-cargo" },
 ];
 
 const locationLinks = [

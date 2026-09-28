@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Port to Port Shipping in India — Coastal Cargo | Astromar",
   description: "Move cargo along India's 7,500+ km coastline with Astromar's coastal shipping — 12+ ports covered, up to 47% lower emissions than road transport.",
   keywords: "coastal shipping india, port to port shipping, indian coastal cargo, sea cargo india, coastal logistics, multimodal logistics india, container coastal shipping, bulk coastal shipping, coastal cargo network, indian ports shipping",
-  alternates: { canonical: "https://www.astromarfreezone.com/coastal-shipping-free-trade-zone" },
+  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/coastal-shipping" },
   openGraph: {
     title: "Port to Port Shipping in India — Coastal Cargo Network",
     description: "Coastal shipping connecting all major and minor Indian ports — greener, cost-effective alternative to road and rail for bulk and containerized cargo.",
-    url: "https://www.astromarfreezone.com/coastal-shipping-free-trade-zone",
+    url: "https://www.astromarfreezone.com/free-trade-zone-services/coastal-shipping",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -48,7 +48,8 @@ const coastalShippingBreadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Coastal Shipping", "item": "https://www.astromarfreezone.com/coastal-shipping-free-trade-zone" }
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.astromarfreezone.com/free-trade-zone-services" },
+    { "@type": "ListItem", "position": 3, "name": "Coastal Shipping", "item": "https://www.astromarfreezone.com/free-trade-zone-services/coastal-shipping" }
   ]
 };
 

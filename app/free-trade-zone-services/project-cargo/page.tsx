@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
   description: "Oversized and high-value project cargo logistics across India — from route surveys to final placement, engineered for precision and safety.",
   keywords: "project cargo india, heavy lift logistics, oversized cargo india, odc transport india, project logistics india, heavy haulage india, breakbulk cargo, route survey india, capital equipment logistics, industrial project cargo",
-  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/projects" },
+  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/project-cargo" },
   openGraph: {
     title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
     description: "Engineered transport of oversized, overweight & high-value project cargo across India and globally — route surveys to final placement.",
-    url: "https://www.astromarfreezone.com/free-trade-zone-services/projects",
+    url: "https://www.astromarfreezone.com/free-trade-zone-services/project-cargo",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -49,7 +49,7 @@ const projectsBreadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
     { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.astromarfreezone.com/free-trade-zone-services" },
-    { "@type": "ListItem", "position": 3, "name": "Project Cargo", "item": "https://www.astromarfreezone.com/free-trade-zone-services/projects" }
+    { "@type": "ListItem", "position": 3, "name": "Project Cargo", "item": "https://www.astromarfreezone.com/free-trade-zone-services/project-cargo" }
   ]
 };
 

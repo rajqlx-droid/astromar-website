@@ -279,7 +279,7 @@ const CustomClearanceClient = () => {
         </div>
       </section>
 
-      <ServicesCarousel currentHref="/free-trade-zone-services/custom-clearance" />
+      <ServicesCarousel currentHref="/free-trade-zone-services/customs-clearance" />
 
       <CTASection />
 

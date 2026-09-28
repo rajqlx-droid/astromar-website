@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Supply Chain Solutions India — End-to-End | Astromar",
   description: "Astromar's Supply Chain Solutions India manage procurement to last-mile delivery, reducing costs and building resilience across every node.",
   keywords: "supply chain solutions india, end to end supply chain, integrated logistics india, procurement to delivery, last mile delivery india, supply chain visibility, 3pl india, 4pl india, supply chain management india, logistics optimization",
-  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain" },
+  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain-management" },
   openGraph: {
     title: "Supply Chain Solutions India — Integrated & End-to-End",
     description: "Procurement to last-mile delivery with real-time visibility. End-to-end supply chain solutions across India.",
-    url: "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain",
+    url: "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain-management",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -49,7 +49,7 @@ const supplyChainBreadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
     { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.astromarfreezone.com/free-trade-zone-services" },
-    { "@type": "ListItem", "position": 3, "name": "Supply Chain", "item": "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain" }
+    { "@type": "ListItem", "position": 3, "name": "Supply Chain", "item": "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain-management" }
   ]
 };
 

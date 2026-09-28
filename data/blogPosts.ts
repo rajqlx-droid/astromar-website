@@ -1152,9 +1152,9 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "The Job Doesn't End When Customs Says Yes",
         content: [
-          { text: "Clearing customs", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "Clearing customs", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " brings a sense of relief — the paperwork's done, the cargo's released. But around Dahej, everyone knows that's only one milestone. The equipment still has to reach the right warehouse, get inspected, and be scheduled for transport once the project team is actually ready for it.\n\nThat's why experienced teams handling industrial cargo stop treating customs, transport, and storage as separate jobs. Managed through " },
-          { text: "one connected, integrated Supply Chain Solutions approach", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "one connected, integrated Supply Chain Solutions approach", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: ", projects lose far fewer days to avoidable delays." }
         ]
       },
@@ -1203,7 +1203,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Every Factory Has Its Own Rhythm",
         content: [
           { text: "No two factories work the same way. A pharmaceutical company may receive small, high-value shipments every week. A steel manufacturer deals with entirely different volumes and timelines. " },
-          { text: "An engineering company importing specialised machinery", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "An engineering company importing specialised machinery", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " plans months ahead, because installation has to land at exactly the right stage of a project.\n\nThe cargo may all arrive through the same city. Everything after that looks completely different — which is why logistics in Vizag isn't really built around containers. It's built around the industries those containers support." }
         ]
       },
@@ -1220,7 +1220,7 @@ export const blogPosts: BlogPost[] = [
         content: [
           { text: "Clearing customs", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
           { text: " brings real relief — documents complete, cargo finally released. For the production team, though, that's just another milestone. The materials still have to reach the warehouse, inventory has to update, and the production team has to actually know it's ready before the shipment becomes useful.\n\nThat's why experienced manufacturers stop treating customs, storage, and transport as separate jobs. Managed as one continuous process, the supply chain does its work quietly enough that nobody downstream has to think about it — and for businesses distributing across multiple coastal markets, " },
-          { text: "coordinating that movement along India's coastline", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coordinating that movement along India's coastline", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " becomes just as important as the initial import." }
         ]
       },
@@ -1333,7 +1333,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Bringing Freight, Warehousing and Customs Together",
         content: "Chemical logistics becomes complicated when every activity is handled independently — one company arranges international freight, another coordinates port movement, a third handles warehousing, a customs broker manages documentation, and a transporter moves cargo to the customer, leaving the importer to coordinate all of them. This fragmented model can work, but it creates more points where information can be lost. A more integrated supply chain approach connects freight movement, FTWZ storage, inventory management, and customs processes into one visible sequence: supplier booking, ocean freight, port arrival, FTWZ movement, customs documentation, warehousing, inventory control, customer-specific clearance, and final delivery. The advantage is operational visibility — instead of asking five different service providers where a shipment is, the logistics team works with one coordinated process, which becomes particularly important when shipments involve multiple SKUs, different customers, or batch-level inventory.",
-        relatedLink: { text: "supply chain", href: "/free-trade-zone-services/supply-chain" }
+        relatedLink: { text: "supply chain", href: "/free-trade-zone-services/supply-chain-management" }
       },
       {
         heading: "Consolidation Can Change the Economics",
@@ -1342,7 +1342,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Customs Clearance for Chemical Cargo Needs Careful Planning",
         content: "Chemical shipments can become particularly sensitive at the customs stage — documentation has to accurately represent the cargo, while classification, valuation, and licensing may need assessment depending on the product. For businesses handling chemical imports, customs clearance shouldn't be treated as a final administrative step after cargo arrives — it should be incorporated into the logistics plan from the beginning. Before shipment, companies should establish product description and technical specifications, correct HS classification, applicable import requirements, required licences or approvals, Safety Data Sheets, packaging and labelling requirements, country-of-origin documentation, commercial invoice and packing list, transport documentation, FTWZ movement requirements, and a final clearance or re-export strategy. This is particularly important for hazardous and regulated chemicals, since a documentation problem can quickly become an operational one — cargo may be physically available but commercially unusable until it's resolved. For logistics managers, the lesson is simple: customs planning should begin before the container reaches the port.",
-        relatedLink: { text: "customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "What About Re-Exports?",
@@ -1703,10 +1703,10 @@ For eligible transactions, a Mundra FTWZ can be considered as part of this suppl
         heading: "Textile Supply Chains Are Driven by Timing",
         content: [
           { text: "Anyone working in textiles knows that demand does not stay constant throughout the year. A company may need to build inventory months before a particular season. A retailer may place a large order in advance. A garment manufacturer may import fabric well before production starts.\n\nThe problem is that the cargo arrives before the business actually needs all of it. For example, an importer could receive 500 pallets of textile material when customers currently require only 200 pallets — the remaining stock still has to be stored and managed.\n\nFor eligible imports, an FTWZ can provide an option to hold imported goods before domestic clearance as part of a wider " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy, allowing the business to plan the movement of inventory according to actual requirements and the applicable customs framework. It does not remove the need for planning — it simply gives the importer another way to structure that planning." }
         ],
-        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain" }
+        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain-management" }
       },
       {
         heading: "Seasonal Inventory Can Put Pressure on Cash Flow",
@@ -1899,10 +1899,10 @@ The clarification itself may take only a few minutes, but the shipment has alrea
           { text: "For companies handling regular or larger volumes of imported auto components, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can be considered as part of the wider inventory strategy. A typical movement could look like: Overseas Supplier → Chennai Port → FTWZ → Storage → " },
-          { text: "Domestic Clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "Domestic Clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " → Manufacturing Facility.\n\nFor eligible transactions, an FTWZ provides a structured location for managing imported inventory before domestic clearance or onward movement — useful when the importer doesn't need the entire shipment immediately. Instead of moving every component directly to the factory, inventory can be positioned at the FTWZ and managed according to production requirements, subject to the applicable customs framework. The FTWZ does not eliminate customs clearance; it simply gives the importer another way to structure the movement of eligible imported inventory." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "When Should Auto Component Companies Consider an FTWZ?",
@@ -2013,10 +2013,10 @@ Managing all of this separately can become difficult, particularly when the fina
         heading: "What About Seasonal Demand?",
         content: [
           { text: "Seasonal businesses face a slightly different problem — they often need inventory well before the actual selling period. If the goods arrive too early, the business still has to manage the inventory until demand picks up.\n\nFor eligible goods, an " },
-          { text: "FTWZ supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "FTWZ supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " approach can be considered as a way to hold imported inventory before domestic clearance while the business prepares for the season. The benefit isn't simply having somewhere to store the goods — it's having more control over when the inventory moves into the domestic market." }
         ],
-        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain" }
+        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain-management" }
       },
       {
         heading: "Working Capital Is Part of the Conversation",
@@ -2130,10 +2130,10 @@ The HS code is not just a number added to an import document — it's part of ho
         heading: "Why Does Classification Matter During Customs Clearance?",
         content: [
           { text: "HS classification can affect the duty treatment applicable to an import and can also have implications for other customs and regulatory requirements. That's why customs authorities may ask questions when the declared classification doesn't appear to match the nature of the goods — and why planning " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " around accurate documentation matters from the outset, not after the vessel has already arrived.\n\nFor the importer, this can turn into a practical problem. A shipment may already be at the port, the transport schedule already planned, the customer already waiting. If additional information is suddenly required to establish what the product actually is, the clearance process can take longer — and the time lost can still affect the wider supply chain even after the issue is resolved." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "The Product Name Can Be Misleading",
@@ -2203,10 +2203,10 @@ The importer can collect the technical information available from the manufactur
         heading: "Common Mistakes Worth Avoiding",
         content: [
           { text: "Most classification problems don't come from companies deliberately trying to do something wrong — they come from assumptions. The supplier's HS code is copied without checking. An old classification is reused. The invoice description is too vague. The technical datasheet isn't available. A new product is treated as identical to an older one.\n\nThese may seem like small issues, but they can become significant once the shipment has arrived. Planning " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " around accurate product information from the start helps avoid the last-minute scramble these assumptions tend to create." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Final Thoughts",
@@ -2311,16 +2311,16 @@ But suppose the company needs the same quantity every month and can plan its inv
           { text: "Warehousing can become another part of the equation when the importer doesn't need the entire shipment immediately. For eligible imported goods, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can provide a structured location for receiving, storing and managing inventory under the applicable customs framework — useful where the importer needs to separate the arrival of the cargo from the timing of domestic distribution.\n\nThe broader supply chain could involve: International Supplier → Indian Gateway → FTWZ → Inventory Management → Customs Clearance → Domestic Customer. " },
-          { text: "Coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "Coastal shipping", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " may also form part of a wider multimodal movement depending on the nature of the transaction. The benefit comes from coordinating the different stages — there's little point achieving a good vessel rate if the cargo then sits at a port because the next stage wasn't planned." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "Customs Clearance Cannot Be an Afterthought",
         content: [
           { text: "Transportation and customs are closely connected in an import supply chain. An importer needs to understand where the cargo enters the country, where it will be stored, how it will move between locations and when it will be cleared for domestic consumption — this becomes even more important when coastal shipping and FTWZ warehousing are part of the same supply chain.\n\nThe " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " process should be considered when the logistics plan is being designed, with documents, product classification, cargo details and intended movement reviewed in advance under frameworks maintained by " },
           { text: "CBIC", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
           { text: ". That allows the logistics team and customs team to work toward the same delivery plan." }
@@ -2425,7 +2425,7 @@ For heavy or oversized cargo, this becomes particularly important. The discharge
         heading: "Customs Clearance Should Be Part of the Plan",
         content: [
           { text: "Power and renewable energy projects often involve equipment from several suppliers, which means there may be multiple invoices, packing lists, product descriptions and classifications to manage. The " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " team needs accurate information about the goods to complete the applicable process.\n\nThis is particularly important for specialised equipment — the description used by the overseas manufacturer may be perfectly clear to the engineering team but may not provide enough information for customs classification. Technical datasheets and specifications can help establish what the equipment is and how it should be classified. If there's an issue with documentation, discovering it before the cargo arrives gives the importer much more time to resolve it, subject to guidance from " },
           { text: "CBIC", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
           { text: "." }
@@ -2443,10 +2443,10 @@ A central project cargo schedule can help provide visibility. The logistics team
           { text: "Project sites are not always ready to receive imported equipment immediately. Construction may still be underway, storage space may be limited, or installation may have been postponed. In these situations, warehousing can provide some breathing room.\n\nFor eligible imported goods, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can be considered as part of the supply chain where inventory needs to be stored before domestic clearance or onward movement. A simplified flow looks like: Overseas Supplier → Indian Port → " },
-          { text: "FTWZ", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " → Storage → Customs Clearance → Project Site. This is particularly useful when equipment arrives well before it's required — the project doesn't have to force an early delivery simply because the vessel has arrived." }
         ],
-        relatedLink: { text: "Explore Astromar's project cargo services", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "Explore Astromar's project cargo services", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "Managing Equipment From Multiple Suppliers",
@@ -2478,7 +2478,7 @@ None of these steps are particularly complicated — the difference comes from d
         heading: "How FTWZ Can Support Project Supply Chains",
         content: [
           { text: "An FTWZ can be useful when imported project equipment needs to be held before it's required at the final site. Instead of treating the port as the only point where inventory can wait, the importer can consider a structured " },
-          { text: "warehousing option for project cargo", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "warehousing option for project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " for eligible goods — providing flexibility when project schedules change.\n\nFor example, if construction is delayed by two months, the equipment doesn't necessarily need to be rushed to the project site. It can remain within the planned inventory structure until the project is ready, subject to the applicable customs and operational requirements. This is particularly relevant for projects involving large volumes of imported equipment from multiple suppliers — including " },
           { text: "renewable energy installations", href: "https://mnre.gov.in", target: "_blank", rel: "noopener noreferrer" },
           { text: " coordinated under national renewable energy programmes." }
@@ -2605,10 +2605,10 @@ On storage, standard clearance uses a domestic warehouse after clearance, while 
         heading: "How Should an Importer Decide?",
         content: [
           { text: "The decision becomes much easier with a few practical questions: When does the business actually need the goods — if immediately, standard " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " may be the obvious choice. How long might the inventory remain unused — if likely weeks or months, an FTWZ may be worth evaluating. Is the inventory being held for multiple customers? Could some of the goods be re-exported? Are there permitted activities that need to be carried out before final delivery? And how important is working capital for this particular business?\n\nThese questions usually reveal more than simply comparing warehouse rates." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Don't Choose an FTWZ Just Because It Sounds Better",
@@ -2699,10 +2699,10 @@ For a company moving a few pallets, these issues may not be particularly signifi
         heading: "Where FTWZ Warehousing Comes In",
         content: [
           { text: "Coastal shipping takes care of the long-distance movement. " },
-          { text: "FTWZ warehousing", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "FTWZ warehousing", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " can help with what happens after the cargo arrives.\n\nImagine a company moving a large quantity of material from a western Indian port to customers in southern India. The customers may not all need the material at the same time — one may require 100 tonnes this month, another 200 tonnes next month, the rest later. Sending the entire shipment directly to individual customers may not be the most efficient way to manage inventory. For eligible imported goods, an FTWZ can offer a customs-controlled environment where the inventory can be managed before the relevant domestic clearance or onward movement.\n\nThe two parts solve different problems: coastal shipping answers how a large quantity of cargo can be moved between coastal locations efficiently, while FTWZ warehousing addresses how eligible inventory can be held and managed after it reaches the destination region. Put together, the supply chain becomes more flexible." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "A Simple Example",
@@ -2720,7 +2720,7 @@ Transit time matters as much as cost. A truck can normally be arranged around th
         heading: "Inventory Planning Makes the Model Stronger",
         content: [
           { text: "Suppose a company consumes 500 tonnes of a particular raw material every month. Instead of arranging small road movements whenever stock becomes low, the company could plan larger replenishment movements as part of its wider " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy. The material can move by coastal shipping and then be positioned at a suitable warehouse or FTWZ near the destination market, with the factory or customers receiving smaller quantities as needed.\n\nThis creates a buffer between the supply chain and the production schedule — the company doesn't have to make every transportation decision at the last minute." }
         ]
       },
@@ -2839,13 +2839,13 @@ The advantage here is predictability. Container coastal shipping fits into exist
         heading: "The Decision That Actually Matters",
         content: [
           { text: "The real question isn't \"container or bulk\" in the abstract — it's whether your cargo is naturally unitized or naturally loose, and whether your origin and destination ports actually have the right handling infrastructure — and " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " procedures in place — for the mode you're considering. A port with excellent container handling but no bulk terminal makes bulk coastal shipping impractical, regardless of the cost math. A port like " },
           { text: "Mundra", kw: true, href: "/locations/mundra" },
           { text: ", for instance, has infrastructure for both container and bulk cargo, which isn't true everywhere — port-wise handling capability is tracked by the " },
           { text: "Indian Ports Association", kw: true, href: "https://www.ipa.nic.in/", target: "_blank", rel: "noopener noreferrer" },
           { text: ", which is worth checking before assuming a port can support a given cargo type.\n\nThis is also where " },
-          { text: "coastal shipping services", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coastal shipping services", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " built around a specific port network matter — the right coastal shipping partner should already know which of their ports handle which cargo type well, rather than treating every route as interchangeable." }
         ]
       },
@@ -3074,10 +3074,10 @@ So an importer needs to consider more than the customs release date. The real qu
         heading: "What Happens If Customs Examination Is Required?",
         content: [
           { text: "Customs examination may require the shipment to be opened or inspected — a normal part of the " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " process when called for, but temperature-sensitive cargo needs to be handled with its storage requirements in mind.\n\nBefore the shipment arrives, the logistics team should know the plan if examination happens: where it will take place, how the product will be protected, and how long the cargo is expected to be outside controlled storage. The exact procedure depends on the shipment, but having a plan is far better than figuring it out after the container has already been opened." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Temperature Monitoring Matters",
@@ -3145,7 +3145,7 @@ With air freight, there can be several handling points between aircraft arrival 
         heading: "The Cost of a Delay Can Be Bigger Than the Customs Charge",
         content: [
           { text: "When companies compare logistics providers, they often start by comparing service rates. But pharmaceutical cargo needs a slightly broader calculation — a delay can result in additional storage, rescheduled trucks, increased handling charges, delayed customer deliveries and, depending on the product, a temperature excursion with much more serious consequences.\n\nSo the lowest quoted " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " cost isn't automatically the lowest overall cost. Reliability and coordination have a value too." }
         ]
       },
@@ -3268,7 +3268,7 @@ There needs to be enough storage capacity, suitable handling arrangements and a 
         heading: "Warehousing Can Change the Way the Supply Chain Works",
         content: [
           { text: "A warehouse can act as a buffer between the import shipment and customer demand. Suppose an importer receives a large shipment but customers only require smaller quantities each week — there's no reason to move the entire shipment directly to individual customers. As part of a broader " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy, the cargo can be positioned at a suitable storage location and released according to demand, subject to the applicable storage and customs requirements. That gives the importer more flexibility and means the company isn't constantly arranging long-distance transport for every customer order." }
         ]
       },
@@ -3284,10 +3284,10 @@ There needs to be enough storage capacity, suitable handling arrangements and a 
         heading: "Coastal Shipping and FTWZ Can Work Together",
         content: [
           { text: "Consider an importer bringing a large quantity of goods into India where the cargo enters through one port, but the main customer base is located closer to another coastal region. The importer could evaluate a model where the goods move by " },
-          { text: "coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coastal shipping", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " to a more suitable destination and are then stored and distributed from there.\n\nThe supply chain might look something like: International supplier → Indian port → coastal shipping → FTWZ / warehouse → domestic clearance → customer. The important point is that coastal shipping handles the long-distance movement while warehousing provides inventory flexibility." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "The Destination Port Can Make or Break the Plan",
@@ -3406,7 +3406,7 @@ This is especially challenging when components have long lead times, since a pur
         heading: "Where Customs Becomes Part of the Supply Chain",
         content: [
           { text: "Customs is sometimes treated as a separate activity that happens after the purchasing decision has already been made. For electronics importers, that approach can be limiting — " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " affects when imported components become available for domestic use, and it can affect the amount of working capital tied up in inventory.\n\nWhen a company imports a large quantity of components, it may not need every unit immediately. That raises an important question: does the entire shipment need to enter domestic circulation at once? Depending on the business model, goods, transaction structure and applicable regulations, a customs-controlled warehousing arrangement may provide another option — this is where an FTWZ can become relevant." }
         ]
       },
@@ -3458,10 +3458,10 @@ Electronics companies should identify their critical components and understand w
         heading: "What Should Electronics Importers Track?",
         content: [
           { text: "A useful inventory system should go beyond simply reporting \"stock available.\" Businesses should look at current inventory, inventory in transit, open purchase orders, supplier lead times, critical components, stock allocated to production, slow-moving inventory, age of inventory, product life cycle, expected demand and potential obsolete stock as part of a wider " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy. The more accurate this information is, the easier it becomes to make purchasing decisions." }
         ],
-        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain" }
+        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain-management" }
       },
       {
         heading: "When Should an Importer Consider an FTWZ?",
@@ -3564,10 +3564,10 @@ These aren't just technical details for the engineering team — they directly a
         heading: "What If the Project Site Isn't Ready?",
         content: [
           { text: "This happens more often than people expect. The equipment arrives in India, customs formalities are completed, the transporter is ready — but the project site isn't. Perhaps construction has been delayed, or the installation team isn't ready to receive the equipment. The equipment still has to go somewhere.\n\nThis is where " },
-          { text: "project cargo warehousing", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project cargo warehousing", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " becomes useful. A suitable storage facility can give the project team some breathing room until the site is ready — but this isn't a matter of putting the equipment into any available warehouse. Large and heavy equipment needs sufficient space, suitable ground conditions, access for specialised vehicles and appropriate handling arrangements. The storage facility needs to be selected based on the actual cargo." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "Customs Planning Shouldn't Be Left Until the Last Minute",
@@ -3609,7 +3609,7 @@ This is why project logistics teams need to understand what's happening on the c
         heading: "Not Every FTWZ Is Suitable for Every Project",
         content: [
           { text: "A customs-controlled facility may be suitable from a regulatory perspective, but the physical requirements of the cargo still need to be considered. Large equipment needs space, heavy equipment may require suitable ground conditions, loading and unloading may require specialised machinery, and the access road needs to accommodate oversized vehicles.\n\nSo when evaluating an FTWZ for " },
-          { text: "project cargo", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: ", the business needs to look at both sides: can the facility support the customs requirements, and can it physically handle the equipment? Both questions matter." }
         ]
       },
@@ -3698,10 +3698,10 @@ For a textile importer, an invoice saying "fabric" may not tell the whole story.
         heading: "Why Textile Imports Need Careful Documentation",
         content: [
           { text: "One of the biggest challenges with textiles is the sheer variety of products that fall under the category. Two rolls of fabric sitting next to each other might look almost identical to someone unfamiliar with the industry — but one could be 100% polyester while the other is a polyester-cotton blend, one might be woven and the other knitted. Those differences can matter when determining the appropriate " },
-          { text: "customs classification", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs classification", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " and applicable requirements.\n\nSo when preparing for customs clearance, the question isn't simply \"what are we importing?\" It's \"what exactly are we importing?\" That extra level of detail is what helps customs and logistics teams understand the shipment properly." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Start With the Product, Not the Paperwork",
@@ -3874,10 +3874,10 @@ A steel coil weighing several tonnes cannot be planned the same way as cartons o
         heading: "How a Coastal Shipping Movement Typically Works",
         content: [
           { text: "A basic " },
-          { text: "coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coastal shipping", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " movement may look like: Origin → Origin Port → Coastal Vessel → Destination Port → Inland Transport → Customer. For an importer, this could mean receiving cargo at a western Indian port and moving part of the shipment toward a southern or eastern market by sea before arranging the final road or rail leg.\n\nThe important point is that coastal shipping normally works as part of a larger transportation chain, not a standalone replacement — road transport may still be needed to bring the cargo to the first port and deliver it from the destination port. A coastal service may look attractive between two ports, but if the final customer is hundreds of kilometres from the destination port, the inland leg still needs to be considered." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "When Volume Makes Coastal Shipping More Interesting",
@@ -4117,19 +4117,19 @@ Warehousing creates a buffer between them. The importer can receive a larger int
         heading: "Customs Documentation Is Part of the Supply Chain",
         content: [
           { text: "For imported consumer goods, " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " cannot really be separated from inventory planning. Depending on the products involved, documentation may include the commercial invoice, packing list, Bill of Lading, import documentation, HS classification, country-of-origin documentation and product-specific or labelling certificates where applicable.\n\nIf the importer intends to use an FTWZ, customs procedures should be understood before the shipment arrives. A good logistics plan therefore starts before the container reaches the port." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Multi-SKU Consolidation Can Improve Inventory Flexibility (But Isn't Always Better)",
         content: [
           { text: "Suppose an importer has 20,000 units of a particular product across three warehouses and demand suddenly increases in one region. If the inventory is fragmented, the company may need to transfer stock or wait for the next international shipment. With a larger consolidated inventory pool, as part of a wider " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy, the business may have more freedom to allocate stock where it's needed — though that doesn't eliminate transportation costs, it simply changes how inventory is positioned and managed.\n\nThere's a temptation to conclude that one large warehouse is always more efficient. It isn't. If customers are spread across the country and require next-day delivery, keeping everything in one location could create expensive or impractical outbound transportation. The objective isn't maximum consolidation — it's the right level of consolidation." }
         ],
-        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain" }
+        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain-management" }
       },
       {
         heading: "A Simple Example",
@@ -4232,10 +4232,10 @@ Depending on the equipment, storage could involve covered warehousing, open stor
           { text: "An " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can be considered as part of the logistics strategy for eligible imported goods and transactions, particularly relevant when there's a gap between the arrival of imported equipment and the point at which the customer actually needs it.\n\nRather than treating arrival at the Indian port and delivery to the project site as one continuous event, the company can evaluate whether an appropriate " },
-          { text: "project cargo warehousing", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project cargo warehousing", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " arrangement can provide an intermediate stage for the cargo. The customs treatment, permitted activities and suitability of the facility depend on the applicable regulations and the nature of the transaction — an FTWZ isn't a universal solution for oversized cargo, but it's one option that may make sense in the right project structure." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "Customs Planning Shouldn't Be Left Until the Vessel Arrives",
@@ -4289,10 +4289,10 @@ Some equipment may be needed immediately, some months later. Sending everything 
         heading: "Coastal Shipping Can Be an Option for Some Project Cargo",
         content: [
           { text: "For projects involving movement between Indian ports, " },
-          { text: "coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coastal shipping", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " can sometimes be considered as part of the transport plan. Instead of moving heavy equipment entirely by road, cargo could potentially move between suitable ports by sea before continuing by road to the final destination.\n\nThis may be worth evaluating when the cargo is particularly heavy, the origin and destination are connected to suitable ports, and the project schedule allows it. Coastal shipping isn't automatically cheaper or faster — the entire journey needs to be compared, including port handling and final-mile transportation." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "What About Duty and Working Capital?",
@@ -4423,10 +4423,10 @@ The exact requirements depend on the shipment and applicable regulations, but fr
         heading: "Sourcing Furniture From Vietnam and China",
         content: [
           { text: "China and Vietnam have become important sourcing destinations for furniture and home-related products. But the purchase doesn't end when the supplier confirms the order — the shipment still has to move through Factory → Export Documentation → Port → Ocean Freight → Indian Port → " },
-          { text: "Customs Clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "Customs Clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " → Warehouse → Distribution. Each stage affects the next.\n\nA supplier may offer an attractive product price, but if the cartons are oversized, packaging is weak or documentation keeps changing, the final logistics cost can be very different from what was originally expected. This is why the supplier decision should include logistics considerations as well." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Container Planning Starts at the Factory",
@@ -4470,7 +4470,7 @@ Flat-pack furniture has a useful storage advantage: it can usually be stored mor
         heading: "Inventory Can Become a Bigger Problem Than Customs",
         content: [
           { text: "For a furniture retailer, the customs process may take days, but the inventory may remain in the warehouse for months. Imagine importing 1,000 dining chairs — they arrive successfully, but only 200 sell in the first month. Where are the other 800?\n\nIf the business doesn't have good " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " visibility, the warehouse slowly becomes a place where products are stored rather than a system that supports sales. Good inventory management should tell the business what's arrived, what's available, what's sold, what's reserved, where each SKU is located, and what needs replenishment — particularly valuable when the business imports regularly." }
         ]
       },
@@ -4577,10 +4577,10 @@ For cement and construction materials, the decision isn't simply about whether a
         heading: "Why Cement Is an Interesting Cargo for Coastal Shipping",
         content: [
           { text: "Cement has one characteristic that makes transportation planning particularly important: large quantities are consumed continuously. A major construction project may need regular deliveries for months, running into thousands or tens of thousands of tonnes. A simplified " },
-          { text: "coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coastal shipping", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " movement might look like: Cement plant → Origin port → Coastal vessel → Destination port → Project. The vessel handles the long-distance portion, while road or rail handles the shorter inland movements — useful when the manufacturing plant and project are both reasonably close to suitable ports, but the route has to work end to end." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "A Port-to-Port Route Isn't the Whole Journey",
@@ -4678,7 +4678,7 @@ This is particularly important for large projects because material requirements 
         heading: "Final Thoughts",
         content: [
           { text: "Coastal shipping for cement and construction materials isn't about replacing trucks completely — it's about using the sea where the sea makes sense. For a large-volume movement over a long distance, a coastal vessel can potentially handle the middle section of the journey more efficiently than sending hundreds or thousands of individual truckloads. But that advantage only works when the rest of the chain is planned properly — port access, correct handling, moisture protection, and a reliable final connection to the project.\n\nThe best coastal-shipping plan isn't necessarily the one with the cheapest vessel rate. It's the one that delivers the material to the project at a competitive total cost, with the right level of reliability. For businesses handling imported construction materials, an FTWZ can also be considered as part of the wider " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy for eligible goods and transactions.\n\n" },
           { text: "Astromar Logistics Pvt. Ltd.", kw: true, href: "/" },
           { text: " has been operating since 2017, running a network of 10 FTWZ locations with 2 Lakh+ sq ft of warehousing, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients. For businesses managing construction materials and other cargo, this network can support broader supply chain planning involving warehousing, inventory positioning, customs clearance and multimodal distribution.\n\nUltimately, the question isn't whether coastal shipping is always better than road transport. It's simpler: for this cargo, this volume, this route and this project, what is the smartest way to move the material?" }
@@ -4751,7 +4751,7 @@ This is why inventory planning has to consider criticality, not just cost. A use
         heading: "JIT Doesn't Mean Zero Safety Stock",
         content: [
           { text: "A sensible JIT system still needs a buffer, sized according to supply risk. A component from a supplier 25 kilometres away that can deliver daily is a different case from an overseas component involving supplier production → export port → ocean freight → Indian port → " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " → inland transportation → factory. Both clearly can't be managed with the same two-day inventory policy — the overseas component needs to account for a longer and more variable supply chain." }
         ]
       },
@@ -4765,7 +4765,7 @@ What matters is when the component will actually be available for production. Th
         heading: "Customs Clearance Can Affect Production",
         content: [
           { text: "For imported auto components, " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " isn't just paperwork sitting between the port and the warehouse — it can affect when the factory gets its material. Imagine a manufacturer has only three days of buffer stock; a vessel arrives Monday, the component is expected by Wednesday, but the shipment takes longer than expected to clear customs. Now the buffer is being consumed while everyone waits.\n\nIf the component is critical, the company may eventually have to look for an alternative — moving replacement stock by air freight, which can be dramatically more expensive than the original ocean freight plan. This is why customs clearance should be considered when calculating the actual supply lead time." }
         ]
       },
@@ -4810,10 +4810,10 @@ This approach allows the manufacturer to reduce unnecessary inventory without tr
         heading: "Where an FTWZ Can Fit",
         content: [
           { text: "For businesses handling eligible imported goods and transactions, an FTWZ can be considered as one part of a broader " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy, subject to the applicable customs and trade framework. This can be relevant when imported components don't necessarily need to enter domestic inventory immediately — an auto-component supplier may import a larger quantity to secure supply or meet a supplier's minimum order requirement, while customers consume those components gradually.\n\nRather than thinking only about where the goods are stored, the company can evaluate how and when that inventory should move into the domestic supply chain. A conventional warehouse mainly provides storage; an FTWZ, used within the applicable framework, can form part of a broader inventory and international-trade strategy — relevant for businesses with large import volumes, multiple manufacturing locations, or imported inventory that doesn't need immediate domestic release." }
         ],
-        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain" }
+        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain-management" }
       },
       {
         heading: "A Simple Example",
@@ -4954,10 +4954,10 @@ Serial-number tracking becomes especially important when the same model is used 
         heading: "Customs Clearance Should Be Planned Before Arrival",
         content: [
           { text: "For imported project equipment, " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " is one of the steps that should be considered early — a project team should ideally know in advance what equipment is being imported, how it's described, what classification applies, and where it will go after clearance.\n\nA shipment may contain servers, batteries, cooling equipment, cables and power equipment — these aren't interchangeable products, and their classifications and documentation can differ. A project should have an equipment-level view rather than treating the entire shipment as \"data centre equipment.\" The basic principle: don't make customs clearance the first time anyone looks closely at the shipment." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Ocean Freight or Air Freight?",
@@ -4977,10 +4977,10 @@ If equipment is required in October, the team needs to know when it must leave t
         heading: "Where Inventory Positioning and FTWZ Fit",
         content: [
           { text: "A project may not need all its imported equipment immediately, creating an inventory-positioning question: should equipment be cleared and moved directly to site, stored in a conventional warehouse, or managed through an FTWZ arrangement as part of a wider " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy where eligible?\n\nFor eligible imported goods and transactions, an FTWZ can be considered when equipment arrives before the project is ready. Instead of treating arrival at the Indian port as an automatic trigger for immediate domestic movement, a company may evaluate whether eligible equipment can be managed within an FTWZ structure before being released according to the permitted process. For a long-duration data centre or telecom project, that flexibility can be worth considering — but the commercial case still needs to be worked out. An FTWZ isn't automatically the right answer simply because a shipment is imported." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "Projects Rarely Run Exactly According to Plan",
@@ -5161,7 +5161,7 @@ A well-organized documentation process helps reduce that risk and makes it easie
         heading: "Where does the customs broker fit in?",
         content: [
           { text: "AEO status belongs to the eligible business. That does not mean the business no longer needs customs clearance support.\n\nA regular importer may still use " },
-          { text: "a customs broker or logistics provider", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "a customs broker or logistics provider", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " to coordinate individual shipments. This can include reviewing shipment documents, coordinating customs declarations, supporting classification and valuation checks, responding to customs queries, coordinating examination where required, following up on clearance and coordinating cargo movement after clearance.\n\nAEO is about the company's compliance standing and eligibility for facilitation.\n\nCustoms clearance support is about managing the individual shipment correctly.\n\nThe two can work together." }
         ]
       },
@@ -5452,7 +5452,7 @@ Project cargo planning is really about getting all of these pieces to line up.`
 In fact, the transition from port to road is an important stage.
 
 The cargo may need to be handled, inspected or released through the ` },
-          { text: "applicable processes", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "applicable processes", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " before it can leave the port, which in turn depend on the customs framework set by " },
           { text: "CBIC", kw: true, href: "https://www.cbic.gov.in/", target: "_blank", rel: "noopener noreferrer" },
           { text: `.
@@ -5711,7 +5711,7 @@ The exact customs and tax treatment depends on the cargo, transaction structure 
           { text: `A product starts with an overseas supplier, then enters international transit, reaches India and needs to be stored or moved somewhere before being consumed, sold or sent onward. The difficult part is often the period between arrival and actual requirement. The business knows it will need the goods, but it may not know exactly when every unit will be required.
 
 If everything is immediately cleared and moved into the domestic market, the company may end up carrying more domestic inventory than necessary. If the company waits too long to bring the goods into the country, it may find itself short when demand increases. For suitable international inventory, an FTWZ can potentially sit between those two situations. The goods are positioned within the ` },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: ", while the company retains flexibility around the next step, subject to the applicable procedures." }
         ]
       },
@@ -5822,14 +5822,14 @@ Most of these challenges can be managed with proper planning and by working with
         heading: "Tips for Using Coastal Shipping Effectively",
         content: [
           { text: "If you are considering coastal shipping for your imports, a few practical steps can help: plan early and check vessel schedules for your route; confirm availability of Indian-flagged vessels; coordinate with your freight forwarder for seamless port handling, " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " and onward movement; consider using FTWZs or bonded warehouses near the destination port if the cargo is not immediately required for domestic use; and build some flexibility into your supply chain, especially during peak periods." }
         ]
       },
       {
         heading: "A Smarter Way to Move Cargo Across India",
         content: [
-          { text: "Coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "Coastal shipping", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: ` is becoming an increasingly important part of India's logistics landscape. With the right planning and understanding of the current cabotage framework, importers can use this mode to move cargo more efficiently, reduce dependence on road transport and build a more resilient supply chain.
 
 As port infrastructure and coastal connectivity continue to improve, with policy direction from the ` },
@@ -5898,7 +5898,7 @@ None of this means the invoice is wrong. Products genuinely differ in specificat
 Section 14 provides for including — subject to the applicable rules — certain costs and services connected to the imported goods: things like commissions and brokerage, engineering and design work, royalties and licence fees, transportation, insurance, and loading, unloading and handling charges.
 
 In practice, this means an importer needs to look at the whole commercial arrangement when preparing a ` },
-          { text: "customs declaration", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs declaration", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: ` — not just treat "invoice value" and "customs value" as automatically the same thing.` }
         ]
       },
@@ -6043,7 +6043,7 @@ The equipment should be selected based on cargo dimensions, weight distribution,
         heading: "Work With an Experienced Project Logistics Partner",
         content: [
           { text: "Heavy cargo movement involves multiple disciplines — routing, engineering, equipment selection, permits, lifting plans and on-site execution. An experienced " },
-          { text: "project logistics partner", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project logistics partner", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " can help plan the complete movement, coordinate the right equipment and manage the interface between transport, lifting and installation teams. Where imported equipment needs to be stored before it moves to site, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can also form part of the plan, subject to the applicable procedures." }
@@ -6154,7 +6154,7 @@ Review regularly — reconcile physical stock with system records and address va
           { text: "With " },
           { text: "FTWZ and bonded warehousing", kw: true, href: "/free-trade-zone" },
           { text: " facilities across multiple locations in India, Astromar works with importers, exporters and manufacturers to help manage their inventory more effectively. Our integrated approach — combining warehousing, customs coordination, ocean freight, air freight, cold storage and " },
-          { text: "supply chain solutions", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain solutions", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " — helps businesses keep their goods moving and their inventory better aligned with demand." }
         ]
       },
@@ -6255,18 +6255,18 @@ Now several teams are involved at once — the supplier asked for additional inf
         heading: "Where a Free Trade Zone Fits Into Toy Imports",
         content: [
           { text: "Once the compliance side is understood, larger importers may need to consider where imported inventory should be positioned after it reaches India. For some businesses, direct " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " followed by domestic warehousing is the answer. For others, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " structure may form part of the wider supply chain strategy — providing a customs-controlled environment for eligible imported goods before the next stage of the transaction.\n\nBut it's important not to misunderstand what an FTWZ does. It is not a substitute for product compliance. If a toy is subject to applicable safety or certification requirements, placing the goods in an FTWZ does not remove those obligations — the product still needs to comply with the rules that apply to it. The value of an FTWZ lies in how eligible inventory and international transactions can be structured within the applicable customs framework." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Inventory Control Matters as Much as Storage",
         content: [
           { text: "This matters for toy businesses because many handle a large number of SKUs — different colours, models, sizes, age categories and product versions. Once the goods arrive, someone has to know exactly what's available and where it's going, as part of a broader " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy that includes receiving imported goods, SKU identification, inventory segregation, stock visibility, order preparation, consolidation and dispatch planning.\n\nA conventional warehouse, a bonded facility, or an FTWZ structure may each be appropriate depending on the company's products, transaction model and applicable regulations — there's no single warehousing structure that fits every importer." }
         ]
       },
@@ -6355,10 +6355,10 @@ The question isn't just how to move the cargo. It's how to keep the entire suppl
         heading: "Where Coastal Shipping Can Fit",
         content: [
           { text: "For fertilizer and other suitable agri-inputs, " },
-          { text: "coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coastal shipping", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " can be considered when relatively large quantities need to move from one port region to another. A typical movement might look like: Import/Production → Port → Coastal Vessel → Destination Port → Warehouse → Regional Distribution. The coastal leg handles the port-to-port movement, while road transportation covers the inland portion — useful when the final market is closer to another coastal port than to the original arrival point.\n\nBut coastal shipping isn't automatically suitable for every shipment. The route, cargo volume, vessel availability, port facilities and final destination all matter — a transportation decision that looks attractive on the port-to-port leg may not work as well once the inland movement is added." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "The Cargo Itself Matters",
@@ -6390,7 +6390,7 @@ This approach creates a much clearer picture of the supply chain and helps ident
         heading: "Customs Clearance Is Part of the Transport Plan",
         content: [
           { text: "For imported fertilizer and agri-inputs, " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " cannot be treated as an activity that happens somewhere in the background. Documentation, classification and applicable regulatory requirements need to be considered before the cargo reaches the port — a transportation plan may assume cargo will move out of the port on a particular date, but if the customs process isn't ready, that assumption no longer holds.\n\nThis is particularly important when coastal shipping is the next leg. The coastal vessel has its own schedule, and missing the intended sailing can mean waiting for another movement and changing the downstream plan. Good coordination between customs and transportation teams becomes important." }
         ]
       },
@@ -6497,7 +6497,7 @@ Suddenly the warehouse is managing hundreds or thousands of SKUs with very diffe
         heading: "Imported Inventory Adds Another Layer",
         content: [
           { text: "For a domestic e-commerce business, replenishing stock can sometimes be relatively quick. For an importer, replenishment takes considerably longer — the product has to be ordered from the overseas manufacturer, produced, shipped internationally, cleared through " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: ", warehoused, and fulfilled domestically. That entire cycle has to be considered when deciding how much inventory to hold.\n\nIf a product sells faster than expected, the business cannot necessarily replenish it next week — the next shipment may still be somewhere between the supplier and India. This is why international e-commerce businesses often need to think about inventory well before a customer places an order." }
         ]
       },
@@ -6515,10 +6515,10 @@ Suddenly the warehouse is managing hundreds or thousands of SKUs with very diffe
         heading: "FTWZ and Fulfillment Centres Do Different Jobs",
         content: [
           { text: "An FTWZ is primarily relevant to the international inventory and customs side of the operation. A fulfillment centre is focused on what happens after inventory is available for domestic order processing — receiving stock, put-away, inventory tracking, picking, packing, labelling, dispatch and returns. These are different functions as part of a broader " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " design.\n\nA business can therefore use an FTWZ as part of its international inventory strategy and a separate domestic fulfillment operation for customer orders. Whether that structure makes commercial sense depends on the business model." }
         ],
-        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain" }
+        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain-management" }
       },
       {
         heading: "Not Every Product Needs the Same Inventory Strategy",
@@ -6637,7 +6637,7 @@ Not all of these shipments will be ready at the same time. That's what makes pro
         heading: "The Construction Schedule Becomes the Logistics Schedule",
         content: [
           { text: "Imagine a major pump is required for a particular stage of installation. The project team doesn't simply need the pump to arrive in India — it needs the pump to be available at the project site when the installation team is ready to work on it. That means the logistics team needs to work backwards: when is the equipment required at site, when should it leave the supplier, when will it reach the Indian port, how will " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " be handled, and does it need temporary storage?\n\nThese questions are connected — a delay at one stage can affect everything that follows." }
         ]
       },
@@ -6659,10 +6659,10 @@ The logistics plan needs to start with the actual cargo — weight, dimensions, 
         heading: "Sometimes the Project Site Is Not Ready",
         content: [
           { text: "The equipment may arrive in India before the project site is ready to receive it — civil work still underway, the installation area occupied, or several shipments arriving together without enough space to receive everything at once. In such situations, temporary storage or a project staging location can become useful.\n\nA suitable warehouse can act as a buffer between the port and the " },
-          { text: "project site", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project site", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: ". Instead of asking the site to receive every shipment immediately, equipment can be managed according to the actual installation schedule — that makes the movement easier to control." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "Warehousing Is Sometimes About Timing, Not Storage",
@@ -6791,7 +6791,7 @@ That affects how the cargo needs to be handled. The importer needs to think abou
         heading: "Classification Can Become Complicated",
         content: [
           { text: "Not everything described as jewellery necessarily follows the same " },
-          { text: "customs treatment", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs treatment", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: ". Gold jewellery, silver articles, precious-metal components, bullion and unfinished articles can have different classifications and regulatory considerations — even products that look similar may need to be examined differently depending on composition and intended use.\n\nHS classification should be settled before the shipment arrives whenever possible. A previous import declaration may provide useful background, but it shouldn't automatically be copied for a new shipment — the classification should reflect the actual product being imported, and where there's uncertainty, the importer should obtain appropriate customs or trade-compliance advice before filing the declaration." }
         ]
       },
@@ -6839,7 +6839,7 @@ This is why it helps to have the complete movement mapped before the vessel or a
         heading: "Inventory Control Matters More When Every Unit Has a High Value",
         content: [
           { text: "With ordinary products, an inventory difference of a few pieces may already be a concern. With jewellery and precious metals, the consequences of a discrepancy can be considerably more serious — the business may need detailed records of quantities, weights, product references and other relevant information as part of a broader " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " control system.\n\nEvery movement should be traceable, particularly important when goods pass through several stages — entering storage, moving for an applicable testing or hallmarking process, returning to storage, and eventually being delivered to the customer or domestic sales channel. Good inventory control is therefore not just an accounting function — it's part of the overall security and risk-management process." }
         ]
       },
@@ -6954,16 +6954,16 @@ The right approach depends on the installed equipment base, supplier lead times,
         heading: "Where FTWZ Can Become Useful",
         content: [
           { text: "An FTWZ can potentially play different roles in this supply chain — for imported capital equipment, it may provide an appropriate location to position eligible goods while waiting for the hospital or laboratory to become ready. For selected imported spare parts, it may also form part of the broader inventory structure as part of a wider " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy before the goods move to their next destination.\n\nBut an FTWZ should not automatically be used for every medical-device shipment. Sometimes direct movement from the Indian gateway to the hospital is the most practical option; in other situations, having an intermediate warehouse provides useful flexibility." }
         ],
-        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain" }
+        relatedLink: { text: "Explore Astromar's supply chain solutions", href: "/free-trade-zone-services/supply-chain-management" }
       },
       {
         heading: "Customs Planning Should Happen Early",
         content: [
           { text: "Medical devices and diagnostic equipment require proper attention to " },
-          { text: "import documentation", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "import documentation", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " and applicable regulatory requirements. India's medical-device regulatory framework is administered through " },
           { text: "CDSCO", href: "https://cdsco.gov.in", target: "_blank", rel: "noopener noreferrer" },
           { text: ", and medical devices and in-vitro diagnostic products have their own applicable requirements.\n\nFor the logistics team, the practical lesson is simple: the regulatory and customs process should be understood before the equipment arrives. A shipment that reaches the port without the necessary planning can disrupt more than customs clearance — it can affect installation schedules, warehouse planning and customer commitments." }
@@ -7052,10 +7052,10 @@ For automobile manufacturers, vehicle distributors and businesses handling large
         heading: "Why Move Vehicles by Sea?",
         content: [
           { text: "A vehicle travelling a few hundred kilometres may be easier to move by road. The calculation can be different when hundreds of vehicles need to travel a much longer distance — moving every vehicle individually by road means coordinating a large number of movements, drivers, routes and delivery schedules. A " },
-          { text: "coastal", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coastal", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: " vessel can consolidate many vehicles into one port-to-port movement.\n\nThat doesn't mean RORO is automatically cheaper or faster — the actual comparison depends on the route, available vessel service, port charges, inland transportation and shipment volume. But for suitable movements, coastal shipping provides another option alongside road transportation." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "How RORO Works",
@@ -7129,7 +7129,7 @@ Looking only at the vessel charge can give a misleading picture — a coastal se
           { text: "RORO and FTWZ solve different parts of a logistics problem. The RORO vessel provides port-to-port transportation. An " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can potentially provide a warehousing and inventory-management point for eligible imported goods, as part of a broader " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " structure, depending on the transaction structure and applicable customs requirements.\n\nFor example, where imported vehicles or related inventory need to be positioned before their next stage of distribution, an FTWZ can be evaluated as part of the broader supply chain. It's not necessary for every RORO movement — the two simply need to be considered separately and then connected where they genuinely fit the business requirement." }
         ]
       },
@@ -7204,7 +7204,7 @@ Before shipment, logistics teams need to understand the physical characteristics
         heading: "Port Arrival Is Only One Part of the Movement",
         content: [
           { text: "For heavy project equipment, the port is better viewed as one stage in a longer movement: Overseas supplier → Indian port → " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " → handling or staging → specialised transportation → project site → installation. Every transition needs coordination — at the port, cargo may need to be discharged, inspected, cleared and transferred to suitable transport equipment.\n\nIf the final project site is several hours or days away from the port, the road movement becomes another major planning exercise. The logistics provider needs visibility beyond the port gate." }
         ]
       },
@@ -7228,10 +7228,10 @@ Before shipment, logistics teams need to understand the physical characteristics
         heading: "Where FTWZ Warehousing Can Fit",
         content: [
           { text: "FTWZ is not a substitute for specialised project transportation — its role is different. For eligible cargo and suitable transaction structures, an FTWZ can provide a controlled location for holding imported goods before they move to their next destination, useful as part of the wider " },
-          { text: "project cargo", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " strategy when equipment arrives before the site is ready, multiple shipments need coordination, or components arrive separately from different suppliers.\n\nThe exact customs treatment and permitted activities depend on the nature of the transaction, cargo and applicable regulations. The important point is that warehousing should support the project schedule rather than become an isolated storage activity." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "A Hypothetical Mining Equipment Movement",
@@ -7336,10 +7336,10 @@ The same issue applies to leather goods. A handbag, belt, wallet or travel produ
         heading: "The Shoe in the Catalogue Is Not Necessarily the Shoe Customs Needs to Classify",
         content: [
           { text: "Most footwear businesses start with a commercial description — leather formal shoe, sports shoe, safety shoe, synthetic boot. That description makes sense from a sales perspective, but " },
-          { text: "customs classification", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs classification", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " is a different exercise that looks at the characteristics of the actual goods and the applicable tariff rules. Material composition can be particularly important for footwear.\n\nConsider two pairs of formal shoes that look almost identical — one has a leather upper, the other uses a synthetic material designed to look like leather. To a customer browsing a catalogue, the difference might not be obvious. For footwear customs clearance, the distinction can matter, which is why an importer shouldn't rely entirely on the product name used by the overseas supplier." }
         ],
-        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/custom-clearance" }
+        relatedLink: { text: "See how Astromar handles customs clearance", href: "/free-trade-zone-services/customs-clearance" }
       },
       {
         heading: "Leather, Synthetic and Blended Footwear",
@@ -7403,7 +7403,7 @@ This is especially relevant when suppliers update product ranges frequently. For
         heading: "Where Warehousing Enters the Picture",
         content: [
           { text: "Customs clearance is only one stage of the import journey. Once goods are ready to move into the Indian market, the importer still has to decide where the inventory should go — some shipments move directly from the port to a distribution centre, others are stored temporarily or distributed through a regional warehouse as part of a broader " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy.\n\nFor businesses managing international inventory, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " warehouse may also be relevant depending on the transaction structure and intended movement of the goods. An FTWZ is not simply another conventional warehouse — its use depends on the nature of the transaction, the applicable customs framework and what the importer intends to do with the goods." }
@@ -7492,10 +7492,10 @@ A good timber supply chain has to look at the entire movement, from the point wh
         heading: "Timber Is Often a Volume-Driven Cargo",
         content: [
           { text: "One of the first things that makes timber different from many other commodities is the amount of physical space it occupies. A shipment of plywood, wooden panels or sawn timber can fill a considerable amount of transport or warehouse capacity without necessarily reaching the maximum weight the transport unit can carry — making volume-based freight economics important for " },
-          { text: "coastal shipping", kw: true, href: "/coastal-shipping-free-trade-zone" },
+          { text: "coastal shipping", kw: true, href: "/free-trade-zone-services/coastal-shipping" },
           { text: ".\n\nThe dimensions of the bundles, how efficiently they can be stacked, and how much usable space they occupy can have a significant effect on the transportation plan. The right comparison isn't just the freight rate — it's the total cost of moving the cargo from origin to destination, including inland transportation, port handling, vessel movement, destination handling, warehousing and final delivery." }
         ],
-        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/coastal-shipping-free-trade-zone" }
+        relatedLink: { text: "Explore Astromar's coastal shipping services", href: "/free-trade-zone-services/coastal-shipping" }
       },
       {
         heading: "When Coastal Shipping Starts to Make Sense",
@@ -7545,7 +7545,7 @@ For timber and wood products, these transitions need to be planned carefully. Th
         heading: "The Warehouse Is Part of the Coastal Shipping Plan",
         content: [
           { text: "A coastal shipping movement doesn't end when the vessel reaches the destination port. In most cases, the cargo still has to travel somewhere else — a manufacturing facility, a distributor, or a regional warehouse before delivery to several customers, as part of a broader " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy.\n\nImagine a distributor receiving a large shipment of plywood at a coastal port without customers waiting for the entire shipment on the same day. If the cargo can be moved into a suitable warehouse, inventory can be released gradually according to customer demand. The vessel handles the long-distance movement; the warehouse handles the timing difference between cargo arrival and customer demand — that's where coastal shipping becomes part of a broader supply chain rather than a standalone transportation service." }
         ]
       },
@@ -7561,7 +7561,7 @@ For timber and wood products, these transitions need to be planned carefully. Th
         heading: "Coastal Shipping Is Not Automatically Cheaper",
         content: [
           { text: "It's easy to assume moving large cargo by sea will always be cheaper than moving it by road. The reality is more complicated — coastal shipping introduces additional stages, and each stage has a cost, involving " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " where applicable, port handling, waiting for the appropriate sailing, and inland transportation at both ends.\n\nFor a large shipment travelling a suitable coastal route, the economics may work well. For a small or urgent shipment, the additional handling may make direct road transportation more appropriate — the right answer depends on the specific movement." }
         ]
       },
@@ -7646,10 +7646,10 @@ As a result, equipment may arrive in India before the project site is ready — 
         heading: "The Warehouse as an Inventory Buffer",
         content: [
           { text: "In a project-based supply chain, a warehouse can do more than store products — it can separate two different timelines: the procurement timeline (when equipment needs to be purchased and received) and the project timeline (when equipment is actually needed for installation). Those dates may not match.\n\nA warehouse allows inventory to arrive according to procurement and transportation requirements while being released according to " },
-          { text: "project", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " requirements. The objective isn't to keep equipment in storage indefinitely — it's to provide a controlled buffer until the project is ready." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "Different Components Create Different Inventory Requirements",
@@ -7713,7 +7713,7 @@ The warehouse provides a physical buffer between them; supply chain management p
         heading: "Final Thoughts",
         content: [
           { text: "Solar and renewable-energy projects show why inventory cannot always be managed through a simple continuous-replenishment model. Equipment may need to be procured months before it's required on site — managing that gap requires coordination between " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " planning, inventory management, warehousing, ocean freight, customs clearance, transportation and project logistics.\n\nFor businesses managing renewable-energy components, an integrated supply chain solution can connect these activities and provide better visibility between procurement and project deployment.\n\nAstromar Logistics Pvt. Ltd. provides integrated logistics and FTWZ solutions across 10 FTWZ locations, with 2 Lakh+ sq ft of warehousing, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients, operating since 2017. Depending on the cargo and transaction structure, businesses can evaluate FTWZ warehousing, customs clearance, inventory management and supply chain solutions as part of a wider project logistics strategy.\n\nFor renewable-energy projects, the objective is not simply to hold more inventory. It is to have the right component, at the right location, at the right stage of the project, while keeping the wider supply chain flexible enough to respond when project schedules change." }
         ]
       }
@@ -7798,7 +7798,7 @@ Other wind-turbine components create different transportation requirements too. 
         heading: "Port Arrival Is Only the Beginning",
         content: [
           { text: "For imported wind-turbine equipment, ocean freight brings the components to the Indian port, but port arrival doesn't mean the logistics movement is complete. The next stages may involve: Vessel arrival → Port handling → " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " → Cargo release → Specialized transportation → Route movement → Project-site delivery.\n\nA specialized trailer may be available, but if the cargo isn't ready for release, the movement cannot begin. Similarly, cargo may have completed the required customs process, but if the project site isn't ready, immediate dispatch may create another problem — this is where project logistics services become more than transportation." }
         ]
       },
@@ -7818,10 +7818,10 @@ That's why the project cargo transportation plan needs to continue all the way t
         heading: "Site Readiness Matters",
         content: [
           { text: "The transportation schedule should be connected to the construction schedule. Imagine a blade arriving at the port while the wind farm access road is still under preparation — moving it immediately may not be practical. The project logistics team needs visibility into site readiness, access conditions, unloading arrangements and lifting equipment availability as part of a wider " },
-          { text: "project cargo", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " strategy.\n\nThis is particularly important because wind-turbine components are not easy to store casually once they've reached the project area — the timing of the delivery needs to make sense within the installation plan." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "A Hypothetical Example",
@@ -7999,7 +7999,7 @@ It may be less relevant when goods are already committed to specific customers a
         heading: "Final Thoughts",
         content: [
           { text: "E-commerce and FMCG businesses are constantly balancing two competing requirements: keeping enough inventory available while avoiding unnecessary stock at multiple locations. That makes regional inventory positioning an important part of " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " planning.\n\nFor businesses serving Maharashtra and other markets from the Mumbai region, Mumbai-Panvel can be evaluated as a potential regional distribution location. A Panvel FTWZ may, where appropriate, form part of a broader structure connecting imported inventory, warehousing, customs clearance, transportation and regional distribution.\n\nAstromar Logistics Pvt. Ltd. supports businesses through FTWZ warehousing, supply chain solutions, customs clearance, international logistics and distribution coordination. With 10 FTWZ locations, 2 Lakh+ sq ft of warehousing, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients, operating since 2017, Astromar focuses on connecting supply chain, customs clearance, warehousing and Free Trade Zone solutions around the actual needs of the business.\n\nThe objective is not simply to find a warehouse. It is to build a distribution structure in which inventory can move from international supply into the right markets at the right time." }
         ]
       }
@@ -8089,7 +8089,7 @@ The first two clocks usually run on fixed free periods. The third one often does
         heading: "Customs Timing Is Part of the Cost",
         content: [
           { text: "Many detention and demurrage cases are really documentation or clearance timing cases. Filing accuracy, classification, valuation, applicable permissions and examination requirements all affect how quickly cargo can move — which is why " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " and warehousing need to be planned together rather than one after the other.\n\nImport declarations and related filings are handled through systems such as " },
           { text: "ICEGATE", href: "https://www.icegate.gov.in", target: "_blank", rel: "noopener noreferrer" },
           { text: ", under the framework administered by " },
@@ -8198,7 +8198,7 @@ These timelines don't always match. A component might arrive in India several we
         heading: "The Gap Between Shipment Arrival and Factory Consumption",
         content: [
           { text: "Imagine an electronics manufacturer imports a large quantity of components, but the factory doesn't need the entire shipment immediately. If everything is brought into domestic inventory at once, the manufacturer may be holding more stock than needed for immediate production — but delaying the shipment until the exact production date can also create problems, since international shipments need to be planned in advance.\n\nAn FTWZ warehouse can, where suitable, provide an inventory point between those two events as part of a wider " },
-          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain" },
+          { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " structure, rather than simply a storage location." }
         ]
       },
@@ -8239,7 +8239,7 @@ Rather than treating the entire shipment as immediate factory inventory, the com
         heading: "Customs Clearance Is Part of the Supply Chain",
         content: [
           { text: "For imported electronics components, " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " should not be viewed only as a documentation exercise. Businesses may need to address applicable requirements relating to documentation, classification, valuation and other customs matters under the framework maintained by " },
           { text: "CBIC", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
           { text: ", with industry policy tracked in part by " },
@@ -8379,16 +8379,16 @@ These questions are particularly important for transformer storage near Chennai 
         heading: "Where FTWZ Can Fit",
         content: [
           { text: "For certain imported equipment and transaction structures, an FTWZ warehouse can form part of the logistics plan between international arrival and eventual project use, as part of a broader " },
-          { text: "project cargo", kw: true, href: "/free-trade-zone-services/projects" },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
           { text: " strategy: International supplier → Ocean freight → Port → Applicable customs process → FTWZ → Project delivery.\n\nThe actual customs treatment depends on the nature of the goods, transaction structure and applicable regulations — an FTWZ is not automatically the right solution for every power-sector shipment. Its suitability needs to be evaluated alongside the project's procurement structure, equipment characteristics and installation schedule. The main value isn't simply storage — it's the ability to create separation between cargo arrival and project installation." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/projects" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
       },
       {
         heading: "Customs Clearance Needs to Be Considered Early",
         content: [
           { text: "Power transmission equipment can be high-value, technically specific and internationally sourced, which makes " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " an important part of the import plan. Documentation, classification, valuation and other applicable requirements need to be addressed based on the actual equipment and transaction, under the framework maintained by " },
           { text: "CBIC", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
           { text: ".\n\nBut customs planning should not be separated from the physical logistics. A shipment ready for release still needs appropriate transportation, a suitable destination, handling arrangements, and a project delivery plan — customs clearance and project logistics should be considered together." }

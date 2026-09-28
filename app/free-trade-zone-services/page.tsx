@@ -33,13 +33,13 @@ const servicesSchema = {
     "name": "Astromar FTWZ & Logistics Services",
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "FTWZ Warehousing", "url": "https://www.astromarfreezone.com/free-trade-zone" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Coastal Shipping", "url": "https://www.astromarfreezone.com/coastal-shipping-free-trade-zone" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Coastal Shipping", "url": "https://www.astromarfreezone.com/free-trade-zone-services/coastal-shipping" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ocean Freight", "url": "https://www.astromarfreezone.com/free-trade-zone-services/ocean-freight" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Air Freight", "url": "https://www.astromarfreezone.com/free-trade-zone-services/air-freight" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Supply Chain", "url": "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Clearance", "url": "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Supply Chain", "url": "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain-management" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Clearance", "url": "https://www.astromarfreezone.com/free-trade-zone-services/customs-clearance" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warehousing", "url": "https://www.astromarfreezone.com/free-trade-zone-services/warehousing" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Project Cargo", "url": "https://www.astromarfreezone.com/free-trade-zone-services/projects" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Project Cargo", "url": "https://www.astromarfreezone.com/free-trade-zone-services/project-cargo" } }
     ]
   }
 };

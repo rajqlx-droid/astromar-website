@@ -333,7 +333,7 @@ const SupplyChainClient = () => {
         </div>
       </section>
 
-      <ServicesCarousel currentHref="/free-trade-zone-services/supply-chain" />
+      <ServicesCarousel currentHref="/free-trade-zone-services/supply-chain-management" />
 
       <CTASection />
 

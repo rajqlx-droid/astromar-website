@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Customs Clearance Services in India | Astromar Logistics",
   description: "Licensed customs clearance at every Indian port & airport. Zero-delay import/export processing with full compliance visibility.",
   keywords: "customs clearance services india, customs broker india, import customs clearance, export customs clearance, customs house agent, cha india, port customs clearance, airport customs clearance, ftwz customs, customs compliance india",
-  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance" },
+  alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/customs-clearance" },
   openGraph: {
     title: "Customs Clearance Services in India | Astromar Logistics",
     description: "Licensed customs clearance across every Indian port and airport. Compliance-first import & export clearance with zero delays.",
-    url: "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance",
+    url: "https://www.astromarfreezone.com/free-trade-zone-services/customs-clearance",
     siteName: "Astromar Logistics",
     type: "website",
     locale: "en_IN",
@@ -49,7 +49,7 @@ const customClearanceBreadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
     { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.astromarfreezone.com/free-trade-zone-services" },
-    { "@type": "ListItem", "position": 3, "name": "Customs Clearance", "item": "https://www.astromarfreezone.com/free-trade-zone-services/custom-clearance" }
+    { "@type": "ListItem", "position": 3, "name": "Customs Clearance", "item": "https://www.astromarfreezone.com/free-trade-zone-services/customs-clearance" }
   ]
 };
 
