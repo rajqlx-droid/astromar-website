@@ -270,7 +270,7 @@ const FTWZServices = () => {
                 </h2>
                 <div className="space-y-4 text-sm sm:text-base text-foreground/80 leading-relaxed">
                   <p>A Free Trade Warehousing Zone (FTWZ) is a Government-notified area established under the SEZ Act, 2005, where imported goods can be stored without immediate payment of customs duty or GST. Goods stay in the zone duty-free until they're cleared for domestic sale, re-exported abroad, or transferred to another FTWZ.</p>
-                  <p>Astromar operates 10 strategic FTWZ warehouse locations across India — from Chennai and Mumbai's busiest container ports to inland gateways at Khurja and Bengaluru. Each facility is fully bonded, customs-controlled, and licensed for value-added activities including kitting, labelling, repackaging, and re-export.</p>
+                  <p>As an FTZ in India operator, Astromar runs 10 strategic FTWZ warehouse locations — from Chennai and Mumbai's busiest container ports to inland gateways at Khurja and Bengaluru. Each facility is fully bonded, customs-controlled, and licensed for value-added activities including kitting, labelling, repackaging, and re-export.</p>
                   <p>For importers, this means working capital that isn't trapped in customs duty, GST deferred until point of sale, and the operational flexibility to consolidate, repack, and re-export without triggering tax events.</p>
                 </div>
               </div>
@@ -373,7 +373,7 @@ const FTWZServices = () => {
               How Industries Use Our FTWZ Network
             </h2>
             <p className="text-base sm:text-lg text-foreground/70 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
-              As a licensed Free Zone Company operating under the SEZ Act, Astromar serves importers, exporters, and re-exporters across 6 industries. Our Free Zone Company status enables duty deferral, single-window customs, and value-added services unavailable in regular warehousing.
+              As a licensed Free Zone Company operating an FTZ in India under the SEZ Act, Astromar serves importers, exporters, and re-exporters across 6 industries. Our Free Zone Company status enables duty deferral, single-window customs, and value-added services unavailable in regular warehousing.
             </p>
           </ScrollReveal>
           <div className="relative">

@@ -80,7 +80,7 @@ const processSteps = [
   {
     num: "05",
     title: "Quality-Checked Facilities",
-    desc: "Every FTZ Warehouse is inspected and certified against SEZ compliance, security, and storage-zoning standards to ensure consistent facility quality across our network.",
+    desc: "Every facility is inspected and certified against SEZ compliance, security, and storage-zoning standards to ensure consistent quality across our network.",
   },
 ];
 
