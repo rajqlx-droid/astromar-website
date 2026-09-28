@@ -6,6 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const tradeLanes = [
   { route: "Asia Pacific",  origin: "Mumbai, Chennai",  destination: "Singapore, China, Japan",         transit: "10–18 days" },
@@ -52,6 +53,7 @@ const OceanFreight = () => {
 
             {/* Left — text */}
             <ScrollReveal>
+              <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Ocean Freight" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">OCEAN FREIGHT</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Global Ocean Freight in India — FCL, LCL &amp; FTWZ Integration

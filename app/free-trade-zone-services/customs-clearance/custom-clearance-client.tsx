@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const steps = [
   { step: "01", title: "Document Review & HS Classification",  desc: "Collect and verify all shipping documents, classify goods under correct HS codes to ensure accurate duty calculation." },
@@ -56,6 +57,7 @@ const CustomClearanceClient = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
 
             <ScrollReveal>
+              <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Customs Clearance" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">CUSTOMS CLEARANCE</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Customs Clearance Services in India

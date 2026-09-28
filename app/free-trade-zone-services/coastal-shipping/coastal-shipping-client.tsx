@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const routes = [
   { route: "West Coast",  origin: "Mumbai (JNPA)", destination: "Kochi, Mangalore",    transit: "2–3 days" },
@@ -74,6 +75,7 @@ const CoastalShippingClient = () => {
 
             {/* Left — text */}
             <ScrollReveal>
+              <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Coastal Shipping" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">COASTAL SHIPPING</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Port to Port Shipping in India — Coastal Cargo Network

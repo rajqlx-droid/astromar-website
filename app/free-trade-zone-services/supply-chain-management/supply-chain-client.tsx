@@ -7,6 +7,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 type TabKey = "Electronics" | "Pharma" | "FMCG" | "Automotive" | "Textiles";
 
@@ -88,6 +89,7 @@ const SupplyChainClient = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
 
             <ScrollReveal>
+              <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Supply Chain" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">SUPPLY CHAIN</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Supply Chain Solutions India — Integrated &amp; End-to-End

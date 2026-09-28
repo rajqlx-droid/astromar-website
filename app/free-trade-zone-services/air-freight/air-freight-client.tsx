@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const accordionItems = [
   { title: "Express Air Freight",       body: "Time-critical shipments delivered within 24-48 hours to major global destinations. Priority handling and dedicated capacity for urgent cargo." },
@@ -55,6 +56,7 @@ const AirFreightClient = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
 
             <ScrollReveal>
+              <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Air Freight" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">AIR FREIGHT</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Air Freight India — Express Cargo to 100+ Global Destinations

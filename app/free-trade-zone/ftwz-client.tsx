@@ -6,6 +6,7 @@ import Link from "next/link";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 function KwText({ segments }: { segments?: { text: string; kw?: boolean; href?: string }[] }) {
   if (!segments) return null;
@@ -220,6 +221,7 @@ const FTWZServices = () => {
         <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center max-w-7xl mx-auto">
             <div className="max-w-2xl">
+              <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Free Trade Warehousing Zone" }]} />
               <span className="block text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-4">FTWZ WAREHOUSING</span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                 Zero Duty Bonded Storage — FTWZ in India

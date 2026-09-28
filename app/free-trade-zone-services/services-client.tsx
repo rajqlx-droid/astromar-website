@@ -5,6 +5,7 @@ import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
 import { ArrowRight } from "lucide-react";
 import { services } from "@/data/services";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const Services = () => {
   return (
@@ -24,6 +25,7 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center">
             {/* LEFT - Text */}
             <div className="max-w-2xl">
+              <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services" }]} />
               <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
                 OUR SERVICES
               </p>
