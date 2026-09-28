@@ -79,7 +79,7 @@ const processSteps = [
   },
   {
     num: "05",
-    title: "FTZ Warehouse",
+    title: "Quality-Checked Facilities",
     desc: "Every FTZ Warehouse is inspected and certified against SEZ compliance, security, and storage-zoning standards to ensure consistent facility quality across our network.",
   },
 ];
@@ -106,10 +106,10 @@ const About = () => {
                 ABOUT ASTROMAR
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6 leading-tight">
-                Free Trade Zone Port in India
+                Astromar Logistics — Bonded Storage in India Since 2017
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Since 2017, Astromar Logistics has been delivering trusted Free Trade Warehousing Zone operations across India — combining duty-free bonded storage, multimodal freight, and customs expertise across 10 strategic locations nationwide.
+                Since 2017, Astromar Logistics has been providing trusted FTWZ operations and duty-free bonded storage in India, combining multimodal freight and customs expertise across 10 strategic locations nationwide.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-colors">
@@ -182,10 +182,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
           <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-3">FTWZ INTEGRATION</p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
-            Streamlining Customs with Strategic FTWZ Warehouse Integration
+            Integrated Warehousing and Customs
           </h2>
           <p className="text-base sm:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
-            Our integrated FTWZ Warehouse solutions are custom-built to eliminate traditional supply chain friction, offering businesses elite transit management and agile cargo handling.
+            Our integrated FTWZ warehouse solutions combine bonded storage in India with transit management and cargo handling, built to remove traditional supply chain friction.
           </p>
         </div>
       </section>
@@ -228,9 +228,9 @@ const About = () => {
           <ScrollReveal>
             <div className="text-center mx-auto mb-12 max-w-3xl">
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR VALUES</p>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">A Modern Approach to Free Trade and Warehousing Zones</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">Our Values</h2>
               <p className="text-base text-foreground/70 leading-relaxed">
-                Our values define how we deliver FTWZ Warehouse operations — from compliance and transparency to client partnership and continuous improvement.
+                Our values define how we deliver bonded storage in India — from compliance and transparency to client partnership and continuous improvement.
               </p>
             </div>
           </ScrollReveal>
@@ -360,7 +360,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-orange-500 uppercase mb-2">OUR PROCESS</p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-16">Optimizing Global Trade Operations with Astromar Logistics</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-16">Our Process</h2>
           </ScrollReveal>
 
           <div className="relative">
