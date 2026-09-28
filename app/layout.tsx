@@ -34,8 +34,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Astromar Logistics – FTWZ India",
-    description: "India's leading Free Trade Warehousing Zone provider offering duty-free storage, customs clearance, and integrated logistics solutions.",
   },
 };
 

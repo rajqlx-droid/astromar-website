@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
   keywords: ["freight forwarding Chennai", "FTWZ Chennai logistics", "logistics company Chennai", "customs clearance Chennai", "duty free warehousing Chennai"],
   openGraph: {
-    title: "Astromar Freezone: A Trusted Partner in Global Logistics and Trade",
+    title: "Astromar Logistics: A Trusted Partner in Global Logistics and Trade",
     description: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
     url: "https://www.astromarfreezone.com/freight-forwarding-logistics-chennai",
     images: ["/freight-forwarding-chennai.png"],
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Astromar Freezone: A Trusted Partner in Global Logistics and Trade",
+  headline: "Astromar Logistics: A Trusted Partner in Global Logistics and Trade",
   description: "FTWZ and logistics company in Chennai providing duty-free warehousing, customs clearance, import-export logistics, and freight forwarding near Chennai Port.",
   image: "https://www.astromarfreezone.com/freight-forwarding-chennai.png",
   author: { "@type": "Organization", name: "Astromar Logistics" },
@@ -34,7 +34,7 @@ export default function FreightForwardingChennaiPage() {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="/freight-forwarding-chennai.png"
-          alt="Astromar Freezone Chennai Logistics"
+          alt="Astromar Logistics Chennai"
           fill
           sizes="100vw"
           className="object-cover"
@@ -64,18 +64,18 @@ export default function FreightForwardingChennaiPage() {
         {/* Intro */}
         <div className="bg-brand-light border-l-4 border-[#F97316] rounded-r-xl px-6 py-5 mb-10">
           <p className="text-base text-foreground/80 leading-relaxed">
-            Chennai is one of India's most important logistics and trade hubs, connecting businesses to global markets through major seaports and airports. <strong>Astromar Freezone</strong> is a trusted <strong>FTWZ and logistics company in Chennai</strong> offering Free Trade Warehousing Zone (FTWZ) services, international freight forwarding, and end-to-end supply chain solutions.
+            Chennai is one of India's most important logistics and trade hubs, connecting businesses to global markets through major seaports and airports. <strong>Astromar Logistics</strong> is a trusted <strong>FTWZ and logistics company in Chennai</strong> offering Free Trade Warehousing Zone (FTWZ) services, international freight forwarding, and end-to-end supply chain solutions.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed mt-3">
-            With strategically located warehousing facilities near Chennai Port and key industrial corridors, Astromar Freezone helps businesses reduce logistics costs, improve supply chain efficiency, and manage international trade seamlessly.
+            With strategically located warehousing facilities near Chennai Port and key industrial corridors, Astromar Logistics helps businesses reduce logistics costs, improve supply chain efficiency, and manage international trade seamlessly.
           </p>
         </div>
 
         {/* About */}
         <div className="mb-10">
-          <h2 className="text-xl font-bold text-[#1B3A6B] mb-4">About Astromar Freezone</h2>
+          <h2 className="text-xl font-bold text-[#1B3A6B] mb-4">About Astromar Logistics</h2>
           <p className="text-sm text-foreground/80 leading-relaxed">
-            Astromar Freezone is a professional <strong>FTWZ service provider in Chennai, Tamil Nadu</strong>, specializing in duty-free warehousing, customs clearance, and import-export logistics services. The company supports local and international businesses by enabling smooth cargo movement through one of South India's busiest trade gateways.
+            Astromar Logistics is a professional <strong>FTWZ service provider in Chennai, Tamil Nadu</strong>, specializing in duty-free warehousing, customs clearance, and import-export logistics services. The company supports local and international businesses by enabling smooth cargo movement through one of South India's busiest trade gateways.
           </p>
           <p className="text-sm text-foreground/80 leading-relaxed mt-3">
             By combining modern infrastructure with deep logistics expertise, Astromar has positioned itself as a reliable <strong>logistics partner in Chennai for global trade operations</strong>.
@@ -168,7 +168,7 @@ export default function FreightForwardingChennaiPage() {
         {/* Who Can Benefit */}
         <div className="mb-10">
           <h2 className="text-xl font-bold text-[#1B3A6B] mb-4">Who Can Benefit from Astromar's Chennai-Based Logistics Services?</h2>
-          <p className="text-sm text-foreground/70 leading-relaxed mb-3">Astromar Freezone serves:</p>
+          <p className="text-sm text-foreground/70 leading-relaxed mb-3">Astromar Logistics serves:</p>
           <ul className="space-y-2">
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Importers and exporters in Chennai</li>
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Manufacturing units in Tamil Nadu</li>
@@ -179,7 +179,7 @@ export default function FreightForwardingChennaiPage() {
 
         {/* Why Choose */}
         <div className="mb-10">
-          <h2 className="text-xl font-bold text-[#1B3A6B] mb-4">Why Choose Astromar Freezone in Chennai?</h2>
+          <h2 className="text-xl font-bold text-[#1B3A6B] mb-4">Why Choose Astromar Logistics in Chennai?</h2>
           <ul className="space-y-2">
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Leading FTWZ logistics company in Chennai, India</li>
             <li className="flex items-start gap-2 text-foreground/80 text-sm leading-relaxed"><span className="text-[#F97316] mt-1 flex-shrink-0">•</span>Strategic location near Chennai Port and logistics corridors</li>
@@ -193,7 +193,7 @@ export default function FreightForwardingChennaiPage() {
         <div className="bg-brand-light rounded-xl p-6 mb-10">
           <h2 className="text-lg font-bold text-[#1B3A6B] mb-3">Conclusion</h2>
           <p className="text-sm text-foreground/80 leading-relaxed">
-            Astromar Freezone is a reliable FTWZ and logistics service provider in Chennai supporting businesses with smart warehousing, customs clearance, and international freight solutions. With a strong presence in Chennai's logistics ecosystem, Astromar helps businesses trade globally with confidence and efficiency.
+            Astromar Logistics is a reliable FTWZ and logistics service provider in Chennai supporting businesses with smart warehousing, customs clearance, and international freight solutions. With a strong presence in Chennai's logistics ecosystem, Astromar helps businesses trade globally with confidence and efficiency.
           </p>
         </div>
 

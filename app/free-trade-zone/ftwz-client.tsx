@@ -32,7 +32,7 @@ function KwText({ segments }: { segments?: { text: string; kw?: boolean; href?: 
 
 const benefits = [
   { title: "Duty-Free Storage", desc: "Store imported goods inside an FTWZ without paying customs duty, freeing up working capital until goods are actually needed." },
-  { title: "Indefinite GST Deferral", desc: "Defer GST indefinitely on goods stored in the FTWZ — pay only when goods move into the Domestic Tariff Area." },
+  { title: "GST Deferral", desc: "Defer GST on goods stored in the FTWZ — payable only when goods are cleared into the Domestic Tariff Area, subject to applicable regulations." },
   { title: "Re-Export Without Penalty", desc: "Re-export stored goods to any global destination with zero customs duty or GST liability, maximising export margins." },
   { title: "Bonded Warehousing", desc: "Fully bonded, customs-controlled storage with 24/7 security, CCTV surveillance, and tamper-evident access controls." },
   { title: "Value-Added Services", desc: "Repacking, relabeling, kitting, sorting, and quality inspection performed within the FTWZ without triggering duty." },
@@ -74,7 +74,7 @@ const useCases = [
     emoji: "🏗️",
     title: "Project & Specialized Cargo",
     desc: "Stage heavy equipment without upfront duty payment",
-    benefits: ["Indefinite bonded storage permitted", "Oversized cargo handling available", "Phased DTA clearance as needed"],
+    benefits: ["Bonded storage for up to 3 years, extendable to 5 years with special permission", "Oversized cargo handling available", "Phased DTA clearance as needed"],
   },
 ];
 
@@ -438,7 +438,7 @@ const FTWZServices = () => {
                 </thead>
                 <tbody>
                   {([
-                    ["Customs Duty", "Paid on arrival", "Deferred 1 year", "Deferred indefinitely"],
+                    ["Customs Duty", "Paid on arrival", "Deferred 1 year", "Deferred until DTA clearance"],
                     ["GST on Storage", "Fully applicable", "Applicable", "100% deferred until DTA"],
                     ["Storage Duration", "Limited, renewal needed", "1 year limit", "3 years, extendable to 5 years with special permission"],
                     ["Interest on Duty", "N/A — duty paid upfront", "Interest charged after 90 days", "Zero interest — duty fully deferred"],

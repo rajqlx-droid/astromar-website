@@ -22,7 +22,7 @@ const services = [
 ];
 
 const benefits = [
-  { title: "100% Duty & GST Deferment", desc: "Store imported goods indefinitely without paying customs duty or GST, improving working capital and cash flow." },
+  { title: "100% Duty & GST Deferment", desc: "Store imported goods for up to 3 years, extendable to 5 with special permission, with customs duty and GST deferred until DTA clearance." },
   { title: "Re-export Without Duty", desc: "Re-export goods globally without duty or GST, maximizing margin on export-oriented businesses." },
   { title: "Flexible Domestic Clearance", desc: "Clear goods domestically at any time - pay duty only when needed, deferring compliance costs." },
   { title: "Value-Added Services", desc: "Repacking, labeling, kitting, quality inspection, and consolidation under one roof." },

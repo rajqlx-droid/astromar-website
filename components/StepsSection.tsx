@@ -11,7 +11,7 @@ const steps = [
   {
     num: "02",
     title: "Store & Add Value",
-    desc: "Duty-free storage for unlimited duration. Perform labelling, repacking, quality checks, and consolidation within the zone.",
+    desc: "Duty-deferred storage for up to 3 years, extendable to 5 years with special permission. Perform labelling, repacking, quality checks, and consolidation within the zone.",
   },
   {
     num: "03",
