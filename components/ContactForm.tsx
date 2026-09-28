@@ -159,7 +159,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                         <option value="Ocean Freight (LCL)" className="bg-gray-900 text-white">Ocean Freight (LCL)</option>
                         <option value="Air Freight" className="bg-gray-900 text-white">Air Freight</option>
                         <option value="Coastal Shipping" className="bg-gray-900 text-white">Coastal Shipping</option>
-                        <option value="Custom Clearance" className="bg-gray-900 text-white">Custom Clearance</option>
+                        <option value="Customs Clearance" className="bg-gray-900 text-white">Customs Clearance</option>
                         <option value="Supply Chain and Distribution" className="bg-gray-900 text-white">Supply Chain &amp; Distribution</option>
                         <option value="Project and Specialized Cargo" className="bg-gray-900 text-white">Project &amp; Specialized Cargo</option>
                         <option value="Other" className="bg-gray-900 text-white">Other</option>

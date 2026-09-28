@@ -56,7 +56,7 @@ const CustomClearanceClient = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
 
             <ScrollReveal>
-              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">CUSTOM CLEARANCE</p>
+              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">CUSTOMS CLEARANCE</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Customs Clearance Services in India
               </h1>

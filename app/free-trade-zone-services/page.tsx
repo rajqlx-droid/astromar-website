@@ -37,7 +37,7 @@ const servicesSchema = {
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ocean Freight", "url": "https://www.astromarfreezone.com/free-trade-zone-services/ocean-freight" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Air Freight", "url": "https://www.astromarfreezone.com/free-trade-zone-services/air-freight" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Supply Chain", "url": "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain-management" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Clearance", "url": "https://www.astromarfreezone.com/free-trade-zone-services/customs-clearance" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Customs Clearance", "url": "https://www.astromarfreezone.com/free-trade-zone-services/customs-clearance" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warehousing", "url": "https://www.astromarfreezone.com/free-trade-zone-services/warehousing" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Project Cargo", "url": "https://www.astromarfreezone.com/free-trade-zone-services/project-cargo" } }
     ]

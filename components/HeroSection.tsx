@@ -207,7 +207,7 @@ const HeroSection = () => {
                       <option value="ocean-lcl" className="text-gray-900 dark:text-white">Ocean Freight (LCL)</option>
                       <option value="air" className="text-gray-900 dark:text-white">Air Freight</option>
                       <option value="coastal" className="text-gray-900 dark:text-white">Coastal Shipping</option>
-                      <option value="customs" className="text-gray-900 dark:text-white">Custom Clearance</option>
+                      <option value="customs" className="text-gray-900 dark:text-white">Customs Clearance</option>
                       <option value="supply" className="text-gray-900 dark:text-white">Supply Chain</option>
                       <option value="projects" className="text-gray-900 dark:text-white">Project Cargo</option>
                     </select>

@@ -20,7 +20,7 @@ const serviceLinks = [
   { label: "Ocean Freight", href: "/free-trade-zone-services/ocean-freight" },
   { label: "Air Freight", href: "/free-trade-zone-services/air-freight" },
   { label: "Supply Chain", href: "/free-trade-zone-services/supply-chain-management" },
-  { label: "Custom Clearance", href: "/free-trade-zone-services/customs-clearance" },
+  { label: "Customs Clearance", href: "/free-trade-zone-services/customs-clearance" },
   { label: "Warehousing", href: "/free-trade-zone-services/warehousing" },
   { label: "Projects", href: "/free-trade-zone-services/project-cargo" },
 ];
