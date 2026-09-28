@@ -13,7 +13,7 @@ const Services = () => {
       <section className="relative bg-brand-navy py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
-          alt="Astromar Logistics — FTZ India logistics services with FTZ Warehouse network across 10 strategic locations"
+          alt="Large warehouse interior with rows of shelving holding yellow bins and cardboard boxes, with pallet racking behind"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"
@@ -28,10 +28,10 @@ const Services = () => {
                 OUR SERVICES
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Freight, Customs & Bonded Warehousing Services — FTZ India
+                Free Trade Warehousing Zone Solutions & Logistics Services
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Astromar's FTZ India network delivers duty-free bonded warehousing, multimodal freight, customs clearance, and value-added services under one trusted partner.
+                Astromar's free trade warehousing zone solutions combine duty-free bonded warehousing, multimodal freight, customs clearance, and value-added services under one trusted partner.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -78,10 +78,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
           <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">OUR SOLUTIONS</p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
-            End-to-End FTZ India Operations
+            End-to-End Logistics Under One Partner
           </h2>
           <p className="text-base sm:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
-            Astromar combines duty-free warehousing infrastructure with multimodal freight forwarding and customs expertise — letting you scale imports, exports, and re-export operations from a single trusted partner.
+            Our free trade warehousing zone solutions pair duty-free warehousing infrastructure with multimodal freight forwarding and customs expertise — letting you scale imports, exports, and re-export operations from a single trusted partner.
           </p>
         </div>
       </section>
@@ -125,10 +125,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3 text-center">COMPARE SERVICES</p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-4">
-            Choose the Right FTZ Warehouse Service
+            Compare Our Services
           </h2>
           <p className="text-base text-foreground/70 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
-            Compare our 8 services side-by-side to find the right FTZ Warehouse solution for your industry, cargo profile, and compliance needs.
+            Compare our 8 services side-by-side to choose the free trade warehousing zone solutions that fit your industry, cargo profile, and compliance needs.
           </p>
           <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
             <div className="overflow-x-auto rounded-xl border border-gray-200">
@@ -187,7 +187,7 @@ const Services = () => {
             Recommended Service Bundles
           </h2>
           <p className="text-base text-foreground/70 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
-            Our FTZ Warehouse bundles are pre-configured by industry — Electronics, Pharma, FMCG, Automotive, Textiles, and Project Cargo — for fast onboarding.
+            Our service bundles are pre-configured by industry — Electronics, Pharma, FMCG, Automotive, Chemicals, and Project Cargo — for fast onboarding.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
             {[

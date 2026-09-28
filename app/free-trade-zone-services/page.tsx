@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/free-trade-zone-services" },
-  title: "FTWZ Services & Logistics Solutions in India | Astromar",
-  description: "Astromar's Free Trade Warehousing Zone services and integrated logistics — FTWZ warehousing, ocean freight, air freight, customs clearance, supply chain, and project cargo across India.",
-  keywords: "free trade warehousing zone, ftwz in india, ftwz warehouse, free trade zone, free trade warehousing zone india, ftwz services india, logistics services india, ocean freight india, air freight india, customs clearance india, supply chain india, freight forwarding services india",
+  title: "Free Trade Warehousing Zone Solutions | Astromar Logistics",
+  description: "Astromar Logistics offers free trade warehousing zone solutions with freight, customs clearance and supply chain services across 10 locations in India.",
+  keywords: "free trade warehousing zone solutions, freight forwarding services, customs clearance services, supply chain solutions",
   openGraph: {
-    title: "FTWZ Services & Logistics Solutions in India | Astromar",
-    description: "FTWZ warehousing, ocean freight, air freight, customs clearance, and supply chain solutions across 10 strategic Indian locations.",
+    title: "Free Trade Warehousing Zone Solutions | Astromar Logistics",
+    description: "Astromar Logistics offers free trade warehousing zone solutions with freight, customs clearance and supply chain services across 10 locations in India.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services",
     siteName: "Astromar Logistics",
     type: "website",
