@@ -143,7 +143,7 @@ const Services = () => {
                   <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Supply</th>
                   <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Customs</th>
                   <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderRight: "1px solid #e5e7eb", borderBottom: "2px solid #e5e7eb" }}>Warehouse</th>
-                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderBottom: "2px solid #e5e7eb" }}>Projects</th>
+                  <th className="px-3 py-3 font-semibold text-gray-700 text-center" style={{ borderBottom: "2px solid #e5e7eb" }}>Project Cargo</th>
                 </tr>
               </thead>
               <tbody>
@@ -195,7 +195,7 @@ const Services = () => {
               { emoji: "💊", title: "Pharma & Cold Chain", desc: "Time-sensitive temperature-controlled cargo with strict GDP compliance needs.", tags: ["Air Freight", "FTWZ", "Warehousing"] },
               { emoji: "⚙️", title: "Automotive & Industrial", desc: "Parts importers, OEMs, and tier-1 suppliers needing just-in-time fulfillment.", tags: ["Ocean Freight", "FTWZ", "Supply Chain"] },
               { emoji: "🛒", title: "FMCG & Consumer Goods", desc: "Bulk consumer products needing kitting, repackaging, and pan-India distribution.", tags: ["Coastal", "FTWZ", "Supply Chain"] },
-              { emoji: "🏗️", title: "Project Cargo & Heavy-Lift", desc: "Oversized, heavy, or specialized equipment with custom engineering requirements.", tags: ["Projects", "Customs", "FTWZ Storage"] },
+              { emoji: "🏗️", title: "Project Cargo & Heavy-Lift", desc: "Oversized, heavy, or specialized equipment with custom engineering requirements.", tags: ["Project Cargo", "Customs", "FTWZ Storage"] },
               { emoji: "🧪", title: "Chemicals & Bulk", desc: "Hazardous-classified imports and bulk chemicals needing compliant storage.", tags: ["Ocean Freight", "FTWZ", "Customs"] },
             ].map((bundle) => (
               <div key={bundle.title} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">

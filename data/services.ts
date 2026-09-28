@@ -17,5 +17,5 @@ export const services: Service[] = [
   { icon: GitBranch, title: "Supply Chain", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/free-trade-zone-services/supply-chain-management" },
   { icon: ClipboardCheck, title: "Customs Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/free-trade-zone-services/customs-clearance" },
   { icon: Snowflake, title: "Warehousing", desc: "Secure, scalable warehousing solutions with real-time inventory management and value-added services.", href: "/free-trade-zone-services/warehousing" },
-  { icon: Box, title: "Projects", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/free-trade-zone-services/project-cargo" },
+  { icon: Box, title: "Project Cargo", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/free-trade-zone-services/project-cargo" },
 ];

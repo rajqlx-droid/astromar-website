@@ -22,7 +22,7 @@ const serviceLinks = [
   { label: "Supply Chain", href: "/free-trade-zone-services/supply-chain-management" },
   { label: "Customs Clearance", href: "/free-trade-zone-services/customs-clearance" },
   { label: "Warehousing", href: "/free-trade-zone-services/warehousing" },
-  { label: "Projects", href: "/free-trade-zone-services/project-cargo" },
+  { label: "Project Cargo", href: "/free-trade-zone-services/project-cargo" },
 ];
 
 const locationLinks = [
