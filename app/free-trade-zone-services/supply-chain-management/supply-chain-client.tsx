@@ -58,7 +58,7 @@ const whyChoose = [
   { title: "FTWZ-Integrated Warehousing",       desc: "Duty-free bonded storage across 10 FTWZ locations with distribution reach across India." },
   { title: "Real-Time WMS Visibility",           desc: "Live inventory dashboards, automated alerts, and full traceability from FTWZ to final customer." },
   { title: "Industry-Specific Expertise",        desc: "Dedicated solutions for pharma, electronics, FMCG, automotive, and textiles supply chains." },
-  { title: "Dedicated Supply Chain Manager", desc: "A single point of accountability for Supply Chain Logistics India — covering warehousing, distribution, and last-mile delivery.", descKw: "Supply Chain Logistics India" },
+  { title: "Dedicated Supply Chain Manager", desc: "A single point of accountability for supply chain management in India — covering warehousing, distribution, and last-mile delivery.", descKw: "Supply Chain Logistics India" },
 ];
 
 const gettingStartedSteps = [
@@ -92,10 +92,10 @@ const SupplyChainClient = () => {
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Supply Chain" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">SUPPLY CHAIN</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Supply Chain Solutions India — Integrated &amp; End-to-End
+                Supply Chain Management in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Astromar's Supply Chain Solutions India manage procurement to last-mile delivery — reducing costs, improving speed, and building resilience with live visibility across every node in your operations, aligned with the goals of India's <a href="https://logistics.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-orange-400/60 underline-offset-2 hover:decoration-orange-400">National Logistics Policy</a>.
+                Astromar's supply chain management in India covers procurement to last-mile delivery — reducing costs, improving speed, and building resilience with live visibility across every node in your operations, aligned with the goals of India's <a href="https://logistics.gov.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-orange-400/60 underline-offset-2 hover:decoration-orange-400">National Logistics Policy</a>.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -139,7 +139,7 @@ const SupplyChainClient = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">INDUSTRIES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
-              Industry-Specific Supply Chain Logistics India Expertise
+              Industry-Specific Expertise
             </h2>
           </ScrollReveal>
           {/* Tab buttons */}
@@ -189,7 +189,7 @@ const SupplyChainClient = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">SUPPLY CHAIN SCALE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
-              Astromar's Supply Chain Solutions at a Glance
+              Supply Chain at a Glance
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -246,10 +246,10 @@ const SupplyChainClient = () => {
             <ScrollReveal>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CAPABILITIES</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                End-to-End Supply Chain Management
+                Third-Party Logistics (3PL)
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From FTWZ-bonded imports to last-mile delivery, Astromar's Supply Chain Solutions India manage every link with technology-driven visibility and dedicated operations teams.
+                As a third-party logistics (3PL) partner, Astromar handles supply chain management in India from FTWZ-bonded imports to last-mile delivery, with technology-driven visibility and dedicated operations teams.
               </p>
               <ul className="space-y-3">
                 {[
@@ -287,7 +287,7 @@ const SupplyChainClient = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">SOLUTIONS</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
-              Capabilities Across Supply Chain Companies
+              Our Capabilities
             </h2>
           </ScrollReveal>
           <div className="space-y-3">

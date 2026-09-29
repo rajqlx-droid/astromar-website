@@ -2,13 +2,13 @@ import SupplyChainClient from "./supply-chain-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Supply Chain Solutions India — End-to-End | Astromar",
-  description: "Astromar's Supply Chain Solutions India manage procurement to last-mile delivery, reducing costs and building resilience across every node.",
-  keywords: "supply chain solutions india, end to end supply chain, integrated logistics india, procurement to delivery, last mile delivery india, supply chain visibility, 3pl india, 4pl india, supply chain management india, logistics optimization",
+  title: "Supply Chain Management in India | Astromar Logistics",
+  description: "Astromar Logistics offers supply chain management in India — procurement to last-mile delivery, FTWZ warehousing and live visibility across every node.",
+  keywords: "supply chain management in India, third party logistics, 3PL services, end-to-end logistics, Astromar Logistics",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain-management" },
   openGraph: {
-    title: "Supply Chain Solutions India — Integrated & End-to-End",
-    description: "Procurement to last-mile delivery with real-time visibility. End-to-end supply chain solutions across India.",
+    title: "Supply Chain Management in India | Astromar Logistics",
+    description: "Astromar Logistics offers supply chain management in India — procurement to last-mile delivery, FTWZ warehousing and live visibility across every node.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services/supply-chain-management",
     siteName: "Astromar Logistics",
     type: "website",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Supply Chain Solutions India — Integrated & End-to-End",
-    description: "Procurement to last-mile delivery with real-time visibility across every node.",
+    title: "Supply Chain Management in India | Astromar Logistics",
+    description: "Astromar Logistics offers supply chain management in India — procurement to last-mile delivery, FTWZ warehousing and live visibility across every node.",
   },
   robots: { index: true, follow: true },
 };
