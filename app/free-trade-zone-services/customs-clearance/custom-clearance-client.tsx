@@ -24,7 +24,7 @@ const accordionItems = [
 ];
 
 const whyChoose = [
-  { title: "Licensed Customs Broker", desc: "Customs House Agent India, fully licensed with years of experience providing customs clearance services in India at all major ports, airports, and inland ICDs.", descKw: "Customs House Agent India" },
+  { title: "Licensed Customs Broker", desc: "A fully licensed customs house agent with years of experience providing customs clearance services in India at all major ports, airports, and inland ICDs.", descKw: "Customs House Agent India" },
   { title: "Zero Compliance Penalties Record",    desc: "100% compliance rate with zero penalties or delays due to documentation errors or classification issues." },
   { title: "All Ports & ICDs Covered",            desc: "Nationwide clearance at sea ports, airports, land ICDs, and integrated check posts across India." },
   { title: "FTWZ Customs Specialists",            desc: "Deep expertise in FTWZ transactions, DTA removals, and duty deferment strategies for import-heavy businesses." },
@@ -46,7 +46,7 @@ const CustomClearanceClient = () => {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600"
-          alt="Customs Clearance Services in India — Astromar licensed customs house agent with pan-India ports coverage"
+          alt="Team meeting in an office, with a woman arranging sticky notes on a wall"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"

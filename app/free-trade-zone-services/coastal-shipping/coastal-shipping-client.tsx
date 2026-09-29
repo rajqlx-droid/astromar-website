@@ -42,7 +42,7 @@ const whyChoose = [
   { title: "30% Cheaper Than Road Transport",       desc: "One coastal vessel replaces 700 trucks — dramatically cutting per-unit freight cost on long domestic hauls." },
   { title: "All 12+ Major Indian Ports Covered",    desc: "Pan-India port presence on both coasts gives you direct access to every key domestic logistics gateway." },
   { title: "Eco-Friendly Lower Carbon Shipping",    desc: <>Coastal shipping produces ~47% less CO₂ than road transport, supporting your sustainability targets, in line with the <a href="https://sagarmala.gov.in/coastal-shipping" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Sagarmala Programme</a>'s coastal shipping development goals.</> },
-  { title: "Trusted, Experienced Team", desc: "As an established Coastal Shipping Company, Astromar operates with full regulatory compliance, dedicated vessel partnerships, and 24/7 cargo tracking.", titleKw: "Coastal Shipping Company", descKw: "Coastal Shipping Company" },
+  { title: "Trusted, Experienced Team", desc: "As an established coastal shipping company, Astromar operates with full regulatory compliance, dedicated vessel partnerships, and 24/7 cargo tracking.", titleKw: "Coastal Shipping Company", descKw: "Coastal Shipping Company" },
 ];
 
 const shipmentSteps = [
@@ -63,7 +63,7 @@ const CoastalShippingClient = () => {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1600"
-          alt="Port to Port Shipping in India — Astromar coastal shipping company with pan-India port network"
+          alt="Aerial view of a busy container port with stacked containers, gantry cranes and ships"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"

@@ -57,7 +57,7 @@ const accordionItems = [
 const whyChoose = [
   { title: "FTWZ-Integrated Warehousing",       desc: "Duty-free bonded storage across 10 FTWZ locations with distribution reach across India." },
   { title: "Real-Time WMS Visibility",           desc: "Live inventory dashboards, automated alerts, and full traceability from FTWZ to final customer." },
-  { title: "Industry-Specific Expertise",        desc: "Dedicated solutions for pharma, electronics, FMCG, automotive, and textiles supply chains." },
+  { title: "Sector Specialists",        desc: "Dedicated solutions for pharma, electronics, FMCG, automotive, and textiles supply chains." },
   { title: "Dedicated Supply Chain Manager", desc: "A single point of accountability for supply chain management in India — covering warehousing, distribution, and last-mile delivery.", descKw: "Supply Chain Logistics India" },
 ];
 
@@ -78,7 +78,7 @@ const SupplyChainClient = () => {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80"
-          alt="Supply Chain Solutions India — Astromar integrated supply chain logistics with FTWZ network and live visibility"
+          alt="Long warehouse aisle lined with tall pallet racks of boxed goods"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"

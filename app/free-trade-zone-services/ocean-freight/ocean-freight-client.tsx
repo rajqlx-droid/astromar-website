@@ -28,7 +28,7 @@ const whyChoose = [
   { title: "End-to-End Visibility", descSegments: [{ text: "Live shipment tracking from origin port to final destination — no black holes in your supply chain." }] },
   { title: "Global Port Network", titleKw: "Sea Freight India", descSegments: [
     { text: "Our " },
-    { text: "Sea Freight India", kw: true },
+    { text: "sea freight", kw: true },
     { text: " capabilities span FCL, LCL, breakbulk, and reefer container shipping — covering 150+ global ports with direct carrier partnerships." }
   ] },
   { title: "Dedicated Account Manager", descSegments: [{ text: "A single point of contact for every shipment — from rate enquiry to proof of delivery." }] },
@@ -41,7 +41,7 @@ const OceanFreight = () => {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
-          alt="Astromar global ocean freight forwarding services from India with FTWZ integration"
+          alt="Loaded container ships moored under gantry cranes at a port"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"

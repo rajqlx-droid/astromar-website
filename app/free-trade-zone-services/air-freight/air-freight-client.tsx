@@ -45,7 +45,7 @@ const AirFreightClient = () => {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600"
-          alt="Air Freight India — Astromar express cargo and freight forwarding services across 100+ global destinations"
+          alt="Aircraft wing above the clouds at sunset"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"

@@ -9,7 +9,7 @@ import { ArrowRight, CheckCircle2, ChevronDown, ChevronLeft, ChevronRight } from
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const accordionItems = [
-  { title: "General FTWZ Storage", body: "Astromar's Bonded Warehouse India facilities offer duty-free storage for all commodity types with flexible tenure and WMS integration. Real-time inventory visibility, automated alerts, and MIS reporting.", bodyKw: "Bonded Warehouse India" },
+  { title: "General FTWZ Storage", body: "Astromar's facilities offer duty-free storage for all commodity types with flexible tenure and WMS integration. Real-time inventory visibility, automated alerts, and MIS reporting.", bodyKw: "Bonded Warehouse India" },
   { title: "Cold Chain Storage",         body: "2-8°C and -20°C temperature controlled storage GDP-certified for pharma and perishables. Continuous temperature monitoring with automated alarms and audit trails." },
   { title: "Pharma Warehousing",         body: "Dedicated pharmaceutical storage with GDP compliance, batch tracking and audit trails. Segregated storage zones with restricted access and full documentation control." },
   { title: "Value-Added Services",       body: "Repacking, kitting, labelling, CKD/SKD assembly and quality inspection within FTWZ premises. Barcode/RFID integration and serial number tracking for high-value goods." },
@@ -45,7 +45,7 @@ const WarehousingClient = () => {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600"
-          alt="Bonded Warehouse India — Astromar custom bonded warehouse and FTWZ storage facilities across 10 pan-India locations"
+          alt="Large warehouse interior with rows of shelving, yellow bins and cardboard boxes"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"
@@ -136,7 +136,7 @@ const WarehousingClient = () => {
               <div className="relative rounded-xl overflow-hidden h-96 shadow-md w-full">
                 <Image
                   src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
-                  alt="Astromar FTWZ bonded warehouse facility exterior"
+                  alt="Modern multi-storey building with yellow balconies under a cloudy sky"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"

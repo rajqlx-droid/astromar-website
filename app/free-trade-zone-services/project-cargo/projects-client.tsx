@@ -17,7 +17,7 @@ const accordionItems = [
 ];
 
 const whyChoose = [
-  { title: "ODC & Heavy Lift Specialists",       desc: <>Dedicated project cargo freight forwarders with expertise in ODC transport, SPMT operations, and heavy lift coordination.</> },
+  { title: "ODC & Heavy Lift Specialists",       desc: <>A dedicated project cargo team with expertise in ODC transport, SPMT operations, and heavy lift coordination.</> },
   { title: "Engineered Transport Solutions",     desc: "Every project move is engineered — route surveys, structural calculations, and custom rigging plans for safe execution." },
   { title: "Full-Coverage Execution Network",     desc: "In-house capabilities across all major Indian ports, highways, and project sites with a nationwide operator network." },
   { title: "Insurance & Risk Management",        desc: "Comprehensive cargo insurance, risk assessment, and contingency planning for every project cargo movement." },
@@ -39,7 +39,7 @@ const ProjectsClient = () => {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
-          alt="Heavy lift crane and industrial cargo"
+          alt="Two construction workers in safety vests cutting steel rebar on a building site"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"
