@@ -2,13 +2,13 @@ import AirFreightClient from "./air-freight-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Air Freight India — Express Cargo Worldwide | Astromar",
-  description: "Astromar Air Freight India: express delivery, charter services & DGR-certified handling. Connecting India to 100+ global destinations with FTWZ integration.",
-  keywords: "air freight india, air cargo india, express air freight, charter services india, dgr cargo handling, international air freight, perishable air cargo, freight forwarder india, air freight to usa, air freight to europe",
+  title: "Air Freight Services in India | Astromar Logistics",
+  description: "Astromar Logistics provides air freight services in India — express delivery, charter and DGR-certified cargo handling to 100+ global destinations.",
+  keywords: "air freight services in India, air cargo services, air freight forwarder, DGR cargo, Astromar Logistics",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/air-freight" },
   openGraph: {
-    title: "Air Freight India — Express Cargo to 100+ Destinations",
-    description: "Express delivery, charter services & DGR-certified air freight from India to 100+ global destinations, fully integrated with FTWZ.",
+    title: "Air Freight Services in India | Astromar Logistics",
+    description: "Astromar Logistics provides air freight services in India — express delivery, charter and DGR-certified cargo handling to 100+ global destinations.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services/air-freight",
     siteName: "Astromar Logistics",
     type: "website",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Air Freight India — Express Cargo to 100+ Destinations",
-    description: "Express delivery, charter & DGR-certified air cargo from India to 100+ global destinations.",
+    title: "Air Freight Services in India | Astromar Logistics",
+    description: "Astromar Logistics provides air freight services in India — express delivery, charter and DGR-certified cargo handling to 100+ global destinations.",
   },
   robots: { index: true, follow: true },
 };

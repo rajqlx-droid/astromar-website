@@ -29,7 +29,7 @@ const whyChoose = [
   { title: "Fastest Transit Times in Market",    desc: "Express options connect India to 100+ destinations with industry-leading transit times and same-day booking confirmation." },
   { title: "Pharma & DGR Certified Handling",    desc: "GDP-compliant and IATA DGR certified for pharmaceutical, biotech, and hazardous goods with full audit trails." },
   { title: "FTWZ Air Import Integration",        desc: "Route air imports through our FTWZ facilities to defer customs duty and optimize landed cost on high-value goods." },
-  { title: "Dedicated Air Freight Desk", desc: "A specialist team manages your air Freight Forwarding Services end-to-end — from rate enquiry to AWB tracking and final delivery.", descKw: "Freight Forwarding Services" },
+  { title: "Dedicated Air Freight Desk", desc: "A specialist team manages your air freight services in India end-to-end — from rate enquiry to AWB tracking and final delivery.", descKw: "Freight Forwarding Services" },
 ];
 
 const AirFreightClient = () => {
@@ -59,10 +59,10 @@ const AirFreightClient = () => {
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Air Freight" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">AIR FREIGHT</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Air Freight India — Express Cargo to 100+ Global Destinations
+                Air Freight Services in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                When speed matters, trust Astromar's Air Freight India solutions — express delivery, charter services, and DGR-certified cargo handling connecting India to 100+ destinations worldwide.
+                When speed matters, trust Astromar's air freight services in India — express delivery, charter flights, and DGR-certified cargo handling connecting India to 100+ destinations worldwide.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -106,7 +106,7 @@ const AirFreightClient = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">OUR SERVICES</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
-              Air Freight Solutions
+              Air Cargo Services
             </h2>
           </ScrollReveal>
           <div className="space-y-3">
@@ -166,7 +166,7 @@ const AirFreightClient = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">GLOBAL NETWORK</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
-              Key Air Cargo Destinations
+              Key Destinations
             </h2>
           </ScrollReveal>
           <div className="relative">
@@ -218,10 +218,10 @@ const AirFreightClient = () => {
             <ScrollReveal delay={0.1}>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">WHY AIR FREIGHT</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                End-to-End Air Freight India Capabilities
+                End-to-End Capabilities
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From IATA-certified DGR handling to GDP-compliant pharma cargo, our specialist team manages every Freight Forwarding Services detail so your cargo arrives on time and in perfect condition.
+                From IATA-certified DGR handling to GDP-compliant pharma cargo, our specialist team manages every detail of our air freight services in India so your cargo arrives on time and in perfect condition.
               </p>
               <ul className="space-y-3">
                 {[
@@ -248,7 +248,7 @@ const AirFreightClient = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">WHY CHOOSE US FOR AIR</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
-              Why Choose Astromar for Air Freight Forwarding Services?
+              Why Choose Astromar for Air Freight?
             </h2>
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
