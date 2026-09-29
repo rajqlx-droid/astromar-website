@@ -2,13 +2,13 @@ import WarehousingClient from "./warehousing-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bonded Warehouse India — FTWZ Storage | Astromar",
-  description: "FTWZ-bonded warehousing from 1 pallet to 5 lakh+ sq ft. Real-time inventory, value-added services & multi-temperature storage across India's key logistics hubs.",
-  keywords: "bonded warehouse india, ftwz warehouse, warehousing services india, cold storage india, temperature controlled warehouse, multi temperature storage, value added services warehouse, bonded storage india, 3pl warehouse india, inventory management warehouse",
+  title: "Warehousing Services in India | Astromar Logistics",
+  description: "Astromar Logistics offers warehousing services in India — FTWZ storage, cold storage, real-time inventory and value-added services across key hubs.",
+  keywords: "warehousing services in India, cold storage warehouse, FTWZ warehouse, temperature-controlled storage, Astromar Logistics",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/warehousing" },
   openGraph: {
-    title: "Bonded Warehouse India — FTWZ Warehousing & Storage",
-    description: "FTWZ-bonded warehousing from 1 pallet to 5 lakh+ sq ft with real-time inventory, VAS & multi-temperature capabilities.",
+    title: "Warehousing Services in India | Astromar Logistics",
+    description: "Astromar Logistics offers warehousing services in India — FTWZ storage, cold storage, real-time inventory and value-added services across key hubs.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services/warehousing",
     siteName: "Astromar Logistics",
     type: "website",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bonded Warehouse India — FTWZ Warehousing & Storage",
-    description: "FTWZ-bonded warehousing from 1 pallet to 5 lakh+ sq ft across India.",
+    title: "Warehousing Services in India | Astromar Logistics",
+    description: "Astromar Logistics offers warehousing services in India — FTWZ storage, cold storage, real-time inventory and value-added services across key hubs.",
   },
   robots: { index: true, follow: true },
 };

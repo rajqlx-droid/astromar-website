@@ -26,7 +26,7 @@ const locationCards = [
 ];
 
 const whyChoose = [
-  { title: "Duty-Free FTWZ Bonded Storage", desc: "Our Custom Bonded Warehouse facilities let you defer customs duty and GST until goods enter the domestic tariff area — ideal for import-heavy businesses.", descKw: "Custom Bonded Warehouse" },
+  { title: "FTWZ Storage", desc: "Our warehousing services in India let you defer customs duty and GST until goods enter the domestic tariff area — ideal for import-heavy businesses.", descKw: "Custom Bonded Warehouse" },
   { title: "Real-Time WMS Inventory Tracking",    desc: "Live stock dashboards, automated reorder triggers, and full RFID/barcode traceability across all locations." },
   { title: "Cold Chain & Pharma Certified",       desc: "GDP-compliant cold storage from -20°C to +8°C with continuous monitoring and full audit documentation." },
   { title: "10 Strategic Port Locations",         desc: "FTWZ facilities near India's busiest ports and airports for fast inbound and outbound logistics." },
@@ -59,10 +59,10 @@ const WarehousingClient = () => {
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Warehousing" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">WAREHOUSING</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Bonded Warehouse India — Warehousing &amp; Storage Solutions
+                Warehousing Services in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                From a single pallet to 5 lakh+ sq ft, Astromar's Bonded Warehouse India network delivers FTWZ-bonded storage with real-time inventory management, value-added services, and multi-temperature capabilities across key logistics hubs.
+                From a single pallet to 5 lakh+ sq ft, Astromar's warehousing services in India deliver FTWZ-bonded storage with real-time inventory management, value-added services, and multi-temperature capabilities across key logistics hubs.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -146,11 +146,10 @@ const WarehousingClient = () => {
             <ScrollReveal delay={0.1}>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                Custom Bonded Warehouse Solutions for Every Need
+                Cold Storage Warehousing
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From ambient FTWZ bonded storage to GDP-certified cold chain, our pan-India warehouse network is
-                equipped for every commodity type and compliance requirement.
+                From GDP-certified cold chain and multi-temperature storage to ambient FTWZ storage, our warehousing services in India are equipped for every commodity type and compliance requirement.
               </p>
               <ul className="space-y-3">
                 {[
