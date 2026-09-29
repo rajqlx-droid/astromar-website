@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Customs Clearance Services in India | Astromar Logistics",
-  description: "Licensed customs clearance at every Indian port & airport. Zero-delay import/export processing with full compliance visibility.",
-  keywords: "customs clearance services india, customs broker india, import customs clearance, export customs clearance, customs house agent, cha india, port customs clearance, airport customs clearance, ftwz customs, customs compliance india",
+  description: "Astromar Logistics provides customs clearance services in India at every major port and airport, with licensed brokers and full compliance visibility.",
+  keywords: "customs clearance services in India, customs house agent, customs broker, import export clearance, Astromar Logistics",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/customs-clearance" },
   openGraph: {
     title: "Customs Clearance Services in India | Astromar Logistics",
-    description: "Licensed customs clearance across every Indian port and airport. Compliance-first import & export clearance with zero delays.",
+    description: "Astromar Logistics provides customs clearance services in India at every major port and airport, with licensed brokers and full compliance visibility.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services/customs-clearance",
     siteName: "Astromar Logistics",
     type: "website",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Customs Clearance Services in India | Astromar Logistics",
-    description: "Licensed customs clearance at every Indian port & airport — compliance-first, zero delays.",
+    description: "Astromar Logistics provides customs clearance services in India at every major port and airport, with licensed brokers and full compliance visibility.",
   },
   robots: { index: true, follow: true },
 };
