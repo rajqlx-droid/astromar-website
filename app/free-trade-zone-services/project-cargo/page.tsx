@@ -2,13 +2,13 @@ import ProjectsClient from "./projects-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
-  description: "Oversized and high-value project cargo logistics across India — from route surveys to final placement, engineered for precision and safety.",
-  keywords: "project cargo india, heavy lift logistics, oversized cargo india, odc transport india, project logistics india, heavy haulage india, breakbulk cargo, route survey india, capital equipment logistics, industrial project cargo",
+  title: "Heavy Lift Logistics & Project Cargo in India | Astromar",
+  description: "Astromar Logistics provides heavy lift logistics and ODC cargo transport for project cargo across India — route surveys, permits, escorts and placement.",
+  keywords: "heavy lift logistics, ODC cargo, project cargo, over dimensional cargo transport, Astromar Logistics",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/project-cargo" },
   openGraph: {
-    title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
-    description: "Engineered transport of oversized, overweight & high-value project cargo across India and globally — route surveys to final placement.",
+    title: "Heavy Lift Logistics & Project Cargo in India | Astromar",
+    description: "Astromar Logistics provides heavy lift logistics and ODC cargo transport for project cargo across India — route surveys, permits, escorts and placement.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services/project-cargo",
     siteName: "Astromar Logistics",
     type: "website",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Project Cargo & Heavy-Lift Logistics India | Astromar",
-    description: "Oversized, overweight & high-value project cargo — engineered with precision, safety, reliability.",
+    title: "Heavy Lift Logistics & Project Cargo in India | Astromar",
+    description: "Astromar Logistics provides heavy lift logistics and ODC cargo transport for project cargo across India — route surveys, permits, escorts and placement.",
   },
   robots: { index: true, follow: true },
 };

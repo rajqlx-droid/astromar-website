@@ -53,10 +53,10 @@ const ProjectsClient = () => {
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Project Cargo" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">PROJECT CARGO</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Project Cargo & Heavy-Lift Logistics
+                Heavy Lift Logistics in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Moving the unmovable. Astromar specializes in the transport of oversized, overweight, and high-value
+                Moving the unmovable. Astromar's heavy lift logistics cover oversized, overweight, and high-value
                 project cargo across India and globally. From route surveys to final placement, we engineer every move
                 with precision, safety, and reliability.
               </p>
@@ -213,7 +213,7 @@ const ProjectsClient = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">PROJECT EXECUTION</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-14">
-              How Heavy-Lift Cargo Gets Moved
+              How ODC Cargo Gets Moved
             </h2>
           </ScrollReveal>
           <div className="relative">
@@ -272,7 +272,7 @@ const ProjectsClient = () => {
             <ScrollReveal>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CAPABILITIES</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                Project Cargo Freight Forwarders — End-to-End Capabilities
+                End-to-End Capabilities
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
                 Every project cargo movement is backed by detailed planning, engineering support, and a dedicated
