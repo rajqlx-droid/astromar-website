@@ -70,7 +70,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in kochi, kochi ftwz, vallarpadam ictt warehouse, free trade warehouse zone in kochi, bonded warehouse in kochi, custom bonded warehouse in kochi, kerala ftwz",
       h1: "FTWZ in Kochi",
       h1Subtitle: "Vallarpadam ICTT, Kerala",
-      heroAlt: "FTWZ in Kochi at Vallarpadam ICTT — Astromar transshipment terminal warehouse",
+      heroAlt: "Modern apartment block with glass balconies against a clear evening sky",
       bannerIntro: [
         { text: "Astromar's Kochi facility is a Government-notified " },
         { text: "ftwz in kochi", kw: true },
@@ -289,7 +289,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in vizag, vizag ftwz, visakhapatnam ftwz, vsez warehouse, bonded warehouse in vizag, custom bonded warehouse in vizag, free trade warehouse zone in vizag, andhra pradesh ftwz",
       h1: "FTWZ in Vizag",
       h1Subtitle: "Visakhapatnam SEZ, Andhra Pradesh",
-      heroAlt: "FTWZ in Vizag at Visakhapatnam SEZ — Astromar East Coast duty-free warehouse",
+      heroAlt: "People around a large mirrored sculpture in a city plaza surrounded by skyscrapers",
       bannerIntro: [
         { text: "Astromar's Vizag facility is a Government-notified " },
         { text: "ftwz in vizag", kw: true },
@@ -501,7 +501,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "free trade warehouse zone in mumbai, ftwz in mumbai, ftwz mumbai panvel, bonded warehouse in mumbai, custom bonded warehouse in mumbai, navi mumbai sez warehouse, panvel ftwz, dangerous goods warehouse mumbai, hazardous goods warehouse panvel",
       h1: "Free Trade Warehouse Zone in Mumbai",
       h1Subtitle: "Panvel, Navi Mumbai",
-      heroAlt: "Free trade warehouse zone in Mumbai at Panvel — Astromar FTWZ near JNPA port",
+      heroAlt: "Two construction workers in safety vests cutting steel rebar on a building site",
       bannerIntro: [
         { text: "Astromar's Panvel facility is a strategically-positioned " },
         { text: "free trade warehouse zone in mumbai", kw: true },
@@ -729,7 +729,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in mumbai, ftwz mumbai jnpa, nhava sheva ftwz, free trade warehouse zone in mumbai, bonded warehouse mumbai port, custom bonded warehouse in mumbai, jnpa sez warehouse, on port ftwz, dangerous goods warehouse nhava sheva, hazardous goods warehouse jnpa",
       h1: "FTWZ in Mumbai",
       h1Subtitle: "JNPA Nhava Sheva Port",
-      heroAlt: "FTWZ in Mumbai at JNPA Nhava Sheva — Astromar on-port duty-free warehouse",
+      heroAlt: "Aerial view of a busy container port with stacked containers, gantry cranes and ships",
       bannerIntro: [
         { text: "Astromar's JNPA facility is an on-port " },
         { text: "ftwz in mumbai", kw: true },
@@ -1155,7 +1155,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           }
         ]
       },
-      heroAlt: "Chennai Free Trade Zone facility at Sriperumbudur — Astromar FTWZ warehouse",
+      heroAlt: "Large warehouse interior with rows of shelving, yellow bins and cardboard boxes",
       breadcrumbSchema: {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -1225,7 +1225,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "free trade warehouse in chennai, customs bonded warehouse in chennai, ftwz vallur, north chennai bonded warehouse, ponneri warehouse, kattupalli port warehouse, ennore port ftwz, lng bonded storage chennai, dangerous goods warehouse vallur, hazardous goods warehouse north chennai",
       h1: "Free Trade Warehouse in Chennai",
       h1Subtitle: "Vallur, Ponneri — North Chennai",
-      heroAlt: "Free trade warehouse in Chennai at Vallur Ponneri — Astromar port-adjacent FTWZ",
+      heroAlt: "Container ship loaded with cargo berthed beneath blue gantry cranes",
       bannerIntro: [
         { text: "Astromar's Vallur facility is a port-adjacent " },
         { text: "free trade warehouse in chennai", kw: true },
@@ -1497,7 +1497,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in delhi, khurja ftwz, delhi ncr bonded warehouse, dfc corridor warehouse, bonded warehouse in delhi, custom bonded warehouse in delhi, free trade warehouse zone in delhi, north india ftwz",
       h1: "FTWZ in Delhi NCR",
       h1Subtitle: "Khurja, Uttar Pradesh",
-      heroAlt: "FTWZ in Delhi NCR at Khurja — Astromar North India duty-free warehouse on DFC",
+      heroAlt: "Long warehouse aisle lined with tall pallet racks of boxed goods",
       bannerIntro: [
         { text: "Astromar's Khurja facility is a Government-notified " },
         { text: "ftwz in delhi", kw: true },
@@ -1714,7 +1714,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in bangalore, bangalore ftwz, devanahalli aerospace sez, aerospace ftwz india, bonded warehouse in bangalore, free trade warehouse zone in bangalore, free trade warehouse in bangalore, karnataka ftwz, kempegowda airport warehouse",
       h1: "FTWZ in Bangalore",
       h1Subtitle: "Devanahalli Aerospace SEZ, Karnataka",
-      heroAlt: "FTWZ in Bangalore at Devanahalli Aerospace SEZ — Astromar high-value cargo warehouse",
+      heroAlt: "Spacious warehouse with tall orange pallet racks stacked with boxes and loading doors along one wall",
       bannerIntro: [
         { text: "Astromar's Bengaluru facility is a Government-notified " },
         { text: "ftwz in bangalore", kw: true },
@@ -1939,7 +1939,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in dahej, dahej ftwz, dahej sez warehouse, pcpir gujarat, bonded warehouse in dahej, custom bonded warehousing in dahej, free trade warehouse zone in dahej, gujarat chemical sez, dangerous goods warehouse dahej, hazardous goods warehouse dahej",
       h1: "FTWZ in Dahej",
       h1Subtitle: "Dahej SEZ-1, Gujarat",
-      heroAlt: "FTWZ in Dahej at Dahej SEZ-1 — Astromar PCPIR chemical and LNG warehouse",
+      heroAlt: "Modern multi-storey building with yellow balconies under a cloudy sky",
       bannerIntro: [
         { text: "Astromar's Dahej facility is a Government-notified " },
         { text: "ftwz in dahej", kw: true },
@@ -2189,7 +2189,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz mundra, ftwz in mundra, mundra ftwz, apsez warehouse, adani ports sez, bonded warehousing in mundra, custom bonded warehousing in mundra, free trade warehouse zone in mundra, gujarat ftwz",
       h1: "FTWZ Mundra",
       h1Subtitle: "Adani Ports APSEZ, Gujarat",
-      heroAlt: "FTWZ Mundra at Adani Ports APSEZ — Astromar India's largest commercial port warehouse",
+      heroAlt: "Truck driving along a mountain highway through a dry, rocky valley",
       bannerIntro: [
         { text: "Astromar's Mundra facility is a Government-notified " },
         { text: "ftwz mundra", kw: true },
@@ -2414,6 +2414,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       title: "Astromar Logistics HQ Chennai | Anna Nagar Registered Office",
       description: "Astromar Logistics Pvt Ltd registered office in Anna Nagar, Chennai. Centralized operations, customer support, and business development for all FTWZ and logistics services across India.",
       keywords: "Astromar Logistics Chennai, Anna Nagar office, FTWZ company headquarters, logistics company Chennai, Astromar registered office",
+      heroAlt: "Looking up at glass office towers against a cloudy sky",
     },
     portOverview: {
       headline: "Chennai HQ — Astromar's Centralized Operations Hub",

@@ -155,7 +155,7 @@ const locations = [
     port: "ICD Whitefield / Bengaluru",
     nearestAirport: "Kempegowda International Airport (BLR) — 8 km",
     operatingHours: "Mon–Sat: 8:00 AM – 8:00 PM",
-    heroImage: "https://images.unsplash.com/photo-1565793979038-b5b6d2bda985?w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?w=1920&q=80",
     services: ["Duty-Free Storage", "GST Deferral", "Aerospace Logistics", "High-Value Cargo", "Cold Chain Storage", "Single Window Clearance", "Air Cargo Express", "Biotech & Life Sciences"],
     about: "Located within the Aerospace SEZ at Devanahalli — just 8 km from Bengaluru International Airport — Astromar's Bengaluru FTWZ is purpose-built for aerospace, electronics, and high-value cargo. Ideal for India's growing tech and manufacturing sector.",
   },

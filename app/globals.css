@@ -61,7 +61,7 @@
   --radius-xl: calc(var(--radius) + 4px);
 
   /* Font */
-  --font-sans: var(--font-plus-jakarta), var(--font-inter), sans-serif;
+  --font-sans: var(--font-plus-jakarta), sans-serif;
 }
 
 /* ─── Light mode CSS custom properties ─── */
@@ -227,7 +227,7 @@
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
-    font-family: var(--font-plus-jakarta), var(--font-inter), sans-serif;
+    font-family: var(--font-plus-jakarta), sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
