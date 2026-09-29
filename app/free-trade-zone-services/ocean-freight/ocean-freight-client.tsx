@@ -26,7 +26,7 @@ const steps = [
 const whyChoose = [
   { title: "Competitive Freight Rates", descSegments: [{ text: "Direct carrier relationships across 50+ trade lanes give you market-leading rates on FCL and LCL shipments." }] },
   { title: "End-to-End Visibility", descSegments: [{ text: "Live shipment tracking from origin port to final destination — no black holes in your supply chain." }] },
-  { title: "Sea Freight India Network", titleKw: "Sea Freight India", descSegments: [
+  { title: "Global Port Network", titleKw: "Sea Freight India", descSegments: [
     { text: "Our " },
     { text: "Sea Freight India", kw: true },
     { text: " capabilities span FCL, LCL, breakbulk, and reefer container shipping — covering 150+ global ports with direct carrier partnerships." }
@@ -56,10 +56,10 @@ const OceanFreight = () => {
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Ocean Freight" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">OCEAN FREIGHT</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Global Ocean Freight in India — FCL, LCL &amp; FTWZ Integration
+                Ocean Freight Services in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Whether you're shipping a single pallet or full containers, Astromar Logistics offers reliable ocean freight solutions across 150+ global ports — fully integrated with our FTWZ in India network for seamless customs clearance and duty deferral.
+                Whether you're shipping a single pallet or full containers, Astromar Logistics offers reliable ocean freight services in India, connecting to 150+ global ports — fully integrated with our FTWZ network for seamless customs clearance and duty deferral.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -129,10 +129,10 @@ const OceanFreight = () => {
             <ScrollReveal delay={0.1}>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">OUR SERVICES</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
-                Comprehensive Ocean Freight Logistics Solutions
+                FCL &amp; LCL Shipping
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From a single LCL shipment to multiple full containers, we have the right solution for every cargo type and trade lane.
+                From a single LCL shipment to multiple full containers (FCL), our ocean freight services in India have the right solution for every cargo type and trade lane.
               </p>
               <ul className="space-y-3">
                 {[
@@ -164,7 +164,7 @@ const OceanFreight = () => {
               Trade Lanes from India
             </h2>
             <p className="text-base text-foreground/70 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              Astromar's Ocean Freight in India network connects 5 major global trade lanes — from Asia-Pacific to the Americas — with direct carrier relationships and end-to-end visibility.
+              Astromar's ocean freight services in India connect 5 major global trade lanes — from Asia-Pacific to the Americas — with direct carrier relationships and end-to-end visibility.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.05}>
@@ -228,7 +228,7 @@ const OceanFreight = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">PORT COVERAGE</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
-              Astromar's Ocean Freight Logistics at a Glance
+              Ocean Freight at a Glance
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
@@ -256,7 +256,7 @@ const OceanFreight = () => {
           <ScrollReveal>
             <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2 text-center">WHY CHOOSE US FOR OCEAN</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-10">
-              Why Choose Astromar Ocean Freight?
+              Why Choose Astromar for Ocean Freight?
             </h2>
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
