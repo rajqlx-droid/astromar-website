@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import Breadcrumbs from '@/components/Breadcrumbs'
 import { blogPosts, BlogContentSegment } from '@/data/blogPosts'
 
 function KwText({ segments }: { segments?: BlogContentSegment[] }) {
@@ -107,6 +108,7 @@ export default async function BlogArticlePage({ params }: Props) {
         <Image src={article.heroImage ?? article.thumbnail} alt={article.imageAlt ?? article.title} fill sizes="100vw" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20">
+          <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Blog", href: "/blogs" }, { name: article.title }]} truncateLast />
           <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-3">{article.category}</p>
           <h1 className="text-3xl md:text-4xl font-bold text-white max-w-3xl leading-tight mb-4">{article.title}</h1>
           <p className="text-white/70 text-sm">{formatDate(article.date)} &nbsp;·&nbsp; {article.readTime}</p>
@@ -115,15 +117,6 @@ export default async function BlogArticlePage({ params }: Props) {
 
       {/* Article Body */}
       <section className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16 py-16">
-
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-10">
-          <Link href="/" className="hover:text-blue-600">Home</Link>
-          <span>/</span>
-          <Link href="/blogs" className="hover:text-blue-600">Blog</Link>
-          <span>/</span>
-          <span className="text-gray-800 dark:text-gray-100">{article.category}</span>
-        </nav>
 
         {/* Intro */}
         <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-12 border-l-4 border-orange-500 pl-5">{article.intro}</p>

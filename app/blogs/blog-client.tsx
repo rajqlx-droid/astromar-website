@@ -8,6 +8,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import CTASection from "@/components/CTASection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { blogPosts, categoryColors } from "@/data/blogPosts";
 
 const formatDate = (dateStr: string) => {
@@ -53,6 +54,7 @@ const Blog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left — text content */}
             <ScrollReveal>
+              <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Blog" }]} />
               <span className="text-sm font-bold tracking-[0.2em] uppercase text-orange-500 mb-4 block">
                 RESOURCES & INSIGHTS
               </span>
