@@ -2,13 +2,13 @@ import CoastalShippingClient from "./coastal-shipping-client";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Port to Port Shipping in India — Coastal Cargo | Astromar",
-  description: "Move cargo along India's 7,500+ km coastline with Astromar's coastal shipping — 12+ ports covered, up to 47% lower emissions than road transport.",
-  keywords: "coastal shipping india, port to port shipping, indian coastal cargo, sea cargo india, coastal logistics, multimodal logistics india, container coastal shipping, bulk coastal shipping, coastal cargo network, indian ports shipping",
+  title: "Coastal Shipping in India | Astromar Logistics",
+  description: "Astromar Logistics offers coastal shipping in India across 12+ ports — a greener, cost-effective alternative to road for bulk and containerized cargo.",
+  keywords: "coastal shipping in India, port to port shipping, coastal cargo, domestic shipping, Astromar Logistics",
   alternates: { canonical: "https://www.astromarfreezone.com/free-trade-zone-services/coastal-shipping" },
   openGraph: {
-    title: "Port to Port Shipping in India — Coastal Cargo Network",
-    description: "Coastal shipping connecting all major and minor Indian ports — greener, cost-effective alternative to road and rail for bulk and containerized cargo.",
+    title: "Coastal Shipping in India | Astromar Logistics",
+    description: "Astromar Logistics offers coastal shipping in India across 12+ ports — a greener, cost-effective alternative to road for bulk and containerized cargo.",
     url: "https://www.astromarfreezone.com/free-trade-zone-services/coastal-shipping",
     siteName: "Astromar Logistics",
     type: "website",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Port to Port Shipping in India — Coastal Cargo Network",
-    description: "Coastal cargo across India's 7,500+ km coastline — greener, cost-effective freight.",
+    title: "Coastal Shipping in India | Astromar Logistics",
+    description: "Astromar Logistics offers coastal shipping in India across 12+ ports — a greener, cost-effective alternative to road for bulk and containerized cargo.",
   },
   robots: { index: true, follow: true },
 };

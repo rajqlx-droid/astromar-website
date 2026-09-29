@@ -42,7 +42,7 @@ const whyChoose = [
   { title: "30% Cheaper Than Road Transport",       desc: "One coastal vessel replaces 700 trucks — dramatically cutting per-unit freight cost on long domestic hauls." },
   { title: "All 12+ Major Indian Ports Covered",    desc: "Pan-India port presence on both coasts gives you direct access to every key domestic logistics gateway." },
   { title: "Eco-Friendly Lower Carbon Shipping",    desc: <>Coastal shipping produces ~47% less CO₂ than road transport, supporting your sustainability targets, in line with the <a href="https://sagarmala.gov.in/coastal-shipping" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Sagarmala Programme</a>'s coastal shipping development goals.</> },
-  { title: "Trusted Coastal Shipping Company", desc: "As an established Coastal Shipping Company, Astromar operates with full regulatory compliance, dedicated vessel partnerships, and 24/7 cargo tracking.", titleKw: "Coastal Shipping Company", descKw: "Coastal Shipping Company" },
+  { title: "Trusted, Experienced Team", desc: "As an established Coastal Shipping Company, Astromar operates with full regulatory compliance, dedicated vessel partnerships, and 24/7 cargo tracking.", titleKw: "Coastal Shipping Company", descKw: "Coastal Shipping Company" },
 ];
 
 const shipmentSteps = [
@@ -78,11 +78,11 @@ const CoastalShippingClient = () => {
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Coastal Shipping" }]} />
               <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">COASTAL SHIPPING</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                Port to Port Shipping in India — Coastal Cargo Network
+                Coastal Shipping in India
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed mb-8">
-                Move cargo efficiently along India's 7,500+ km coastline. Our coastal shipping services connect
-                all major and minor Indian ports, offering a greener, more cost-effective alternative to road and
+                Move cargo efficiently along India's 7,500+ km coastline. Astromar's coastal shipping in India connects
+                all major and minor ports, offering a greener, more cost-effective alternative to road and
                 rail freight for bulk, containerized, and project cargo.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -140,10 +140,10 @@ const CoastalShippingClient = () => {
             <ScrollReveal>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">WHY COASTAL SHIPPING</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
-                The Smarter Way to Move Cargo Domestically
+                Port to Port Shipping in India
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                <a href="/" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Astromar</a>'s Port to Port Shipping network runs the length of India's 7,500+ km coastline, linking 12+ major and minor ports recognised by the <a href="https://www.ipa.nic.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Indian Ports Association</a> on both coasts. It's how Astromar moves cargo that road and rail can't carry as economically — a single coastal vessel replaces roughly 700 truckloads, and coastal shipping produces up to 47% less CO₂ than the same cargo moved by road. The Northern corridor alone connects <a href="/locations/mundra" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Mundra</a>, India's largest port by cargo volume, to Paradip and Haldia in 5–6 days.
+                <a href="/" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Astromar</a>'s port-to-port shipping network runs the length of India's 7,500+ km coastline, linking 12+ major and minor ports recognised by the <a href="https://www.ipa.nic.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Indian Ports Association</a> on both coasts. It's how Astromar moves cargo that road and rail can't carry as economically — a single coastal vessel replaces roughly 700 truckloads, and coastal shipping produces up to 47% less CO₂ than the same cargo moved by road. The Northern corridor alone connects <a href="/locations/mundra" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Mundra</a>, India's largest port by cargo volume, to Paradip and Haldia in 5–6 days.
               </p>
               <ul className="space-y-3">
                 {[
@@ -187,10 +187,10 @@ const CoastalShippingClient = () => {
             <ScrollReveal delay={0.1}>
               <p className="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-2">CARGO TYPES</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-4">
-                What We Ship via Coastal Shipping in India
+                What We Ship
               </h2>
               <p className="text-foreground/70 text-sm md:text-base leading-relaxed mb-6">
-                From liquid bulk and chemical tankers to containerized goods and RoRo vehicle cargo, Astromar's coastal fleet handles the full range of domestic freight — including the East Coast route into <a href="/locations/vizag" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Vizag</a>, one of India's busiest gateways for steel and bulk commodity cargo. For shipments that begin their journey overseas before continuing along the coast, coastal shipping connects directly with Astromar's <a href="/free-trade-zone-services/ocean-freight" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">ocean freight</a> services at the originating port.
+                From liquid bulk and chemical tankers to containerized goods and RoRo vehicle cargo, our coastal shipping in India covers the full range of domestic freight — including the East Coast route into <a href="/locations/vizag" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">Vizag</a>, one of India's busiest gateways for steel and bulk commodity cargo. For shipments that begin their journey overseas before continuing along the coast, coastal shipping connects directly with Astromar's <a href="/free-trade-zone-services/ocean-freight" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">ocean freight</a> services at the originating port.
               </p>
               <ul className="space-y-3">
                 {[
@@ -311,7 +311,7 @@ const CoastalShippingClient = () => {
               What We Handle Coastally
             </h2>
             <p className="text-base text-foreground/70 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              Whether you're moving liquid bulk, chemicals, containerized goods, or project cargo, Astromar's coastal fleet and port partnerships are built to handle it.
+              Whether you're moving liquid bulk, chemicals, containerized goods, or project cargo, Astromar's coastal fleet and port partnerships make coastal shipping in India straightforward.
             </p>
           </ScrollReveal>
           <div className="space-y-3">
