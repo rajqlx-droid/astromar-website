@@ -105,7 +105,7 @@ export default async function BlogArticlePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogBreadcrumbSchema) }} />
       {/* Hero */}
       <section className="relative min-h-[420px] flex items-center">
-        <Image src={article.heroImage ?? article.thumbnail} alt={article.imageAlt ?? article.title} fill sizes="100vw" className="absolute inset-0 w-full h-full object-cover" />
+        <Image src={article.heroImage ?? article.thumbnail} alt={article.imageAlt ?? article.title} fill sizes="100vw" className="absolute inset-0 w-full h-full object-cover" preload fetchPriority="high" />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-20">
           <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Blog", href: "/blogs" }, { name: article.title }]} truncateLast />
@@ -177,7 +177,7 @@ export default async function BlogArticlePage({ params }: Props) {
 
         {/* CTA */}
         <div className="mt-16 bg-blue-900 rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl font-bold text-white mb-3">Need FTWZ Warehousing or Freight Support?</h3>
+          <p className="text-2xl font-bold text-white mb-3">Need FTWZ Warehousing or Freight Support?</p>
           <p className="text-blue-200 mb-6">Talk to our logistics experts — free consultation, no commitment.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact-us" className="bg-orange-500 hover:bg-orange-500 text-white font-semibold px-8 py-3 rounded-xl transition-colors">Request a Consultation</Link>

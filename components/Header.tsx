@@ -23,11 +23,11 @@ const Header = () => {
           <Image
             src="/logo.png"
             alt="Astromar Logistics"
-            width={200}
-            height={60}
+            width={133}
+            height={40}
             className="h-10 w-auto object-contain"
-            priority
             loading="eager"
+            fetchPriority="low"
           />
         </Link>
 

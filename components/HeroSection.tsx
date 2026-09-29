@@ -53,11 +53,13 @@ const HeroSection = () => {
     <section className="relative w-full min-h-screen flex items-start pb-20 overflow-hidden">
       <Image
         src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600"
-        alt="Astromar Logistics — free trade warehousing zone operator and freight forwarder in India, container port aerial view"
+        alt="Container ships stacked with cargo alongside large gantry cranes at a port"
         fill
         sizes="100vw"
+        quality={65}
         className="absolute inset-0 z-0 object-cover w-full h-full"
-        priority
+        preload
+        fetchPriority="high"
       />
       <div className="absolute inset-0 bg-black/60 z-10" />
 
@@ -141,15 +143,15 @@ const HeroSection = () => {
               </div>
             ) : (
               <>
-                <h3 className="text-base font-bold text-white mb-1">Request a Consultation</h3>
+                <p className="text-base font-bold text-white mb-1">Request a Consultation</p>
                 <p className="text-xs text-white/60 mb-3">Get a response within 24 hours</p>
 
                 <div className="space-y-2">
                   {/* Row 1: Name + Company */}
                   <div className="grid grid-cols-2 gap-2">
                     <div>
-                      <label className="text-white/70 text-xs mb-1 block">Full Name *</label>
-                      <input
+                      <label htmlFor="hero-name" className="text-white/70 text-xs mb-1 block">Full Name *</label>
+                      <input id="hero-name"
                         type="text"
                         placeholder="Your name"
                         value={name}
@@ -158,8 +160,8 @@ const HeroSection = () => {
                       />
                     </div>
                     <div>
-                      <label className="text-white/70 text-xs mb-1 block">Company</label>
-                      <input
+                      <label htmlFor="hero-company" className="text-white/70 text-xs mb-1 block">Company</label>
+                      <input id="hero-company"
                         type="text"
                         placeholder="Company name"
                         value={company}
@@ -172,8 +174,8 @@ const HeroSection = () => {
                   {/* Row 2: Email + Phone */}
                   <div className="grid grid-cols-2 gap-2">
                     <div>
-                      <label className="text-white/70 text-xs mb-1 block">Email *</label>
-                      <input
+                      <label htmlFor="hero-email" className="text-white/70 text-xs mb-1 block">Email *</label>
+                      <input id="hero-email"
                         type="email"
                         placeholder="you@company.com"
                         value={email}
@@ -182,8 +184,8 @@ const HeroSection = () => {
                       />
                     </div>
                     <div>
-                      <label className="text-white/70 text-xs mb-1 block">Phone</label>
-                      <input
+                      <label htmlFor="hero-phone" className="text-white/70 text-xs mb-1 block">Phone</label>
+                      <input id="hero-phone"
                         type="tel"
                         placeholder="+91 XXXXX XXXXX"
                         value={phone}
@@ -195,8 +197,8 @@ const HeroSection = () => {
 
                   {/* Row 3: Service dropdown */}
                   <div>
-                    <label className="text-white/70 text-xs mb-1 block">Service Required</label>
-                    <select
+                    <label htmlFor="hero-service" className="text-white/70 text-xs mb-1 block">Service Required</label>
+                    <select id="hero-service"
                       value={service}
                       onChange={(e) => setService(e.target.value)}
                       className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-sm focus:outline-none focus:border-white/50 appearance-none"
@@ -215,8 +217,8 @@ const HeroSection = () => {
 
                   {/* Row 4: Message */}
                   <div>
-                    <label className="text-white/70 text-xs mb-1 block">Message</label>
-                    <textarea
+                    <label htmlFor="hero-message" className="text-white/70 text-xs mb-1 block">Message</label>
+                    <textarea id="hero-message"
                       placeholder="Tell us about your requirements..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}

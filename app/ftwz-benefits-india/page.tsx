@@ -44,11 +44,12 @@ export default function FTWZBenefitsPage() {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="/ftwz-benefits-india.jpg"
-          alt="FTWZ Benefits India"
+          alt='Banner reading "FTWZ Benefits" with a warehouse photo and the Astromar Free Zone logo'
           fill
           sizes="100vw"
           className="object-cover"
-          priority
+          preload
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 lg:px-16">

@@ -91,11 +91,12 @@ const About = () => {
       <section className="relative bg-brand-navy py-20 overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200"
-          alt="Astromar Logistics — Free Trade Warehousing Zone operator with FTWZ Warehouse integration across India"
+          alt="Colleagues with laptops around a table while a woman arranges sticky notes on a wall"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"
-          priority
+          preload
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">

@@ -18,7 +18,8 @@ const Services = () => {
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"
-          priority
+          preload
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/75" />
         <div className="w-full px-6 md:px-12 lg:px-16 relative z-10">

@@ -44,11 +44,12 @@ export default function FreightForwardingChennaiPage() {
       <section className="relative py-20 overflow-hidden">
         <Image
           src="/freight-forwarding-chennai.png"
-          alt="Astromar Logistics Chennai"
+          alt="Banner with a photo of warehouse racking, the Astromar Free Zone logo and the company website address"
           fill
           sizes="100vw"
           className="object-cover"
-          priority
+          preload
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 lg:px-16">

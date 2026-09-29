@@ -65,9 +65,9 @@ const Footer = () => {
 
           {/* Col 2: Quick Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider pb-2 border-b border-white/10">
+            <p className="font-semibold text-white mb-4 text-sm uppercase tracking-wider pb-2 border-b border-white/10">
               Quick Links
-            </h4>
+            </p>
             <nav className="flex flex-col gap-2 text-sm">
               {quickLinks.map((l) => (
                 <Link key={l.label} href={l.href} className="text-white/65 hover:text-[#F97316] transition-colors">
@@ -79,9 +79,9 @@ const Footer = () => {
 
           {/* Col 3: Our Services */}
           <div>
-            <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider pb-2 border-b border-white/10">
+            <p className="font-semibold text-white mb-4 text-sm uppercase tracking-wider pb-2 border-b border-white/10">
               Our Services
-            </h4>
+            </p>
             <nav className="flex flex-col gap-2 text-sm">
               {serviceLinks.map((s) => (
                 <Link key={s.label} href={s.href} className="text-white/65 hover:text-[#F97316] transition-colors">
@@ -93,9 +93,9 @@ const Footer = () => {
 
           {/* Col 4: Contact Info */}
           <div>
-            <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-wider pb-2 border-b border-white/10">
+            <p className="font-semibold text-white mb-4 text-sm uppercase tracking-wider pb-2 border-b border-white/10">
               Contact Info
-            </h4>
+            </p>
             <div className="flex flex-col gap-3 text-sm">
               <a href="mailto:sales@astromarfreezone.com" className="flex items-start gap-2 hover:text-white transition-colors">
                 <Mail size={16} className="text-[#F97316] shrink-0 mt-0.5" />
@@ -116,9 +116,9 @@ const Footer = () => {
 
         {/* Locations */}
         <div className="border-t border-white/10 pt-6 mb-6">
-          <h4 className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">
+          <p className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">
             Our FTWZ Locations
-          </h4>
+          </p>
           <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
             {locationLinks.map((loc) => (
               <Link key={loc.href} href={loc.href} className="text-white/65 hover:text-[#F97316] transition-colors">

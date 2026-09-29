@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Navigation, Warehouse, ArrowLeft, Clock, Globe } from "lucide-react";
 import { ftwzLocationDetails, getLocationBySlug } from "@/data/ftwzLocations";
 import type { Metadata } from "next";
@@ -245,17 +246,16 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Banner */}
-      <section
-        role="img"
-        aria-label={seoDetail?.seo.heroAlt ?? `${location.city} ${location.type} — Astromar Logistics`}
-        className="relative py-16 overflow-hidden flex items-center"
-        style={{
-          backgroundImage: `url(${location.heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
+      <section className="relative py-16 overflow-hidden flex items-center">
+        <Image
+          src={location.heroImage}
+          alt={seoDetail?.seo.heroAlt ?? `${location.city} ${location.type} — Astromar Logistics`}
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+          preload
+          fetchPriority="high"
+        />
         {/* Dark overlay */}
         <div style={{ position: "absolute", inset: 0, backgroundColor: "rgba(0,0,0,0.65)" }} />
         {/* Gradient tint — navy at bottom for smooth page transition */}

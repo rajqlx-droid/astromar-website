@@ -77,6 +77,8 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
         fill
         sizes="100vw"
         className="absolute inset-0 w-full h-full object-cover"
+        preload
+        fetchPriority="high"
       />
       <div className="absolute inset-0 bg-black/75" />
 
@@ -123,36 +125,36 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-white mb-1.5">
+                      <label htmlFor="contact-name" className="block text-sm font-semibold text-white mb-1.5">
                         Full Name <span className="text-orange-500">*</span>
                       </label>
-                      <input type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={glassInput} />
+                      <input id="contact-name" type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={glassInput} />
                       {errors.fullName && <p className="text-orange-500 text-xs mt-1">{errors.fullName}</p>}
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-white mb-1.5">Company</label>
-                      <input type="text" placeholder="Company name" value={form.company} onChange={(e) => update("company", e.target.value)} maxLength={100} className={glassInput} />
+                      <label htmlFor="contact-company" className="block text-sm font-semibold text-white mb-1.5">Company</label>
+                      <input id="contact-company" type="text" placeholder="Company name" value={form.company} onChange={(e) => update("company", e.target.value)} maxLength={100} className={glassInput} />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-white mb-1.5">
+                      <label htmlFor="contact-email" className="block text-sm font-semibold text-white mb-1.5">
                         Email <span className="text-orange-500">*</span>
                       </label>
-                      <input type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={glassInput} />
+                      <input id="contact-email" type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={glassInput} />
                       {errors.email && <p className="text-orange-500 text-xs mt-1">{errors.email}</p>}
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-white mb-1.5">Phone</label>
-                      <input type="tel" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={20} className={glassInput} />
+                      <label htmlFor="contact-phone" className="block text-sm font-semibold text-white mb-1.5">Phone</label>
+                      <input id="contact-phone" type="tel" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={(e) => update("phone", e.target.value)} maxLength={20} className={glassInput} />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
-                      <label className="block text-sm font-semibold text-white mb-1.5">Service Required</label>
-                      <select value={form.service} onChange={(e) => update("service", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
+                      <label htmlFor="contact-service" className="block text-sm font-semibold text-white mb-1.5">Service Required</label>
+                      <select id="contact-service" value={form.service} onChange={(e) => update("service", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
                         <option value="" className="bg-gray-900 text-white">Select a service</option>
                         <option value="FTWZ Warehousing" className="bg-gray-900 text-white">FTWZ Warehousing</option>
                         <option value="Ocean Freight (FCL)" className="bg-gray-900 text-white">Ocean Freight (FCL)</option>
@@ -166,8 +168,8 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-white mb-1.5">FTWZ Location</label>
-                      <select value={form.location} onChange={(e) => update("location", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
+                      <label htmlFor="contact-location" className="block text-sm font-semibold text-white mb-1.5">FTWZ Location</label>
+                      <select id="contact-location" value={form.location} onChange={(e) => update("location", e.target.value)} className={`${glassInput} appearance-none cursor-pointer`}>
                         <option value="" className="bg-gray-900 text-white">Select a location</option>
                         <option value="Chennai (Anna Nagar HQ)" className="bg-gray-900 text-white">Chennai (Anna Nagar HQ)</option>
                         <option value="Chennai (Sriperumbudur)" className="bg-gray-900 text-white">Chennai (Sriperumbudur)</option>
@@ -184,8 +186,8 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-white mb-1.5">Message</label>
-                    <textarea
+                    <label htmlFor="contact-message" className="block text-sm font-semibold text-white mb-1.5">Message</label>
+                    <textarea id="contact-message"
                       placeholder="Tell us about your requirements..."
                       value={form.message}
                       onChange={(e) => update("message", e.target.value)}
