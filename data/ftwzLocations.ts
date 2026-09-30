@@ -70,7 +70,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in kochi, kochi ftwz, vallarpadam ictt warehouse, free trade warehouse zone in kochi, bonded warehouse in kochi, custom bonded warehouse in kochi, kerala ftwz",
       h1: "FTWZ in Kochi",
       h1Subtitle: "Vallarpadam ICTT, Kerala",
-      heroAlt: "Modern apartment block with glass balconies against a clear evening sky",
+      heroAlt: "Illustration of wooden fishing nets on stilts in the foreground and a container ship at a crane-lined quay",
       bannerIntro: [
         { text: "Astromar's Kochi facility is a Government-notified " },
         { text: "ftwz in kochi", kw: true },
@@ -195,7 +195,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Kochi (Vallarpadam ICTT)",
         "description": "Duty-free FTWZ warehousing at Vallarpadam ICTT — India's first dedicated transshipment terminal in Cochin SEZ.",
         "url": "https://www.astromarfreezone.com/locations/kochi",
-        "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80",
+        "image": "https://www.astromarfreezone.com/images/locations/kochi.webp",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -289,7 +289,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in vizag, vizag ftwz, visakhapatnam ftwz, vsez warehouse, bonded warehouse in vizag, custom bonded warehouse in vizag, free trade warehouse zone in vizag, andhra pradesh ftwz",
       h1: "FTWZ in Vizag",
       h1Subtitle: "Visakhapatnam SEZ, Andhra Pradesh",
-      heroAlt: "People around a large mirrored sculpture in a city plaza surrounded by skyscrapers",
+      heroAlt: "Illustration of a container ship at a quay under gantry cranes, with green hills and a sunset behind",
       bannerIntro: [
         { text: "Astromar's Vizag facility is a Government-notified " },
         { text: "ftwz in vizag", kw: true },
@@ -408,7 +408,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Vizag (VSEZ Duvvada)",
         "description": "Duty-free FTWZ warehousing at Visakhapatnam SEZ (VSEZ) adjacent to East Coast India's largest commercial port.",
         "url": "https://www.astromarfreezone.com/locations/vizag",
-        "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1920&q=80",
+        "image": "https://www.astromarfreezone.com/images/locations/vizag.webp",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -1939,7 +1939,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz in dahej, dahej ftwz, dahej sez warehouse, pcpir gujarat, bonded warehouse in dahej, custom bonded warehousing in dahej, free trade warehouse zone in dahej, gujarat chemical sez, dangerous goods warehouse dahej, hazardous goods warehouse dahej",
       h1: "FTWZ in Dahej",
       h1Subtitle: "Dahej SEZ-1, Gujarat",
-      heroAlt: "Modern multi-storey building with yellow balconies under a cloudy sky",
+      heroAlt: "Illustration of a tanker moored at a jetty beside rows of white storage tanks and an industrial skyline",
       bannerIntro: [
         { text: "Astromar's Dahej facility is a Government-notified " },
         { text: "ftwz in dahej", kw: true },
@@ -2092,7 +2092,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Dahej (PCPIR SEZ-1)",
         "description": "FTWZ warehousing within Dahej SEZ-1 PCPIR cluster — specialised for chemicals, petrochemicals, LNG, polymers, and industrial gases.",
         "url": "https://www.astromarfreezone.com/locations/dahej",
-        "image": "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80",
+        "image": "https://www.astromarfreezone.com/images/locations/dahej.webp",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",

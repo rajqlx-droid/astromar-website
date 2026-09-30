@@ -38,8 +38,8 @@ const ProjectsClient = () => {
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
-          alt="Two construction workers in safety vests cutting steel rebar on a building site"
+          src="/images/services/project-cargo.webp"
+          alt="Illustration of a large steel reactor vessel lifted by ship cranes above a multi-axle trailer on a quay"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"
@@ -144,8 +144,8 @@ const ProjectsClient = () => {
             <ScrollReveal>
               <div className="relative rounded-xl overflow-hidden h-64 shadow-md w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
-                  alt="Industrial plant and machinery"
+                  src="/images/services/industrial-plant.webp"
+                  alt="Illustration of large steel process modules strapped to a long multi-axle trailer on a quayside"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"

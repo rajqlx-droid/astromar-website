@@ -136,8 +136,8 @@ const WarehousingClient = () => {
             <ScrollReveal>
               <div className="relative rounded-xl overflow-hidden h-96 shadow-md w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80"
-                  alt="Modern multi-storey building with yellow balconies under a cloudy sky"
+                  src="/images/services/warehouse-exterior.webp"
+                  alt="Illustration of a warehouse with numbered loading docks and container trucks parked outside"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"

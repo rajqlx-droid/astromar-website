@@ -208,8 +208,8 @@ const AirFreightClient = () => {
             <ScrollReveal>
               <div className="relative rounded-xl overflow-hidden h-96 shadow-md w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80"
-                  alt="Air cargo operations"
+                  src="/images/services/air-cargo.webp"
+                  alt="Illustration of wrapped cargo pallets being loaded through the nose door of a freighter aircraft"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
