@@ -3677,7 +3677,7 @@ Because with project cargo, a delay isn't always just a delay to one shipment. I
     readTime: "15 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Customs documentation for textile and apparel importers in India — fibre composition, HS classification, labelling requirements, and pre-shipment checklists.",
+    metaDescription: "Customs documentation for textile and apparel importers in India — fibre composition, HS classification, labelling requirements and pre-shipment checks.",
     thumbnail: cbmImg,
     imageAlt: "Fabric rolls and textile bales being documented and prepared for customs clearance",
     keywords: [
@@ -3718,9 +3718,7 @@ A more useful description could identify the type of fabric and relevant charact
       {
         heading: "Fibre Composition Can Make a Difference",
         content: [
-          { text: "Textiles can be made from a wide range of natural and synthetic fibres — cotton, polyester, viscose, nylon, wool and acrylic, plus blended materials like a fabric containing 60% cotton and 40% polyester. This information can be relevant to classification and other regulatory considerations tracked in part by the " },
-          { text: "Ministry of Textiles", href: "https://www.texmin.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ".\n\nTextile importers should obtain reliable fibre-composition information from the supplier. If the supplier simply describes everything as \"synthetic fabric,\" the importer may not have enough information to properly assess the product. A technical specification sheet can be useful here, and for larger or more complex shipments, having product specifications available before shipment can save a lot of back-and-forth later." }
+          { text: "Textiles can be made from a wide range of natural and synthetic fibres — cotton, polyester, viscose, nylon, wool and acrylic, plus blended materials like a fabric containing 60% cotton and 40% polyester. This information can be relevant to classification and other regulatory considerations.\n\nTextile importers should obtain reliable fibre-composition information from the supplier. If the supplier simply describes everything as \"synthetic fabric,\" the importer may not have enough information to properly assess the product. A technical specification sheet can be useful here, and for larger or more complex shipments, having product specifications available before shipment can save a lot of back-and-forth later." }
         ]
       },
       {
@@ -3756,9 +3754,9 @@ Without a clear packing list, it can become difficult to identify exactly what h
       {
         heading: "Labelling Should Be Checked Before Shipping",
         content: [
-          { text: "Indian requirements can apply to certain textile and apparel products under the applicable framework maintained by the " },
+          { text: "For packaged textile and apparel products sold at retail, label declarations such as product identity, importer or manufacturer details, country of origin, size and other particulars can apply under the Legal Metrology (Packaged Commodities) Rules, 2011, depending on the product and how it's being sold. Separately, " },
           { text: "Bureau of Indian Standards", href: "https://www.bis.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ", depending on the nature of the goods and how they're being sold. Requirements can involve product identity, fibre composition, importer or manufacturer details, country of origin, size and other declarations, and can vary depending on the specific product.\n\nThat's why it's risky to assume a label accepted in the exporting country will automatically meet every applicable Indian requirement. A supplier in China, Vietnam or another manufacturing country may be following its local market's labelling rules — the Indian importer needs to check what applies to the Indian market. Doing this before shipment is generally much easier than discovering an issue after the container has arrived." }
+          { text: " requirements apply only to textile products covered by BIS Quality Control Orders. The exact requirements can vary depending on the specific product.\n\nThat's why it's risky to assume a label accepted in the exporting country will automatically meet every applicable Indian requirement. A supplier in China, Vietnam or another manufacturing country may be following its local market's labelling rules — the Indian importer needs to check what applies to the Indian market. Doing this before shipment is generally much easier than discovering an issue after the container has arrived." }
         ]
       },
       {
@@ -3792,9 +3790,9 @@ A better approach is to provide the supplier with clear documentation requiremen
         content: [
           { text: "For some textile importers, the logistics question continues after customs clearance. The company may not need all of its imported inventory immediately — a shipment could contain several months' worth of material, or goods intended for different customers and markets. In such cases, the importer may evaluate whether an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
-          { text: " can form part of its warehousing strategy for eligible goods and transactions.\n\nThe potential advantage isn't simply having somewhere to store boxes — it's about managing inventory timing. A textile importer may receive a large international shipment but release the goods gradually according to production schedules or customer orders. Subject to the applicable customs framework, an FTWZ can be considered as one possible part of that model, particularly relevant for importers working with established textile hubs such as " },
+          { text: " can form part of its warehousing strategy for eligible goods and transactions.\n\nThe potential advantage isn't simply having somewhere to store boxes — it's about managing inventory timing. A textile importer may receive a large international shipment but release the goods gradually according to production schedules or customer orders. Subject to the applicable customs framework, an FTWZ can be considered as one possible part of that model, particularly relevant for importers routing cargo through a major port such as " },
           { text: "Mundra", href: "/locations/mundra" },
-          { text: ". It isn't automatically the right answer for every textile importer — the decision depends on shipment volume, inventory cycle, customer locations and commercial requirements." }
+          { text: ", which serves textile clusters in Gujarat. It isn't automatically the right answer for every textile importer — the decision depends on shipment volume, inventory cycle, customer locations and commercial requirements." }
         ]
       },
       {
@@ -3847,7 +3845,7 @@ Whether the cargo moves directly to a factory, into a conventional warehouse or 
     readTime: "15 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Steel and metal cargo movement via coastal shipping in India — coil handling, moisture protection, port selection, and total landed cost comparison with road freight.",
+    metaDescription: "Steel and metal cargo via coastal shipping in India — coil handling, moisture protection, port selection and total landed cost compared with road freight.",
     thumbnail: dutyImg,
     imageAlt: "Steel coils and metal cargo being loaded at a port for coastal shipping transport",
     keywords: [
@@ -3948,7 +3946,7 @@ Providing accurate cargo data early allows the relevant teams to determine the m
         heading: "Customs Clearance Still Needs to Be Planned",
         content: [
           { text: "When imported steel is involved, the transportation plan needs to sit alongside the " },
-          { text: "customs clearance", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " process — commercial invoice, packing list, Bill of Lading, import declaration, HS classification, country-of-origin documentation and other product-specific documents as applicable.\n\nIf the cargo is intended for an FTWZ or specialised warehousing arrangement, the relevant customs procedures should be understood before the shipment moves — particularly important when the importer intends to hold inventory rather than immediately send everything to the final customer." }
         ]
       },
@@ -3961,17 +3959,13 @@ The company could instead evaluate a multimodal option: Import → Western Port 
       {
         heading: "When Coastal Shipping May Not Make Sense",
         content: [
-          { text: "Direct road transport may remain more suitable when the shipment is small, the customer needs immediate delivery, the distance is relatively short, there's no convenient port connection, or the destination is far from the discharge port. For example, sending a small urgent steel consignment through a coastal route may take longer and require more handling than simply putting it on a truck — supported by broader infrastructure development under the " },
-          { text: "Sagarmala Programme", href: "https://sagarmala.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ", but not automatically the right fit for every shipment. Coastal shipping should therefore be evaluated rather than assumed." }
+          { text: "Direct road transport may remain more suitable when the shipment is small, the customer needs immediate delivery, the distance is relatively short, there's no convenient port connection, or the destination is far from the discharge port. For example, sending a small urgent steel consignment through a coastal route may take longer and require more handling than simply putting it on a truck. Coastal shipping should therefore be evaluated rather than assumed." }
         ]
       },
       {
         heading: "The Bigger Picture: Designing the Supply Chain Around the Cargo",
         content: [
-          { text: "The strongest logistics plans usually start with the cargo rather than a preferred transport mode. Steel is a good example — its weight can make long-distance road movement expensive, its vulnerability to moisture can make storage conditions important, and its physical dimensions can influence port and transport selection, an industry tracked in part by the " },
-          { text: "Ministry of Steel", href: "https://steel.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ".\n\nThat means the logistics solution may involve several modes working together — a truck for the first leg, a coastal vessel for the long-distance movement, a warehouse to hold inventory, and another truck for final delivery. For certain imported goods, an FTWZ arrangement may also form part of the broader supply-chain structure. The objective isn't to use every available option — it's to use the right combination for the specific cargo and customer requirements." }
+          { text: "The strongest logistics plans usually start with the cargo rather than a preferred transport mode. Steel is a good example — its weight can make long-distance road movement expensive, its vulnerability to moisture can make storage conditions important, and its physical dimensions can influence port and transport selection.\n\nThat means the logistics solution may involve several modes working together — a truck for the first leg, a coastal vessel for the long-distance movement, a warehouse to hold inventory, and another truck for final delivery. For certain imported goods, an FTWZ arrangement may also form part of the broader supply-chain structure. The objective isn't to use every available option — it's to use the right combination for the specific cargo and customer requirements." }
         ]
       },
       {
@@ -4005,12 +3999,12 @@ The company could instead evaluate a multimodal option: Import → Western Port 
   {
     slug: "fmcg-multi-sku-consolidation-ftwz",
     title: "FMCG and Consumer Goods Supply Chains: Multi-SKU Consolidation Through FTWZ",
-    excerpt: "Why FMCG warehousing is really an inventory-accuracy problem, not a storage problem — and how multi-SKU consolidation through an FTWZ can reduce duplicated safety stock without sacrificing delivery speed.",
+    excerpt: "Why FMCG warehousing is really an inventory-accuracy problem, not a storage problem — and how multi-SKU consolidation through an FTWZ can reduce duplicated safety stock.",
     category: "FTWZ",
     readTime: "16 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "FMCG and consumer goods supply chains — multi-SKU consolidation, batch and expiry management, centralized vs regional warehousing, and FTWZ inventory flexibility.",
+    metaDescription: "FMCG and consumer goods supply chains — multi-SKU consolidation, batch and expiry management, central vs regional warehousing and FTWZ flexibility.",
     thumbnail: cbmImg,
     imageAlt: "FMCG warehouse with multiple SKUs organized for order fulfillment and distribution",
     keywords: [
@@ -4185,7 +4179,7 @@ The best supply chains aren't necessarily the ones with the fewest warehouses. T
     readTime: "16 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Logistics planning for port and infrastructure project equipment — route surveys, customs classification, temporary storage, and FTWZ options for oversized cargo.",
+    metaDescription: "Logistics planning for port and infrastructure project equipment — route surveys, customs classification, temporary storage and FTWZ options for cargo.",
     thumbnail: airSeaImg,
     imageAlt: "Large port crane and infrastructure equipment being transported as oversized project cargo",
     keywords: [
@@ -4212,7 +4206,7 @@ Project cargo can include port cranes, dredging machinery, heavy construction eq
         heading: "The Logistics Planning Often Starts Months Before Arrival",
         content: `One of the biggest misconceptions about project cargo is that logistics planning begins when the vessel reaches the port. In reality, it should usually start much earlier. Before the equipment is shipped, the logistics team needs to understand exact dimensions, gross weight, centre of gravity, lifting points, port of arrival, available lifting equipment, storage requirements, final destination and expected installation date.
 
-For example, a difference in width of even a few metres can change the type of trailer required or the route that can be used. That's why getting accurate technical information from the manufacturer is one of the first steps in a project-cargo plan.`
+For example, a difference in width of even a few centimetres can change the type of trailer required or the route that can be used. That's why getting accurate technical information from the manufacturer is one of the first steps in a project-cargo plan.`
       },
       {
         heading: "What Happens When the Project Site Isn't Ready?",
@@ -4241,7 +4235,7 @@ Depending on the equipment, storage could involve covered warehousing, open stor
         heading: "Customs Planning Shouldn't Be Left Until the Vessel Arrives",
         content: [
           { text: "Project equipment often comes with detailed technical documentation important during " },
-          { text: "customs clearance", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " — commercial invoice, packing list, Bill of Lading, technical specifications, HS classification information, equipment drawings and other product-specific documents depending on the shipment.\n\nThe important point is that customs planning should happen before the cargo arrives. If a technical description is unclear or the documentation doesn't match the physical equipment, resolving the issue after arrival can create unnecessary delays — for a project where equipment is tied to a construction schedule, even a small delay can have a wider impact." }
         ]
       },
@@ -4254,9 +4248,7 @@ This is one reason technical teams and customs professionals often need to work 
       {
         heading: "Choosing the Right Port and Getting the Equipment Out",
         content: [
-          { text: "For project cargo, choosing a port isn't always as simple as selecting the closest one. The project team may need to look at heavy-lift capability, available cranes, berth infrastructure, vessel compatibility, cargo-handling facilities and road or rail connectivity to the project site, an area coordinated in part through the " },
-          { text: "Indian Ports Association", href: "https://ipa.org.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ". A port that handles huge volumes of containers may not necessarily be the most convenient option for a particular oversized shipment — the cargo should drive the port decision.\n\nFor oversized equipment, transportation can require much more planning than arranging a standard truck — multi-axle trailers, hydraulic modular trailers, heavy-duty low-bed trailers or other specialised transport solutions, depending on the weight, dimensions and configuration of the load." }
+          { text: "For project cargo, choosing a port isn't always as simple as selecting the closest one. The project team may need to look at heavy-lift capability, available cranes, berth infrastructure, vessel compatibility, cargo-handling facilities and road or rail connectivity to the project site. A port that handles huge volumes of containers may not necessarily be the most convenient option for a particular oversized shipment — the cargo should drive the port decision.\n\nFor oversized equipment, transportation can require much more planning than arranging a standard truck — multi-axle trailers, hydraulic modular trailers, heavy-duty low-bed trailers or other specialised transport solutions, depending on the weight, dimensions and configuration of the load." }
         ]
       },
       {
@@ -4354,7 +4346,7 @@ If the answer to these questions is no, delivery may simply create another stora
     readTime: "17 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Customs clearance for furniture and home décor imports in India — HS classification, flat-pack documentation, wooden packaging rules, and warehouse planning.",
+    metaDescription: "Customs clearance for furniture and home décor imports in India — HS classification, flat-pack documentation, wooden packaging rules and warehousing.",
     thumbnail: dutyImg,
     imageAlt: "Flat-pack furniture cartons and home décor items being prepared for customs clearance",
     keywords: [
@@ -4509,9 +4501,7 @@ There's no universal answer — the best model depends on where customers are, h
       {
         heading: "A Better Approach Before the Container Leaves",
         content: [
-          { text: "Furniture importers can avoid many problems by asking the right questions early, confirmed with suppliers under the framework maintained by " },
-          { text: "DGFT", href: "https://www.dgft.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ": What exactly is being shipped? How many SKUs are there? What are the carton dimensions and total volume? What materials are being used? How are products packed? Does the invoice match the packing list? Has the HS classification been reviewed? Where will the cargo go after clearance?\n\nAnswering these before the vessel sails is much easier than answering them while the container is sitting at the port." }
+          { text: "Furniture importers can avoid many problems by asking the right questions early: What exactly is being shipped? How many SKUs are there? What are the carton dimensions and total volume? What materials are being used? How are products packed? Does the invoice match the packing list? Has the HS classification been reviewed? Where will the cargo go after clearance?\n\nAnswering these before the vessel sails is much easier than answering them while the container is sitting at the port." }
         ]
       },
       {
@@ -4556,7 +4546,7 @@ A good importer-supplier relationship should include documentation standards: pr
     readTime: "16 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Coastal shipping for cement and construction materials in India — bulk vs bagged handling, moisture protection, port selection, and total delivered cost comparison.",
+    metaDescription: "Coastal shipping for cement and construction materials in India — bulk vs bagged handling, moisture protection, port selection and total delivered cost.",
     thumbnail: cbmImg,
     imageAlt: "Bulk cement being loaded at a port for coastal shipping to a construction project",
     keywords: [
@@ -4615,9 +4605,7 @@ Clinker is another important cargo to consider, produced during cement manufactu
       {
         heading: "Construction Materials Go Beyond Cement",
         content: [
-          { text: "Once a company starts looking at coastal shipping from a supply-chain perspective, other materials come into the discussion — limestone, aggregates, fly ash, gypsum and steel products, depending on cargo and available infrastructure. But each behaves differently: steel has different storage and handling requirements from cement, aggregates have different loading considerations, and fly ash may need specialised handling, an industry represented in part by the " },
-          { text: "Cement Manufacturers' Association", href: "https://www.cmaindia.org", target: "_blank", rel: "noopener noreferrer" },
-          { text: ".\n\nThere isn't one standard coastal-shipping solution for construction materials — the cargo determines the logistics model." }
+          { text: "Once a company starts looking at coastal shipping from a supply-chain perspective, other materials come into the discussion — limestone, aggregates, fly ash, gypsum and steel products, depending on cargo and available infrastructure. But each behaves differently: steel has different storage and handling requirements from cement, aggregates have different loading considerations, and fly ash may need specialised handling.\n\nThere isn't one standard coastal-shipping solution for construction materials — the cargo determines the logistics model." }
         ]
       },
       {
@@ -4655,17 +4643,13 @@ A coastal route may not work as well if the cargo volume is too small, the origi
       {
         heading: "Weather, Vessel Schedules, and the Environmental Angle",
         content: [
-          { text: "Unlike a truck on a highway, a vessel operates within a maritime and port environment where weather can affect movements and schedules can change. For a construction project, that means some level of planning buffer may be sensible — building appropriate buffer into the supply plan rather than holding huge quantities of inventory, standards for which are often referenced against " },
-          { text: "BIS cement grading", href: "https://www.bis.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ".\n\nThere's also a wider sustainability angle. Shifting part of a long-distance movement from road to coastal shipping can potentially reduce road transportation required, but the environmental impact depends on the complete journey — if the destination port is extremely far from the project, the additional road distance may reduce the benefit." }
+          { text: "Unlike a truck on a highway, a vessel operates within a maritime and port environment where weather can affect movements and schedules can change. For a construction project, that means some level of planning buffer may be sensible — building appropriate buffer into the supply plan rather than holding huge quantities of inventory.\n\nThere's also a wider sustainability angle. Shifting part of a long-distance movement from road to coastal shipping can potentially reduce road transportation required, but the environmental impact depends on the complete journey — if the destination port is extremely far from the project, the additional road distance may reduce the benefit." }
         ]
       },
       {
         heading: "A Simple Example",
         content: [
-          { text: "A construction project needs a steady supply of cement from a manufacturing location on the western coast, with reasonable port access at both ends, coordinated in part through infrastructure developed under the " },
-          { text: "Sagarmala Programme", href: "https://sagarmala.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ". Instead of moving all the cement by long-distance road, the company could evaluate: Cement plant → Short road movement → Origin port → Coastal vessel → Destination port → Storage or silo → Short road movement → Project site.\n\nThe company would then compare this with the direct road option across freight, port handling, inland transport, storage, transit time and reliability. If the numbers and operating conditions work, coastal shipping may be a sensible part of the supply chain — if they don't, road transport may remain the better option." }
+          { text: "A construction project needs a steady supply of cement from a manufacturing location on the western coast, with reasonable port access at both ends. Instead of moving all the cement by long-distance road, the company could evaluate: Cement plant → Short road movement → Origin port → Coastal vessel → Destination port → Storage or silo → Short road movement → Project site.\n\nThe company would then compare this with the direct road option across freight, port handling, inland transport, storage, transit time and reliability. If the numbers and operating conditions work, coastal shipping may be a sensible part of the supply chain — if they don't, road transport may remain the better option." }
         ]
       },
       {
@@ -4712,7 +4696,7 @@ This is particularly important for large projects because material requirements 
     readTime: "17 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Supply chain management for auto component manufacturers — JIT inventory, production risk, criticality-based safety stock, and FTWZ options for imported components.",
+    metaDescription: "Supply chain management for auto component makers — JIT inventory, production risk, criticality-based safety stock and FTWZ options for imported parts.",
     thumbnail: cbmImg,
     imageAlt: "Auto components organized for just-in-time delivery to a manufacturing production line",
     keywords: [
@@ -4773,7 +4757,7 @@ What matters is when the component will actually be available for production. Th
         heading: "The Real Lead Time Isn't Just Ocean Transit",
         content: [
           { text: "A supplier telling you \"transit time is 15 days\" isn't the full picture. If the cargo takes 15 days on the vessel plus a few more for port handling, " },
-          { text: "customs procedures", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: "customs procedures", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " and inland transportation, the production team cannot plan around 15 days alone.\n\nThe real number is closer to: supplier dispatch → transit → port → customs → inland movement → factory receiving. That's the lead time that matters for JIT operations, and knowing it accurately can make a big difference." }
         ]
       },
@@ -4782,9 +4766,7 @@ What matters is when the component will actually be available for production. Th
         content: [
           { text: "The automotive manufacturing ecosystem around " },
           { text: "Sriperumbudur", kw: true, href: "/locations/chennai-sriperumbudur" },
-          { text: " and the Chennai region illustrates why this matters. Manufacturers and component suppliers operate within a large industrial network coordinated in part through bodies such as " },
-          { text: "SIAM", href: "https://www.siam.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: " — one supplier close to the plant, another elsewhere in Tamil Nadu, another bringing specialised components through an Indian port.\n\nThe factory isn't simply receiving goods from one warehouse — it's coordinating a network of suppliers, transporters, warehouses and logistics providers. When production schedules are tight, even relatively small disruptions can move through that network quickly. Good inventory positioning becomes part of keeping the factory running." }
+          { text: " and the Chennai region illustrates why this matters. Manufacturers and component suppliers operate within a large industrial network — one supplier close to the plant, another elsewhere in Tamil Nadu, another bringing specialised components through an Indian port.\n\nThe factory isn't simply receiving goods from one warehouse — it's coordinating a network of suppliers, transporters, warehouses and logistics providers. When production schedules are tight, even relatively small disruptions can move through that network quickly. Good inventory positioning becomes part of keeping the factory running." }
         ],
         relatedLink: { text: "Explore Astromar's Chennai-Sriperumbudur facility", href: "/locations/chennai-sriperumbudur" }
       },
@@ -4860,9 +4842,7 @@ These questions often reveal more than simply looking at the total value of inve
       {
         heading: "Final Thoughts",
         content: [
-          { text: "For auto-component manufacturers, JIT can be extremely effective — reducing excess inventory, freeing up working capital and making warehouse operations more efficient. But it also makes the supply chain less forgiving. When inventory levels are low, every part of the network needs to work reasonably well: suppliers need to deliver, transporters need to perform, customs clearance needs to be planned, warehouses need accurate inventory, and production needs reliable information about what's coming next.\n\nThat's why JIT shouldn't be treated simply as an inventory-reduction exercise — it's a complete supply chain management approach. For manufacturers around Sriperumbudur, Chennai and other automotive clusters coordinated through bodies like " },
-          { text: "ACMA", href: "https://www.acma.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ", this becomes particularly relevant as supply networks become more international.\n\n" },
+          { text: "For auto-component manufacturers, JIT can be extremely effective — reducing excess inventory, freeing up working capital and making warehouse operations more efficient. But it also makes the supply chain less forgiving. When inventory levels are low, every part of the network needs to work reasonably well: suppliers need to deliver, transporters need to perform, customs clearance needs to be planned, warehouses need accurate inventory, and production needs reliable information about what's coming next.\n\nThat's why JIT shouldn't be treated simply as an inventory-reduction exercise — it's a complete supply chain management approach. For manufacturers around Sriperumbudur, Chennai and other automotive clusters, this becomes particularly relevant as supply networks become more international.\n\n" },
           { text: "Astromar Logistics Pvt. Ltd.", kw: true, href: "/" },
           { text: " runs 10 FTWZ locations nationwide, with 2 Lakh+ sq ft of warehousing, 10K+ sq ft of cold storage and 5K+ pallet positions, and has supported 500+ clients since 2017. For auto-component manufacturers and suppliers, this network can be considered as part of a broader supply chain strategy covering inventory positioning, warehousing, customs clearance and multimodal distribution.\n\nThe important thing is not to choose an FTWZ simply because it sounds efficient — the important question is whether it actually improves the way inventory moves through the business. Because in automotive manufacturing, the ultimate objective isn't to have the smallest warehouse or the lowest inventory number. It's to make sure that when a production operator reaches for a component, the component is there." }
         ]
@@ -4895,7 +4875,7 @@ These questions often reveal more than simply looking at the total value of inve
     readTime: "17 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Project cargo logistics for data center and telecom infrastructure equipment — customs clearance, inventory positioning, and FTWZ options for imported technology equipment.",
+    metaDescription: "Project cargo logistics for data center and telecom equipment — customs clearance, inventory positioning and FTWZ options for imported technology gear.",
     thumbnail: airSeaImg,
     imageAlt: "Server racks and networking equipment being installed at a data center under construction",
     keywords: [
@@ -4920,7 +4900,7 @@ So the logistics plan needs to follow the construction and commissioning schedul
       },
       {
         heading: "This Is Where Project Logistics Gets Interesting",
-        content: `Imagine a data centre project scheduled to begin server installation in September. The servers are manufactured in July, and the supplier wants to ship them immediately — but what if the building isn't ready until August?
+        content: `Imagine a data centre project scheduled to begin server installation in September. The servers are manufactured in July, and the supplier wants to ship them immediately — but what if the building isn't ready until October?
 
 The importer now has a decision: send the servers directly to the site and store them there, find temporary storage, use a suitable warehouse, or consider an FTWZ structure for eligible imported equipment. The answer depends on the project, but the logistics decision needs to be made before the equipment arrives.`
       },
@@ -4939,9 +4919,7 @@ A piece of equipment can successfully reach the Indian port and still face a pro
       {
         heading: "Telecom Projects Create a Different Problem",
         content: [
-          { text: "Data centres may involve one major site. Telecom projects can involve many — a telecom operator might be rolling out antennas, radio equipment, cabinets, batteries and cables across several cities at once, coordinated under frameworks maintained by the " },
-          { text: "Department of Telecommunications", href: "https://dot.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ". Sending every shipment directly from the port to each site can quickly become difficult to manage — this is where a central inventory location becomes useful.\n\nImagine 1,000 network devices arrive in India. The company doesn't need all 1,000 tomorrow — it may need 200 next month, 300 the following month, and the remainder later. Instead of sending everything directly to project locations, the business can hold equipment at a suitable warehouse and release it as projects become ready, giving the logistics team more breathing room." }
+          { text: "Data centres may involve one major site. Telecom projects can involve many — a telecom operator might be rolling out antennas, radio equipment, cabinets, batteries and cables across several cities at once. Sending every shipment directly from the port to each site can quickly become difficult to manage — this is where a central inventory location becomes useful.\n\nImagine 1,000 network devices arrive in India. The company doesn't need all 1,000 tomorrow — it may need 200 next month, 300 the following month, and the remainder later. Instead of sending everything directly to project locations, the business can hold equipment at a suitable warehouse and release it as projects become ready, giving the logistics team more breathing room." }
         ]
       },
       {
@@ -4962,9 +4940,7 @@ Serial-number tracking becomes especially important when the same model is used 
       {
         heading: "Ocean Freight or Air Freight?",
         content: [
-          { text: "The choice usually comes down to cost, urgency, equipment characteristics and project schedule, relevant for electronics and technology equipment covered in part by " },
-          { text: "MeitY", href: "https://www.meity.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: " policy. Large planned shipments are often better suited to ocean freight — but if a project is waiting for one critical component and the delay could push back commissioning, air freight may become an option. It's faster, but generally more expensive.\n\nUsing air freight for every shipment isn't a sensible strategy. When a project falls behind schedule, there's a natural temptation to \"send everything by air\" — but if the rest of the equipment can continue through normal ocean freight, expediting everything just increases costs without solving the actual bottleneck. Project logistics works best when urgency is assigned only to the shipments that genuinely need it." }
+          { text: "The choice usually comes down to cost, urgency, equipment characteristics and project schedule. Large planned shipments are often better suited to ocean freight — but if a project is waiting for one critical component and the delay could push back commissioning, air freight may become an option. It's faster, but generally more expensive.\n\nUsing air freight for every shipment isn't a sensible strategy. When a project falls behind schedule, there's a natural temptation to \"send everything by air\" — but if the rest of the equipment can continue through normal ocean freight, expediting everything just increases costs without solving the actual bottleneck. Project logistics works best when urgency is assigned only to the shipments that genuinely need it." }
         ]
       },
       {
@@ -5010,7 +4986,7 @@ Instead of automatically sending everything to the project site, the company map
         heading: "The Biggest Mistake: Treating Every Shipment Separately",
         content: [
           { text: "A large project can have hundreds of shipments. If every shipment is managed independently, the logistics team can lose sight of the bigger picture. The better approach is one project-level view: which equipment has shipped, which is on the water, which has reached India, which is undergoing " },
-          { text: "customs clearance", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: ", which is in the warehouse, and which project needs it.\n\nOnce the entire flow is visible, delays become easier to identify — and the logistics solution has to connect international sourcing, ocean or air freight, port, customs clearance, warehousing, inventory control, road transportation and the project site as one connected chain, not several isolated stages." }
         ]
       },
@@ -6188,13 +6164,13 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) service
   },
   {
     slug: "customs-clearance-toys-childrens-products-safety-compliance",
-    title: "Customs Clearance for Toys and Children's Products in India: Safety Compliance, Documentation and Supply Chain Considerations",
+    title: "Customs Clearance for Toys and Children's Products in India",
     excerpt: "Why toy imports need BIS certification, product-specific documentation, and classification review well before the vessel sails — and where warehousing fits once the compliance side is handled.",
     category: "FTWZ",
     readTime: "16 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Customs clearance for toys and children's products in India — BIS certification, documentation, classification, and warehousing considerations for importers.",
+    metaDescription: "Customs clearance for toys and children's products in India — BIS certification, documentation, classification and warehousing considerations.",
     thumbnail: cbmImg,
     imageAlt: "Children's toys packaged and labeled for import compliance and customs clearance",
     keywords: [
@@ -6346,9 +6322,7 @@ The question isn't just how to move the cargo. It's how to keep the entire suppl
       {
         heading: "Fertilizer Logistics Starts With the Demand Cycle",
         content: [
-          { text: "Fertilizer demand doesn't necessarily remain constant throughout the year. Agricultural activity, tracked in part by India's " },
-          { text: "Department of Fertilizers", href: "https://fert.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ", creates periods when distributors may need larger quantities within a relatively short window. That puts pressure on the entire supply chain — an importer may have to coordinate international procurement, vessel schedules, port operations, warehousing and inland transportation several weeks before the product is actually needed.\n\nA delay at any stage has a knock-on effect. If cargo reaches a port earlier than expected but suitable storage isn't available, the problem becomes a warehousing issue. If customs documentation is incomplete, the transportation plan may not even start when expected. This is why fertilizer logistics needs to be planned as one connected movement rather than a series of unrelated activities." }
+          { text: "Fertilizer demand doesn't necessarily remain constant throughout the year. Agricultural activity creates periods when distributors may need larger quantities within a relatively short window. That puts pressure on the entire supply chain — an importer may have to coordinate international procurement, vessel schedules, port operations, warehousing and inland transportation several weeks before the product is actually needed.\n\nA delay at any stage has a knock-on effect. If cargo reaches a port earlier than expected but suitable storage isn't available, the problem becomes a warehousing issue. If customs documentation is incomplete, the transportation plan may not even start when expected. This is why fertilizer logistics needs to be planned as one connected movement rather than a series of unrelated activities." }
         ]
       },
       {
@@ -6363,9 +6337,7 @@ The question isn't just how to move the cargo. It's how to keep the entire suppl
       {
         heading: "The Cargo Itself Matters",
         content: [
-          { text: "There's no single handling method for every fertilizer or agri-input. Products differ in physical form, packaging and storage requirements — some may be moved in bags, others handled in bulk, and some can be sensitive to moisture or have specific safety considerations depending on classification relevant under " },
-          { text: "CBIC", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: " customs classification.\n\nBefore arranging transportation, the importer or distributor should understand what's actually being moved: is it bagged or bulk, does it require moisture protection, what handling equipment is needed, and how long will it remain in storage? These may sound like warehouse questions, but they affect the transportation plan just as much." }
+          { text: "There's no single handling method for every fertilizer or agri-input. Products differ in physical form, packaging and storage requirements — some may be moved in bags, others handled in bulk, and some can be sensitive to moisture, while some fertilizers (such as ammonium nitrate) have specific safety and storage requirements under applicable regulations.\n\nBefore arranging transportation, the importer or distributor should understand what's actually being moved: is it bagged or bulk, does it require moisture protection, what handling equipment is needed, and how long will it remain in storage? These may sound like warehouse questions, but they affect the transportation plan just as much." }
         ]
       },
       {
@@ -6391,7 +6363,7 @@ This approach creates a much clearer picture of the supply chain and helps ident
         content: [
           { text: "For imported fertilizer and agri-inputs, " },
           { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
-          { text: " cannot be treated as an activity that happens somewhere in the background. Documentation, classification and applicable regulatory requirements need to be considered before the cargo reaches the port — a transportation plan may assume cargo will move out of the port on a particular date, but if the customs process isn't ready, that assumption no longer holds.\n\nThis is particularly important when coastal shipping is the next leg. The coastal vessel has its own schedule, and missing the intended sailing can mean waiting for another movement and changing the downstream plan. Good coordination between customs and transportation teams becomes important." }
+          { text: " cannot be treated as an activity that happens somewhere in the background. Documentation, classification and applicable regulatory requirements need to be considered before the cargo reaches the port — a transportation plan may assume cargo will move out of the port on a particular date, but if the customs process isn't ready, that assumption no longer holds. Fertilizer imports in India are also regulated, for example under the Fertiliser (Control) Order, 1985, so importers should confirm the requirements that apply to their product.\n\nThis is particularly important when coastal shipping is the next leg. The coastal vessel has its own schedule, and missing the intended sailing can mean waiting for another movement and changing the downstream plan. Good coordination between customs and transportation teams becomes important." }
         ]
       },
       {
@@ -6429,9 +6401,7 @@ The comparison should include the complete door-to-door movement, not just the v
       {
         heading: "Final Thoughts",
         content: [
-          { text: "For an international fertilizer business, the complete logistics chain could involve International Supplier → Ocean Freight → Indian Port → Customs Clearance → Warehouse/FTWZ → Coastal Shipping → Destination Port → Inland Transportation → Distributor. Not every shipment will require every stage — the logistics model should be designed around the cargo and business requirement instead of forcing every shipment into the same process.\n\nFertilizer logistics is ultimately about timing and coordination. The cargo needs to arrive in suitable condition, the customs process needs to be ready, the vessel movement needs to fit the schedule, the warehouse needs capacity, and the final transportation needs to connect the inventory with the market. Coastal shipping can be a useful part of that chain for suitable cargo and routes, supported by port infrastructure developed under the " },
-          { text: "Sagarmala Programme", href: "https://sagarmala.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ".\n\n" },
+          { text: "For an international fertilizer business, the complete logistics chain could involve International Supplier → Ocean Freight → Indian Port → Customs Clearance → Warehouse/FTWZ → Coastal Shipping → Destination Port → Inland Transportation → Distributor. Not every shipment will require every stage — the logistics model should be designed around the cargo and business requirement instead of forcing every shipment into the same process.\n\nFertilizer logistics is ultimately about timing and coordination. The cargo needs to arrive in suitable condition, the customs process needs to be ready, the vessel movement needs to fit the schedule, the warehouse needs capacity, and the final transportation needs to connect the inventory with the market. Coastal shipping can be a useful part of that chain for suitable cargo and routes.\n\n" },
           { text: "Astromar Logistics Pvt. Ltd.", kw: true, href: "/" },
           { text: " provides logistics and FTWZ solutions for businesses involved in international trade and domestic distribution. Depending on the cargo and movement requirements, services can include FTWZ warehousing, customs coordination, ocean freight, coastal shipping, consolidation, transportation and supply chain solutions. With 10 FTWZ locations, 2 lakh+ sq ft of warehousing, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients, operating since 2017, Astromar supports fertilizer and agri-input businesses coordinating the port, customs process, warehousing, coastal movement and final distribution.\n\nThe stronger approach is to look at the entire movement — from the supplier and port, through customs clearance, warehousing and coastal transportation, all the way to the final customer. That's where logistics planning starts to make a real difference." }
         ]
@@ -6464,7 +6434,7 @@ The comparison should include the complete door-to-door movement, not just the v
     readTime: "16 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "E-commerce fulfillment supply chains and FTWZ warehousing — SKU management, imported inventory replenishment, returns handling, and distribution hub planning.",
+    metaDescription: "E-commerce fulfillment supply chains and FTWZ warehousing — SKU management, imported inventory replenishment, returns and distribution hub planning.",
     thumbnail: cbmImg,
     imageAlt: "E-commerce fulfillment center with packages organized for order processing and dispatch",
     keywords: [
@@ -6497,7 +6467,7 @@ Suddenly the warehouse is managing hundreds or thousands of SKUs with very diffe
         heading: "Imported Inventory Adds Another Layer",
         content: [
           { text: "For a domestic e-commerce business, replenishing stock can sometimes be relatively quick. For an importer, replenishment takes considerably longer — the product has to be ordered from the overseas manufacturer, produced, shipped internationally, cleared through " },
-          { text: "customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
+          { text: "customs", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: ", warehoused, and fulfilled domestically. That entire cycle has to be considered when deciding how much inventory to hold.\n\nIf a product sells faster than expected, the business cannot necessarily replenish it next week — the next shipment may still be somewhere between the supplier and India. This is why international e-commerce businesses often need to think about inventory well before a customer places an order." }
         ]
       },
@@ -6556,7 +6526,7 @@ Now consider the opposite: the company imports a large quantity of a new product
         heading: "International Inventory and Domestic Fulfillment Should Be Connected",
         content: [
           { text: "For an importer, the supply chain has two broad stages. International inventory covers Supplier → Ocean/Air Freight → Indian Port → " },
-          { text: "Customs", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: "Customs", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: "/FTWZ/Warehouse — international transportation, customs requirements and inventory positioning. Domestic fulfillment covers Warehouse → Fulfillment → Customer → Returns — order processing, delivery and reverse logistics.\n\nThey're separate operational functions, but they can't be managed independently. If international inventory planning is poor, the fulfillment centre eventually feels the impact. If domestic demand changes, the international replenishment plan may need to change too." }
         ]
       },
@@ -6610,7 +6580,7 @@ That's what turns e-commerce fulfillment from simply moving parcels into a prope
     readTime: "16 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Project cargo logistics for water treatment and desalination plant equipment in India — customs clearance, staging warehousing, and sequencing multi-supplier shipments.",
+    metaDescription: "Project cargo logistics for water treatment and desalination plant equipment in India — customs clearance, staging and multi-supplier sequencing.",
     thumbnail: airSeaImg,
     imageAlt: "Water treatment plant pumps and pressure vessels being transported as project cargo",
     keywords: [
@@ -6707,9 +6677,7 @@ A project logistics dashboard should ideally answer simple questions: what has b
       {
         heading: "A Hypothetical Desalination Project",
         content: [
-          { text: "Consider a hypothetical desalination project on India's coastline, coordinated in part with guidance from the " },
-          { text: "Ministry of Jal Shakti", href: "https://jalshakti.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ". Large pumps are ready first, membrane equipment follows a few weeks later, and electrical and control equipment arrives separately — but the project site isn't ready to receive all the equipment at once.\n\nInstead of treating every shipment independently, the logistics team maps each shipment against the construction schedule. Equipment needed immediately is prioritised, equipment arriving ahead of schedule is managed through an appropriate storage arrangement, and oversized equipment is planned separately including its final transportation. The principle: the logistics plan should follow the project schedule, not simply the supplier's shipping schedule." }
+          { text: "Consider a hypothetical desalination project on India's coastline. Large pumps are ready first, membrane equipment follows a few weeks later, and electrical and control equipment arrives separately — but the project site isn't ready to receive all the equipment at once.\n\nInstead of treating every shipment independently, the logistics team maps each shipment against the construction schedule. Equipment needed immediately is prioritised, equipment arriving ahead of schedule is managed through an appropriate storage arrangement, and oversized equipment is planned separately including its final transportation. The principle: the logistics plan should follow the project schedule, not simply the supplier's shipping schedule." }
         ]
       },
       {
@@ -6750,8 +6718,8 @@ When those pieces are planned together, project cargo becomes easier to manage �
   },
   {
     slug: "customs-clearance-jewelry-precious-metals-imports",
-    title: "Customs Clearance for Jewelry and Precious Metals Imports in India",
-    excerpt: "Why a small jewelry shipment can carry outsized value and risk — customs valuation, the BIS hallmarking process that starts after clearance, and the security and insurance questions most cargo doesn't need to ask.",
+    title: "Customs Clearance for Jewellery and Precious Metals Imports in India",
+    excerpt: "Why a small jewellery shipment can carry outsized value and risk — customs valuation, the BIS hallmarking process that starts after clearance, and the security and insurance questions most cargo doesn't need to ask.",
     category: "FTWZ",
     readTime: "15 min read",
     date: "2026-08-20",
@@ -6846,9 +6814,7 @@ This is why it helps to have the complete movement mapped before the vessel or a
       {
         heading: "Not Every Jewellery Import Is the Same",
         content: [
-          { text: "\"Jewellery\" is a broad category. Gold jewellery, silver jewellery, bullion, components, unfinished articles and products intended for different purposes may have different customs and regulatory considerations, an industry represented in part by the " },
-          { text: "Gem and Jewellery Export Promotion Council", href: "https://www.gjepc.org", target: "_blank", rel: "noopener noreferrer" },
-          { text: ". BIS also identifies specific categories and exemptions within its hallmarking framework, so requirements should be checked against the actual product rather than assumed from its general description — a process that worked for one shipment may not automatically apply to the next one." }
+          { text: "\"Jewellery\" is a broad category. Gold jewellery, silver jewellery, bullion, components, unfinished articles and products intended for different purposes may have different customs and regulatory considerations. BIS also identifies specific categories and exemptions within its hallmarking framework, so requirements should be checked against the actual product rather than assumed from its general description — a process that worked for one shipment may not automatically apply to the next one." }
         ]
       },
       {
@@ -6868,7 +6834,7 @@ Requirements relating to customs classification, valuation, duties, BIS hallmark
         answer: "No. Customs clearance and BIS hallmarking are separate processes. Imported jewellery may need to go through testing and hallmarking at a BIS-recognised centre before it can be sold by a registered jeweller, even after the shipment has already cleared customs."
       },
       {
-        question: "Why does customs valuation get more scrutiny for jewelry imports?",
+        question: "Why does customs valuation get more scrutiny for jewellery imports?",
         answer: "Because a small, physically compact shipment can represent very high commercial value, valuation needs to be properly supported by commercial documents and based on the actual product and transaction — not estimated from a general rate or a previous shipment's value."
       },
       {
@@ -6889,7 +6855,7 @@ Requirements relating to customs classification, valuation, duties, BIS hallmark
     readTime: "17 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Medical device and diagnostic equipment supply chains — inventory planning, installation coordination, calibration, and spare-parts strategy for imported equipment.",
+    metaDescription: "Medical device and diagnostic equipment supply chains — inventory planning, installation, calibration and spare-parts strategy for imported equipment.",
     thumbnail: dutyImg,
     imageAlt: "Diagnostic medical equipment being prepared for installation at a healthcare facility",
     keywords: [
@@ -6984,9 +6950,7 @@ Where a business handles both, the warehouse and inventory system should clearly
       {
         heading: "The Service Network Should Influence Inventory Locations",
         content: [
-          { text: "Suppose a medical-device manufacturer, coordinated in part through industry bodies like " },
-          { text: "AiMeD", href: "https://www.aimedindia.com", target: "_blank", rel: "noopener noreferrer" },
-          { text: ", has equipment operating across Chennai, Bengaluru, Hyderabad and other cities. A centralised spare-parts model may provide good control, but response time needs to be considered — alternatively, selected parts may be positioned closer to major service markets.\n\nThe right model depends on the company's service commitments, equipment population and expected demand for parts. This is why medical-device supply-chain planning shouldn't stop when the original machine is delivered — the logistics network needs to support the equipment throughout its operating life." }
+          { text: "Suppose a medical-device manufacturer has equipment operating across Chennai, Bengaluru, Hyderabad and other cities. A centralised spare-parts model may provide good control, but response time needs to be considered — alternatively, selected parts may be positioned closer to major service markets.\n\nThe right model depends on the company's service commitments, equipment population and expected demand for parts. This is why medical-device supply-chain planning shouldn't stop when the original machine is delivered — the logistics network needs to support the equipment throughout its operating life." }
         ]
       },
       {
@@ -6999,7 +6963,7 @@ These questions connect the physical movement of the equipment with the customer
         heading: "Final Thoughts",
         content: [
           { text: "A medical-device supply chain is more than Supplier → Port → Hospital. A more realistic picture is: Manufacturer → International freight → Indian gateway → " },
-          { text: "Customs clearance", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: "Customs clearance", kw: true, href: "/free-trade-zone-services/customs-clearance" },
           { text: " → Warehouse → Site preparation → Transportation → Installation → Commissioning/calibration where applicable → Service and spare-parts support. Not every product follows every stage — some equipment moves directly to the customer, some requires temporary storage, some requires more extensive technical support.\n\nMedical-device logistics works best when the different parts of the supply chain are planned together — the freight team knowing when equipment is expected, the customs team having correct documentation, the warehouse understanding handling requirements, and the hospital being ready for installation. For eligible imported equipment, an FTWZ can potentially provide another point between international arrival and final installation; for equipment already in the field, the focus shifts to spare-parts availability and service support.\n\nAstromar Logistics Pvt. Ltd. provides FTWZ warehousing and related supply-chain solutions across strategic locations in India. With 10 FTWZ locations, 2 lakh+ sq ft of warehousing space, 10K+ sq ft of cold storage, 5K+ pallet positions and 500+ clients, operating since 2017, Astromar focuses on connecting international freight, customs clearance, inventory positioning, warehousing, transportation and installation requirements into a practical supply-chain structure.\n\nMedical-device import, storage, installation, calibration and distribution requirements vary by product and intended use. Importers should verify current CDSCO, customs, manufacturer and applicable standards or quality-system requirements for their specific equipment before shipment." }
         ]
       }
@@ -7084,9 +7048,7 @@ Passenger cars are the most obvious example, but RORO services can also be relev
       {
         heading: "Vehicle Handling Requires Attention to Detail",
         content: [
-          { text: "Vehicles may be more robust than some types of cargo, but they still need to be handled carefully. The logistics process may need to account for vehicle identification, condition, documentation and movement records, an area governed in part by " },
-          { text: "MoRTH", href: "https://morth.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: " regulations. For new vehicles, large-volume movements can involve hundreds of individual units, making accurate tracking important.\n\nThe process also needs to consider how vehicles are positioned, secured and released. The objective is straightforward: maintain control of the vehicles throughout the movement and make sure the right units reach the right destination." }
+          { text: "Vehicles may be more robust than some types of cargo, but they still need to be handled carefully. The logistics process may need to account for vehicle identification, condition, documentation and movement records. For new vehicles, large-volume movements can involve hundreds of individual units, making accurate tracking important.\n\nThe process also needs to consider how vehicles are positioned, secured and released. The objective is straightforward: maintain control of the vehicles throughout the movement and make sure the right units reach the right destination." }
         ]
       },
       {
@@ -7104,9 +7066,7 @@ The logistics team could evaluate whether a suitable RORO service connects the r
       {
         heading: "Sailing Schedules Need to Be Considered",
         content: [
-          { text: "One practical difference between road and coastal transportation is scheduling. A truck can often be dispatched according to the customer's preferred timing; a vessel operates according to its sailing schedule, coordinated in part through infrastructure overseen by the " },
-          { text: "Ministry of Ports, Shipping and Waterways", href: "https://shipmin.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ". That means automobile companies considering RORO need to work backwards from the sailing date — vehicles need to be ready, port movement arranged, documentation completed, and the destination team informed of the vessel's expected arrival.\n\nFor companies with predictable production volumes, this can be built into regular planning. For urgent or highly irregular movements, road transportation may provide greater flexibility." }
+          { text: "One practical difference between road and coastal transportation is scheduling. A truck can often be dispatched according to the customer's preferred timing; a vessel operates according to its sailing schedule. That means automobile companies considering RORO need to work backwards from the sailing date — vehicles need to be ready, port movement arranged, documentation completed, and the destination team informed of the vessel's expected arrival.\n\nFor companies with predictable production volumes, this can be built into regular planning. For urgent or highly irregular movements, road transportation may provide greater flexibility." }
         ]
       },
       {
@@ -7118,9 +7078,7 @@ Looking only at the vessel charge can give a misleading picture — a coastal se
       {
         heading: "When RORO May Not Be the Right Fit",
         content: [
-          { text: "There needs to be an appropriate service and suitable port infrastructure, a sailing schedule that works with the required delivery date, and enough shipment volume to make the arrangement practical. For a small number of vehicles on a short route, direct road transportation may be simpler.\n\nCoordinated in part through automotive industry bodies such as " },
-          { text: "SIAM", href: "https://www.siam.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ", the decision should be based on the actual route and operating requirements rather than applying the same model to every shipment." }
+          { text: "There needs to be an appropriate service and suitable port infrastructure, a sailing schedule that works with the required delivery date, and enough shipment volume to make the arrangement practical. For a small number of vehicles on a short route, direct road transportation may be simpler.\n\nThe decision should be based on the actual route and operating requirements rather than applying the same model to every shipment." }
         ]
       },
       {
@@ -7177,7 +7135,7 @@ RORO availability, vessel schedules, port facilities, vehicle-handling procedure
     readTime: "17 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Project cargo logistics for mining and heavy equipment in India — route planning, customs clearance, staging warehousing, and spare-parts strategy for remote sites.",
+    metaDescription: "Project cargo logistics for mining and heavy equipment in India — route planning, customs clearance, staging and spare-parts strategy for remote sites.",
     thumbnail: dutyImg,
     imageAlt: "Heavy mining equipment and excavator components being transported as project cargo",
     keywords: [
@@ -7268,9 +7226,7 @@ A planned inventory strategy can therefore consider not only the main equipment 
       {
         heading: "Coordination Becomes More Important as the Project Grows",
         content: [
-          { text: "A large project may involve the equipment manufacturer, freight forwarder, shipping line, port operator, customs professionals, transport contractors, lifting contractors, warehouse operators, engineering teams and the project owner, an industry overseen in part by India's " },
-          { text: "Ministry of Mines", href: "https://mines.gov.in", target: "_blank", rel: "noopener noreferrer" },
-          { text: ". Each party may have responsibility for only one section of the movement — the challenge is making sure those sections connect properly.\n\nA vessel arrival date affects port planning. Port clearance affects transportation. Transportation affects site delivery. Site readiness affects the final dispatch date. Project logistics therefore depends heavily on coordination and visibility." }
+          { text: "A large project may involve the equipment manufacturer, freight forwarder, shipping line, port operator, customs professionals, transport contractors, lifting contractors, warehouse operators, engineering teams and the project owner. Each party may have responsibility for only one section of the movement — the challenge is making sure those sections connect properly.\n\nA vessel arrival date affects port planning. Port clearance affects transportation. Transportation affects site delivery. Site readiness affects the final dispatch date. Project logistics therefore depends heavily on coordination and visibility." }
         ]
       },
       {
