@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   transpilePackages: ['three', '@react-three/fiber', '@react-three/drei'],
+  experimental: { inlineCss: true },
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     qualities: [65, 75],
