@@ -45,8 +45,8 @@ const CustomClearanceClient = () => {
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600"
-          alt="Team meeting in an office, with a woman arranging sticky notes on a wall"
+          src="/images/services/customs.webp"
+          alt="Illustration of two customs officers reviewing documents at a container port, with a ship and cranes at sunset"
           fill
           sizes="100vw"
           className="absolute inset-0 object-cover"

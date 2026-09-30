@@ -501,7 +501,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "free trade warehouse zone in mumbai, ftwz in mumbai, ftwz mumbai panvel, bonded warehouse in mumbai, custom bonded warehouse in mumbai, navi mumbai sez warehouse, panvel ftwz, dangerous goods warehouse mumbai, hazardous goods warehouse panvel",
       h1: "Free Trade Warehouse Zone in Mumbai",
       h1Subtitle: "Panvel, Navi Mumbai",
-      heroAlt: "Two construction workers in safety vests cutting steel rebar on a building site",
+      heroAlt: "Illustration of a warehouse with numbered loading docks, container trucks and a gated entrance, hills behind",
       bannerIntro: [
         { text: "Astromar's Panvel facility is a strategically-positioned " },
         { text: "free trade warehouse zone in mumbai", kw: true },
@@ -634,7 +634,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — Free Trade Warehouse Zone Mumbai (Panvel)",
         "description": "FTWZ warehouse at Panvel offering duty-free storage, GST deferral, and free trade zone benefits for automotive, electronics, FMCG, and chemicals sectors.",
         "url": "https://www.astromarfreezone.com/locations/mumbai-panvel",
-        "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
+        "image": "https://www.astromarfreezone.com/images/locations/panvel.webp",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
@@ -2189,7 +2189,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       keywords: "ftwz mundra, ftwz in mundra, mundra ftwz, apsez warehouse, adani ports sez, bonded warehousing in mundra, custom bonded warehousing in mundra, free trade warehouse zone in mundra, gujarat ftwz",
       h1: "FTWZ Mundra",
       h1Subtitle: "Adani Ports APSEZ, Gujarat",
-      heroAlt: "Truck driving along a mountain highway through a dry, rocky valley",
+      heroAlt: "Illustration of a container ship berthed under blue gantry cranes beside a busy container yard with trucks",
       bannerIntro: [
         { text: "Astromar's Mundra facility is a Government-notified " },
         { text: "ftwz mundra", kw: true },
@@ -2321,7 +2321,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ Mundra (APSEZ)",
         "description": "FTWZ warehousing within Adani Ports APSEZ — India's largest commercial port. Multi-cargo capabilities for Middle East, Africa, Europe, and Americas trade.",
         "url": "https://www.astromarfreezone.com/locations/mundra",
-        "image": "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1920&q=80",
+        "image": "https://www.astromarfreezone.com/images/locations/mundra.webp",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
