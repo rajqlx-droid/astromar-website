@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/10 pt-6 pb-1 text-center text-sm text-white/40">
+        <div className="border-t border-white/10 pt-6 pb-1 text-center text-sm text-white/50">
           <p>© {new Date().getFullYear()} Astromar Logistics Pvt Ltd. All rights reserved.</p>
         </div>
       </div>
