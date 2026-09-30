@@ -1845,7 +1845,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "name": "Astromar Logistics — FTWZ in Bangalore (Devanahalli Aerospace SEZ)",
         "description": "FTWZ warehousing in Devanahalli Aerospace SEZ — 5 km from Kempegowda Airport. Specialised for aerospace, defence, electronics, and high-value cargo.",
         "url": "https://www.astromarfreezone.com/locations/bengaluru",
-        "image": "https://images.unsplash.com/photo-1565793979038-b5b6d2bda985?w=1920&q=80",
+        "image": "https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?w=1920&q=80",
         "telephone": "+91 99402 11014",
         "address": {
           "@type": "PostalAddress",
