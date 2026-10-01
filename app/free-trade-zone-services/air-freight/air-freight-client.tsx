@@ -48,6 +48,7 @@ const AirFreightClient = () => {
           alt="Aircraft wing above the clouds at sunset"
           fill
           sizes="100vw"
+          quality={65}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"

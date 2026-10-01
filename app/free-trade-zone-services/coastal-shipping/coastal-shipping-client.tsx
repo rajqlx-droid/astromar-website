@@ -66,6 +66,7 @@ const CoastalShippingClient = () => {
           alt="Aerial view of a busy container port with stacked containers, gantry cranes and ships"
           fill
           sizes="100vw"
+          quality={65}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"

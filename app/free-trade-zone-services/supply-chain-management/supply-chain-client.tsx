@@ -81,6 +81,7 @@ const SupplyChainClient = () => {
           alt="Long warehouse aisle lined with tall pallet racks of boxed goods"
           fill
           sizes="100vw"
+          quality={65}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"

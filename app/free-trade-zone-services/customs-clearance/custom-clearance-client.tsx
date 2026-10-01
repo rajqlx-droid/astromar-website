@@ -49,6 +49,7 @@ const CustomClearanceClient = () => {
           alt="Illustration of two customs officers reviewing documents at a container port, with a ship and cranes at sunset"
           fill
           sizes="100vw"
+          quality={65}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"

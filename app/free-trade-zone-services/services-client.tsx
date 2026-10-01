@@ -17,6 +17,7 @@ const Services = () => {
           alt="Large warehouse interior with rows of shelving holding yellow bins and cardboard boxes, with pallet racking behind"
           fill
           sizes="100vw"
+          quality={65}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"

@@ -20,7 +20,7 @@ export default function LocationCarousel({ items }: { items: Loc[] }) {
             <button aria-label="Next" onClick={() => scroll(1)} className="w-10 h-10 rounded-lg border border-gray-200 bg-white text-[#1B3A6B] hover:bg-[#1B3A6B] hover:text-white transition-colors flex items-center justify-center text-lg">›</button>
           </div>
         </div>
-        <div ref={ref} className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 -mx-1 px-1">
+        <div ref={ref} className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3 -mx-1 px-1">
           {items.map((l) => (
             <Link key={l.slug} href={`/locations/${l.slug}`} className="group snap-start flex-[0_0_220px] rounded-xl border border-gray-200 bg-white p-4 hover:shadow-lg hover:border-[#F97316]/40 hover:-translate-y-0.5 transition-all">
               <h3 className="font-bold text-[#1B3A6B] group-hover:text-[#F97316] transition-colors">{l.city}</h3>

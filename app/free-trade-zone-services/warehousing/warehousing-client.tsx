@@ -48,6 +48,7 @@ const WarehousingClient = () => {
           alt="Large warehouse interior with rows of shelving, yellow bins and cardboard boxes"
           fill
           sizes="100vw"
+          quality={65}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"

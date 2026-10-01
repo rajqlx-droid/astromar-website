@@ -26,7 +26,7 @@ export default function ServicesCarousel({ currentHref }: { currentHref: string 
             </button>
           </div>
         </div>
-        <div ref={ref} className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 -mx-1 px-1">
+        <div ref={ref} className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3 -mx-1 px-1">
           {others.map((s) => {
             const Icon = s.icon;
             return (

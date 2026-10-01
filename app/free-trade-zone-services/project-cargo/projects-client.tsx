@@ -42,6 +42,7 @@ const ProjectsClient = () => {
           alt="Illustration of a large steel reactor vessel lifted by ship cranes above a multi-axle trailer on a quay"
           fill
           sizes="100vw"
+          quality={65}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"
@@ -129,8 +130,8 @@ const ProjectsClient = () => {
             <ScrollReveal delay={0.1}>
               <div className="relative rounded-xl overflow-hidden h-64 shadow-md w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
-                  alt="Heavy lift industrial project cargo"
+                  src="/images/locations/dahej.webp"
+                  alt="Illustration of a tanker berthed at an industrial jetty beside refinery storage tanks and process towers"
                   fill
                   sizes="(max-width:768px) 100vw, 50vw"
                   className="object-cover"
