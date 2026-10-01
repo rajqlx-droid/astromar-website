@@ -224,7 +224,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "FTWZ in Kochi", "item": "https://www.astromarfreezone.com/locations/kochi" }
         ]
       },
@@ -437,7 +437,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "FTWZ in Vizag", "item": "https://www.astromarfreezone.com/locations/vizag" }
         ]
       },
@@ -664,7 +664,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "Free Trade Warehouse Zone in Mumbai", "item": "https://www.astromarfreezone.com/locations/mumbai-panvel" }
         ]
       },
@@ -890,7 +890,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "FTWZ in Mumbai", "item": "https://www.astromarfreezone.com/locations/mumbai-jnpa" }
         ]
       },
@@ -1161,7 +1161,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "Chennai Free Trade Zone", "item": "https://www.astromarfreezone.com/locations/chennai-sriperumbudur" }
         ]
       },
@@ -1431,7 +1431,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "Free Trade Warehouse in Chennai", "item": "https://www.astromarfreezone.com/locations/chennai-vallur" }
         ]
       },
@@ -1649,7 +1649,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "FTWZ in Delhi NCR", "item": "https://www.astromarfreezone.com/locations/delhi-khurja" }
         ]
       },
@@ -1874,7 +1874,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "FTWZ in Bangalore", "item": "https://www.astromarfreezone.com/locations/bengaluru" }
         ]
       },
@@ -2124,7 +2124,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "FTWZ in Dahej", "item": "https://www.astromarfreezone.com/locations/dahej" }
         ]
       },
@@ -2350,7 +2350,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/free-trade-zone" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/locations" },
           { "@type": "ListItem", "position": 3, "name": "FTWZ Mundra", "item": "https://www.astromarfreezone.com/locations/mundra" }
         ]
       },

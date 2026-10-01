@@ -117,7 +117,7 @@ const Footer = () => {
         {/* Locations */}
         <div className="border-t border-white/10 pt-6 mb-6">
           <p className="font-semibold text-white mb-3 text-sm uppercase tracking-wider">
-            Our FTWZ Locations
+            <Link href="/locations" className="hover:text-[#F97316] transition-colors">Our FTWZ Locations</Link>
           </p>
           <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
             {locationLinks.map((loc) => (
