@@ -62,11 +62,11 @@ const CoastalShippingClient = () => {
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1600"
+          src="/images/heroes/coastal-port.webp"
           alt="Aerial view of a busy container port with stacked containers, gantry cranes and ships"
           fill
           sizes="100vw"
-          quality={65}
+          quality={50}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"

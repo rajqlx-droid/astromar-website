@@ -44,11 +44,11 @@ const WarehousingClient = () => {
       {/* ── Hero ── */}
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600"
+          src="/images/heroes/warehouse-aisle.webp"
           alt="Large warehouse interior with rows of shelving, yellow bins and cardboard boxes"
           fill
           sizes="100vw"
-          quality={65}
+          quality={50}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"

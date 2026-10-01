@@ -13,11 +13,11 @@ const Services = () => {
       {/* Hero */}
       <section className="relative bg-brand-navy py-20 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200"
+          src="/images/heroes/warehouse-aisle.webp"
           alt="Large warehouse interior with rows of shelving holding yellow bins and cardboard boxes, with pallet racking behind"
           fill
           sizes="100vw"
-          quality={65}
+          quality={50}
           className="absolute inset-0 object-cover"
           preload
           fetchPriority="high"
