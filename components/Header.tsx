@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about-us" },
   { label: "Services", href: "/free-trade-zone-services" },
-  { label: "Locations", href: "/locations" },
   { label: "FTWZ", href: "/free-trade-zone" },
   { label: "Contact", href: "/contact-us" },
 ];

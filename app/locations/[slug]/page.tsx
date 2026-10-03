@@ -91,7 +91,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
               <nav aria-label="Breadcrumb" className="text-xs text-white/60 mb-6">
                 <span className="hover:text-white/80"><Link href="/">Astromar</Link></span>
                 <span className="mx-2">›</span>
-                <span className="hover:text-white/80"><Link href="/locations">Locations</Link></span>
+                <span className="hover:text-white/80"><Link href="/contact-us">Locations</Link></span>
                 <span className="mx-2">›</span>
                 <span className="text-[#F97316]">{seoDetail.seo.h1}</span>
               </nav>
