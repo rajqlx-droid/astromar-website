@@ -5,6 +5,7 @@ import ServicesCarousel from "../ServicesCarousel";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
@@ -214,6 +215,39 @@ const CustomClearanceClient = () => {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── S4b: FTWZ Customs Clearance ── */}
+      <section className="py-16 bg-blue-50">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
+          <ScrollReveal>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
+              How FTWZ Customs Clearance Works
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={0.06}>
+            <div className="space-y-4 text-sm md:text-base text-foreground/80 leading-relaxed">
+              <p>
+                Goods received into a Free Trade Warehousing Zone stay under customs control. They aren't cleared for domestic use on arrival, so clearance happens in steps, depending on what you do with the goods.
+              </p>
+              <ol className="list-decimal pl-5 space-y-3 marker:font-bold marker:text-orange-500">
+                {[
+                  { lead: "Receipt into the zone.", text: "The goods arrive and are received against the applicable customs documents." },
+                  { lead: "Holding and handling.", text: "While under customs control, goods can be stored and, where permitted, repacked, relabelled, sorted, kitted, inspected or consolidated, subject to applicable rules." },
+                  { lead: "Release.", text: "Each consignment, or each part of one, is then cleared into the Domestic Tariff Area (DTA), re-exported, or transferred to another unit where permitted." },
+                  { lead: "Filing.", text: "Astromar coordinates the paperwork and filings for each movement, subject to applicable customs rules." },
+                ].map((item) => (
+                  <li key={item.lead} className="pl-1">
+                    <strong className="font-semibold text-foreground">{item.lead}</strong> {item.text}
+                  </li>
+                ))}
+              </ol>
+              <p>
+                Duty and tax timing follows the point at which goods are cleared into the domestic market, so clearing in stages can be worth planning. For a side-by-side look at how this differs from a standard port release, read our comparison of <Link href="/blogs/ftwz-customs-clearance-vs-standard-port-clearance-comparison" className="underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]">FTWZ-based customs clearance and standard port clearance</Link>.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
