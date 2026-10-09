@@ -5,28 +5,20 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 import type { AuditIssue, BaseKey, ExpectedMark, IgnoredFlag, ScanEvent, ScanListItem, ScanResult } from "@/lib/seo-audit/types";
 import { IconFilter, IconLock, IconPlay, IconSearch, IconSpinner } from "./icons";
-import ImagesTab from "./ImagesTab";
-import PageSeoTab, { type ViewPage } from "./PageSeoTab";
+import SeoTab, { type ViewPage } from "./SeoTab";
 import RedirectsTab from "./RedirectsTab";
 import SitePanels from "./SitePanels";
 import WordingTab from "./WordingTab";
 import StatusPills from "./StatusPills";
 import { HIDDEN_PAGES } from "@/data/seoHiddenPages";
+import { seoThemeVars } from "./theme";
 import { formatShortDateTime } from "./ui";
 
-type TabKey = "pages" | "images" | "wording" | "redirects";
 type MarkBody =
   | { action: "expected-add"; url: string; reason?: string }
   | { action: "expected-remove"; url: string }
   | { action: "ignore-add"; url: string; flag: string }
   | { action: "ignore-remove"; url: string; flag: string };
-
-const TABS: { key: TabKey; label: string }[] = [
-  { key: "pages", label: "Page SEO" },
-  { key: "images", label: "Image SEO" },
-  { key: "wording", label: "Wording check" },
-  { key: "redirects", label: "Status and redirects" },
-];
 
 const BASES: { key: BaseKey; label: string }[] = [
   { key: "local", label: "Localhost:3000" },
@@ -81,7 +73,6 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
   const [notConnected, setNotConnected] = useState(false);
   // Small inline message next to a Mark / Ignore button when Supabase is missing.
   const [markNote, setMarkNote] = useState<{ target: string; text: string } | null>(null);
-  const [tab, setTab] = useState<TabKey>("pages");
   const [problemsOnly, setProblemsOnly] = useState(false);
   const [query, setQuery] = useState("");
   const [expected, setExpected] = useState<Set<string>>(() => new Set(expectedProp.map((e) => e.url)));
@@ -259,8 +250,7 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
       imagesEmptyAlt: images.filter((i) => i.alt !== null && i.alt.trim() === "").length,
       wordingAll: wording.length,
       allPages: pages,
-      pages: pages.filter((p) => (!problemsOnly || p.hasProblem) && matches(p.path, p.title, p.description, p.keyword, p.group, ...p.h1)),
-      images: images.filter((i) => (!problemsOnly || i.hasProblem) && matches(i.fileName, i.src, i.alt, ...i.foundOn)),
+      allImages: images,
       wording: wording.filter((w) => matches(w.phrase, w.path, w.snippet)),
       redirects: result.redirects.filter((r) => {
         const isProblem = r.severity !== "good" && !(r.result === "Live, not in sitemap" && expected.has(r.path));
@@ -269,33 +259,22 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
     };
   }, [result, problemsOnly, q, expected, ignored]);
 
-  const countLine =
-    result && view
-      ? {
-          pages: `${view.pages.length} of ${result.pages.length} pages shown`,
-          images: `${view.images.length} images shown`,
-          wording: `${view.wording.length} of ${result.wording.length} matches shown`,
-          redirects: `${view.redirects.length} of ${result.redirects.length} URLs shown`,
-        }[tab]
-      : "";
-
   const phaseIndex = progress ? Math.max(0, PHASES.indexOf(progress.phase)) : 0;
   const pct = progress && progress.total > 0 ? Math.round((progress.done / progress.total) * 100) : 0;
 
-  const scanDisabledNotice = "Run a scan from your local machine (ENABLE_SEO_ADMIN_SCAN=true in .env.local). The saved result will appear here.";
+  const noScanNotice = "No scan saved yet. Run a scan on your computer and it will appear here.";
   const showPicker = scans.length + (unsaved ? 1 : 0) > 1 || (supabaseReady && scans.length + (unsaved ? 1 : 0) >= 1);
 
-  const panelClass = "flex min-h-0 flex-col overflow-hidden rounded-xl border border-[#D9DFEA] bg-white";
-  const panelHead = "shrink-0 border-b border-[#E6EAF2] px-4 py-3 text-sm font-bold text-[#1B3A6B]";
+  const panelClass = "flex min-h-0 flex-col overflow-hidden rounded-xl border border-[color:var(--seo-border)] bg-[var(--seo-cardBg)]";
 
   return (
-    <div className="relative flex min-h-screen flex-col bg-[#F3F5F9] text-[#1A2233] min-[900px]:h-screen min-[900px]:min-h-[760px] min-[900px]:overflow-hidden">
+    <div style={seoThemeVars} className="relative flex min-h-screen flex-col bg-[var(--seo-pageBg)] text-[color:var(--seo-ink)] min-[900px]:h-screen min-[900px]:min-h-[760px] min-[900px]:overflow-hidden">
       {/* Top bar */}
-      <header className="relative z-20 shrink-0 bg-[#1B3A6B] text-white">
+      <header className="relative z-20 shrink-0 bg-[var(--seo-navy)] text-[color:var(--seo-onNavy)]">
         <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 px-4 py-2 min-[900px]:px-5">
           <div className="flex min-w-0 flex-wrap items-baseline gap-x-3">
             <h1 className="text-xl font-bold">SEO Audit</h1>
-            <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.08em] text-[#C9D6EE]">
+            <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.08em] text-[color:var(--seo-navyText)]">
               <IconLock />
               Astromar Logistics - Private admin
             </div>
@@ -307,7 +286,7 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                 type="button"
                 onClick={signOut}
                 title={adminEmail}
-                className="min-h-11 rounded-lg border border-[#6F8BBE] px-4 text-sm font-semibold text-[#E3EBF8] transition-colors hover:bg-white/10"
+                className="min-h-11 rounded-lg border border-[color:var(--seo-navyOutline)] px-4 text-sm font-semibold text-[color:var(--seo-navyTextBright)] transition-colors hover:bg-[var(--seo-whiteTint10)]"
               >
                 Sign out
               </button>
@@ -317,96 +296,71 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
       </header>
 
       <div className="flex min-h-0 flex-1 flex-col gap-4 p-4 min-[900px]:flex-row min-[900px]:p-5">
-        {/* Left: tabs and content */}
+        {/* Left: one card; its tabs live inside it */}
         <div className="flex min-w-0 flex-col min-[900px]:min-h-0 min-[900px]:flex-1">
-          <div role="tablist" aria-label="Audit sections" className="flex shrink-0 flex-wrap gap-1 border-b-2 border-[#D9DFEA]">
-            {TABS.map((t) => {
-              const on = tab === t.key;
-              return (
-                <button
-                  key={t.key}
-                  type="button"
-                  role="tab"
-                  id={`tab-${t.key}`}
-                  aria-selected={on}
-                  aria-controls={`panel-${t.key}`}
-                  onClick={() => setTab(t.key)}
-                  className={`-mb-[2px] min-h-11 border-b-[3px] px-4 text-[15px] transition-colors ${
-                    on ? "border-[#F97316] font-bold text-[#1B3A6B]" : "border-transparent font-medium text-[#3A4560] hover:text-[#1B3A6B]"
-                  }`}
-                >
-                  {t.label}
-                </button>
-              );
-            })}
-          </div>
-
-          <div
-            role="tabpanel"
-            id={`panel-${tab}`}
-            aria-labelledby={`tab-${tab}`}
-            className={`mt-3 max-h-[75vh] min-[900px]:max-h-none min-[900px]:flex-1 ${panelClass}`}
-          >
+          <div className={`h-[80vh] min-[900px]:h-auto min-[900px]:flex-1 ${panelClass}`}>
             {!result || !view ? (
               <div className="flex flex-1 flex-col items-center justify-center overflow-y-auto px-6 py-10 text-center">
-                <h2 className="text-lg font-semibold text-[#1B3A6B]">No saved scan yet</h2>
-                <p className="mx-auto mt-2 max-w-xl text-sm text-[#4A5670]">
+                <h2 className="text-lg font-semibold text-[color:var(--seo-navy)]">No saved scan yet</h2>
+                <p className="mx-auto mt-2 max-w-xl text-sm text-[color:var(--seo-mutedText)]">
                   {scanEnabled
                     ? "Choose a site and click Run scan. Every URL from app/sitemap.ts is fetched (5 at a time), plus robots.txt, sitemap.xml, image sizes and the legacy redirect list. The result is saved to Supabase."
-                    : scanDisabledNotice}
+                    : noScanNotice}
                 </p>
               </div>
             ) : (
-              <>
-                {tab !== "pages" && (
-                  <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-[#E6EAF2] p-3">
-                    {(tab === "images" || tab === "redirects") && (
-                      <button
-                        type="button"
-                        aria-pressed={problemsOnly}
-                        onClick={() => setProblemsOnly((v) => !v)}
-                        className={`inline-flex min-h-11 items-center gap-2 rounded-lg border px-4 text-sm font-semibold ${
-                          problemsOnly ? "border-[#F97316] bg-[#FFEBD9] text-[#1A2233]" : "border-[#B8C2D6] bg-white text-[#1A2233]"
-                        }`}
-                      >
-                        <IconFilter />
-                        {problemsOnly ? "Problems only: on" : "Problems only"}
-                      </button>
-                    )}
-                    <label className="relative flex min-w-0 flex-[1_1_220px] md:max-w-[380px]">
-                      <span className="sr-only">Search</span>
-                      <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[#4A5670]">
-                        <IconSearch />
-                      </span>
-                      <input
-                        type="search"
-                        value={query}
-                        onChange={(e) => setQuery(e.target.value)}
-                        placeholder="Search URL, title or text"
-                        className="min-h-11 w-full rounded-lg border border-[#B8C2D6] bg-white pl-10 pr-3 text-[15px] outline-none focus:border-[#1B3A6B] focus:ring-2 focus:ring-[#1B3A6B]/20"
-                      />
-                    </label>
-                    <div className="text-[13px] text-[#4A5670]" aria-live="polite">
-                      {countLine}
+              <SeoTab
+                key={result.id ?? result.finishedAt}
+                pages={view.allPages}
+                images={view.allImages}
+                markNote={markNote}
+                onIgnore={(path, code) => setIgnoredFlag(path, code, true)}
+                onRestore={(path, code) => setIgnoredFlag(path, code, false)}
+                renderOther={(t) => (
+                  <>
+                    <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-[color:var(--seo-dividerSoft)] p-3">
+                      {t === "redirects" && (
+                        <button
+                          type="button"
+                          aria-pressed={problemsOnly}
+                          onClick={() => setProblemsOnly((v) => !v)}
+                          className={`inline-flex min-h-11 items-center gap-2 rounded-lg border px-4 text-sm font-semibold ${
+                            problemsOnly ? "border-[color:var(--seo-orange)] bg-[var(--seo-toggleOnBg)] text-[color:var(--seo-ink)]" : "border-[color:var(--seo-borderStrong)] bg-[var(--seo-cardBg)] text-[color:var(--seo-ink)]"
+                          }`}
+                        >
+                          <IconFilter />
+                          {problemsOnly ? "Problems only: on" : "Problems only"}
+                        </button>
+                      )}
+                      <label className="relative flex min-w-0 flex-[1_1_220px] md:max-w-[380px]">
+                        <span className="sr-only">Search</span>
+                        <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--seo-mutedText)]">
+                          <IconSearch />
+                        </span>
+                        <input
+                          type="search"
+                          value={query}
+                          onChange={(e) => setQuery(e.target.value)}
+                          placeholder="Search URL, title or text"
+                          className="min-h-11 w-full rounded-lg border border-[color:var(--seo-borderStrong)] bg-[var(--seo-cardBg)] pl-10 pr-3 text-[15px] outline-none focus:border-[color:var(--seo-navy)] focus:ring-2 focus:ring-[color:var(--seo-navyRing20)]"
+                        />
+                      </label>
+                      <div className="text-[13px] text-[color:var(--seo-mutedText)]" aria-live="polite">
+                        {t === "wording"
+                          ? `${view.wording.length} of ${result.wording.length} matches shown`
+                          : `${view.redirects.length} of ${result.redirects.length} URLs shown`}
+                      </div>
                     </div>
-                  </div>
+                    <div className="min-h-0 flex-1 overflow-auto">
+                      {t === "wording" ? (
+                        <WordingTab matches={view.wording} />
+                      ) : (
+                        <RedirectsTab checks={view.redirects} baseUrl={result.baseUrl} expected={expected} />
+                      )}
+                    </div>
+                  </>
                 )}
-                <div className={tab === "pages" ? "min-h-0 flex-1" : "min-h-0 flex-1 overflow-auto"}>
-                  {tab === "pages" && (
-                    <PageSeoTab
-                      key={result.id ?? result.finishedAt}
-                      pages={view.allPages}
-                      host={hostOf(result.baseUrl)}
-                      markNote={markNote}
-                      onIgnore={(path, code) => setIgnoredFlag(path, code, true)}
-                      onRestore={(path, code) => setIgnoredFlag(path, code, false)}
-                    />
-                  )}
-                  {tab === "images" && <ImagesTab images={view.images} />}
-                  {tab === "wording" && <WordingTab matches={view.wording} />}
-                  {tab === "redirects" && <RedirectsTab checks={view.redirects} baseUrl={result.baseUrl} expected={expected} />}
-                </div>
-              </>
+              />
             )}
           </div>
         </div>
@@ -416,9 +370,9 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
           className="flex w-full min-w-0 flex-col gap-3 min-[900px]:min-h-0 min-[900px]:w-[264px] min-[900px]:flex-[0_0_264px] min-[900px]:overflow-y-auto"
           aria-label="Scan and site files"
         >
-          <section className="shrink-0 rounded-xl border-b-4 border-[#F97316] bg-[#1B3A6B] p-3.5 text-white" aria-labelledby="scan-heading">
-            <h2 id="scan-heading" className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#C9D6EE]">
-              Scan
+          <section className="shrink-0 rounded-xl border-b-4 border-[color:var(--seo-scanOrange)] bg-[var(--seo-navy)] p-3.5 text-[color:var(--seo-onNavy)]" aria-labelledby="scan-heading">
+            <h2 id="scan-heading" className="text-[11px] font-bold uppercase tracking-[0.08em] text-[color:var(--seo-navyText)]">
+              {scanEnabled ? "Scan" : "Last scan"}
             </h2>
             {scanEnabled ? (
               <div className="mt-2 flex flex-col gap-2.5">
@@ -426,7 +380,7 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                   type="button"
                   onClick={runScan}
                   disabled={running}
-                  className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-[#F97316] px-4 text-[15px] font-bold text-[#1A1205] transition-colors hover:bg-[#FB8A3C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white disabled:cursor-wait disabled:opacity-80"
+                  className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--seo-scanOrange)] px-4 text-[15px] font-bold text-[color:var(--seo-onOrange)] transition-colors hover:bg-[var(--seo-scanOrangeHover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--seo-onNavy)] disabled:cursor-wait disabled:opacity-80"
                 >
                   {running ? <IconSpinner /> : <IconPlay />}
                   {running ? "Scanning..." : "Run scan"}
@@ -435,39 +389,39 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                 {running && progress && (
                   <div>
                     <div aria-live="polite" className="text-xs">
-                      <span className="font-semibold text-white">
+                      <span className="font-semibold text-[color:var(--seo-onNavy)]">
                         Step {phaseIndex + 1} of {PHASES.length}: {progress.phase}
                       </span>
-                      <span className="block break-all text-[#C9D6EE]">
+                      <span className="block break-all text-[color:var(--seo-navyText)]">
                         {progress.done} of {progress.total}
                         {progress.label ? ` - ${progress.label}` : ""}
                       </span>
                     </div>
                     <div
-                      className="mt-1.5 h-2 overflow-hidden rounded-full bg-white/20"
+                      className="mt-1.5 h-2 overflow-hidden rounded-full bg-[var(--seo-whiteTint20)]"
                       role="progressbar"
                       aria-valuemin={0}
                       aria-valuemax={100}
                       aria-valuenow={pct}
                       aria-label="Scan progress"
                     >
-                      <div className="h-full rounded-full bg-[#F97316] transition-[width] duration-300" style={{ width: `${pct}%` }} />
+                      <div className="h-full rounded-full bg-[var(--seo-orange)] transition-[width] duration-300" style={{ width: `${pct}%` }} />
                     </div>
                   </div>
                 )}
 
                 {loadError && (
-                  <div role="alert" className="rounded-lg border border-[#E8A9A9] bg-[#FDECEC] px-3 py-2 text-xs text-[#7A1010]">
+                  <div role="alert" className="rounded-lg border border-[color:var(--seo-errorBorder)] bg-[var(--seo-errorBg)] px-3 py-2 text-xs text-[color:var(--seo-badText)]">
                     {loadError}
                   </div>
                 )}
                 {error && (
-                  <div role="alert" className="rounded-lg border border-[#E8A9A9] bg-[#FDECEC] px-3 py-2 text-xs text-[#7A1010]">
+                  <div role="alert" className="rounded-lg border border-[color:var(--seo-errorBorder)] bg-[var(--seo-errorBg)] px-3 py-2 text-xs text-[color:var(--seo-badText)]">
                     {error}
                   </div>
                 )}
 
-                <div role="radiogroup" aria-label="Site to scan" className="flex overflow-hidden rounded-lg border border-[#6F8BBE]">
+                <div role="radiogroup" aria-label="Site to scan" className="flex overflow-hidden rounded-lg border border-[color:var(--seo-navyOutline)]">
                   {BASES.map((b) => {
                     const on = base === b.key;
                     return (
@@ -478,8 +432,8 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                         aria-checked={on}
                         disabled={running}
                         onClick={() => setBase(b.key)}
-                        className={`min-h-11 flex-1 px-1 text-xs font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#F97316] disabled:cursor-not-allowed ${
-                          on ? "bg-white text-[#1B3A6B]" : "bg-transparent text-white hover:bg-white/10"
+                        className={`min-h-11 flex-1 px-1 text-xs font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[color:var(--seo-orange)] disabled:cursor-not-allowed ${
+                          on ? "bg-[var(--seo-cardBg)] text-[color:var(--seo-navy)]" : "bg-transparent text-[color:var(--seo-onNavy)] hover:bg-[var(--seo-whiteTint10)]"
                         }`}
                       >
                         {b.key === "local" ? "Localhost" : "Live site"}
@@ -490,14 +444,13 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
               </div>
             ) : (
               <>
-                <p className="mt-2 text-xs text-[#E3EBF8]">{scanDisabledNotice}</p>
                 {loadError && (
-                  <div role="alert" className="mt-2 rounded-lg border border-[#E8A9A9] bg-[#FDECEC] px-3 py-2 text-xs text-[#7A1010]">
+                  <div role="alert" className="mt-2 rounded-lg border border-[color:var(--seo-errorBorder)] bg-[var(--seo-errorBg)] px-3 py-2 text-xs text-[color:var(--seo-badText)]">
                     {loadError}
                   </div>
                 )}
                 {error && (
-                  <div role="alert" className="mt-2 rounded-lg border border-[#E8A9A9] bg-[#FDECEC] px-3 py-2 text-xs text-[#7A1010]">
+                  <div role="alert" className="mt-2 rounded-lg border border-[color:var(--seo-errorBorder)] bg-[var(--seo-errorBg)] px-3 py-2 text-xs text-[color:var(--seo-badText)]">
                     {error}
                   </div>
                 )}
@@ -506,14 +459,14 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
 
             {showPicker && result && (
               <label className="mt-3 flex flex-col gap-1">
-                <span className="text-[11px] text-[#C9D6EE]">Saved scan</span>
+                <span className="text-[11px] text-[color:var(--seo-navyText)]">Saved scan</span>
                 <select
                   value={unsaved ? "" : (result.id ?? "")}
                   onChange={(e) => {
                     setUnsaved(null);
                     router.push(`/admin/seo?scan=${e.target.value}`);
                   }}
-                  className="min-h-11 w-full rounded-lg border border-white bg-white px-2 text-[13px] text-[#1A2233] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97316]"
+                  className="min-h-11 w-full rounded-lg border border-[color:var(--seo-onNavy)] bg-[var(--seo-cardBg)] px-2 text-[13px] text-[color:var(--seo-ink)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--seo-orange)]"
                 >
                   {unsaved && <option value="">Unsaved scan from this run</option>}
                   {scans.map((s, i) => (
@@ -525,8 +478,9 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
               </label>
             )}
             {result && (
-              <p className="mt-1.5 font-mono text-[11px] text-[#C9D6EE]">
-                {hostOf(result.baseUrl)} - {Math.round(result.durationMs / 1000)}s
+              <p className={`mt-1.5 text-[11px] text-[color:var(--seo-navyText)] ${scanEnabled ? "font-mono" : "break-words"}`}>
+                {hostOf(result.baseUrl)} - {scanEnabled ? "" : `${formatShortDateTime(result.finishedAt)} - `}
+                {Math.round(result.durationMs / 1000)}s
               </p>
             )}
 
@@ -543,27 +497,32 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                     tint: false,
                   },
                 ].map((s) => (
-                  <div key={s.label} title={s.note} className={`rounded-lg px-2.5 py-2 ${s.tint ? "bg-[#F97316]/30" : "bg-white/12"}`}>
-                    <div className="text-xl font-bold leading-tight text-white">{s.value}</div>
-                    <div className={`text-[11px] ${s.tint ? "text-[#FFD9B3]" : "text-[#C9D6EE]"}`}>{s.label}</div>
+                  <div key={s.label} title={s.note} className={`rounded-lg px-2.5 py-2 ${s.tint ? "bg-[var(--seo-orangeTint30)]" : "bg-[var(--seo-whiteTint12)]"}`}>
+                    <div className="text-xl font-bold leading-tight text-[color:var(--seo-onNavy)]">{s.value}</div>
+                    <div className={`text-[11px] ${s.tint ? "text-[color:var(--seo-highlight)]" : "text-[color:var(--seo-navyText)]"}`}>{s.label}</div>
                   </div>
                 ))}
-                <div title="for review" className="col-span-2 flex items-center justify-between rounded-lg bg-white/12 px-2.5 py-2">
-                  <span className="text-[11px] text-[#C9D6EE]">Wording matches</span>
-                  <span className="text-xl font-bold leading-tight text-white">{view.wordingAll}</span>
+                <div title="for review" className="col-span-2 flex items-center justify-between rounded-lg bg-[var(--seo-whiteTint12)] px-2.5 py-2">
+                  <span className="text-[11px] text-[color:var(--seo-navyText)]">Wording matches</span>
+                  <span className="text-xl font-bold leading-tight text-[color:var(--seo-onNavy)]">{view.wordingAll}</span>
                 </div>
               </div>
+            )}
+            {!scanEnabled && (
+              <p className="mt-3 text-[11px] leading-snug text-[color:var(--seo-navyText)]">
+                {result ? "Scans run on your computer. Results appear here after each scan." : noScanNotice}
+              </p>
             )}
           </section>
 
           {result ? (
             <SitePanels robots={result.robots} sitemap={result.sitemap} expected={expected} onToggleExpected={toggleExpected} inlineNote={markNote} />
           ) : (
-            <section className="shrink-0 rounded-xl border border-[#C5D0E4] bg-[#EAF0FA] p-3.5" aria-labelledby="files-heading">
-              <h2 id="files-heading" className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#1B3A6B]">
+            <section className="shrink-0 rounded-xl border border-[color:var(--seo-tintBorder)] bg-[var(--seo-tintBg)] p-3.5" aria-labelledby="files-heading">
+              <h2 id="files-heading" className="text-[11px] font-bold uppercase tracking-[0.08em] text-[color:var(--seo-navy)]">
                 Site files
               </h2>
-              <p className="mt-2 text-xs text-[#4A5670]">Run a scan to see robots.txt and the sitemap check.</p>
+              <p className="mt-2 text-xs text-[color:var(--seo-mutedText)]">Run a scan to see robots.txt and the sitemap check.</p>
             </section>
           )}
         </aside>

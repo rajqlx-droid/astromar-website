@@ -81,16 +81,6 @@ export function IconLock({ className = "h-3.5 w-3.5" }: IconProps) {
   );
 }
 
-export function IconImage({ className = "h-5 w-5" }: IconProps) {
-  return (
-    <svg {...base} className={className}>
-      <rect x="3" y="3" width="18" height="18" rx="2" />
-      <circle cx="8.5" cy="8.5" r="1.5" />
-      <polyline points="21 15 16 10 5 21" />
-    </svg>
-  );
-}
-
 export function IconChevron({ className = "h-4 w-4" }: IconProps) {
   return (
     <svg {...base} className={className}>

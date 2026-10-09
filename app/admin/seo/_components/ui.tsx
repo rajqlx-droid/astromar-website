@@ -4,11 +4,11 @@ import { IconAlert, IconCheck, IconX } from "./icons";
 export type Tone = "ok" | "warn" | "bad" | "neutral" | "keyword";
 
 const toneClass: Record<Tone, string> = {
-  ok: "bg-[#DDF3E4] text-[#0F4A22]",
-  warn: "bg-[#FFE9B8] text-[#5A3A00]",
-  bad: "bg-[#FAD4D4] text-[#7A1010]",
-  neutral: "bg-[#E6EBF5] text-[#1B3A6B]",
-  keyword: "bg-[#FDE7D3] text-[#6B2C00]",
+  ok: "bg-[var(--seo-okBg)] text-[color:var(--seo-okText)]",
+  warn: "bg-[var(--seo-cautionBg)] text-[color:var(--seo-cautionText)]",
+  bad: "bg-[var(--seo-badBg)] text-[color:var(--seo-badText)]",
+  neutral: "bg-[var(--seo-neutralBg)] text-[color:var(--seo-navy)]",
+  keyword: "bg-[var(--seo-keywordBg)] text-[color:var(--seo-keywordText)]",
 };
 
 export function toneFor(severity: Severity): Tone {
@@ -34,7 +34,7 @@ export function SeverityTag({ severity }: { severity: Severity }) {
 }
 
 export function Card({ className = "", children }: { className?: string; children: React.ReactNode }) {
-  return <div className={`rounded-xl border border-[#D9DFEA] bg-white ${className}`}>{children}</div>;
+  return <div className={`rounded-xl border border-[color:var(--seo-border)] bg-[var(--seo-cardBg)] ${className}`}>{children}</div>;
 }
 
 export function formatBytes(bytes: number | null): string {
@@ -56,7 +56,7 @@ export function formatDateTime(value: string | number | Date): string {
 }
 
 export function EmptyRow({ children }: { children: React.ReactNode }) {
-  return <Card className="px-6 py-10 text-center text-sm text-[#4A5670]">{children}</Card>;
+  return <Card className="px-6 py-10 text-center text-sm text-[color:var(--seo-mutedText)]">{children}</Card>;
 }
 
 const shortDateTimeFormatter = new Intl.DateTimeFormat("en-IN", {

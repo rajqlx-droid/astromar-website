@@ -22,10 +22,10 @@ function Field({ label, chip, children }: { label: string; chip?: React.ReactNod
   return (
     <div className="text-sm leading-normal">
       <div className="flex flex-wrap items-center gap-2">
-        <span className="font-semibold text-[#1A2233]">{label}</span>
+        <span className="font-semibold text-[color:var(--seo-ink)]">{label}</span>
         {chip}
       </div>
-      <div className="mt-0.5 break-words text-[#2B364D]">{children}</div>
+      <div className="mt-0.5 break-words text-[color:var(--seo-inkSoft)]">{children}</div>
     </div>
   );
 }
@@ -55,16 +55,16 @@ export default function PageDetail({ page, onIgnore, onRestore, markNote }: Prop
     <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-3">
           <Field label="SEO title" chip={<Chip tone={lengthTone(titleLen, 30, 60, true)}>{`${titleLen} chars`}</Chip>}>
-            {page.title || <span className="italic text-[#7A1010]">(missing)</span>}
+            {page.title || <span className="italic text-[color:var(--seo-badText)]">(missing)</span>}
           </Field>
           <Field label="Meta description" chip={<Chip tone={lengthTone(descLen, 70, 160, true)}>{`${descLen} chars`}</Chip>}>
-            {page.description || <span className="italic text-[#7A1010]">(missing)</span>}
+            {page.description || <span className="italic text-[color:var(--seo-badText)]">(missing)</span>}
           </Field>
           <Field label="Canonical" chip={<Chip tone={canonicalTone}>{canonicalLabel}</Chip>}>
             <span className="break-all font-mono text-[13px]">{page.canonical ?? "(missing)"}</span>
           </Field>
           <Field label="H1" chip={<Chip tone={h1Tone}>{`${page.h1.length} found`}</Chip>}>
-            {page.h1.length ? page.h1.join("  |  ") : <span className="italic text-[#7A1010]">(none)</span>}
+            {page.h1.length ? page.h1.join("  |  ") : <span className="italic text-[color:var(--seo-badText)]">(none)</span>}
           </Field>
           <Field
             label="Focus keyword"
@@ -88,42 +88,42 @@ export default function PageDetail({ page, onIgnore, onRestore, markNote }: Prop
                 <YesNo yes={page.keywordIn.url} label="URL" />
               </div>
             ) : (
-              <span className="text-[13px] text-[#4A5670]">Add one in data/seoKeywords.ts</span>
+              <span className="text-[13px] text-[color:var(--seo-mutedText)]">Add one in data/seoKeywords.ts</span>
             )}
           </Field>
         </div>
 
         <div>
-          <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#4A5670]">Google result preview</div>
-          <div className="rounded-xl border border-[#E1E5EE] bg-white px-4 py-4" style={{ fontFamily: "Arial, sans-serif" }}>
-            <div className="break-all text-[13px] text-[#2E6B3A]">{crumb(page.path)}</div>
-            <div className="mt-0.5 text-xl leading-snug text-[#1A0DAB]">{cut(page.title || "Untitled page", 60)}</div>
-            <div className="mt-1 text-sm leading-relaxed text-[#4D5156]">
+          <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[color:var(--seo-mutedText)]">Google result preview</div>
+          <div className="rounded-xl border border-[color:var(--seo-previewBorder)] bg-[var(--seo-cardBg)] px-4 py-4" style={{ fontFamily: "Arial, sans-serif" }}>
+            <div className="break-all text-[13px] text-[color:var(--seo-googleGreen)]">{crumb(page.path)}</div>
+            <div className="mt-0.5 text-xl leading-snug text-[color:var(--seo-googleBlue)]">{cut(page.title || "Untitled page", 60)}</div>
+            <div className="mt-1 text-sm leading-relaxed text-[color:var(--seo-googleGrey)]">
               {page.description ? cut(page.description, 160) : "No description provided. Google will pick text from the page."}
             </div>
           </div>
         </div>
 
         <div>
-          <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#4A5670]">Issues</div>
+          <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[color:var(--seo-mutedText)]">Issues</div>
           <ul className="flex flex-col gap-2">
             {page.issues.map((issue, i) => (
               <Fragment key={i}>
               <li className="flex flex-wrap items-start gap-2 text-sm leading-snug sm:flex-nowrap">
                 <SeverityTag severity={issue.severity} />
-                <span className="min-w-0 flex-1 break-words text-[#1A2233]">{issue.text}</span>
+                <span className="min-w-0 flex-1 break-words text-[color:var(--seo-ink)]">{issue.text}</span>
                 {issue.severity !== "good" && (
                   <button
                     type="button"
                     onClick={() => onIgnore(page.path, issue.code)}
-                    className="min-h-11 shrink-0 rounded-md border border-[#B8C2D6] bg-white px-3 text-xs font-semibold text-[#1B3A6B] hover:border-[#F97316]"
+                    className="min-h-11 shrink-0 rounded-md border border-[color:var(--seo-borderStrong)] bg-[var(--seo-cardBg)] px-3 text-xs font-semibold text-[color:var(--seo-navy)] hover:border-[color:var(--seo-orange)]"
                   >
                     Ignore this flag
                   </button>
                 )}
               </li>
               {markNote?.target === `${page.path}|${issue.code}` && (
-                <li role="status" className="text-xs text-[#4A5670]">
+                <li role="status" className="text-xs text-[color:var(--seo-mutedText)]">
                   {markNote.text}
                 </li>
               )}
@@ -132,22 +132,22 @@ export default function PageDetail({ page, onIgnore, onRestore, markNote }: Prop
           </ul>
           {page.ignoredIssues.length > 0 && (
             <details className="mt-3 text-sm">
-              <summary className="cursor-pointer select-none py-2 font-semibold text-[#4A5670]">Ignored flags ({page.ignoredIssues.length})</summary>
+              <summary className="cursor-pointer select-none py-2 font-semibold text-[color:var(--seo-mutedText)]">Ignored flags ({page.ignoredIssues.length})</summary>
               <ul className="mt-1 flex flex-col gap-2">
                 {page.ignoredIssues.map((issue) => (
                   <Fragment key={issue.code}>
-                  <li className="flex flex-wrap items-start gap-2 leading-snug text-[#4A5670] sm:flex-nowrap">
+                  <li className="flex flex-wrap items-start gap-2 leading-snug text-[color:var(--seo-mutedText)] sm:flex-nowrap">
                     <span className="min-w-0 flex-1 break-words">{issue.text}</span>
                     <button
                       type="button"
                       onClick={() => onRestore(page.path, issue.code)}
-                      className="min-h-11 shrink-0 rounded-md border border-[#B8C2D6] bg-white px-3 text-xs font-semibold text-[#1B3A6B] hover:border-[#F97316]"
+                      className="min-h-11 shrink-0 rounded-md border border-[color:var(--seo-borderStrong)] bg-[var(--seo-cardBg)] px-3 text-xs font-semibold text-[color:var(--seo-navy)] hover:border-[color:var(--seo-orange)]"
                     >
                       Show again
                     </button>
                   </li>
                   {markNote?.target === `${page.path}|${issue.code}` && (
-                    <li role="status" className="text-xs text-[#4A5670]">
+                    <li role="status" className="text-xs text-[color:var(--seo-mutedText)]">
                       {markNote.text}
                     </li>
                   )}
@@ -158,8 +158,8 @@ export default function PageDetail({ page, onIgnore, onRestore, markNote }: Prop
           )}
         </div>
 
-        <details className="text-sm text-[#2B364D]">
-          <summary className="cursor-pointer select-none py-2 font-semibold text-[#1B3A6B] hover:text-[#C2410C]">
+        <details className="text-sm text-[color:var(--seo-inkSoft)]">
+          <summary className="cursor-pointer select-none py-2 font-semibold text-[color:var(--seo-navy)] hover:text-[color:var(--seo-accentHover)]">
             More tags: robots, Open Graph, Twitter, JSON-LD, H2s
           </summary>
           <dl className="mt-2 grid grid-cols-[max-content_1fr] gap-x-4 gap-y-1.5 text-[13px]">

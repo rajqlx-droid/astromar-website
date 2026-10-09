@@ -67,7 +67,7 @@ export default function PageDetailModal({ page, name, returnFocusTo, onClose, on
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-[#0F2347]/60 p-3 sm:p-6"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[var(--seo-backdrop)] p-3 sm:p-6"
       onMouseDown={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -78,12 +78,12 @@ export default function PageDetailModal({ page, name, returnFocusTo, onClose, on
         aria-modal="true"
         aria-label={`SEO details for ${name ?? pageName(page.path)}, ${page.path}`}
         onKeyDown={onKeyDown}
-        className="flex max-h-full w-full max-w-[760px] flex-col overflow-hidden rounded-xl border border-[#D9DFEA] bg-white shadow-2xl"
+        className="flex max-h-full w-full max-w-[760px] flex-col overflow-hidden rounded-xl border border-[color:var(--seo-border)] bg-[var(--seo-cardBg)] shadow-2xl"
       >
-        <div className="flex shrink-0 items-start gap-3 border-b-[3px] border-[#F97316] bg-[#1B3A6B] px-5 py-3">
+        <div className="flex shrink-0 items-start gap-3 border-b-[3px] border-[color:var(--seo-orange)] bg-[var(--seo-navy)] px-5 py-3">
           <div className="min-w-0 flex-1 pt-1">
-            <div className="text-lg font-bold leading-tight text-white">{name ?? pageName(page.path)}</div>
-            <div className="mt-0.5 break-all font-mono text-[13px] text-[#C9D6EE]">{page.path}</div>
+            <div className="text-lg font-bold leading-tight text-[color:var(--seo-onNavy)]">{name ?? pageName(page.path)}</div>
+            <div className="mt-0.5 break-all font-mono text-[13px] text-[color:var(--seo-navyText)]">{page.path}</div>
             <div className="mt-2 flex flex-wrap items-center gap-2">
               <Chip tone="neutral" icon={false}>
                 {page.group}
@@ -96,7 +96,7 @@ export default function PageDetailModal({ page, name, returnFocusTo, onClose, on
             type="button"
             onClick={onClose}
             aria-label="Close details"
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border-2 border-white text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97316]"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border-2 border-[color:var(--seo-onNavy)] text-[color:var(--seo-onNavy)] transition-colors hover:bg-[var(--seo-whiteTint10)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--seo-orange)]"
           >
             <IconX className="h-4 w-4" />
           </button>

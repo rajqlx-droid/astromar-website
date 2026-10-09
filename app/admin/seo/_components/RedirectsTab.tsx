@@ -13,7 +13,7 @@ export default function RedirectsTab({ checks, baseUrl, expected }: { checks: Re
     <div className="min-w-[760px]" role="table" aria-label="Status and redirects">
         <div
           role="row"
-          className={`sticky top-0 z-10 grid ${COLS} gap-4 bg-[#EDF1F8] px-5 py-3 text-xs font-semibold uppercase tracking-wider text-[#3A4560]`}
+          className={`sticky top-0 z-10 grid ${COLS} gap-4 bg-[var(--seo-tableHeadBg)] px-5 py-3 text-xs font-semibold uppercase tracking-wider text-[color:var(--seo-tabText)]`}
         >
           <div role="columnheader">Old URL</div>
           <div role="columnheader">Status</div>
@@ -24,32 +24,32 @@ export default function RedirectsTab({ checks, baseUrl, expected }: { checks: Re
           const redirectHops = c.hops.filter((h) => h.status !== null && h.status >= 300 && h.status < 400);
           const isExpected = c.result === "Live, not in sitemap" && expected.has(c.path);
           return (
-            <div role="row" key={c.path} className={`grid ${COLS} items-start gap-4 border-t border-[#E6EAF2] px-5 py-3.5 text-sm`}>
-              <div role="cell" className="break-all font-mono text-[13px] text-[#1A2233]">
+            <div role="row" key={c.path} className={`grid ${COLS} items-start gap-4 border-t border-[color:var(--seo-dividerSoft)] px-5 py-3.5 text-sm`}>
+              <div role="cell" className="break-all font-mono text-[13px] text-[color:var(--seo-ink)]">
                 {c.path}
               </div>
-              <div role="cell" className="font-semibold text-[#1A2233]">
+              <div role="cell" className="font-semibold text-[color:var(--seo-ink)]">
                 {c.status ?? "-"}
               </div>
-              <div role="cell" className="min-w-0 font-mono text-[13px] text-[#2B364D]">
+              <div role="cell" className="min-w-0 font-mono text-[13px] text-[color:var(--seo-inkSoft)]">
                 {redirectHops.length === 0 ? (
                   <span>{c.status === 200 ? "(live page)" : "(none)"}</span>
                 ) : (
                   <ol className="space-y-0.5">
                     {redirectHops.map((h, i) => (
                       <li key={i} className="break-all">
-                        {i > 0 && <span className="font-sans text-xs text-[#4A5670]">then </span>}
+                        {i > 0 && <span className="font-sans text-xs text-[color:var(--seo-mutedText)]">then </span>}
                         {shortUrl(h.url, baseUrl)}
                       </li>
                     ))}
-                    <li className="font-sans text-xs text-[#4A5670]">Final status: {c.finalStatus ?? "-"}</li>
+                    <li className="font-sans text-xs text-[color:var(--seo-mutedText)]">Final status: {c.finalStatus ?? "-"}</li>
                   </ol>
                 )}
               </div>
               <div role="cell" className="flex flex-col items-start gap-1">
                 <Chip tone={isExpected ? "ok" : toneFor(c.severity)}>{c.result}</Chip>
-                {isExpected && <span className="text-xs text-[#4A5670]">Marked as expected</span>}
-                {c.note && <span className="text-xs text-[#4A5670]">{c.note}</span>}
+                {isExpected && <span className="text-xs text-[color:var(--seo-mutedText)]">Marked as expected</span>}
+                {c.note && <span className="text-xs text-[color:var(--seo-mutedText)]">{c.note}</span>}
               </div>
             </div>
           );
