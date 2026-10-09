@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SiteChrome from "@/components/SiteChrome";
 import { ThemeProvider } from "next-themes";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
@@ -35,10 +36,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning className={plusJakartaSans.variable}>
       <body className="bg-background text-foreground overflow-x-hidden">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} forcedTheme="light">
-          <Header />
+          <SiteChrome><Header /></SiteChrome>
           {children}
-          <GoogleAnalytics gaId="G-VLJPPE08DX" />
-          <Footer />
+          <SiteChrome>
+            <GoogleAnalytics gaId="G-VLJPPE08DX" />
+            <Footer />
+          </SiteChrome>
         </ThemeProvider>
       </body>
     </html>
