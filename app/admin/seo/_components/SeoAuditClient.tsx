@@ -8,7 +8,7 @@ import { IconFilter, IconLock, IconPlay, IconSearch, IconSpinner } from "./icons
 import SeoTab, { type ViewPage } from "./SeoTab";
 import RedirectsTab from "./RedirectsTab";
 import SitePanels from "./SitePanels";
-import WordingTab from "./WordingTab";
+import WordingModal from "./WordingModal";
 import StatusPills from "./StatusPills";
 import { HIDDEN_PAGES } from "@/data/seoHiddenPages";
 import { seoThemeVars } from "./theme";
@@ -73,6 +73,9 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
   const [notConnected, setNotConnected] = useState(false);
   // Small inline message next to a Mark / Ignore button when Supabase is missing.
   const [markNote, setMarkNote] = useState<{ target: string; text: string } | null>(null);
+  const [wordingOpen, setWordingOpen] = useState(false);
+  const [wordingTrigger, setWordingTrigger] = useState<HTMLElement | null>(null);
+  const [openRequest, setOpenRequest] = useState<{ path: string; seq: number } | null>(null);
   const [problemsOnly, setProblemsOnly] = useState(false);
   const [query, setQuery] = useState("");
   const [expected, setExpected] = useState<Set<string>>(() => new Set(expectedProp.map((e) => e.url)));
@@ -249,9 +252,9 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
       imagesNoAlt: images.filter((i) => i.alt === null).length,
       imagesEmptyAlt: images.filter((i) => i.alt !== null && i.alt.trim() === "").length,
       wordingAll: wording.length,
+      wordingList: wording,
       allPages: pages,
       allImages: images,
-      wording: wording.filter((w) => matches(w.phrase, w.path, w.snippet)),
       redirects: result.redirects.filter((r) => {
         const isProblem = r.severity !== "good" && !(r.result === "Live, not in sitemap" && expected.has(r.path));
         return (!problemsOnly || isProblem) && matches(r.path, r.location, r.result);
@@ -316,11 +319,12 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                 markNote={markNote}
                 onIgnore={(path, code) => setIgnoredFlag(path, code, true)}
                 onRestore={(path, code) => setIgnoredFlag(path, code, false)}
-                renderOther={(t) => (
+                wording={view.wordingList}
+                openRequest={openRequest}
+                renderRedirects={() => (
                   <>
                     <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-[color:var(--seo-dividerSoft)] p-3">
-                      {t === "redirects" && (
-                        <button
+                                              <button
                           type="button"
                           aria-pressed={problemsOnly}
                           onClick={() => setProblemsOnly((v) => !v)}
@@ -331,7 +335,6 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                           <IconFilter />
                           {problemsOnly ? "Problems only: on" : "Problems only"}
                         </button>
-                      )}
                       <label className="relative flex min-w-0 flex-[1_1_220px] md:max-w-[380px]">
                         <span className="sr-only">Search</span>
                         <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--seo-mutedText)]">
@@ -346,17 +349,11 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                         />
                       </label>
                       <div className="text-[13px] text-[color:var(--seo-mutedText)]" aria-live="polite">
-                        {t === "wording"
-                          ? `${view.wording.length} of ${result.wording.length} matches shown`
-                          : `${view.redirects.length} of ${result.redirects.length} URLs shown`}
+                        {`${view.redirects.length} of ${result.redirects.length} URLs shown`}
                       </div>
                     </div>
                     <div className="min-h-0 flex-1 overflow-auto">
-                      {t === "wording" ? (
-                        <WordingTab matches={view.wording} />
-                      ) : (
-                        <RedirectsTab checks={view.redirects} baseUrl={result.baseUrl} expected={expected} />
-                      )}
+                      <RedirectsTab checks={view.redirects} baseUrl={result.baseUrl} expected={expected} />
                     </div>
                   </>
                 )}
@@ -502,10 +499,25 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                     <div className={`text-[11px] ${s.tint ? "text-[color:var(--seo-highlight)]" : "text-[color:var(--seo-navyText)]"}`}>{s.label}</div>
                   </div>
                 ))}
-                <div title="for review" className="col-span-2 flex items-center justify-between rounded-lg bg-[var(--seo-whiteTint12)] px-2.5 py-2">
+                <button
+                  type="button"
+                  title="for review"
+                  aria-label={`Wording matches: ${view.wordingAll}, view list`}
+                  onClick={(e) => {
+                    setWordingTrigger(e.currentTarget);
+                    setWordingOpen(true);
+                  }}
+                  className="col-span-2 flex min-h-11 items-center justify-between gap-2 rounded-lg bg-[var(--seo-whiteTint12)] px-2.5 py-2 text-left transition-colors hover:bg-[var(--seo-whiteTint20)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--seo-orange)]"
+                >
                   <span className="text-[11px] text-[color:var(--seo-navyText)]">Wording matches</span>
-                  <span className="text-xl font-bold leading-tight text-[color:var(--seo-onNavy)]">{view.wordingAll}</span>
-                </div>
+                  <span className="flex items-center gap-1.5">
+                    <span className="text-xl font-bold leading-tight text-[color:var(--seo-onNavy)]">{view.wordingAll}</span>
+                    <span className="text-[11px] font-semibold text-[color:var(--seo-navyText)]">View</span>
+                    <svg viewBox="0 0 24 24" fill="none" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5" style={{ stroke: "var(--seo-navyText)" }}>
+                      <polyline points="9 6 15 12 9 18" />
+                    </svg>
+                  </span>
+                </button>
               </div>
             )}
             {!scanEnabled && (
@@ -527,6 +539,17 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
           )}
         </aside>
       </div>
+      {wordingOpen && view && (
+        <WordingModal
+          matches={view.wordingList}
+          returnFocusTo={wordingTrigger}
+          onClose={() => setWordingOpen(false)}
+          onOpenPage={(path) => {
+            setWordingOpen(false);
+            setOpenRequest((prev) => ({ path, seq: (prev?.seq ?? 0) + 1 }));
+          }}
+        />
+      )}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { ImageAudit } from "@/lib/seo-audit/types";
+import type { ImageAudit, WordingMatch } from "@/lib/seo-audit/types";
 import ImagePageList from "./ImagePageList";
 import { IconFilter, IconSearch, IconX } from "./icons";
 import PageDetailModal from "./PageDetailModal";
@@ -17,16 +17,19 @@ interface Props {
   markNote?: { target: string; text: string } | null;
   onIgnore: (path: string, code: string) => void;
   onRestore: (path: string, code: string) => void;
-  /** Content of the Wording check and Status and redirects tabs, rendered inside this card. */
-  renderOther: (tab: "wording" | "redirects") => React.ReactNode;
+  /** Wording matches of the scan (hidden pages already removed). */
+  wording: WordingMatch[];
+  /** Content of the Status and redirects tab, rendered inside this card. */
+  renderRedirects: () => React.ReactNode;
+  /** Ask this card to open the details of a page (used by the sitewide wording list). */
+  openRequest: { path: string; seq: number } | null;
 }
 
-type Mode = "pages" | "images" | "wording" | "redirects";
+type Mode = "pages" | "images" | "redirects";
 
 const SUB_TABS: { key: Mode; label: string }[] = [
   { key: "pages", label: "Page SEO" },
   { key: "images", label: "Image SEO" },
-  { key: "wording", label: "Wording check" },
   { key: "redirects", label: "Status and redirects" },
 ];
 
@@ -119,7 +122,7 @@ function PageCard({ row, tag, onSelect }: { row: TreeRow; tag: React.ReactNode; 
   );
 }
 
-export default function SeoTab({ pages, images, markNote, onIgnore, onRestore, renderOther }: Props) {
+export default function SeoTab({ pages, images, wording, markNote, onIgnore, onRestore, renderRedirects, openRequest }: Props) {
   const [mode, setMode] = useState<Mode>("pages");
   const [query, setQuery] = useState("");
   const [problemsOnly, setProblemsOnly] = useState(false);
@@ -149,6 +152,11 @@ export default function SeoTab({ pages, images, markNote, onIgnore, onRestore, r
     for (const img of images) for (const path of img.foundOn) map.set(path, [...(map.get(path) ?? []), img]);
     return map;
   }, [images]);
+  const wordingByPath = useMemo(() => {
+    const map = new Map<string, WordingMatch[]>();
+    for (const m of wording) map.set(m.path, [...(map.get(m.path) ?? []), m]);
+    return map;
+  }, [wording]);
   const onEveryPage = (img: ImageAudit) => pages.length > 1 && img.foundOn.length > pages.length / 2;
 
   const imgOf = (r: TreeRow) => imagesByPage.get(r.page.path) ?? [];
@@ -171,7 +179,16 @@ export default function SeoTab({ pages, images, markNote, onIgnore, onRestore, r
   const rowTag = (r: TreeRow) => {
     if (mode === "pages") {
       const n = issueCount(r.page);
-      return n === 0 ? <Tag ok>OK</Tag> : <Tag ok={false}>{plural(n, "issue")}</Tag>;
+      const status = n === 0 ? <Tag ok>OK</Tag> : <Tag ok={false}>{plural(n, "issue")}</Tag>;
+      const w = wordingByPath.get(r.page.path)?.length ?? 0;
+      // Informational only: wording never changes the issue count or Problems only.
+      if (w === 0) return status;
+      return (
+        <span className="flex shrink-0 flex-wrap items-center justify-end gap-1.5">
+          <span className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md bg-[var(--seo-neutralBg)] px-2.5 py-1 text-xs font-bold text-[color:var(--seo-navy)]">{w} wording</span>
+          {status}
+        </span>
+      );
     }
     const n = imgOf(r).length;
     const m = imgProblems(r);
@@ -211,6 +228,17 @@ export default function SeoTab({ pages, images, markNote, onIgnore, onRestore, r
       .find((n) => n.dataset.row === path)
       ?.focus();
   }, [imagePath]);
+
+  // The sitewide wording list asks for a page's details: show Page SEO with that popup open.
+  useEffect(() => {
+    if (!openRequest || !pages.some((pg) => pg.path === openRequest.path)) return;
+    setMode("pages");
+    setLevel(null);
+    setImagePath(null);
+    setTrigger(null);
+    setOpenPath(openRequest.path);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [openRequest]);
 
   const choose: OnSelect = (row, button) => {
     setTrigger(button);
@@ -265,13 +293,13 @@ export default function SeoTab({ pages, images, markNote, onIgnore, onRestore, r
     </>
   );
 
-  // Wording check and Status and redirects fill the card below the tabs.
-  if (mode === "wording" || mode === "redirects") {
+  // Status and redirects fills the card below the tabs.
+  if (mode === "redirects") {
     return (
       <div className="flex h-full min-h-0 flex-col">
         {header}
         <div id="seo-sub-panel" role="tabpanel" aria-labelledby={`seo-sub-${mode}`} className="flex min-h-0 flex-1 flex-col">
-          {renderOther(mode)}
+          {renderRedirects()}
         </div>
       </div>
     );
@@ -486,6 +514,7 @@ export default function SeoTab({ pages, images, markNote, onIgnore, onRestore, r
         <PageDetailModal
           page={openPage}
           name={openRow?.name}
+          wording={wordingByPath.get(openPage.path) ?? []}
           returnFocusTo={trigger}
           onClose={() => setOpenPath(null)}
           onIgnore={onIgnore}

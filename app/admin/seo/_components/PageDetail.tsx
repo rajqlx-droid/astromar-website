@@ -1,7 +1,9 @@
 "use client";
 
 import { Fragment } from "react";
+import type { WordingMatch } from "@/lib/seo-audit/types";
 import type { ViewPage } from "./pageTree";
+import WordingCard from "./WordingCard";
 import { Chip, SeverityTag, type Tone } from "./ui";
 
 function lengthTone(len: number, min: number, max: number, required: boolean): Tone {
@@ -36,13 +38,15 @@ function YesNo({ yes, label }: { yes: boolean; label: string }) {
 
 interface Props {
   page: ViewPage;
+  /** Wording matches found on this page. */
+  wording: WordingMatch[];
   onIgnore: (path: string, code: string) => void;
   onRestore: (path: string, code: string) => void;
   markNote?: { target: string; text: string } | null;
 }
 
 /** Body of the page details dialog: the header (URL, badges, close) lives in PageDetailModal. */
-export default function PageDetail({ page, onIgnore, onRestore, markNote }: Props) {
+export default function PageDetail({ page, wording, onIgnore, onRestore, markNote }: Props) {
   const titleLen = page.title.length;
   const descLen = page.description?.length ?? 0;
   const canonicalTone: Tone = page.canonicalState === "matches" ? "ok" : page.canonicalState === "missing" ? "bad" : "warn";
@@ -155,6 +159,22 @@ export default function PageDetail({ page, onIgnore, onRestore, markNote }: Prop
                 ))}
               </ul>
             </details>
+          )}
+        </div>
+
+        <div>
+          <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[color:var(--seo-mutedText)]">Wording</div>
+          {wording.length === 0 ? (
+            <div className="flex flex-wrap items-center gap-2 text-sm text-[color:var(--seo-ink)]">
+              <Chip tone="ok">Good</Chip>
+              No risky phrases found.
+            </div>
+          ) : (
+            <div className="flex flex-col gap-2">
+              {wording.map((m, idx) => (
+                <WordingCard key={`${m.phrase}-${idx}`} match={m} />
+              ))}
+            </div>
           )}
         </div>
 

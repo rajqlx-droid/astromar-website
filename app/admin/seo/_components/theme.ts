@@ -57,7 +57,6 @@ export const seoTheme = {
   badText: "#7A1010", // Fix-level chips text and real error text
   errorBg: "#FDECEC", // Error message box background
   errorBorder: "#E8A9A9", // Error message box border
-  matchBg: "#FDE3E3", // Wording phrase badge background
   keywordBg: "#FDE7D3", // Focus keyword chip background
   keywordText: "#6B2C00", // Focus keyword chip text
   highlight: "#FFD9B3", // Search match highlight
