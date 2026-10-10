@@ -724,10 +724,10 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 72.9479,
     address: "JNPA SEZ, Village-Sawarkhar, Uran, Raigad, Maharashtra, 400707",
     seo: {
-      title: "FTWZ in Mumbai — JNPA Nhava Sheva Port | Astromar",
-      description: "Astromar's ftwz in mumbai at JNPA — India's #1 container port. On-port duty-free warehousing with zero transit time for re-export and consolidation.",
-      keywords: "ftwz in mumbai, ftwz mumbai jnpa, nhava sheva ftwz, free trade warehouse zone in mumbai, bonded warehouse mumbai port, custom bonded warehouse in mumbai, jnpa sez warehouse, on port ftwz, dangerous goods warehouse nhava sheva, hazardous goods warehouse jnpa",
-      h1: "FTWZ in Mumbai",
+      title: "FTZ Cold Storage Warehouse in Mumbai — JNPA | Astromar",
+      description: "FTZ cold storage warehouse in Mumbai at JNPA: hold temperature-sensitive imports under customs control until they are cleared or moved on.",
+      keywords: "cold storage warehouse in mumbai, ftz cold storage warehouse in mumbai, ftwz in mumbai, ftwz mumbai jnpa, nhava sheva ftwz, bonded warehouse mumbai port, custom bonded warehouse in mumbai, jnpa sez warehouse, on port ftwz, dangerous goods warehouse nhava sheva, hazardous goods warehouse jnpa",
+      h1: "FTZ Cold Storage Warehouse in Mumbai",
       h1Subtitle: "JNPA Nhava Sheva Port",
       heroAlt: "Aerial view of a busy container port with stacked containers, gantry cranes and ships",
       bannerIntro: [
@@ -737,7 +737,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       ],
       aboutH2: [
         { text: "FTWZ in Mumbai", kw: true },
-        { text: " — On-Port Duty-Free Warehousing at JNPA" },
+        { text: " — On-Port Warehousing at JNPA" },
       ],
       aboutParagraphs: [
         [
@@ -766,14 +766,16 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         [
           { text: "JNPA's on-port location makes it the preferred FTWZ for high-volume container importers, re-exporters, consolidators, and global trading houses operating just-in-time supply chains. For businesses seeking the deepest operational integration with port operations — and a true custom bonded warehouse in mumbai positioned literally inside the SEZ — JNPA delivers unmatched container-side logistics efficiency." },
         ],
+        [
+          { text: "For importers bringing temperature-sensitive goods through JNPA, such as some pharmaceutical products and food items, the FTWZ offers a cold storage warehouse in Mumbai where goods can be held under customs control while clearance and release are planned, subject to applicable customs rules. Clearance can then be matched to when stock is actually needed. Astromar offers cold storage at its Mumbai FTWZ locations, including JNPA. Share the cargo's temperature requirements and documents with the team before shipping so they can confirm it suits the facility." },
+        ],
       ],
       servicesH2: [
-        { text: "FTWZ Mumbai", kw: true },
-        { text: " Services at JNPA" },
+        { text: "On-Port Services at JNPA" },
       ],
       whyChooseH2: [
         { text: "Why Choose " },
-        { text: "JNPA On-Port FTWZ Mumbai", kw: true },
+        { text: "the JNPA On-Port FTWZ", kw: true },
       ],
       whyChooseBlocks: [
         {
@@ -807,15 +809,13 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         },
       ],
       faqH2: [
-        { text: "FTWZ in Mumbai", kw: true },
-        { text: " (JNPA) — Frequently Asked Questions" },
+        { text: "JNPA On-Port FTWZ", kw: true },
+        { text: " — Frequently Asked Questions" },
       ],
       faqItems: [
         {
           question: [
-            { text: "What makes the JNPA " },
-            { text: "ftwz in mumbai", kw: true },
-            { text: " different from inland facilities?" },
+            { text: "What makes the JNPA on-port FTWZ different from inland facilities?" },
           ],
           answer: [
             { text: "The JNPA FTWZ is located on-port within the JNPA SEZ — meaning containers move from vessel directly to FTWZ warehouse without any inland transit. This eliminates trucking costs, detention charges, and inland transport time. Inland Mumbai FTWZs like Panvel still require 35-50 km road transit; JNPA's transit time is effectively zero." },
@@ -878,7 +878,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "What makes the JNPA ftwz in mumbai different from inland facilities?", "acceptedAnswer": { "@type": "Answer", "text": "JNPA FTWZ is on-port inside JNPA SEZ — zero transit time between terminal and warehouse, eliminating trucking costs and detention charges." } },
+          { "@type": "Question", "name": "What makes the JNPA on-port FTWZ different from inland facilities?", "acceptedAnswer": { "@type": "Answer", "text": "JNPA FTWZ is on-port inside JNPA SEZ — zero transit time between terminal and warehouse, eliminating trucking costs and detention charges." } },
           { "@type": "Question", "name": "Who benefits most from the JNPA on-port FTWZ?", "acceptedAnswer": { "@type": "Answer", "text": "High-volume container importers, re-exporters, consolidators, global trading houses, and just-in-time supply chain operators." } },
           { "@type": "Question", "name": "What cargo categories does the JNPA FTWZ handle?", "acceptedAnswer": { "@type": "Answer", "text": "Containerised electronics, automotive parts, consumer goods, pharmaceuticals, chemicals, textiles, apparel, and machinery." } },
           { "@type": "Question", "name": "Should I use Panvel or JNPA for my Mumbai operations?", "acceptedAnswer": { "@type": "Answer", "text": "JNPA for fast-turn container operations and re-export. Panvel for broader industrial flexibility, lower costs, and Mumbai hinterland distribution. Many clients use both." } },
@@ -891,7 +891,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
           { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/contact-us" },
-          { "@type": "ListItem", "position": 3, "name": "FTWZ in Mumbai", "item": "https://www.astromarfreezone.com/locations/mumbai-jnpa" }
+          { "@type": "ListItem", "position": 3, "name": "FTZ Cold Storage Warehouse in Mumbai", "item": "https://www.astromarfreezone.com/locations/mumbai-jnpa" }
         ]
       },
     },
@@ -948,10 +948,10 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 79.9473,
     address: "Mannur & Valarpuram Village, Sriperumbudur Taluk, Kancheepuram District, 602105, Tamil Nadu, India",
     seo: {
-      title: "Chennai Free Trade Zone (FTWZ) — Sriperumbudur | Astromar",
-      description: "Astromar's chennai free trade zone at Sriperumbudur — duty-free FTWZ with GST deferral and direct NH 48 access. Serving Foxconn, Samsung, Hyundai.",
-      keywords: "chennai free trade zone, ftwz chennai, ftwz in chennai, free zone chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, sriperumbudur ftwz, dangerous goods warehouse sriperumbudur, hazardous goods warehouse chennai",
-      h1: "Chennai Free Trade Zone",
+      title: "FTZ Cold Storage Warehouse in Chennai | Astromar",
+      description: "FTZ cold storage warehouse in Chennai at Sriperumbudur: hold temperature-sensitive imports under customs control until they are cleared or moved on.",
+      keywords: "cold storage warehouse in chennai, ftz cold storage warehouse in chennai, chennai free trade zone, ftwz chennai, ftwz in chennai, free zone chennai, free trade warehousing zone in chennai, free trade warehouse zone in chennai, bonded warehouse in chennai, sriperumbudur ftwz, dangerous goods warehouse sriperumbudur, hazardous goods warehouse chennai",
+      h1: "FTZ Cold Storage Warehouse in Chennai",
       h1Subtitle: "Sriperumbudur, Tamil Nadu",
       bannerIntro: [
         { text: "Astromar's Sriperumbudur facility is a fully-operational " },
@@ -988,6 +988,9 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: " with the deeper benefit stack of an SEZ-notified " },
           { text: "free trade warehouse zone in chennai", kw: true },
           { text: " — inventory can stay in the zone for up to 3 years, extendable to 5 years with special permission, well beyond what a standalone bonded facility allows. That mix of manufacturing-cluster proximity, expressway access, and extended storage flexibility is why component-intensive importers scaling their South India operations choose this site." },
+        ],
+        [
+          { text: "For importers bringing temperature-sensitive goods through Chennai's ports, such as some pharmaceutical products and food items, the FTWZ offers a cold storage warehouse in Chennai where goods can be held under customs control while clearance and release are planned, subject to applicable customs rules. Clearance can then be matched to when stock is actually needed. Astromar offers cold storage at its Chennai FTWZ locations, including Sriperumbudur. Share the cargo's temperature requirements and documents with the team before shipping so they can confirm it suits the facility." },
         ],
       ],
       servicesH2: [
@@ -1034,15 +1037,13 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         },
       ],
       faqH2: [
-        { text: "Chennai Free Trade Zone", kw: true },
+        { text: "Sriperumbudur FTWZ", kw: true },
         { text: " — Frequently Asked Questions" },
       ],
       faqItems: [
         {
           question: [
-            { text: "Astromar's Sriperumbudur site is called a " },
-            { text: "chennai free trade zone", kw: true },
-            { text: " — what does that mean for an importer?" },
+            { text: "Astromar's Sriperumbudur site is an FTWZ in Chennai — what does that mean for an importer?" },
           ],
           answer: [
             { text: "It means imported goods can sit in the zone without customs duty being charged until they leave it. The facility is notified under the SEZ Act, 2005, subject to applicable regulations governing FTWZ status, and inside it importers can repack, relabel, sort, kit, inspect for quality, consolidate shipments, or run CKD/SKD assembly on components without triggering duty or GST liability." },
@@ -1115,7 +1116,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Astromar's Sriperumbudur site is called a chennai free trade zone — what does that mean for an importer?",
+            "name": "Astromar's Sriperumbudur site is an FTWZ in Chennai — what does that mean for an importer?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Imported goods can sit in the zone without customs duty being charged until they leave it. The facility is notified under the SEZ Act, 2005, and inside it importers can repack, relabel, sort, kit, inspect for quality, consolidate shipments, or run CKD/SKD assembly on components without triggering duty or GST liability."
@@ -1162,7 +1163,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Astromar", "item": "https://www.astromarfreezone.com/" },
           { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.astromarfreezone.com/contact-us" },
-          { "@type": "ListItem", "position": 3, "name": "Chennai Free Trade Zone", "item": "https://www.astromarfreezone.com/locations/chennai-sriperumbudur" }
+          { "@type": "ListItem", "position": 3, "name": "FTZ Cold Storage Warehouse in Chennai", "item": "https://www.astromarfreezone.com/locations/chennai-sriperumbudur" }
         ]
       },
     },
