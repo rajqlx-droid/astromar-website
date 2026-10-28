@@ -64,6 +64,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   const otherLocations = [...sameState, ...rest];
 
   const seoDetail = getLocationBySlug(slug);
+  const facilities = seoDetail?.facilities?.length ? seoDetail.facilities : null;
 
   return (
     <div className="min-h-screen bg-background">
@@ -122,25 +123,58 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                     <KwText segments={seoDetail.seo.bannerIntro} />
                   </p>
                 )}
-                <div className="flex items-start gap-2 text-white/90 mb-3">
-                  <MapPin className="w-4 h-4 text-[#F97316] flex-shrink-0 mt-0.5" />
-                  <span className="text-sm leading-relaxed">{location.address}</span>
-                </div>
-                <div className="flex items-center gap-2 text-white/90 mb-8">
-                  <Phone className="w-4 h-4 text-[#F97316] flex-shrink-0" />
-                  <a href={`tel:${location.phone.replace(/\s/g, "")}`} className="text-sm hover:text-white transition-colors">{location.phone}</a>
-                </div>
+                {facilities ? (
+                  <div className="space-y-4 mb-8">
+                    {facilities.map((f) => (
+                      <div key={f.id} className="text-white/90">
+                        <p className="text-xs font-bold tracking-[0.15em] text-[#F97316] uppercase mb-1.5">{f.name}</p>
+                        <div className="flex items-start gap-2 mb-1.5">
+                          <MapPin className="w-4 h-4 text-[#F97316] flex-shrink-0 mt-0.5" />
+                          <span className="text-sm leading-relaxed">{f.address}</span>
+                        </div>
+                        {f.phone && (
+                          <div className="flex items-center gap-2 mb-1.5">
+                            <Phone className="w-4 h-4 text-[#F97316] flex-shrink-0" />
+                            <a href={`tel:${f.phone.replace(/\s/g, "")}`} className="text-sm hover:text-white transition-colors">{f.phone}</a>
+                          </div>
+                        )}
+                        <a
+                          href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(f.address)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#F97316] hover:text-white transition-colors"
+                        >
+                          <Navigation className="w-3.5 h-3.5" />
+                          Get Directions
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <>
+                    <div className="flex items-start gap-2 text-white/90 mb-3">
+                      <MapPin className="w-4 h-4 text-[#F97316] flex-shrink-0 mt-0.5" />
+                      <span className="text-sm leading-relaxed">{location.address}</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/90 mb-8">
+                      <Phone className="w-4 h-4 text-[#F97316] flex-shrink-0" />
+                      <a href={`tel:${location.phone.replace(/\s/g, "")}`} className="text-sm hover:text-white transition-colors">{location.phone}</a>
+                    </div>
+                  </>
+                )}
                 <div className="flex flex-wrap gap-3 mt-auto">
-                  <a
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-semibold transition-all shadow-lg hover:opacity-90"
-                    style={{ background: "#F97316" }}
-                  >
-                    <Navigation className="w-4 h-4" />
-                    Get Directions
-                  </a>
+                  {!facilities && (
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-semibold transition-all shadow-lg hover:opacity-90"
+                      style={{ background: "#F97316" }}
+                    >
+                      <Navigation className="w-4 h-4" />
+                      Get Directions
+                    </a>
+                  )}
                   <a
                     href="/contact-us"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all hover:opacity-90"
@@ -225,6 +259,47 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
           </div>
         </div>
       </section>
+
+      {/* Facilities (two-facility city pages only) */}
+      {facilities && (
+        <section className="py-14 bg-blue-100">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
+              {seoDetail?.facilitiesH2 ?? `${location.city} Facilities`}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+              {facilities.map((f) => (
+                <div key={f.id} id={f.id} className="bg-white border border-[#1B3A6B]/10 rounded-xl p-5 scroll-mt-24">
+                  <h3 className="text-base font-bold text-[#0f1f3d] mb-1">{f.name}</h3>
+                  <p className="text-sm text-foreground/70 mb-4 pb-3 border-b border-[#F97316]/30">{f.area}</p>
+                  <div className="space-y-3 mb-4">
+                    {f.summary.map((para, i) => (
+                      <p key={i} className="text-sm text-foreground/80 leading-relaxed">{para}</p>
+                    ))}
+                  </div>
+                  {f.capabilities && f.capabilities.length > 0 && (
+                    <ul className="flex flex-wrap gap-2 mb-4">
+                      {f.capabilities.map((cap, i) => (
+                        <li key={i} className="px-3 py-1 rounded-full bg-[rgba(249,115,22,0.10)] text-xs font-semibold text-[#F97316]">{cap}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {(f.port || f.nearestAirport) && (
+                    <div className="space-y-1 text-sm text-foreground/70">
+                      {f.port && (
+                        <p><strong className="font-bold text-foreground">Nearest Port:</strong> {f.port}</p>
+                      )}
+                      {f.nearestAirport && (
+                        <p><strong className="font-bold text-foreground">Nearest Airport:</strong> {f.nearestAirport}</p>
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Facility Details Section */}
       <section className="py-16 bg-brand-light">
@@ -428,11 +503,21 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       {otherLocations.length > 0 && <LocationCarousel items={otherLocations} />}
 
       {/* JSON-LD Schemas */}
-      {seoDetail?.seo.localBusinessSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(seoDetail.seo.localBusinessSchema) }}
-        />
+      {facilities ? (
+        facilities.map((f) => (
+          <script
+            key={f.id}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(f.localBusinessSchema) }}
+          />
+        ))
+      ) : (
+        seoDetail?.seo.localBusinessSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(seoDetail.seo.localBusinessSchema) }}
+          />
+        )
       )}
       {seoDetail?.seo.faqPageSchema && (
         <script

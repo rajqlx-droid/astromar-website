@@ -52,6 +52,22 @@ export interface FTWZLocationDetail {
   };
   keyAdvantages: string[];
   industries: string[];
+  facilitiesH2?: string;
+  facilities?: {
+    id: string;
+    name: string;
+    area: string;
+    summary: string[];
+    capabilities?: string[];
+    address: string;
+    phone?: string;
+    lat: number;
+    lng: number;
+    operatingHours?: string;
+    port?: string;
+    nearestAirport?: string;
+    localBusinessSchema: Record<string, unknown>;
+  }[];
 }
 
 export const ftwzLocationDetails: FTWZLocationDetail[] = [
