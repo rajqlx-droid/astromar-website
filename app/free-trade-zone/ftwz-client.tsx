@@ -508,7 +508,7 @@ const FTWZServices = () => {
             ))}
           </p>
           <p className="mt-4 text-sm font-semibold">
-            <Link href="/locations" className="text-[#1B3A6B] hover:text-[#F97316] underline decoration-[#F97316]/30 underline-offset-2 hover:decoration-[#F97316] transition-colors">
+            <Link href="/contact-us" className="text-[#1B3A6B] hover:text-[#F97316] underline decoration-[#F97316]/30 underline-offset-2 hover:decoration-[#F97316] transition-colors">
               View all locations →
             </Link>
           </p>

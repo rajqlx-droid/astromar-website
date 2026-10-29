@@ -25,6 +25,7 @@ const nextConfig = {
       { source: '/services/warehousing', destination: '/free-trade-zone-services/warehousing', permanent: true },
       { source: '/services/projects', destination: '/free-trade-zone-services/project-cargo', permanent: true },
       { source: '/ftz-in-india', destination: '/free-trade-zone', permanent: true },
+      { source: '/locations', destination: '/contact-us', permanent: true },
       { source: '/free-zone-chennai', destination: '/locations/chennai', permanent: true },
       { source: '/locations/chennai-sriperumbudur', destination: '/locations/chennai', permanent: true },
       { source: '/locations/chennai-vallur', destination: '/locations/chennai', permanent: true },
