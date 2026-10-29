@@ -28,10 +28,8 @@ const serviceLinks = [
 const locationLinks = [
   { label: "Kochi", href: "/locations/kochi" },
   { label: "Vizag", href: "/locations/vizag" },
-  { label: "Mumbai (Panvel)", href: "/locations/mumbai-panvel" },
-  { label: "Mumbai (JNPA)", href: "/locations/mumbai-jnpa" },
-  { label: "Chennai (Sriperumbudur)", href: "/locations/chennai-sriperumbudur" },
-  { label: "Chennai (Vallur)", href: "/locations/chennai-vallur" },
+  { label: "Mumbai", href: "/locations/mumbai" },
+  { label: "Chennai", href: "/locations/chennai" },
   { label: "Delhi (Khurja)", href: "/locations/delhi-khurja" },
   { label: "Bengaluru", href: "/locations/bengaluru" },
   { label: "Dahej", href: "/locations/dahej" },

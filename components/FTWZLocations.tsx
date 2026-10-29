@@ -8,10 +8,8 @@ import FTWZMap from "./FTWZMap";
 const locations = [
   { slug: "kochi", city: "Kochi", state: "Kerala", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 9.9312, lng: 76.2673, address: "SEZ ICTT, Vallarpadam, Kochi, Kerala 682504" },
   { slug: "vizag", city: "Vizag", state: "Andhra Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 17.6868, lng: 83.2185, address: "VSEZ, Duvvada, Visakhapatnam, AP 530049" },
-  { slug: "mumbai-panvel", city: "Mumbai (Panvel)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9894, lng: 73.1175, address: "Village Sai, Taluka Panvel, Raigad, Maharashtra 410206" },
-  { slug: "mumbai-jnpa", city: "Mumbai (JNPA)", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9543, lng: 72.9479, address: "JNPA SEZ, Uran, Raigad, Maharashtra 400707" },
-  { slug: "chennai-sriperumbudur", city: "Chennai (Sriperumbudur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 12.9716, lng: 79.9473, address: "Mannur Village, Sriperumbudur, Kancheepuram, TN 602105" },
-  { slug: "chennai-vallur", city: "Chennai (Vallur)", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2090, lng: 80.2843, address: "Vallur Village, Ponneri, Tiruvallur, TN 600120" },
+  { slug: "mumbai", city: "Mumbai", state: "Maharashtra", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 18.9543, lng: 72.9479, address: "JNPA: JNPA SEZ, Uran, Raigad, Maharashtra 400707; Panvel: Village Sai, Taluka Panvel, Raigad, Maharashtra 410206" },
+  { slug: "chennai", city: "Chennai", state: "Tamil Nadu", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 12.9716, lng: 79.9473, address: "Sriperumbudur: Mannur Village, Sriperumbudur, Kancheepuram, Tamil Nadu 602105; Vallur: Vallur Village, Ponneri, Tiruvallur, Tamil Nadu 600120" },
   { slug: "delhi-khurja", city: "Delhi (Khurja)", state: "Uttar Pradesh", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 28.2476, lng: 77.8538, address: "Khurja Industrial Area, Bulandshahr, UP 203131" },
   { slug: "bengaluru", city: "Bengaluru", state: "Karnataka", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 13.2486, lng: 77.7066, address: "Devanahalli, Bengaluru, Karnataka 562165" },
   { slug: "dahej", city: "Dahej", state: "Gujarat", type: "FTWZ Warehouse", phone: "+91 99402 11014", lat: 21.7051, lng: 72.5793, address: "Z-85/2A, Dahej SEZ-1, Dahej, Gujarat" },

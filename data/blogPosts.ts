@@ -836,7 +836,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "JNPA Is More Than India's Largest Container Port",
         content: "For many international businesses, JNPA is the first point of entry into India. Every day, containers carrying automotive components, engineering equipment, industrial machinery, chemicals, electronics, and consumer products arrive from every corner of the world. But unloading a container is only the beginning — businesses still need to decide where inventory should be stored, how quickly it should move, and whether every product really needs to enter the domestic market immediately. Experienced supply chain teams don't judge success simply by how quickly a container leaves the port; they look at what happens over the next few weeks, whether inventory is moving as planned, and whether working capital has been tied up in stock still waiting for buyers.",
-        relatedLink: { text: "See full details for our Mumbai-JNPA location", href: "/locations/mumbai-jnpa" }
+        relatedLink: { text: "See full details for our Mumbai-JNPA location", href: "/locations/mumbai" }
       },
       {
         heading: "Why Businesses Prefer an FTWZ Close to JNPA",
@@ -895,7 +895,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Why Businesses Choose Ennore Port",
         content: "For many industrial businesses, Ennore Port isn't simply another port on the east coast — it's an important gateway for heavy industry, serving manufacturers importing raw materials, engineering companies bringing in oversized equipment, and power, energy, and chemical businesses depending on regular imports. Unlike consumer goods, these shipments often support long-term industrial activity rather than immediate retail demand, which changes the way inventory is managed. A shipment may arrive today, but installation might not begin for another month; raw materials may reach India weeks before production starts. That's perfectly normal in industrial supply chains — the important thing is making sure cargo is positioned where it can move as soon as it's needed.",
-        relatedLink: { text: "See full details for our Chennai-Vallur location", href: "/locations/chennai-vallur" }
+        relatedLink: { text: "See full details for our Chennai-Vallur location", href: "/locations/chennai" }
       },
       {
         heading: "Sometimes Waiting Is the Smartest Decision",
@@ -958,7 +958,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Why Sriperumbudur Became a Manufacturing Powerhouse",
         content: "Sriperumbudur didn't become one of India's largest manufacturing clusters by accident. Automotive companies, electronics manufacturers, OEMs, and hundreds of component suppliers built an ecosystem where production, suppliers, logistics providers, and ports all support one another. Every day, thousands of imported components make their way into this manufacturing belt from Japan, South Korea, Germany, Taiwan, China, Vietnam, and beyond — each shipment playing a small role, together keeping entire factories running. That makes reliability far more important than speed alone: a shipment arriving one day early doesn't necessarily help production, but a shipment arriving one day late can create problems for everyone.",
-        relatedLink: { text: "See full details for our Chennai-Sriperumbudur location", href: "/locations/chennai-sriperumbudur" }
+        relatedLink: { text: "See full details for our Chennai-Sriperumbudur location", href: "/locations/chennai" }
       },
       {
         heading: "Just-in-Time Isn't About Keeping Less Inventory",
@@ -1013,7 +1013,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Why Panvel Makes Sense",
         content: "Panvel has become an important logistics hub because of where it sits — well connected to JNPA, Mumbai Port, major highways, and industrial corridors across western India. For businesses importing regularly, that means inventory can stay close to both ports without being locked into a single delivery plan. Instead of rushing every shipment to its final destination, companies can keep stock ready and dispatch it when actual customer orders come in — flexibility that becomes especially useful when the same shipment is serving multiple markets at once.",
-        relatedLink: { text: "See full details for our Mumbai-Panvel location", href: "/locations/mumbai-panvel" }
+        relatedLink: { text: "See full details for our Mumbai-Panvel location", href: "/locations/mumbai" }
       },
       {
         heading: "One Container, Multiple Markets",
@@ -1882,10 +1882,10 @@ The importer needs to make sure the declared value is properly supported by the 
         heading: "Why Chennai Makes Delivery Timing Important",
         content: [
           { text: "The Chennai region has a strong automotive manufacturing and supplier ecosystem, particularly around areas such as " },
-          { text: "Sriperumbudur", kw: true, href: "/locations/chennai-sriperumbudur" },
+          { text: "Sriperumbudur", kw: true, href: "/locations/chennai" },
           { text: ". For an auto component supplier, an imported part may not simply be stock sitting in a warehouse — it may be needed for a specific production schedule.\n\nA delay at the port can affect more than the customs process itself. The truck may need to be rescheduled, the warehouse receiving slot may change, and the factory may have to adjust its production plan. That's why customs clearance and supply chain planning need to be connected." }
         ],
-        relatedLink: { text: "Explore Astromar's Chennai-Sriperumbudur facility", href: "/locations/chennai-sriperumbudur" }
+        relatedLink: { text: "Explore Astromar's Chennai-Sriperumbudur facility", href: "/locations/chennai" }
       },
       {
         heading: "A Small Customs Query Can Have a Bigger Impact",
@@ -4765,10 +4765,10 @@ What matters is when the component will actually be available for production. Th
         heading: "Why Sriperumbudur Is a Good Example",
         content: [
           { text: "The automotive manufacturing ecosystem around " },
-          { text: "Sriperumbudur", kw: true, href: "/locations/chennai-sriperumbudur" },
+          { text: "Sriperumbudur", kw: true, href: "/locations/chennai" },
           { text: " and the Chennai region illustrates why this matters. Manufacturers and component suppliers operate within a large industrial network — one supplier close to the plant, another elsewhere in Tamil Nadu, another bringing specialised components through an Indian port.\n\nThe factory isn't simply receiving goods from one warehouse — it's coordinating a network of suppliers, transporters, warehouses and logistics providers. When production schedules are tight, even relatively small disruptions can move through that network quickly. Good inventory positioning becomes part of keeping the factory running." }
         ],
-        relatedLink: { text: "Explore Astromar's Chennai-Sriperumbudur facility", href: "/locations/chennai-sriperumbudur" }
+        relatedLink: { text: "Explore Astromar's Chennai-Sriperumbudur facility", href: "/locations/chennai" }
       },
       {
         heading: "When JIT Becomes \"Just Too Late\"",
@@ -5153,7 +5153,7 @@ For businesses with regular trade activity, however, AEO may be worth evaluating
 This can include manufacturers importing raw materials, machinery or components; importers and distributors receiving regular overseas shipments; exporters with consistent international shipments; international trading companies handling significant cross-border inventory; and eligible logistics operators.
 
 High-frequency importers working through a major gateway port — such as ` },
-          { text: "Mumbai-JNPA", kw: true, href: "/locations/mumbai-jnpa" },
+          { text: "Mumbai-JNPA", kw: true, href: "/locations/mumbai" },
           { text: `, where on-port facilities are built for frequent, time-sensitive cargo movement — are often well positioned to benefit from that kind of facilitation.
 
 The key is not simply shipment volume. The business should also have the internal systems and compliance discipline required to support the programme.` }
@@ -5695,7 +5695,7 @@ If everything is immediately cleared and moved into the domestic market, the com
         heading: "A Hypothetical Example",
         content: [
           { text: "Consider a hypothetical " },
-          { text: "electronics manufacturer", kw: true, href: "/locations/chennai-sriperumbudur" },
+          { text: "electronics manufacturer", kw: true, href: "/locations/chennai" },
           { text: " that imports components from suppliers in several countries to assemble a finished product for the " },
           { text: "Indian market", kw: true, href: "https://www.investindia.gov.in/", target: "_blank", rel: "noopener noreferrer" },
           { text: `. At the same time, demand for the finished product can shift with market conditions.
@@ -5906,7 +5906,7 @@ The importer usually still gets the chance to provide information, clarify the t
         heading: "A Simple Example",
         content: [
           { text: "Say you're importing a specialized component through " },
-          { text: "JNPA (Mumbai)", kw: true, href: "/locations/mumbai-jnpa" },
+          { text: "JNPA (Mumbai)", kw: true, href: "/locations/mumbai" },
           { text: ` at USD 80 per unit. Customs questions the value because comparable imports seem to show higher prices.
 
 You should be ready to explain why USD 80 is right — maybe it's a larger order quantity, a different spec, a documented commercial discount, or a long-term pricing arrangement. Whatever the explanation, it needs to be backed by actual records, not just an assertion.` }
@@ -7884,10 +7884,10 @@ For an e-commerce business, orders may arrive continuously in smaller quantities
         heading: "Why Panvel Can Be Considered for Regional Distribution",
         content: [
           { text: "The " },
-          { text: "Mumbai-Panvel", kw: true, href: "/locations/mumbai-panvel" },
+          { text: "Mumbai-Panvel", kw: true, href: "/locations/mumbai" },
           { text: " area is relevant to businesses looking at western India because it can form part of a broader logistics and distribution network around the Mumbai region. For an importer, the location decision isn't simply about finding the cheapest warehouse — it involves looking at the complete movement: International supplier → Ocean freight → Port → Customs process → Warehouse → Inventory allocation → Regional distribution.\n\nThe closer these activities are planned as one connected supply chain, the easier it becomes to understand where inventory should be positioned." }
         ],
-        relatedLink: { text: "Explore Astromar's Mumbai-Panvel facility", href: "/locations/mumbai-panvel" }
+        relatedLink: { text: "Explore Astromar's Mumbai-Panvel facility", href: "/locations/mumbai" }
       },
       {
         heading: "E-Commerce Has a Different Warehouse Rhythm",
@@ -8036,10 +8036,10 @@ The first two clocks usually run on fixed free periods. The third one often does
         heading: "Why Location Inside the JNPA SEZ Matters",
         content: [
           { text: "Distance adds time, and time is exactly what detention and demurrage charge for. An FTWZ located within the JNPA SEZ at Uran, like Astromar's " },
-          { text: "Mumbai-JNPA", kw: true, href: "/locations/mumbai-jnpa" },
+          { text: "Mumbai-JNPA", kw: true, href: "/locations/mumbai" },
           { text: " facility, keeps the movement between the terminal and the warehouse short. That can make it more practical to move cargo out of the terminal within the free period, unpack it and return the empty container without a long inland round trip.\n\nA short distance doesn't remove the need for documentation, approvals and proper planning — but it reduces how much of the free time is consumed by transport alone." }
         ],
-        relatedLink: { text: "See full details for our Mumbai-JNPA location", href: "/locations/mumbai-jnpa" }
+        relatedLink: { text: "See full details for our Mumbai-JNPA location", href: "/locations/mumbai" }
       },
       {
         heading: "Customs Timing Is Part of the Cost",
@@ -8162,10 +8162,10 @@ These timelines don't always match. A component might arrive in India several we
         heading: "Why Proximity to Sriperumbudur Matters",
         content: [
           { text: "For a manufacturing operation, warehouse location isn't just about the cost of renting space — the distance and connectivity between the inventory location and the factory can influence replenishment planning. For businesses evaluating a Chennai FTWZ warehouse, proximity to the " },
-          { text: "Sriperumbudur", kw: true, href: "/locations/chennai-sriperumbudur" },
+          { text: "Sriperumbudur", kw: true, href: "/locations/chennai" },
           { text: " manufacturing belt can be one factor to consider alongside transportation arrangements, warehouse capability, handling needs and production schedules.\n\nThe objective isn't simply to have a warehouse near the factory — it's to have an inventory location that works with the factory's supply chain." }
         ],
-        relatedLink: { text: "Explore Astromar's Chennai-Sriperumbudur facility", href: "/locations/chennai-sriperumbudur" }
+        relatedLink: { text: "Explore Astromar's Chennai-Sriperumbudur facility", href: "/locations/chennai" }
       },
       {
         heading: "An FTWZ Can Act as an Inventory Buffer",
@@ -8308,10 +8308,10 @@ Storage should follow the specific preservation requirements provided for the eq
           { text: " in North Chennai, connected to cargo clusters and national highways, while the wider Ennore area is associated with thermal power and power-evacuation infrastructure — including the North Chennai Pooling Station, a 765 kV substation established to evacuate power from generation projects around Ennore and planned under the national framework maintained by the " },
           { text: "Central Electricity Authority", href: "https://cea.nic.in", target: "_blank", rel: "noopener noreferrer" },
           { text: ".\n\nThis doesn't mean every electrical shipment moving through North Chennai is connected to one particular project. For businesses considering " },
-          { text: "Chennai Vallur", kw: true, href: "/locations/chennai-vallur" },
+          { text: "Chennai Vallur", kw: true, href: "/locations/chennai" },
           { text: " as a logistics base, the wider point is that the region provides a natural setting for the logistics of equipment associated with power generation, transmission and industrial electrical infrastructure." }
         ],
-        relatedLink: { text: "Explore Astromar's Chennai-Vallur facility", href: "/locations/chennai-vallur" }
+        relatedLink: { text: "Explore Astromar's Chennai-Vallur facility", href: "/locations/chennai" }
       },
       {
         heading: "The Project Schedule Does Not Always Match the Shipping Schedule",
