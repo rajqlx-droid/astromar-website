@@ -43,7 +43,7 @@ export interface FTWZLocationDetail {
     established: string;
     totalArea: string;
   };
-  connectivity: {
+  connectivity?: {
     headline: string;
     road: string[];
     rail: string[];
@@ -2476,6 +2476,552 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
       "Walking distance from Anna Nagar Metro — easy client access",
     ],
     industries: ["All Industries — Corporate Support", "FTWZ Consulting", "Customs & Compliance", "Freight Management", "Supply Chain Advisory", "Trade Finance Support"],
+  },
+  {
+    "slug": "chennai",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "type": "FTWZ Warehouse",
+    "phone": "+91 99402 11014",
+    "lat": 12.9716,
+    "lng": 79.9473,
+    "address": "Sriperumbudur: Mannur Village, Sriperumbudur, Kancheepuram, Tamil Nadu 602105; Vallur: Vallur Village, Ponneri, Tiruvallur, Tamil Nadu 600120",
+    "seo": {
+      "title": "Chennai Free Trade Zone | Astromar Logistics Pvt. Ltd.",
+      "description": "Chennai free trade zone: FTWZ facilities at Sriperumbudur and Vallur. Customs duty and IGST are deferred until goods clear into the domestic market.",
+      "keywords": "chennai free trade zone, free trade warehouse in chennai, ftwz in chennai, sriperumbudur ftwz, vallur ftwz",
+      "h1": "Chennai Free Trade Zone",
+      "bannerIntro": [
+        {
+          "text": "Astromar Logistics Pvt. Ltd. runs two free trade warehousing zone (FTWZ) facilities in Chennai: Sriperumbudur, on the NH 48 industrial corridor, and Vallur, close to the north Chennai ports. Customs duty and IGST are deferred until goods are cleared into the domestic market."
+        }
+      ],
+      "aboutParagraphs": [
+        [
+          {
+            "text": "A free trade warehouse in Chennai lets you bring goods into India, hold them under customs control, and decide later whether to sell them domestically, re-export them or transfer them to another zone. Customs duty and IGST stay deferred while goods remain in the zone and become payable only when they are cleared into the Domestic Tariff Area (DTA). Goods that are re-exported do not attract customs duty. Both facilities are notified under the SEZ Act, 2005, subject to applicable regulations governing FTWZ status."
+          }
+        ],
+        [
+          {
+            "text": "Storage is available for up to 3 years, extendable to 5 with special permission, which is longer than a standard bonded warehouse typically allows. While goods wait, the zone permits repacking, relabelling, sorting, kitting, quality inspection, consolidation and CKD/SKD assembly, so stock can be prepared for its next move before duty is paid. Customs clearance is handled on-site, with bonded transport linking each facility to the gateway ports and the airport."
+          }
+        ]
+      ],
+      "faqH2": [
+        {
+          "text": "Frequently Asked Questions"
+        }
+      ],
+      "faqItems": [
+        {
+          "question": [
+            {
+              "text": "How long does clearance take?"
+            }
+          ],
+          "answer": [
+            {
+              "text": "With complete documents and no customs query, assessment usually takes one working day, or two to three if Customs orders a physical examination. Movement into the facility follows the same or next working day, and the GRN is issued within about four hours of arrival."
+            }
+          ]
+        },
+        {
+          "question": [
+            {
+              "text": "Can I sell to a domestic buyer directly from the zone?"
+            }
+          ],
+          "answer": [
+            {
+              "text": "Yes. Sales made while goods are still in the zone are outside the scope of GST until clearance into the DTA. Duty and IGST become payable at clearance, based on the value and classification then. Confirm the treatment of your own transactions with your tax advisor."
+            }
+          ]
+        },
+        {
+          "question": [
+            {
+              "text": "What if stock is nearing the storage limit?"
+            }
+          ],
+          "answer": [
+            {
+              "text": "Tell us early. We track ageing stock and can raise an extension request or take your disposition instructions well before the period ends."
+            }
+          ]
+        }
+      ],
+      "faqPageSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does clearance take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "With complete documents and no customs query, assessment usually takes one working day, or two to three if Customs orders a physical examination. Movement into the facility follows the same or next working day, and the GRN is issued within about four hours of arrival."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I sell to a domestic buyer directly from the zone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Sales made while goods are still in the zone are outside the scope of GST until clearance into the DTA. Duty and IGST become payable at clearance, based on the value and classification then. Confirm the treatment of your own transactions with your tax advisor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if stock is nearing the storage limit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tell us early. We track ageing stock and can raise an extension request or take your disposition instructions well before the period ends."
+            }
+          }
+        ]
+      },
+      "breadcrumbSchema": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Astromar",
+            "item": "https://www.astromarfreezone.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://www.astromarfreezone.com/contact-us"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Chennai Free Trade Zone",
+            "item": "https://www.astromarfreezone.com/locations/chennai"
+          }
+        ]
+      }
+    },
+    "portOverview": {
+      "headline": "Sriperumbudur and Vallur",
+      "description": "Astromar Logistics Pvt. Ltd. runs two free trade warehousing zone (FTWZ) facilities in Chennai: Sriperumbudur, on the NH 48 industrial corridor, and Vallur, close to the north Chennai ports. Customs duty and IGST are deferred until goods are cleared into the domestic market.",
+      "portName": "",
+      "portType": "",
+      "sezZone": "",
+      "operatedBy": "Astromar Logistics Pvt. Ltd.",
+      "established": "",
+      "totalArea": ""
+    },
+    "keyAdvantages": [],
+    "industries": [],
+    "facilitiesH2": "Free Trade Warehouse in Chennai",
+    "facilities": [
+      {
+        "id": "sriperumbudur",
+        "name": "Sriperumbudur FTWZ",
+        "area": "Sriperumbudur, Kancheepuram, Tamil Nadu",
+        "summary": [
+          "Sriperumbudur sits in Kancheepuram district on NH 48, the Chennai-Bengaluru highway, in South India's electronics and automotive belt. The facility is 52 km from Chennai Port and about 42 km from Chennai International Airport, so component importers can reach both gateways from one location. Kattupalli Port is 75 km away, and Sriperumbudur Railway Station on the Chennai-Arakkonam line is close by.",
+          "The site suits importers who feed assembly lines on tight schedules. Components and sub-assemblies can be held in the zone without paying duty up front, then staged exactly as the line needs them through kitting, sorting and relabelling. When a shortage hits, air freight can come in from the airport and be released quickly. Electronics and IT hardware, automotive parts, pharmaceuticals, heavy engineering and renewable energy equipment are the cargo types this facility serves most."
+        ],
+        "address": "Mannur Village, Sriperumbudur, Kancheepuram, Tamil Nadu 602105",
+        "phone": "+91 99402 11014",
+        "lat": 12.9716,
+        "lng": 79.9473,
+        "operatingHours": "Mon–Sat: 8:00 AM – 8:00 PM",
+        "port": "Chennai Port",
+        "nearestAirport": "Chennai International Airport (MAA) — 42 km",
+        "localBusinessSchema": {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Astromar Logistics Pvt. Ltd. — Chennai Free Trade Zone (Sriperumbudur)",
+          "description": "Sriperumbudur sits in Kancheepuram district on NH 48, the Chennai-Bengaluru highway, in South India's electronics and automotive belt.",
+          "url": "https://www.astromarfreezone.com/locations/chennai",
+          "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80",
+          "telephone": "+91 99402 11014",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mannur & Valarpuram Village, Sriperumbudur Taluk",
+            "addressLocality": "Kancheepuram",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "602105",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 12.9716,
+            "longitude": 79.9473
+          },
+          "openingHours": "Mo-Sa 08:00-20:00",
+          "areaServed": [
+            "Chennai",
+            "Kancheepuram",
+            "Tamil Nadu",
+            "India"
+          ]
+        }
+      },
+      {
+        "id": "vallur",
+        "name": "Vallur FTWZ",
+        "area": "Vallur, Tiruvallur, Tamil Nadu",
+        "summary": [
+          "Vallur is in Ponneri Taluk, Tiruvallur district, within about 35 km of three ports: Kattupalli (Adani) at 15 km, Ennore (Kamarajar) at 20 km and Chennai Port at 35 km via the Ennore Expressway. NH 16, the East Coast highway, is 8 km away. Ponneri Railway Station is on the Chennai-Gudur line, and the Ennore Port rail siding gives bulk cargo a rail link. Chennai Central is 32 km away.",
+          "That short run from the terminal matters for bulk and industrial cargo. Containers can reach bonded storage quickly, which helps limit detention and demurrage while cargo waits for onward movement. The facility is set up for bulk commodities, chemicals and petrochemicals, energy-sector equipment, steel and metals, automotive parts and consumer goods, and it sits within North Chennai's energy and heavy-industry cluster."
+        ],
+        "address": "Vallur Village, Ponneri, Tiruvallur, Tamil Nadu 600120",
+        "phone": "+91 99402 11014",
+        "lat": 13.209,
+        "lng": 80.2843,
+        "operatingHours": "Mon–Sat: 8:00 AM – 8:00 PM",
+        "port": "Kamarajar Port (Ennore)",
+        "nearestAirport": "Chennai International Airport (MAA) — 35 km",
+        "localBusinessSchema": {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Astromar Logistics Pvt. Ltd. — Free Trade Warehouse Chennai (Vallur)",
+          "description": "Vallur is in Ponneri Taluk, Tiruvallur district, within about 35 km of three ports: Kattupalli (Adani) at 15 km, Ennore (Kamarajar) at 20 km and Chennai Port at 35 km via the Ennore Expressway.",
+          "url": "https://www.astromarfreezone.com/locations/chennai",
+          "image": "https://images.unsplash.com/photo-1670121180530-cfcba4438038?w=1920&q=80",
+          "telephone": "+91 99402 11014",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Vallur & Edayanchavadi Village, Ponneri Taluk",
+            "addressLocality": "Tiruvallur",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600120",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 13.209,
+            "longitude": 80.2843
+          },
+          "openingHours": "Mo-Sa 08:00-20:00",
+          "areaServed": [
+            "Chennai",
+            "Tiruvallur",
+            "Ponneri",
+            "North Chennai",
+            "Tamil Nadu",
+            "India"
+          ]
+        }
+      }
+    ],
+    "facilitySections": [
+      {
+        "heading": "Cold Storage Warehouse in Chennai",
+        "paragraphs": [
+          "Importers of temperature-sensitive goods, such as some pharmaceutical products and food items, can hold them in cold storage at Astromar's Chennai FTWZ while clearance and release are planned. Goods stay under customs control, so you can time the move into the domestic market to when stock is actually needed. Share the cargo's temperature requirements and documents with the team before shipping so they can confirm it suits the facility."
+        ]
+      },
+      {
+        "heading": "Dangerous Goods Warehouse in Chennai",
+        "paragraphs": [
+          "Astromar handles dangerous goods at its Chennai FTWZ, alongside standard bonded storage. This covers hazardous components used in electronics and automotive supply chains and chemical, petrochemical and industrial cargo, subject to applicable regulations. Send the product's classification and safety data sheet before shipping so the team can confirm handling and storage."
+        ]
+      },
+      {
+        "heading": "Value-Added Services in the Zone",
+        "paragraphs": [
+          "Value-added work happens inside the zone while goods stay bonded. You raise a work order that sets out the scope, and the unit manager confirms it falls within the facility's authorised operations before work starts. Kitting, labelling, repackaging, quality inspection and palletisation are the common requests. This work does not change the deferred status of your goods, and input and output quantities, including any wastage, are recorded in the bonded ledger."
+        ]
+      },
+      {
+        "heading": "Who Uses Our Chennai FTWZ",
+        "paragraphs": [
+          "Importers of electronics and IT hardware, automotive and auto components, pharmaceuticals, chemicals and petrochemicals, energy and LNG-related equipment, bulk commodities, steel and metals, textiles and leather, heavy engineering, renewable energy equipment and consumer goods use the Chennai zone. Traders who buy for resale also use it, since stock can be sold on while it is still in the zone and cleared only when the buyer is ready."
+        ]
+      },
+      {
+        "heading": "Stock Control and Records",
+        "paragraphs": [
+          "Every consignment is entered in the bonded stock ledger against your reference and the Bill of Entry number, and tagged to a storage location. Periodic cycle counts are reconciled against the ledger, and any shortage or damage found on receipt is photographed, noted on the GRN and reported to you the same working day. Goods that need temperature control are kept in a designated area with logged monitoring."
+        ]
+      },
+      {
+        "heading": "How Your Shipment Moves",
+        "paragraphs": [
+          "You send the shipping instructions, commercial invoice, packing list, Bill of Lading or Air Waybill, and your Import Export Code (IEC), plus any product licences such as BIS, quarantine or drug licence. Astromar files the Bill of Entry for the goods to enter the zone, usually on the same working day the manifest is available. No duty or IGST is paid at that stage. After Customs clears the filing, the cargo moves into the zone under customs seal, and you receive a Goods Receipt Note (GRN) once it is checked and logged.",
+          "When you are ready to move stock out, you choose one of three routes. For domestic sale, a Bill of Entry for home consumption is filed, customs duty and IGST are paid on the value at that time, and goods are released to your buyer. For re-export, a Shipping Bill is filed and goods leave India without customs duty. For a transfer, goods move under bond to another FTWZ or SEZ unit, still duty-deferred."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "type": "FTWZ Warehouse",
+    "phone": "+91 99402 11014",
+    "lat": 18.9543,
+    "lng": 72.9479,
+    "address": "JNPA: JNPA SEZ, Uran, Raigad, Maharashtra 400707; Panvel: Village Sai, Taluka Panvel, Raigad, Maharashtra 410206",
+    "seo": {
+      "title": "FTWZ in Mumbai | Astromar Logistics Pvt. Ltd.",
+      "description": "FTWZ in Mumbai: facilities at JNPA, Uran and Panvel. Customs duty and IGST are deferred until goods are cleared into the domestic market.",
+      "keywords": "ftwz in mumbai, free trade zone warehousing in mumbai, jnpa ftwz, panvel ftwz",
+      "h1": "FTWZ in Mumbai",
+      "bannerIntro": [
+        {
+          "text": "Astromar Logistics Pvt. Ltd. operates two FTWZ facilities in the Mumbai region: an on-port site inside the JNPA SEZ at Uran, and an inland site at Panvel in Navi Mumbai. Customs duty and IGST are deferred until goods are cleared into the domestic market."
+        }
+      ],
+      "aboutParagraphs": [
+        [
+          {
+            "text": "Free trade zone warehousing in Mumbai lets importers bring goods into India, hold them under customs control and choose later whether to sell them domestically, re-export them or move them to another zone. Customs duty and IGST remain deferred while goods stay in the zone and are payable only on clearance into the Domestic Tariff Area (DTA). Re-exported goods do not attract customs duty. Both facilities are notified under the SEZ Act, 2005, subject to applicable regulations governing FTWZ status."
+          }
+        ],
+        [
+          {
+            "text": "Storage is available for up to 3 years, extendable to 5 with special permission, longer than a standard bonded warehouse typically allows. The zone permits repacking, relabelling, sorting, kitting, quality inspection, consolidation and CKD/SKD assembly, so cargo can be prepared before duty is paid. Customs clearance is handled on-site, and bonded transport connects the facilities with the JNPA terminals."
+          }
+        ]
+      ],
+      "faqH2": [
+        {
+          "text": "FAQs"
+        }
+      ],
+      "faqItems": [
+        {
+          "question": [
+            {
+              "text": "How does an FTWZ differ from a standard bonded warehouse in Mumbai?"
+            }
+          ],
+          "answer": [
+            {
+              "text": "A standard bonded warehouse allows duty-deferred storage but typically limits storage to one year and restricts permitted activities. The FTWZ allows storage up to 3 years, extendable to 5 with special permission, and the activities listed above."
+            }
+          ]
+        },
+        {
+          "question": [
+            {
+              "text": "What happens to duty if I re-export?"
+            }
+          ],
+          "answer": [
+            {
+              "text": "No customs duty becomes payable on goods re-exported from the zone. Duty and IGST arise only when goods are cleared into the DTA."
+            }
+          ]
+        },
+        {
+          "question": [
+            {
+              "text": "Can stock be sold on while it is still in the zone?"
+            }
+          ],
+          "answer": [
+            {
+              "text": "Yes. Sales made while goods are in the zone are outside the scope of GST until clearance into the DTA. Duty and IGST become payable at clearance, based on the value and classification then. Confirm the treatment of your own transactions with your tax advisor."
+            }
+          ]
+        }
+      ],
+      "faqPageSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does an FTWZ differ from a standard bonded warehouse in Mumbai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A standard bonded warehouse allows duty-deferred storage but typically limits storage to one year and restricts permitted activities. The FTWZ allows storage up to 3 years, extendable to 5 with special permission, and the activities listed above."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to duty if I re-export?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No customs duty becomes payable on goods re-exported from the zone. Duty and IGST arise only when goods are cleared into the DTA."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can stock be sold on while it is still in the zone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Sales made while goods are in the zone are outside the scope of GST until clearance into the DTA. Duty and IGST become payable at clearance, based on the value and classification then. Confirm the treatment of your own transactions with your tax advisor."
+            }
+          }
+        ]
+      },
+      "breadcrumbSchema": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Astromar",
+            "item": "https://www.astromarfreezone.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://www.astromarfreezone.com/contact-us"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "FTWZ in Mumbai",
+            "item": "https://www.astromarfreezone.com/locations/mumbai"
+          }
+        ]
+      }
+    },
+    "portOverview": {
+      "headline": "JNPA (Uran) and Panvel",
+      "description": "Astromar Logistics Pvt. Ltd. operates two FTWZ facilities in the Mumbai region: an on-port site inside the JNPA SEZ at Uran, and an inland site at Panvel in Navi Mumbai. Customs duty and IGST are deferred until goods are cleared into the domestic market.",
+      "portName": "",
+      "portType": "",
+      "sezZone": "",
+      "operatedBy": "Astromar Logistics Pvt. Ltd.",
+      "established": "",
+      "totalArea": ""
+    },
+    "keyAdvantages": [],
+    "industries": [],
+    "facilitiesH2": "Free Trade Zone Warehousing in Mumbai",
+    "facilities": [
+      {
+        "id": "jnpa",
+        "name": "JNPA FTWZ, Uran",
+        "area": "Uran, Raigad, Maharashtra",
+        "summary": [
+          "The JNPA facility sits inside the JNPA SEZ at Uran, in Raigad district, beside Nhava Sheva, one of India's major container ports. Containers move from the terminal to the warehouse without inland transit, which removes trucking cost and the detention charges that build up while a box waits for a vehicle. That makes it the natural choice for importers who handle high volumes of containers, re-export, consolidate or run time-sensitive supply chains.",
+          "Consolidation and break-bulk work are the facility's strengths: cargo from several suppliers can be received, sorted and combined into one outbound shipment, then released for re-export or cleared into the DTA when buyers are ready. The Western Dedicated Freight Corridor gives rail access to inland container depots in North India, and the NH 348 Uran-Panvel road links to the Mumbai-Pune Expressway and the Mumbai Trans Harbour Link (MTHL) for South Mumbai. Containerised electronics, automotive parts, consumer goods, pharmaceuticals, chemicals, textiles and machinery are the usual cargo."
+        ],
+        "address": "JNPA SEZ, Uran, Raigad, Maharashtra 400707",
+        "phone": "+91 99402 11014",
+        "lat": 18.9543,
+        "lng": 72.9479,
+        "operatingHours": "Mon–Sat: 8:00 AM – 8:00 PM",
+        "port": "Jawaharlal Nehru Port (JNPA)",
+        "nearestAirport": "Chhatrapati Shivaji Maharaj International Airport (BOM) — 40 km",
+        "localBusinessSchema": {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Astromar Logistics Pvt. Ltd. — FTWZ in Mumbai (JNPA Nhava Sheva)",
+          "description": "The JNPA facility sits inside the JNPA SEZ at Uran, in Raigad district, beside Nhava Sheva, one of India's major container ports.",
+          "url": "https://www.astromarfreezone.com/locations/mumbai",
+          "image": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1920&q=80",
+          "telephone": "+91 99402 11014",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "JNPA SEZ, Village Sawarkhar, Uran",
+            "addressLocality": "Raigad",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400707",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 18.9543,
+            "longitude": 72.9479
+          },
+          "openingHours": "Mo-Sa 08:00-20:00",
+          "areaServed": [
+            "Mumbai",
+            "Navi Mumbai",
+            "JNPA",
+            "Maharashtra",
+            "India"
+          ]
+        }
+      },
+      {
+        "id": "panvel",
+        "name": "Panvel FTWZ, Navi Mumbai",
+        "area": "Panvel, Raigad, Maharashtra",
+        "summary": [
+          "The Panvel facility is in Taluka Panvel, Raigad district, about 35 km from JNPA by road. It sits where the Mumbai-Pune Expressway meets the NH 4 corridor, so it serves as a bridge between the port and Maharashtra's industrial belt, including Pune, Nashik and Aurangabad. Panvel Railway Junction, on the Central and Harbour lines, is nearby. Operating costs here are lower than in core Mumbai, and the MTHL shortens the drive to South Mumbai.",
+          "Panvel is built for distribution and value-added work rather than container-side speed. Automotive OEMs and Tier-1 suppliers, electronics and IT hardware importers, FMCG and consumer goods companies, chemicals and pharma importers, and project cargo operators handling heavy machinery and capital equipment use it to hold stock close to their customers, kit and relabel it, and release it in batches. Many importers pair the two sites, using JNPA for fast container turns and Panvel for storage and onward distribution."
+        ],
+        "address": "Village Sai, Taluka Panvel, Raigad, Maharashtra 410206",
+        "phone": "+91 99402 11014",
+        "lat": 18.9894,
+        "lng": 73.1175,
+        "operatingHours": "Mon–Sat: 8:00 AM – 8:00 PM",
+        "port": "Nhava Sheva (JNPA)",
+        "nearestAirport": "Chhatrapati Shivaji Maharaj International Airport (BOM) — 45 km",
+        "localBusinessSchema": {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Astromar Logistics Pvt. Ltd. — Free Trade Warehouse Zone Mumbai (Panvel)",
+          "description": "The Panvel facility is in Taluka Panvel, Raigad district, about 35 km from JNPA by road.",
+          "url": "https://www.astromarfreezone.com/locations/mumbai",
+          "image": "https://www.astromarfreezone.com/images/locations/panvel.webp",
+          "telephone": "+91 99402 11014",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Village Sai, Taluka Panvel",
+            "addressLocality": "Raigad",
+            "addressRegion": "Maharashtra",
+            "postalCode": "410206",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 18.9894,
+            "longitude": 73.1175
+          },
+          "openingHours": "Mo-Sa 08:00-20:00",
+          "areaServed": [
+            "Mumbai",
+            "Navi Mumbai",
+            "Panvel",
+            "Pune",
+            "Maharashtra",
+            "India"
+          ]
+        }
+      }
+    ],
+    "facilitySections": [
+      {
+        "heading": "Cold Storage Warehouse in Mumbai",
+        "paragraphs": [
+          "Temperature-sensitive goods, such as some pharmaceutical products and food items, can be held in cold storage at Astromar's Mumbai FTWZ while clearance and release are planned. Goods stay under customs control, so you can match the move into the domestic market to when stock is needed. Share the cargo's temperature requirements and documents with the team before shipping so they can confirm it suits the facility."
+        ]
+      },
+      {
+        "heading": "Dangerous Goods Warehouse in Mumbai",
+        "paragraphs": [
+          "Astromar handles dangerous goods at its Mumbai FTWZ alongside standard bonded storage, subject to applicable regulations. This includes hazardous chemicals and components moving through the JNPA gateway. Send the product's classification and safety data sheet before shipping so the team can confirm handling and storage. Chemicals that are not classified as hazardous follow the standard route."
+        ]
+      },
+      {
+        "heading": "Getting Cargo In and Out",
+        "paragraphs": [
+          "By road, the NH 348 Uran-Panvel corridor and the Mumbai-Pune Expressway connect both sites to Pune, Nashik and Gujarat's industrial belts, and the MTHL cuts the drive to South Mumbai. By rail, the Western Dedicated Freight Corridor serves container movement to North India from JNPA, and Panvel Junction handles passenger and local links. By sea, Nhava Sheva's container terminals offer liner services to the main trade routes. By air, Navi Mumbai and Chhatrapati Shivaji Maharaj International Airport are the gateways for urgent or high-value consignments. Bonded transport carries cargo between the terminals and either facility under customs seal."
+        ]
+      },
+      {
+        "heading": "Value-Added Services and Stock Control",
+        "paragraphs": [
+          "Kitting, labelling, repackaging, quality inspection and palletisation are done inside the zone while goods stay bonded. Each job is scoped in a work order and checked against the facility's authorised operations before work starts. Every consignment is entered in the bonded stock ledger against your reference and tagged to a location, with periodic cycle counts and a Goods Receipt Note (GRN) issued on arrival. Shortage or damage found on receipt is photographed and reported to you the same working day."
+        ]
+      },
+      {
+        "heading": "Moving Stock Out",
+        "paragraphs": [
+          "Three exit routes are open. For domestic sale, a Bill of Entry for home consumption is filed, and customs duty and IGST are paid on the value at the time of clearance. For re-export, a Shipping Bill is filed and goods leave India without customs duty. For a transfer, goods move under bond to another FTWZ or SEZ unit, still duty-deferred. Clearance timelines and the documents we need are the same as at our Chennai zone, and we flag anything that may affect your schedule as soon as it arises."
+        ]
+      }
+    ]
   },
 ];
 
