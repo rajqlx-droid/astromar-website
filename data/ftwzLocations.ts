@@ -324,7 +324,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
         ],
         [
           { text: "VSEZ spans 360 hectares as a multi-product SEZ, providing extensive infrastructure for steel, pharma, petrochemicals, engineering goods, and food processing industries. With inner harbour at 10.7m draft and outer harbour at 18.1m draft, the port accommodates capesize vessels, while the container terminal offers 0.7 million TEUs capacity. NH 16 and NH 65 provide road connectivity to Hyderabad and other major hinterland markets. Astromar's Vizag facility also supports the movement of " },
-          { text: "heavy machinery and project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "heavy machinery and project cargo", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " for the region's steel and shipbuilding industries." },
         ],
         [
@@ -752,7 +752,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: " operating within the Aerospace SEZ at Devanahalli — India's premier aerospace and defence manufacturing cluster. As a leading " },
           { text: "free trade warehouse in bangalore", kw: true },
           { text: ", the SEZ is home to HAL (Hindustan Aeronautics Limited), Boeing, Airbus, and major defence contractors, providing a unique FTWZ environment for high-value aerospace components, precision engineering goods, and advanced electronics. Moving aircraft assemblies and defence-grade equipment in and out of the SEZ often calls for " },
-          { text: "coordinated heavy-lift and project cargo logistics", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "coordinated heavy-lift and project cargo logistics", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " alongside standard FTWZ storage." },
         ],
         [
@@ -985,7 +985,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
           { text: "As a fully-operational custom bonded warehouse facility in Dahej, Astromar provides " },
           { text: "duty-deferred storage", kw: true, href: "/blogs/customs-duty-deferment-benefits" },
           { text: " for petrochemical feedstocks, bulk chemicals, polymers, and industrial gases with full safety and compliance protocols. Combined with " },
-          { text: "specialised project cargo handling", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "specialised project cargo handling", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " and on-site customs clearance, importers benefit from streamlined operations under the " },
           { text: "full FTWZ benefit stack", kw: true, href: "/free-trade-zone" },
           { text: "." },

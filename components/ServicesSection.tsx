@@ -17,7 +17,7 @@ const services = [
   { icon: Plane, title: "Air Freight", desc: "Express and standard air cargo solutions with real-time tracking and customs pre-clearance capabilities.", href: "/free-trade-zone-services/air-freight" },
   { icon: GitBranch, title: "Supply Chain Solutions", desc: "Integrated supply chain management with inventory optimization, order fulfilment, and distribution.", href: "/free-trade-zone-services/supply-chain-management" },
   { icon: ClipboardCheck, title: "Customs Clearance", desc: "End-to-end customs compliance, documentation, and clearance services for imports and exports.", href: "/free-trade-zone-services/customs-clearance" },
-  { icon: Box, title: "Project Cargo & Heavy-Lift", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/free-trade-zone-services/project-cargo" },
+  { icon: Box, title: "Project Cargo & Heavy-Lift", desc: "Specialized handling of oversized, heavy-lift, and project cargo with custom engineering solutions.", href: "/free-trade-zone-services/heavy-lift-logistics" },
   { icon: Snowflake, title: "Warehousing", desc: "Secure, scalable warehousing solutions with real-time inventory management and value-added services.", href: "/free-trade-zone-services/warehousing" },
 ];
 

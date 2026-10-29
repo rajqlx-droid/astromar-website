@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/free-trade-zone-services/customs-clearance`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/free-trade-zone-services/warehousing`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/free-trade-zone-services/supply-chain-management`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/free-trade-zone-services/project-cargo`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/free-trade-zone-services/heavy-lift-logistics`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/ftwz-faqs`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/ftwz-benefits-india`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/freight-forwarding-logistics-chennai`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

@@ -1203,7 +1203,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Every Factory Has Its Own Rhythm",
         content: [
           { text: "No two factories work the same way. A pharmaceutical company may receive small, high-value shipments every week. A steel manufacturer deals with entirely different volumes and timelines. " },
-          { text: "An engineering company importing specialised machinery", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "An engineering company importing specialised machinery", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " plans months ahead, because installation has to land at exactly the right stage of a project.\n\nThe cargo may all arrive through the same city. Everything after that looks completely different — which is why logistics in Vizag isn't really built around containers. It's built around the industries those containers support." }
         ]
       },
@@ -2443,10 +2443,10 @@ A central project cargo schedule can help provide visibility. The logistics team
           { text: "Project sites are not always ready to receive imported equipment immediately. Construction may still be underway, storage space may be limited, or installation may have been postponed. In these situations, warehousing can provide some breathing room.\n\nFor eligible imported goods, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can be considered as part of the supply chain where inventory needs to be stored before domestic clearance or onward movement. A simplified flow looks like: Overseas Supplier → Indian Port → " },
-          { text: "FTWZ", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "FTWZ", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " → Storage → Customs Clearance → Project Site. This is particularly useful when equipment arrives well before it's required — the project doesn't have to force an early delivery simply because the vessel has arrived." }
         ],
-        relatedLink: { text: "Explore Astromar's project cargo services", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "Explore Astromar's project cargo services", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "Managing Equipment From Multiple Suppliers",
@@ -2478,7 +2478,7 @@ None of these steps are particularly complicated — the difference comes from d
         heading: "How FTWZ Can Support Project Supply Chains",
         content: [
           { text: "An FTWZ can be useful when imported project equipment needs to be held before it's required at the final site. Instead of treating the port as the only point where inventory can wait, the importer can consider a structured " },
-          { text: "warehousing option for project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "warehousing option for project cargo", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " for eligible goods — providing flexibility when project schedules change.\n\nFor example, if construction is delayed by two months, the equipment doesn't necessarily need to be rushed to the project site. It can remain within the planned inventory structure until the project is ready, subject to the applicable customs and operational requirements. This is particularly relevant for projects involving large volumes of imported equipment from multiple suppliers — including " },
           { text: "renewable energy installations", href: "https://mnre.gov.in", target: "_blank", rel: "noopener noreferrer" },
           { text: " coordinated under national renewable energy programmes." }
@@ -3564,10 +3564,10 @@ These aren't just technical details for the engineering team — they directly a
         heading: "What If the Project Site Isn't Ready?",
         content: [
           { text: "This happens more often than people expect. The equipment arrives in India, customs formalities are completed, the transporter is ready — but the project site isn't. Perhaps construction has been delayed, or the installation team isn't ready to receive the equipment. The equipment still has to go somewhere.\n\nThis is where " },
-          { text: "project cargo warehousing", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project cargo warehousing", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " becomes useful. A suitable storage facility can give the project team some breathing room until the site is ready — but this isn't a matter of putting the equipment into any available warehouse. Large and heavy equipment needs sufficient space, suitable ground conditions, access for specialised vehicles and appropriate handling arrangements. The storage facility needs to be selected based on the actual cargo." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "Customs Planning Shouldn't Be Left Until the Last Minute",
@@ -3609,7 +3609,7 @@ This is why project logistics teams need to understand what's happening on the c
         heading: "Not Every FTWZ Is Suitable for Every Project",
         content: [
           { text: "A customs-controlled facility may be suitable from a regulatory perspective, but the physical requirements of the cargo still need to be considered. Large equipment needs space, heavy equipment may require suitable ground conditions, loading and unloading may require specialised machinery, and the access road needs to accommodate oversized vehicles.\n\nSo when evaluating an FTWZ for " },
-          { text: "project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: ", the business needs to look at both sides: can the facility support the customs requirements, and can it physically handle the equipment? Both questions matter." }
         ]
       },
@@ -4226,10 +4226,10 @@ Depending on the equipment, storage could involve covered warehousing, open stor
           { text: "An " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can be considered as part of the logistics strategy for eligible imported goods and transactions, particularly relevant when there's a gap between the arrival of imported equipment and the point at which the customer actually needs it.\n\nRather than treating arrival at the Indian port and delivery to the project site as one continuous event, the company can evaluate whether an appropriate " },
-          { text: "project cargo warehousing", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project cargo warehousing", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " arrangement can provide an intermediate stage for the cargo. The customs treatment, permitted activities and suitability of the facility depend on the applicable regulations and the nature of the transaction — an FTWZ isn't a universal solution for oversized cargo, but it's one option that may make sense in the right project structure." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "Customs Planning Shouldn't Be Left Until the Vessel Arrives",
@@ -4956,7 +4956,7 @@ If equipment is required in October, the team needs to know when it must leave t
           { text: "supply chain", kw: true, href: "/free-trade-zone-services/supply-chain-management" },
           { text: " strategy where eligible?\n\nFor eligible imported goods and transactions, an FTWZ can be considered when equipment arrives before the project is ready. Instead of treating arrival at the Indian port as an automatic trigger for immediate domestic movement, a company may evaluate whether eligible equipment can be managed within an FTWZ structure before being released according to the permitted process. For a long-duration data centre or telecom project, that flexibility can be worth considering — but the commercial case still needs to be worked out. An FTWZ isn't automatically the right answer simply because a shipment is imported." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "Projects Rarely Run Exactly According to Plan",
@@ -6019,7 +6019,7 @@ The equipment should be selected based on cargo dimensions, weight distribution,
         heading: "Work With an Experienced Project Logistics Partner",
         content: [
           { text: "Heavy cargo movement involves multiple disciplines — routing, engineering, equipment selection, permits, lifting plans and on-site execution. An experienced " },
-          { text: "project logistics partner", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project logistics partner", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " can help plan the complete movement, coordinate the right equipment and manage the interface between transport, lifting and installation teams. Where imported equipment needs to be stored before it moves to site, an " },
           { text: "FTWZ", kw: true, href: "/free-trade-zone" },
           { text: " can also form part of the plan, subject to the applicable procedures." }
@@ -6629,10 +6629,10 @@ The logistics plan needs to start with the actual cargo — weight, dimensions, 
         heading: "Sometimes the Project Site Is Not Ready",
         content: [
           { text: "The equipment may arrive in India before the project site is ready to receive it — civil work still underway, the installation area occupied, or several shipments arriving together without enough space to receive everything at once. In such situations, temporary storage or a project staging location can become useful.\n\nA suitable warehouse can act as a buffer between the port and the " },
-          { text: "project site", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project site", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: ". Instead of asking the site to receive every shipment immediately, equipment can be managed according to the actual installation schedule — that makes the movement easier to control." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "Warehousing Is Sometimes About Timing, Not Storage",
@@ -7186,10 +7186,10 @@ Before shipment, logistics teams need to understand the physical characteristics
         heading: "Where FTWZ Warehousing Can Fit",
         content: [
           { text: "FTWZ is not a substitute for specialised project transportation — its role is different. For eligible cargo and suitable transaction structures, an FTWZ can provide a controlled location for holding imported goods before they move to their next destination, useful as part of the wider " },
-          { text: "project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " strategy when equipment arrives before the site is ready, multiple shipments need coordination, or components arrive separately from different suppliers.\n\nThe exact customs treatment and permitted activities depend on the nature of the transaction, cargo and applicable regulations. The important point is that warehousing should support the project schedule rather than become an isolated storage activity." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "A Hypothetical Mining Equipment Movement",
@@ -7602,10 +7602,10 @@ As a result, equipment may arrive in India before the project site is ready — 
         heading: "The Warehouse as an Inventory Buffer",
         content: [
           { text: "In a project-based supply chain, a warehouse can do more than store products — it can separate two different timelines: the procurement timeline (when equipment needs to be purchased and received) and the project timeline (when equipment is actually needed for installation). Those dates may not match.\n\nA warehouse allows inventory to arrive according to procurement and transportation requirements while being released according to " },
-          { text: "project", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " requirements. The objective isn't to keep equipment in storage indefinitely — it's to provide a controlled buffer until the project is ready." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "Different Components Create Different Inventory Requirements",
@@ -7774,10 +7774,10 @@ That's why the project cargo transportation plan needs to continue all the way t
         heading: "Site Readiness Matters",
         content: [
           { text: "The transportation schedule should be connected to the construction schedule. Imagine a blade arriving at the port while the wind farm access road is still under preparation — moving it immediately may not be practical. The project logistics team needs visibility into site readiness, access conditions, unloading arrangements and lifting equipment availability as part of a wider " },
-          { text: "project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " strategy.\n\nThis is particularly important because wind-turbine components are not easy to store casually once they've reached the project area — the timing of the delivery needs to make sense within the installation plan." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "A Hypothetical Example",
@@ -8335,10 +8335,10 @@ These questions are particularly important for transformer storage near Chennai 
         heading: "Where FTWZ Can Fit",
         content: [
           { text: "For certain imported equipment and transaction structures, an FTWZ warehouse can form part of the logistics plan between international arrival and eventual project use, as part of a broader " },
-          { text: "project cargo", kw: true, href: "/free-trade-zone-services/project-cargo" },
+          { text: "project cargo", kw: true, href: "/free-trade-zone-services/heavy-lift-logistics" },
           { text: " strategy: International supplier → Ocean freight → Port → Applicable customs process → FTWZ → Project delivery.\n\nThe actual customs treatment depends on the nature of the goods, transaction structure and applicable regulations — an FTWZ is not automatically the right solution for every power-sector shipment. Its suitability needs to be evaluated alongside the project's procurement structure, equipment characteristics and installation schedule. The main value isn't simply storage — it's the ability to create separation between cargo arrival and project installation." }
         ],
-        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/project-cargo" }
+        relatedLink: { text: "See how Astromar handles project cargo", href: "/free-trade-zone-services/heavy-lift-logistics" }
       },
       {
         heading: "Customs Clearance Needs to Be Considered Early",

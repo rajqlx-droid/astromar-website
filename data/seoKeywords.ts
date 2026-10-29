@@ -29,7 +29,7 @@ const pageKeywords: Record<string, string> = {
   "/free-trade-zone-services/customs-clearance": "customs clearance services in India",
   "/free-trade-zone-services/warehousing": "warehousing services in India",
   "/free-trade-zone-services/supply-chain-management": "supply chain management in India",
-  "/free-trade-zone-services/project-cargo": "heavy lift logistics",
+  "/free-trade-zone-services/heavy-lift-logistics": "heavy lift logistics",
 
   // Locations
   "/locations": "",

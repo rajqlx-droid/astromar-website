@@ -332,7 +332,7 @@ const ProjectsClient = () => {
         </div>
       </section>
 
-      <ServicesCarousel currentHref="/free-trade-zone-services/project-cargo" />
+      <ServicesCarousel currentHref="/free-trade-zone-services/heavy-lift-logistics" />
 
       <CTASection />
 

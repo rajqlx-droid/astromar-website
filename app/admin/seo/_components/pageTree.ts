@@ -26,7 +26,7 @@ const NAMES: Record<string, string> = {
   "/free-trade-zone-services/supply-chain-management": "Supply chain management",
   "/free-trade-zone-services/customs-clearance": "Customs clearance",
   "/free-trade-zone-services/warehousing": "Warehousing",
-  "/free-trade-zone-services/project-cargo": "Project cargo",
+  "/free-trade-zone-services/heavy-lift-logistics": "Project cargo",
   "/ftwz-faqs": "FTWZ FAQs",
   "/ftwz-benefits-india": "FTWZ benefits in India",
   "/freight-forwarding-logistics-chennai": "Freight forwarding Chennai",

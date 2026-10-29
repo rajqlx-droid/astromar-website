@@ -23,7 +23,8 @@ const nextConfig = {
       { source: '/services/supply-chain', destination: '/free-trade-zone-services/supply-chain-management', permanent: true },
       { source: '/services/custom-clearance', destination: '/free-trade-zone-services/customs-clearance', permanent: true },
       { source: '/services/warehousing', destination: '/free-trade-zone-services/warehousing', permanent: true },
-      { source: '/services/projects', destination: '/free-trade-zone-services/project-cargo', permanent: true },
+      { source: '/services/projects', destination: '/free-trade-zone-services/heavy-lift-logistics', permanent: true },
+      { source: '/free-trade-zone-services/project-cargo', destination: '/free-trade-zone-services/heavy-lift-logistics', permanent: true },
       { source: '/ftz-in-india', destination: '/free-trade-zone', permanent: true },
       { source: '/locations', destination: '/contact-us', permanent: true },
       { source: '/free-zone-chennai', destination: '/locations/chennai', permanent: true },
@@ -34,7 +35,7 @@ const nextConfig = {
       { source: '/ecommerce-scm-ftz', destination: '/blogs/ecommerce-warehousing-solutions', permanent: true },
       { source: '/value-added-services-in-free-trade-warehousing-zone-india', destination: '/blogs/value-added-services-ftwz', permanent: true },
       { source: '/free-trade-zone-services/custom-clearance', destination: '/free-trade-zone-services/customs-clearance', permanent: true },
-      { source: '/free-trade-zone-services/projects', destination: '/free-trade-zone-services/project-cargo', permanent: true },
+      { source: '/free-trade-zone-services/projects', destination: '/free-trade-zone-services/heavy-lift-logistics', permanent: true },
       { source: '/free-trade-zone-services/supply-chain', destination: '/free-trade-zone-services/supply-chain-management', permanent: true },
       { source: '/coastal-shipping-free-trade-zone', destination: '/free-trade-zone-services/coastal-shipping', permanent: true },
     ]
