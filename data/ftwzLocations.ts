@@ -53,6 +53,7 @@ export interface FTWZLocationDetail {
   keyAdvantages: string[];
   industries: string[];
   facilitiesH2?: string;
+  facilitySections?: { heading: string; paragraphs: string[] }[];
   facilities?: {
     id: string;
     name: string;

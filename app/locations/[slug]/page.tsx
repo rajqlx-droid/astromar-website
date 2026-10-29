@@ -297,6 +297,20 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                 </div>
               ))}
             </div>
+            {seoDetail?.facilitySections && seoDetail.facilitySections.length > 0 && (
+              <div className="mt-6 space-y-6">
+                {seoDetail.facilitySections.map((sec, sIdx) => (
+                  <div key={sIdx} className="bg-white border border-[#1B3A6B]/10 rounded-xl p-5">
+                    <h3 className="text-base font-bold text-[#0f1f3d] mb-4 pb-3 border-b border-[#F97316]/30">{sec.heading}</h3>
+                    <div className="space-y-3">
+                      {sec.paragraphs.map((para, pIdx) => (
+                        <p key={pIdx} className="text-sm text-foreground/80 leading-relaxed">{para}</p>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
       )}
