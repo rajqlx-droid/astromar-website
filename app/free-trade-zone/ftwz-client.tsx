@@ -80,10 +80,10 @@ const useCases = [
 ];
 
 const ftwzLocations = [
-  { slug: "chennai-sriperumbudur", name: "Chennai (Sriperumbudur)" },
-  { slug: "chennai-vallur", name: "Chennai (Vallur)" },
-  { slug: "mumbai-panvel", name: "Mumbai (Panvel)" },
-  { slug: "mumbai-jnpa", name: "Mumbai (JNPA)" },
+  { slug: "chennai", name: "Chennai (Sriperumbudur)" },
+  { slug: "chennai", name: "Chennai (Vallur)" },
+  { slug: "mumbai", name: "Mumbai (Panvel)" },
+  { slug: "mumbai", name: "Mumbai (JNPA)" },
   { slug: "kochi", name: "Kochi" },
   { slug: "vizag", name: "Visakhapatnam" },
   { slug: "delhi-khurja", name: "Delhi NCR (Khurja)" },
@@ -499,7 +499,7 @@ const FTWZServices = () => {
           <p className="text-base sm:text-lg font-semibold text-foreground mb-2">Operating at 10 strategic ports across India</p>
           <p className="text-sm text-foreground/70 leading-loose max-w-3xl mx-auto">
             {ftwzLocations.map((loc, i) => (
-              <span key={loc.slug}>
+              <span key={loc.name}>
                 <Link href={`/locations/${loc.slug}`} className="text-[#1B3A6B] hover:text-[#F97316] underline decoration-[#F97316]/30 underline-offset-2 hover:decoration-[#F97316] transition-colors">
                   {loc.name}
                 </Link>

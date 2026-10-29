@@ -65,6 +65,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
   const seoDetail = getLocationBySlug(slug);
   const facilities = seoDetail?.facilities?.length ? seoDetail.facilities : null;
+  const sectionPy = facilities ? "py-14" : "py-16";
 
   return (
     <div className="min-h-screen bg-background">
@@ -188,20 +189,20 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
               {/* Right — scan-line image + info cards */}
               <div className="grid grid-cols-2 gap-4 h-full content-center">
                 <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
-                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">₹0</p>
-                  <p className="text-sm text-white/70 font-medium">Customs Duty</p>
+                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">Duty and IGST</p>
+                  <p className="text-sm text-white/70 font-medium">Deferred</p>
                 </div>
                 <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
-                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">100%</p>
-                  <p className="text-sm text-white/70 font-medium">GST Deferral</p>
+                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">GST Deferral</p>
+                  <p className="text-sm text-white/70 font-medium">Until DTA Clearance</p>
                 </div>
                 <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
-                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">24/7</p>
-                  <p className="text-sm text-white/70 font-medium">Operations</p>
+                  <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">Customs</p>
+                  <p className="text-sm text-white/70 font-medium">Coordination</p>
                 </div>
                 <div className="bg-white/8 border border-white/12 rounded-xl p-6 text-center backdrop-blur-sm hover:bg-white/12 hover:border-[rgba(249,115,22,0.3)] transition-all">
                   <p className="text-3xl font-extrabold text-[#F97316] leading-tight mb-2">10</p>
-                  <p className="text-sm text-white/70 font-medium">FTWZ Locations</p>
+                  <p className="text-sm text-white/70 font-medium">FTWZ Facilities</p>
                 </div>
               </div>
             </div>
@@ -210,10 +211,10 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       </section>
 
       {/* About Section */}
-      <section className="py-16 bg-white">
+      <section className={`${sectionPy} bg-white`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <div className={`grid grid-cols-1 ${seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:grid-cols-5" : "md:grid-cols-2"} gap-12 items-start`}>
-            <div className={seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:col-span-3" : ""}>
+          <div className={`grid grid-cols-1 ${facilities ? "" : seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:grid-cols-5" : "md:grid-cols-2"} ${facilities ? "gap-8" : "gap-12"} items-start`}>
+            <div className={facilities ? "" : seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:col-span-3" : ""}>
               <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">ABOUT THIS FACILITY</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">
                 {seoDetail?.seo.aboutH2 ? (
@@ -236,7 +237,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                 </p>
               )}
             </div>
-            <div className={seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:col-span-2" : ""}>
+            <div className={facilities ? "" : seoDetail?.seo.aboutParagraphs && seoDetail.seo.aboutParagraphs.length > 0 ? "md:col-span-2" : ""}>
               <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">SERVICES AVAILABLE</p>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-5">
                 {seoDetail?.seo.servicesH2 ? (
@@ -245,7 +246,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                   <>What We Offer at {location.city}</>
                 )}
               </h2>
-              <div className="grid grid-cols-1 gap-3">
+              <div className={`grid grid-cols-1 gap-3${facilities ? " md:grid-cols-2 lg:grid-cols-4" : ""}`}>
                 {location.services.map((service, i) => (
                   <div key={i} className="flex items-center gap-3 p-4 rounded-xl border border-[#1B3A6B]/20 bg-brand-light">
                     <div className="w-8 h-8 rounded-lg bg-[rgba(249,115,22,0.10)] flex items-center justify-center flex-shrink-0">
@@ -262,9 +263,9 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
       {/* Facilities (two-facility city pages only) */}
       {facilities && (
-        <section className="py-14 bg-blue-100">
+        <section className="py-14 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-8 text-center">
               {seoDetail?.facilitiesH2 ?? `${location.city} Facilities`}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
@@ -316,7 +317,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       )}
 
       {/* Facility Details Section */}
-      <section className="py-16 bg-brand-light">
+      <section className={`${sectionPy} bg-brand-light`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3 text-center">FACILITY DETAILS</p>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
@@ -369,7 +370,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
       {/* Multi-Modal Connectivity Section */}
       {seoDetail?.connectivity && (
-        <section className="py-16 bg-white border-t border-[#1B3A6B]/10">
+        <section className={`${sectionPy} bg-white border-t border-[#1B3A6B]/10`}>
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3 text-center">CONNECTIVITY</p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
@@ -439,7 +440,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
       {/* Why Choose Section */}
       {seoDetail?.seo.whyChooseH2 && seoDetail?.seo.whyChooseBlocks && (
-        <section className="py-16 bg-brand-light">
+        <section className={`${sectionPy} bg-brand-light`}>
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
               <KwText segments={seoDetail.seo.whyChooseH2} />
@@ -467,7 +468,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
       {/* FAQ Section */}
       {seoDetail?.seo.faqH2 && seoDetail?.seo.faqItems && (
-        <section className="py-16 bg-white">
+        <section className={`${sectionPy} bg-white`}>
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
               <KwText segments={seoDetail.seo.faqH2} />
@@ -491,7 +492,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
       {/* Related Reading */}
       {seoDetail?.seo.relatedReading && seoDetail.seo.relatedReading.length > 0 && (
-        <section className="py-16 bg-brand-light">
+        <section className={`${sectionPy} bg-brand-light`}>
           <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-10 text-center">
               Related Reading

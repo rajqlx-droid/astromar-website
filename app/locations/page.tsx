@@ -10,7 +10,7 @@ import { locationDisplay } from "@/data/locationDisplay";
 
 const BASE_URL = "https://www.astromarfreezone.com";
 const TITLE = "Our FTWZ Locations Across India | Astromar Logistics";
-const DESCRIPTION = "Astromar Logistics operates 10 FTWZ locations across India, including Chennai, Mumbai, Kochi, Mundra and Delhi NCR, with duty-free bonded warehousing.";
+const DESCRIPTION = "Astromar runs 10 FTWZ facilities across India, including Chennai, Mumbai, Kochi, Mundra and Delhi NCR: bonded warehousing, duty and IGST deferred.";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/locations" },

@@ -49,7 +49,7 @@ export default function CTASection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-16 text-center">
         {/* Trust pills */}
         <div className="flex flex-wrap gap-3 justify-center mb-8">
-          {["✓ 500+ Clients Served", "✓ 10 FTWZ Locations", "✓ 7+ Years of Excellence"].map((pill) => (
+          {["✓ 500+ Clients Served", "✓ 10 FTWZ Facilities", "✓ 7+ Years of Excellence"].map((pill) => (
             <span key={pill} className="bg-white/90 text-xs font-medium px-4 py-1.5 rounded-full" style={{ border: "1px solid rgba(249,115,22,0.25)", color: "#0f1f3d" }}>
               {pill}
             </span>
@@ -63,7 +63,7 @@ export default function CTASection() {
 
         {/* Subheading */}
         <p className="text-gray-600 text-base mb-8 max-w-xl mx-auto leading-relaxed">
-          Partner with India's leading FTWZ provider and unlock duty-free warehousing, GST deferment, and seamless logistics.
+          Partner with India's leading FTWZ provider and unlock bonded warehousing with duty and IGST deferred, GST deferment, and seamless logistics.
         </p>
 
         {/* Buttons */}
