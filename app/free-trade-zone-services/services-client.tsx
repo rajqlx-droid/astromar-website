@@ -28,7 +28,7 @@ const Services = () => {
             {/* LEFT - Text */}
             <div className="max-w-2xl">
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services" }]} />
-              <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
+              <p className="text-xs font-semibold tracking-widest uppercase text-[#F97316] mb-5">
                 OUR SERVICES
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
@@ -57,19 +57,19 @@ const Services = () => {
             {/* RIGHT - Stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">8</p>
+                <p className="text-4xl font-extrabold text-[#F97316] mb-2">8</p>
                 <p className="text-white text-sm font-semibold">Service Types</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">500+</p>
+                <p className="text-4xl font-extrabold text-[#F97316] mb-2">500+</p>
                 <p className="text-white text-sm font-semibold">Clients Served</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">15+</p>
+                <p className="text-4xl font-extrabold text-[#F97316] mb-2">15+</p>
                 <p className="text-white text-sm font-semibold">Countries</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">24/7</p>
+                <p className="text-4xl font-extrabold text-[#F97316] mb-2">24/7</p>
                 <p className="text-white text-sm font-semibold">Support</p>
               </div>
             </div>

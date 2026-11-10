@@ -28,7 +28,7 @@ export default function CTASection() {
       <div aria-hidden className="pointer-events-none absolute" style={{ top: "20px", left: "4%", width: "36px", height: "36px", background: "linear-gradient(135deg, #8b5cf6, #6d28d9)", borderRadius: "8px", opacity: 0.5, boxShadow: "0 4px 12px rgba(139,92,246,0.3)", animation: "float-rotate-1 4s ease-in-out infinite" }} />
 
       {/* Orange circle */}
-      <div aria-hidden className="pointer-events-none absolute" style={{ bottom: "20px", right: "5%", width: "28px", height: "28px", background: "linear-gradient(135deg, #F97316, #ea580c)", borderRadius: "50%", opacity: 0.55, boxShadow: "0 4px 12px rgba(249,115,22,0.3)", animation: "float-rotate-2 3.5s ease-in-out infinite" }} />
+      <div aria-hidden className="pointer-events-none absolute" style={{ bottom: "20px", right: "5%", width: "28px", height: "28px", background: "linear-gradient(135deg, #F97316, #F97316)", borderRadius: "50%", opacity: 0.55, boxShadow: "0 4px 12px rgba(249,115,22,0.3)", animation: "float-rotate-2 3.5s ease-in-out infinite" }} />
 
       {/* Navy cube */}
       <div aria-hidden className="pointer-events-none absolute" style={{ bottom: "18px", left: "8%", width: "24px", height: "24px", background: "linear-gradient(135deg, #0f1f3d, #1a3a6b)", borderRadius: "5px", opacity: 0.35, animation: "float-rotate-3 5s ease-in-out infinite" }} />
@@ -70,7 +70,7 @@ export default function CTASection() {
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
             href="/contact-us"
-            className="font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-orange-50 hover:shadow-md"
+            className="font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-[#F97316]/10 hover:shadow-md"
             style={{ background: "white", color: "#F97316", border: "1px solid #111" }}
           >
             Schedule Consultation →

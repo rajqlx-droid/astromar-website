@@ -60,8 +60,8 @@ export default function FTWZMapInner() {
           <div style="font-family: sans-serif; min-width: 150px; padding: 4px;">
             <p style="font-weight: 600; font-size: 13px; margin: 0 0 3px; color: #0a1628;">${loc.name}</p>
             <p style="font-size: 11px; color: #64748b; margin: 0 0 6px;">${loc.state}</p>
-            <span style="background: #fff7ed; color: #f97316; font-size: 10px; font-weight: 500;
-              padding: 2px 8px; border-radius: 999px; border: 1px solid #fed7aa;">
+            <span style="background: rgba(249,115,22,0.1); color: #f97316; font-size: 10px; font-weight: 500;
+              padding: 2px 8px; border-radius: 999px; border: 1px solid rgba(249,115,22,0.25);">
               FTWZ Warehouse
             </span>
           </div>

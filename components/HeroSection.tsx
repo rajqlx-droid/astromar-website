@@ -82,7 +82,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4"
+            className="text-sm font-semibold tracking-[0.2em] uppercase text-[#F97316] mb-4"
           >
             ASTROMAR LOGISTICS PVT LTD
           </motion.p>
@@ -236,7 +236,7 @@ const HeroSection = () => {
                     type="button"
                     onClick={handleSubmit}
                     disabled={loading}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-[#F97316] hover:bg-[#F97316]/90 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {loading ? "Sending..." : "Submit Enquiry →"}
                   </button>

@@ -28,7 +28,7 @@ const ContactInfoStrip = () => {
     <section id="contact" className="bg-white dark:bg-gray-900 py-14">
       <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-16">
         <ScrollReveal>
-          <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-2 text-center">
+          <p className="text-xs font-semibold tracking-widest uppercase text-[#F97316] mb-2 text-center">
             GET IN TOUCH
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">

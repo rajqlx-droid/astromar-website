@@ -8402,7 +8402,7 @@ Astromar Logistics Pvt. Ltd. supports project-oriented requirements through FTWZ
 
 export const categoryColors: Record<string, string> = {
   FTWZ: "bg-primary/10 text-primary",
-  Freight: "bg-accent/10 text-accent",
+  Freight: "bg-[#F97316]/10 text-[#F97316]",
   Customs: "bg-brand-teal/10 text-brand-teal",
   "Cold Storage": "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
   "Trade Finance": "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",

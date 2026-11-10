@@ -61,7 +61,7 @@ const CustomClearanceClient = () => {
 
             <ScrollReveal>
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Customs Clearance" }]} />
-              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">CUSTOMS CLEARANCE</p>
+              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#F97316] mb-4">CUSTOMS CLEARANCE</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Customs Clearance Services in India
               </h1>
@@ -69,7 +69,7 @@ const CustomClearanceClient = () => {
                 Navigate India's complex customs landscape with confidence. Astromar's licensed customs clearance services in India handle all import and export clearances across every Indian port and airport — ensuring compliance and eliminating delays.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
+                <a href="/contact-us" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#F97316]/90 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
                   Get a Quote <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#services" className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -80,7 +80,7 @@ const CustomClearanceClient = () => {
 
             <ScrollReveal delay={0.12}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-4">AT A GLANCE</p>
+                <p className="text-xs font-semibold tracking-widest uppercase text-[#F97316] mb-4">AT A GLANCE</p>
                 <div className="grid grid-cols-2 gap-3 mb-5">
                   {[
                     { value: "10K+",  label: "Cleared"      },
@@ -94,7 +94,7 @@ const CustomClearanceClient = () => {
                     </div>
                   ))}
                 </div>
-                <a href="/contact-us" className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
+                <a href="/contact-us" className="inline-flex items-center gap-2 w-full justify-center bg-[#F97316] hover:bg-[#F97316]/90 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
                   Get Clearance Support <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -114,12 +114,12 @@ const CustomClearanceClient = () => {
             </h2>
           </ScrollReveal>
           <div className="relative">
-            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-[#F97316]/25 z-0" />
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
               {steps.map((s, i) => (
                 <ScrollReveal key={s.step} delay={i * 0.1}>
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
+                    <div className="w-16 h-16 rounded-full bg-[#F97316] text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
                       {s.step}
                     </div>
                     <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
@@ -150,7 +150,7 @@ const CustomClearanceClient = () => {
             ].map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 0.07}>
                 <div className="bg-white rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">
-                  <p className="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">{s.value}</p>
+                  <p className="text-3xl sm:text-4xl font-extrabold text-[#F97316] mb-1">{s.value}</p>
                   <p className="text-base font-bold text-foreground mb-1">{s.label}</p>
                   <p className="text-xs text-foreground/60 leading-relaxed">{s.desc}</p>
                 </div>
@@ -170,12 +170,12 @@ const CustomClearanceClient = () => {
             </h2>
           </ScrollReveal>
           <div className="relative">
-            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-[#F97316]/25 z-0" />
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
               {documentChecklist.map((s, i) => (
                 <ScrollReveal key={s.step} delay={i * 0.1}>
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
+                    <div className="w-16 h-16 rounded-full bg-[#F97316] text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
                       {s.step}
                     </div>
                     <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
@@ -231,7 +231,7 @@ const CustomClearanceClient = () => {
               <p>
                 Goods received into a Free Trade Warehousing Zone stay under customs control. They aren't cleared for domestic use on arrival, so clearance happens in steps, depending on what you do with the goods.
               </p>
-              <ol className="list-decimal pl-5 space-y-3 marker:font-bold marker:text-orange-500">
+              <ol className="list-decimal pl-5 space-y-3 marker:font-bold marker:text-[#F97316]">
                 {[
                   { lead: "Receipt into the zone.", text: "The goods arrive and are received against the applicable customs documents." },
                   { lead: "Holding and handling.", text: "While under customs control, goods can be stored and, where permitted, repacked, relabelled, sorted, kitted, inspected or consolidated, subject to applicable rules." },
@@ -283,7 +283,7 @@ const CustomClearanceClient = () => {
                   "24-48hr clearance time",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
-                    <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#F97316] shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -305,7 +305,7 @@ const CustomClearanceClient = () => {
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.07}>
-                <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
+                <div className="border-l-4 border-[#F97316] bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">
                     {item.desc}

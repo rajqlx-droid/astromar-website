@@ -56,7 +56,7 @@ const Blog = () => {
             {/* Left — text content */}
             <ScrollReveal>
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Blog" }]} />
-              <span className="text-sm font-bold tracking-[0.2em] uppercase text-orange-500 mb-4 block">
+              <span className="text-sm font-bold tracking-[0.2em] uppercase text-[#F97316] mb-4 block">
                 RESOURCES & INSIGHTS
               </span>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
@@ -77,7 +77,7 @@ const Blog = () => {
             {/* Right — featured post card */}
             <ScrollReveal delay={0.2}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                <span className="text-orange-500 text-xs font-bold uppercase tracking-wider">Featured Post</span>
+                <span className="text-[#F97316] text-xs font-bold uppercase tracking-wider">Featured Post</span>
                 <h3 className="text-white font-bold text-xl mt-2 mb-3">
                   How FTWZ Can Help You Defer Customs Duty &amp; GST
                 </h3>
@@ -89,7 +89,7 @@ const Blog = () => {
                     <span className="text-gray-400 text-xs">📅 Jan 2026</span>
                     <span className="text-gray-400 text-xs">• 18 min read</span>
                   </div>
-                  <a href="/blogs/customs-duty-deferment-benefits" className="text-orange-500 text-sm font-semibold hover:text-orange-300">
+                  <a href="/blogs/customs-duty-deferment-benefits" className="text-[#F97316] text-sm font-semibold hover:text-[#F97316]/80">
                     Read More →
                   </a>
                 </div>

@@ -67,7 +67,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: "" }));
   };
 
-  const glassInput = "w-full rounded-lg bg-white/10 border border-white/20 px-3 py-1.5 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition-colors text-sm";
+  const glassInput = "w-full rounded-lg bg-white/10 border border-white/20 px-3 py-1.5 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-[#F97316]/50 focus:border-[#F97316] transition-colors text-sm";
 
   return (
     <section className="relative w-full min-h-[600px] flex items-center">
@@ -88,7 +88,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
 
             {/* LEFT COLUMN - TEXT CONTENT WITH CONTACT INFO */}
             <div>
-              <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-5">
+              <p className="text-xs font-semibold tracking-widest uppercase text-[#F97316] mb-5">
                 GET IN TOUCH
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6">
@@ -126,10 +126,10 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                       <label htmlFor="contact-name" className="block text-sm font-semibold text-white mb-1.5">
-                        Full Name <span className="text-orange-500">*</span>
+                        Full Name <span className="text-[#F97316]">*</span>
                       </label>
                       <input id="contact-name" type="text" placeholder="Your name" value={form.fullName} onChange={(e) => update("fullName", e.target.value)} maxLength={100} className={glassInput} />
-                      {errors.fullName && <p className="text-orange-500 text-xs mt-1">{errors.fullName}</p>}
+                      {errors.fullName && <p className="text-[#F97316] text-xs mt-1">{errors.fullName}</p>}
                     </div>
                     <div>
                       <label htmlFor="contact-company" className="block text-sm font-semibold text-white mb-1.5">Company</label>
@@ -140,10 +140,10 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                       <label htmlFor="contact-email" className="block text-sm font-semibold text-white mb-1.5">
-                        Email <span className="text-orange-500">*</span>
+                        Email <span className="text-[#F97316]">*</span>
                       </label>
                       <input id="contact-email" type="email" placeholder="you@company.com" value={form.email} onChange={(e) => update("email", e.target.value)} maxLength={255} className={glassInput} />
-                      {errors.email && <p className="text-orange-500 text-xs mt-1">{errors.email}</p>}
+                      {errors.email && <p className="text-[#F97316] text-xs mt-1">{errors.email}</p>}
                     </div>
                     <div>
                       <label htmlFor="contact-phone" className="block text-sm font-semibold text-white mb-1.5">Phone</label>
@@ -195,7 +195,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                       rows={4}
                       className={`${glassInput} resize-none`}
                     />
-                    {errors.message && <p className="text-orange-500 text-xs mt-1">{errors.message}</p>}
+                    {errors.message && <p className="text-[#F97316] text-xs mt-1">{errors.message}</p>}
                   </div>
 
                   {submitError && (
@@ -205,7 +205,7 @@ const ContactForm = ({ showInfoStrip = true }: ContactFormProps) => {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition-colors text-base disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-[#F97316] hover:bg-[#F97316]/90 text-white font-semibold py-3 rounded-lg transition-colors text-base disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {loading ? "Sending..." : "Submit Enquiry"}
                   </button>

@@ -53,7 +53,7 @@ const ProjectsClient = () => {
 
             <ScrollReveal>
               <Breadcrumbs items={[{ name: "Astromar", href: "/" }, { name: "Services", href: "/free-trade-zone-services" }, { name: "Project Cargo" }]} />
-              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-orange-500 mb-4">PROJECT CARGO</p>
+              <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#F97316] mb-4">PROJECT CARGO</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-4 leading-tight">
                 Heavy Lift Logistics in India
               </h1>
@@ -63,7 +63,7 @@ const ProjectsClient = () => {
                 with precision, safety, and reliability.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="/contact-us" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
+                <a href="/contact-us" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#F97316]/90 text-white font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
                   Get a Quote <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#services" className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 font-semibold text-sm rounded-lg py-3 px-6 transition-colors">
@@ -74,7 +74,7 @@ const ProjectsClient = () => {
 
             <ScrollReveal delay={0.12}>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                <p className="text-xs font-semibold tracking-widest uppercase text-orange-500 mb-4">AT A GLANCE</p>
+                <p className="text-xs font-semibold tracking-widest uppercase text-[#F97316] mb-4">AT A GLANCE</p>
                 <div className="grid grid-cols-2 gap-3 mb-5">
                   {[
                     { value: "ODC",         label: "Specialists"   },
@@ -88,7 +88,7 @@ const ProjectsClient = () => {
                     </div>
                   ))}
                 </div>
-                <a href="/contact-us" className="inline-flex items-center gap-2 w-full justify-center bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
+                <a href="/contact-us" className="inline-flex items-center gap-2 w-full justify-center bg-[#F97316] hover:bg-[#F97316]/90 text-white font-semibold text-sm rounded-lg py-3 px-4 transition-colors">
                   Discuss Your Project <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -121,7 +121,7 @@ const ProjectsClient = () => {
                   "Breakbulk & neo-bulk shipping",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
-                    <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#F97316] shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -170,7 +170,7 @@ const ProjectsClient = () => {
                   "Multi-modal coordination",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
-                    <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#F97316] shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -199,7 +199,7 @@ const ProjectsClient = () => {
             ].map((s, i) => (
               <ScrollReveal key={s.label} delay={i * 0.07}>
                 <div className="bg-white rounded-xl border border-[#1B3A6B]/15 p-6 text-center shadow-sm h-full">
-                  <p className="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-1">{s.value}</p>
+                  <p className="text-3xl sm:text-4xl font-extrabold text-[#F97316] mb-1">{s.value}</p>
                   <p className="text-base font-bold text-foreground mb-1">{s.label}</p>
                   <p className="text-xs text-foreground/60 leading-relaxed">{s.desc}</p>
                 </div>
@@ -219,12 +219,12 @@ const ProjectsClient = () => {
             </h2>
           </ScrollReveal>
           <div className="relative">
-            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0 border-t-2 border-dashed border-[#F97316]/25 z-0" />
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10">
               {executionSteps.map((s, i) => (
                 <ScrollReveal key={s.step} delay={i * 0.1}>
                   <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 rounded-full bg-orange-500 text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
+                    <div className="w-16 h-16 rounded-full bg-[#F97316] text-white flex items-center justify-center text-xl font-extrabold mb-4 shadow-md shrink-0">
                       {s.step}
                     </div>
                     <h3 className="text-base font-bold text-foreground mb-2">{s.title}</h3>
@@ -289,7 +289,7 @@ const ProjectsClient = () => {
                   "Continuous shipment monitoring",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
-                    <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#F97316] shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -322,7 +322,7 @@ const ProjectsClient = () => {
           <div className="grid sm:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {whyChoose.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.07}>
-                <div className="border-l-4 border-orange-500 bg-brand-light rounded-r-xl p-6 h-full">
+                <div className="border-l-4 border-[#F97316] bg-brand-light rounded-r-xl p-6 h-full">
                   <h3 className="text-base font-bold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-foreground/70 leading-relaxed">{item.desc}</p>
                 </div>

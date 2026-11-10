@@ -103,7 +103,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-center w-full">
             {/* LEFT - Text */}
             <div className="max-w-2xl">
-              <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">
+              <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">
                 ABOUT ASTROMAR
               </p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6 leading-tight">
@@ -113,7 +113,7 @@ const About = () => {
                 Since 2017, Astromar Logistics has been providing trusted FTWZ operations and duty-free bonded storage in India, combining multimodal freight and customs expertise across 10 strategic locations nationwide.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="/contact-us" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-colors">
+                <a href="/contact-us" className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#F97316] text-white font-semibold hover:bg-[#F97316]/90 transition-colors">
                   Get In Touch →
                 </a>
                 <a href="/free-trade-zone-services" className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-white text-white font-semibold hover:bg-white/10 transition-colors">
@@ -125,19 +125,19 @@ const About = () => {
             {/* RIGHT - Stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">7+</p>
+                <p className="text-4xl font-extrabold text-[#F97316] mb-2">7+</p>
                 <p className="text-white/80 text-sm font-semibold">Years of Excellence</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">10</p>
+                <p className="text-4xl font-extrabold text-[#F97316] mb-2">10</p>
                 <p className="text-white/80 text-sm font-semibold">FTWZ Locations</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">500+</p>
+                <p className="text-4xl font-extrabold text-[#F97316] mb-2">500+</p>
                 <p className="text-white/80 text-sm font-semibold">Clients Served</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                <p className="text-4xl font-extrabold text-accent mb-2">2017</p>
+                <p className="text-4xl font-extrabold text-[#F97316] mb-2">2017</p>
                 <p className="text-white/80 text-sm font-semibold">Founded</p>
               </div>
             </div>
@@ -360,13 +360,13 @@ const About = () => {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
           <ScrollReveal>
-            <p className="text-sm font-bold tracking-[0.2em] text-orange-500 uppercase mb-2">OUR PROCESS</p>
+            <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-2">OUR PROCESS</p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-16">Our Process</h2>
           </ScrollReveal>
 
           <div className="relative">
             {/* Dashed connector line — desktop only, sits behind step circles */}
-            <div className="hidden md:block absolute top-10 left-[10%] right-[10%] border-t-2 border-dashed border-orange-300 z-0" />
+            <div className="hidden md:block absolute top-10 left-[10%] right-[10%] border-t-2 border-dashed border-[#F97316]/25 z-0" />
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-6 relative z-10">
               {processSteps.map((step, i) => (
@@ -374,12 +374,12 @@ const About = () => {
                   {/* Row on mobile (number + text side by side), centered column on desktop. Heading/description render once; only the number badge markup differs by breakpoint. */}
                   <div className="flex flex-row items-start gap-5 md:flex-col md:items-center md:gap-0 md:text-center">
                     {/* Mobile number badge */}
-                    <div className="w-16 h-16 shrink-0 rounded-full border-2 border-orange-500 bg-orange-50 flex items-center justify-center md:hidden">
-                      <span className="text-xl font-extrabold text-orange-500">{step.num}</span>
+                    <div className="w-16 h-16 shrink-0 rounded-full border-2 border-[#F97316] bg-[#F97316]/10 flex items-center justify-center md:hidden">
+                      <span className="text-xl font-extrabold text-[#F97316]">{step.num}</span>
                     </div>
                     {/* Desktop number badge */}
-                    <div className="hidden md:flex w-20 h-20 shrink-0 rounded-full border-2 border-orange-500 bg-card items-center justify-center mb-5 shadow-sm">
-                      <span className="text-2xl font-extrabold text-orange-500">{step.num}</span>
+                    <div className="hidden md:flex w-20 h-20 shrink-0 rounded-full border-2 border-[#F97316] bg-card items-center justify-center mb-5 shadow-sm">
+                      <span className="text-2xl font-extrabold text-[#F97316]">{step.num}</span>
                     </div>
                     <div className="pt-1 md:pt-0">
                       <h3 className="text-base font-bold text-foreground mb-1 md:mb-2">{step.title}</h3>

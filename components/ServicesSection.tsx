@@ -87,7 +87,7 @@ const ServicesSection = () => {
           <div className="flex justify-center mt-10">
             <Link
               href="/free-trade-zone-services"
-              className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition"
+              className="bg-[#F97316] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition"
             >
               View All Services ?
             </Link>
@@ -110,7 +110,7 @@ const ServicesSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
               {/* LEFT - Text Content */}
               <div>
-                <p className="text-sm font-bold tracking-[0.2em] text-accent uppercase mb-3">
+                <p className="text-sm font-bold tracking-[0.2em] text-[#F97316] uppercase mb-3">
                   FTWZ WAREHOUSING
                 </p>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-5 leading-tight">
@@ -134,19 +134,19 @@ const ServicesSection = () => {
               {/* RIGHT - Stats Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                  <p className="text-4xl font-extrabold text-accent mb-2">₹0</p>
+                  <p className="text-4xl font-extrabold text-[#F97316] mb-2">₹0</p>
                   <p className="text-white/80 text-sm font-semibold">Customs Duty</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                  <p className="text-4xl font-extrabold text-accent mb-2">100%</p>
+                  <p className="text-4xl font-extrabold text-[#F97316] mb-2">100%</p>
                   <p className="text-white/80 text-sm font-semibold">GST Deferral</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                  <p className="text-4xl font-extrabold text-accent mb-2">24/7</p>
+                  <p className="text-4xl font-extrabold text-[#F97316] mb-2">24/7</p>
                   <p className="text-white/80 text-sm font-semibold">Operations</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                  <p className="text-4xl font-extrabold text-accent mb-2">10</p>
+                  <p className="text-4xl font-extrabold text-[#F97316] mb-2">10</p>
                   <p className="text-white/80 text-sm font-semibold">FTWZ Locations</p>
                 </div>
               </div>
@@ -186,7 +186,7 @@ const ServicesSection = () => {
                     <div className="flex items-center gap-3">
                       <s.icon
                         className={`w-5 h-5 flex-shrink-0 ${
-                          openIndex === i ? "text-accent" : "text-primary"
+                          openIndex === i ? "text-[#F97316]" : "text-primary"
                         }`}
                         strokeWidth={1.5}
                       />
@@ -198,7 +198,7 @@ const ServicesSection = () => {
                     </div>
                     <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm transition-colors ${
                       openIndex === i
-                        ? "bg-accent text-white"
+                        ? "bg-[#F97316] text-white"
                         : "bg-primary/10 text-primary"
                     }`}>
                       {openIndex === i ? "-" : "+"}
@@ -231,7 +231,7 @@ const ServicesSection = () => {
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-brand-navy/50" />
-              <div className="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
+              <div className="absolute top-4 right-4 bg-[#F97316] text-white text-xs font-bold px-3 py-1 rounded-full">
                 FTWZ Certified
               </div>
               <div className="absolute bottom-4 left-4 right-4 bg-brand-navy/80 rounded-lg p-4">

@@ -95,7 +95,7 @@ const FTWZLocations = () => {
                 </div>
                 <div className="flex flex-col gap-2 text-sm flex-1">
                   <div className="flex items-center gap-2 text-muted-foreground">
-                    <Warehouse size={14} className="text-accent flex-shrink-0" />
+                    <Warehouse size={14} className="text-[#F97316] flex-shrink-0" />
                     <span>{loc.type}</span>
                   </div>
                   {"facilities" in loc && loc.facilities ? (
@@ -119,7 +119,7 @@ const FTWZLocations = () => {
                   )}
                   <div className="mt-auto pt-3 flex flex-col gap-2">
                     <div className="flex items-center gap-2 text-muted-foreground">
-                      <Phone size={14} className="text-accent flex-shrink-0" />
+                      <Phone size={14} className="text-[#F97316] flex-shrink-0" />
                       <a href={`tel:${loc.phone.replace(/\s/g, "")}`} className="hover:text-primary transition-colors" onClick={(e) => e.stopPropagation()}>
                         {loc.phone}
                       </a>

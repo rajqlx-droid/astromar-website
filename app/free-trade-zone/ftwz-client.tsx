@@ -386,7 +386,7 @@ const FTWZServices = () => {
             <div ref={scrollRef} onScroll={handleScroll} className="flex gap-6 overflow-x-auto px-1 pb-4 scrollbar-hide" style={{ scrollSnapType: "x mandatory" }}>
               {useCases.map((item) => (
                 <div key={item.title} className="bg-white border border-gray-200 rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow flex-shrink-0 flex flex-col" style={{ scrollSnapAlign: "start", minWidth: "min(320px, 80vw)", width: "380px" }}>
-                  <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center text-2xl mb-5 flex-shrink-0">{item.emoji}</div>
+                  <div className="w-14 h-14 rounded-full bg-[#F97316]/10 border border-[#F97316]/15 flex items-center justify-center text-2xl mb-5 flex-shrink-0">{item.emoji}</div>
                   <h3 className="text-lg font-bold text-foreground mb-1">{item.title}</h3>
                   <p className="text-sm text-foreground/60 mb-4">{item.desc}</p>
                   <div className="h-px bg-gray-100 mb-4" />
@@ -458,7 +458,7 @@ const FTWZServices = () => {
                         <td className="px-4 py-[14px] font-medium text-foreground" style={{ borderRight: "1px solid #e5e7eb", borderBottom: rowBorder }}>{feature}</td>
                         <td className="px-4 py-[14px] text-red-500" style={{ borderRight: "1px solid #e5e7eb", borderBottom: rowBorder }}>{regular}</td>
                         <td className="px-4 py-[14px] text-yellow-600" style={{ borderRight: "1px solid #e5e7eb", borderBottom: rowBorder }}>{bonded}</td>
-                        <td className="px-4 py-[14px] text-green-600 font-medium" style={{ backgroundColor: "#fff7ed", borderBottom: rowBorder }}>{ftwz}</td>
+                        <td className="px-4 py-[14px] text-green-600 font-medium" style={{ backgroundColor: "rgba(249,115,22,0.1)", borderBottom: rowBorder }}>{ftwz}</td>
                       </tr>
                     );
                   })}
