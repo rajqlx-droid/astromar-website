@@ -4732,7 +4732,7 @@ This is particularly important for large projects because material requirements 
     ]
   },
   {
-    slug: "auto-component-jit-inventory-production-risk",
+    slug: "auto-component-supply-chain-jit-inventory",
     title: "Supply Chain Management for Auto Component Manufacturers: Just-in-Time Inventory and Production Risk",
     metaTitle: "Auto Component Supply Chains: Just-in-Time Inventory Risk",
     excerpt: "Why JIT works only when the rest of the supply chain is dependable — inventory criticality, the real lead time behind ocean freight, and why a ₹500 component can stop a production line.",
@@ -5302,7 +5302,7 @@ Astromar Logistics Pvt. Ltd. provides FTWZ operations, bonded warehousing, custo
     ]
   },
   {
-    slug: "route-surveys-odc-permits-project-cargo",
+    slug: "route-surveys-odc-permits-heavy-cargo",
     title: "Route Surveys and ODC Permits: What Happens Before Heavy Cargo Ever Moves",
     metaTitle: "Route Surveys and ODC Permits Before Heavy Cargo Moves",
     excerpt: "The truck on the highway is the visible part of project cargo. The route survey, the permits, and the coordination behind it are what actually determine whether the movement works.",
@@ -5881,7 +5881,7 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) service
     ]
   },
   {
-    slug: "customs-valuation-disputes-declared-value",
+    slug: "customs-valuation-disputes-declared-value-india",
     title: "Customs Valuation Disputes: What Happens When Customs Doesn't Agree With Your Declared Value",
     metaTitle: "Customs Valuation Disputes Over Your Declared Value",
     excerpt: "A valuation query doesn't mean you've done something wrong. Here's why customs sometimes questions a declared value, and how importers can handle it effectively.",
@@ -7323,7 +7323,7 @@ Astromar Logistics Pvt. Ltd. supports businesses with FTWZ warehousing, project 
     ]
   },
   {
-    slug: "customs-clearance-footwear-leather-goods-imports",
+    slug: "customs-clearance-footwear-leather-imports-india",
     title: "Customs Clearance for Footwear and Leather Goods Imports: What Importers Need to Get Right in India",
     metaTitle: "Customs Clearance for Footwear and Leather Goods Imports",
     excerpt: "Why a synthetic upper that looks like leather can complicate classification, and why photographs alone can't establish what customs needs to know about footwear and leather goods composition.",
@@ -7913,7 +7913,7 @@ The objective is not simply to move the blade from one point to another. It is t
     ]
   },
   {
-    slug: "mumbai-panvel-ecommerce-fmcg-distribution-hub-ftwz",
+    slug: "ftwz-ecommerce-fmcg-distribution-hub-navi-mumbai",
     title: "FTWZ as an E-Commerce and FMCG Distribution Hub Near Navi Mumbai",
     metaTitle: "FTWZ as an E-Commerce and FMCG Hub Near Navi Mumbai",
     excerpt: "Why Mumbai-Panvel can work as a regional inventory position for businesses serving Maharashtra and beyond — and how e-commerce and FMCG demand different warehouse rhythms from the same location.",
@@ -8324,7 +8324,7 @@ Astromar Logistics Pvt. Ltd. supports businesses through FTWZ warehousing, suppl
     ]
   },
   {
-    slug: "chennai-vallur-power-transmission-switchgear-storage",
+    slug: "power-transmission-switchgear-storage-chennai",
     title: "Power Transmission and Switchgear Equipment Storage Near Chennai Vallur",
     metaTitle: "Switchgear and Power Equipment Storage near Chennai Vallur",
     excerpt: "Why transformers, switchgear and control panels need equipment-specific storage — heavy-lift handling for one, moisture protection for another — and how North Chennai's power-sector concentration makes staged storage relevant.",
