@@ -27,6 +27,7 @@ export interface BlogSection {
 export interface BlogPost {
   slug: string;
   title: string;
+  metaTitle?: string;
   excerpt: string;
   category: string;
   readTime: string;
@@ -48,6 +49,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "cold-storage-warehouse-guide",
     title: "Cold Storage Warehouse in India: A Complete Guide for Importers",
+    metaTitle: "Cold Storage Warehouse in India: A Guide for Importers",
     excerpt: "How a temperature-controlled cold storage warehouse works, what it costs, and why bonded cold storage inside an FTWZ helps importers of pharma, food, and perishables cut spoilage and defer duty.",
     category: "Cold Storage",
     date: "2026-03-02",
@@ -56,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&auto=format&fit=crop&q=70",
     heroImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&auto=format&fit=crop&q=75",
     imageAlt: "Temperature-controlled cold storage warehouse with stacked pallets in India",
-    metaDescription: "A complete guide to cold storage warehouse facilities in India — temperature zones, costs, bonded cold storage in FTWZs, and how importers reduce spoilage and defer duty.",
+    metaDescription: "A guide to cold storage warehouses in India: temperature zones, costs, bonded cold storage in FTWZs and how importers reduce spoilage.",
     keywords: ["cold storage warehouse", "cold storage warehouse in india", "cold storage in chennai", "custom bonded warehouse", "temperature controlled warehouse"],
     intro: "For any business importing pharmaceuticals, food, perishables, or temperature-sensitive chemicals, the warehouse is not just a place to keep goods — it is what protects the value of the entire shipment. A single break in temperature can turn a container of high-value product into a write-off. This is why the cold storage warehouse has become one of the most important links in a modern supply chain, and why choosing the right one matters far more than storage cost alone.",
     sections: [
@@ -78,6 +80,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ecommerce-warehousing-solutions",
     title: "E-commerce Warehousing Solutions: How FTWZs Power Online Fulfilment",
+    metaTitle: "E-commerce Warehousing Solutions: How FTWZs Help Sellers",
     excerpt: "E-commerce lives and dies on fast, accurate fulfilment. Here's how FTWZ-based warehousing solutions help online sellers store closer to customers, defer duty, and scale across borders.",
     category: "FTWZ",
     date: "2026-02-24",
@@ -86,7 +89,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=70",
     heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop&q=75",
     imageAlt: "E-commerce fulfilment warehouse with shelving and parcels ready for dispatch",
-    metaDescription: "E-commerce warehousing solutions explained — how FTWZ-based fulfilment helps online sellers store closer to customers, defer import duty, and scale across borders.",
+    metaDescription: "E-commerce warehousing explained: how FTWZ-based fulfilment lets online sellers store closer to customers, defer import duty and scale.",
     keywords: ["ecommerce warehousing solutions", "e commerce warehousing", "ftwz warehouse", "free zone company", "ecommerce fulfilment india"],
     intro: "In e-commerce, the product is only half the business — the other half is getting it to the customer quickly, accurately, and affordably. As online sellers scale and start shipping across borders, warehousing stops being a back-office detail and becomes a competitive weapon. The right e-commerce warehousing solution can shorten delivery times, reduce landed cost, and let a business expand into new markets without building infrastructure in each one. Increasingly, that solution runs through a Free Trade Warehousing Zone, where the operational benefits of a modern fulfilment centre combine with real customs and duty advantages. This guide walks through what e-commerce warehousing actually involves, why it matters so much for online growth, and how an FTWZ-based approach helps sellers store smarter, ship faster, and manage cash flow as they scale.",
     sections: [
@@ -137,6 +140,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-ftwz-complete-guide",
     thumbnail: "/images/blog/ftwz-guide.jpg",
     title: "What is FTWZ? A Complete Guide to Free Trade Warehousing Zones in India",
+    metaTitle: "What Is an FTWZ? A Guide to Free Trade Warehousing Zones",
     excerpt:
       "Understand how FTWZ warehousing helps importers defer customs duty and GST, re-export duty-free, and optimize working capital across India's trade zones.",
     category: "FTWZ",
@@ -209,6 +213,7 @@ export const blogPosts: BlogPost[] = [
     slug: "cbm-calculation-freight-shipping",
     thumbnail: "/images/blog/cbm-calculation.jpg",
     title: "How to Calculate CBM for Freight Shipping: Formula, Examples & Tools",
+    metaTitle: "How to Calculate CBM for Freight: Formula and Examples",
     excerpt:
       "Master CBM calculation for sea and air freight. Learn volumetric weight formulas, container optimization, and how to reduce shipping costs.",
     category: "Freight",
@@ -252,6 +257,7 @@ export const blogPosts: BlogPost[] = [
     slug: "customs-duty-deferment-benefits",
     thumbnail: "/images/blog/customs-duty.jpg",
     title: "5 Ways Customs Duty Deferment Saves Your Business Money in India",
+    metaTitle: "5 Ways Customs Duty Deferment Saves Money in India",
     excerpt:
       "Discover how duty deferment through FTWZ improves cash flow, reduces upfront costs, and provides competitive advantage in import-export operations.",
     category: "Customs",
@@ -290,6 +296,7 @@ export const blogPosts: BlogPost[] = [
     slug: "cold-chain-logistics-india",
     thumbnail: "/images/blog/cold-chain.jpg",
     title: "Cold Chain Logistics in India: Challenges, Solutions & FTWZ Integration",
+    metaTitle: "Cold Chain Logistics in India: Challenges and FTWZ Fit",
     excerpt:
       "How pharma, food, and perishable importers can leverage FTWZ cold storage for GDP-compliant warehousing with temperature-controlled zones.",
     category: "Cold Storage",
@@ -297,7 +304,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-01-10",
     featured: false,
     metaDescription:
-      "Explore cold chain logistics challenges in India and how FTWZ cold storage provides GDP-compliant, temperature-controlled warehousing for pharma and food imports.",
+      "Cold chain logistics challenges in India and how FTWZ cold storage supports temperature-controlled warehousing for pharma and food imports.",
     content: [
       "India's cold chain logistics sector stands at a critical inflection point, driven by explosive growth in pharmaceutical imports and increasing demand for perishable food products.",
       "With the Indian cold chain market projected to reach $45 billion by 2027, the sector represents both an enormous opportunity and a formidable challenge.",
@@ -327,6 +334,7 @@ export const blogPosts: BlogPost[] = [
     slug: "air-vs-sea-freight-comparison",
     thumbnail: "/images/blog/air-vs-sea.jpg",
     title: "Air Freight vs Sea Freight: Complete Guide to Choosing the Right Shipping Mode",
+    metaTitle: "Air Freight vs Sea Freight: How to Choose the Right Mode",
     excerpt:
       "A detailed comparison of air and sea freight covering cost, transit time, cargo type suitability, and break-even analysis for informed decisions.",
     category: "Freight",
@@ -364,6 +372,7 @@ export const blogPosts: BlogPost[] = [
     slug: "landed-cost-calculation-importers",
     thumbnail: "/images/blog/landed-cost.jpg",
     title: "Landed Cost Calculation for Importers: Every Cost You Need to Know",
+    metaTitle: "Landed Cost Calculation for Importers: Every Cost Counted",
     excerpt:
       "Break down the true cost of importing goods including freight, insurance, customs duty, GST, port charges, and hidden fees with our comprehensive guide.",
     category: "Trade Finance",
@@ -460,6 +469,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ftwz-market-entry-without-local-entity",
     title: "How Foreign Brands Enter India Without a Local Entity — Using an FTWZ",
+    metaTitle: "How Foreign Brands Enter India Without a Local Entity",
     excerpt: "A practical look at how foreign brands use an FTWZ to store, prepare, and distribute inventory in India while evaluating demand — without committing to a local entity upfront.",
     category: "FTWZ",
     date: "2026-07-11",
@@ -489,6 +499,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "signs-you-need-ftwz-high-value-cargo",
     title: "Signs Your High-Value Cargo Operation May Benefit from an FTWZ",
+    metaTitle: "Signs Your High-Value Cargo May Benefit from an FTWZ",
     excerpt: "Seven practical signs that traditional warehousing may be creating unnecessary cost and complexity for high-value imported cargo — and where an FTWZ fits in.",
     category: "FTWZ",
     date: "2026-07-11",
@@ -547,6 +558,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "chennai-ftz-warehouse-company",
     title: "How to Choose a Warehouse Company in Chennai: FTZ Warehousing Guide",
+    metaTitle: "Choosing a Warehouse Company in Chennai: FTZ Guide",
     excerpt: "What to look for when evaluating an FTZ warehousing partner in Chennai — location, technology, compliance, and value-added services explained.",
     category: "FTWZ",
     date: "2026-07-15",
@@ -605,6 +617,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ftwz-warehouse-infrastructure-what-to-look-for",
     title: "Inside an FTWZ Warehouse: What Proper Infrastructure Actually Looks Like",
+    metaTitle: "What Proper FTWZ Warehouse Infrastructure Looks Like",
     excerpt: "Racking capacity, dock levellers, fire safety, backup power, surveillance — the physical infrastructure that separates a genuinely capable FTWZ facility from a converted shed with a customs licence.",
     category: "FTWZ",
     date: "2026-07-29",
@@ -613,7 +626,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: ftwzImg,
     heroImage: ftwzImg,
     imageAlt: "Modern warehouse racking, dock levellers, and material handling equipment inside an FTWZ facility",
-    metaDescription: "What proper FTWZ warehouse infrastructure includes — racking and storage capacity, dock levellers, fire safety, backup power, material handling, and security — and why it matters for importers.",
+    metaDescription: "What proper FTWZ warehouse infrastructure includes: racking, dock levellers, fire safety, backup power, material handling and security.",
     keywords: ["ftwz warehouse infrastructure", "bonded warehouse facility india", "warehouse fire safety", "dock leveller warehouse", "warehouse material handling equipment", "ftwz security"],
     intro: "Duty deferral and customs status get most of the attention when businesses evaluate an FTWZ. What gets discussed far less is the physical facility itself — and it matters just as much. A customs licence tells you what a zone is legally permitted to do; the actual infrastructure tells you whether your cargo will be handled, stored, and protected the way it needs to be. Here's what genuinely capable FTWZ infrastructure includes, and why each piece matters.",
     sections: [
@@ -643,7 +656,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: coldImg,
     heroImage: coldImg,
     imageAlt: "Warehouse pallets of packaged animal feed and grain in bonded storage",
-    metaDescription: "How to store imported animal feed safely in India — temperature and humidity control, pest prevention, Animal Quarantine certification, and the FTWZ duty-deferral advantage.",
+    metaDescription: "How to store imported animal feed in India: temperature and humidity control, pest prevention, quarantine certification and FTWZ duty deferral.",
     keywords: ["animal feed import india", "animal feed storage", "animal quarantine certificate", "livestock feed warehousing", "bonded warehouse animal feed", "feed import ftwz"],
     intro: "Animal feed doesn't get the attention that pharmaceuticals or electronics do in import-export conversations, but it carries its own specific storage risks — and its own regulatory checkpoint that many first-time importers aren't fully prepared for. Grains, pelleted feeds, forage, and nutritional supplements all behave differently in storage, and getting it wrong shows up as spoiled stock, rejected consignments, or unhappy end customers further down the chain.",
     sections: [
@@ -663,6 +676,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "value-added-services-ftwz",
     title: "Beyond Storage: Value-Added Services You Can Perform Inside an FTWZ",
+    metaTitle: "Value-Added Services You Can Perform Inside an FTWZ",
     excerpt: "Relabeling, repacking, kitting, quality checks, and consolidation — the approved value-added services available inside an FTWZ, and why they matter for importers serving multiple markets.",
     category: "FTWZ",
     date: "2026-07-30",
@@ -717,6 +731,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ftwz-re-export-process-6-steps",
     title: "Inside the 6-Step Process of Re-Exporting Goods Through an FTWZ",
+    metaTitle: "The 6-Step Process to Re-Export Goods Through an FTWZ",
     excerpt: "How businesses use a Free Trade Warehousing Zone as a regional distribution hub — storing goods under customs control and re-exporting once customer orders are confirmed.",
     category: "FTWZ",
     date: "2026-07-30",
@@ -771,6 +786,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "flexible-supply-chain-ftwz-importers",
     title: "How Importers Can Build More Flexible Supply Chains Using an FTWZ",
+    metaTitle: "Building More Flexible Supply Chains Using an FTWZ",
     excerpt: "Vessel delays and shifting demand are now routine. Here's how importers use a Free Trade Warehousing Zone to move inventory when the business is ready, not just when the shipment arrives.",
     category: "FTWZ",
     date: "2026-07-30",
@@ -821,6 +837,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "mumbai-jnpa-ftwz-duty-free-warehousing",
     title: "Mumbai-JNPA FTWZ: Duty-Free Warehousing Near India's Largest Container Port",
+    metaTitle: "Mumbai-JNPA FTWZ: Bonded Warehousing Near the Port",
     excerpt: "Clearing JNPA is only step one. How automotive, engineering, electronics, and chemical importers use an FTWZ near India's largest container port to control inventory timing.",
     category: "FTWZ",
     date: "2026-07-30",
@@ -880,6 +897,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "chennai-vallur-ftwz-ennore-port-industrial-cargo",
     title: "Chennai-Vallur FTWZ: Duty-Free Storage Near Ennore Port for Bulk & Industrial Cargo",
+    metaTitle: "Chennai-Vallur FTWZ Near Ennore Port for Industrial Cargo",
     excerpt: "Steel coils, transformers, wind turbine parts. Industrial cargo needs timing, not speed. Here is how Chennai-Vallur FTWZ near Ennore Port gives project teams that flexibility.",
     category: "FTWZ",
     date: "2026-07-30",
@@ -939,6 +957,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "chennai-sriperumbudur-ftwz-just-in-time-sourcing",
     title: "Why Auto & Electronics Manufacturers Choose Chennai-Sriperumbudur FTWZ for Just-in-Time Sourcing",
+    metaTitle: "Chennai-Sriperumbudur FTWZ for Just-in-Time Sourcing",
     excerpt: "An ECU from Germany, sensors from Korea, bearings from Japan — one missing part can stop a production line. Here is how Chennai-Sriperumbudur FTWZ keeps just-in-time manufacturing moving.",
     category: "FTWZ",
     date: "2026-07-30",
@@ -998,6 +1017,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "mumbai-panvel-ftwz-jnpa-mumbai-port-distribution",
     title: "Mumbai-Panvel FTWZ: Why It Works for Businesses Serving Both JNPA and Mumbai Port",
+    metaTitle: "Mumbai-Panvel FTWZ: Serving Both JNPA and Mumbai Port",
     excerpt: "One container rarely has one destination. Here is how Mumbai-Panvel FTWZ lets businesses hold inventory close to both JNPA and Mumbai Port, then release it as each market actually needs it.",
     category: "FTWZ",
     date: "2026-07-30",
@@ -1006,7 +1026,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: landedImg,
     heroImage: landedImg,
     imageAlt: "Distribution warehouse near Panvel organizing inventory for multiple regional markets",
-    metaDescription: "How Mumbai-Panvel FTWZ helps businesses serving Mumbai, Pune, and Gujarat hold inventory close to both JNPA and Mumbai Port, releasing stock as demand requires.",
+    metaDescription: "How Mumbai-Panvel FTWZ helps businesses serving Mumbai, Pune and Gujarat hold stock near JNPA and Mumbai Port and release it as demand requires.",
     keywords: ["mumbai panvel ftwz", "jnpa mumbai port warehousing", "multi-market distribution warehouse", "inland warehousing maharashtra", "regional distribution hub india", "panvel logistics hub"],
     intro: "Not every shipment that arrives in Mumbai has the same destination. A container unloaded today might supply customers in Mumbai this week, Pune next week, and Ahmedabad a few days later — some products may stay in Maharashtra for a month, while others are dispatched almost as soon as they arrive. That's the reality for most importers today. They're not moving cargo for one customer or one city; they're managing inventory for different regions, different sales teams, and different delivery schedules, all from the same shipment. Getting cargo into India is only the beginning — the bigger question is where that inventory should wait before it moves again.",
     sections: [
@@ -1054,6 +1074,7 @@ export const blogPosts: BlogPost[] = [
     slug: "why-importers-choose-mundra-north-west-india",
     thumbnail: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&auto=format&fit=crop&q=70",
     title: "Why Global Importers Choose Mundra as a Gateway to North and West India",
+    metaTitle: "Why Importers Choose Mundra for North and West India",
     excerpt: "Why experienced importers keep coming back to Mundra — not just for the port, but for how much flexibility it gives them after the shipment arrives.",
     category: "FTWZ",
     readTime: "7 min read",
@@ -1115,12 +1136,13 @@ export const blogPosts: BlogPost[] = [
     slug: "why-dahej-preferred-hub-chemical-industrial-supply-chains",
     thumbnail: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&auto=format&fit=crop&q=70",
     title: "Why Dahej Is Becoming India's Preferred Hub for Chemical and Industrial Supply Chains",
+    metaTitle: "Why Dahej Is a Preferred Hub for Chemical Supply Chains",
     excerpt: "Why manufacturers and industrial project teams increasingly choose Dahej — not just for the chemical ecosystem, but for how well it handles equipment that arrives before the project is actually ready for it.",
     category: "FTWZ",
     readTime: "7 min read",
     date: "2026-08-07",
     featured: false,
-    metaDescription: "Why Dahej is becoming India's preferred hub for chemical and industrial supply chains — and how experienced teams manage equipment timing around project schedules.",
+    metaDescription: "Why Dahej is a preferred hub for chemical and industrial supply chains, and how experienced teams manage equipment timing around project schedules.",
     heroImage: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&auto=format&fit=crop&q=75",
     imageAlt: "Industrial chemical plant representing Dahej's manufacturing ecosystem",
     intro: "When people hear the name Dahej, they usually think of chemicals. And they're right. But spend any time working with manufacturers in this region, and it becomes clear Dahej is about much more than one industry. It's a place where large projects come together — chemical plants, petrochemical complexes, engineering companies, power projects, and heavy industries all operating within the same ecosystem. That changes how logistics has to work. The priority isn't simply moving cargo from one place to another. It's making sure the right equipment, raw materials, and components are available exactly when the project actually needs them.",
@@ -1178,12 +1200,13 @@ export const blogPosts: BlogPost[] = [
     slug: "how-vizag-emerging-east-coast-gateway-manufacturing-trade",
     thumbnail: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&auto=format&fit=crop&q=70",
     title: "How Vizag Is Emerging as India's East Coast Gateway for Manufacturing and International Trade",
+    metaTitle: "Vizag as an East Coast Gateway for Trade and Industry",
     excerpt: "Why manufacturers are increasingly choosing Vizag — not just for the port, but for an industrial ecosystem built around steel, pharma, and engineering that's grown alongside it.",
     category: "FTWZ",
     readTime: "7 min read",
     date: "2026-08-07",
     featured: false,
-    metaDescription: "How Vizag is emerging as India's east coast gateway for manufacturing and international trade — and why the surrounding industrial ecosystem matters as much as the port.",
+    metaDescription: "How Vizag is becoming India's east coast gateway for industry and trade, and why the surrounding industrial ecosystem matters as much as the port.",
     heroImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1200&auto=format&fit=crop&q=75",
     imageAlt: "Industrial port representing Vizag's manufacturing and trade ecosystem",
     intro: "For a long time, if someone asked where India's major import gateways were, the answer was almost automatic. Mumbai. JNPA. Mundra. The west coast naturally became the centre of many supply chains, and that's where most businesses focused their attention. But things have been changing — quietly, not through one big announcement, but through years of industrial growth, better infrastructure, and manufacturers choosing the east coast for reasons that had little to do with geography alone.",
@@ -1240,6 +1263,7 @@ export const blogPosts: BlogPost[] = [
     slug: "why-delhi-ncr-ideal-distribution-hub-north-india",
     thumbnail: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=70",
     title: "Why Delhi NCR Is the Ideal Distribution Hub for Businesses Serving North India",
+    metaTitle: "Why Delhi NCR Suits Distribution to North India Markets",
     excerpt: "Why businesses expanding across North India increasingly centralise around Delhi NCR — one well-positioned warehouse instead of a facility in every state.",
     category: "FTWZ",
     readTime: "7 min read",
@@ -1301,6 +1325,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dahej-ftwz-petrochemical-hub-duty-free-warehousing",
     title: "Dahej FTWZ: Duty-Free Warehousing for India's Petrochemical Hub",
+    metaTitle: "Dahej FTWZ: Bonded Warehousing for the Petrochemical Hub",
     excerpt: "Chemical importers rarely need an entire shipment at once. Here is how Dahej FTWZ lets petrochemical businesses time customs clearance around actual demand, not vessel arrival.",
     category: "FTWZ",
     date: "2026-07-30",
@@ -1376,6 +1401,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dahej-ftwz-chemical-import-documentation-checklist",
     title: "Customs Documentation for Chemical and Petrochemical Imports at Dahej FTWZ: A Practical Checklist",
+    metaTitle: "Dahej FTWZ Chemical Import Documentation Checklist",
     excerpt: "A practical checklist for importers moving chemical and petrochemical cargo through Dahej FTWZ — from HS classification to SDS documentation and common clearance delays.",
     category: "FTWZ",
     readTime: "9 min read",
@@ -1677,6 +1703,7 @@ When choosing hazardous chemical storage, the right question isn't simply how mu
   {
     slug: "textile-supply-chain-mundra-ftwz",
     title: "Supply Chain Solutions for Textile Importers and Exporters via Mundra FTWZ",
+    metaTitle: "Textile Supply Chains via Mundra FTWZ for Importers",
     excerpt: "How textile companies use FTWZ storage to manage seasonal inventory, multi-supplier consolidation, and re-export flexibility without tying up working capital.",
     category: "FTWZ",
     readTime: "10 min read",
@@ -1811,7 +1838,7 @@ For a textile importer, the most useful question may not be "where can the goods
     readTime: "10 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Customs clearance for auto component imports near Chennai and Sriperumbudur — HS classification, CKD/SKD documentation, and valuation for auto parts importers.",
+    metaDescription: "Customs clearance for auto component imports near Chennai and Sriperumbudur: HS classification, CKD/SKD documents and valuation.",
     thumbnail: cbmImg,
     imageAlt: "Automotive components and parts being inspected and documented at a customs warehouse",
     keywords: [
@@ -1953,12 +1980,13 @@ None of these checks is particularly complicated. The benefit comes from doing t
   {
     slug: "ftwz-supply-chain-model-guide-first-time-importers",
     title: "How the FTWZ Supply Chain Model Works: A Guide for First-Time Importers",
+    metaTitle: "How the FTWZ Supply Chain Model Works for New Importers",
     excerpt: "A practical guide to how Free Trade Warehousing Zones fit into an import supply chain — inventory timing, working capital, multi-supplier consolidation, and re-export flexibility.",
     category: "FTWZ",
     readTime: "11 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "How the FTWZ supply chain model works for first-time importers — inventory timing, working capital, consolidation, customs clearance, and re-export flexibility.",
+    metaDescription: "How the FTWZ supply chain model works for first-time importers: inventory timing, working capital, clearance and re-export flexibility.",
     thumbnail: cbmImg,
     imageAlt: "Warehouse inventory management with imported goods staged for distribution",
     keywords: [
@@ -2094,12 +2122,13 @@ For a company considering an FTWZ for the first time, the starting point should 
   {
     slug: "hs-code-classification-mistakes-import-clearance-delays",
     title: "HS Code Classification Mistakes That Can Delay Import Clearance",
+    metaTitle: "HS Code Classification Mistakes That Delay Clearance",
     excerpt: "Why relying on a supplier's HS code, reusing an old classification, or skipping technical documentation can turn a routine import into a customs delay — and how to check before the shipment leaves.",
     category: "FTWZ",
     readTime: "10 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Common HS code classification mistakes that delay import clearance in India — supplier codes, reused classifications, and the technical documentation that prevents customs questions.",
+    metaDescription: "Common HS code mistakes that delay import clearance in India: supplier codes, reused classifications and documents that prevent customs queries.",
     thumbnail: dutyImg,
     imageAlt: "Customs officer reviewing import documentation and product classification codes",
     keywords: [
@@ -2239,12 +2268,13 @@ The importer can collect the technical information available from the manufactur
   {
     slug: "coastal-shipping-vs-road-freight-high-volume-importers",
     title: "Coastal Shipping vs Road Freight: What High-Volume Importers Should Know",
+    metaTitle: "Coastal Shipping vs Road Freight for High-Volume Importers",
     excerpt: "Why comparing coastal shipping to road freight on price-per-shipment alone misses the real economics — first-mile and last-mile costs, transit time trade-offs, and when a multimodal approach wins.",
     category: "FTWZ",
     readTime: "11 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Coastal shipping vs road freight for high-volume importers in India — full cost comparison, transit time trade-offs, and how FTWZ warehousing fits a multimodal supply chain.",
+    metaDescription: "Coastal shipping vs road freight for high-volume importers in India: cost, transit time trade-offs and where FTWZ warehousing fits.",
     thumbnail: cbmImg,
     imageAlt: "Cargo vessel and trucks at an Indian port handling coastal shipping freight",
     keywords: [
@@ -2379,12 +2409,13 @@ The best transportation model is not necessarily the one with the lowest individ
   {
     slug: "project-cargo-logistics-power-renewable-energy-equipment",
     title: "Project Cargo Logistics for Power and Renewable Energy Equipment Imports",
+    metaTitle: "Project Cargo for Power and Renewable Energy Equipment",
     excerpt: "Why power and renewable energy project cargo needs to be planned around the installation schedule, not the shipping schedule — equipment details, port handling, oversized-load routing, and FTWZ staging.",
     category: "FTWZ",
     readTime: "11 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Project cargo logistics for power and renewable energy equipment imports — port handling, customs clearance, oversized cargo routing, and FTWZ warehousing for project schedules.",
+    metaDescription: "Project cargo logistics for power and renewable energy equipment imports: port handling, customs, oversized cargo routing and FTWZ warehousing.",
     thumbnail: cbmImg,
     imageAlt: "Heavy transformer and renewable energy equipment being loaded for project cargo transport",
     keywords: [
@@ -2517,12 +2548,13 @@ In project logistics, successful delivery is not just about getting the equipmen
   {
     slug: "ftwz-customs-clearance-vs-standard-port-clearance-comparison",
     title: "FTWZ-Based Customs Clearance vs Standard Port Clearance: A Practical Comparison",
+    metaTitle: "FTWZ vs Standard Port Customs Clearance: A Comparison",
     excerpt: "When immediate domestic clearance makes sense, and when holding eligible goods in an FTWZ gives an importer more control over timing, inventory, and re-export options.",
     category: "FTWZ",
     readTime: "12 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "FTWZ-based customs clearance vs standard port clearance compared — timing, inventory flexibility, working capital, and re-export considerations for importers.",
+    metaDescription: "FTWZ-based customs clearance vs standard port clearance: timing, inventory flexibility, working capital and re-export points for importers.",
     thumbnail: dutyImg,
     imageAlt: "Cargo containers at a customs-controlled warehouse facility awaiting clearance",
     keywords: [
@@ -2659,12 +2691,13 @@ Astromar Logistics Pvt. Ltd. provides FTWZ, customs clearance, warehousing and s
   {
     slug: "coastal-shipping-ftwz-warehousing-multimodal-supply-chain",
     title: "Combining Coastal Shipping and FTWZ Warehousing: A Multimodal Supply Chain Model",
+    metaTitle: "Coastal Shipping and FTWZ Warehousing: A Multimodal Model",
     excerpt: "How pairing coastal shipping for long-distance movement with FTWZ warehousing near the destination market creates a more flexible supply chain than relying on road transport alone.",
     category: "FTWZ",
     readTime: "13 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Combining coastal shipping and FTWZ warehousing for a multimodal supply chain — when it works, how it compares to road freight, and how inventory planning fits in.",
+    metaDescription: "How coastal shipping and FTWZ warehousing combine in a multimodal supply chain: when it works, road freight comparison and inventory planning.",
     thumbnail: cbmImg,
     imageAlt: "Cargo ship and warehouse facility connected by road transport in a multimodal logistics network",
     keywords: [
@@ -2876,12 +2909,13 @@ The advantage here is predictability. Container coastal shipping fits into exist
   {
     slug: "khurja-ceramics-export-logistics-delhi-ftwz",
     title: "How India's Ceramics Industry Actually Moves Goods to Global Markets",
+    metaTitle: "How Khurja's Ceramics Industry Moves Goods Globally",
     excerpt: "The logistics behind Khurja's ceramics cluster — consolidation, fragile-goods handling, and how a Delhi-Khurja FTWZ can fit into export and import supply chains.",
     category: "FTWZ",
     readTime: "12 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "How Khurja's ceramics industry moves goods to global markets — consolidation, packaging, customs, and where a Delhi-Khurja FTWZ fits for exporters and importers.",
+    metaDescription: "How Khurja's ceramics industry moves goods to global markets: consolidation, packaging, customs and where a Delhi-Khurja FTWZ fits.",
     thumbnail: cbmImg,
     imageAlt: "Ceramic products carefully packed and consolidated for export shipment",
     keywords: [
@@ -3028,12 +3062,13 @@ The better question is: what is the total cost of getting the product safely fro
   {
     slug: "customs-clearance-pharmaceutical-cold-chain-imports",
     title: "Customs Clearance for Pharmaceutical and Cold Chain Imports: What's Different?",
+    metaTitle: "Customs Clearance for Pharma and Cold Chain Imports",
     excerpt: "Why temperature-sensitive pharmaceutical shipments need customs clearance planned around cold-chain integrity, not just document turnaround — and where FTWZ warehousing can fit.",
     category: "FTWZ",
     readTime: "13 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Customs clearance for pharmaceutical and cold chain imports in India — documentation, temperature monitoring, examination handling, and FTWZ considerations.",
+    metaDescription: "Customs clearance for pharmaceutical and cold chain imports in India: documents, temperature monitoring, examination and FTWZ points.",
     thumbnail: coldImg,
     imageAlt: "Temperature-controlled pharmaceutical shipment being handled at a cold chain warehouse",
     keywords: [
@@ -3194,6 +3229,7 @@ When those questions are answered in advance, customs clearance becomes much les
   {
     slug: "coastal-shipping-edible-oil-grain-importers",
     title: "Coastal Shipping for Edible Oil and Grain Importers: Cost and Handling Considerations",
+    metaTitle: "Coastal Shipping for Edible Oil and Grain Importers",
     excerpt: "Why comparing coastal shipping to road freight on rate alone misses the real economics for bulk commodities — tank handling for edible oil, moisture control for grain, and when the volume justifies the switch.",
     category: "FTWZ",
     readTime: "13 min read",
@@ -3344,6 +3380,7 @@ The important thing is not to choose coastal shipping simply because the vessel 
   {
     slug: "electronics-supply-chain-component-inventory-duty-deferment",
     title: "Supply Chain Management for Electronics Importers: Component Inventory and Duty Deferment",
+    metaTitle: "Electronics Imports: Component Stock and Duty Deferment",
     excerpt: "Why electronics importers need to balance component availability against obsolescence risk and working capital — and how duty deferment through an FTWZ actually works, versus how it's often misunderstood.",
     category: "FTWZ",
     readTime: "14 min read",
@@ -3506,12 +3543,13 @@ For an electronics business, a component isn't just another item on a warehouse 
   {
     slug: "petrochemical-industrial-plant-equipment-project-cargo",
     title: "Managing Petrochemical and Industrial Plant Equipment Imports as Project Cargo",
+    metaTitle: "Petrochemical Plant Equipment Imports as Project Cargo",
     excerpt: "Why reactors, pressure vessels and heat exchangers need port selection, route surveys and storage planning built around the equipment, not the shipping schedule — and where FTWZ warehousing fits.",
     category: "FTWZ",
     readTime: "14 min read",
     date: "2026-08-20",
     featured: false,
-    metaDescription: "Project cargo logistics for petrochemical and industrial plant equipment imports — port selection, route planning, customs coordination, and FTWZ storage options.",
+    metaDescription: "Project cargo logistics for petrochemical and industrial plant equipment imports: port selection, routes, customs coordination and FTWZ storage.",
     thumbnail: dutyImg,
     imageAlt: "Large industrial reactor vessel being transported as project cargo to a plant site",
     keywords: [
@@ -3672,6 +3710,7 @@ Because with project cargo, a delay isn't always just a delay to one shipment. I
   {
     slug: "customs-documentation-textile-apparel-importers",
     title: "Customs Documentation for Textile and Apparel Importers: What You Need to Get Right",
+    metaTitle: "Customs Documentation for Textile and Apparel Importers",
     excerpt: "Why fibre composition, woven-vs-knitted construction, and labelling requirements need to be nailed down before shipment — and how to avoid the documentation gaps that hold up textile clearance.",
     category: "FTWZ",
     readTime: "15 min read",
@@ -3840,6 +3879,7 @@ Whether the cargo moves directly to a factory, into a conventional warehouse or 
   {
     slug: "steel-metal-cargo-coastal-shipping-routes",
     title: "Steel and Metal Cargo Movement via Coastal Shipping Routes: What Importers Need to Consider",
+    metaTitle: "Steel and Metal Cargo by Coastal Shipping: Key Points",
     excerpt: "Why steel and metal cargo need weight-specific, moisture-aware logistics planning — coil handling, port selection, and when coastal shipping genuinely beats road transport on landed cost.",
     category: "FTWZ",
     readTime: "15 min read",
@@ -3999,6 +4039,7 @@ The company could instead evaluate a multimodal option: Import → Western Port 
   {
     slug: "fmcg-multi-sku-consolidation-ftwz",
     title: "FMCG and Consumer Goods Supply Chains: Multi-SKU Consolidation Through FTWZ",
+    metaTitle: "FMCG Supply Chains: Multi-SKU Consolidation via FTWZ",
     excerpt: "Why FMCG warehousing is really an inventory-accuracy problem, not a storage problem — and how multi-SKU consolidation through an FTWZ can reduce duplicated safety stock.",
     category: "FTWZ",
     readTime: "16 min read",
@@ -4174,6 +4215,7 @@ The best supply chains aren't necessarily the ones with the fewest warehouses. T
   {
     slug: "port-infrastructure-project-equipment-oversized-cargo",
     title: "Port and Infrastructure Project Equipment: Logistics Planning for Oversized Cargo",
+    metaTitle: "Port Project Equipment: Oversized Cargo Logistics Planning",
     excerpt: "Why port cranes, transformers and dredging machinery need logistics built around the equipment rather than fitted into a standard process — and what happens when they arrive before the site is ready.",
     category: "FTWZ",
     readTime: "16 min read",
@@ -4541,6 +4583,7 @@ A good importer-supplier relationship should include documentation standards: pr
   {
     slug: "coastal-shipping-cement-construction-materials",
     title: "Coastal Shipping for Cement and Construction Materials: How It Works in India",
+    metaTitle: "Coastal Shipping for Cement and Construction Materials",
     excerpt: "Why cement's continuous consumption and moisture sensitivity make it a genuine candidate for coastal shipping — bulk vs. bagged handling, the last-100-kilometre economics, and where FTWZ fits.",
     category: "FTWZ",
     readTime: "16 min read",
@@ -4691,6 +4734,7 @@ This is particularly important for large projects because material requirements 
   {
     slug: "auto-component-jit-inventory-production-risk",
     title: "Supply Chain Management for Auto Component Manufacturers: Just-in-Time Inventory and Production Risk",
+    metaTitle: "Auto Component Supply Chains: Just-in-Time Inventory Risk",
     excerpt: "Why JIT works only when the rest of the supply chain is dependable — inventory criticality, the real lead time behind ocean freight, and why a ₹500 component can stop a production line.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -4870,6 +4914,7 @@ These questions often reveal more than simply looking at the total value of inve
   {
     slug: "data-center-telecom-infrastructure-project-cargo",
     title: "Data Center and Telecom Infrastructure Equipment as Project Cargo",
+    metaTitle: "Data Center and Telecom Equipment as Project Cargo",
     excerpt: "Why data center and telecom equipment logistics needs to follow the installation schedule, not the shipping schedule — and how a small missing component can hold up a project as much as a heavy piece of equipment.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -5021,6 +5066,7 @@ Instead of automatically sending everything to the project site, the company map
   {
     slug: "what-is-aeo-status-customs-clearance",
     title: "What Is AEO Status and How Does It Help Speed Up Customs Clearance?",
+    metaTitle: "What Is AEO Status and How It Speeds Customs Clearance",
     excerpt: "AEO status doesn't reduce customs duty or guarantee faster clearance for every shipment — but for regular importers, it can make customs operations meaningfully more predictable.",
     category: "Customs",
     date: "2026-09-11",
@@ -5258,6 +5304,7 @@ Astromar Logistics Pvt. Ltd. provides FTWZ operations, bonded warehousing, custo
   {
     slug: "route-surveys-odc-permits-project-cargo",
     title: "Route Surveys and ODC Permits: What Happens Before Heavy Cargo Ever Moves",
+    metaTitle: "Route Surveys and ODC Permits Before Heavy Cargo Moves",
     excerpt: "The truck on the highway is the visible part of project cargo. The route survey, the permits, and the coordination behind it are what actually determine whether the movement works.",
     category: "Freight",
     date: "2026-09-11",
@@ -5619,6 +5666,7 @@ Astromar Logistics Pvt. Ltd. provides FTWZ operations, bonded warehousing, custo
   {
     slug: "supply-chain-resilience-ftwz-inventory-buffers",
     title: "Building Supply Chain Resilience: Planning for Disruption with FTWZ-Based Inventory Buffers",
+    metaTitle: "Supply Chain Resilience with FTWZ-Based Inventory Buffers",
     excerpt: "Supply chain resilience isn't about holding more stock — it's about having genuine flexibility in where inventory sits and when it moves. Here's how an FTWZ-based inventory buffer fits into that.",
     category: "FTWZ",
     date: "2026-09-19",
@@ -5732,6 +5780,7 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) operati
   {
     slug: "coastal-shipping-cabotage-rules-importers",
     title: "Coastal Shipping and Cabotage Rules: What Importers Need to Know",
+    metaTitle: "Coastal Shipping and Cabotage Rules for Importers in India",
     excerpt: "A practical guide to using India's coastal shipping network for smoother, more efficient movement of cargo — and what the Coastal Shipping Act, 2025 actually changed.",
     category: "Freight",
     date: "2026-09-19",
@@ -5834,6 +5883,7 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) service
   {
     slug: "customs-valuation-disputes-declared-value",
     title: "Customs Valuation Disputes: What Happens When Customs Doesn't Agree With Your Declared Value",
+    metaTitle: "Customs Valuation Disputes Over Your Declared Value",
     excerpt: "A valuation query doesn't mean you've done something wrong. Here's why customs sometimes questions a declared value, and how importers can handle it effectively.",
     category: "Customs",
     date: "2026-09-19",
@@ -5957,6 +6007,7 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) service
   {
     slug: "choosing-spmt-multi-axle-trailer-crane-heavy-cargo",
     title: "Choosing Between SPMTs, Multi-Axle Trailers, and Cranes for Heavy Cargo",
+    metaTitle: "SPMTs, Multi-Axle Trailers and Cranes for Heavy Cargo",
     excerpt: "The right equipment for your project depends on the cargo, route, site conditions and final positioning requirement — not just which vehicle looks biggest.",
     category: "Freight",
     date: "2026-09-19",
@@ -6052,6 +6103,7 @@ Astromar Logistics Pvt. Ltd. provides Free Trade Warehousing Zone (FTWZ) service
   {
     slug: "multi-location-inventory-visibility-warehouses",
     title: "Multi-Location Inventory Visibility: Why Businesses Lose Track of Stock Across Warehouses",
+    metaTitle: "Multi-Location Inventory Visibility Across Warehouses",
     excerpt: "More locations create more opportunities — and more blind spots. Here's why inventory visibility breaks down as businesses grow, and how to fix it.",
     category: "FTWZ",
     date: "2026-09-19",
@@ -6297,6 +6349,7 @@ The important part is not choosing a warehouse first. It's understanding the pro
   {
     slug: "fertilizer-agri-input-coastal-shipping-overview",
     title: "Fertilizer and Agri-Input Coastal Shipping: A Practical Overview",
+    metaTitle: "Fertilizer and Agri-Input Coastal Shipping Overview",
     excerpt: "Why fertilizer logistics has to work backwards from the agricultural demand cycle — moisture protection across every handling stage, and how coastal shipping fits when the market is far from the arrival port.",
     category: "FTWZ",
     readTime: "15 min read",
@@ -6429,6 +6482,7 @@ The comparison should include the complete door-to-door movement, not just the v
   {
     slug: "ecommerce-fulfillment-supply-chain-ftwz-distribution-hub",
     title: "E-Commerce Fulfillment Supply Chains: FTWZ as a Distribution Hub",
+    metaTitle: "E-Commerce Fulfillment: FTWZ as a Distribution Hub",
     excerpt: "Why the SKU problem, imported replenishment cycles, and reverse logistics make e-commerce supply chains harder than they look — and where FTWZ warehousing fits between international inventory and domestic fulfillment.",
     category: "FTWZ",
     readTime: "16 min read",
@@ -6575,6 +6629,7 @@ That's what turns e-commerce fulfillment from simply moving parcels into a prope
   {
     slug: "water-treatment-desalination-plant-equipment-project-cargo",
     title: "Water Treatment and Desalination Plant Equipment: Project Cargo Logistics in India",
+    metaTitle: "Water Treatment and Desalination Equipment: Project Cargo",
     excerpt: "Why a desalination project's logistics plan has to follow the construction schedule, not the supplier's shipping schedule — and how to sequence pumps, membranes, and pressure vessels arriving from different countries.",
     category: "FTWZ",
     readTime: "16 min read",
@@ -6719,6 +6774,7 @@ When those pieces are planned together, project cargo becomes easier to manage �
   {
     slug: "customs-clearance-jewelry-precious-metals-imports",
     title: "Customs Clearance for Jewellery and Precious Metals Imports in India",
+    metaTitle: "Customs Clearance for Jewellery and Precious Metal Imports",
     excerpt: "Why a small jewellery shipment can carry outsized value and risk — customs valuation, the BIS hallmarking process that starts after clearance, and the security and insurance questions most cargo doesn't need to ask.",
     category: "FTWZ",
     readTime: "15 min read",
@@ -6850,6 +6906,7 @@ Requirements relating to customs classification, valuation, duties, BIS hallmark
   {
     slug: "medical-device-diagnostic-equipment-supply-chain",
     title: "Medical Device and Diagnostic Equipment Supply Chains: Inventory and Calibration Considerations",
+    metaTitle: "Medical Device Supply Chains: Inventory and Calibration",
     excerpt: "Why medical devices split into two very different inventory problems — capital equipment waiting for installation readiness, and spare parts supporting machines already in the field.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -6990,6 +7047,7 @@ These questions connect the physical movement of the equipment with the customer
   {
     slug: "automobile-vehicle-coastal-shipping-roro-india",
     title: "Automobile and Vehicle Coastal Shipping: RORO Movement in India",
+    metaTitle: "Vehicle Coastal Shipping in India: RORO Movement Guide",
     excerpt: "Why RORO shipping is fundamentally different from container cargo — vehicles driven directly onto the vessel — and how it fits alongside road transport for large-volume automobile movements between coastal markets.",
     category: "FTWZ",
     readTime: "16 min read",
@@ -7130,6 +7188,7 @@ RORO availability, vessel schedules, port facilities, vehicle-handling procedure
   {
     slug: "mining-heavy-equipment-project-cargo-india",
     title: "Mining and Heavy Equipment: Project Cargo Considerations for Indian Sites",
+    metaTitle: "Mining and Heavy Equipment: Project Cargo for Indian Sites",
     excerpt: "Why mining equipment logistics has to look past the port to the route, the remote site, and the installation sequence — coordinating excavators, crushers, and conveyor sections that don't all arrive together.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -7266,6 +7325,7 @@ Astromar Logistics Pvt. Ltd. supports businesses with FTWZ warehousing, project 
   {
     slug: "customs-clearance-footwear-leather-goods-imports",
     title: "Customs Clearance for Footwear and Leather Goods Imports: What Importers Need to Get Right in India",
+    metaTitle: "Customs Clearance for Footwear and Leather Goods Imports",
     excerpt: "Why a synthetic upper that looks like leather can complicate classification, and why photographs alone can't establish what customs needs to know about footwear and leather goods composition.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -7422,6 +7482,7 @@ The strongest import process is usually not the one that starts when the contain
   {
     slug: "timber-wood-products-coastal-shipping-handling",
     title: "Timber and Wood Products: Coastal Shipping and Handling Considerations",
+    metaTitle: "Timber and Wood Products: Coastal Shipping and Handling",
     excerpt: "Why timber is a volume-driven cargo where dimensions matter as much as weight — moisture protection across every handling point, and how a regional warehouse bridges vessel arrival and customer demand.",
     category: "FTWZ",
     readTime: "16 min read",
@@ -7564,6 +7625,7 @@ Astromar Logistics Pvt. Ltd. provides integrated logistics and FTWZ solutions ac
   {
     slug: "solar-renewable-energy-component-supply-chain-inventory",
     title: "Solar and Renewable Energy Component Supply Chains: Inventory Between Project Demand and Continuous Stock",
+    metaTitle: "Solar and Renewable Component Supply Chains and Inventory",
     excerpt: "Why solar projects create lumpy, project-driven demand instead of continuous consumption — and how a warehouse buffer bridges the gap between procurement timing and installation readiness.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -7696,6 +7758,7 @@ The warehouse provides a physical buffer between them; supply chain management p
   {
     slug: "wind-turbine-component-logistics-blade-length-project-cargo",
     title: "Wind Turbine Component Logistics: The Blade-Length Problem in Project Cargo",
+    metaTitle: "Wind Turbine Component Logistics: The Blade-Length Problem",
     excerpt: "Why a road wide enough for a truck isn't automatically wide enough for the blade it's carrying — swept-path analysis, route surveys, and the final-kilometre problem in wind project cargo.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -7852,6 +7915,7 @@ The objective is not simply to move the blade from one point to another. It is t
   {
     slug: "mumbai-panvel-ecommerce-fmcg-distribution-hub-ftwz",
     title: "FTWZ as an E-Commerce and FMCG Distribution Hub Near Navi Mumbai",
+    metaTitle: "FTWZ as an E-Commerce and FMCG Hub Near Navi Mumbai",
     excerpt: "Why Mumbai-Panvel can work as a regional inventory position for businesses serving Maharashtra and beyond — and how e-commerce and FMCG demand different warehouse rhythms from the same location.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -7982,6 +8046,7 @@ It may be less relevant when goods are already committed to specific customers a
   {
     slug: "jnpa-container-detention-demurrage-ftwz-warehousing",
     title: "Reducing Container Detention and Demurrage Costs at JNPA Through FTWZ Warehousing",
+    metaTitle: "Reducing Container Detention and Demurrage at JNPA",
     excerpt: "Why detention and demurrage charges build up at JNPA when cargo, paperwork and buyers aren't ready at the same time — and how moving inventory into an FTWZ can separate the container clock from the inventory decision.",
     category: "FTWZ",
     readTime: "16 min read",
@@ -8116,6 +8181,7 @@ The objective is not simply to avoid a daily charge. It is to stop paying for co
   {
     slug: "sriperumbudur-electronics-manufacturers-ftwz-component-inventory",
     title: "How Electronics Manufacturers Near Sriperumbudur Use FTWZ for Component Inventory",
+    metaTitle: "FTWZ Component Inventory: Electronics near Sriperumbudur",
     excerpt: "Sriperumbudur isn't only about automotive manufacturing — a growing electronics and EMS cluster faces its own component-timing gap between international sourcing and production consumption.",
     category: "FTWZ",
     readTime: "17 min read",
@@ -8260,6 +8326,7 @@ Astromar Logistics Pvt. Ltd. supports businesses through FTWZ warehousing, suppl
   {
     slug: "chennai-vallur-power-transmission-switchgear-storage",
     title: "Power Transmission and Switchgear Equipment Storage Near Chennai Vallur",
+    metaTitle: "Switchgear and Power Equipment Storage near Chennai Vallur",
     excerpt: "Why transformers, switchgear and control panels need equipment-specific storage — heavy-lift handling for one, moisture protection for another — and how North Chennai's power-sector concentration makes staged storage relevant.",
     category: "FTWZ",
     readTime: "17 min read",

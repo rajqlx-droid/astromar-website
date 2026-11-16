@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   alternates: { canonical: "/ftwz-benefits-india" },
   title: "FTWZ Benefits | Free Trade Warehousing Zone India | Astromar",
-  description: "Explore FTWZ benefits in India, offering duty deferment, tax advantages, cost-efficient storage, seamless customs processes, and easy global trade access for businesses.",
+  description: "Explore FTWZ benefits in India: duty deferment, tax advantages, cost-efficient storage, smoother customs processes and easier global trade access.",
   keywords: ["FTWZ benefits India", "free trade warehousing zone benefits", "duty deferment India", "GST deferment FTWZ", "FTWZ tax benefits"],
   openGraph: {
     title: "FTWZ Benefits | Free Trade Warehousing Zone India",

@@ -3,7 +3,7 @@ import ContactClient from "./contact-client";
 
 export const metadata: Metadata = {
   title: "Contact Astromar Logistics | FTWZ Enquiry Chennai",
-  description: "Contact Astromar Logistics for FTWZ warehousing, customs clearance, and freight forwarding enquiries. HQ: Anna Nagar, Chennai. Phone +91 99402 11014. Email sales@astromarfreezone.com.",
+  description: "Contact Astromar Logistics Pvt. Ltd. for FTWZ warehousing, customs clearance and freight forwarding. HQ: Anna Nagar, Chennai. Call +91 99402 11014.",
   keywords: "astromar logistics contact, ftwz enquiry india, astromar chennai office, ftwz contact chennai, freight forwarder contact india, ftwz quote request, astromar phone number, astromar email, free trade warehousing zone contact",
   alternates: { canonical: "https://www.astromarfreezone.com/contact-us" },
   openGraph: {

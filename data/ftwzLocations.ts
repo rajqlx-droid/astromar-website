@@ -1205,8 +1205,8 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     lng: 69.7295,
     address: "APSEZ, Survey No. 169/36, Mundra, Kutch, Gujarat 370421",
     seo: {
-      title: "FTWZ Mundra — Adani Ports APSEZ India's Largest Port | Astromar",
-      description: "Astromar's ftwz mundra at Adani Ports APSEZ — India's largest commercial port. Duty-free FTWZ warehousing for Middle East, Africa, Europe trade.",
+      title: "FTWZ Mundra | Adani Ports APSEZ Warehouse | Astromar",
+      description: "Astromar's FTWZ Mundra at Adani Ports APSEZ: bonded warehousing with duty and IGST deferred for Middle East, Africa and Europe trade.",
       keywords: "ftwz mundra, ftwz in mundra, mundra ftwz, apsez warehouse, adani ports sez, bonded warehousing in mundra, custom bonded warehousing in mundra, free trade warehouse zone in mundra, gujarat ftwz",
       h1: "FTWZ Mundra",
       h1Subtitle: "Adani Ports APSEZ, Gujarat",
@@ -1433,7 +1433,7 @@ export const ftwzLocationDetails: FTWZLocationDetail[] = [
     address: "No. 922, 1st Floor, H-Block, 17th Main Road, Anna Nagar, Chennai - 600 040, Tamil Nadu, India",
     seo: {
       title: "Astromar Logistics HQ Chennai | Anna Nagar Registered Office",
-      description: "Astromar Logistics Pvt Ltd registered office in Anna Nagar, Chennai. Centralized operations, customer support, and business development for all FTWZ and logistics services across India.",
+      description: "Registered office of Astromar Logistics Pvt. Ltd. in Anna Nagar, Chennai: central operations, customer support and business development.",
       keywords: "Astromar Logistics Chennai, Anna Nagar office, FTWZ company headquarters, logistics company Chennai, Astromar registered office",
       heroAlt: "Looking up at glass office towers against a cloudy sky",
     },
