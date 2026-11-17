@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const PHONE_DISPLAY = "+91 99402 11014";
-const PHONE_TEL = "+919940211014";
+const PHONE_DISPLAY = "+91 98400 97773";
+const PHONE_TEL = "+919840097773";
 const ADDRESS =
   "NO.922, 1st Floor, H Block, 17th Main Road, Anna Nagar, Chennai - 600 040, Tamil Nadu, India";
 const MAPS =
@@ -112,7 +112,6 @@ export default function ProfilePage() {
             <div>
               <small className="block text-[11px] uppercase tracking-widest text-white/70">Email</small>
               <a href="mailto:david@astromarfreezone.com" className="block">david@astromarfreezone.com</a>
-              <a href="mailto:sales@astromarfreezone.com" className="block">sales@astromarfreezone.com</a>
             </div>
           </div>
         </section>
