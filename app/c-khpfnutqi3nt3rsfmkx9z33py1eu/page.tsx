@@ -55,9 +55,38 @@ export default function ProfilePage() {
           >
             Save to Contacts
           </a>
-          <a href="/Astromar-Company-Profile.pdf" download="Astromar-Company-Profile.pdf" className={btn}>
-            Company Profile (PDF)
-          </a>
+          <div className="flex gap-2.5">
+            <a
+              href="/Astromar-Company-Profile.pdf"
+              target="_blank"
+              rel="noopener"
+              className={`${btn} flex-1`}
+            >
+              Company Profile (PDF)
+            </a>
+            <a
+              href="/Astromar-Company-Profile.pdf"
+              download="Astromar-Company-Profile.pdf"
+              aria-label="Download company profile PDF"
+              className="flex min-h-[52px] w-[52px] shrink-0 items-center justify-center rounded-[14px] border border-white/40 bg-white/10 text-white"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 3v12" />
+                <path d="m7 11 5 5 5-5" />
+                <path d="M5 21h14" />
+              </svg>
+            </a>
+          </div>
         </section>
 
         <section className={panel}>
