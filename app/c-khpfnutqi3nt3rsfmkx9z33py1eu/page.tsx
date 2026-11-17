@@ -55,7 +55,7 @@ export default function ProfilePage() {
           >
             Save to Contacts
           </a>
-          <a href="/Astromar-Company-Profile.pdf" target="_blank" rel="noopener" className={btn}>
+          <a href="/Astromar-Company-Profile.pdf" download="Astromar-Company-Profile.pdf" className={btn}>
             Company Profile (PDF)
           </a>
         </section>
