@@ -66,6 +66,7 @@ const nextConfig = {
     return [
       { source: '/((?!admin(?:/|$)).*)', headers: security(publicCsp) },
       { source: '/admin/:path*', headers: security(adminCsp) },
+      { source: '/pitch/:path*', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] },
       { source: '/(c-khpfnutqi3nt3rsfmkx9z33py1eu|Astromar-Company-Profile.pdf|David-Astromar.vcf)', headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] },
     ]
   },
