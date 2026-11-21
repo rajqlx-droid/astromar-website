@@ -47,7 +47,7 @@ export const pitchVideos: PitchVideo[] = [
       "Silent explainer with keyword captions: FTWZ as an SEZ, deemed foreign territory, duty and the DTA.",
     src: "/pitch/videos/ftwz-explainer.mp4",
     poster: "/pitch/videos/ftwz-explainer.jpg",
-    duration: "1:27",
+    duration: "1:09",
   },
 ];
 
