@@ -49,6 +49,14 @@ export const pitchVideos: PitchVideo[] = [
     poster: "/pitch/videos/ftwz-explainer.jpg",
     duration: "1:09",
   },
+  {
+    title: "SMI process explained",
+    description:
+      "Supplier Management Inventory model step by step: port and customs, destuffing, examination and OOC, sale, duty and gate-out.",
+    src: "/pitch/videos/smi-process.mp4",
+    poster: "/pitch/videos/smi-process.jpg",
+    duration: "1:14",
+  },
 ];
 
 // Reserved for sample trade documents (BL, BoE and similar). Not shown in the menu yet.
