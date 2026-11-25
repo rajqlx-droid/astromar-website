@@ -176,11 +176,11 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       {
         question: "What is a Free Trade Warehousing Zone (FTWZ)?",
-        answer: "A Free Trade Warehousing Zone (FTWZ) is a special economic area under India's SEZ Act, 2005, designed for duty-free warehousing, international trading, and integrated logistics. Goods stored in an FTWZ are treated as if they haven't entered Indian customs territory, allowing importers to defer customs duty and GST payments until DTA clearance, within the permitted storage period.",
+        answer: "A Free Trade Warehousing Zone (FTWZ) is a special economic area under India's SEZ Act, 2005, designed for warehousing under customs control with duty deferment, international trading, and integrated logistics. Goods stored in an FTWZ are treated as if they haven't entered Indian customs territory, allowing importers to defer customs duty and GST payments until DTA clearance, within the permitted storage period.",
       },
       {
         question: "How does FTWZ help save on customs duty and GST?",
-        answer: "No customs duty or GST is payable while goods remain in the FTWZ within the permitted storage period; duty becomes payable on DTA clearance, subject to applicable regulations. Customs duty and IGST are payable only when goods are cleared into the Domestic Tariff Area (DTA). If goods are re-exported, no duty or GST applies at all. This can improve working capital by 15-25%.",
+        answer: "Customs duty and applicable taxes are generally payable when goods are cleared into the Domestic Tariff Area (DTA), not while goods are held in the FTWZ; duty becomes payable on DTA clearance, subject to applicable regulations. Customs duty and IGST are payable only when goods are cleared into the Domestic Tariff Area (DTA). If eligible goods are re-exported under the applicable procedures, domestic import duty and GST on clearance into India do not arise, subject to applicable rules and approvals. Deferment changes the timing of payment, not necessarily the total amount payable.",
       },
       {
         question: "Who should use FTWZ warehousing in India?",
@@ -188,11 +188,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "What is the difference between FTWZ and a bonded warehouse?",
-        answer: "While both allow duty deferment, FTWZs offer storage for up to 3 years, extendable to 5 years with special permission, permit international trading within the zone, allow value-addition activities, and provide comprehensive duty and tax deferment benefits. Bonded warehouses have storage time limits (1-3 years) and more limited capabilities.",
+        answer: "While both allow duty deferment, FTWZs offer storage for up to 3 years, extendable to 5 years subject to applicable approvals, permit international trading within the zone, allow value-addition activities, and provide comprehensive duty and tax deferment benefits. Bonded warehouses have storage time limits and more limited capabilities.",
       },
       {
         question: "How long does it take to start FTWZ operations?",
-        answer: "Most clients are operational within 2-3 weeks of initial engagement, with full cost savings realised from the very first shipment. The process includes customs documentation, bond creation, warehouse allocation, and inventory management system integration.",
+        answer: "The process includes customs documentation, bond creation, warehouse allocation, and inventory management system integration.",
       },
     ],
     heroImage: "/images/blog/ftwz-guide.jpg",
@@ -276,7 +276,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       {
         question: "What is customs duty deferment in India?",
-        answer: "Customs duty deferment allows importers to delay paying customs duty and IGST by storing goods in FTWZs. Duty is paid only when goods are cleared into the Domestic Tariff Area, improving working capital by 15-25%.",
+        answer: "Customs duty deferment allows importers to delay paying customs duty and IGST by storing goods in FTWZs. Duty is paid only when goods are cleared into the Domestic Tariff Area.",
       },
     ],
     heroImage: "/images/blog/customs-duty.jpg",
@@ -353,7 +353,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       {
         question: "When should I choose air freight over sea freight?",
-        answer: "Choose air freight for high-value, low-volume goods, perishable or time-sensitive products, and emergency shipments. Air freight is typically 4-5x more expensive but 8-10x faster.",
+        answer: "Choose air freight for high-value, low-volume goods, perishable or time-sensitive products, and emergency shipments. Air freight is typically considerably more expensive but considerably faster.",
       },
     ],
     heroImage: "/images/blog/air-vs-sea.jpg",
@@ -1393,7 +1393,7 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       { question: "What is a Free Trade Warehousing Zone (FTWZ)?", answer: "An FTWZ is a customs-controlled area where eligible imported goods can be stored before entering the domestic market or being re-exported. For chemical cargo, this includes approved handling for classification, hazardous storage compatibility, and phased customs clearance." },
-      { question: "Why is Dahej specifically well-suited for chemical warehousing?", answer: "Dahej sits within the Dahej PCPIR, a dedicated 453 sq km petroleum, chemicals, and petrochemicals investment region, and is home to India's first dedicated chemical port — giving chemical importers and exporters direct access to established industrial and port infrastructure." },
+      { question: "Why is Dahej specifically well-suited for chemical warehousing?", answer: "Dahej sits within the Dahej PCPIR, a dedicated 453 sq km petroleum, chemicals, and petrochemicals investment region, giving chemical importers and exporters direct access to established industrial and port infrastructure." },
       { question: "Can hazardous or regulated chemicals be stored in an FTWZ?", answer: "Subject to applicable regulations and facility capability — hazardous and regulated cargo require the warehouse to have appropriate permissions, safety infrastructure, and handling capability, so this should be confirmed against the specific product before storage." },
       { question: "How does duty deferral help chemical importers with cash flow?", answer: "Instead of paying customs duty on an entire shipment upfront, businesses can clear portions of inventory only as production or customer demand requires it, keeping working capital free rather than tied up in duty paid on unused stock." }
     ]
@@ -3047,7 +3047,7 @@ The better question is: what is the total cost of getting the product safely fro
       },
       {
         question: "Does an FTWZ automatically mean duty-free storage for imported ceramics?",
-        answer: "No. An FTWZ operates within the applicable SEZ and customs framework, but the actual customs and duty treatment depends on the specific goods, transaction structure and applicable regulations. It shouldn't be assumed to simply mean duty-free storage."
+        answer: "No. An FTWZ operates within the applicable SEZ and customs framework, but the actual customs and duty treatment depends on the specific goods, transaction structure and applicable regulations. It shouldn't be assumed to simply mean duty-free storage. Duty and taxes are generally payable when goods are cleared into the DTA, and deferment changes the timing of payment, not necessarily the amount."
       },
       {
         question: "Is an FTWZ useful for small ceramic importers?",
@@ -3524,7 +3524,7 @@ For an electronics business, a component isn't just another item on a warehouse 
     faqs: [
       {
         question: "Does an FTWZ eliminate customs duty on imported electronic components?",
-        answer: "No. An FTWZ can provide flexibility in the timing of domestic clearance for eligible goods, but the treatment depends on the applicable customs and SEZ framework, the nature of the goods and the specific transaction. It shouldn't be assumed to simply mean duty-free storage."
+        answer: "No. An FTWZ can provide flexibility in the timing of domestic clearance for eligible goods, but the treatment depends on the applicable customs and SEZ framework, the nature of the goods and the specific transaction. It shouldn't be assumed to simply mean duty-free storage. Duty and taxes are generally payable when goods are cleared into the DTA, and deferment changes the timing of payment, not necessarily the amount."
       },
       {
         question: "How much component inventory should an electronics importer keep?",
@@ -5297,7 +5297,7 @@ Astromar Logistics Pvt. Ltd. provides FTWZ operations, bonded warehousing, custo
       },
       {
         question: "Does AEO status guarantee faster clearance for every shipment?",
-        answer: "Not automatically. Customs continues to apply risk-management and assessment processes, and individual shipments can still be examined. However, CBIC's National Time Release Study has shown bills of entry combining advance filing, facilitation and AEO status clearing significantly faster — around 35-45% faster depending on the port type — than the average across all bills of entry."
+        answer: "Not automatically. Customs continues to apply risk-management and assessment processes, and individual shipments can still be examined. AEO status can help reduce release times in some cases, but it does not guarantee faster clearance for every shipment."
       }
     ]
   },
