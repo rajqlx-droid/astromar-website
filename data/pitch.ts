@@ -57,6 +57,22 @@ export const pitchVideos: PitchVideo[] = [
     poster: "/pitch/videos/smi-process.jpg",
     duration: "1:14",
   },
+  {
+    title: "Supplier inventory hub",
+    description:
+      "How one consolidated inbound shipment is held at Astromar FTWZ and released to several factories by indent.",
+    src: "/pitch/videos/supplier-inventory-hub.mp4",
+    poster: "/pitch/videos/supplier-inventory-hub.jpg",
+    duration: "0:48",
+  },
+  {
+    title: "Export consolidation",
+    description:
+      "How cargo from multiple suppliers is consolidated at Astromar FTWZ into one coordinated export shipment.",
+    src: "/pitch/videos/export-consolidation.mp4",
+    poster: "/pitch/videos/export-consolidation.jpg",
+    duration: "0:50",
+  },
 ];
 
 // Reserved for sample trade documents (BL, BoE and similar). Not shown in the menu yet.
