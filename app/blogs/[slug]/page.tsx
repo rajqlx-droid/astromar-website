@@ -99,10 +99,23 @@ export default async function BlogArticlePage({ params }: Props) {
     ]
   };
 
+  const faqSchema = article.faqs && article.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: article.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  } : null;
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogBreadcrumbSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
       {/* Hero */}
       <section className="relative min-h-[420px] flex items-center">
         <Image src={article.heroImage ?? article.thumbnail} alt={article.imageAlt ?? article.title} fill sizes="100vw" className="absolute inset-0 w-full h-full object-cover" preload fetchPriority="high" />
@@ -143,6 +156,26 @@ export default async function BlogArticlePage({ params }: Props) {
             )}
           </div>
         ))}
+
+        {/* FAQs */}
+        {article.faqs && article.faqs.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-[#1B3A6B] dark:text-white mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-4">
+              {article.faqs.map((faq, i) => (
+                <div key={i} className="border border-[#1B3A6B]/15 rounded-xl overflow-hidden">
+                  <div className="bg-[#1B3A6B] px-6 py-4 flex items-center gap-3">
+                    <span className="w-7 h-7 rounded-full bg-[#F97316] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{i + 1}</span>
+                    <h3 className="text-white font-semibold text-sm">{faq.question}</h3>
+                  </div>
+                  <div className="bg-white dark:bg-gray-800 px-6 py-4 border-l-4 border-[#F97316]">
+                    <p className="text-gray-700 dark:text-gray-200 text-sm leading-relaxed">{faq.answer}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Keywords */}
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
