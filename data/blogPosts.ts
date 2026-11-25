@@ -8465,6 +8465,205 @@ Astromar Logistics Pvt. Ltd. supports project-oriented requirements through FTWZ
       }
     ]
   },
+  {
+    slug: "german-exporters-india-ftwz-without-local-entity",
+    title: "Supplying India From Germany Without an Indian Subsidiary: Where an FTWZ Fits",
+    excerpt: "How a German exporter can hold eligible stock in an FTWZ in India before supplying Indian buyers, and why importer of record, ownership and customs responsibilities must be settled before the first shipment leaves Germany.",
+    category: "FTWZ",
+    readTime: "17 min read",
+    date: "2026-11-25",
+    featured: false,
+    metaDescription: "German exporters can explore holding stock in an Indian FTWZ without a subsidiary. Importer of record, ownership and customs duty explained.",
+    thumbnail: dutyImg,
+    imageAlt: "Shipping containers and warehouse stock for a German exporter supplying Indian buyers through an FTWZ",
+    keywords: [
+      "German exporters India",
+      "FTWZ for foreign companies",
+      "importer of record India",
+      "export from Germany to India",
+      "FTWZ vs bonded warehouse",
+      "duty deferment FTWZ"
+    ],
+    intro: `A German manufacturer wants to expand its business in India. It already has a few potential customers, enquiries are coming in, and there is interest in keeping products closer to the Indian market. But there is one question holding the company back: does it need to establish an Indian subsidiary before it can start supplying customers?
+
+For many overseas businesses, setting up a local company is a significant commitment. There are registration formalities, tax responsibilities, regulatory requirements, banking arrangements and ongoing operating costs to consider. If the company is still testing the market, it may not want to take that step immediately.
+
+At the same time, shipping every order directly from Germany is not always convenient. Indian customers may need products at short notice, orders may arrive at different times, and international shipping for every individual requirement can make inventory planning difficult.`,
+    sections: [
+      {
+        heading: "Where an FTWZ Fits for a German Exporter",
+        content: [
+          { text: "This is where a " },
+          { text: "Free Trade Warehousing Zone (FTWZ)", kw: true, href: "/free-trade-zone" },
+          { text: " may be worth considering.\n\nAn FTWZ can provide a regulated location in India where eligible imported goods may be stored before they are supplied to an Indian buyer or moved through another permitted route. For a German exporter, this may offer a way to position inventory closer to customers without automatically " },
+          { text: "establishing its own Indian subsidiary", href: "/blogs/ftwz-market-entry-without-local-entity" },
+          { text: ".\n\nThere is an important distinction, though. An FTWZ can support the storage and movement of goods, but it does not automatically give a foreign company the right to make domestic sales in India or remove the need for an eligible importer.\n\nUnderstanding that difference is the starting point for deciding whether an FTWZ arrangement makes commercial sense." }
+        ]
+      },
+      {
+        heading: "Why German Exporters May Want Stock in India Without Setting Up a Subsidiary",
+        content: `A company entering a new market usually wants to understand the demand before making a long-term investment.
+
+A German manufacturer might have an Indian distributor, a few industrial customers or enquiries from companies looking for regular supplies. The opportunity may be promising, but the current sales volume may not justify opening a local office or incorporating a subsidiary.
+
+There are practical reasons for taking a gradual approach. A company may want to test demand before committing to a permanent business structure. It may need to keep spare parts or components available for customers who cannot wait for a shipment from Europe. It may also want to supply several Indian buyers without sending a separate consignment from Germany every time an order is placed.
+
+Consider a manufacturer supplying specialised machine components. One Indian customer may need a replacement part urgently, while another may be planning a maintenance shutdown several weeks later. If every order has to be shipped individually from Germany, the exporter has to coordinate several international shipments and delivery schedules. Holding suitable inventory in India could make the supply arrangement easier to manage.
+
+That does not mean every German company needs an Indian warehouse or subsidiary. The right arrangement depends on its products, expected sales, customers and the way it plans to conduct business in India. For companies that want to explore the market before making a larger commitment, free trade warehousing in India is one option worth understanding.`
+      },
+      {
+        heading: "How an FTWZ Fits Into the Arrangement",
+        content: [
+          { text: "An FTWZ is a specialised warehousing arrangement operating under India's " },
+          { text: "Special Economic Zone (SEZ) framework", href: "https://sezindia.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ". Eligible goods can be received and stored in the zone under the applicable procedures.\n\nFor a German exporter, the basic idea is straightforward: instead of sending every customer order separately from Germany, the company can examine whether a planned quantity of goods can be brought into an FTWZ and held there until a buyer or supply requirement is confirmed.\n\nThe goods remain subject to the applicable customs and SEZ procedures while they are in the zone. When an Indian customer is ready to purchase, the relevant parties can arrange the required " },
+          { text: "domestic clearance", kw: true, href: "/free-trade-zone-services/custom-clearance" },
+          { text: ", subject to the permitted transaction structure. Depending on the goods, approvals and transaction, other permitted movements, including re-export, may also be considered.\n\nThis can be useful when the exporter wants to keep stock closer to the Indian market but does not want to establish its own warehousing operation.\n\nIt is important to understand what the arrangement actually provides. An FTWZ does not automatically make the foreign supplier an Indian domestic trader, nor does it remove the need to identify the buyer and the party responsible for customs clearance. The legal structure must be worked out separately from the physical storage arrangement." }
+        ]
+      },
+      {
+        heading: "Who Will Be the Importer of Record in India?",
+        content: [
+          { text: "This is one of the first questions a German exporter should resolve, preferably before the shipment leaves Germany.\n\nAn FTWZ is not automatically the importer of record for every transaction. The parties involved in the import, the ownership of the goods and the customs documentation all matter.\n\nUnder the " },
+          { text: "Customs Act, 1962", href: "https://www.cbic.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: ", the definition of an importer includes the owner, beneficial owner or a person holding themselves out as the importer in relation to goods between importation and clearance for home consumption. That means the answer cannot be decided simply by asking who owns the warehouse or who arranged the international shipment. The actual transaction and customs documentation need to be examined.\n\nFor a German company supplying Indian customers, there are different commercial structures to consider." }
+        ]
+      },
+      {
+        heading: "An Indian Distributor Purchases and Imports the Goods",
+        content: `One possible arrangement is for the German exporter to sell the goods to an Indian distributor. The distributor becomes the buyer and takes responsibility for the applicable domestic import and clearance process, subject to the agreed transaction and customs structure.
+
+The goods may be held in an FTWZ before the distributor arranges clearance into the Domestic Tariff Area (DTA), where permitted. This arrangement may suit a German company that already has a distribution partner in India but does not want to establish its own subsidiary.
+
+The parties should make sure that the sales agreement, invoice, ownership transfer and customs documentation all reflect the intended arrangement. Simply naming an Indian distributor in a contract does not, by itself, settle every importer-of-record question.`
+      },
+      {
+        heading: "An Indian Customer Purchases Directly",
+        content: `A German manufacturer may also supply an Indian end customer directly.
+
+For example, a German engineering company may receive an order from an Indian factory for a specific set of components. Instead of shipping the goods only after the order is confirmed, the parties may examine whether the products can be held in an FTWZ before the customer is ready to take delivery. The Indian customer may be the buyer and the party responsible for domestic import clearance, depending on the contract and customs structure.
+
+This can be relevant when the exporter supplies industrial customers against project requirements rather than working through a distributor network. Again, the parties need to agree who will handle the customs documentation, applicable duties and taxes, payment and final transportation.`
+      },
+      {
+        heading: "The FTWZ Unit's Role in the Inbound Documentation",
+        content: [
+          { text: "The FTWZ unit may also have a role in the documentation for goods entering the zone. Arrangements in which FTWZ units hold goods on behalf of foreign suppliers and buyers can involve inbound " },
+          { text: "Bills of Entry", href: "https://www.icegate.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: " that identify the FTWZ unit along with the client.\n\nHowever, this should not be interpreted as meaning that the FTWZ operator automatically becomes the buyer or the importer responsible for every later domestic sale. The responsibilities depend on the applicable procedure and the actual transaction.\n\nThe safest approach is to establish the proposed arrangement with the FTWZ operator and an Indian customs professional before the goods are shipped." }
+        ]
+      },
+      {
+        heading: "Can the German Exporter Retain Ownership of Its Goods?",
+        content: `Some foreign companies do not want to transfer ownership of their inventory as soon as it enters India. They may prefer to retain ownership while the goods are stored and transfer it only when an Indian distributor or customer places an order. This can be an important commercial consideration for companies that want to maintain control over unsold stock.
+
+An FTWZ arrangement may be considered for holding goods on behalf of foreign suppliers or buyers, subject to the applicable conditions. But retaining ownership does not automatically resolve every legal, customs or tax question.
+
+Before proceeding, the German exporter and its Indian business partner should agree on a few points. Who owns the goods when they enter the FTWZ? At what stage does ownership transfer to an Indian buyer? Which party issues the commercial invoice? Who is responsible for the relevant customs declarations? Who arranges and pays for domestic clearance? Who bears the cost if goods remain unsold? Who is responsible for insurance, loss or damage during storage? Can the goods be re-exported if there is no demand in India?
+
+These questions may look like contract details, but they can have a direct effect on the parties' financial and legal responsibilities. For example, if the German company retains ownership of goods for several months, it needs to understand the implications of that arrangement. The parties should obtain appropriate advice on Indian tax, regulatory and foreign-exchange requirements rather than assuming that storage in an FTWZ removes those considerations.
+
+The commercial agreement should explain the arrangement clearly. It is much easier to resolve questions about ownership and responsibility before the shipment arrives than after the goods are already in storage.`
+      },
+      {
+        heading: "FTWZ, Bonded Storage and Duty-Free Storage: What Is the Difference?",
+        content: [
+          { text: "When researching warehousing options, German exporters may come across terms such as free trade warehouse in India, bonded storage in India, FTWZ in India and FTZ in India. They are often used in online searches, but they do not all refer to the same legal arrangement.\n\nAn FTWZ operates under India's SEZ framework. A " },
+          { text: "Customs bonded warehouse", kw: true, href: "/blogs/custom-bonded-warehouse-guide" },
+          { text: " operates under the relevant provisions of the Customs Act and associated regulations. The permissions, procedures, documentation and permitted activities are different.\n\nA bonded warehouse in India may be suitable for certain imports where goods need to be stored under the Customs warehousing framework before clearance for home consumption or another permitted movement. An FTWZ may be considered where the goods and proposed transaction are suitable for the SEZ warehousing framework. The choice should not be made simply because one option is described as offering duty-free storage.\n\nThe phrase \"duty-free storage in India\" can create the wrong impression if it suggests that imported goods become exempt from customs duty just because they are stored in a particular facility. For eligible goods held in an FTWZ, applicable customs duty and taxes are generally dealt with when the goods are cleared into the DTA, subject to the relevant procedures. This is duty deferment, not a blanket exemption or automatic reduction in the duty payable.\n\nRe-export may have a different customs treatment, depending on the goods, transaction and applicable rules. The exporter should not assume that every movement is automatically duty-free.\n\nFor a German business, the sensible comparison is between the legal framework, the intended use of the inventory, the expected storage period, the domestic buyer arrangement and the cost of the complete movement. The warehouse name alone should never decide the transaction." }
+        ]
+      },
+      {
+        heading: "What If the Goods Need Special Storage or Handling?",
+        content: `Not every German exporter ships standard industrial components. Some products have storage or safety requirements that need more attention before a warehouse is selected. A company dealing with sensitive materials, chemicals or specialised products should establish the exact requirements before planning the shipment.`
+      },
+      {
+        heading: "Temperature-Controlled Storage",
+        content: `An exporter searching for temperature-controlled storage in India should not assume that every FTWZ provides it. The required temperature range, monitoring arrangements, backup systems, handling procedures and product-specific conditions all need to be checked with the proposed facility.
+
+A product that must be stored within a particular temperature range may require more than a temperature-controlled room. The exporter may need documented monitoring, records, contingency arrangements and other quality controls. This is especially important for pharmaceuticals, food products and other goods where storage conditions can affect quality or regulatory compliance.
+
+The German supplier should share the manufacturer's storage instructions and any applicable product requirements before asking the operator to confirm acceptance.`
+      },
+      {
+        heading: "Dangerous Goods and Chemicals",
+        content: `The same care is needed when dealing with dangerous goods in India. A product's classification, UN number, hazard division, packing group, quantity and packaging can all affect whether it can be accepted at a particular facility.
+
+Some chemicals may also require additional environmental, safety, licensing or handling arrangements. Hazardous waste, in particular, should not be treated as ordinary commercial chemical cargo.
+
+A German exporter should provide the Safety Data Sheet (SDS), product classification, packaging details and expected quantities before arranging transportation. The proposed facility and relevant specialists must confirm acceptance and any required conditions in writing. It would be unsafe to assume that an FTWZ can accept every dangerous goods category simply because it is authorised for warehousing activities.
+
+These checks are not unique to German exporters. They are important for any overseas supplier sending regulated or specialised products into India.`
+      },
+      {
+        heading: "An Illustrative Example: A German Industrial Equipment Manufacturer",
+        content: `Consider a German manufacturer supplying components for industrial machinery. It has received enquiries from several Indian companies. Some want replacement parts, while others are planning maintenance work and need components at a later date.
+
+The manufacturer has not established an Indian subsidiary. It currently handles its export sales from Germany and wants to understand whether Indian demand will justify a larger local presence. Shipping each order individually is becoming inconvenient. The company therefore considers whether it can position a planned quantity of eligible components in an FTWZ in India.
+
+Before proceeding, it discusses the proposed arrangement with an FTWZ operator and its Indian customs adviser. They review the product details, ownership arrangement, intended buyers and customs documentation. The company also considers who will be responsible for domestic clearance when an Indian customer places an order.
+
+If the arrangement is permitted and commercially suitable, the goods may be received and held under the agreed procedures. When a buyer is ready, the required domestic clearance and delivery can be arranged. If some stock is not needed in India, the exporter can also examine whether re-export is permitted and commercially appropriate.
+
+This is an illustrative scenario, not an actual customer case or a guarantee that every product can follow the same process. The important point is that the German company can evaluate a warehousing arrangement without assuming that establishing an Indian subsidiary is the only possible first step. It still needs a properly structured transaction and an eligible importing arrangement for domestic clearance.`
+      },
+      {
+        heading: "What Should Be Checked Before Exporting From Germany to India?",
+        content: `A common mistake is to focus on international freight first and leave the Indian arrangements until later. For an exporter considering an export from Germany to India, the commercial and customs structure should be discussed before the goods are dispatched.
+
+Start with the product. What exactly is being shipped? Does it require a licence, registration, special labelling or any other approval? Are there storage or handling conditions that the warehouse must meet?
+
+Next, look at the buyer and ownership arrangement. Will an Indian distributor purchase the goods, or will they be supplied directly to an end customer? Does the German supplier intend to retain ownership while the goods are stored?
+
+The importer-of-record responsibility should then be reviewed. The parties must establish who will be responsible for the relevant customs documentation and who will arrange DTA clearance.
+
+It is also worth discussing what happens if the goods are not sold. The contract should address storage charges, insurance, unsold stock, re-export options and the party responsible for related costs.
+
+Finally, the proposed FTWZ operator should review the cargo and intended transaction before confirming acceptance. This is particularly important for oversized equipment, sensitive products, chemicals and dangerous goods. Getting these points clear at the beginning makes the entire arrangement easier to assess.`
+      },
+      {
+        heading: "How Astromar Logistics Can Support the Warehousing Discussion",
+        content: `For a German company exploring the Indian market, the first conversation with a logistics provider should be about the actual business requirement, not simply the size of the warehouse.
+
+Astromar Logistics Pvt. Ltd. works with businesses evaluating FTWZ-based warehousing and logistics arrangements in India, with 10 FTWZ locations across the country and operations since 2017. An initial discussion can cover the type of product, expected shipment volume, proposed storage period, ownership arrangement and likely Indian customer or distributor structure.
+
+The intended movement also matters. Will the goods be supplied to one buyer, distributed among several customers, or held while the exporter evaluates demand? Is re-export part of the plan?
+
+Storage requirements need to be discussed as well. Standard industrial cargo, temperature-sensitive products and dangerous goods can require very different assessments. The relevant product details and handling instructions should be shared before any acceptance or capability is confirmed.
+
+Astromar can discuss the warehousing and logistics requirements. Questions involving importer-of-record responsibility, ownership, tax treatment and regulatory obligations should be reviewed with qualified Indian legal, customs and tax advisers. The aim is to make sure that the physical storage arrangement fits the commercial and legal structure of the transaction.
+
+To discuss your cargo, write to sales@astromarfreezone.com or call +91 99402 11014.`
+      },
+      {
+        heading: "Is an FTWZ the Right First Step for a German Exporter?",
+        content: [
+          { text: "There is no single answer for every company.\n\nA German manufacturer with one large order from an established Indian buyer may find direct shipment and clearance perfectly suitable. Another company supplying several customers may have a genuine reason to explore holding inventory closer to the market.\n\nAn FTWZ may be worth considering when the goods are eligible, the proposed transaction is permitted and the arrangement offers a practical benefit.\n\nBut it should not be treated as a replacement for an Indian subsidiary, distributor or importer in every situation. It does not automatically authorise domestic trading, remove " },
+          { text: "import restrictions", href: "https://www.dgft.gov.in", target: "_blank", rel: "noopener noreferrer" },
+          { text: " or eliminate customs duty. The exporter needs to understand who owns the goods, who is responsible for the customs declarations, who will arrange domestic clearance and what tax or regulatory obligations may arise.\n\nFor some companies, an Indian distributor will be the most practical route. For others, a direct sale to an Indian customer may be suitable. The right structure depends on the product, the buyer and the way the business intends to operate.\n\nFor German exporters looking at India, the best starting point is not necessarily setting up a local company or sending a large shipment immediately. It is understanding the market, identifying the right Indian business partner and checking whether an FTWZ arrangement can support the proposed supply model.\n\nAn FTWZ can help bring inventory closer to Indian customers. The commercial and legal structure still needs to be right before the first shipment leaves Germany.\n\nThis article is intended for general business information and is not legal, customs or tax advice. Importer-of-record responsibilities, ownership of goods, tax exposure, registrations and the proposed FTWZ transaction should be reviewed by qualified Indian legal, customs and tax professionals before shipment." }
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: "Can a German company supply Indian customers through an FTWZ without an Indian subsidiary?",
+        answer: "Eligible goods can be received and held in an FTWZ under the applicable procedures, which may let an exporter position stock closer to Indian buyers. An FTWZ does not by itself give a foreign company the right to make domestic sales or remove the need for an eligible importer, so the structure should be reviewed with Indian legal, customs and tax advisers."
+      },
+      {
+        question: "Who is the importer of record when goods are held in an FTWZ?",
+        answer: "It depends on the actual transaction, the ownership of the goods and the customs documentation. The FTWZ operator is not automatically the importer or buyer. The parties should settle importer-of-record responsibility, ownership transfer and who arranges domestic clearance before the shipment leaves Germany."
+      },
+      {
+        question: "Is storage in an FTWZ duty-free?",
+        answer: "No. For eligible goods, applicable customs duty and taxes are generally dealt with when the goods are cleared into the Domestic Tariff Area, subject to the relevant procedures. This is duty deferment, not an exemption, and re-export may be treated differently depending on the goods and the rules."
+      },
+      {
+        question: "Can every FTWZ accept temperature-sensitive or dangerous goods?",
+        answer: "No. Temperature ranges, monitoring, hazard classes and handling conditions must be confirmed in writing with the specific facility. Exporters should share storage instructions, classification, the Safety Data Sheet, packaging details and expected quantities before shipping."
+      }
+    ]
+  },
 ];
 
 export const categoryColors: Record<string, string> = {
