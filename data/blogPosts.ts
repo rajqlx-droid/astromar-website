@@ -180,7 +180,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How does FTWZ help save on customs duty and GST?",
-        answer: "Customs duty and applicable taxes are generally payable when goods are cleared into the Domestic Tariff Area (DTA), not while goods are held in the FTWZ; duty becomes payable on DTA clearance, subject to applicable regulations. Customs duty and IGST are payable only when goods are cleared into the Domestic Tariff Area (DTA). If eligible goods are re-exported under the applicable procedures, domestic import duty and GST on clearance into India do not arise, subject to applicable rules and approvals. Deferment changes the timing of payment, not necessarily the total amount payable.",
+        answer: "Customs duty and applicable taxes, including IGST, are generally payable when goods are cleared into the Domestic Tariff Area (DTA), not while goods are held in the FTWZ, subject to applicable regulations. If eligible goods are re-exported under the applicable procedures, domestic import duty and GST on clearance into India do not arise, subject to applicable rules and approvals. Deferment changes the timing of payment, not necessarily the total amount payable.",
       },
       {
         question: "Who should use FTWZ warehousing in India?",
@@ -191,7 +191,7 @@ export const blogPosts: BlogPost[] = [
         answer: "While both allow duty deferment, FTWZs offer storage for up to 3 years, extendable to 5 years subject to applicable approvals, permit international trading within the zone, allow value-addition activities, and provide comprehensive duty and tax deferment benefits. Bonded warehouses have storage time limits and more limited capabilities.",
       },
       {
-        question: "How long does it take to start FTWZ operations?",
+        question: "What does the FTWZ setup process involve?",
         answer: "The process includes customs documentation, bond creation, warehouse allocation, and inventory management system integration.",
       },
     ],
@@ -551,7 +551,7 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       { question: "Can goods stored in an FTWZ be re-exported without paying Indian customs duty?", answer: "Yes, subject to applicable regulations. Goods held in an FTWZ remain under customs supervision, and if they are re-exported rather than cleared into India's domestic market, Indian customs duty generally does not apply to that portion of the shipment." },
-      { question: "How long can goods remain in an FTWZ before they need to be cleared or re-exported?", answer: "Storage is time-bound rather than indefinite. Subject to applicable regulations, goods can typically remain in the zone for up to three years, extendable to five years with special permission, giving businesses room to plan clearance or re-export around actual demand." },
+      { question: "How long can goods remain in an FTWZ before they need to be cleared or re-exported?", answer: "Storage is time-bound rather than indefinite. Subject to applicable regulations, goods can typically remain in the zone for up to three years, extendable to five years subject to applicable approvals, giving businesses room to plan clearance or re-export around actual demand." },
       { question: "What kind of value-added work can be done on goods before they're re-exported from an FTWZ?", answer: "Subject to applicable regulations, approved activities such as relabelling, repackaging, sorting, kitting, quality inspection, consolidation, and CKD/SKD assembly of pre-made components can generally be carried out within the FTWZ before goods move to their next destination." }
     ]
   },
