@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import SignOutButton from "./SignOutButton";
 
@@ -17,8 +18,8 @@ export default function AdminMenu({ active, showSignOut, email }: { active: Admi
   return (
     <header className="relative z-20 bg-[#1B3A6B] text-white shadow-[0_2px_0_rgba(255,255,255,0.12)]">
       <div className="flex flex-wrap items-center justify-between gap-x-4 px-4 py-2 md:h-[54px] md:flex-nowrap md:px-6 md:py-0">
-        <Link href="/admin" className="text-lg font-bold tracking-tight">
-          Astromar<span className="text-[#F98F1D]">.</span> Admin
+        <Link href="/admin" className="flex shrink-0 items-center rounded-[10px] bg-white px-3 py-[5px]">
+          <Image src="/logo.png" alt="Astromar Free Zone" width={113} height={34} className="h-[34px] w-auto" priority />
         </Link>
         <nav aria-label="Admin" className="order-3 -mx-1 w-full overflow-x-auto pt-2 md:order-none md:mx-0 md:w-auto md:pt-0">
           <ul className="flex items-center gap-1 whitespace-nowrap">
