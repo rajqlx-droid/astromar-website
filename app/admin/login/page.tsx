@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 
 export default async function AdminLoginPage({ searchParams }: { searchParams: Promise<{ error?: string }> }) {
   if (!isAdminEnabled()) notFound();
-  if (isDevBypass()) redirect("/admin/seo");
+  if (isDevBypass()) redirect("/admin");
   const { error } = await searchParams;
   return (
     <div className="min-h-screen bg-[#F3F5F9]">

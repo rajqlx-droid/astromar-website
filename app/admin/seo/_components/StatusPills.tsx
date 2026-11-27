@@ -31,7 +31,7 @@ function Tip({ label, text, children }: { label: string; text: string; children:
 }
 
 /** Small header pills. Informational only: never red. */
-export default function StatusPills({ devBypass, notSaved }: { devBypass: boolean; notSaved: boolean }) {
+export default function StatusPills({ devBypass, notSaved, onLight = false }: { devBypass: boolean; notSaved: boolean; onLight?: boolean }) {
   return (
     <div className="flex flex-wrap items-center gap-1">
       {devBypass && (
@@ -45,7 +45,7 @@ export default function StatusPills({ devBypass, notSaved }: { devBypass: boolea
         </Tip>
       )}
       <Tip label="About this page" text={HELP_TIP}>
-        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-[color:var(--seo-navyOutline)] text-[color:var(--seo-navyTextBright)]">
+        <span className={`flex h-8 w-8 items-center justify-center rounded-full border ${onLight ? "border-[color:var(--seo-navy)] text-[color:var(--seo-navy)]" : "border-[color:var(--seo-navyOutline)] text-[color:var(--seo-navyTextBright)]"}`}>
           <IconHelp className="h-4 w-4" />
         </span>
       </Tip>

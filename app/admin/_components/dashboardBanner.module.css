@@ -1,0 +1,90 @@
+/* Animation for the dashboard banner graph. Scoped to this module, so it never reaches the public site. */
+
+.gridV {
+  animation: driftX 14s linear infinite;
+}
+.gridH {
+  animation: driftY 18s linear infinite;
+}
+
+.bar {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: barBreath 9s ease-in-out infinite;
+}
+
+.line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: lineDraw 8s ease-in-out infinite;
+}
+
+.area {
+  opacity: 0;
+  animation: areaShow 8s ease-in-out infinite;
+}
+
+.endGroup {
+  opacity: 0;
+  animation: dotShow 8s ease-in-out infinite;
+}
+
+.ring {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: ringPulse 1.6s ease-out infinite;
+}
+
+@keyframes driftX {
+  from { transform: translateX(0); }
+  to { transform: translateX(-40px); }
+}
+@keyframes driftY {
+  from { transform: translateY(0); }
+  to { transform: translateY(40px); }
+}
+@keyframes barBreath {
+  0%, 100% { transform: scaleY(0.78); }
+  50% { transform: scaleY(1.12); }
+}
+/* Draws over 6s (75% of 8s), holds, then fades and repeats. */
+@keyframes lineDraw {
+  0% { stroke-dashoffset: 1; opacity: 1; }
+  75% { stroke-dashoffset: 0; opacity: 1; }
+  90% { stroke-dashoffset: 0; opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes areaShow {
+  0% { opacity: 0; }
+  75% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes dotShow {
+  0%, 72% { opacity: 0; }
+  78% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes ringPulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(3.2); opacity: 0; }
+}
+
+/* No motion: grid and bars hold still, the line is fully drawn, the dot is shown. */
+@media (prefers-reduced-motion: reduce) {
+  .gridV,
+  .gridH,
+  .bar,
+  .line,
+  .area,
+  .endGroup,
+  .ring {
+    animation: none;
+  }
+  .bar { transform: scaleY(0.95); }
+  .line { stroke-dashoffset: 0; opacity: 1; }
+  .area { opacity: 1; }
+  .endGroup { opacity: 1; }
+  .ring { transform: scale(2.2); opacity: 0.25; }
+}

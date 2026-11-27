@@ -19,19 +19,13 @@ interface Props {
   onRestore: (path: string, code: string) => void;
   /** Wording matches of the scan (hidden pages already removed). */
   wording: WordingMatch[];
-  /** Content of the Status and redirects tab, rendered inside this card. */
-  renderRedirects: () => React.ReactNode;
+  /** Which section this page shows: the page list or the image list. */
+  mode: Mode;
   /** Ask this card to open the details of a page (used by the sitewide wording list). */
   openRequest: { path: string; seq: number } | null;
 }
 
-type Mode = "pages" | "images" | "redirects";
-
-const SUB_TABS: { key: Mode; label: string }[] = [
-  { key: "pages", label: "Page SEO" },
-  { key: "images", label: "Image SEO" },
-  { key: "redirects", label: "Status and redirects" },
-];
+type Mode = "pages" | "images";
 
 const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[color:var(--seo-orange)]";
 
@@ -122,8 +116,7 @@ function PageCard({ row, tag, onSelect }: { row: TreeRow; tag: React.ReactNode; 
   );
 }
 
-export default function SeoTab({ pages, images, wording, markNote, onIgnore, onRestore, renderRedirects, openRequest }: Props) {
-  const [mode, setMode] = useState<Mode>("pages");
+export default function SeoTab({ pages, images, wording, markNote, onIgnore, onRestore, mode, openRequest }: Props) {
   const [query, setQuery] = useState("");
   const [problemsOnly, setProblemsOnly] = useState(false);
   const [level, setLevel] = useState<string | null>(null);
@@ -231,8 +224,7 @@ export default function SeoTab({ pages, images, wording, markNote, onIgnore, onR
 
   // The sitewide wording list asks for a page's details: show Page SEO with that popup open.
   useEffect(() => {
-    if (!openRequest || !pages.some((pg) => pg.path === openRequest.path)) return;
-    setMode("pages");
+    if (mode !== "pages" || !openRequest || !pages.some((pg) => pg.path === openRequest.path)) return;
     setLevel(null);
     setImagePath(null);
     setTrigger(null);
@@ -246,70 +238,13 @@ export default function SeoTab({ pages, images, wording, markNote, onIgnore, onR
     else setOpenPath(row.page.path);
   };
 
-  const switchMode = (next: Mode) => {
-    if (next === mode) return;
-    setMode(next);
-    setLevel(null);
-    setOpenPath(null);
-    setImagePath(null);
-  };
-
-  const onSubTabKey = (e: React.KeyboardEvent<HTMLButtonElement>) => {
-    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
-    e.preventDefault();
-    const next = SUB_TABS[(SUB_TABS.findIndex((t) => t.key === mode) + (e.key === "ArrowRight" ? 1 : SUB_TABS.length - 1)) % SUB_TABS.length];
-    switchMode(next.key);
-    requestAnimationFrame(() => document.getElementById(`seo-sub-${next.key}`)?.focus());
-  };
-
   const topRows = menu.filter((m) => (m.type === "page" ? keep(m.row) : m.rows.some(keep)));
   const groupRows = group ? group.rows.filter(keep) : [];
-
-  const header = (
-    <>
-      <div role="tablist" aria-label="Audit sections" className="flex shrink-0 flex-wrap gap-x-1 border-b border-[color:var(--seo-border)] bg-[var(--seo-tabBarBg)] px-2 pt-1">
-        {SUB_TABS.map((t) => {
-          const on = mode === t.key;
-          return (
-            <button
-              key={t.key}
-              id={`seo-sub-${t.key}`}
-              type="button"
-              role="tab"
-              aria-selected={on}
-              aria-controls="seo-sub-panel"
-              tabIndex={on ? 0 : -1}
-              onClick={() => switchMode(t.key)}
-              onKeyDown={onSubTabKey}
-              className={`-mb-px min-h-11 rounded-t-lg border-b-[3px] px-4 text-sm transition-colors ${FOCUS} ${
-                on ? "border-[color:var(--seo-orange)] bg-[var(--seo-cardBg)] font-bold text-[color:var(--seo-navy)]" : "border-transparent bg-transparent font-medium text-[color:var(--seo-tabText)] hover:text-[color:var(--seo-navy)]"
-              }`}
-            >
-              {t.label}
-            </button>
-          );
-        })}
-      </div>
-    </>
-  );
-
-  // Status and redirects fills the card below the tabs.
-  if (mode === "redirects") {
-    return (
-      <div className="flex h-full min-h-0 flex-col">
-        {header}
-        <div id="seo-sub-panel" role="tabpanel" aria-labelledby={`seo-sub-${mode}`} className="flex min-h-0 flex-1 flex-col">
-          {renderRedirects()}
-        </div>
-      </div>
-    );
-  }
 
   if (pages.length === 0) {
     return (
       <div className="flex h-full min-h-0 flex-col">
-        {header}
-        <div id="seo-sub-panel" role="tabpanel" aria-labelledby={`seo-sub-${mode}`} className="p-3">
+        <div className="p-3">
           <EmptyRow>No pages in this scan.</EmptyRow>
         </div>
       </div>
@@ -323,8 +258,7 @@ export default function SeoTab({ pages, images, wording, markNote, onIgnore, onR
     const backLabel = searching ? "Search results" : group ? group.name : "All pages";
     return (
       <div className="flex h-full min-h-0 flex-col">
-        {header}
-        <div id="seo-sub-panel" role="tabpanel" aria-labelledby="seo-sub-images" className="flex min-h-0 flex-1 flex-col">
+        <div className="flex min-h-0 flex-1 flex-col">
           <div className="flex shrink-0 flex-wrap items-center gap-x-3 gap-y-1 border-b border-[color:var(--seo-divider)] px-3 py-1">
             <button
               ref={imageBackRef}
@@ -355,8 +289,7 @@ export default function SeoTab({ pages, images, wording, markNote, onIgnore, onR
 
   return (
     <div className="flex h-full min-h-0 flex-col">
-      {header}
-      <div id="seo-sub-panel" role="tabpanel" aria-labelledby={`seo-sub-${mode}`} className="flex min-h-0 flex-1 flex-col">
+      <div className="flex min-h-0 flex-1 flex-col">
         {/* Search */}
         <div className="shrink-0 border-b border-[color:var(--seo-divider)] p-3">
           <label htmlFor="page-search" className="mb-1 block text-[13px] font-semibold text-[color:var(--seo-ink)]">

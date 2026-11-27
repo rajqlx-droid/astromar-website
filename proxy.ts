@@ -28,7 +28,7 @@ export async function proxy(request: NextRequest) {
   if (isDevBypass()) {
     if (pathname === LOGIN_PATH) {
       const url = request.nextUrl.clone();
-      url.pathname = "/admin/seo";
+      url.pathname = "/admin";
       url.search = "";
       return noStore(NextResponse.redirect(url));
     }
@@ -36,7 +36,9 @@ export async function proxy(request: NextRequest) {
   }
 
   const isLogin = pathname === LOGIN_PATH;
-  const isApi = pathname.startsWith("/admin/seo/scan") || pathname.startsWith("/admin/seo/marks");
+  // Non-page routes answer with JSON 401/403 instead of a redirect to the login page.
+  const isApi =
+    pathname.startsWith("/admin/seo/scan") || pathname.startsWith("/admin/seo/marks") || pathname.startsWith("/admin/rankings/");
 
   const session = await readSession(request);
   const allowedEmail = process.env.ADMIN_EMAIL?.trim().toLowerCase();
@@ -67,7 +69,7 @@ export async function proxy(request: NextRequest) {
 
   if (isLogin) {
     const url = request.nextUrl.clone();
-    url.pathname = "/admin/seo";
+    url.pathname = "/admin";
     url.search = "";
     return noStore(session.withCookies(NextResponse.redirect(url)));
   }

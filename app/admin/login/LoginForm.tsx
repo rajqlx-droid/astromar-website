@@ -45,7 +45,7 @@ export default function LoginForm({ initialError }: { initialError: string | nul
         setShowPassword(false);
         return;
       }
-      router.replace("/admin/seo");
+      router.replace("/admin");
       router.refresh();
     } catch {
       setError(IS_DEV ? signInMessage("network") : GENERIC_ERROR);

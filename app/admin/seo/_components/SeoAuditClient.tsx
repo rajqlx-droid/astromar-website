@@ -2,9 +2,8 @@
 
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 import type { AuditIssue, BaseKey, ExpectedMark, IgnoredFlag, ScanEvent, ScanListItem, ScanResult } from "@/lib/seo-audit/types";
-import { IconFilter, IconLock, IconPlay, IconSearch, IconSpinner } from "./icons";
+import { IconFilter, IconPlay, IconSearch, IconSpinner } from "./icons";
 import SeoTab, { type ViewPage } from "./SeoTab";
 import RedirectsTab from "./RedirectsTab";
 import SitePanels from "./SitePanels";
@@ -35,6 +34,10 @@ const PHASES = [
 const INLINE_NEEDS_SUPABASE = "Needs Supabase to save this. Results are not saved on this machine.";
 const EXPECTED_REASON = "Excluded from the sitemap on purpose";
 
+export type Section = "pages" | "technical" | "images";
+
+const TITLES: Record<Section, string> = { pages: "Page SEO", technical: "Technical SEO", images: "Image SEO" };
+
 interface Progress {
   phase: string;
   done: number;
@@ -49,7 +52,10 @@ interface Props {
   ignored: IgnoredFlag[];
   scanEnabled: boolean;
   loadError: string | null;
-  adminEmail: string;
+  /** Which of the three SEO pages this is. */
+  section: Section;
+  /** Path of this page, used when a scan is saved or another saved scan is picked. */
+  basePath: string;
   devBypass: boolean;
   supabaseReady: boolean;
 }
@@ -62,7 +68,7 @@ function hostOf(url: string): string {
   }
 }
 
-export default function SeoAuditClient({ scans, result: savedResult, expected: expectedProp, ignored: ignoredProp, scanEnabled, loadError, adminEmail, devBypass, supabaseReady }: Props) {
+export default function SeoAuditClient({ scans, result: savedResult, expected: expectedProp, ignored: ignoredProp, scanEnabled, loadError, section, basePath, devBypass, supabaseReady }: Props) {
   const router = useRouter();
   const [base, setBase] = useState<BaseKey>("local");
   const [unsaved, setUnsaved] = useState<ScanResult | null>(null);
@@ -186,7 +192,7 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
             gotResult = true;
             if (event.saved && event.data.id) {
               setUnsaved(null);
-              router.push(`/admin/seo?scan=${event.data.id}`);
+              router.push(`${basePath}?scan=${event.data.id}`);
               router.refresh();
             } else {
               setUnsaved(event.data);
@@ -207,16 +213,7 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
       setRunning(false);
       setProgress(null);
     }
-  }, [base, router]);
-
-  const signOut = useCallback(async () => {
-    try {
-      await createSupabaseBrowserClient().auth.signOut();
-    } finally {
-      router.replace("/admin/login");
-      router.refresh();
-    }
-  }, [router]);
+  }, [base, basePath, router]);
 
   const q = query.trim().toLowerCase();
 
@@ -271,36 +268,14 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
   const panelClass = "flex min-h-0 flex-col overflow-hidden rounded-xl border border-[color:var(--seo-border)] bg-[var(--seo-cardBg)]";
 
   return (
-    <div style={seoThemeVars} className="relative flex min-h-screen flex-col bg-[var(--seo-pageBg)] text-[color:var(--seo-ink)] min-[900px]:h-screen min-[900px]:min-h-[760px] min-[900px]:overflow-hidden">
-      {/* Top bar */}
-      <header className="relative z-20 shrink-0 bg-[var(--seo-navy)] text-[color:var(--seo-onNavy)]">
-        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 px-4 py-2 min-[900px]:px-5">
-          <div className="flex min-w-0 flex-wrap items-baseline gap-x-3">
-            <h1 className="text-xl font-bold">SEO Audit</h1>
-            <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.08em] text-[color:var(--seo-navyText)]">
-              <IconLock />
-              Astromar Logistics - Private admin
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-2">
-            <StatusPills devBypass={devBypass} notSaved={!supabaseReady || notConnected} />
-            {!devBypass && (
-              <button
-                type="button"
-                onClick={signOut}
-                title={adminEmail}
-                className="min-h-11 rounded-lg border border-[color:var(--seo-navyOutline)] px-4 text-sm font-semibold text-[color:var(--seo-navyTextBright)] transition-colors hover:bg-[var(--seo-whiteTint10)]"
-              >
-                Sign out
-              </button>
-            )}
-          </div>
-        </div>
-      </header>
-
+    <div style={seoThemeVars} className="relative flex flex-1 flex-col text-[color:var(--seo-ink)] min-[900px]:h-[calc(100vh-54px)] min-[900px]:min-h-[706px] min-[900px]:flex-none min-[900px]:overflow-hidden">
       <div className="flex min-h-0 flex-1 flex-col gap-4 p-4 min-[900px]:flex-row min-[900px]:p-5">
-        {/* Left: one card; its tabs live inside it */}
-        <div className="flex min-w-0 flex-col min-[900px]:min-h-0 min-[900px]:flex-1">
+        {/* Left: page title and one card */}
+        <div className="flex min-w-0 flex-col gap-3 min-[900px]:min-h-0 min-[900px]:flex-1">
+          <div className="flex shrink-0 flex-wrap items-center justify-between gap-2">
+            <h1 className="text-2xl font-bold text-[color:var(--seo-navy)]">{TITLES[section]}</h1>
+            <StatusPills devBypass={devBypass} notSaved={!supabaseReady || notConnected} onLight />
+          </div>
           <div className={`h-[80vh] min-[900px]:h-auto min-[900px]:flex-1 ${panelClass}`}>
             {!result || !view ? (
               <div className="flex flex-1 flex-col items-center justify-center overflow-y-auto px-6 py-10 text-center">
@@ -311,18 +286,8 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                     : noScanNotice}
                 </p>
               </div>
-            ) : (
-              <SeoTab
-                key={result.id ?? result.finishedAt}
-                pages={view.allPages}
-                images={view.allImages}
-                markNote={markNote}
-                onIgnore={(path, code) => setIgnoredFlag(path, code, true)}
-                onRestore={(path, code) => setIgnoredFlag(path, code, false)}
-                wording={view.wordingList}
-                openRequest={openRequest}
-                renderRedirects={() => (
-                  <>
+            ) : section === "technical" ? (
+              <>
                     <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-[color:var(--seo-dividerSoft)] p-3">
                                               <button
                           type="button"
@@ -355,8 +320,18 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                     <div className="min-h-0 flex-1 overflow-auto">
                       <RedirectsTab checks={view.redirects} baseUrl={result.baseUrl} expected={expected} />
                     </div>
-                  </>
-                )}
+              </>
+            ) : (
+              <SeoTab
+                key={result.id ?? result.finishedAt}
+                mode={section === "images" ? "images" : "pages"}
+                pages={view.allPages}
+                images={view.allImages}
+                markNote={markNote}
+                onIgnore={(path, code) => setIgnoredFlag(path, code, true)}
+                onRestore={(path, code) => setIgnoredFlag(path, code, false)}
+                wording={view.wordingList}
+                openRequest={openRequest}
               />
             )}
           </div>
@@ -461,7 +436,7 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
                   value={unsaved ? "" : (result.id ?? "")}
                   onChange={(e) => {
                     setUnsaved(null);
-                    router.push(`/admin/seo?scan=${e.target.value}`);
+                    router.push(`${basePath}?scan=${e.target.value}`);
                   }}
                   className="min-h-11 w-full rounded-lg border border-[color:var(--seo-onNavy)] bg-[var(--seo-cardBg)] px-2 text-[13px] text-[color:var(--seo-ink)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--seo-orange)]"
                 >
@@ -546,6 +521,11 @@ export default function SeoAuditClient({ scans, result: savedResult, expected: e
           onClose={() => setWordingOpen(false)}
           onOpenPage={(path) => {
             setWordingOpen(false);
+            if (section !== "pages") {
+              // Page details only exist on Page SEO: go there on the same scan.
+              router.push(result?.id ? `/admin/page-seo?scan=${result.id}` : "/admin/page-seo");
+              return;
+            }
             setOpenRequest((prev) => ({ path, seq: (prev?.seq ?? 0) + 1 }));
           }}
         />
