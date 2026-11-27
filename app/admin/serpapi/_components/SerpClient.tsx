@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useState } from "react";
+import KeywordCombobox from "@/app/admin/rankings/_components/KeywordCombobox";
 import { api, fieldClass, when } from "@/app/admin/rankings/_components/shared";
 import {
   DEPTHS,
@@ -91,10 +92,7 @@ export default function SerpClient({
         }}
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-[2fr_1.2fr_1fr_auto] md:items-end">
-          <label className="block text-sm font-medium text-slate-700">
-            Keyword
-            <input className={`${fieldClass} mt-1`} value={keyword} onChange={(e) => setKeyword(e.target.value)} maxLength={200} placeholder="for example: ftwz in india" disabled={running} />
-          </label>
+          <KeywordCombobox label="Keyword" value={keyword} onChange={setKeyword} savedKeywords={saved.map((s) => s.keyword)} disabled={running} maxLength={200} placeholder="for example: ftwz in india" />
           <label className="block text-sm font-medium text-slate-700">
             Location
             <select className={`${fieldClass} mt-1`} value={location} onChange={(e) => setLocation(e.target.value as Location)} disabled={running}>

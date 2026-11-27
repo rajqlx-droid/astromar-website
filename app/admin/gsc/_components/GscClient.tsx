@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useCallback, useState } from "react";
+import KeywordCombobox from "@/app/admin/rankings/_components/KeywordCombobox";
 import GscChart from "@/app/admin/rankings/_components/GscChart";
-import { Tile, api, fieldClass, when } from "@/app/admin/rankings/_components/shared";
+import { Tile, api, when } from "@/app/admin/rankings/_components/shared";
 import type { GscResult, RecentCheck, SavedKeyword } from "@/lib/rankings/types";
 
 type Busy = null | "gsc" | "save";
@@ -85,10 +86,7 @@ export default function GscClient({
         }}
       >
         <div className="grid grid-cols-1 gap-4 md:grid-cols-[1fr_auto] md:items-end">
-          <label className="block text-sm font-medium text-slate-700">
-            Keyword
-            <input className={`${fieldClass} mt-1`} value={keyword} onChange={(e) => setKeyword(e.target.value)} maxLength={200} placeholder="for example: ftwz in india" disabled={running} />
-          </label>
+          <KeywordCombobox label="Keyword" value={keyword} onChange={setKeyword} savedKeywords={saved.map((s) => s.keyword)} disabled={running} maxLength={200} placeholder="for example: ftwz in india" />
           <button
             type="submit"
             disabled={running || keyword.trim().length < 2}
