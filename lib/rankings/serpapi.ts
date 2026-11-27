@@ -1,6 +1,6 @@
 import "server-only";
 import { RankError } from "./errors";
-import { SITE_DOMAIN, type Depth, type SerpResult, type SerpRow } from "./types";
+import { SITE_DOMAIN, cleanText, ownKeyOf, type Depth, type LocalResult, type SerpResult, type SerpRow } from "./types";
 
 // SerpApi (Google results). SERPAPI_KEY is read on the server only. It is placed in request
 // URLs but never logged, and error messages built here never include the URL.
@@ -63,10 +63,61 @@ interface OrganicResult {
   position?: unknown;
   title?: unknown;
   link?: unknown;
+  snippet?: unknown;
 }
 
-/** One SerpApi request (one search). Returns the organic rows of that page. */
-async function fetchPage(keyword: string, location: string, page: number): Promise<SerpRow[]> {
+const SNIPPET_MAX = 300;
+const LOCAL_MAX = 3;
+
+/**
+ * The one place that turns a SerpApi response into rows and local results.
+ * Pure: no network. Both the manual check and the weekly job reach it through runCompetitorCheck.
+ * All text is untrusted and is kept as plain text.
+ */
+export function parseSerpPage(json: unknown, page: number): { rows: SerpRow[]; local: LocalResult[] } {
+  const j = (json && typeof json === "object" ? json : {}) as { organic_results?: unknown; local_results?: unknown };
+  const rows: SerpRow[] = [];
+  const organic = Array.isArray(j.organic_results) ? (j.organic_results as OrganicResult[]) : [];
+  for (const r of organic) {
+    if (!r || typeof r.position !== "number" || typeof r.link !== "string") continue;
+    const domain = domainOf(r.link);
+    const row: SerpRow = {
+      position: r.position,
+      page,
+      title: typeof r.title === "string" ? r.title : r.link,
+      link: r.link,
+      domain,
+      isOurs: isOurDomain(domain),
+    };
+    const snippet = cleanText(r.snippet, SNIPPET_MAX);
+    if (snippet) row.snippet = snippet;
+    const own = ownKeyOf(r.link);
+    if (own) row.own = own;
+    rows.push(row);
+  }
+
+  const local: LocalResult[] = [];
+  if (page === 0) {
+    const lr = j.local_results;
+    const places = Array.isArray(lr) ? lr : lr && typeof lr === "object" && Array.isArray((lr as { places?: unknown }).places) ? (lr as { places: unknown[] }).places : [];
+    for (const p of places) {
+      if (local.length >= LOCAL_MAX) break;
+      if (!p || typeof p !== "object") continue;
+      const o = p as { title?: unknown; name?: unknown; rating?: unknown; address?: unknown };
+      const name = cleanText(o.title ?? o.name, 120);
+      if (!name) continue;
+      const item: LocalResult = { name };
+      if (typeof o.rating === "number" && Number.isFinite(o.rating) && o.rating >= 0 && o.rating <= 5) item.rating = o.rating;
+      const address = cleanText(o.address, 160);
+      if (address) item.address = address;
+      local.push(item);
+    }
+  }
+  return { rows, local };
+}
+
+/** One SerpApi request (one search). Returns the organic rows and local results of that page. */
+async function fetchPage(keyword: string, location: string, page: number): Promise<{ rows: SerpRow[]; local: LocalResult[] }> {
   const params = new URLSearchParams({
     engine: "google",
     q: keyword,
@@ -89,16 +140,10 @@ async function fetchPage(keyword: string, location: string, page: number): Promi
     throw new RankError(502, `SerpApi returned an error (HTTP ${res.status})${detail}`);
   }
   if (typeof json.error === "string" && !json.organic_results) {
-    if (/hasn't returned any results/i.test(json.error)) return [];
+    if (/hasn't returned any results/i.test(json.error)) return { rows: [], local: [] };
     throw new RankError(502, `SerpApi returned an error: ${json.error.slice(0, 120)}`);
   }
-  const rows: SerpRow[] = [];
-  for (const r of json.organic_results ?? []) {
-    if (typeof r.position !== "number" || typeof r.link !== "string") continue;
-    const domain = domainOf(r.link);
-    rows.push({ position: r.position, page, title: typeof r.title === "string" ? r.title : r.link, link: r.link, domain, isOurs: isOurDomain(domain) });
-  }
-  return rows;
+  return parseSerpPage(json, page);
 }
 
 export type CompetitorOutcome =
@@ -140,11 +185,13 @@ export async function runCompetitorCheck(args: { keyword: string; location: stri
 
     const seen = new Set<string>();
     const rows: SerpRow[] = [];
+    let localResults: LocalResult[] = [];
     let used = 0;
     try {
       for (let page = 0; page < depth; page++) {
-        const pageRows = await fetchPage(keyword, location, page);
+        const { rows: pageRows, local } = await fetchPage(keyword, location, page);
         used++;
+        if (page === 0) localResults = local;
         for (const row of pageRows) {
           if (seen.has(row.link)) continue;
           seen.add(row.link);
@@ -168,7 +215,7 @@ export async function runCompetitorCheck(args: { keyword: string; location: stri
     const firstMatch = rows.find((r) => r.isOurs)?.position ?? null;
     return {
       ok: true,
-      result: { keyword, location, depth, rows, firstMatchPosition: firstMatch, searchesUsed: used },
+      result: { keyword, location, depth, rows, firstMatchPosition: firstMatch, searchesUsed: used, ...(localResults.length ? { localResults } : {}) },
       remainingAfter: Math.max(0, account.remaining - used),
     };
   } finally {

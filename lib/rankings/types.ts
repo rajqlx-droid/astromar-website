@@ -66,13 +66,58 @@ export interface GscResult {
   daily: GscDay[];
 }
 
+/**
+ * Results that belong to Astromar. Edit this list to change what is highlighted as "YOURS".
+ * A result matches when its host equals (or is a subdomain of) one of `hosts`, and, if `pathPrefix`
+ * is set, its path starts with it (case-insensitive).
+ */
+export const OWN_RESULTS = [
+  { key: "website", label: "Your website", hosts: [SITE_DOMAIN] },
+  { key: "facebook", label: "Your Facebook page", hosts: ["facebook.com", "www.facebook.com", "m.facebook.com"], pathPrefix: "/astromarftwz" },
+] as const;
+export type OwnKey = (typeof OWN_RESULTS)[number]["key"];
+
+/** Which own result (if any) a URL is. Pure, safe on client and server. */
+export function ownKeyOf(link: string): OwnKey | null {
+  let u: URL;
+  try {
+    u = new URL(link);
+  } catch {
+    return null;
+  }
+  const host = u.hostname.toLowerCase();
+  const path = u.pathname.toLowerCase();
+  for (const o of OWN_RESULTS) {
+    const hostOk = (o.hosts as readonly string[]).some((h) => host === h || host.endsWith("." + h));
+    const prefix = "pathPrefix" in o ? o.pathPrefix : undefined;
+    if (hostOk && (!prefix || path.startsWith(prefix))) return o.key;
+  }
+  return null;
+}
+
+/** Plain-text clean-up for text that came from SerpApi (untrusted): strip control characters, collapse spaces, cap length. */
+export function cleanText(v: unknown, max: number): string | undefined {
+  if (typeof v !== "string") return undefined;
+  const t = v.replace(/[\u0000-\u001F\u007F-\u009F]+/g, " ").replace(/\s+/g, " ").trim();
+  if (!t) return undefined;
+  return t.length > max ? t.slice(0, max - 1).trimEnd() + "…" : t;
+}
+
 export interface SerpRow {
   position: number;
   page: number; // 0-based SerpApi page (start = page * 10)
   title: string;
   link: string;
   domain: string;
-  isOurs: boolean;
+  isOurs: boolean; // website only; drives firstMatchPosition (unchanged)
+  snippet?: string; // Google's snippet, plain text, max about 300 characters (absent on older checks)
+  own?: OwnKey; // website or Facebook page (absent on older checks)
+}
+
+export interface LocalResult {
+  name: string;
+  rating?: number;
+  address?: string;
 }
 
 export interface SerpResult {
@@ -82,6 +127,7 @@ export interface SerpResult {
   rows: SerpRow[];
   firstMatchPosition: number | null;
   searchesUsed: number;
+  localResults?: LocalResult[]; // map-pack businesses, max 3 (absent when Google showed none, and on older checks)
 }
 
 export interface SavedKeyword {

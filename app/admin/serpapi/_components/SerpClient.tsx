@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { useCallback, useState } from "react";
 import KeywordCombobox from "@/app/admin/rankings/_components/KeywordCombobox";
+import GoogleView from "@/app/admin/serpapi/_components/GoogleView";
+import SerpHistory from "@/app/admin/serpapi/_components/SerpHistory";
+import TrackAll from "@/app/admin/serpapi/_components/TrackAll";
 import { api, fieldClass, when } from "@/app/admin/rankings/_components/shared";
 import {
   DEPTHS,
@@ -10,22 +13,20 @@ import {
   type Depth,
   type Location,
   type QuotaInfo,
-  type RecentCheck,
   type SavedKeyword,
   type SerpResult,
 } from "@/lib/rankings/types";
 
-type Busy = null | "serp" | "save";
+type Busy = null | "serp" | "save" | "bulk";
+type View = "google" | "table";
 
 export default function SerpClient({
   initialQuota,
   initialSaved,
-  initialRecent,
   dbMessage,
 }: {
   initialQuota: QuotaInfo;
   initialSaved: SavedKeyword[];
-  initialRecent: RecentCheck[];
   dbMessage: string | null;
 }) {
   const [keyword, setKeyword] = useState("");
@@ -35,21 +36,20 @@ export default function SerpClient({
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [serp, setSerp] = useState<SerpResult | null>(null);
+  const [view, setView] = useState<View>("google");
   const [quota, setQuota] = useState<QuotaInfo>(initialQuota);
   const [saved, setSaved] = useState<SavedKeyword[]>(initialSaved);
-  const [recent, setRecent] = useState<RecentCheck[]>(initialRecent);
+  const [historyKey, setHistoryKey] = useState(0);
 
   const running = busy !== null;
   const remaining = quota.remaining;
   const quotaUnknown = remaining === null;
   const notEnough = remaining !== null && remaining < depth;
-  const recentSerp = recent.filter((r) => r.source === "serpapi");
 
   const refreshLists = useCallback(async () => {
     const r = await api("/admin/rankings/saved", "GET");
     if (r.ok) {
       setSaved(r.data.saved as SavedKeyword[]);
-      setRecent(r.data.recent as RecentCheck[]);
     }
   }, []);
 
@@ -64,6 +64,7 @@ export default function SerpClient({
       setQuota((q) => ({ ...q, remaining: r.data.remainingAfter as number, error: undefined }));
       if (typeof r.data.storageWarning === "string") setNotice(`The result was not stored. ${r.data.storageWarning}`);
       void refreshLists();
+      setHistoryKey((k) => k + 1);
     } else {
       setSerp(null);
       setError(r.data.error ?? "The check failed.");
@@ -84,6 +85,14 @@ export default function SerpClient({
 
   return (
     <div className="mt-8 space-y-8">
+      <TrackAll
+        quota={quota}
+        onRemaining={(n) => setQuota((q) => ({ ...q, remaining: n, error: undefined }))}
+        disabled={busy !== null && busy !== "bulk"}
+        onRunningChange={(r) => setBusy(r ? "bulk" : null)}
+        onFinished={() => setHistoryKey((k) => k + 1)}
+      />
+
       <form
         className="rounded-xl border border-slate-200 bg-white p-5"
         onSubmit={(e) => {
@@ -144,41 +153,62 @@ export default function SerpClient({
           <p className="mt-1 text-xs text-slate-500">
             {serp.location} · google.co.in · top {serp.depth * 10} · {serp.searchesUsed} {serp.searchesUsed === 1 ? "search" : "searches"} used
           </p>
-          <p className="mt-3 text-sm font-semibold text-slate-800">
-            {serp.firstMatchPosition !== null ? (
-              <>
-                astromarfreezone.com first appears at position <span className="text-[#F97316]">{serp.firstMatchPosition}</span>.
-              </>
-            ) : (
-              <>Not in the top {serp.depth * 10}.</>
-            )}
-          </p>
-          <div className="mt-4 overflow-x-auto">
-            <table className="w-full text-left text-sm">
-              <thead className="text-xs uppercase text-slate-500">
-                <tr>
-                  <th className="py-1 pr-4">Position</th>
-                  <th className="py-1 pr-4">Result</th>
-                  <th className="py-1">Domain</th>
-                </tr>
-              </thead>
-              <tbody>
-                {serp.rows.map((row) => (
-                  <tr key={row.link} className={`border-t border-slate-100 ${row.isOurs ? "bg-[#F97316]/10 font-semibold" : ""}`}>
-                    <td className="py-1.5 pr-4 align-top">{row.position}</td>
-                    <td className="py-1.5 pr-4 align-top">
-                      <a href={row.link} target="_blank" rel="noopener noreferrer" className="text-[#1B3A6B] hover:underline">
-                        {row.title}
-                      </a>
-                      <span className="block break-all text-xs font-normal text-slate-500">{row.link}</span>
-                    </td>
-                    <td className="py-1.5 align-top">{row.domain}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="mt-4 inline-flex rounded-lg border border-[#dde5f0] bg-slate-50 p-0.5" role="group" aria-label="Results view">
+            {(["google", "table"] as const).map((v) => (
+              <button
+                key={v}
+                type="button"
+                onClick={() => setView(v)}
+                aria-pressed={view === v}
+                className={`rounded-md px-4 py-1.5 text-sm font-semibold ${view === v ? "bg-[#1B3A6B] text-white" : "text-[#1B3A6B] hover:bg-white"}`}
+              >
+                {v === "google" ? "Google view" : "Table"}
+              </button>
+            ))}
           </div>
-          {serp.rows.length === 0 ? <p className="mt-3 text-sm text-slate-600">Google returned no results for this search.</p> : null}
+          <div className="mt-4">
+          {view === "google" ? (
+            <GoogleView serp={serp} />
+          ) : (
+            <>
+            <p className="mt-3 text-sm font-semibold text-slate-800">
+              {serp.firstMatchPosition !== null ? (
+                <>
+                  astromarfreezone.com first appears at position <span className="text-[#F97316]">{serp.firstMatchPosition}</span>.
+                </>
+              ) : (
+                <>Not in the top {serp.depth * 10}.</>
+              )}
+            </p>
+            <div className="mt-4 overflow-x-auto">
+              <table className="w-full text-left text-sm">
+                <thead className="text-xs uppercase text-slate-500">
+                  <tr>
+                    <th className="py-1 pr-4">Position</th>
+                    <th className="py-1 pr-4">Result</th>
+                    <th className="py-1">Domain</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {serp.rows.map((row) => (
+                    <tr key={row.link} className={`border-t border-slate-100 ${row.isOurs ? "bg-[#F97316]/10 font-semibold" : ""}`}>
+                      <td className="py-1.5 pr-4 align-top">{row.position}</td>
+                      <td className="py-1.5 pr-4 align-top">
+                        <a href={row.link} target="_blank" rel="noopener noreferrer" className="text-[#1B3A6B] hover:underline">
+                          {row.title}
+                        </a>
+                        <span className="block break-all text-xs font-normal text-slate-500">{row.link}</span>
+                      </td>
+                      <td className="py-1.5 align-top">{row.domain}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+              {serp.rows.length === 0 ? <p className="mt-3 text-sm text-slate-600">Google returned no results for this search.</p> : null}
+            </>
+          )}
+          </div>
         </section>
       ) : null}
 
@@ -228,37 +258,7 @@ export default function SerpClient({
         )}
       </section>
 
-      <section className="rounded-xl border border-slate-200 bg-white p-5">
-        <h2 className="text-xl font-semibold text-[#1B3A6B]">Recent SerpApi checks</h2>
-        {recentSerp.length === 0 ? (
-          <p className="mt-4 text-sm text-slate-600">No checks stored yet.</p>
-        ) : (
-          <div className="mt-4 overflow-x-auto">
-            <table className="w-full text-left text-sm">
-              <thead className="text-xs uppercase text-slate-500">
-                <tr>
-                  <th className="py-1 pr-4">When</th>
-                  <th className="py-1 pr-4">Keyword</th>
-                  <th className="py-1 pr-4">Location</th>
-                  <th className="py-1 pr-4">Result</th>
-                  <th className="py-1">Searches used</th>
-                </tr>
-              </thead>
-              <tbody>
-                {recentSerp.map((r) => (
-                  <tr key={r.id} className="border-t border-slate-100">
-                    <td className="whitespace-nowrap py-1.5 pr-4">{when(r.checked_at)}</td>
-                    <td className="py-1.5 pr-4">{r.keyword}</td>
-                    <td className="py-1.5 pr-4">{r.location ?? "–"}</td>
-                    <td className="py-1.5 pr-4">{r.first_match === null ? "Not in the checked results" : `Position ${r.first_match}`}</td>
-                    <td className="py-1.5">{r.searches_used}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-      </section>
+      <SerpHistory refreshKey={historyKey} />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { describeError } from "@/lib/rankings/errors";
 import { json, readBody, requireAdmin } from "@/lib/rankings/guard";
 import { runCompetitorCheck } from "@/lib/rankings/serpapi";
 import { friendlyDbError, saveSerp } from "@/lib/rankings/storage";
-import { isDepth, isLocation, normaliseKeyword } from "@/lib/rankings/types";
+import { SERP_RESERVE, isDepth, isLocation, normaliseKeyword } from "@/lib/rankings/types";
 
 // SerpApi competitor check. The quota guard lives in runCompetitorCheck: it reads the
 // remaining searches first and refuses when fewer remain than the depth needs.
@@ -20,7 +20,9 @@ export async function POST(request: Request) {
   if (!isDepth(body?.depth)) return json({ error: "Depth must be Top 10, Top 20 or Top 30." }, 400);
 
   try {
-    const outcome = await runCompetitorCheck({ keyword: kw.value, location: body.location, depth: body.depth });
+    // Optional: "Track all" asks the server to keep the weekly job's reserve. The single-check form does not send it.
+    const reserve = body?.keepReserve === true ? SERP_RESERVE : undefined;
+    const outcome = await runCompetitorCheck({ keyword: kw.value, location: body.location, depth: body.depth, reserve });
     if (!outcome.ok) {
       return json({ error: outcome.error, remaining: outcome.remaining, needed: outcome.needed, refused: true }, outcome.status);
     }
